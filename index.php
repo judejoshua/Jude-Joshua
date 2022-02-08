@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="bg">
-                <div id="vector-1"><img alt="bg-vector" src="/assets/img/vector.png"></div>
+                <div id="vector-1"><img alt="bg-vector" src="/assets/img/Vector.png"></div>
                 <div id="vector-2"><img alt="bg-vector" src="/assets/img/Vector(2).png"></div>
                 <div id="vector-3"><img alt="bg-vector" src="/assets/img/Vector(2).png"></div>
             </div>

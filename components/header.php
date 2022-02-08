@@ -35,4 +35,3 @@
         <script src="/assets/js/script.js"></script>
 
         <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">
-        <!-- <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"> -->

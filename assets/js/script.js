@@ -7,7 +7,7 @@ $(document).ready(function() {
         }
     }
 
-    $(".preloader").delay(3000).fadeOut("slow");
+    $(".preloader").delay(5000).fadeOut("slow");
 
 
 })

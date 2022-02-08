@@ -538,7 +538,7 @@ footer {
     line-height: normal;
     letter-spacing: 18.8px;
     text-align: center;
-    animation: glow 1.5s linear;
+    animation: glow 2.5s linear;
 }
 
 @media screen and (max-width:1024px) {
