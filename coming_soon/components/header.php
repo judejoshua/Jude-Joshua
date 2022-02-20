@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?=$title?>Jude Joshua || Product designer with background in web design & development</title>
+        <title><?=$title?> || Jude Joshua || Product Designer & Front-end Web Developer</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -29,19 +29,9 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-        <script src="/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="/assets/js/script.js"></script>
-        <script>
-            $(window).on("load", function() {
-                // Animate loader off screen
-                $(".preloader").fadeOut("slow");
-                $("body").css("overflow-y", "scroll");
-            });
-        </script>
 
         <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">
+        <script src="/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="/assets/js/script.js"></script>
 
-        <?php
-            include 'nav.php';
-        ?>
+        <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">
