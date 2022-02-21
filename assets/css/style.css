@@ -6,6 +6,8 @@
 @import 'navigation.css';
 @import 'landing.css';
 @import 'project.css';
+@import 'design-style.css';
+@import 'why.css';
 @import 'scroll-down.css';
 @import 'footer.css';
 @import 'context-menu.css';
@@ -53,7 +55,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
 }
 
 
@@ -92,6 +94,21 @@ Start Btns
     cursor: pointer;
 }
 
+.btn.lng {
+    width: 240px;
+    height: 72px;
+}
+
+.btn.lng .btn_cont {
+    top: 27px;
+    left: 30px;
+}
+
+.btn.lng .btn_bg {
+    width: 72px;
+    height: 72px;
+}
+
 .btn.mdn {
     width: 216px;
 }
@@ -119,7 +136,7 @@ Start Btns
 
 .btn_cont {
     position: absolute;
-    top: 21px;
+    top: 22px;
     left: 34px;
     display: flex;
     align-items: center;
@@ -263,7 +280,7 @@ h6 {
 
 .paragraphsdescriptions {
     font-family: 'Abhaya Libre', serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -317,8 +334,14 @@ Start Others
     flex-wrap: wrap;
 }
 
-article {
-    padding-top: 127px;
+section {
+    padding-top: 160px;
+    padding-left: 128px;
+    padding-right: 128px;
+    background: url(../img/background.png);
+    background-size: 96%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .text-divider {

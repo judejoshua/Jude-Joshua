@@ -9,6 +9,18 @@
         <li><a href="#">Element-7</a></li>
     </ul>
 </div>
+<div class="results-section">
+    <div class="results-section-title">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus ullamcorper tellus malesuada. Et interdum vitae.</h2>
+    </div>
+    <a class="btn lng" href="">
+        <div class="btn_bg"></div>
+        <div class="btn_cont">
+            <p id="text"><span>Send</span> me a message</p>
+            <i class="mdi mdi-arrow-right"></i>
+        </div>
+    </a>
+</div>
 <footer>
     <div class="footer-top">
         <div class="contact-links">

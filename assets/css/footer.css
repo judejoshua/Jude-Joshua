@@ -1,3 +1,22 @@
+.results-section {
+    padding: 160px 128px;
+    background: url(../img/results-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.results-section-title {
+    width: 442px;
+    text-align: center;
+    color: var(--ink);
+}
+
 footer {
     width: 100%;
     display: flex;
