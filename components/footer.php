@@ -1,12 +1,17 @@
 <div id="contextMenu" class="context-menu">
     <ul>
-        <li><a href="#">Element-1</a></li>
-        <li><a href="#">Element-2</a></li>
-        <li><a href="#">Element-3</a></li>
-        <li><a href="#">Element-4</a></li>
-        <li><a href="#">Element-5</a></li>
-        <li><a href="#">Element-6</a></li>
-        <li><a href="#">Element-7</a></li>
+        <li><a href="/#">Homepage</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">View my CV</a></li>
+        <li><a href="#">Send me a message</a></li>
+        <li><a href="#">Other links<i class="mdi mdi-chevron-right"></i></a>
+            <ul id="inner-down">
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Dribbble</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </li>
     </ul>
 </div>
 <div class="results-section">

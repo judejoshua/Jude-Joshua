@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    $(window).scroll(function() {    
+    //==============================================navigation
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 24) {
             $("navigation").addClass("fixed");
@@ -9,25 +10,43 @@ $(document).ready(function() {
         }
     });
 
-    // document.onclick = hideMenu;
-    // document.oncontextmenu = rightClick;
+    //==============================================context-menu
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
 
-    // function hideMenu() {
-    //     $("#contextMenu").hide()
-    // }
+    function hideMenu() {
+        $("#contextMenu").hide()
+    }
 
-    // function rightClick(e) {
-    //     e.preventDefault();
-    //     if ($("#contextMenu").is(':visible')) {
-    //         hideMenu();
-    //     } else {
-    //         var menu = $("#contextMenu");
+    function rightClick(e) {
+        e.preventDefault();
 
-    //         menu.show();
-    //         menu.css("left", e.pageX + "px");
-    //         menu.css("top", e.pageY + "px");
-    //     }
-    // }
+        if ($(e.target).is('a, a *')) {
+            if ($("#contextMenu #new_tab").length) {
+                $("#contextMenu #new_tab").remove()
+            }
+            $("#contextMenu ul").prepend('<li id="new_tab"><a href="#" target="_blank">Open link in new tab</a></li>')
+        } else {
+            $("#contextMenu #new_tab").remove()
+        }
+        var menu = $("#contextMenu");
+
+        menu.show();
+        menu.css("left", e.pageX + "px");
+        menu.css("top", e.pageY + "px");
+    }
+
+    $(window).keyup(function(event) {
+        if (event.which === 27) {
+            $('#contextMenu').hide();
+        }
+    });
+    $(window).scroll(function() {
+        if ($("#contextMenu").is(':visible')) {
+            hideMenu();
+        }
+    });
+
 
 
 })

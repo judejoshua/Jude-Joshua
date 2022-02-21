@@ -43,6 +43,25 @@
     overflow: hidden;
 }
 
+.landing-image .services {
+    background-color: rgba(128, 128, 128, .1);
+    -webkit-backdrop-filter: blur(50px);
+    -moz-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 4px 30px rgba(94, 94, 94, 10%);
+    position: absolute;
+    bottom: 16%;
+    left: unset;
+    top: unset;
+    right: 8%;
+    color: var(--neutral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+}
+
 .landing-image img {
     width: 100%;
 }

@@ -1,9 +1,7 @@
-/* @import "mobstyle.css" screen and (max-width: 768px); */
-
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'preloader.css';
-@import 'navigation.css';
+@import 'nav.css';
 @import 'landing.css';
 @import 'project.css';
 @import 'design-style.css';
@@ -11,6 +9,9 @@
 @import 'scroll-down.css';
 @import 'footer.css';
 @import 'context-menu.css';
+
+/* @import "mobstyle.css" screen and (max-width: 768px); */
+
 :root {
     --neutral: #fff;
     --secondary: #000;

@@ -35,7 +35,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="landing-image"><img src="/assets/img/landing-img.png" alt="logo"></div>
+                    <div class="landing-image">
+                        <img src="/assets/img/landing-img.png" alt="logo">
+                        <a href="" class="services">
+                            <p class="p4">View my Résumé</p><i class="mdi mdi-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="scroll-down">
                     <div class="mouse">
