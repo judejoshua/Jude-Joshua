@@ -73,7 +73,8 @@ navigation.fixed {
     transition: 0.6s;
 }
 
-.nav-links li:hover::after {
+.nav-links li:hover::after,
+.nav-links li.active::after {
     width: 50%;
 }
 

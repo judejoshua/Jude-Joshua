@@ -1,10 +1,11 @@
 <div id="contextMenu" class="context-menu">
     <ul>
-        <li><a href="/#">Homepage</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">View my CV</a></li>
-        <li><a href="#">Send me a message</a></li>
-        <li><a href="#">Other links<i class="mdi mdi-chevron-right"></i></a>
+        <li><a href="/#" class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">Homepage</a></li>
+        <li><a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About me</a></li>
+        <li><a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">See my past works</a></li>
+        <li><a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">View my CV</a></li>
+        <li><a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Send me a message</a></li>
+        <li><a>Other links<i class="mdi mdi-chevron-right"></i></a>
             <ul id="inner-down">
                 <li><a href="#">Behance</a></li>
                 <li><a href="#">Dribbble</a></li>
@@ -18,7 +19,7 @@
     <div class="results-section-title">
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus ullamcorper tellus malesuada. Et interdum vitae.</h2>
     </div>
-    <a class="btn lng" href="">
+    <a class="btn lng" href="/contact">
         <div class="btn_bg"></div>
         <div class="btn_cont">
             <p id="text"><span>Send</span> me a message</p>

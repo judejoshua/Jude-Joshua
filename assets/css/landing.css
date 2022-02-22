@@ -83,3 +83,25 @@
     /* accent */
     background: var(--accent);
 }
+
+body:not(#home-landing) .landing {
+    background: url(../img/results-background.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    padding: 160px 128px 64px;
+}
+
+.landing .text-divider {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 0 72px;
+}
+
+.landing .text-divider .liner {
+    background: var(--ink);
+}

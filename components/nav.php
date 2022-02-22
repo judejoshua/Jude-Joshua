@@ -6,20 +6,20 @@
             <img src="/assets/img/logo.png" alt="logo">
         </div>
         <ul class="nav-links">
-            <li>
-                <a href="/" style="<?=explode('/', $url)[1] != '' ? '' : 'display: none' ?>">Home</a>
+            <li class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">
+                <a href="/">Home</a>
             </li>
-            <li>
-                <a href="/about" style="">About Me</a>
+            <li class="<?=explode('/', $url)[3] == 'about' ? 'active' : '' ?>">
+                <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About Me</a>
             </li>
-            <li>
-                <a href="/portfolio" style="">Past Work</a>
+            <li class="<?=explode('/', $url)[3] == 'portfolio' ? 'active' : '' ?>">
+                <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Past Work</a>
             </li>
-            <li>
-                <a href="/cv" style="">Résumé</a>
+            <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
+                <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">Résumé</a>
             </li>
-            <li>
-                <a href="/contact" style="">Contact Me</a>
+            <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
+                <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact Me</a>
             </li>
         </ul>
         <div class="mobile-nav-opener">

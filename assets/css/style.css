@@ -9,6 +9,7 @@
 @import 'scroll-down.css';
 @import 'footer.css';
 @import 'context-menu.css';
+@import 'form.css';
 
 /* @import "mobstyle.css" screen and (max-width: 768px); */
 
@@ -43,7 +44,7 @@ html,
 body {
     font-size: 15px;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background: var(--neutral);
     scroll-behavior: smooth;
     color: var(--secondary);
@@ -179,7 +180,8 @@ Start Texts
     letter-spacing: 3.2px;
 }
 
-h1 {
+h1,
+.h1 {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     font-weight: 900;
@@ -189,7 +191,8 @@ h1 {
     letter-spacing: 1.44px;
 }
 
-h2 {
+h2,
+.h2 {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 900;
@@ -199,7 +202,8 @@ h2 {
     letter-spacing: 0.64px;
 }
 
-h3 {
+h3,
+.h3 {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 800;
@@ -209,7 +213,8 @@ h3 {
     letter-spacing: 0.96px;
 }
 
-h4 {
+h4,
+.h4 {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 800;
@@ -219,7 +224,8 @@ h4 {
     letter-spacing: 0.96px;
 }
 
-h5 {
+h5,
+.h5 {
     font-family: 'Playfair Display', serif;
     font-size: 12px;
     font-weight: bold;
@@ -229,7 +235,8 @@ h5 {
     letter-spacing: normal;
 }
 
-h6 {
+h6,
+.h6 {
     font-family: 'Playfair Display', serif;
     font-size: 8px;
     font-weight: bold;
@@ -360,8 +367,67 @@ section {
     gap: 24px;
 }
 
+.text-divider a {
+    color: var(--secondary);
+    font-weight: 900;
+}
+
+.text-divider a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: 0.6s;
+    border-radius: 2px;
+    top: unset;
+}
+
+.text-divider a:hover::after {
+    width: 50%;
+}
+
 #liner {
     width: 124px;
     background: var(--secondary);
     height: 2px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.placeholder {
+    color: var(--placeholders);
+}
+
+.error {
+    color: var(--error);
+}
+
+.pop-up {
+    background: var(--secondary);
+    color: var(--neutral);
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    gap: 16px;
+    width: auto;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    left: unset;
+    text-align: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pop-up i {
+    font-size: 56px;
+}
+
+.pop-up p {
+    width: 320px;
 }

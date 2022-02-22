@@ -4,7 +4,7 @@
 ?>
     </head>
 
-    <body>
+    <body id="home-landing">
         <div class="preloader">
             <h1>JUDE JOSHUA</h1>
             <div class="loader-circles">
@@ -37,7 +37,7 @@
                     </div>
                     <div class="landing-image">
                         <img src="/assets/img/landing-img.png" alt="logo">
-                        <a href="" class="services">
+                        <a href="/cv" class="services">
                             <p class="p4">View my Résumé</p><i class="mdi mdi-arrow-right"></i></a>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn mdn" href="">
+                    <a class="btn mdn" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>See</span> more work</p>
@@ -187,10 +187,10 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn mdn" href="">
+                    <a class="btn mdn" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>See</span> more work</p>
+                            <p id="text"><span>See</span> my work</p>
                             <i class="mdi mdi-arrow-right"></i>
                         </div>
                     </a>
@@ -203,7 +203,7 @@
                             and an interest to make life better and easy for people. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id tincidunt elit. Nullam commodo orci dictum diam convallis, id dapibus quam suscipit. Pellentesque faucibus
                             felis vitae risus porta consectetur quis pharetra nunc. Aliquam dapibus augue vitae rhoncus sagittis. Nam risus metus, porttitor quis ullamcorper a, fermentum et massa.</p>
                     </div>
-                    <a class="btn mdn" href="">
+                    <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>View</span> my Résumé</p>

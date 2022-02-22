@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+body:not(#home-landing) .results-section {
+    background: var(--accent);
+}
+
 .results-section-title {
     width: 442px;
     text-align: center;
