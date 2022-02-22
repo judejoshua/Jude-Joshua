@@ -89,7 +89,7 @@
                 </form>
             </article>
         </div>
-        <div class="success-message pop-up">
+        <div class="success-message pop-up hidden">
             <i class="mdi mdi-check"></i>
             <p class="p4">Your form message was sent successfullly. Please expect my response in the next few minutes.</p>
         </div>
