@@ -64,20 +64,20 @@
     .mobile-nav-opener {
         display: block;
     }
-    .mobile-nav .mobile-nav-opener {
+    .mobile-nav-opener.close {
         position: absolute;
         left: calc(100% + 32px);
         z-index: 1;
         top: 30px;
         transition: 0.8s;
     }
-    .mobile-nav.in .mobile-nav-opener {
+    .mobile-nav-opener.close.out {
         left: calc(36% + 32px);
     }
-    .mobile-nav .mobile-nav-opener:hover {
+    .mobile-nav-opener.close:hover {
         color: var(--placeholders);
     }
-    .mobile-nav .mobile-nav-opener i {
+    .mobile-nav-opener.close i {
         font-size: 24px;
     }
     .landing {
