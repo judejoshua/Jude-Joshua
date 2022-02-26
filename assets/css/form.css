@@ -11,7 +11,7 @@ form {
 }
 
 .form-body {
-    padding: 0 64px;
+    padding: 0 124px;
     display: flex;
     gap: 48px;
     flex-direction: column;
