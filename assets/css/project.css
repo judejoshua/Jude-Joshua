@@ -70,3 +70,8 @@ body:not(#home-landing) #case-study {
     display: flex;
     flex-direction: column;
 }
+
+.projects-holder a {
+    display: block;
+    overflow: hidden;
+}

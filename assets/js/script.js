@@ -18,14 +18,19 @@ $(document).ready(function() {
         }
         return false;
     });
+    $('.mobile-nav-opener').click(function() {
+        $('.mobile-nav').toggleClass('in');
+        $('.mobile-nav .nav-links').toggleClass('get-in');
+        $('body').toggleClass('no-scroll');
+    });
 
     //==============================================context-menu
-    // document.onclick = hideMenu;
-    // document.oncontextmenu = rightClick;
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
 
-    // function hideMenu() {
-    //     $("#contextMenu").hide()
-    // }
+    function hideMenu() {
+        $("#contextMenu").hide()
+    }
 
     function rightClick(e) {
         e.preventDefault();

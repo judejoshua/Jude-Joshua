@@ -36,9 +36,18 @@ navigation.fixed {
     height: 100%;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .mobile-nav-opener {
     display: none;
     padding: 8px;
+    width: 40px;
+}
+
+.mobile-nav-opener:hover div {
+    background: var(--placeholders);
 }
 
 .mobile-nav-opener div {
@@ -46,10 +55,17 @@ navigation.fixed {
     height: 2px;
     margin-top: 6px;
     background: var(--secondary);
+    transition: 1s;
 }
 
 .mobile-nav-opener div:first-child {
     margin-top: 0;
+    transform: unset;
+    top: 0;
+}
+
+.mobile-nav-opener div:nth-child(2) {
+    transform: unset;
 }
 
 .nav-links {
