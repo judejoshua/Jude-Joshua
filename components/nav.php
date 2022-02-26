@@ -2,9 +2,9 @@
     $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
 <navigation>
-    <div class="logo">
+    <!-- <div class="logo">
         <img src="/assets/img/logo.png" alt="logo">
-    </div>
+    </div> -->
     <div class="nav">
         <ul class="nav-links">
             <li class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">
