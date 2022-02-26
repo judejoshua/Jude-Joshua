@@ -248,7 +248,7 @@
         height: 48px;
     }
     body:not(#home-landing) .landing {
-        padding: 136px 32px 48px;
+        padding: 136px 32px 32px;
     }
     form {
         padding: 16px 32px 48px;
@@ -265,7 +265,9 @@
     }
     .landing .text-divider {
         padding: 0;
-        gap: 16px;
+        gap: 12px;
+        align-items: flex-start;
+        text-align: left;
     }
     button.btn {
         width: 148px;
