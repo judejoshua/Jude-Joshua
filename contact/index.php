@@ -31,7 +31,7 @@
                                 <div class="input-field">
                                     <input type="text" id="name" name="name" class="form-input p4" />
                                     <div class="labels">
-                                        <p class="p5 placeholder">Enter your name</p>
+                                        <p class="p5 placeholder">Enter your name (required)</p>
                                         <p class="p4 error"></p>
                                     </div>
                                 </div>
@@ -44,24 +44,24 @@
                                     <div class="input-field">
                                         <input type="text" id="email" name="email" class="form-input p4" />
                                         <div class="labels">
-                                            <p class="p5 placeholder">Enter your email</p>
+                                            <p class="p5 placeholder">Enter your email (required)</p>
                                             <p class="p4 error"></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="name" id="to-title" class="h4">Phone Number*</label>
+                            <!-- <div class="form-group">
+                                <label for="name" id="to-title" class="h4">Phone Number</label>
                                 <div class="input-group">
                                     <div class="input-field">
                                         <input type="text" id="phone" name="phone" class="form-input p4" />
                                         <div class="labels">
-                                            <p class="p5 placeholder">Enter your phone number</p>
+                                            <p class="p5 placeholder">Enter your phone number(optional)</p>
                                             <p class="p4 error"></p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="form-group">
                             <label for="message" id="to-title" class="h4">Message*</label>
@@ -69,7 +69,7 @@
                                 <div class="input-field">
                                     <textarea type="text" id="message" name="message" class="form-input p4 form-area"></textarea>
                                     <div class="labels">
-                                        <p class="p5 placeholder">What do you want to say?</p>
+                                        <p class="p5 placeholder">What do you want to say? (required)</p>
                                         <p class="p4 error"></p>
                                     </div>
                                 </div>
