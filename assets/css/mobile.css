@@ -247,6 +247,33 @@
         width: 40px;
         height: 48px;
     }
+    body:not(#home-landing) .landing {
+        padding: 136px 32px 48px;
+    }
+    form {
+        padding: 16px 32px 48px;
+    }
+    .form-body {
+        padding: 0;
+    }
+    .form-group.dual {
+        flex-direction: column;
+    }
+    h4,
+    .h4 {
+        font-size: 14px;
+    }
+    .landing .text-divider {
+        padding: 0;
+        gap: 16px;
+    }
+    button.btn {
+        width: 148px;
+    }
+    button .btn_cont {
+        top: 19px;
+        left: 21px;
+    }
 }
 
 @media screen and (max-width:340px) {
