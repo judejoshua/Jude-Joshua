@@ -38,6 +38,18 @@ navigation.fixed {
 
 .mobile-nav-opener {
     display: none;
+    padding: 8px;
+}
+
+.mobile-nav-opener div {
+    width: 24px;
+    height: 2px;
+    margin-top: 6px;
+    background: var(--secondary);
+}
+
+.mobile-nav-opener div:first-child {
+    margin-top: 0;
 }
 
 .nav-links {
@@ -66,9 +78,9 @@ navigation.fixed {
 
 .nav-links li::after {
     content: '';
-    background: var(--ink);
+    background: var(--secondary);
     width: 0%;
-    height: 1px;
+    height: 2px;
     border-radius: 4px;
     transition: 0.6s;
 }
@@ -78,15 +90,18 @@ navigation.fixed {
     width: 50%;
 }
 
+.nav-links li:hover a {
+    color: var(--secondary);
+}
+
 .nav-links li a {
-    /* titles/h4 */
-    font-family: 'PlayFair Display', serif;
+    font-family: 'Inria serif', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 25px;
     /* identical to box height, or 140% */
-    letter-spacing: 0.06em;
+    letter-spacing: 1px;
     /* secondary */
     color: var(--secondary);
     text-transform: uppercase;

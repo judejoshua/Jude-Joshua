@@ -1,0 +1,198 @@
+@media screen and (max-width:500px) {
+    navigation {
+        padding: 16px 32px;
+    }
+    .logo {
+        width: 56px;
+    }
+    .nav-links {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: rgba(128, 128, 128, 0.9);
+        left: 0;
+        top: 0;
+        flex-direction: column;
+    }
+    .nav-links::before {
+        position: absolute;
+        width: 20%;
+        background: #fff;
+        content: '';
+        top: 0;
+        height: 100%;
+        left: 0;
+    }
+    .landing-image {
+        display: none;
+    }
+    .mobile-nav-opener {
+        display: block;
+    }
+    .landing {
+        padding-top: 92px;
+        overflow-x: hidden;
+    }
+    h1,
+    .h1 {
+        font-size: 32px;
+    }
+    .p4 {
+        font-size: 14px;
+    }
+    .header_cont {
+        padding: 0 32px;
+    }
+    .scroll-down {
+        position: relative;
+        bottom: 0;
+        margin-top: 16px;
+        height: 56px;
+        left: 32px;
+    }
+    .header-text {
+        width: 100%;
+    }
+    .bg-play .shade {
+        right: unset;
+        left: 156px;
+    }
+    .bg-play {
+        overflow: hidden;
+    }
+    .btn {
+        width: 150px;
+        height: 56px;
+    }
+    .btn_bg {
+        top: 0;
+        left: 0;
+        width: 56px;
+        height: 56px;
+    }
+    .btn_cont {
+        top: 19px;
+        left: 30px;
+    }
+    #arrow-tail-long {
+        height: 36px;
+    }
+    section {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 112px;
+        gap: 32px !important;
+    }
+    h2,
+    .h2 {
+        font-size: 24px;
+    }
+    .text-divider {
+        gap: 16px;
+        width: 100%;
+    }
+    .case-studies-body {
+        gap: 32px;
+    }
+    .projects-holder {
+        gap: 32px;
+    }
+    .row {
+        gap: 32px;
+    }
+    .project {
+        width: 300px;
+    }
+    .project img {
+        width: 300px;
+        height: 300px;
+    }
+    #why {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+    .btn.mdn {
+        width: 200px;
+    }
+    .btn:hover>.btn_bg {
+        width: 100%;
+    }
+    #why .btn_cont {
+        left: 22px;
+    }
+    h3,
+    .h3 {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .caption {
+        padding: 16px 8px;
+    }
+    .caption-text {
+        width: 80%;
+    }
+    .results-section {
+        padding: 64px 32px;
+    }
+    .results-section-title {
+        width: 100%;
+    }
+    .btn.lng {
+        width: 196px;
+        height: 64px;
+    }
+    .btn.lng .btn_cont {
+        left: 29px;
+        top: 24px;
+    }
+    .btn.lng .btn_bg {
+        width: 64px;
+        height: 64px;
+    }
+    footer {
+        padding: 32px;
+        gap: 8px;
+    }
+    .contact-links {
+        gap: 12px;
+    }
+    .footer-top a:not(.to-top) {
+        font-size: 13px;
+    }
+    .to-top {
+        display: none;
+    }
+    body,
+    html {
+        font-size: 13px !important;
+    }
+    .paragraphsdescriptions {
+        font-size: 12px;
+    }
+    .design-rule {
+        width: 280px;
+        margin-right: 24px;
+        padding: 48px 32px 32px;
+        height: 448px;
+    }
+    .design-styles .row {
+        min-width: calc((304px * 4) + 10px);
+    }
+    .icon {
+        width: 40px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .project {
+        width: 250px;
+    }
+    .project img {
+        width: 250px;
+        height: 250px;
+    }
+}

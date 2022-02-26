@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+body:not(#home-landing) #case-study {
+    padding-top: 0;
+    padding-bottom: 128px;
+}
+
 .case-studies-body {
     display: flex;
     flex-direction: column;

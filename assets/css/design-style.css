@@ -12,6 +12,10 @@
     gap: 56px;
 }
 
+.design-style+.btn.mdn {
+    width: 216px;
+}
+
 .design-styles {
     overflow-x: auto;
     padding-bottom: 48px;

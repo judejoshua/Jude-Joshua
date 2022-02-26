@@ -38,7 +38,7 @@
                     <div class="landing-image">
                         <img src="/assets/img/landing-img.png" alt="logo">
                         <a href="/cv" class="services">
-                            <p class="p4">View my Résumé</p><i class="mdi mdi-arrow-right"></i></a>
+                            <p class="p5">View my Résumé</p><i class="mdi mdi-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="scroll-down">
@@ -190,7 +190,7 @@
                     <a class="btn mdn" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>See</span> my work</p>
+                            <p id="text"><span>See</span> my past work</p>
                             <i class="mdi mdi-arrow-right"></i>
                         </div>
                     </a>
