@@ -266,8 +266,8 @@
     .landing .text-divider {
         padding: 0;
         gap: 12px;
-        align-items: flex-start;
-        text-align: left;
+        /* align-items: flex-start; */
+        /* text-align: left; */
     }
     button.btn {
         width: 148px;
