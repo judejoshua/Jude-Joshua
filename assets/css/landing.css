@@ -14,7 +14,7 @@
     height: 100%;
     background: var(--neutral);
     display: table;
-    padding-top: 136px;
+    padding-top: 168px;
 }
 
 .header_cont {
@@ -91,7 +91,7 @@ body:not(#home-landing) .landing {
     background-repeat: no-repeat;
     width: 100%;
     text-align: center;
-    padding: 160px 128px 64px;
+    padding: 192px 128px 64px;
 }
 
 .landing .text-divider {

@@ -1,9 +1,9 @@
 navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 24px 128px;
+    padding: 48px 128px;
     position: fixed;
     z-index: 9999;
     width: 100%;
@@ -27,6 +27,7 @@ navigation.fixed {
     flex: none;
     order: 0;
     flex-grow: 0;
+    display: none;
 }
 
 .logo img {
