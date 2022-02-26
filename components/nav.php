@@ -31,7 +31,7 @@
     </div>
 </navigation>
 <div class="mobile-nav">
-    <div class="mobile-nav-opener">
+    <div class="mobile-nav-opener close">
         <i class="mdi mdi-arrow-right"></i>
     </div>
     <ul class="nav-links">

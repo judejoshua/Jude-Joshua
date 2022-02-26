@@ -19,9 +19,16 @@ $(document).ready(function() {
         return false;
     });
     $('.mobile-nav-opener').click(function() {
-        $('.mobile-nav').toggleClass('in');
-        $('.mobile-nav .nav-links').toggleClass('get-in');
-        $('body').toggleClass('no-scroll');
+        $('.mobile-nav').addClass('in');
+        $('.mobile-nav .nav-links').addClass('get-in');
+        $('body').addClass('no-scroll');
+    });
+    $('.mobile-nav-opener.close').click(function() {
+        $('.mobile-nav .nav-links').removeClass('get-in');
+        $('body').removeClass('no-scroll');
+        setTimeout(function() {
+            $('.mobile-nav').removeClass('in');
+        }, 300);
     });
 
     //==============================================context-menu

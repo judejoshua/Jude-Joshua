@@ -40,6 +40,7 @@
         justify-content: center;
         padding-left: 32px;
         transition: 0.8s;
+        box-shadow: -14px 0px 30px rgba(94, 94, 94, 0.24);
     }
     .nav-links.get-in {
         right: 0;
@@ -171,6 +172,7 @@
     }
     #why .btn_cont {
         left: 22px;
+        top: 20px;
     }
     h3,
     .h3 {
@@ -187,21 +189,22 @@
     }
     .results-section {
         padding: 64px 32px;
+        gap: 38px;
     }
     .results-section-title {
         width: 100%;
     }
     .btn.lng {
         width: 196px;
-        height: 64px;
+        height: 56px;
     }
     .btn.lng .btn_cont {
-        left: 29px;
-        top: 24px;
+        left: 21px;
+        top: 20px;
     }
     .btn.lng .btn_bg {
-        width: 64px;
-        height: 64px;
+        width: 56px;
+        height: 56px;
     }
     footer {
         padding: 32px;
