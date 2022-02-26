@@ -18,8 +18,8 @@
                 <div class="text-divider">
                     <h1>Send me a Message</h1>
                     <div id="liner"></div>
-                    <p class="p4">If you have any questions or messages, you could send me an email to <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call me on <a href="tel:+2349041134407">+234-904-113-4926</a>. Maybe you want to type your message
-                        down, just fill the form below, and I will get back to you within 24 hours of receipt.</p>
+                    <p class="p4">If you have any questions or messages, you could send an email to <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call me on <a href="tel:+2349041134407">+234-904-113-4926</a>. Maybe you want to type your message down,
+                        just fill the form below, and I will get back to you within 24 hours of receipt.</p>
                 </div>
             </header>
             <article id="body">
