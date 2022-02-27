@@ -26,7 +26,7 @@
                     <div class="case-studies-body">
                         <div class="projects-holder">
                             <div class="row">
-                                <a href="">
+                                <a href="/portfolio/case-study">
                                     <div class="project">
                                         <img src="/assets/img/project-image.png" alt="">
                                         <div class="caption">
@@ -38,7 +38,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="/portfolio/case-study">
                                     <div class="project">
                                         <img src="/assets/img/project-image-1.png" alt="">
                                         <div class="caption">
@@ -50,7 +50,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="/portfolio/case-study">
                                     <div class="project">
                                         <img src="/assets/img/project-image-2.png" alt="">
                                         <div class="caption">
@@ -62,7 +62,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="/portfolio/case-study">
                                     <div class="project">
                                         <img src="/assets/img/project-image-3.png" alt="">
                                         <div class="caption">
@@ -74,7 +74,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="/portfolio/case-study">
                                     <div class="project">
                                         <img src="/assets/img/project-image.png" alt="">
                                         <div class="caption">
@@ -86,7 +86,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="/portfolio/case-study">
                                     <div class="project">
                                         <img src="/assets/img/project-image-1.png" alt="">
                                         <div class="caption">

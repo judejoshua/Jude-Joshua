@@ -11,6 +11,10 @@ body:not(#home-landing) #case-study {
     padding-bottom: 128px;
 }
 
+.case-study-title-top {
+    width: 556px;
+}
+
 .case-studies-body {
     display: flex;
     flex-direction: column;
@@ -74,4 +78,137 @@ body:not(#home-landing) #case-study {
 .projects-holder a {
     display: block;
     overflow: hidden;
+}
+
+#tag-single {
+    padding: 12px 24px;
+    display: inline-block;
+    background-color: var(--ink);
+    color: var(--neutral);
+}
+
+.tags-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.return-button {
+    display: flex;
+    margin: 0 0 48px;
+    gap: 16px;
+    color: var(--secondary);
+    align-items: center;
+    width: auto;
+}
+
+.return-button i {
+    font-size: 20px;
+}
+
+.return-button i+*::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    left: 0;
+    position: relative;
+    top: 2px;
+    transition: 0.6s;
+}
+
+.return-button:hover i+*::after {
+    width: 50%;
+}
+
+body#case-study-body .landing {
+    padding: 0 0 152px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body#case-study-body .landing::after {
+    content: '';
+    background-color: rgba(255, 255, 255, .2);
+    -webkit-backdrop-filter: blur(8px);
+    -moz-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    width: 100%;
+    height: 152px;
+    left: 0;
+    top: unset;
+    bottom: 0;
+}
+
+body#case-study-body .landing .case-study-title {
+    padding: 152px 128px 54px;
+    background: var(--neutral);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+body#case-study-body .landing .case-study-title .scroll-down {
+    position: relative;
+    left: unset;
+    bottom: unset;
+    height: 96px;
+    /* display: inline-block; */
+}
+
+body#case-study-body .landing .case-study-title .scroll-down .mouse {
+    border: 1px solid;
+}
+
+body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
+    height: 56px;
+}
+
+.scroll-down-indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 144px 64px;
+    gap: 72px;
+}
+
+.portfolio-section .project {
+    width: 480px;
+    height: 480px;
+}
+
+.portfolio-section .project img {
+    width: 480px;
+    height: 480px;
+}
+
+.portfolio-section .text-divider {
+    width: 100%;
+}
+
+.portfolio-section .text-divider.sub-title {
+    gap: 8px;
+}
+
+.text-divider.sub-title h3::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--secondary);
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 12px;
+    position: relative;
 }

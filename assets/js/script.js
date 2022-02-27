@@ -34,12 +34,12 @@ $(document).ready(function() {
     });
 
     //==============================================context-menu
-    document.onclick = hideMenu;
-    document.oncontextmenu = rightClick;
+    // document.onclick = hideMenu;
+    // document.oncontextmenu = rightClick;
 
-    function hideMenu() {
-        $("#contextMenu").hide()
-    }
+    // function hideMenu() {
+    //     $("#contextMenu").hide()
+    // }
 
     function rightClick(e) {
         e.preventDefault();

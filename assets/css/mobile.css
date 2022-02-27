@@ -142,6 +142,10 @@
         gap: 16px;
         width: 100%;
     }
+    .title-text {
+        width: 100%;
+        gap: 4px;
+    }
     .case-studies-body {
         gap: 32px;
     }
@@ -275,6 +279,39 @@
     button .btn_cont {
         top: 19px;
         left: 21px;
+    }
+    body#case-study-body .landing {
+        padding: 0 0 144px;
+    }
+    body#case-study-body .landing .case-study-title {
+        padding: 136px 32px 48px;
+    }
+    .scroll-down-indicator {
+        display: none;
+    }
+    .case-study-title-top {
+        width: 100%;
+    }
+    .p5 {
+        font-size: 10px;
+    }
+    .portfolio-section {
+        padding: 64px 32px;
+        gap: 48px;
+    }
+    .portfolio-section .text-divider {
+        gap: 12px;
+    }
+    .portfolio-section .text-divider #liner {
+        width: 48px;
+    }
+    .portfolio-section .project img {
+        width: 100%;
+        height: auto;
+    }
+    .portfolio-section .project {
+        width: 100%;
+        height: auto;
     }
 }
 
