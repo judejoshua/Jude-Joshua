@@ -210,6 +210,9 @@
         width: 56px;
         height: 56px;
     }
+    .btn.lng:hover .btn_bg {
+        width: 100%;
+    }
     footer {
         padding: 32px;
         gap: 8px;
