@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     localStorage.clear();
 
     //----------------------------------------------practice links on start page

@@ -50,7 +50,7 @@
                         <img id="sound-active" width="36" height="36" src="<?= $find;?>/assets/images/sound-active.png">
                         <img id="sound-muted" width="36" height="36" src="<?= $find;?>/assets/images/sound-muted.png" style="display: none;">
                     </div>
-                    <a href="<?= $find;?>" class="close" style="display: none;">
+                    <a class="close" style="display: none;">
                         <div></div>
                         <div></div>
                     </a>
