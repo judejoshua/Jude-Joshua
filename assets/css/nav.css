@@ -19,7 +19,7 @@ navigation.fixed {
     -webkit-backdrop-filter: blur(32px);
     -moz-backdrop-filter: blur(32px);
     backdrop-filter: blur(32px);
-    box-shadow: 0px 4px 30px rgba(94, 94, 94, 0.24);
+    /* box-shadow: 0px 4px 30px rgba(94, 94, 94, 0.24); */
 }
 
 .logo {
@@ -122,4 +122,12 @@ navigation.fixed {
     text-transform: uppercase;
     flex: none;
     flex-grow: 0;
+}
+
+.mobile-nav .nav-links {
+    background: url(../img/sidebar-navigation.png);
+    background-color: var(--neutral);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
