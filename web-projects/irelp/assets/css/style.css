@@ -197,7 +197,7 @@ a.praticar_links {
 
 .btn-secondary,
 .btn-tertiary {
-    width: auto;
+    width: 100%;
     padding: 14px 24px;
     border: 2px solid;
     border-radius: 8px;
@@ -208,13 +208,15 @@ a.praticar_links {
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: left;
     color: #b154a2;
     display: inline-block;
+    text-align: center;
 }
 
 .btn-tertiary {
     border: none;
+    width: auto;
+    text-align: left;
 }
 
 .btn-primary,
@@ -368,6 +370,17 @@ a.praticar_links {
     justify-content: space-evenly;
     gap: 0;
     padding-top: 0;
+}
+
+.modal .count-down.row {
+    align-items: center;
+}
+
+.modal .count-down.row .notification-links {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .Posição .secs h2 {

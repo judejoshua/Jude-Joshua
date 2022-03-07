@@ -1,1 +1,1 @@
-<p class="version">Versão 1.0</p>
+<p class="version">Versão 1.2 BETA</p>

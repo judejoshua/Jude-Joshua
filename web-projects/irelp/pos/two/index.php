@@ -21,7 +21,7 @@
                     <img src="<?= $find;?>/assets/images/1.png">
                 </div>
                 <div class="secs">
-                    <p>Posição <span>1</span> de 13</p>
+                    <p>Posição <span>1</span></p>
                     <div class="description-container">
                         <span id="p1" class="desc" >Trabalha as glândulas Pineal, Pituitária/Hipófise</span>
                         <span id="p2" class="desc" style="display:none;">Estimula o cérebro, pensamentos e memória</span>
@@ -48,7 +48,7 @@
                         <img id="sound-active" width="36" height="36" src="<?= $find;?>/assets/images/sound-active.png">
                         <img id="sound-muted" width="36" height="36" src="<?= $find;?>/assets/images/sound-muted.png" style="display: none;">
                     </div>
-                    <a href="<?= $find;?>/end" class="close" style="display: none;">
+                    <a href="<?= $find;?>" class="close" style="display: none;">
                         <div></div>
                         <div></div>
                     </a>

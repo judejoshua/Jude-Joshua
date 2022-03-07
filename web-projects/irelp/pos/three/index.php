@@ -23,7 +23,7 @@
                     <img src="<?= $find;?>/assets/images/1.png">
                 </div>
                 <div class="secs">
-                    <p>Posição <span>1</span> de 13</p>
+                    <p>Posição <span>1</span></p>
                     <div class="description-container">
                         <span id="p1" class="desc" >Trabalha as glândulas Pineal, Pituitária/Hipófise</span>
                         <span id="p2" class="desc" style="display:none;">Estimula o cérebro, pensamentos e memória</span>
@@ -50,7 +50,7 @@
                         <img id="sound-active" width="36" height="36" src="<?= $find;?>/assets/images/sound-active.png">
                         <img id="sound-muted" width="36" height="36" src="<?= $find;?>/assets/images/sound-muted.png" style="display: none;">
                     </div>
-                    <a href="<?= $find;?>/end" class="close" style="display: none;">
+                    <a href="<?= $find;?>" class="close" style="display: none;">
                         <div></div>
                         <div></div>
                     </a>
@@ -58,6 +58,21 @@
                 <a id="begin-position" class="btn-primary forward ">Iniciar</a>
             </div>
             <?php require $find.'components/footer.php' ;?>
+        </div>
+        <div class="modal">
+            <div class="wrapper">
+                <div class="screen-wrap">
+                    <div class="count-down row">
+                        <div class="begin">
+                            <h2>Tem certeza de que deseja fechá-lo?</h2>
+                        </div>
+                        <div class="notification-links">
+                            <a class="btn-primary close-return">Não, continuar</a>
+                            <a href="<?= $find;?>" class="btn-secondary return">Sim, feche</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

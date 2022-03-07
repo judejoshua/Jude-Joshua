@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    localStorage.clear();
+
     //----------------------------------------------practice links on start page
     $('.praticar_links').on('click', function(e) {
         e.preventDefault();
@@ -97,6 +99,10 @@ $(document).ready(function() {
 
     startTimer();
 
+    function pauseTimer() {
+
+    }
+
     let next_url = parseInt($(".secs p span").text()); //---------------------------------------------------------get the current position number
     localStorage.setItem('resetTimer', $('.secs .timekeep').text()); //-----------------------------------------------get the time for each position;
 
@@ -118,7 +124,7 @@ $(document).ready(function() {
             if (next_url <= 13) {
                 $(".secs p span").text(next_url);
                 $(".Posição.wrapper").addClass('pos' + next_url);
-                $(".begin img").attr('srcset', '/assets/images/' + next_url + '.png');
+                $(".begin img").attr('srcset', '../../assets/images/' + next_url + '.png');
                 $(".secs span.desc:not(#p" + next_url + ")").hide();
                 $(".secs span.desc:not(#p" + next_url + ")").hide();
                 $(".secs #p" + next_url).show();
@@ -126,7 +132,7 @@ $(document).ready(function() {
                 setTimeout(startTimer, 1000);
             } else {
                 setTimeout(function() {
-                    window.location = '/end';
+                    window.location = '../../end';
                 }, 1000);
             }
             return
@@ -143,12 +149,24 @@ $(document).ready(function() {
         })
     }
 
-    $('#play').on('click', function() { //--------------------------------------------------------------------------------resume everything
+    //-----------------------------------------------------------------------------------------------------------------resume everything
+    $('#play').on('click', function() {
         song2.play()
         $(this).hide();
         $('#pause').show()
         setTimeout(startTimer, 1000);
     })
+
+    //-----------------------------------------------------------------------------------------------------------------
+    $(".close").on('click', function(e) {
+        e.preventDefault();
+        $('.modal').css('top', '0');
+    })
+    $(".close-return").on('click', function(e) {
+        e.preventDefault();
+        $('.modal').css('top', '110%');
+    })
+
 
     function checkSecond(sec) {
         if (sec < 10 && sec >= 0) {
@@ -160,7 +178,6 @@ $(document).ready(function() {
         };
         return sec;
     }
-
 
     //-----------------------------------------------------------------------------------------------------------------keep screen awake
     var noSleep = new NoSleep();
