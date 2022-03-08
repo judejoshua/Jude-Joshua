@@ -64,11 +64,11 @@
                 <div class="screen-wrap">
                     <div class="count-down row">
                         <div class="begin">
-                            <h2>Tem certeza de que deseja fechá-lo?</h2>
+                            <h2>Deseja encerrar sua sessão?</h2>
                         </div>
                         <div class="notification-links">
-                            <a class="btn-primary close-return">Não, continuar</a>
-                            <a href="<?= $find;?>" class="btn-secondary return">Sim, feche</a>
+                            <a href="<?= $find;?>" class="btn-primary close-return">Sim</a>
+                            <a class="btn-secondary return">Não</a>
                         </div>
                     </div>
                 </div>
