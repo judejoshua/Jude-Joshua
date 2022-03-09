@@ -125,7 +125,7 @@ $(document).ready(function() {
             if (next_url <= 13) {
                 $(".secs p span").text(next_url);
                 $(".Posição.wrapper").addClass('pos' + next_url);
-                $(".begin img").attr('srcset', '../../assets/images/' + next_url + '.png');
+                $(".begin img").attr('src', '../../assets/images/' + next_url + '.png');
                 $(".secs span.desc:not(#p" + next_url + ")").hide();
                 $(".secs span.desc:not(#p" + next_url + ")").hide();
                 $(".secs #p" + next_url).show();

@@ -20,7 +20,7 @@
             </div>
             <div class="row">
                 <div class="begin ">
-                    <img src="<?= $find;?>/assets/images/1.png">
+                    <img src="<?= $find;?>assets/images/1.png">
                 </div>
                 <div class="secs">
                     <p>Posição <span>1</span></p>
