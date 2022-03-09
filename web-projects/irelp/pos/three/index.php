@@ -67,8 +67,8 @@
                             <h2>Deseja encerrar sua sessão?</h2>
                         </div>
                         <div class="notification-links">
-                            <a href="<?= $find;?>" class="btn-primary close-return">Sim</a>
-                            <a class="btn-secondary return">Não</a>
+                            <a href="<?= $find;?>" class="btn-primary">Sim</a>
+                            <a class="btn-secondary return close-return">Não</a>
                         </div>
                     </div>
                 </div>
