@@ -153,10 +153,24 @@ $(document).ready(function() {
                 } else {
                     msg = 'Uncaught Error.\n' + jqXHR.responseText;
                 }
-                $('#post').html(msg);
+                $('.success-message').addClass('show error');
+                $('.success-message i').removeClass().addClass('mdi mdi-alert-outline');
+                $('.success-message p').text(msg);
+                setTimeout(removePop, 5000);
             },
         })
     });
+
+    //=================================================================================================================download button
+    $('.download').click(function(e) {
+        e.preventDefault();
+
+        setTimeout(removePop, 5000);
+
+        var link = $(this).attr('href');
+        var valFileDownloadPath = 'https://judejoshua.me' + link;
+        window.open(valFileDownloadPath, '_blank');
+    })
 
     //=================================================================================================================remove pop-up
     function removePop() {

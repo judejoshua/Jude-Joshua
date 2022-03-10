@@ -1,0 +1,52 @@
+body#resume .landing {
+    background: url(../img/resume-background.png);
+    background-size: cover;
+    background-color: var(--secondary);
+    background-position: center;
+    padding-bottom: 128px;
+    height: 428px;
+}
+
+body#resume .landing .text-divider {
+    align-items: center;
+    color: var(--neutral);
+    width: 100%;
+}
+
+body#resume navigation a {
+    color: var(--neutral);
+}
+
+body#resume navigation .nav-links li.active::after {
+    background-color: var(--neutral);
+}
+
+body#resume navigation.fixed a {
+    color: var(--secondary);
+}
+
+body#resume navigation.fixed .nav-links li.active::after {
+    background-color: var(--secondary);
+}
+
+a.download {
+    padding: 0 24px 26px;
+    color: var(--neutral);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    left: 0;
+    position: relative;
+    top: 128px;
+}
+
+body#resume .mobile-nav-opener div {
+    background: var(--neutral);
+}
+
+body#resume navigation.fixed .mobile-nav-opener div {
+    background: var(--secondary);
+}

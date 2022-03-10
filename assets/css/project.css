@@ -8,7 +8,7 @@
 
 body:not(#home-landing) #case-study {
     padding-top: 0;
-    padding-bottom: 128px;
+    padding-bottom: 64px;
 }
 
 .case-study-title-top {
@@ -20,7 +20,7 @@ body:not(#home-landing) #case-study {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 56px;
+    gap: 104px;
 }
 
 .projects-holder {
@@ -222,4 +222,20 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     background-color: var(--background-circles);
     color: var(--neutral);
     border-color: var(--background-circles);
+}
+
+.projects-pagination * {
+    font-size: 32px;
+    color: var(--placeholders);
+}
+
+.projects-pagination *.active {
+    color: var(--background-circles);
+}
+
+.projects-pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
