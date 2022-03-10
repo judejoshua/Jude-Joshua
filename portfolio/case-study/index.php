@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="wrapper" id="top">
-            <header class="landing" id="home" style="background-image: url('/assets/img/project-image.png');">
+            <header class="landing" id="home">
                 <div class="case-study-title">
                     <div class="case-study-title-top">
                         <a href="/portfolio" class="return-button">
@@ -44,6 +44,8 @@
                         </div>
                         <p class="p5">Scroll down</p>
                     </div>
+                </div>
+                <div class="case-study-img" style="background-image: url('/assets/img/project-image.png');">
                 </div>
             </header>
             <article id="body ">

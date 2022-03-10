@@ -150,6 +150,12 @@ section {
 
 .error {
     color: var(--error);
+    font-weight: 800;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
 }
 
 .pop-up {
@@ -157,22 +163,31 @@ section {
     color: var(--neutral);
     display: flex;
     flex-direction: column;
-    padding: 48px;
-    gap: 16px;
+    padding: 24px 32px 32px;
+    gap: 4px;
     width: auto;
     position: fixed;
     top: 20%;
-    right: 0;
+    right: -48%;
     left: unset;
     text-align: center;
     align-items: center;
     z-index: 9999;
+    transition: 0.8s;
 }
 
 .pop-up i {
-    font-size: 56px;
+    font-size: 48px;
 }
 
 .pop-up p {
-    width: 320px;
+    width: 236px;
+}
+
+.pop-up.show {
+    right: 0;
+}
+
+.pop-up.show.error {
+    background-color: var(--error);
 }

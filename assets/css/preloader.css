@@ -100,3 +100,7 @@
     border-right: 4px solid var(--placeholders);
     border-top: 4px solid var(--placeholders);
 }
+
+.recha.preloader h1 {
+    display: none;
+}

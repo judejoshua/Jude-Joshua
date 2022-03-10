@@ -95,13 +95,25 @@ body:not(#home-landing) .landing {
 }
 
 .landing .text-divider {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    /* width: 100%; */
+    /* justify-content: center;
+    align-items: center; */
+    text-align: left;
     gap: 32px;
-    padding: 0 72px;
+    /* padding: 0 72px; */
+}
+
+body#about .landing .text-divider {
+    width: 100%;
 }
 
 .landing .text-divider .liner {
     background: var(--ink);
+}
+
+body#contact .landing .text-divider {
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0;
 }

@@ -1,5 +1,5 @@
 <?php
-    $title = '';
+    $title = 'Past work || ';
     include '../components/header.php';
 ?>
     </head>
@@ -19,6 +19,13 @@
                     <h1>Past Work</h1>
                     <div id="liner"></div>
                     <p class="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus ullamcorper tellus malesuada. Habitant turpis sit vestibulum, ac nunc diam aliquet tristique.</p>
+                </div>
+                <div class="tags-row">
+                    <span class="h5">Filter by:</span>
+                    <div>
+                        <span class="p5 secondary" id="tag-single" data-show="ui/ux">Design Case Studies</span>
+                        <span class="p5 secondary" id="tag-single" data-show="web-dev">Web Development Projects</span>
+                    </diV>
                 </div>
             </header>
             <article id="body">
