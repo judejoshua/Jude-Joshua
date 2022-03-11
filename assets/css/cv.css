@@ -33,7 +33,7 @@ a.download {
     padding: 0 24px 26px;
     color: var(--neutral);
     border-radius: 50%;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
