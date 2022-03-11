@@ -20,6 +20,25 @@
     height: 72px;
 }
 
+.btn.lng.ln {
+    height: 88px;
+}
+
+.btn.lng.ln .btn_bg {
+    width: 88px;
+    height: 88px;
+}
+
+.btn.lng.ln:hover>.btn_bg {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn.lng.ln .btn_cont {
+    top: 36px;
+    left: 20px;
+}
+
 .btn.mdn {
     width: 192px;
 }

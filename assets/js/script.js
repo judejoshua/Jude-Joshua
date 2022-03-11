@@ -8,6 +8,13 @@ $(document).ready(function() {
         } else {
             $("navigation").removeClass("fixed");
         }
+
+        var scrollDivi = $('#divisor').offset().top;
+        if (scroll >= scrollDivi) {
+            $("a.download").fadeOut('slow');
+        } else {
+            $("a.download").fadeIn('slow');
+        }
     });
     $('a[href^="#"], a[href^="/#"]').click(function() {
         let target = $(this).attr('href');
@@ -165,6 +172,7 @@ $(document).ready(function() {
     $('.download').click(function(e) {
         e.preventDefault();
 
+        $('.success-message').addClass('show');
         setTimeout(removePop, 5000);
 
         var link = $(this).attr('href');

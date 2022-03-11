@@ -348,6 +348,35 @@
     .tags-row div {
         gap: 8px;
     }
+    #resume-begins {
+        padding: 42px 32px;
+    }
+    .title {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .title-contact {
+        text-align: left;
+    }
+    .resume-body {
+        flex-direction: column;
+        gap: 36px;
+    }
+    .left-text-divider,
+    .right-text-divider {
+        width: 100%;
+        row-gap: 36px;
+    }
+    .btn.lng.ln {
+        width: 228px;
+    }
+    a.download i {
+        font-size: 20px;
+    }
+    a.download {
+        padding: 20px 14px;
+        gap: 0;
+    }
 }
 
 @media screen and (max-width:340px) {
