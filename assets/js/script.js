@@ -169,15 +169,17 @@ $(document).ready(function() {
     });
 
     //=================================================================================================================download button
-    $('.download').click(function(e) {
+    $('.dwnld-btn').click(function(e) {
         e.preventDefault();
 
         $('.success-message').addClass('show');
-        setTimeout(removePop, 5000);
-
+        setTimeout(removePop, 3000);
         var link = $(this).attr('href');
-        var valFileDownloadPath = 'https://judejoshua.me' + link;
-        window.open(valFileDownloadPath, '_blank');
+        setTimeout(function() {
+            var valFileDownloadPath = 'https://judejoshua.me' + link;
+            window.open(valFileDownloadPath, '_blank');
+        }, 4000);
+
     })
 
     //=================================================================================================================remove pop-up

@@ -17,7 +17,7 @@ body#resume navigation a {
     color: var(--neutral);
 }
 
-body#resume navigation .nav-links li.active::after {
+body#resume navigation .nav-links li::after {
     background-color: var(--neutral);
 }
 

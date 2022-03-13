@@ -107,7 +107,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="projects-pagination">
+                        <div class="pagination">
                             <a href="" class="mdi mdi-chevron-left mdi-dark-inactive"></a>
                             <a href="" class="mdi mdi-chevron-right active"></a>
                         </div>

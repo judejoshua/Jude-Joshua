@@ -83,6 +83,7 @@
     .landing {
         padding-top: 136px;
         overflow-x: hidden;
+        background: var(--neutral);
     }
     h1,
     .h1 {
@@ -376,6 +377,20 @@
     a.download {
         padding: 20px 14px;
         gap: 0;
+    }
+    .testimonials-wrapper .row {
+        flex-direction: column;
+        gap: 56px;
+    }
+    .client {
+        width: 100%;
+        gap: 16px;
+    }
+    .testimonials-wrapper {
+        gap: 64px;
+    }
+    .testimonials {
+        padding-bottom: 56px;
     }
 }
 

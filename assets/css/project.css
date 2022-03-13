@@ -224,16 +224,16 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     border-color: var(--background-circles);
 }
 
-.projects-pagination * {
+.pagination * {
     font-size: 32px;
     color: var(--placeholders);
 }
 
-.projects-pagination *.active {
+.pagination *.active {
     color: var(--background-circles);
 }
 
-.projects-pagination {
+.pagination {
     display: flex;
     width: 100%;
     justify-content: center;

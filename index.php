@@ -29,7 +29,7 @@
                             <a class="btn" href="#body">
                                 <div class="btn_bg"></div>
                                 <div class="btn_cont">
-                                    <p id="text"><span>See</span> more</p>
+                                    <p id="text"><span>See</span> how</p>
                                     <i class="mdi mdi-arrow-right"></i>
                                 </div>
                             </a>
