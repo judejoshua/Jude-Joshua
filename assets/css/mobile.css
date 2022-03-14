@@ -326,15 +326,9 @@
     }
     .contact-info {
         width: 100%;
-        /* padding: 12px 20px; */
-        /* background: var(--accent); */
-        /* padding: 0; */
     }
     .contact-info li {
         margin-bottom: 0;
-    }
-    .contact-info a {
-        /* color: var(--secondary); */
     }
     body#case-study-body .landing .case-study-img {
         height: 350px;
