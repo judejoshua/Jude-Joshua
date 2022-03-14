@@ -107,41 +107,42 @@ $(document).ready(function() {
             success: function(response) {
                 let status = response.split('=');
                 $(".preloader").fadeOut("slow");
-                if (status[0] === 'error') {
-                    if (status[1] === 'name') {
-                        $('.error[data-error="name"]').fadeIn(1000).text('You forgot to enter your name...');
-                        $('html,body').animate({
-                            scrollTop: $('#name').offset().top - 200
-                        }, 500);
-                    } else if (status[1] === 'email' && status[2] === undefined) {
-                        $('.error[data-error="email"]').fadeIn(1000).text('You forgot to enter your email...');
-                        $('html,body').animate({
-                            scrollTop: $('#email').offset().top - 200
-                        }, 500);
-                    } else if (status[1] === 'email' && status[2] === 'invalid') {
-                        $('.error[data-error="email"]').fadeIn(1000).text('You eneterd an invalid email...');
-                        $('html,body').animate({
-                            scrollTop: $('#email').offset().top - 200
-                        }, 500);
-                    } else if (status[1] === 'message') {
-                        $('.error[data-error="message"]').fadeIn(1000).text('Heyy! Don\'t forget to enter your message!');
-                        $('html,body').animate({
-                            scrollTop: $('#message').offset().top - 200
-                        }, 500);
-                    } else if (status[1] === 'failed') {
-                        $('.success-message').addClass('show error');
-                        $('.success-message i').removeClass().addClass('mdi mdi-alert-outline');
-                        $('.success-message p').text('Oops! Your message could not be sent. Please try again in a few minutes.');
-                        setTimeout(removePop, 5000);
-                    }
-                } else {
-                    $(form)[0].reset();
-                    $('.success-message').addClass('show');
-                    $('.success-message i').removeClass().addClass('mdi mdi-check');
-                    $('.success-message p').text('Your form message was sent successfullly. Please expect my response in a few minutes.');
+                alert(status)
+                    // if (status[0] === 'error') {
+                    //     if (status[1] === 'name') {
+                    //         $('.error[data-error="name"]').fadeIn(1000).text('You forgot to enter your name...');
+                    //         $('html,body').animate({
+                    //             scrollTop: $('#name').offset().top - 200
+                    //         }, 500);
+                    //     } else if (status[1] === 'email' && status[2] === undefined) {
+                    //         $('.error[data-error="email"]').fadeIn(1000).text('You forgot to enter your email...');
+                    //         $('html,body').animate({
+                    //             scrollTop: $('#email').offset().top - 200
+                    //         }, 500);
+                    //     } else if (status[1] === 'email' && status[2] === 'invalid') {
+                    //         $('.error[data-error="email"]').fadeIn(1000).text('You eneterd an invalid email...');
+                    //         $('html,body').animate({
+                    //             scrollTop: $('#email').offset().top - 200
+                    //         }, 500);
+                    //     } else if (status[1] === 'message') {
+                    //         $('.error[data-error="message"]').fadeIn(1000).text('Heyy! Don\'t forget to enter your message!');
+                    //         $('html,body').animate({
+                    //             scrollTop: $('#message').offset().top - 200
+                    //         }, 500);
+                    //     } else if (status[1] === 'failed') {
+                    //         $('.success-message').addClass('show error');
+                    //         $('.success-message i').removeClass().addClass('mdi mdi-alert-outline');
+                    //         $('.success-message p').text('Oops! Your message could not be sent. Please try again in a few minutes.');
+                    //         setTimeout(removePop, 5000);
+                    //     }
+                    // } else {
+                    //     $(form)[0].reset();
+                    //     $('.success-message').addClass('show');
+                    //     $('.success-message i').removeClass().addClass('mdi mdi-check');
+                    //     $('.success-message p').text('Your form message was sent successfullly. Please expect my response in a few minutes.');
 
-                    setTimeout(removePop, 5000);
-                }
+                //     setTimeout(removePop, 5000);
+                // }
             },
             error: function(jqXHR, exception) {
                 var msg = '';
