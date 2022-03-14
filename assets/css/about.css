@@ -25,7 +25,8 @@
 }
 
 .client {
-    width: 372px;
+    /* width: 372px; */
+    width: 30%;
     display: inline-flex;
     flex-direction: column;
     gap: 24px;
@@ -35,8 +36,9 @@
 .testimonials-wrapper .row {
     justify-content: space-between;
     display: inline-flex;
-    width: calc(333px * 8);
-    gap: 0;
+    /* width: calc(333px * 8); */
+    width: 100%;
+    row-gap: 80px;
 }
 
 .client-review .p1 {
