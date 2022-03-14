@@ -7,6 +7,8 @@
     padding-bottom: 96px;
     background-size: contain;
     background-repeat: no-repeat;
+    padding-right: 0;
+    /* padding-left: 0; */
 }
 
 .testimonials-wrapper {
@@ -14,17 +16,27 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    overflow-y: scroll;
+    padding: 24px 128px 48px 0;
+}
+
+.testimonials-wrapper::-webkit-scrollbar {
+    height: 4px;
 }
 
 .client {
-    width: 30%;
-    display: flex;
+    width: 372px;
+    display: inline-flex;
     flex-direction: column;
     gap: 24px;
+    height: 100%;
 }
 
 .testimonials-wrapper .row {
     justify-content: space-between;
+    display: inline-flex;
+    width: calc(333px * 8);
+    gap: 0;
 }
 
 .client-review .p1 {
@@ -77,6 +89,7 @@
 
 .testimonials .title-text {
     align-items: center;
+    margin-right: 128px;
 }
 
 .about-me-card-holder {
@@ -91,7 +104,8 @@
     height: 360px;
     background: url('/assets/img/about-me-1.png');
     background-color: var(--secondary);
-    background-position: bottom;
+    background-position-x: right;
+    background-position-y: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--neutral);
@@ -112,8 +126,9 @@
     background-color: var(--secondary);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position-y: top;
     margin-top: 32px;
+    background-position-x: right;
 }
 
 .about-cards:nth-child(3) {
@@ -121,13 +136,14 @@
     background-color: var(--secondary);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position-x: left;
+    background-position-y: top;
 }
 
 .experience_card {
     display: flex;
     flex-direction: column;
-    width: 44%;
+    width: 48%;
 }
 
 .experience_card.left {
@@ -150,11 +166,12 @@
     gap: 32px;
     display: flex;
     flex-direction: column;
-    margin-top: 48px;
+    margin-top: 16px;
     width: 100%;
 }
 
 #xp {
+    padding-top: 64px;
     padding-bottom: 128px;
     display: flex;
     align-items: center;

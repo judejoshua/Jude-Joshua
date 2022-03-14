@@ -239,3 +239,40 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     justify-content: center;
     align-items: center;
 }
+
+.testimonials .pagination * {
+    color: var(--placeholders);
+    background: rgb(255 255 255 / 60%);
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(32px);
+    -moz-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);
+}
+
+.testimonials .pagination *:hover,
+.testimonials .pagination *.active:hover {
+    background: var(--background-circles);
+}
+
+.testimonials .pagination *.active {
+    color: var(--neutral);
+    background: rgb(144 144 144 / 64%);
+    -webkit-backdrop-filter: blur(32px);
+    -moz-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);
+}
+
+.testimonials .pagination {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 56%;
+    z-index: 100;
+    padding: 0 20px;
+}

@@ -134,6 +134,8 @@
         padding-right: 32px;
         padding-top: 112px;
         gap: 32px !important;
+        background-size: cover;
+        background-position-x: -700px;
     }
     h2,
     .h2 {
@@ -379,18 +381,94 @@
         gap: 0;
     }
     .testimonials-wrapper .row {
+        /* flex-direction: row;
+        gap: 0;
+        width: calc(200px * 8); */
         flex-direction: column;
-        gap: 56px;
+        gap: 48px;
+        width: 100%;
+    }
+    .testimonials .title-text {
+        padding-right: 32px;
+        margin-right: 0;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .testimonials .title-text p {
+        width: 225px;
     }
     .client {
+        /* width: 240px; */
         width: 100%;
         gap: 16px;
     }
     .testimonials-wrapper {
         gap: 64px;
+        padding-right: 32px;
+        padding-bottom: 24px;
     }
     .testimonials {
         padding-bottom: 56px;
+        background-size: cover;
+        padding-top: 72px;
+        background-position-x: -792px;
+        background-position-y: center;
+    }
+    .about-me-card-holder {
+        flex-direction: column;
+    }
+    .about-cards {
+        width: 100%;
+        height: 296px;
+    }
+    .about-cards:nth-child(2) {
+        margin-top: 0;
+    }
+    #CV img {
+        width: 64px;
+    }
+    #CV {
+        gap: 16px !important;
+        padding: 80px 32px;
+    }
+    #CV .btn_cont #text,
+    #CV .btn_cont i {
+        font-size: 24px;
+    }
+    #CV .btn.mdn .btn_bg {
+        width: 80px;
+        height: 80px;
+    }
+    #CV .btn.mdn .btn_cont {
+        left: 21px;
+        top: 23px;
+    }
+    #CV .btn.mdn:hover .btn_bg {
+        width: 100%;
+    }
+    #CV .btn.mdn {
+        width: 264px;
+        height: 80px;
+    }
+    #xp {
+        background-size: cover;
+        background-position-x: -747px;
+        background-position-y: -45px;
+        padding-bottom: 64px;
+    }
+    .experience_card {
+        width: 80%;
+        text-align: center !important;
+    }
+    .experience-body .row {
+        justify-content: center !important;
+    }
+    .xp-vector {
+        opacity: 0.2;
+        height: 1223px;
+    }
+    .experience-body {
+        gap: 47px;
     }
 }
 

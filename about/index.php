@@ -194,8 +194,7 @@
                 </section>
                 <section class="testimonials">
                     <div class="title-text">
-                        <p class="h4">I know you must have made an opinion of me already, but;</p>
-                        <h2>here’s what others say about me.</h2>
+                        <h2><span class="h4">I know you must have made an opinion of me already, but; </span>here’s what others say about me.</h2>
                     </div>
                     <div class="testimonials-wrapper">
                         <div class="row">
@@ -231,8 +230,6 @@
                                     <p class="p5">Founder, Thrive.NIG</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="client">
                                 <div class="client-review">
                                     <p class="p1">“</p>
@@ -267,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pagination">
+                    <div class="pagination hidden">
                         <a href="" class="mdi mdi-chevron-left mdi-dark-inactive"></a>
                         <a href="" class="mdi mdi-chevron-right active"></a>
                     </div>
