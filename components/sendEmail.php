@@ -11,22 +11,23 @@ $mail = new PHPMailer(true);
 switch($_POST) {
     case isset($_POST['name']):
         switch (true) {
-            // case empty($_POST['name']):
-            //     echo 'error=name';
-            //     break;
-            // case empty($_POST['email']):
-            //     echo 'error=email';
-            //     break;
-            // case (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)):
-            //     echo 'error=email=invalid';
-            //     break;
-            // case empty($_POST['message']):
-            //     echo 'error=message';
-            //     break;
+            case empty($_POST['name']):
+                echo 'error=name';
+                break;
+            case empty($_POST['email']):
+                echo 'error=email';
+                break;
+            case (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)):
+                echo 'error=email=invalid';
+                break;
+            case empty($_POST['message']):
+                echo 'error=message';
+                break;
             default:
-                // $name = htmlspecialchars($_POST['name']);
-                // $email = htmlspecialchars($_POST['email']);
-                // $msg = htmlspecialchars($_POST['message']);
+                $name = htmlspecialchars($_POST['name']);
+                $firstname = explode(" ",$name);
+                $email = htmlspecialchars($_POST['email']);
+                $msg = htmlspecialchars($_POST['message']);
  
                 //Enable SMTP debugging.
                 $mail->SMTPDebug = 3;                               
@@ -37,65 +38,45 @@ switch($_POST) {
                 //Set this to true if SMTP host requires authentication to send email
                 $mail->SMTPAuth = true;                          
                 //Provide username and password     
-                $mail->Username = "_mainaccount@judejoshua.me";         
+                $mail->Username = "hello@judejoshua.me";//store this in the database    
                 $mail->Password = "Felenous12#";//store this in the database                    
                 //If SMTP requires TLS encryption then set it
                 $mail->SMTPSecure = "tls";
                 //Set TCP port to connect to
-                $mail->Port = 465;                                   
+                $mail->Port = 26;                                   
 
                 $mail->From = "hello@judejoshua.me";
                 $mail->FromName = "Jude Joshua";
 
-                $mail->addAddress("officialuby@gmail.com", "Jude test");
+                $mail->addAddress($email, $name);
 
                 $mail->isHTML(true);
 
-                $mail->Subject = "Subject Text";
-                $mail->Body = "<i>Mail body in HTML</i>";
-                $mail->AltBody = "This is the plain text version of the email content";
-
+                $mail->Subject = "I HAVE RECEIVED YOUR MESSAGE";
+                $mail->Body = "<p>Hi ".$firstname.",</p>
+                     <p>You reached out to me via my website contact form.<br/>This is an automated response to let you know that I have recieved your message and I will reply you soon.<br/>Don't worry, I promise I won't take long.</p>
+                     <p>Warm regards,<br/>Jude Joshua.</p>";
                 try {
                     $mail->send();
-                    echo "Message has been sent successfully";
+                    
+                    $mail->ClearAddresses();  // each AddAddress add to list
+                    $mail->ClearCCs();
+                    $mail->ClearBCCs();
+                    
+                    $mail->addAddress("hello@judejoshua.me");
+                    $mail->AddCC("officialuby@gmail.com");
+                    $mail->Subject = "New Contact Form Message";
+                    $mail->Body = "<p>You have a new message from <i>".$name."</i>.</p>
+                     <p><b>Their email is: </b><br/><i>".$email."</i></p>
+                     <p><b>Here is their message: </b><br/><i>".$msg."</i></p>";
+                     $mail->send();
+                    echo 'success=sent';
+                    // echo "Message has been sent successfully";
                 } catch (Exception $e) {
-                    echo "Mailer Error: " . $mail->ErrorInfo;
+                    echo 'error=failed';
+                    // echo "Mailer Error: " . $mail->ErrorInfo;
                 }
-
-            
-                // // Set up parameters
-                // $to = "hello@judejoshua.me, officialuby@gmail.com";
-                // $subject = "I HAVE AN ENQUIRY TO YOUR WEBSITE";
-                // $message = "<p>Hello Jude,</p>
-                // <p>".$msg."</p>
-                // <p>Kind regards,<br/>".$name."</p>
-                // ";
-                // $from = $email;
-                // $headers = "MIME-Version: 1.0" . "\n";
-                // $headers .= "Content-type:text/html;charset=iso-8859-1" . "\n";
-                // $headers .= "From: $from" . "\n";
-       
-                // // Inform the user
-                // if(mail($to, $subject, $message, $headers)){
-                //     $to = $email;
-                //     $subject = "I HAVE RECIEVED YOUR MESSAGE";
-                //     $message = "<p>Hello ".$name.",</p>
-                //     <p>So nice for you to reach out. I promise I won't take too long and will reply you soon.</p>
-                //     <p>Kind regards,<br/>Jude Joshua.</p>
-                //     ";
-                //     $from = "hello@judejoshua.me";
-                //     $headers = "MIME-Version: 1.0" . "\n";
-                //     $headers .= "Content-type:text/html;charset=iso-8859-1" . "\n";
-                //     $headers .= "Jude Joshua < $from >" . "\n";
-                  
-                //   	mail($to,$subject,$message,$headers);
-                //     echo 'success=sent';
-                // }else{
-                //     echo 'error=failed';
-                // }
             break;
         }
-    break;
-
-   
+    break;  
 }
