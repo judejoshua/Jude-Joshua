@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    localStorage.clear();
+    // localStorage.clear();
 
     //----------------------------------------------practice links on start page
     $('.praticar_links').on('click', function(e) {
@@ -100,9 +100,6 @@ $(document).ready(function() {
 
     startTimer();
 
-    function pauseTimer() {
-
-    }
 
     let next_url = parseInt($(".secs p span").text()); //---------------------------------------------------------get the current position number
     localStorage.setItem('resetTimer', $('.secs .timekeep').text()); //-----------------------------------------------get the time for each position;
