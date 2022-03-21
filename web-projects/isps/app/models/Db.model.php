@@ -6,7 +6,7 @@ class Db
     private $host = 'localhost';
     private $usernm = 'judegniz_Jude';
     private $password = 'Felenous12#';
-    private $dbName = 'isps';
+    private $dbName = 'judegniz_isps';
 
 
     protected function connect(){//try database connection
