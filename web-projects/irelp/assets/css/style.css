@@ -211,7 +211,6 @@ a.praticar_links {
     color: #b154a2;
     display: inline-block;
     text-align: center;
-    cursor: pointer;
 }
 
 .btn-tertiary {
@@ -512,7 +511,6 @@ a.praticar_links {
     border-radius: 32px;
     background: #eedaeb;
     padding: 4px;
-    cursor: pointer;
 }
 
 .controls {
