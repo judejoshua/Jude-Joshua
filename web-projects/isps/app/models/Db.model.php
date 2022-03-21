@@ -4,8 +4,8 @@ class Db
 {
     //Connect to the database
     private $host = 'localhost';
-    private $usernm = 'firstmf1_Ubyjude';
-    private $password = '6yY]?*_Nem{p';
+    private $usernm = 'judegniz_Jude';
+    private $password = 'Felenous12#';
     private $dbName = 'isps';
 
 
