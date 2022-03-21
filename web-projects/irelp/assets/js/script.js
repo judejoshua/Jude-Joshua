@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // localStorage.clear();
+    localStorage.clear();
 
     //----------------------------------------------practice links on start page
     $('.praticar_links').on('click', function(e) {
@@ -42,14 +42,6 @@ $(document).ready(function() {
     song2.appendChild(music);
     song2.loop = true;
 
-    //-----------------------------------------------------------------check if music is off and display corresponding button
-    if (localStorage.getItem('music') == 'off') {
-        $(".sound-controls img:not(#sound-muted)").hide();
-        $(".sound-controls #sound-muted").show();
-    } else {
-        $(".sound-controls img:not(#sound-muted)").show();
-        $(".sound-controls #sound-muted").hide();
-    }
 
     //-----------------------------------------------------------------turn the music and sound on/off
     $(".sound-controls #sound-active").on('click', function() {
@@ -66,14 +58,19 @@ $(document).ready(function() {
         $(".sound-controls #sound-active").show();
     })
 
-    if (localStorage.getItem('music') == 'on') {
-        song2.volume = 1.0;
-        $(".sound-controls #sound-muted").hide();
-        $(".sound-controls #sound-active").show();
-    } else {
+    //-----------------------------------------------------------------check if music is off and display corresponding button
+    if (localStorage.getItem("music") !== null && localStorage.getItem('music') == 'off') {
         song2.volume = 0.0;
         $(".sound-controls #sound-active").hide();
         $(".sound-controls #sound-muted").show();
+        // $(".sound-controls img:not(#sound-muted)").hide();
+        // $(".sound-controls #sound-muted").show();
+    } else {
+        song2.volume = 1.0;
+        $(".sound-controls #sound-muted").hide();
+        $(".sound-controls #sound-active").show();
+        // $(".sound-controls img:not(#sound-muted)").show();
+        // $(".sound-controls #sound-muted").hide();
     }
 
     //------------------------------------------------------------------------------------------------------------start position countdown
@@ -81,16 +78,16 @@ $(document).ready(function() {
         $('.play-pause').show('fast');
         $('#play').hide('fast');
         $('.close').show('fast');
-        if (localStorage.getItem('music') == 'on') {
+        if (localStorage.getItem("music") !== null && localStorage.getItem('music') == 'off') {
+            song2.volume = 0.0;
+            song1.play();
+            song2.play();
+        } else {
             song2.volume = 1.0;
             song1.play();
             setTimeout(function() {
                 song2.play();
             }, 1000);
-        } else {
-            song2.volume = 0.0;
-            song1.play();
-            song2.play();
         }
         $(this).hide('fast');
         setTimeout(function() {
@@ -159,11 +156,11 @@ $(document).ready(function() {
     $(".close").on('click', function(e) {
         e.preventDefault();
         $('.modal').css('top', '0');
-    })
+    });
     $(".close-return").on('click', function(e) {
         e.preventDefault();
         $('.modal').css('top', '110%');
-    })
+    });
 
 
     function checkSecond(sec) {
