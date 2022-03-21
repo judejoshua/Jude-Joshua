@@ -25,7 +25,7 @@ switch($_POST) {
                 break;
             default:
                 $name = htmlspecialchars($_POST['name']);
-                $firstname = explode(" ",$name);
+                $firstname = explode(" ",$name)[0];
                 $email = htmlspecialchars($_POST['email']);
                 $msg = htmlspecialchars($_POST['message']);
  

@@ -1,0 +1,94 @@
+#top-nav {
+    background-color: var(--neutral);
+    color: var(--primary);
+    height: 80px;
+}
+
+#logo {
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 8px;
+}
+
+#brand-name {
+    font-weight: 700;
+}
+
+.top-link {
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary);
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -10%;
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+#nav-email {
+    font-size: 13px;
+}
+
+#side-nav {
+    background-color: var(--gray-600);
+    height: 100vh;
+    width: 20%;
+    top: 0;
+    left: 0;
+    padding: 48px 32px 48px 0;
+}
+
+.side-link {
+    border-radius: 0 32px 32px 0;
+    font-weight: 700;
+    margin: 0;
+    padding: 18px 20px 18px 48px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, border 0.4s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--gray-300);
+    border-left: 0px;
+}
+
+.side-link i {
+    font-size: 20px;
+    margin-right: 16px;
+    color: inherit;
+}
+
+.side-link:hover {
+    background-color: rgb(215, 252, 220);
+    color: var(--primary);
+    border-left: 6px solid;
+}
+
+.side-link:focus {
+    background-color: var(--primary);
+    color: var(--neutral);
+}
+
+.side-link.active {
+    color: var(--primary);
+    background-color: var(--neutral);
+    border-left: 6px solid;
+    padding-left: 38px;
+}
+
+.nav-pills {
+    /* margin-top: 40px; */
+    gap: 8px;
+}
