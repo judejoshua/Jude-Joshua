@@ -3,6 +3,7 @@ RewriteEngine On
 
 RewriteBase !^/public/
 
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
@@ -10,6 +11,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_URI} !^/robots.txt$
 #RewriteCond %{REQUEST_URI} !^/includes/[^/]+\.*$
 
-RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ [NC]
 
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
