@@ -17,7 +17,14 @@
 </div>
 <div class="results-section">
     <div class="results-section-title">
-        <h2>If you're satisfied with what you've seen and think that I am a good fit for your project, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</h2>
+        <?=explode('/', $url)[3] == 'contact' ? 
+            '
+                <h2>If you\'re not fully convinced of my strength, why not have a <a href="/portfolio">look</a> at the projects that I have helped to design and build in the past.</h2>
+            ' :
+            '
+                <h2>If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</h2>
+            ' 
+        ?>
     </div>
     <!-- <a class="btn lng" href="/contact">
         <div class="btn_bg"></div>

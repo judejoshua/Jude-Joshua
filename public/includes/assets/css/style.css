@@ -57,6 +57,7 @@ body {
     color: var(--secondary);
     min-height: 100%;
     font-family: 'Roboto', sans-serif;
+    scrollbar-width: none;
 }
 
 body {

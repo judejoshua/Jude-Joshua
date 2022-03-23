@@ -4,8 +4,9 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.pdf|\.jpg|\.gif|\.woff2|\.woff|\.ttf|\.svg|\.eot|robots\.txt)$ [NC]
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
 
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
 

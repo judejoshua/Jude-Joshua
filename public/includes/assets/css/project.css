@@ -8,7 +8,7 @@
 
 body:not(#home-landing) #case-study {
     padding-top: 48px;
-    padding-bottom: 64px;
+    padding-bottom: 96px;
 }
 
 .case-study-title-top {
@@ -33,7 +33,7 @@ body:not(#home-landing) #case-study {
 }
 
 .project {
-    width: 527px;
+    width: 520px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -41,7 +41,7 @@ body:not(#home-landing) #case-study {
 
 .project:hover .caption {
     background: var(--placeholders);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 70%, transparent 100%);
+    background: linear-gradient(0deg, rgb(29, 29, 29) 70%, transparent 100%);
     color: var(--neutral);
     height: 35%;
     -webkit-backdrop-filter: blur(16px);
@@ -72,7 +72,7 @@ body:not(#home-landing) #case-study {
     transition: 0.6s ease-in-out;
     position: absolute;
     bottom: 0;
-    background: linear-gradient(0deg, rgb(0, 0, 0) 40%, transparent);
+    background: linear-gradient(0deg, rgb(29, 29, 29) 40%, transparent);
     -webkit-backdrop-filter: blur(0px);
     -moz-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);

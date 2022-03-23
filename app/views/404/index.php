@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta http-equiv="cache-control" content="no-cache" />
         <meta name="author" content="Jude Joshua" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="no-index, no-follow" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="language" content="English">
         <meta name="revisit-after" content="1 days">
