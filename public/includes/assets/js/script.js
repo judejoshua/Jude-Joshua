@@ -98,7 +98,7 @@ $(document).ready(function() {
         $('.preloader').addClass('recha');
         $(".preloader").fadeIn("slow");
 
-        let link = '/config/sendEmail.php';
+        let link = '/public/config/sendEmail.php';
         let form = $(this).closest('form')[0];
         let data = new FormData(form);
 
