@@ -188,7 +188,7 @@
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text" class="h1"><span>View</span> my Résumé</p>
-                            <i class="mdi mdi-arrow-right"></i>
+                            <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 </section>
@@ -265,8 +265,8 @@
                         </div>
                     </div>
                     <div class="pagination hidden">
-                        <a href="" class="mdi mdi-chevron-left mdi-dark-inactive"></a>
-                        <a href="" class="mdi mdi-chevron-right active"></a>
+                        <a href="" class="las la-angle-left mdi-dark-inactive"></a>
+                        <a href="" class="las la-angle-right active"></a>
                     </div>
                 </section>
             </article>

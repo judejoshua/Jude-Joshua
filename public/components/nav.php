@@ -32,7 +32,7 @@
 </navigation>
 <div class="mobile-nav">
     <div class="mobile-nav-opener close">
-        <i class="mdi mdi-arrow-right"></i>
+        <i class="las la-arrow-right"></i>
     </div>
     <ul class="nav-links">
         <li class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">

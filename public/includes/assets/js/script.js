@@ -135,14 +135,14 @@ $(document).ready(function() {
                         }, 500);
                     } else if (status[1] === 'failed') {
                         $('.success-message').addClass('show error');
-                        $('.success-message i').removeClass().addClass('mdi mdi-alert-outline');
+                        $('.success-message i').removeClass().addClass('las la-alert-outline');
                         $('.success-message p').text('Oops! Your message could not be sent. Please try again in a few minutes.');
                         setTimeout(removePop, 5000);
                     }
                 } else {
                     $(form)[0].reset();
                     $('.success-message').addClass('show');
-                    $('.success-message i').removeClass().addClass('mdi mdi-check');
+                    $('.success-message i').removeClass().addClass('las la-check');
                     $('.success-message p').text('Your form message was sent successfullly. Please expect my response in a few minutes.');
 
                     setTimeout(removePop, 5000);
@@ -166,7 +166,7 @@ $(document).ready(function() {
                     msg = 'Uncaught Error.\n' + jqXHR.responseText;
                 }
                 $('.success-message').addClass('show error');
-                $('.success-message i').removeClass().addClass('mdi mdi-alert-outline');
+                $('.success-message i').removeClass().addClass('las la-alert-outline');
                 $('.success-message p').text(msg);
                 setTimeout(removePop, 5000);
             },

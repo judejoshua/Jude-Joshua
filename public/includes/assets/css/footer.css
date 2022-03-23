@@ -1,5 +1,5 @@
 .results-section {
-    padding: 160px 128px 64px;
+    padding: 140px 128px 140px;
     background: url(../img/results-background.png);
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@ body:not(#home-landing) .results-section {
 }
 
 .results-section-title {
-    width: 442px;
+    width: 601px;
     text-align: center;
     color: var(--ink);
 }
@@ -50,7 +50,7 @@ footer {
 .footer-top a:not(.to-top) {
     flex-grow: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
@@ -76,5 +76,11 @@ footer {
 }
 
 .to-top i {
-    font-size: 24px;
+    font-size: 19px;
+    top: 2px;
+}
+
+span.copyright {
+    font-size: 12px;
+    color: var(--ink);
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?=$title?>Jude Joshua || Product designer with background in web design & development</title>
+        <title>Error 404</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -32,16 +32,30 @@
         <link rel="stylesheet" href="/includes/assets/css/style.css">
         <link rel="stylesheet" href="/includes/assets/css/line-awesome.min.css">
 
-        <script src="/includes/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="/includes/assets/js/script.js"></script>
-        <script>
-            $(window).on("load", function() {
-                // Animate loader off screen
-                $(".preloader").fadeOut("slow");
-                $("body").css("overflow-y", "scroll");
-            });
-        </script>
+    </head>
 
-        <?php
-            include 'nav.php';
-        ?>
+    <body id="home-landing">
+        
+        <div class="wrapper" id="top">
+            <article id="body">
+                <section class="error">
+                    <div class="results-error-title">
+                        <h1>4<i class="las la-ban"></i>3</h1>
+                        <p>You're not allowed in here!</p>
+                    </div>
+                    <div class="results-error-description">
+                        <p class="p5">Your visitor's badge does not have the access to view this.</br>Try this links instead:</p>
+                        <div class="return-links">
+                            <a href="/">Home</a>
+                            <a href="/about">About Me</a>
+                            <a href="/portfolio">Past works</a>
+                            <a href="/cv">CV</a>
+                            <a href="/contact">Send a message</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </body>
+
+    </html>

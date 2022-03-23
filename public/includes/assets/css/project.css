@@ -41,7 +41,12 @@ body:not(#home-landing) #case-study {
 
 .project:hover .caption {
     background: var(--placeholders);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 70%, transparent 100%);
     color: var(--neutral);
+    height: 35%;
+    -webkit-backdrop-filter: blur(16px);
+    -moz-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
 }
 
 .project img {
@@ -59,15 +64,23 @@ body:not(#home-landing) #case-study {
 .caption {
     display: flex;
     width: 100%;
+    height: 114px;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 16px 24px;
-    color: var(--secondary);
-    transition: 0.6s;
+    padding: 24px 20px 24px;
+    color: var(--neutral);
+    transition: 0.6s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 40%, transparent);
+    -webkit-backdrop-filter: blur(0px);
+    -moz-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
 }
 
 .caption i {
     font-size: 24px;
+    transform: rotate(-45deg);
 }
 
 .caption-text {

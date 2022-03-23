@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?=$title?>Jude Joshua || Product designer with background in web design & development</title>
+        <title>Error 500</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -32,16 +32,23 @@
         <link rel="stylesheet" href="/includes/assets/css/style.css">
         <link rel="stylesheet" href="/includes/assets/css/line-awesome.min.css">
 
-        <script src="/includes/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="/includes/assets/js/script.js"></script>
-        <script>
-            $(window).on("load", function() {
-                // Animate loader off screen
-                $(".preloader").fadeOut("slow");
-                $("body").css("overflow-y", "scroll");
-            });
-        </script>
+    </head>
 
-        <?php
-            include 'nav.php';
-        ?>
+    <body id="home-landing">
+        
+        <div class="wrapper" id="top">
+            <article id="body">
+                <section class="error">
+                    <div class="results-error-title">
+                        <h1>5<i class="lar la-grin-beam-sweat"></i><i class="las la-grin-beam-sweat"></i></h1>
+                        <p>Internal Server Error</p>
+                    </div>
+                    <div class="results-error-description">
+                        <p class="p5">Don't worry, it's not your fault. I was working and broke something.</br>It will be fixed shortly.</p>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </body>
+
+    </html>

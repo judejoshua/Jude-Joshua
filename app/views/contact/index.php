@@ -31,11 +31,11 @@
                     <!-- <ul>
                         <li>
                             <a href="#" class="p4">
-                                <span class="mdi mdi-18px mdi-email"></span>hello@judejoshua.me</a>
+                                <span class="las la-18px mdi-email"></span>hello@judejoshua.me</a>
                         </li>
                         <li>
                             <a href="#" class="p4">
-                                <span class="mdi mdi-18px mdi-phone"></span>+234-904-113-4926</a>
+                                <span class="las la-18px mdi-phone"></span>+234-904-113-4926</a>
                         </li>
                     </ul> -->
                 </div>
@@ -99,14 +99,14 @@
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>Send</span> now</p>
-                            <i class="mdi mdi-arrow-right"></i>
+                            <i class="las la-arrow-right"></i>
                         </div>
                     </button>
                 </form>
             </article>
         </div>
         <div class="success-message pop-up">
-            <i class="mdi mdi-check"></i>
+            <i class="las la-check"></i>
             <p class="p5">Your form message was sent successfullly. Please expect my response in the next few minutes.</p>
         </div>
 

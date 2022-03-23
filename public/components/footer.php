@@ -5,7 +5,7 @@
         <li><a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">See my past works</a></li>
         <li><a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">View my CV</a></li>
         <li><a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Send me a message</a></li>
-        <li><a>Other links<i class="mdi mdi-chevron-right"></i></a>
+        <li><a>Other links<i class="las la-angle-right"></i></a>
             <ul id="inner-down">
                 <li><a href="#">Behance</a></li>
                 <li><a href="#">Dribbble</a></li>
@@ -17,13 +17,13 @@
 </div>
 <div class="results-section">
     <div class="results-section-title">
-        <h2>If you're satisfied with what you've seen and think that I am a good fit, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</h2>
+        <h2>If you're satisfied with what you've seen and think that I am a good fit for your project, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</h2>
     </div>
     <!-- <a class="btn lng" href="/contact">
         <div class="btn_bg"></div>
         <div class="btn_cont">
             <p id="text"><span>Send</span> me a message</p>
-            <i class="mdi mdi-arrow-right"></i>
+            <i class="las la-arrow-right"></i>
         </div>
     </a> -->
 </div>
@@ -36,8 +36,8 @@
             <a href="" target="_blank" class="Twitter">Twitter</a>
         </div>
         <a class="to-top" href="#top">
-            <h4>TO TOP</h4>
-            <i class="mdi mdi-chevron-up"></i>
+            <p class="h4">TO TOP</p>
+            <i class="las la-angle-up"></i>
         </a>
     </div>
     <span class="copyright">(c) Jude Joshua, 2022. All rights reserved.</span>

@@ -30,7 +30,7 @@
                                 <div class="btn_bg"></div>
                                 <div class="btn_cont">
                                     <p id="text"><span>See</span> how</p>
-                                    <i class="mdi mdi-arrow-right"></i>
+                                    <i class="las la-arrow-right"></i>
                                 </div>
                             </a>
                         </div>
@@ -38,7 +38,7 @@
                     <div class="landing-image">
                         <img src="/includes/assets/img/landing-img.png" alt="logo">
                         <a href="/cv" class="services">
-                            <p class="p5">View my Résumé</p><i class="mdi mdi-arrow-right"></i></a>
+                            <p class="p5">View my Résumé</p><i class="las la-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="scroll-down">
@@ -67,7 +67,7 @@
                                                 <h3>Online men’s clothing store</h3>
                                                 <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -79,7 +79,7 @@
                                                 <h3>App design for music player</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -91,7 +91,7 @@
                                                 <h3>App design for messaging platform</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -103,7 +103,7 @@
                                                 <h3>App design for online checkout</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -114,7 +114,7 @@
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>See</span> more work</p>
-                            <i class="mdi mdi-arrow-right"></i>
+                            <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 </section>
@@ -191,7 +191,7 @@
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>See</span> my past work</p>
-                            <i class="mdi mdi-arrow-right"></i>
+                            <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 </section>
@@ -207,7 +207,7 @@
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>View</span> my Résumé</p>
-                            <i class="mdi mdi-arrow-right"></i>
+                            <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 </section>

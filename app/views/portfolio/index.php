@@ -41,7 +41,7 @@
                                                 <h3>Online men’s clothing store</h3>
                                                 <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -53,7 +53,7 @@
                                                 <h3>App design for music player</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -65,7 +65,7 @@
                                                 <h3>App design for messaging platform</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -77,7 +77,7 @@
                                                 <h3>App design for online checkout</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -89,7 +89,7 @@
                                                 <h3>Online men’s clothing store</h3>
                                                 <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
@@ -101,15 +101,15 @@
                                                 <h3>App design for music player</h3>
                                                 <span id="tags" class="p4">UI/UX, Prototyping</span>
                                             </div>
-                                            <i class="mdi mdi-arrow-top-right"></i>
+                                            <i class="las la-arrow-right"></i>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="pagination">
-                            <a href="" class="mdi mdi-chevron-left mdi-dark-inactive"></a>
-                            <a href="" class="mdi mdi-chevron-right active"></a>
+                            <a href="" class="las la-angle-left mdi-dark-inactive"></a>
+                            <a href="" class="las la-angle-right active"></a>
                         </div>
                     </div>
                 </section>

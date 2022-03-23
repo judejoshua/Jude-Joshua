@@ -18,7 +18,7 @@
                 <div class="text-divider">
                     <h1>Résumé</h1>
                 </div>
-                <a href="/includes/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf" class="download p5 dwnld-btn"><i class="mdi mdi-cloud-download"></i>Download</a>
+                <a href="/includes/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf" class="download p5 dwnld-btn"><i class="las la-cloud-download"></i>Download</a>
             </header>
             <article id="body">
                 <section id="resume-begins">
@@ -295,14 +295,14 @@
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>Download</span> as a document</p>
-                            <i class="mdi mdi-arrow-right"></i>
+                            <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 </section>
             </article>
         </div>
         <div class="success-message pop-up">
-            <i class="mdi mdi-check"></i>
+            <i class="las la-check"></i>
             <p class="p5">Your download will begin shortly.</p>
         </div>
 

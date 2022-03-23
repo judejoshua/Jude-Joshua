@@ -75,7 +75,6 @@
 
 .btn_cont #text,
 .btn_cont i {
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
@@ -84,6 +83,10 @@
     color: var(--secondary);
     transition: 1.5s;
     word-spacing: 1px;
+}
+
+btn_cont #text {
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn_cont #text span {

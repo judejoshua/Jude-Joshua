@@ -18,7 +18,7 @@
                 <div class="case-study-title">
                     <div class="case-study-title-top">
                         <a href="/portfolio" class="return-button">
-                            <i class="mdi mdi-arrow-left "></i>
+                            <i class="las la-arrow-left "></i>
                             <h5>Return to Past Works Page</h5>
                         </a>
                         <div class="title-text">
@@ -31,7 +31,7 @@
                             <span class="p5 " id="tag-single">Web Design</span>
                         </div>
                         <!-- <a href="/portfolio" class="return-button ">
-                            <i class="mdi mdi-arrow-left "></i>
+                            <i class="las la-arrow-left "></i>
                             <h5>Return to Past Works Page</h5>
                         </a> -->
                     </div>
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                     <a href="/portfolio" class="return-button">
-                        <i class="mdi mdi-arrow-left "></i>
+                        <i class="las la-arrow-left "></i>
                         <h5>Return to Past Works Page</h5>
                     </a>
                 </div>
