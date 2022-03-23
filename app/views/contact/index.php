@@ -1,6 +1,6 @@
 <?php
     $title = 'Send a message || ';
-    include './components/header.php';
+    include './public/components/header.php';
 ?>
     </head>
 
@@ -111,7 +111,7 @@
         </div>
 
         <?php
-            include './components/footer.php';
+            include './public/components/footer.php';
         ?>
     </body>
 

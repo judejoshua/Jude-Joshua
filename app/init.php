@@ -2,7 +2,7 @@
 
 spl_autoload_register(
     function($cFile){
-        $path = "../app/core/";
+        $path = "./app/core/";
         $extension = ".php";
         $fullPath = $path . $cFile . $extension;
         if(!file_exists($fullPath)){
@@ -17,13 +17,13 @@ spl_autoload_register(
 
 spl_autoload_register(
     function($contrFile){
-        $path = "../app/controllers/";
+        $path = "./app/controllers/";
         $extension = ".contr.php";
         $fullPath = $path . $contrFile . $extension;
         if(!file_exists($fullPath)){
             //echo "The requested file - " . $contrFile . ", was not found!".$fullPath;
             //return false;
-            $classPath = "../app/models/";
+            $classPath = "./app/models/";
             $classExtension = ".model.php";
             $fullClassPath = $classPath . $contrFile . $classExtension;
             if(!file_exists($fullClassPath)){

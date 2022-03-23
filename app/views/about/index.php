@@ -1,6 +1,6 @@
 <?php
     $title = 'About || ';
-    include './components/header.php';
+    include './public/components/header.php';
 ?>
     </head>
 
@@ -179,11 +179,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="xp-vector"><img src="/includes/assets/img/Vector.png"></div>
+                        <div class="xp-vector"><img src="/public/includes/assets/img/Vector.png"></div>
                     </div>
                 </section>
                 <section id="CV">
-                    <img src="/includes/assets/img/resume-icon.png" />
+                    <img src="/public/includes/assets/img/resume-icon.png" />
                     <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
@@ -272,7 +272,7 @@
             </article>
         </div>
         <?php
-            include './components/footer.php';
+            include './public/components/footer.php';
         ?>
     </body>
 

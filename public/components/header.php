@@ -24,16 +24,16 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/includes/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/includes/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/includes/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/includes/assets/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/includes/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/includes/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/includes/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/public/includes/assets/favicon/site.webmanifest">
 
-        <link rel="stylesheet" href="/includes/assets/css/style.css">
-        <link rel="stylesheet" href="/includes/assets/css/line-awesome.min.css">
+        <link rel="stylesheet" href="/public/includes/assets/css/style.css">
+        <link rel="stylesheet" href="/public/includes/assets/css/line-awesome.min.css">
 
-        <script src="/includes/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="/includes/assets/js/script.js"></script>
+        <script src="/public/includes/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="/public/includes/assets/js/script.js"></script>
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen

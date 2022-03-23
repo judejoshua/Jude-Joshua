@@ -1,6 +1,6 @@
 <?php
     $title = '';
-    include './components/header.php';
+    include './public/components/header.php';
 ?>
     </head>
 
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="landing-image">
-                        <img src="/includes/assets/img/landing-img.png" alt="logo">
+                        <img src="/public/includes/assets/img/landing-img.png" alt="logo">
                         <a href="/cv" class="services">
                             <p class="p5">View my Résumé</p><i class="las la-arrow-right"></i></a>
                     </div>
@@ -61,7 +61,7 @@
                             <div class="row">
                                 <a href="">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>Online men’s clothing store</h3>
@@ -73,7 +73,7 @@
                                 </a>
                                 <a href="">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-1.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for music player</h3>
@@ -85,7 +85,7 @@
                                 </a>
                                 <a href="">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-2.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-2.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for messaging platform</h3>
@@ -97,7 +97,7 @@
                                 </a>
                                 <a href="">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-3.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-3.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for online checkout</h3>
@@ -130,7 +130,7 @@
                             <div class="row">
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/includes/assets/img/design-style-1.svg" alt="research" />
+                                        <img src="/public/includes/assets/img/design-style-1.svg" alt="research" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/includes/assets/img/design-style-2.svg" alt="design" />
+                                        <img src="/public/includes/assets/img/design-style-2.svg" alt="design" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
@@ -158,7 +158,7 @@
                                 </div>
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/includes/assets/img/design-style-3.svg" alt="prototyping" />
+                                        <img src="/public/includes/assets/img/design-style-3.svg" alt="prototyping" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
@@ -172,7 +172,7 @@
                                 </div>
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/includes/assets/img/design-style-4.svg" alt="testing" />
+                                        <img src="/public/includes/assets/img/design-style-4.svg" alt="testing" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
@@ -214,7 +214,7 @@
             </article>
         </div>
         <?php
-            include './components/footer.php';
+            include './public/components/footer.php';
         ?>
     </body>
 

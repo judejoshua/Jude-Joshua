@@ -12,14 +12,14 @@ class App{
 
         if(isset($url[0]))
         {
-            if(file_exists('../app/controllers/'. $url[0] . '.contr.php'))
+            if(file_exists('./app/controllers/'. $url[0] . '.contr.php'))
             {
                 $this->controller = $url[0];
                 unset($url[0]);
             }
         }
 
-        require_once '../app/controllers/'. $this->controller . '.contr.php';
+        require_once './app/controllers/'. $this->controller . '.contr.php';
 
         $this->controller = new $this->controller;
 

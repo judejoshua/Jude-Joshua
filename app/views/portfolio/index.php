@@ -1,6 +1,6 @@
 <?php
     $title = 'Past work || ';
-    include './components/header.php';
+    include './public/components/header.php';
 ?>
     </head>
 
@@ -35,7 +35,7 @@
                             <div class="row">
                                 <a href="/portfolio/case_study">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>Online men’s clothing store</h3>
@@ -47,7 +47,7 @@
                                 </a>
                                 <a href="/portfolio/case_study">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-1.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for music player</h3>
@@ -59,7 +59,7 @@
                                 </a>
                                 <a href="/portfolio/case_study">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-2.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-2.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for messaging platform</h3>
@@ -71,7 +71,7 @@
                                 </a>
                                 <a href="/portfolio/case_study">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-3.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-3.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for online checkout</h3>
@@ -83,7 +83,7 @@
                                 </a>
                                 <a href="/portfolio/case_study">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>Online men’s clothing store</h3>
@@ -95,7 +95,7 @@
                                 </a>
                                 <a href="/portfolio/case_study">
                                     <div class="project">
-                                        <img src="/includes/assets/img/project-image-1.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for music player</h3>
@@ -116,7 +116,7 @@
             </article>
         </div>
         <?php
-            include './components/footer.php';
+            include './public/components/footer.php';
         ?>
     </body>
 

@@ -3,7 +3,7 @@
 ?>
 <navigation>
     <!-- <div class="logo">
-        <img src="/includes/assets/img/logo.png" alt="logo">
+        <img src="/public/includes/assets/img/logo.png" alt="logo">
     </div> -->
     <div class="nav">
         <ul class="nav-links">

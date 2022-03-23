@@ -1,6 +1,6 @@
 <?php
     $title = '';
-    include './components/header.php';
+    include './public/components/header.php';
 ?>
     </head>
 
@@ -45,7 +45,7 @@
                         <p class="p5">Scroll down</p>
                     </div>
                 </div>
-                <div class="case-study-img" style="background-image: url('/includes/assets/img/project-image.png');">
+                <div class="case-study-img" style="background-image: url('/public/includes/assets/img/project-image.png');">
                 </div>
             </header>
             <article id="body ">
@@ -92,10 +92,10 @@
                     <div class="projects-holder">
                         <div class="row">
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="projects-holder">
                         <div class="row">
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -129,10 +129,10 @@
                     <div class="projects-holder">
                         <div class="row">
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -144,10 +144,10 @@
                     <div class="projects-holder">
                         <div class="row">
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                             <div class="project">
-                                <img src="/includes/assets/img/project-image.png" alt="">
+                                <img src="/public/includes/assets/img/project-image.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
             </article>
         </div>
         <?php
-            include './components/footer.php';
+            include './public/components/footer.php';
         ?>
     </body>
 
