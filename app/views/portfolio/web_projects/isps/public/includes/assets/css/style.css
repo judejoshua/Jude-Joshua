@@ -201,6 +201,7 @@ hr {
     left: 0;
     background-color: rgba(24, 24, 24, 0.7);
     height: 100%;
+    z-index: 1000000;
 }
 
 .modal-content {

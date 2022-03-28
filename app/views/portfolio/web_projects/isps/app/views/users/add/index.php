@@ -39,7 +39,7 @@
                     <div class="full-width">
                         <label for="sector" class="form-label">Select a Sector <span>(Required)</span></label>
                         <select id="sector" name="sector" class="form-control" required>
-                            <option value=" " disabled selected hidden>Choose...</option>
+                            <option value=" " disabled selected hidden>Choose a sector...</option>
                             <option>Highway Construction</option>
                             <option>Railway Construction</option>
                             <option>Power Generation</option>
@@ -52,9 +52,9 @@
                     <div class="full-width">
                         <label for="designaton" class="form-label">Choose a designation <span>(Required)</span></label>
                         <select id="designaton" name="designaton" class="form-control" required>
-                            <option value=" " disabled selected hidden>Choose...</option>
+                            <option value=" " disabled selected hidden>Choose a designation...</option>
                             <option value="budgeting officer">Budgeting Officer</option>
-                            <?= $_SESSION['designation'] == 'secretariat' ? '<option value="director">Director</option><option value="secretariat">Secretariat</option>' : ''?>
+                            <?= $_SESSION['designation'] == 'secretariat' || $_SESSION['designation'] == '' ? '<option value="director">Director</option><option value="secretariat">Secretariat</option>' : ''?>
                         </select>
                     </div>
                 </div>
