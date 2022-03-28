@@ -66,9 +66,12 @@
 
 #CV .btn_cont #text,
 #CV .btn_cont i {
-    font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 900;
+}
+
+#CV .btn_cont #text {
+    font-family: 'Playfair Display', serif;
 }
 
 #CV .btn.mdn {
