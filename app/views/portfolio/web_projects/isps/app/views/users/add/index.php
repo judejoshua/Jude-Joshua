@@ -4,13 +4,18 @@
 
 <div class="wrapper d-flex">
     <?php require_once './includes/components/sideNav.php';?>
-    <div class="content-box v100h">
-        
+    <div class="content-box">
+        <?php require_once './includes/components/topNav.php';?>
         <section class="content mt-5">
             <a href="/users">back to all users</a>
             <hr>
-            <h1>Add new user</h1>
-            <p class="p5">Fill the form below to create a new user.</>
+            <div class="top-title d-flex justify-content-between full-width align-items-center">
+                <div class="full-width">
+                    <h2 class="title p3">Add new user</h2>
+                    <p class="p5 subtitle">Fill the form below to create a new user.</p>
+                </div>
+            </div>
+
             <hr>
             <form id="newUserForm" class="d-flex flex-column">
                 <div class="form-group dual">
@@ -38,14 +43,7 @@
                 <div class="form-group">
                     <div class="full-width">
                         <label for="sector" class="form-label">Select a Sector <span>(Required)</span></label>
-                        <select id="sector" name="sector" class="form-control" required>
-                            <option value=" " disabled selected hidden>Choose a sector...</option>
-                            <option>Highway Construction</option>
-                            <option>Railway Construction</option>
-                            <option>Power Generation</option>
-                            <option>Power Transmission</option>
-                            <option>Water Supply</option>
-                        </select>
+                        <input type="sector" class="form-control" name="sector" id="sector" placeholder="Highway Constuction" value="<?=$_SESSION['sector']?>" readonly>
                     </div>
                 </div>
                 <div class="form-group">
@@ -54,7 +52,7 @@
                         <select id="designaton" name="designaton" class="form-control" required>
                             <option value=" " disabled selected hidden>Choose a designation...</option>
                             <option value="budgeting officer">Budgeting Officer</option>
-                            <?= $_SESSION['designation'] == 'secretariat' || $_SESSION['designation'] == '' ? '<option value="director">Director</option><option value="secretariat">Secretariat</option>' : ''?>
+                            <?= $_SESSION['designation'] == 'secretariat' || $_SESSION['designation'] == 'admin' ? '<option value="director">Director</option><option value="secretariat">Secretariat</option>' : ''?>
                         </select>
                     </div>
                 </div>

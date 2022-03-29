@@ -4,12 +4,12 @@
 
     <div class="wrapper d-flex">
         <?php require_once './includes/components/sideNav.php';?>
-        <div class="content-box v100h">
-
+        <div class="content-box">
+            <?php require_once './includes/components/topNav.php';?>
             <section class="content mt-5">
                 <a href="/projects">back to all projects</a>
                 <hr>
-                <h2>Add project Metrics</h2>
+                <h2 class="p3">Add project Metrics</h2>
                 <hr>
                 <div class="title-description">
                     <span class="p4 description"><span>Project name:</span> <?= $data['project']?></span>
