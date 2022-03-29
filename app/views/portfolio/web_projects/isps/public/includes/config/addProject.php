@@ -99,7 +99,8 @@ switch($_POST){
                         $array[$key] = str_replace(',', '', $value);
                     }
                     $function = 'add'.$table_prefix.'ProjectMetrics';
-                    $addedMetricsId = $project->$function($array);
+                    // $addedMetricsId = $project->$function($array);
+                    $addedMetricsId = '41';
 
                     $metricsData = $project->getMetrics($array['sector']);
                     foreach ($metricsData as $key => $metrics){
@@ -151,6 +152,19 @@ switch($_POST){
 
                                                     $sql = "UPDATE `".$table_prefix."_projects_scores` SET `".$formDataKey."` = ".$newScore." WHERE `metrics_id` = ".$resultData['id']."";
                                                     $project->runQuery($sql);
+                                                    
+                                                    $query = "SELECT * FROM `".$table_prefix."_projects_scores` WHERE `metrics_id` = ".$resultData['id']."";
+                                                    $oldMetricsList = ($project->runQuery($query))[0];
+                                                    array_shift($oldMetricsList);
+                                                    array_shift($oldMetricsList);
+                                                    $oldMetricsTotalScore = array_sum($oldMetricsList);
+                                                    
+                                                    $query = "SELECT `".$table_prefix."_projects_metrics`.`project_id` FROM `".$table_prefix."_projects_metrics` WHERE `".$table_prefix."_projects_metrics`.`id` = ".$resultData['id']."";
+                                                    $oldProjectID = ($project->runQuery($query))[0];
+                                                    $oldProjectID['project_id'];
+
+                                                    $update = "UPDATE `projects` SET `score` = ".$oldMetricsTotalScore." WHERE `id` = ".$oldProjectID['project_id']."";
+                                                    $project->runQuery($update);
                                                 }
                                             }
                                         }
