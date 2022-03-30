@@ -96,7 +96,7 @@ switch($_POST){
                     
                     foreach($array as  $key => $value)
                     {
-                        if (preg_match('/^[0-9,]+$/', $value) === 1) {//check if the set of numbers has a comma
+                        if (preg_match('/^[0-9,.]+$/', $value) === 1) {//check if the set of numbers has a comma
                             $array[$key] = str_replace(',', '', $value);
                         }
                     }
@@ -123,7 +123,7 @@ switch($_POST){
                                         {
                                             $input = str_replace(',', '', $value);//remove all the commas from input formatting
                                             $sql = "SELECT `id`, `".$formDataKey."` FROM `".$table_prefix."_projects_metrics` ORDER BY `".$formDataKey."` DESC";
-                                            $result = $project->runQuery($sql);
+                                            $result = $project->runSelectQuery($sql);
                                             
                                             foreach ($result as $resultKey => $resultData)
                                             {
@@ -155,20 +155,20 @@ switch($_POST){
                                                     }
 
                                                     $sql = "UPDATE `".$table_prefix."_projects_scores` SET `".$formDataKey."` = ".$newScore." WHERE `metrics_id` = ".$resultData['id']."";
-                                                    $project->runQuery($sql);
+                                                    $project->runInsertQuery($sql);
                                                     
                                                     $query = "SELECT * FROM `".$table_prefix."_projects_scores` WHERE `metrics_id` = ".$resultData['id']."";
-                                                    $oldMetricsList = ($project->runQuery($query))[0];
+                                                    $oldMetricsList = ($project->runSelectQuery($query))[0];
                                                     array_shift($oldMetricsList);
                                                     array_shift($oldMetricsList);
                                                     $oldMetricsTotalScore = array_sum($oldMetricsList);
                                                     
                                                     $query = "SELECT `".$table_prefix."_projects_metrics`.`project_id` FROM `".$table_prefix."_projects_metrics` WHERE `".$table_prefix."_projects_metrics`.`id` = ".$resultData['id']."";
-                                                    $oldProjectID = ($project->runQuery($query))[0];
+                                                    $oldProjectID = ($project->runSelectQuery($query))[0];
                                                     $oldProjectID['project_id'];
 
                                                     $update = "UPDATE `projects` SET `score` = ".$oldMetricsTotalScore." WHERE `id` = ".$oldProjectID['project_id']."";
-                                                    $project->runQuery($update);
+                                                    $project->runInsertQuery($update);
                                                 }
                                             }
                                         }
