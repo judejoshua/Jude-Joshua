@@ -96,11 +96,14 @@ switch($_POST){
                     
                     foreach($array as  $key => $value)
                     {
-                        $array[$key] = str_replace(',', '', $value);
+                        if (preg_match('/^[0-9,]+$/', $value) === 1) {//check if the set of numbers has a comma
+                            $array[$key] = str_replace(',', '', $value);
+                        }
                     }
+                    
                     $function = 'add'.$table_prefix.'ProjectMetrics';
-                    // $addedMetricsId = $project->$function($array);
-                    $addedMetricsId = '41';
+                    $addedMetricsId = $project->$function($array);
+                    // $addedMetricsId = '41';
 
                     $metricsData = $project->getMetrics($array['sector']);
                     foreach ($metricsData as $key => $metrics){
@@ -121,6 +124,7 @@ switch($_POST){
                                             $input = str_replace(',', '', $value);//remove all the commas from input formatting
                                             $sql = "SELECT `id`, `".$formDataKey."` FROM `".$table_prefix."_projects_metrics` ORDER BY `".$formDataKey."` DESC";
                                             $result = $project->runQuery($sql);
+                                            
                                             foreach ($result as $resultKey => $resultData)
                                             {
                                                 if($addedMetricsId == $resultData['id'])
