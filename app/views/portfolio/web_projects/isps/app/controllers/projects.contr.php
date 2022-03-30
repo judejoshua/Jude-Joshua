@@ -64,9 +64,9 @@ class Projects extends Controller
                 $projectData = $project->getProjectData($id);
                 $metricsData = $project->getMetrics($sector);
                 
-                if($projectData[0]['sector'] == 'Railway Construction'){
+                if($sector == 'Railway Construction'){
                     $table_prefix = 'railway';
-                }else if($array['sector'] == 'Highway Construction'){
+                }else if($sector == 'Highway Construction'){
                     $table_prefix = 'highway';
                 }
                 
