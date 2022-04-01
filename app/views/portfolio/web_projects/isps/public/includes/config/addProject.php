@@ -122,9 +122,9 @@ switch($_POST){
                                         }else
                                         {
                                             $input = str_replace(',', '', $value);//remove all the commas from input formatting
-                                            $sql = "SELECT `id`, `".$formDataKey."` FROM `".$table_prefix."_projects_metrics` ORDER BY `".$formDataKey."` DESC";
+                                            $sql = "SELECT `".$table_prefix."_projects_metrics`.`id`, `".$table_prefix."_projects_metrics`.`".$formDataKey."` FROM `".$table_prefix."_projects_metrics` JOIN `projects` WHERE `".$table_prefix."_projects_metrics`.`project_id` = `projects`.`id` AND `projects`.`suspended` != '1' ORDER BY `".$formDataKey."` DESC";
                                             $result = $project->runSelectQuery($sql);
-                                            
+
                                             foreach ($result as $resultKey => $resultData)
                                             {
                                                 if($addedMetricsId == $resultData['id'])
@@ -158,10 +158,12 @@ switch($_POST){
                                                     $project->runInsertQuery($sql);
                                                     
                                                     $query = "SELECT * FROM `".$table_prefix."_projects_scores` WHERE `metrics_id` = ".$resultData['id']."";
-                                                    $oldMetricsList = ($project->runSelectQuery($query))[0];
-                                                    array_shift($oldMetricsList);
-                                                    array_shift($oldMetricsList);
-                                                    $oldMetricsTotalScore = array_sum($oldMetricsList);
+                                                    $oldMetricsList = $project->runSelectQuery($query);
+                                                    $oldMetricsLists = $oldMetricsList[0];
+
+                                                    array_shift($oldMetricsLists);
+                                                    array_shift($oldMetricsLists);
+                                                    $oldMetricsTotalScore = array_sum($oldMetricsLists);
                                                     
                                                     $query = "SELECT `".$table_prefix."_projects_metrics`.`project_id` FROM `".$table_prefix."_projects_metrics` WHERE `".$table_prefix."_projects_metrics`.`id` = ".$resultData['id']."";
                                                     $oldProjectID = ($project->runSelectQuery($query))[0];

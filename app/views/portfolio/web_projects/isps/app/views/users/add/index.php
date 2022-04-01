@@ -1,4 +1,5 @@
 <?php
+    $title = 'Add new User';
     require_once './includes/components/header.php';
 ?>
 
