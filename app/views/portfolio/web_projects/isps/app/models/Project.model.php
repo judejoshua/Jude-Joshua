@@ -330,7 +330,7 @@ class Project extends Db
     {
         try
         {
-            $insert = "INSERT INTO `highway_projects_metrics`(`project_id`, `sector`, `Construction_Type`, `Type_of_technology`, `General_Capacity`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Has_a_Power_Purchase_Agreement_been_executed?`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $insert = "INSERT INTO `power_gen_projects_metrics`(`project_id`, `sector`, `Construction_Type`, `Type_of_technology`, `General_Capacity`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Has_a_Power_Purchase_Agreement_been_executed`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $this->connect()->prepare($insert);
             $stmt->execute([
                 $array['project_id'],
@@ -338,7 +338,7 @@ class Project extends Db
                 $array['Construction_Type'],
                 $array['Type_of_technology'],
                 $array['General_Capacity'],
-                $array['Availability_of_Technical_personnel'],
+                $array['Availability_of_technical_personnel'],
                 $array['Availability_of_replacement_parts'],
                 $array['Availability_of_major_energy_source'],
                 $array['Presence_of_Anchor_customers_or_Industrial_clusters'],
@@ -383,14 +383,14 @@ class Project extends Db
     {
         try
         {
-            $insert = "INSERT INTO `highway_projects_scores`(`metrics_id`, `Construction_Type`, `Type_of_technology`, `General_Capacity`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Has_a_Power_Purchase_Agreement_been_executed?`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $insert = "INSERT INTO `power_gen_projects_scores`(`metrics_id`, `Construction_Type`, `Type_of_technology`, `General_Capacity`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Has_a_Power_Purchase_Agreement_been_executed`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $this->connect()->prepare($insert);
             $stmt->execute([
                 $array['metrics_id'],
                 $array['Construction_Type'],
                 $array['Type_of_technology'],
                 $array['General_Capacity'],
-                $array['Availability_of_Technical_personnel'],
+                $array['Availability_of_technical_personnel'],
                 $array['Availability_of_replacement_parts'],
                 $array['Availability_of_major_energy_source'],
                 $array['Presence_of_Anchor_customers_or_Industrial_clusters'],
@@ -435,7 +435,7 @@ class Project extends Db
     {
         try
         {
-            $insert = "INSERT INTO `highway_projects_metrics`(`project_id`, `sector`, `Construction_Type`, `Type_of_transmission_line`, `Length_of_transmission_infrastructure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_distribution_grid_offtake`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $insert = "INSERT INTO `power_trans_projects_metrics`(`project_id`, `sector`, `Construction_Type`, `Type_of_transmission_line`, `Length_of_transmission_infrastructure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_distribution_grid_offtake`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $this->connect()->prepare($insert);
             $stmt->execute([
                 $array['project_id'],
@@ -443,7 +443,7 @@ class Project extends Db
                 $array['Construction_Type'],
                 $array['Type_of_transmission_line'],
                 $array['Length_of_transmission_infrastructure'],
-                $array['Availability_of_Technical_personnel'],
+                $array['Availability_of_technical_personnel'],
                 $array['Availability_of_replacement_parts'],
                 $array['Availability_of_distribution_grid_offtake'],
                 $array['Presence_of_Anchor_customers_or_Industrial_clusters'],
@@ -486,14 +486,14 @@ class Project extends Db
     {
         try
         {
-            $insert = "INSERT INTO `highway_projects_scores`(`metrics_id`, `Construction_Type`, `Type_of_transmission_line`, `Length_of_transmission_infrastructure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_distribution_grid_offtake`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $insert = "INSERT INTO `power_trans_projects_scores`(`metrics_id`, `Construction_Type`, `Type_of_transmission_line`, `Length_of_transmission_infrastructure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_distribution_grid_offtake`, `Presence_of_Anchor_customers_or_Industrial_clusters`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $this->connect()->prepare($insert);
             $stmt->execute([
                 $array['metrics_id'],
                 $array['Construction_Type'],
                 $array['Type_of_transmission_line'],
                 $array['Length_of_transmission_infrastructure'],
-                $array['Availability_of_Technical_personnel'],
+                $array['Availability_of_technical_personnel'],
                 $array['Availability_of_replacement_parts'],
                 $array['Availability_of_distribution_grid_offtake'],
                 $array['Presence_of_Anchor_customers_or_Industrial_clusters'],
@@ -536,7 +536,7 @@ class Project extends Db
     {
         try
         {
-            $insert = "INSERT INTO `highway_projects_metrics`(`project_id`, `sector`, `Construction_Type`, `Type_of_technology`, `Capacity_of_water_containment_structure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Are_there_water_supply_pipes_and_associated_facilities_in_place?`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $insert = "INSERT INTO `water_projects_metrics`(`project_id`, `sector`, `Construction_Type`, `Type_of_technology`, `Capacity_of_water_containment_structure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Are_there_water_supply_pipes_and_associated_facilities_in_place`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $this->connect()->prepare($insert);
             $stmt->execute([
                 $array['project_id'],
@@ -544,7 +544,7 @@ class Project extends Db
                 $array['Construction_Type'],
                 $array['Type_of_technology'],
                 $array['Capacity_of_water_containment_structure'],
-                $array['Availability_of_Technical_personnel'],
+                $array['Availability_of_technical_personnel'],
                 $array['Availability_of_replacement_parts'],
                 $array['Availability_of_major_energy_source'],
                 $array['Are_there_water_supply_pipes_and_associated_facilities_in_place?'],
@@ -588,14 +588,14 @@ class Project extends Db
     {
         try
         {
-            $insert = "INSERT INTO `highway_projects_scores`(`metrics_id`, `Construction_Type`, `Type_of_technology`, `Capacity_of_water_containment_structure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Are_there_water_supply_pipes_and_associated_facilities_in_place?`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            $insert = "INSERT INTO `water_projects_scores`(`metrics_id`, `Construction_Type`, `Type_of_technology`, `Capacity_of_water_containment_structure`, `Availability_of_Technical_personnel`, `Availability_of_replacement_parts`, `Availability_of_major_energy_source`, `Are_there_water_supply_pipes_and_associated_facilities_in_place`, `Enhances_Inter-regional_Trade`, `Economic_benefits_to_other_regions`, `Creates_job_opportunities_for_other_regions`, `Number_of_jobs_created`, `Number_of_jobs_that_would_be_retained`, `GDP_of_local_economy_(state)`, `Cost_Effectiveness_(cost/average_daily_traffic)`, `Project_cost_(amount_to_be_spent_by_government)`, `Investment_Payback_Period_(in_years)`, `Compensation_and_Relocation`, `Population_to_be_served`, `Ability_to_mitigate_against_environmental_degradation`, `Amount_of_Co2_Emmissions_from_the_project`, `Environmental_Impact_Category`, `Waste_management_policy`, `Occupational_Health_and_Safety_policy`, `Use_of_naturally_occuring_materials_within_the_corridor`, `Private/Public/Local_Participation`, `Availability_of_access_roads_to_plant,_security`, `Ability_to_spur_urban_renewal/compliment_key_business_activities`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $this->connect()->prepare($insert);
             $stmt->execute([
                 $array['metrics_id'],
                 $array['Construction_Type'],
                 $array['Type_of_technology'],
                 $array['Capacity_of_water_containment_structure'],
-                $array['Availability_of_Technical_personnel'],
+                $array['Availability_of_technical_personnel'],
                 $array['Availability_of_replacement_parts'],
                 $array['Availability_of_major_energy_source'],
                 $array['Are_there_water_supply_pipes_and_associated_facilities_in_place?'],

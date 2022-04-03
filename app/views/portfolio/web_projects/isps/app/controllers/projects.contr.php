@@ -78,14 +78,20 @@ class Projects extends Controller
                 $totalMetricsScore = $this->find_metrics_total_score($metricsData, $projectMetricsData);
 
                 $project_scores = $this->rank_projects($sector);
-                $project_rank_overall = count($project_scores);
-                foreach ($project_scores as $key => $value) {
-                    if($id == $value['id'])
-                    {
-                        $project_rank = array_search($value, $project_scores) + 1;
-                    }else{
-                        $project_rank = '';
+                if(is_array($project_scores))
+                {
+                    foreach ($project_scores as $key => $value) {
+                        $project_rank_overall = count($project_scores);
+                        if($id == $value['id'])
+                        {
+                            $project_rank = array_search($value, $project_scores) + 1;
+                        }else{
+                            $project_rank = '';
+                        }
                     }
+                }else{
+                    $project_rank = '';
+                    $project_rank_overall = '';
                 }
 
                 $this->views('projects/view/index', [
@@ -142,14 +148,18 @@ class Projects extends Controller
 
             $project = $this->model('Project');
             $allProjects  = $project->getUnapprovedProjects($_SESSION['sector']);
+            
+            $project_scores = $this->rank_projects($_SESSION['sector']);
 
             $this->views('projects/approve/index', [
-                'projectsList' => $allProjects
+                'projectsList' => $allProjects,
+                'project_scores' => $project_scores
             ]);
         }
     }
 
-    public function suspended(){
+    public function suspended()
+    {
         if(!isset($_SESSION['logged'])){
 
             $redirect = $this->model('Redirect');
@@ -221,7 +231,8 @@ class Projects extends Controller
         }   
     }
     
-    private function find_metrics_total_score($metricsData, $projectMetricsData){
+    private function find_metrics_total_score($metricsData, $projectMetricsData)
+    {
         $totalMetricsScore = 0;
         foreach($metricsData as $key => $val){
             foreach($val as $key => $metrics){
@@ -244,9 +255,10 @@ class Projects extends Controller
         return $totalMetricsScore;
     }
 
-    private function rank_projects($sector){
+    private function rank_projects($sector)
+    {
         $db_model = $this->model('Db');
-        $sql = "SELECT `id`, `score` FROM `projects` WHERE `sector` = '".$sector."' AND `suspended` != '1' ORDER BY `score` DESC";
+        $sql = "SELECT `id`, `score` FROM `projects` WHERE `sector` = '".$sector."' AND `suspended` != '1' AND `metrics` = '1' ORDER BY `score` DESC";
         return $db_model->runSelectQuery($sql);
     }
 

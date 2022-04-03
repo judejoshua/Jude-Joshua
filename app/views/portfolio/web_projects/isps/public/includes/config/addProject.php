@@ -90,11 +90,6 @@ switch($_POST){
                 if($emptyCheck === true){
 
                     $table_prefix = $project->table_prefix($array['sector']);
-                    // if($array['sector'] == 'Railway Construction'){
-                    //     $table_prefix = 'railway';
-                    // }else if($array['sector'] == 'Highway Construction'){
-                    //     $table_prefix = 'highway';
-                    // }
                     
                     foreach($array as  $key => $value)
                     {
@@ -105,7 +100,6 @@ switch($_POST){
                     
                     $function = 'add'.$table_prefix.'ProjectMetrics';
                     $addedMetricsId = $project->$function($array);
-                    // $addedMetricsId = '41';
 
                     $metricsData = $project->getMetrics($array['sector']);
                     foreach ($metricsData as $key => $metrics){

@@ -20,15 +20,7 @@ switch($_POST){
 
                 if($suspend == true)
                 {
-                    switch ($_SESSION['sector']) {
-                        case 'Railway Construction':
-                            $table_prefix = 'railway';
-                            break;
-                        
-                        case 'Highway Construction':
-                            $table_prefix = 'highway';
-                            break;
-                    }
+                    $table_prefix = $project->table_prefix($_SESSION['sector']);
                     
                     $metricsData = $project->getMetrics($_SESSION['sector']);
                     $allProjects  = $project->getAllActiveUserSectorProjects($_SESSION['sector']);

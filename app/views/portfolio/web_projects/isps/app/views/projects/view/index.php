@@ -18,7 +18,19 @@
                 <div class="">
                     <?=$_SESSION['designation'] == 'director' ? ' <a class="btn secondary">Edit project</a>' : ''?>
                     <?=$data['projectData'][0]['approved'] == '0' && $_SESSION['designation'] != 'budgeting officer' && $data['projectData'][0]['suspended'] == '0' ? '<a class="btn approve">Approve project</a>' : ''?>
-                    <?=$_SESSION['designation'] != 'budgeting officer' && $data['projectData'][0]['suspended'] == '0' ? '<a href="/projects/add" class="btn danger suspend">Suspend project</a>' : '<a class="btn activate">Reactivate project</a>'?>
+                    <?php
+                        if($_SESSION['designation'] != 'budgeting officer'){
+                            if($data['projectData'][0]['suspended'] == '0'){
+                                echo'
+                                    <a href="/projects/add" class="btn danger suspend">Suspend project</a>
+                                ';
+                            }else{
+                                echo '
+                                    <a class="btn activate">Reactivate project</a>
+                                ';
+                            }
+                        }
+                    ?>
                 </div>
             </div>
             <hr>
@@ -200,7 +212,19 @@
                     <?=$data['projectData'][0]['approved'] == '0' && $_SESSION['designation'] != 'budgeting officer' && $data['projectData'][0]['suspended'] == '0' ? '<a class="btn approve">Approve project</a>' : ''?>
                 </div>
                 <div class="info_cta_right">
-                    <?=$_SESSION['designation'] != 'budgeting officer' && $data['projectData'][0]['suspended'] == '0' ? '<a href="/projects/add" class="btn danger suspend">Suspend project</a>' : '<a class="btn activate">Reactivate project</a>'?>
+                    <?php
+                        if($_SESSION['designation'] != 'budgeting officer'){
+                            if($data['projectData'][0]['suspended'] == '0'){
+                                echo'
+                                    <a href="/projects/add" class="btn danger suspend">Suspend project</a>
+                                ';
+                            }else{
+                                echo '
+                                    <a class="btn activate">Reactivate project</a>
+                                ';
+                            }
+                        }
+                    ?>
                 </div>
             </div>
         </section>
