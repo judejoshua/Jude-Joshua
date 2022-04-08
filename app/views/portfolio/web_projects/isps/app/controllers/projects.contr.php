@@ -57,7 +57,6 @@ class Projects extends Controller
                 $array = [$id, $sector];
                 
                 $input = $this->model('Input');
-                $user = $this->model('User');
                 $project = $this->model('Project');
                 
                 $input->sanitizeInput($array);
@@ -85,8 +84,6 @@ class Projects extends Controller
                         if($id == $value['id'])
                         {
                             $project_rank = array_search($value, $project_scores) + 1;
-                        }else{
-                            $project_rank = '';
                         }
                     }
                 }else{
@@ -105,6 +102,78 @@ class Projects extends Controller
                     'totalMetricsScore' => $totalMetricsScore,
                     'project_rank' => $project_rank,
                     'project_rank_overall' => $project_rank_overall
+                ]);
+            }else{
+                $error = new Errors;
+                $error->not_found();//404 error
+            }
+
+        }   
+    }
+
+    public function edit($sector = '', $projectname = '', $id = '')
+    {
+        if(!isset($_SESSION['logged'])){
+
+            $redirect = $this->model('Redirect');
+            $dashboard = '/dashboard';
+            $redirect->redirectTo($dashboard);
+            
+        }else{
+            if(isset($id) && isset($sector) && isset($projectname))
+            {
+
+                $array = [$id, $sector];
+                
+                $input = $this->model('Input');
+                $user = $this->model('User');
+                $project = $this->model('Project');
+                
+                $input->sanitizeInput($array);
+                $id = $array[0];
+                $sector = $array[1];
+
+                $projectData = $project->getProjectData($id);
+                // $metricsData = $project->getMetrics($sector);
+                // foreach ($metricsData as $key => $metrics){
+                //     $metricsData = json_decode($metrics['metrics_data'], TRUE);
+                // }
+                
+                // $table_prefix = $project->table_prefix($_SESSION['sector']);
+
+                // $projectMetricsData = $project->getProjectMetrics($table_prefix, $id);
+                // $projectMetricsScore = $project->getProjectMetricsScores($table_prefix, $id);
+
+                // $totalMetricsScore = $this->find_metrics_total_score($metricsData, $projectMetricsData);
+
+                // $project_scores = $this->rank_projects($sector);
+                // if(is_array($project_scores))
+                // {
+                //     foreach ($project_scores as $key => $value) {
+                //         $project_rank_overall = count($project_scores);
+                //         if($id == $value['id'])
+                //         {
+                //             $project_rank = array_search($value, $project_scores) + 1;
+                //         }else{
+                //             $project_rank = '';
+                //         }
+                //     }
+                // }else{
+                //     $project_rank = '';
+                //     $project_rank_overall = '';
+                // }
+
+                $this->views('projects/edit/index', [
+                    'project' => $projectname,
+                    'sector' => $sector,
+                    'id' => $id,
+                    // 'metricsData' => $metricsData,
+                    'projectData' => $projectData,
+                    // 'projectMetricsData' => $projectMetricsData,
+                    // 'projectMetricsScore' => $projectMetricsScore,
+                    // 'totalMetricsScore' => $totalMetricsScore,
+                    // 'project_rank' => $project_rank,
+                    // 'project_rank_overall' => $project_rank_overall
                 ]);
             }else{
                 $error = new Errors;
@@ -202,10 +271,15 @@ class Projects extends Controller
                 $id = $array[0];
                 $sector = $array[1];
 
-                //perform a check for if this project metrics has already been edited
-                $projectData = $project->getProjectData($id);
+                $projectData = $project->getProjectData($id);//get the project data
+                
                 if($projectData[0]['metrics'] == '0'){
                     $metricsData = $project->getMetrics($sector);
+    
+                    $jobs = $this->get_jobs($sector);//get the job total for this sector
+    
+                    $project_jobs_created = round(($projectData[0]['cost'] * $jobs[0]['total'])/$jobs[0]['per_invested']);
+
                     
                     if(is_array($metricsData))
                     {
@@ -214,6 +288,9 @@ class Projects extends Controller
                             'sector' => $sector,
                             'id' => $id,
                             'metricsData' => $metricsData,
+                            'Number of jobs created' => $project_jobs_created,
+                            'Number of jobs that would be retained' => $project_jobs_created/2,
+                            'Project cost (amount to be spent by government)' => $projectData[0]['cost']
                         ]);
                     }else{
                         $error = new Errors;
@@ -230,8 +307,31 @@ class Projects extends Controller
             }
         }   
     }
+
+    public function compare()
+    {
+        if(!isset($_SESSION['logged'])){
+
+            $redirect = $this->model('Redirect');
+            $dashboard = '/dashboard';
+            $redirect->redirectTo($dashboard);
+            
+        }else{
+
+            $project = $this->model('Project');
+
+            $allProjects  = $project->getAllActiveUserSectorProjects($_SESSION['sector']);
+            
+            $project_scores = $this->rank_projects($_SESSION['sector']);
+
+            $this->views('projects/compare/index', [
+                'projectsList' => $allProjects,
+                'project_scores' => $project_scores
+            ]);
+        }
+    }
     
-    private function find_metrics_total_score($metricsData, $projectMetricsData)
+    protected function find_metrics_total_score($metricsData, $projectMetricsData)
     {
         $totalMetricsScore = 0;
         foreach($metricsData as $key => $val){
@@ -255,12 +355,18 @@ class Projects extends Controller
         return $totalMetricsScore;
     }
 
-    private function rank_projects($sector)
+    protected function rank_projects($sector)
     {
         $db_model = $this->model('Db');
         $sql = "SELECT `id`, `score` FROM `projects` WHERE `sector` = '".$sector."' AND `suspended` != '1' AND `metrics` = '1' ORDER BY `score` DESC";
         return $db_model->runSelectQuery($sql);
     }
 
+    protected function get_jobs($sector)
+    {
+        $db_model = $this->model('Db');
+        $sql = "SELECT `jobs`.`total`,  `jobs`.`per_invested` FROM `sectors` JOIN `jobs` WHERE `sector_name` = '".$sector."' AND `jobs`.`sector_id` = `sectors`.`id`";
+        return $db_model->runSelectQuery($sql);
+    }
 
 }

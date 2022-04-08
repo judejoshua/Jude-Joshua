@@ -44,7 +44,7 @@
                     <div class="about-cards">
                         <p class="p5">work</p>
                         <div class="title-text">
-                            <h3>Web Developer(Front-End)</h3>
+                            <h3>Web Developer</h3>
                             <p class="paragraphsdescriptions">My creativity and passion for designing to make life better don't just stop at product designing. Also, I achieve these through my responsibility as a front-end developer. I develop that part of an application or website that
                                 a user sees and interacts with.</p>
                         </div>
@@ -179,7 +179,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="xp-vector"><img src="/public/includes/assets/img/Vector.png"></div>
                     </div>
                 </section>
                 <section id="CV">

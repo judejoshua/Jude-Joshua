@@ -16,7 +16,6 @@
                     <p class="p5 subtitle">Fill the form below to create a new user.</p>
                 </div>
             </div>
-
             <hr>
             <form id="newUserForm" class="d-flex flex-column">
                 <div class="form-group dual">
