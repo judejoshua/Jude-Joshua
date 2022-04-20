@@ -298,7 +298,7 @@
         width: 148px;
     }
     button .btn_cont {
-        top: 19px;
+        top: 20px;
         left: 19px;
     }
     body#case-study-body .landing {
@@ -410,7 +410,7 @@
     .client {
         /* width: 240px; */
         width: 100%;
-        gap: 4px;
+        gap: 10px;
     }
     .testimonials-wrapper {
         gap: 64px;

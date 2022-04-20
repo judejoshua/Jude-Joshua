@@ -76,13 +76,12 @@
 .btn_cont #text,
 .btn_cont i {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700 !important;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     color: var(--secondary);
     transition: 1.5s;
-    word-spacing: 1px;
 }
 
 btn_cont #text {
