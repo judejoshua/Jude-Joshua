@@ -68,7 +68,9 @@
 }
 
 .landing-image img {
-    width: 100%;
+    width: 114%;
+    object-fit: cover;
+    left: -21px;
 }
 
 .bg-play {
