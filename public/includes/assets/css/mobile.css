@@ -402,6 +402,7 @@
         margin-right: 0;
         align-items: flex-start;
         text-align: left;
+        gap: 16px;
     }
     .testimonials .title-text p {
         width: 225px;
@@ -422,7 +423,10 @@
         padding-top: 72px;
         background-position-x: -792px;
         background-position-y: center;
-        gap: 24px !important;
+        gap: 20px !important;
+    }
+    .testimonials .title-text h2 {
+        font-size: 20px;
     }
     .about-me-card-holder {
         flex-direction: column;
