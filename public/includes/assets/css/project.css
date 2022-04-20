@@ -33,7 +33,6 @@ body:not(#home-landing) #case-study {
 }
 
 .project {
-    width: 520px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -91,6 +90,7 @@ body:not(#home-landing) #case-study {
 .projects-holder a {
     display: block;
     overflow: hidden;
+    width: 47.5%;
 }
 
 #tag-single {
@@ -224,7 +224,7 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 #tag-single.secondary {
-    background-color: var(--neutral)transparent;
+    background-color: var(--neutral) transparent;
     color: var(--secondary);
     border: 1px solid;
     cursor: pointer;
