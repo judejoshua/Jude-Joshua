@@ -474,9 +474,6 @@
         opacity: 0.4;
         height: 1108px;
     }
-    .experience-body {
-        gap: 47px;
-    }
     .projects-holder a {
         width: 100%;
     }
@@ -496,6 +493,22 @@
     }
     #design-section {
         padding-bottom: 64px;
+    }
+    .experience-body .row:nth-child(even) .experience_card::before {
+        left: 113px;
+        background: var(--accent);
+    }
+    .experience-body .row:nth-child(even) .experience_card::after {
+        left: 117px;
+        background: var(--accent);
+    }
+    .experience-body .row:nth-child(odd) .experience_card::before {
+        right: 127px;
+        background: var(--accent);
+    }
+    .experience-body .row:nth-child(odd) .experience_card::after {
+        right: 131px;
+        background: var(--accent);
     }
 }
 

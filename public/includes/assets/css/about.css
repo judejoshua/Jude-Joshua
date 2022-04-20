@@ -157,8 +157,8 @@
     text-align: right;
 }
 
-.experience_card.left::after,
-.experience_card.right::after {
+.experience-body .row:nth-child(odd) .experience_card::after,
+.experience-body .row:nth-child(even) .experience_card::after {
     content: '';
     width: 1px;
     height: 100%;
@@ -168,12 +168,17 @@
     right: -26px;
 }
 
+.experience-body .row:nth-child(even) .experience_card::after {
+    right: unset;
+    left: -19px;
+}
+
 .experience-body .row:nth-child(even) .experience_card {
     text-align: left;
 }
 
-.experience_card.right::before,
-.experience_card.left::before {
+.experience-body .row:nth-child(even) .experience_card::before,
+.experience-body .row:nth-child(odd) .experience_card::before {
     position: absolute;
     content: '';
     width: 10px;
@@ -184,21 +189,21 @@
     left: -24px;
 }
 
-.experience_card.left::before {
+.experience-body .row:nth-child(odd) .experience_card::before {
     left: unset;
     right: -31px;
 }
 
-.experience_card.right::after {
+.experience-body .row:nth-child(even) .experience_card::before {
     right: unset;
-    left: -19px;
+    left: -24px;
 }
 
-.row:last-child .experience_card.right::after {
+.experience-body .row:last-child .experience_card::after {
     height: 50%;
 }
 
-.row:first-child .experience_card.left::after {
+.experience-body .row:first-child .experience_card::after {
     height: 50%;
     bottom: 0;
     top: unset;
