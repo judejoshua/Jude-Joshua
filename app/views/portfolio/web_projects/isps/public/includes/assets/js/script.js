@@ -741,6 +741,7 @@ $(document).ready(function() {
         input.removeAttr('readonly');
         $(this).html('Save data');
         $(this).attr('id', 'btn-submit');
+        $('#recha').remove();
     })
 
 
