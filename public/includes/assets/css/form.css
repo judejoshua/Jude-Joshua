@@ -81,7 +81,6 @@ body#contact article {
 
 .contact-info a {
     color: var(--links);
-    font-weight: 600;
     display: inline-block;
 }
 

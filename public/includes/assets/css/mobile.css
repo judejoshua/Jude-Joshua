@@ -266,7 +266,7 @@
         height: 48px;
     }
     body:not(#home-landing) .landing {
-        padding: 136px 32px 40px;
+        padding: 136px 32px 24px;
     }
     form {
         padding: 16px 0 72px;
