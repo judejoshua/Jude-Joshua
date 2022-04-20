@@ -17,22 +17,31 @@
 </div>
 <div class="results-section">
     <div class="results-section-title">
-        <?=explode('/', $url)[3] == 'contact' ? 
-            '
-                <p class="p3">If you\'re not fully convinced of my strength, why not have a <a href="/portfolio">look</a> at the projects that I have helped to design and build in the past.</p>
-            ' :
-            '
-                <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</p>
-            ' 
+        <?php
+            if(explode('/', $url)[3] == 'contact')
+            {
+                echo '
+                    <p class="p3">If you\'re not fully convinced of my strength, why not have a <a href="/portfolio">look</a> at the projects that I have helped to design and build in the past.</p>
+                ';
+            }else if(explode('/', $url)[3] == 'portfolio')
+            { 
+                echo '
+                    <p class="p3">Your users desire a stress-free experience with your digital products and I can help you provide them with maximum satisfaction.</p>
+                    <a class="btn mdn" href="/contact">
+                        <div class="btn_bg"></div>
+                        <div class="btn_cont">
+                            <p id="text"><span>Disc</span>over how</p>
+                            <i class="las la-arrow-right"></i>
+                        </div>
+                    </a>
+                ';
+            }else{
+                echo '
+                    <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</p>
+                ';
+            }
         ?>
     </div>
-    <!-- <a class="btn lng" href="/contact">
-        <div class="btn_bg"></div>
-        <div class="btn_cont">
-            <p id="text"><span>Send</span> me a message</p>
-            <i class="las la-arrow-right"></i>
-        </div>
-    </a> -->
 </div>
 <footer>
     <div class="footer-top">
@@ -47,5 +56,5 @@
             <i class="las la-angle-up"></i>
         </a>
     </div>
-    <span class="copyright">(c) Jude Joshua, 2022. All rights reserved.</span>
+    <span class="copyright">&copy; Jude Joshua, 2022. All rights reserved.</span>
 </footer>

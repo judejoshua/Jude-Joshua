@@ -173,3 +173,12 @@ p a::after {
     margin-left: 2px;
     transform: rotate(-45deg);
 }
+
+#highlight {
+    color: var(--highlight);
+    text-decoration: underline;
+}
+
+#quote {
+    font-style: italic;
+}

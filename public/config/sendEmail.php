@@ -27,23 +27,24 @@ switch($_POST) {
                 $name = htmlspecialchars($_POST['name']);
                 $firstname = explode(" ",$name)[0];
                 $email = htmlspecialchars($_POST['email']);
+                $phone = !empty($_POST['phone']) ? htmlspecialchars($_POST['phone']) : 'NAN';
                 $msg = htmlspecialchars($_POST['message']);
  
                 //Enable SMTP debugging.
-                $mail->SMTPDebug = 3;                               
+                $mail->SMTPDebug = 3;
                 //Set PHPMailer to use SMTP.
-                $mail->isSMTP();            
+                $mail->isSMTP();
                 //Set SMTP host name                          
                 $mail->Host = "judejoshua.me";
                 //Set this to true if SMTP host requires authentication to send email
-                $mail->SMTPAuth = true;                          
+                $mail->SMTPAuth = true;
                 //Provide username and password     
                 $mail->Username = "hello@judejoshua.me";//store this in the database    
                 $mail->Password = "Felenous12#";//store this in the database                    
                 //If SMTP requires TLS encryption then set it
                 $mail->SMTPSecure = "tls";
                 //Set TCP port to connect to
-                $mail->Port = 26;                                   
+                $mail->Port = 26;
 
                 $mail->From = "hello@judejoshua.me";
                 $mail->FromName = "Jude Joshua";
@@ -68,10 +69,13 @@ switch($_POST) {
                     $mail->addAddress("hello@judejoshua.me");
                     $mail->AddCC("officialuby@gmail.com");
                     $mail->Subject = "NEW CONTACT FORM MESSAGE";
-                    $mail->Body = "<p>You have a new message from <i>".$name."</i>.</p>
-                     <p><b>Their email is: </b><br/><i>".$email."</i></p>
-                     <p><b>Here is their message: </b><br/><i>".$msg."</i></p>";
-                     $mail->send();
+                    $mail->Body = "
+                        <p>You have a new message from <i>".$name."</i>.</p>
+                        <p><b>Their email is: </b><br/><i>".$email."</i></p>
+                        <p><b>Here is their message: </b><br/><i>".$msg."</i></p>
+                        <p><b>Here is their phone number: </b><br/><i>".$phone."</i></p>
+                    ";
+                    $mail->send();
                     echo 'success=sent';
                     // echo "Message has been sent successfully";
                 } catch (Exception $e) {

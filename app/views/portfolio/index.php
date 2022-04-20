@@ -18,7 +18,8 @@
                 <div class="text-divider">
                     <h1>Past Work</h1>
                     <div id="liner"></div>
-                    <p class="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus ullamcorper tellus malesuada. Habitant turpis sit vestibulum, ac nunc diam aliquet tristique.</p>
+                    <p class="p4">
+                        Here are some ideas that I have turned into end-user-ready products. You will see that these projects better display what stress-free user interaction and satisfaction is all about, with a rating of 4-5 stars.</p>
                 </div>
                 <div class="tags-row">
                     <span class="h5">Filter by:</span>

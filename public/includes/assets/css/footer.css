@@ -16,9 +16,13 @@ body:not(#home-landing) .results-section {
 }
 
 .results-section-title {
-    width: 601px;
+    width: 556px;
     text-align: center;
     color: var(--ink);
+}
+
+.results-section-title>p {
+    margin-bottom: 24px;
 }
 
 footer {

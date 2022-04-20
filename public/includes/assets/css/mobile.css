@@ -143,7 +143,7 @@
         font-size: 24px;
     }
     .p3 {
-        font-size: 16px;
+        font-size: 18px;
     }
     .text-divider {
         gap: 16px;
@@ -176,7 +176,7 @@
         padding-bottom: 80px;
     }
     .btn.mdn {
-        width: 200px;
+        width: 168px;
     }
     .btn:hover>.btn_bg {
         width: 100%;
@@ -234,6 +234,10 @@
     .to-top {
         gap: 0;
         flex-direction: column-reverse;
+        border: 1px solid var(--accent);
+        border-radius: 1px;
+        padding: 8px;
+        background: var(--accent);
     }
     .to-top .h4 {
         display: none;
@@ -266,7 +270,7 @@
         height: 48px;
     }
     body:not(#home-landing) .landing {
-        padding: 136px 32px 24px;
+        padding: 136px 32px 40px;
     }
     form {
         padding: 16px 0 72px;
@@ -292,7 +296,7 @@
     }
     button .btn_cont {
         top: 19px;
-        left: 21px;
+        left: 19px;
     }
     body#case-study-body .landing {
         padding: 0;
@@ -415,6 +419,7 @@
         padding-top: 72px;
         background-position-x: -792px;
         background-position-y: center;
+        gap: 0;
     }
     .about-me-card-holder {
         flex-direction: column;
@@ -479,6 +484,18 @@
         flex-direction: column-reverse;
         align-items: end;
         gap: 16px;
+    }
+    .tags-row .h5 {
+        text-align: left;
+    }
+    .tags-row {
+        gap: 0;
+    }
+    body:not(#home-landing) #case-study {
+        padding-bottom: 64px;
+    }
+    #design-section {
+        padding-bottom: 64px;
     }
 }
 

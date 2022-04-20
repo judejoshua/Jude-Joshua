@@ -54,8 +54,8 @@
                         <div class="text-divider">
                             <h2>Digital Patterns that I have built...</h2>
                             <div id="liner"></div>
-                            <p class="p4">As easy as building patterns may sound, they are actually, not easy to build; because a lot of users are already used to a particular way of life. Despite, what always pushes through is how much of a solution, a digital platform
-                                has to offer to your user. And this is what I have done; spent years building and learning how to design what works and what gives them satisfaction. Here are a few awesome samples.</p>
+                            <p class="p4">While "building patterns" may sound easy to achieve, in some cases, they are actually, not that easy. This is because a lot of users are already used to a particular way of life/lifestlye. However, what always pushes through, is how much of a solution a digital platform has to offer.<br/>
+                            And this is what I have done; spent years building and learning how to design what works and what gives users satisfaction. Here are a few awesome samples.</p>
                         </div>
                         <div class="projects-holder">
                             <div class="row">
@@ -123,8 +123,8 @@
                         <div class="text-divider">
                             <h2>How do I achieve these patterns?</h2>
                             <div id="liner"></div>
-                            <p class="p4">When working on projects, web or mobile, I like to tear them down into smaller parts that I can face. But even with this, I follow a process. I don’t just jump in and start tearing down. I work, pause, look at it again, and
-                                repeat until I have a solution. Here’s what I mean...</p>
+                            <p class="p4"> Creating user-friendly systems don't just happen. It calls for certain skills to be applied through certain processes. This is why when working on projects, web or mobile, I prefer to break them down into smaller processes which I will work on, and then put them back them back together to achieve a unified solution.<br/>
+                            Here’s what I mean...</p>
                         </div>
                         <div class="design-styles">
                             <div class="row">
@@ -137,8 +137,11 @@
                                             <h2>Research</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">I start with the basics. Define the problem; because yeah, there’s no solution without properly understanding the problem.<br/>After that, I talk to the people with the problem, and then, I create personaes
-                                                based on these users. My research methodolgy is simple; Know, learn and understand.</p>
+                                            <p class="paragraphsdescriptions">
+                                                This is the key process in getting the desired results. First, I pay close attention to the problem or idea, and try to understand the goals.<br/>
+                                                After this, I conduct deep findings/researches and then, I create user personaes based on my findings.<br/>
+                                                My research methodolgy is simple; <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -151,8 +154,9 @@
                                             <h2>Design</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">After research, I go into the design.<br/>This is usually the interesting part of my work. As this is the part, where I have the freedom to do what I want, in the way that I want it.<br/> I start with the sketches,
-                                                which are transformed to wireframes, and finally to visual mockups.</p>
+                                            <p class="paragraphsdescriptions">
+                                                Here comes the most exciting part of the process. With an established understanding, I begin to create solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -165,8 +169,10 @@
                                             <h2>Prototyping</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">Well, how do you know if the design is working as it should?<br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla risus vestibulum et, magna suscipit tortor dictum dolor, pretium. Et interdum
-                                                vitae neque amet, ornare.</p>
+                                            <p class="paragraphsdescriptions">
+                                                After designing, I carry out tests on the draft version of the product. I explore the product as a user while taking note of the 'why' behind the experience.<br/>
+                                                From here, I can know what is lacking; or if the product is working as it should, and then adjust it to satisfy the desired needs.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -179,8 +185,11 @@
                                             <h2>Testing</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">After all has been said and done; from the research, to design, and prototyping; We can’t say it is complete until we have tested the prototype with real users and have received real-life feedback.<br/>If the
-                                                product does not match the client/users’ needs, I reiterate to meet the new requirements.</p>
+                                            <p class="paragraphsdescriptions">
+                                                This is the main testing process.</br>
+                                                After the initial prototype testing and implementation of the product, I test the product further, with real users.</br>
+                                                After I get feedback, I cross-check it with the desired needs and if needed, re-adjust the product to give the desired results.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -197,11 +206,12 @@
                 </section>
                 <section id="why">
                     <div class="text-divider">
-                        <h2>Why I love what I do</h2>
+                        <h2>What keeps me going...</h2>
                         <div id="liner"></div>
-                        <p class="p4">Like Samadara Ginige, an award winning logo designer and developer once said, Design is everywhere. From the dress you’re wearing to the smartphone you’re holding, it’s design. I have had an interest in design from my childhood,
-                            and an interest to make life better and easy for people. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id tincidunt elit. Nullam commodo orci dictum diam convallis, id dapibus quam suscipit. Pellentesque faucibus
-                            felis vitae risus porta consectetur quis pharetra nunc. Aliquam dapibus augue vitae rhoncus sagittis. Nam risus metus, porttitor quis ullamcorper a, fermentum et massa.</p>
+                        <p class="p4">
+                            There is always a driving force that pushes one to excellence or otherwise. For me, I'm driven by a deep passion for design. Not a single day has gone by without me engaging my design skills in some way.<br/>
+                            Like Samadara Ginige, an award winning logo designer and developer once said, "<span id="quote">Design is everywhere. From the dress you’re wearing to the smartphone you’re holding, it’s design</span>". I have had an love for design and arts from my childhood. This, combined with an interest to make life better and easy for people, are what pushed me to develop my skills in design.<br/>
+                            And whether it is through design or coding, I always seek to make the digital life of my users as easy as I can make it.</p>
                     </div>
                     <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>
