@@ -125,7 +125,10 @@
     }
     .btn_cont {
         top: 19px;
-        left: 30px;
+        left: 29px;
+    }
+    .results-section .btn_cont {
+        left: 26px;
     }
     #arrow-tail-long {
         height: 36px;
@@ -134,7 +137,7 @@
         padding-left: 32px;
         padding-right: 32px;
         padding-top: 64px;
-        gap: 32px !important;
+        gap: 24px !important;
         background-size: cover;
         background-position-x: -700px;
     }
@@ -391,14 +394,14 @@
         gap: 0;
         width: calc(200px * 8); */
         flex-direction: column;
-        gap: 48px;
+        gap: 56px;
         width: 100%;
     }
     .testimonials .title-text {
         padding-right: 32px;
         margin-right: 0;
         align-items: flex-start;
-        text-align: center;
+        text-align: left;
     }
     .testimonials .title-text p {
         width: 225px;
@@ -406,7 +409,7 @@
     .client {
         /* width: 240px; */
         width: 100%;
-        gap: 16px;
+        gap: 4px;
     }
     .testimonials-wrapper {
         gap: 64px;
@@ -419,7 +422,7 @@
         padding-top: 72px;
         background-position-x: -792px;
         background-position-y: center;
-        gap: 0;
+        gap: 24px !important;
     }
     .about-me-card-holder {
         flex-direction: column;
@@ -464,7 +467,7 @@
         padding-bottom: 64px;
     }
     .experience_card {
-        width: 80%;
+        width: 100%;
         text-align: center !important;
     }
     .experience-body .row {
@@ -495,19 +498,21 @@
         padding-bottom: 64px;
     }
     .experience-body .row:nth-child(even) .experience_card::before {
-        left: 113px;
+        left: unset;
         background: var(--accent);
+        right: 47.4%;
     }
     .experience-body .row:nth-child(even) .experience_card::after {
-        left: 117px;
+        left: unset;
         background: var(--accent);
+        right: 49%;
     }
     .experience-body .row:nth-child(odd) .experience_card::before {
-        right: 127px;
+        right: 47.4%;
         background: var(--accent);
     }
     .experience-body .row:nth-child(odd) .experience_card::after {
-        right: 131px;
+        right: 49%;
         background: var(--accent);
     }
 }

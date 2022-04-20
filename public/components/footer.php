@@ -30,7 +30,7 @@
                     <a class="btn mdn" href="/contact">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>Disc</span>over how</p>
+                            <p id="text"><span>Find</span> out how</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </a>

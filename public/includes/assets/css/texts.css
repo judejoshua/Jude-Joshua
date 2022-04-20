@@ -175,8 +175,8 @@ p a::after {
 }
 
 #highlight {
-    color: var(--highlight);
-    text-decoration: underline;
+    font-style: italic;
+    font-weight: 800;
 }
 
 #quote {

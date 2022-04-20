@@ -9,12 +9,13 @@ $(document).ready(function() {
         } else {
             $("navigation").removeClass("fixed");
         }
-
-        var scrollDivi = $('#divisor').offset().top;
-        if (scroll >= scrollDivi) {
-            $("a.download").fadeOut('slow');
-        } else {
-            $("a.download").fadeIn('slow');
+        if (window.location.href.indexOf("cv") > -1) {
+            var scrollDivi = $('#divisor').offset().top;
+            if (scroll >= scrollDivi) {
+                $("a.download").fadeOut('slow');
+            } else {
+                $("a.download").fadeIn('slow');
+            }
         }
     });
     $('a[href^="#"], a[href^="/#"]').click(function() {
@@ -194,6 +195,17 @@ $(document).ready(function() {
     //=================================================================================================
     function removePop() {
         $('.success-message').removeClass('show error');
+    }
+
+    //=================================================================================================
+    //                    A D D  T H E  L E T T E R  N A M E  F O R  N A M E
+    //=================================================================================================
+    if (window.location.href.indexOf("about") > -1) {
+
+        $('.client-name-head').each(function() {
+            $(this).text($(this).next('h4').text().charAt(0));
+        })
+
     }
 
 

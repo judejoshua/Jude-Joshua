@@ -210,8 +210,8 @@
                                         to details and needs. Now, I can quit moving from one product designer to the other. Indeed, you are a 'God-sent'.</p>
                                 </div>
                                 <div class="client-name">
-                                    <h4>UGWU KIZITO</h4>
-                                    <p class="p5">Founder, Thrive.NIG</p>
+                                    <span class="client-name-head"></span>
+                                    <h4>Ugwu Kizito</h4>
                                 </div>
                             </div>
                             <div class="client">
@@ -220,8 +220,8 @@
                                     <p class="p4">Wow! I lack words to describe your skills. Your ability to blend user needs with business goals to produce consistently successful products is commendable. Expect more gigs from me.</p>
                                 </div>
                                 <div class="client-name">
-                                    <h4>UGWU KIZITO</h4>
-                                    <p class="p5">Founder, Thrive.NIG</p>
+                                    <span class="client-name-head"></span>
+                                    <h4>Michael Aremu</h4>
                                 </div>
                             </div>
                             <div class="client">
@@ -231,8 +231,8 @@
                                     </p>
                                 </div>
                                 <div class="client-name">
-                                    <h4>UGWU KIZITO</h4>
-                                    <p class="p5">Founder, Thrive.NIG</p>
+                                    <span class="client-name-head"></span>
+                                    <h4>Blessing Ochanya</h4>
                                 </div>
                             </div>
                             <div class="client">
@@ -242,8 +242,8 @@
                                         it a try. Mehn… your results are a shocker. I never expected such a thing. Indeed, a book shouldn't be judged by its cover.</p>
                                 </div>
                                 <div class="client-name">
-                                    <h4>UGWU KIZITO</h4>
-                                    <p class="p5">Founder, Thrive.NIG</p>
+                                    <span class="client-name-head"></span>
+                                    <h4>Jide Tomoshegbo</h4>
                                 </div>
                             </div>
                             <div class="client">
@@ -252,8 +252,8 @@
                                     <p class="p4">Your words coupled with the designs and interactions were perfect for my idea. Indeed, you were able to prioritize user experiences and gave the desired results.</p>
                                 </div>
                                 <div class="client-name">
-                                    <h4>UGWU KIZITO</h4>
-                                    <p class="p5">Founder, Thrive.NIG</p>
+                                    <span class="client-name-head"></span>
+                                    <h4>Akwa-Eno Isong</h4>
                                 </div>
                             </div>
                             <div class="client">
@@ -263,8 +263,8 @@
                                         your passion for designing to make life better is top-notch.</p>
                                 </div>
                                 <div class="client-name">
-                                    <h4>UGWU KIZITO</h4>
-                                    <p class="p5">Founder, Thrive.NIG</p>
+                                    <span class="client-name-head"></span>
+                                    <h4>Victoria Oniyide</h4>
                                 </div>
                             </div>
                         </div>
