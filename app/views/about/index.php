@@ -21,7 +21,8 @@
                     <p class="p4">
                         Hi, I am Jude Joshua and this is my story so far...</br>
                         I began in 2014 and started an internship in 2017. I have vast experience in website design, website development, and product design technologies. This knowledge and experience has helped me work hand-in-hand with business owners, startups, and private individuals to bring ideas to life through product designing that gives users a stress-free experience.<br/>
-                        Currently, I'm working on sharpening my design skills to foster my creativity and passion for design, to change the way the world works. My mission is to use my knowledge to create digital spaces and communities which will serve; not only as systems for better user experience, but will also train other designers on how to build empathy-based systems.
+                        Currently, I'm working on sharpening my design skills to foster my creativity and passion for design, to change the way the world works.<br/>
+                        My mission is to use my knowledge to create digital spaces and communities which will serve; not only as systems for better user experience, but will also train other designers on how to build empathy-based systems.
                     </p>
                 </div>
                 <div class="about-me-card-holder">
