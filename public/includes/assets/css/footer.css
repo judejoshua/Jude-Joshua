@@ -1,5 +1,5 @@
 .results-section {
-    padding: 140px 128px 140px;
+    padding: 140px 128px 96px;
     background: url(../img/results-background.png);
     background-size: cover;
     background-position: center;
@@ -79,6 +79,10 @@ footer {
     align-items: center;
     gap: 8px;
     color: var(--secondary);
+    border: 1px solid var(--accent);
+    border-radius: 1px;
+    padding: 8px;
+    background: var(--accent);
 }
 
 .to-top:hover {
@@ -87,7 +91,6 @@ footer {
 
 .to-top i {
     font-size: 19px;
-    top: 2px;
 }
 
 span.copyright {

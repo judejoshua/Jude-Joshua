@@ -45,51 +45,55 @@ $(document).ready(function() {
     //=================================================================================================
     //                           C O N T E X T  M E N U
     //=================================================================================================
-    // document.onclick = hideMenu;
-    // document.oncontextmenu = rightClick;
+    if (!(screen.width <= 500)) {
+        document.onclick = hideMenu;
+        document.oncontextmenu = rightClick;
 
-    // function hideMenu() {
-    //     $("#contextMenu").hide()
-    // }
-    function rightClick(e) {
-        e.preventDefault();
+        function hideMenu() {
+            $("#contextMenu").hide()
+        }
 
-        if ($(e.target).is('a, a *')) { //if current right click target is a link
-            var link = $(e.target).attr('href')
-            if ($("#contextMenu #new_tab").length) {
+        function rightClick(e) {
+            e.preventDefault();
+
+            if ($(e.target).is('a, a *')) { //if current right click target is a link
+                var link = $(e.target).attr('href')
+                if ($("#contextMenu #new_tab").length) {
+                    $("#contextMenu #new_tab").remove()
+                }
+                $("#contextMenu ul").prepend('<li id="new_tab"><a href="' + link + '" target="_blank">Open link in new tab</a></li>')
+            } else {
                 $("#contextMenu #new_tab").remove()
             }
-            $("#contextMenu ul").prepend('<li id="new_tab"><a href="' + link + '" target="_blank">Open link in new tab</a></li>')
-        } else {
-            $("#contextMenu #new_tab").remove()
+            var menu = $("#contextMenu");
+            menu.show();
+
+            if (e.pageX >= ($(window).width() - $('#contextMenu').width() - $('#contextMenu').width())) {
+                menu.css("left", (e.pageX - ($('#contextMenu').width()) - 30) + "px");
+                $('.context-menu ul li #inner-down').css("left", "-100%");
+            } else {
+                menu.css("left", e.pageX + "px");
+                $('.context-menu ul li #inner-down').css("left", "100%");
+            }
+            if (e.clientY <= $('#contextMenu').height() + 30) {
+                menu.css("top", e.pageY + "px");
+            } else if (e.clientY >= (e.clientY - $('#contextMenu').height() - 30)) {
+                menu.css("top", (e.pageY - ($('#contextMenu').height()) - 30) + "px");
+            } else {
+                menu.css("top", e.pageY + "px");
+            }
         }
-        var menu = $("#contextMenu");
-        menu.show();
-        if (e.pageX >= ($(window).width() - $('#contextMenu').width() - $('#contextMenu').width())) {
-            menu.css("left", (e.pageX - ($('#contextMenu').width()) - 30) + "px");
-            $('.context-menu ul li #inner-down').css("left", "-100%");
-        } else {
-            menu.css("left", e.pageX + "px");
-            $('.context-menu ul li #inner-down').css("left", "100%");
-        }
-        if (e.clientY <= $('#contextMenu').height() + 30) {
-            menu.css("top", e.pageY + "px");
-        } else if (e.clientY >= (e.clientY - $('#contextMenu').height() - 30)) {
-            menu.css("top", (e.pageY - ($('#contextMenu').height()) - 30) + "px");
-        } else {
-            menu.css("top", e.pageY + "px");
-        }
+        $(window).keyup(function(event) {
+            if (event.which === 27) {
+                $('#contextMenu').hide();
+            }
+        });
+        $(window).scroll(function() {
+            if ($("#contextMenu").is(':visible')) {
+                hideMenu();
+            }
+        });
     }
-    $(window).keyup(function(event) {
-        if (event.which === 27) {
-            $('#contextMenu').hide();
-        }
-    });
-    $(window).scroll(function() {
-        if ($("#contextMenu").is(':visible')) {
-            hideMenu();
-        }
-    });
 
     //=================================================================================================
     //                           S E N D  E M A I L  F U N C T I O N
@@ -119,21 +123,33 @@ $(document).ready(function() {
                         $('html,body').animate({
                             scrollTop: $('#name').offset().top - 200
                         }, 500);
+                        setTimeout(() => {
+                            $('.error').fadeOut('slow').text('');
+                        }, 5000);
                     } else if (status[1] === 'email' && status[2] === undefined) {
                         $('.error[data-error="email"]').fadeIn(1000).text('You forgot to enter your email...');
                         $('html,body').animate({
                             scrollTop: $('#email').offset().top - 200
                         }, 500);
+                        setTimeout(() => {
+                            $('.error').fadeOut('slow').text('');
+                        }, 5000);
                     } else if (status[1] === 'email' && status[2] === 'invalid') {
                         $('.error[data-error="email"]').fadeIn(1000).text('You eneterd an invalid email...');
                         $('html,body').animate({
                             scrollTop: $('#email').offset().top - 200
                         }, 500);
+                        setTimeout(() => {
+                            $('.error').fadeOut('slow').text('');
+                        }, 5000);
                     } else if (status[1] === 'message') {
                         $('.error[data-error="message"]').fadeIn(1000).text('Heyy! Don\'t forget to enter your message!');
                         $('html,body').animate({
                             scrollTop: $('#message').offset().top - 200
                         }, 500);
+                        setTimeout(() => {
+                            $('.error').fadeOut('slow').text('');
+                        }, 5000);
                     } else if (status[1] === 'failed') {
                         $('.success-message').addClass('show error');
                         $('.success-message i').removeClass().addClass('las la-alert-outline');

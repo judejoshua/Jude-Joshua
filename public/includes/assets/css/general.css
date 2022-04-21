@@ -73,6 +73,11 @@
     gap: 16px;
 }
 
+.results-section .btn_cont {
+    left: 34px;
+    top: 24px;
+}
+
 .btn_cont #text,
 .btn_cont i {
     font-size: 14px;

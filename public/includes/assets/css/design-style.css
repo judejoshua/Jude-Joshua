@@ -29,12 +29,12 @@
     color: var(--neutral);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 4px;
 }
 
 .design-rule {
     width: 360px;
-    height: 472px;
+    height: 496px;
     left: 0px;
     top: 0px;
     /* secondary */
@@ -42,7 +42,7 @@
     display: inline-flex;
     flex-direction: column;
     padding: 64px 32px 48px;
-    gap: 32px;
+    gap: 12px;
     margin-right: 32px;
 }
 

@@ -26,7 +26,7 @@
                 <div class="contact-info">
                     <p class="p4">Tell me a story of your project through messages or questions. Send me an email at
                         <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call
-                        <a href="tel:+2349041134926">+234-904-113-4926.</a><br/>However, you can quickly fill the spaces below and I will respond within 24 hours of receipt.
+                        <a href="tel:+2349041134926">+234-904-113-4926</a>.<br/>However, you can quickly fill the spaces below and I will respond within 24 hours of receipt.
                     </p>
                     <!-- <ul>
                         <li>

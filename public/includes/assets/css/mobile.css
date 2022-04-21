@@ -235,15 +235,10 @@
         font-size: 13px;
     }
     .to-top {
-        gap: 0;
-        flex-direction: column-reverse;
-        border: 1px solid var(--accent);
-        border-radius: 1px;
-        padding: 8px;
-        background: var(--accent);
+        gap: 6px;
     }
     .to-top .h4 {
-        display: none;
+        /* display: none; */
     }
     .to-top h4 {
         font-size: 10px;
@@ -251,6 +246,7 @@
     }
     .to-top i {
         font-size: 17px;
+        top: 0;
     }
     body,
     html {
@@ -299,7 +295,7 @@
     }
     button .btn_cont {
         top: 20px;
-        left: 19px;
+        left: 21px;
     }
     body#case-study-body .landing {
         padding: 0;
