@@ -22,8 +22,7 @@
                     <div class="header">
                         <div class="header-text">
                             <h1>Using creativity and passion to create a better world.</h1>
-                            <p class="p4">I am Jude Joshua, a product designer, with background in web design & development from Nigeria 🇳🇬.<br>I seek to fuse writing with design in a way that will create new patterns and lifestyles through digital systems in the
-                                simplest way possible.</p>
+                            <p class="p4">I am Jude Joshua, a product designer, with background in web design & development from Nigeria 🇳🇬.<br>I seek to fuse my design knowledge and skills in ways that will create new patterns and lifestyles through digital systems in the simplest way possible.</p>
                         </div>
                         <div class="header-cta">
                             <a class="btn" href="#body">
@@ -54,8 +53,9 @@
                         <div class="text-divider">
                             <h2>Digital Patterns that I have built...</h2>
                             <div id="liner"></div>
-                            <p class="p4">While "building patterns" may sound easy to achieve, in some cases, they are actually, not that easy. This is because a lot of users are already used to a particular way of life/lifestlye. However, what always pushes through, is how much of a solution a digital platform has to offer.<br/>
-                            And this is what I have done; spent years building and learning how to design what works and what gives users satisfaction. Here are a few awesome samples.</p>
+                            <p class="p4">"Building new design patterns" may sound easy to achieve, but in reality, they are, actually not that easy. This is because a lot of users are already used to a particular way of life/lifestlye. However, what always pushes through, is how much of a solution a digital platform has to offer.<br/>
+                            And this is what I have done; spent years building and learning how to design what works and what gives users satisfaction.<br/>
+                            Here are a few awesome samples.</p>
                         </div>
                         <div class="projects-holder">
                             <div class="row">
@@ -123,7 +123,7 @@
                         <div class="text-divider">
                             <h2>How do I achieve these patterns?</h2>
                             <div id="liner"></div>
-                            <p class="p4"> Creating user-friendly systems don't just happen. It calls for certain skills to be applied through certain processes. This is why when working on projects, web or mobile, I prefer to break them down into smaller processes which I will work on, and then put them back them back together to achieve a unified solution.<br/>
+                            <p class="p4">Creating user-friendly systems don't just happen. It calls for certain skills to be applied through certain processes. This is why when working on projects, web or mobile; I prefer to break them down into smaller processes which I will work on, and then put them back them back together to achieve a unified solution.<br/>
                             Here’s what I mean...</p>
                         </div>
                         <div class="design-styles">
@@ -210,7 +210,7 @@
                         <div id="liner"></div>
                         <p class="p4">
                             There is always a driving force that pushes one to excellence or otherwise. For me, I'm driven by a deep passion for design. Not a single day has gone by without me engaging my design skills in some way.<br/>
-                            Like Samadara Ginige, an award winning logo designer and developer once said, "<span id="quote">Design is everywhere. From the dress you’re wearing to the smartphone you’re holding, it’s design</span>". I have had an love for design and arts from my childhood. This, combined with an interest to make life better and easy for people, are what pushed me to develop my skills in design.<br/>
+                            Like Samadara Ginige, an award winning logo designer and developer once said, "<span id="quote">Design is everywhere. From the dress you’re wearing to the smartphone you’re holding, it’s design</span>". I have had a love for design and arts from my childhood. This, combined with an interest to make life better and easy for people, are what pushed me to develop my skills in design.<br/>
                             And whether it is through design or coding, I always seek to make the digital life of my users as easy as I can make it.</p>
                     </div>
                     <a class="btn mdn" href="/cv">
