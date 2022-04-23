@@ -51,7 +51,7 @@
     gap: 32px;
 }
 
-.preloader h1 {
+.preloader .h1 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 800;
@@ -101,6 +101,6 @@
     border-top: 4px solid var(--placeholders);
 }
 
-.recha.preloader h1 {
+.recha.preloader .h1 {
     display: none;
 }

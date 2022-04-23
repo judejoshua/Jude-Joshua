@@ -6,7 +6,7 @@
 
     <body id="home-landing">
         <div class="preloader">
-            <h1>JUDE JOSHUA</h1>
+            <p class="h1">JUDE JOSHUA</p>
             <div class="loader-circles">
                 <div></div>
                 <div></div>
