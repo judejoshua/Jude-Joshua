@@ -61,7 +61,7 @@
                             <div class="row">
                                 <a href="">
                                     <div class="project">
-                                        <img src="/public/includes/assets/img/project-image.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image.png" alt="Online men’s clothing store">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>Online men’s clothing store</h3>
@@ -73,7 +73,7 @@
                                 </a>
                                 <a href="">
                                     <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-1.png" alt="App design for music player">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for music player</h3>
@@ -85,7 +85,7 @@
                                 </a>
                                 <a href="">
                                     <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-2.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-2.png" alt="App design for messaging platform">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for messaging platform</h3>
@@ -97,7 +97,7 @@
                                 </a>
                                 <a href="">
                                     <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-3.png" alt="">
+                                        <img src="/public/includes/assets/img/project-image-3.png" alt="App design for online checkout">
                                         <div class="caption">
                                             <div class="caption-text">
                                                 <h3>App design for online checkout</h3>
