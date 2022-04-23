@@ -15,8 +15,8 @@
         <meta name="dcterms.rightsHolder" content="Jude Joshua">
         <meta name="dcterms.rights" content="Unless otherwise indicated, this Website is our proprietary property and all source codes, databases, functionalities, softwares, audio, video, text, photographs, graphic content and designs on the Website (collectively, The 'Content') and the trademarks, service marks, and logos contained therein (the 'Marks') are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Nigeria, foreign jurisdictions, and international conventions." />
         <meta name="dcterms.dateCopyrighted" content="2021">
-        <meta content="" name="description">
-        <meta content="UbyJude Josh, Josh, UbyJude, UbyJudeh, Jude, Joshua, Jude Joshua" name="keywords">
+        <meta content="I am Jude Joshua, a product designer, with a background in web design & development. I seek to fuse my design skills in ways that will create new patterns and lifestyles through digital systems in the simplest way possible." name="description">
+        <meta content="UbyJude Josh, Josh, UbyJude, UbyJudeh, Jude, Joshua, Jude Joshua, Product design, design, ui/ux, ui, ux, ui design, ux design, ui/ux design" name="keywords">
         <meta id="browserColor" name="theme-color" content="#000000">
         <!--Windows Phone **-->
         <meta id="browserColor" name="msapplication-navbutton-color" content="#000000">
