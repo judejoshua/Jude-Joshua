@@ -1,5 +1,5 @@
 <?php
-    $title = '';
+    $title = 'Online men’s clothing store';
     include './public/components/header.php';
 ?>
     </head>

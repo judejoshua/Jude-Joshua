@@ -1,6 +1,5 @@
 <?php
 
-require_once 'projects.contr.php';
 class Edit extends Projects
 {
     public function metrics($projectname = '', $id = '', $sector = '')
@@ -30,7 +29,7 @@ class Edit extends Projects
                 foreach ($metricsData as $key => $metrics){
                     $metricsData = json_decode($metrics['metrics_data'], TRUE);
                 }
-
+                
                 $jobs = $this->get_jobs($sector);//get the job total for this sector
                 
                 $project_jobs_created = round(($projectData[0]['cost'] * $jobs[0]['total'])/$jobs[0]['budget_per_total_jobs']);

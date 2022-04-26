@@ -149,7 +149,7 @@ switch($_POST){
                                             
                                             foreach ($metrics_result as $metrics_resultKey => $metrics_resultData)
                                             {
-                                                if($addedMetricsId == $metrics_resultData['id'])
+                                                if($_POST['metrics_id'] == $metrics_resultData['id'])
                                                 {
                                                     $compared = $project->getCompared($metrics_result, $formDataKey, $value);
 
