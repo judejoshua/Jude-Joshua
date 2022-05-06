@@ -59,7 +59,7 @@
                         </div>
                         <div class="projects-holder">
                             <div class="row">
-                                <a href="">
+                                <a href="/portfolio/case_study">
                                     <div class="project">
                                         <img src="/public/includes/assets/img/project-image.png" alt="Online men’s clothing store">
                                         <div class="caption">
@@ -71,7 +71,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#">
                                     <div class="project">
                                         <img src="/public/includes/assets/img/project-image-1.png" alt="App design for music player">
                                         <div class="caption">
@@ -83,7 +83,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#">
                                     <div class="project">
                                         <img src="/public/includes/assets/img/project-image-2.png" alt="App design for messaging platform">
                                         <div class="caption">
@@ -95,7 +95,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
+                                <a href="#">
                                     <div class="project">
                                         <img src="/public/includes/assets/img/project-image-3.png" alt="App design for online checkout">
                                         <div class="caption">

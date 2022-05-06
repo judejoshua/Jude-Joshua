@@ -1,5 +1,6 @@
 <?php
 
+require_once('projects.contr.php');
 class Sector extends Projects
 {
     public function index()
