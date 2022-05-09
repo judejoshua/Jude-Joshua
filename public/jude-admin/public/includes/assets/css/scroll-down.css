@@ -1,0 +1,47 @@
+.scroll-down {
+    position: absolute;
+    display: table;
+    top: unset;
+    bottom: 37px;
+    left: 50%;
+    height: 115px;
+}
+
+.mouse {
+    height: 72px;
+    width: 38px;
+    border: 1px solid var(--secondary);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+#arrow-tail-short {
+    height: 16px;
+    width: 1px;
+    background: var(--secondary);
+    top: 8px;
+}
+
+#arrow-tail-long {
+    width: 1px;
+    height: 77px;
+    background: var(--secondary);
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+}
+
+#arrow-tail-long::after {
+    content: '';
+    border: solid var(--secondary);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: -4px;
+    position: absolute;
+    bottom: 0;
+}

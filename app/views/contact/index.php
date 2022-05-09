@@ -6,7 +6,7 @@
 
     <body id="contact">
         <div class="preloader">
-            <h1>JUDE JOSHUA</h1>
+            <p class="h1">JUDE JOSHUA</p>
             <div class="loader-circles">
                 <div></div>
                 <div></div>
@@ -58,7 +58,7 @@
                                 <label for="email" id="to-title" class="h4">Email*</label>
                                 <div class="input-group">
                                     <div class="input-field">
-                                        <input type="text" id="email" name="email" class="form-input p4" maxlength="30" />
+                                        <input type="text" id="email" name="email" class="form-input p4" maxlength="60"/>
                                         <div class="labels">
                                             <p class="p5 placeholder">Enter your email (Required)</p>
                                             <p class="p5 error" data-error="email"></p>
@@ -70,7 +70,7 @@
                                 <label for="name" id="to-title" class="h4">Phone Number</label>
                                 <div class="input-group">
                                     <div class="input-field">
-                                        <input type="text" id="phone" name="phone" class="form-input p4" />
+                                        <input type="text" id="phone" name="phone" class="form-input p4" maxlength="15"/>
                                         <div class="labels">
                                             <p class="p5 placeholder">Enter your phone number (Optional)</p>
                                             <p class="p5 error"></p>
@@ -109,7 +109,6 @@
             <i class="las la-check"></i>
             <p class="p5">Your form message was sent successfullly. Please expect my response in the next few minutes.</p>
         </div>
-
         <?php
             include './public/components/footer.php';
         ?>

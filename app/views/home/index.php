@@ -54,7 +54,7 @@
                             <h2>Digital Patterns that I have built...</h2>
                             <div id="liner"></div>
                             <p class="p4">"Building new design patterns" may sound easy to achieve, but in reality, they are, actually not that easy. This is because a lot of users are already used to a particular way of life/lifestlye. However, what always pushes through, is how much of a solution a digital platform has to offer.<br/>
-                            And this is what I have done; spent years building and learning how to design what works and what gives users satisfaction.<br/>
+                            And this is what I have done; spent years building and learning how to design what works and what gives users satisfaction.<br/><br/>
                             Here are a few awesome samples.</p>
                         </div>
                         <div class="projects-holder">

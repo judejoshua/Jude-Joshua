@@ -1,0 +1,87 @@
+footer {
+    height: 10%;
+    background: var(--background-circles);
+    color: var(--neutral) !important;
+    padding: 24px 128px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+span.copyright {
+    color: var(--ink);
+}
+
+.admin {
+    height: 90%;
+}
+
+#admin-landing {
+    height: 100vh;
+}
+
+.img-upload.input-group {
+    height: auto;
+    overflow: hidden;    /* display: table; */
+    align-items: flex-start;
+    gap: 24px;
+    width: auto;
+}
+
+.img-upload.input-group input {
+    opacity: 0;
+    position: absolute;
+}
+
+.img-upload.input-group .project {
+    height: 350px;
+    width: 350px;
+    margin: 0;
+}
+
+.choose-img-label {
+    background: var(--accent);
+    cursor: pointer;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.choose-img-label .project img {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed var(--placeholders);
+    background: var(--neutral);
+}
+
+.choose-img-label .project:hover img {
+    transform: unset;
+}
+
+#img-container {
+    gap: 32px;
+}
+
+.ux-buddy .form-group:last-child, .ui-buddy .form-group:last-child {
+    margin-top: 48px;
+}
+
+.portfolio-section .personae .project {
+    width: 622px;
+}
+
+.close-image {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    padding: 12px 17px !important;
+    cursor: pointer;
+    right: 12px;
+    left: unset;
+    top: 12px;
+}
+
+#ui-ux {
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+}

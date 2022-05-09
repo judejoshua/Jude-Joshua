@@ -1,4 +1,4 @@
-Options -MultiViews -Indexes
+Options All -MultiViews -Indexes
 RewriteEngine On
 
 RewriteBase /
@@ -8,7 +8,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 
+RewriteCond %{REQUEST_URI} ^(/public/jude-admin/index\.php)$
+RewriteRule . - [F,L]
+
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
 
 RewriteCond %{HTTP_HOST} ^www\.judejoshua\.me$
 RewriteRule ^/?$ "https\:\/\/judejoshua\.me\/" [R=301,L]

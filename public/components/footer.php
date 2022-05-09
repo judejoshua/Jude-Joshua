@@ -21,7 +21,7 @@
             if(explode('/', $url)[3] == 'contact')
             {
                 echo '
-                    <p class="p3">If you\'re not fully convinced of my strength, why not have a <a href="/portfolio">look</a> at the projects that I have helped to design and build in the past.</p>
+                    <p class="p3">If you\'re not fully convinced of my strength, why not have a <a href="/portfolio">look at the projects</a> that I have helped to design and build in the past.</p>
                 ';
             }else if(explode('/', $url)[3] == 'portfolio')
             { 
@@ -37,7 +37,7 @@
                 ';
             }else{
                 echo '
-                    <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here</a> to send a message. Or you can just go ahead and <a href="/about">learn more</a> about me.</p>
+                    <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here to send a message</a> or you can just go ahead and <a href="/about">learn more about me</a>.</p>
                 ';
             }
         ?>
