@@ -66,7 +66,7 @@
                                             <p class="p5 placeholder">Select a cover image for your project in the ratio 1:1 (Required)</p>
                                             <p class="p5 error" data-error="project_cover_img"></p>
                                         </div>
-                                        <input type="file" id="project_cover_img" name="project_cover_img" class="form-input p4" accept="image/*" onchange="document.getElementById('cover-imagePreview').src = window.URL.createObjectURL(this.files[0])"/>
+                                        <input type="file" id="project_cover_img" name="project_cover_img" class="form-input p4" accept="image/webp" onchange="document.getElementById('cover-imagePreview').src = window.URL.createObjectURL(this.files[0])"/>
                                         <label for="project_cover_img" class="choose-img-label">
                                             <div class="project">
                                                 <img id="cover-imagePreview" alt="cover image" />
@@ -161,6 +161,18 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label for="project_duration" id="to-title" class="h4">Project Duration*</label>
+                                    <div class="input-group">
+                                        <div class="input-field">
+                                            <input type="text" id="project_duration" name="project_duration" class="form-input p4"/>
+                                            <div class="labels">
+                                                <p class="p5 placeholder">How long did you work on this project? (Required)</p>
+                                                <p class="p5 error" data-error="project_duration"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </fieldset>
                             <div class="form-group hidden" id="ui-ux">
                                 <fieldset id="ux">
@@ -200,7 +212,7 @@
                                             <div class="img-upload input-group d-flex flex-wrap">
                                                 <div class="d-flex flex-wrap" id="img-container" data-type="research">
                                                     <div class="input-field" id="research_img">
-                                                        <input type="file" id="research_img-1" name="research_img[]" class="form-input p4" accept="image/*" onchange="document.getElementById('research-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
+                                                        <input type="file" id="research_img-1" name="research_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById('research-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
                                                         <label for="research_img-1" class="choose-img-label">
                                                             <div class="project">
                                                                 <img id="research-imagePreview-1" alt="research image" />
@@ -235,7 +247,7 @@
                                             <div class="img-upload input-group d-flex flex-wrap">
                                                 <div class="d-flex flex-wrap" id="img-container" data-type="personae">
                                                     <div class="input-field" id="personae_img">
-                                                        <input type="file" id="personae_img-1" name="personae_img[]" class="form-input p4" accept="image/*" onchange="document.getElementById('personae-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
+                                                        <input type="file" id="personae_img-1" name="personae_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById('personae-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
                                                         <label for="personae_img-1" class="choose-img-label">
                                                             <div class="project">
                                                                 <img id="personae-imagePreview-1" alt="personae image" />
@@ -285,7 +297,7 @@
                                             <div class="img-upload input-group d-flex flex-wrap">
                                                 <div class="d-flex flex-wrap" id="img-container" data-type="wireframes">
                                                     <div class="input-field" id="wireframes_img">
-                                                        <input type="file" id="wireframes_img-1" name="wireframes_img[]" class="form-input p4" accept="image/*" onchange="document.getElementById('wireframes-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
+                                                        <input type="file" id="wireframes_img-1" name="wireframes_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById('wireframes-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
                                                         <label for="wireframes_img-1" class="choose-img-label">
                                                             <div class="project">
                                                                 <img id="wireframes-imagePreview-1" alt="wireframes image" />
@@ -320,7 +332,7 @@
                                             <div class="img-upload input-group d-flex flex-wrap">
                                                 <div class="d-flex flex-wrap" id="img-container" data-type="hiFI">
                                                     <div class="input-field" id="hiFI_img">
-                                                        <input type="file" id="hiFI_img-1" name="hiFI_img[]" class="form-input p4" accept="image/*" onchange="document.getElementById('hiFI-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
+                                                        <input type="file" id="hiFI_img-1" name="hiFI_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById('hiFI-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
                                                         <label for="hiFI_img-1" class="choose-img-label">
                                                             <div class="project">
                                                                 <img id="hiFI-imagePreview-1" alt="hiFI image" />
@@ -353,7 +365,7 @@
                         <button class="btn" type="submit">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
-                                <p id="text"><span>Send</span> now</p>
+                                <p id="text"><span>Save</span> project</p>
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </button>

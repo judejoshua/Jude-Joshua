@@ -133,16 +133,17 @@ $(document).ready(function() {
                     $(form)[0].reset();
                     $('.success-message').addClass('show');
                     $('.success-message i').removeClass().addClass('las la-check');
-                    $('.success-message p').text('Your form message was sent successfullly. Please expect my response in a few minutes.');
+                    $('.success-message p').text('Your project was added successfully!');
 
                     setTimeout(removePop, 5000);
+
+                    setTimeout(function(){location.href="/portfolio"} , 5000);
                 }else{
-                    // $('.success-message').addClass('show error');
-                    // $('.success-message i').removeClass().addClass('las la-alert-outline');
-                    // $('.success-message p').text(status[0]);
+                    $('.success-message').addClass('show error');
+                    $('.success-message i').removeClass().addClass('las la-alert-outline');
+                    $('.success-message p').text(status[0]);
                     
-                    // setTimeout(removePop, 5000);
-                    console.log(response)
+                    setTimeout(removePop, 5000);
                 }
             },
             error: function(jqXHR, exception) {
@@ -180,7 +181,7 @@ $(document).ready(function() {
         $(this).click(function(){
             ++i;
 
-            img_container.append('<div class="input-field"><span id="tag-single" class="close-image">X</span><input type="file" id="'+ type +'_img-'+ i +'" name="'+ type +'_img[]" class="form-input p4" accept=".webp" onchange="document.getElementById(\''+ type +'-imagePreview-'+ i +'\').src = window.URL.createObjectURL(this.files[0])"/><label for="'+ type +'_img-'+ i +'" class="choose-img-label"><div class="project"><img id="'+ type +'-imagePreview-'+ i +'" alt="'+ type +' image"/></div></label></div>');
+            img_container.append('<div class="input-field"><span id="tag-single" class="close-image">X</span><input type="file" id="'+ type +'_img-'+ i +'" name="'+ type +'_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\''+ type +'-imagePreview-'+ i +'\').src = window.URL.createObjectURL(this.files[0])"/><label for="'+ type +'_img-'+ i +'" class="choose-img-label"><div class="project"><img id="'+ type +'-imagePreview-'+ i +'" alt="'+ type +' image"/></div></label></div>');
         })
     })
 
@@ -218,22 +219,6 @@ $(document).ready(function() {
             break;
         }
     })
-
-    // $('textarea').each(function(){
-    //     $(this).parent().prepend('<ul class="tool-list"><li class="tool"><button type="button" data-command="bold" class="tool--btn"><i class="las la-bold"></i></button></li><li class="tool"><button type="button" data-command="italic" class="tool--btn"><i class="las la-italic"></i></button></li><li class="tool"><button type="button" data-command="insertOrderedList" class="tool--btn"><i class="las la-list-ol"></i></button></li><li class="tool"><button type="button" data-command="insertUnorderedList" class="tool--btn"><i class="las la-list-ul"></i></button></li></ul><div contenteditable="true" id="textarea"></div>')
-    // })
-
-    // let buttons = $('.tool--btn');
-    // buttons.each(function(){
-    //     $(this).click(function(e){
-    //         e.preventDefault();
-
-    //         let output = $(this).parent().parent().siblings('#textarea');
-
-    //         let cmd = $(this).data('command');
-    //         document.execCommand(cmd, false, null);
-    //     })
-    // })
    
 
     //=================================================================================================

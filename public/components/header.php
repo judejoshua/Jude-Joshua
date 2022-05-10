@@ -22,7 +22,7 @@
         <meta name="revisit-after" content="1 days">
         <meta name="dcterms.rightsHolder" content="Jude Joshua">
         <meta name="dcterms.rights" content="Unless otherwise indicated, this Website is our proprietary property and all source codes, databases, functionalities, softwares, audio, video, text, photographs, graphic content and designs on the Website (collectively, The 'Content') and the trademarks, service marks, and logos contained therein (the 'Marks') are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Nigeria, foreign jurisdictions, and international conventions." />
-        <meta name="dcterms.dateCopyrighted" content="2021">
+        <meta name="dcterms.dateCopyrighted" content="2022">
         <meta content="I am a product designer with experience in web development. I seek to create new user-friendly systems with design in the easiest way possible. Check out my portfolio to see how." name="description">
         <meta content="UbyJude Josh, Josh, UbyJude, UbyJudeh, Jude, Joshua, Jude Joshua, Product design, design, ui/ux, ui, ux, ui design, ux design, ui/ux design, user experience, user interface, user-friendly" name="keywords">
         <meta id="browserColor" name="theme-color" content="#000000">
