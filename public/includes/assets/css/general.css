@@ -137,13 +137,13 @@ section {
     width: 556px;
 }
 
-.text-divider a {
+.text-divider a:not(.case-study-link) {
     color: var(--secondary);
     font-weight: 700;
     display: inline-block;
 }
 
-.text-divider a::after {
+.text-divider a:not(.case-study-link)::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -156,7 +156,7 @@ section {
     top: unset;
 }
 
-.text-divider a:hover::after {
+.text-divider a:not(.case-study-link):hover::after {
     width: 50%;
 }
 
@@ -216,4 +216,23 @@ section {
 
 .pop-up.show.error {
     background-color: var(--error);
+}
+
+img:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutral);
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }

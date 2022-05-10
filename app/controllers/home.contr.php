@@ -4,9 +4,13 @@ class Home extends Controller
 {
     public function index()
     {
-        // $User = $this->model('User');//calling the class
+        $projectClass = $this->model('Project');
+
+        $projectList = $projectClass->getProjectList();
 
         $this->view('home/index', [
+
+            'projectList' => $projectList
 
         ]);
     }

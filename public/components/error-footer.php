@@ -1,10 +1,10 @@
 <div id="contextMenu" class="context-menu">
     <ul>
-        <li><a href="/#" class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">Homepage</a></li>
-        <li><a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About me</a></li>
-        <li><a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">See my past works</a></li>
-        <li><a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">View my CV</a></li>
-        <li><a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Send me a message</a></li>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/about">About me</a></li>
+        <li><a href="/portfolio">See my past works</a></li>
+        <li><a href="/cv">View my CV</a></li>
+        <li><a href="/contact">Send me a message</a></li>
         <li><a>Other links<i class="las la-angle-right"></i></a>
             <ul id="inner-down">
                 <li><a href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li>

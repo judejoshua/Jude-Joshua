@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </header>
-            <article id="body">
+            <article id="body" class="add">
                 <div class="portfolio-section">
                     <form>
                         <div class="form-body">

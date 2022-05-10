@@ -2,23 +2,23 @@
 
 	require_once 'config.php';
 
-	$projectClass = new Project;
 
-	$project_unique_id = uniqid();
-
-	$root = $_SERVER['DOCUMENT_ROOT']."/../";
-	$directory = $root.'includes/assets/files/uploads/' . $project_unique_id;
-
-	$project_img_directory = '/public/includes/assets/files/uploads/' . $project_unique_id .'/';
-
-	$project_type = $_POST['project_type'];
-
-	$project_duration = $_POST['project_duration'];
-
-	if($project_type == "")
+	if(empty($_POST['project_type']))
 	{
 		echo "error=project_type=You need to select a project type!";
 	}else{
+		$projectClass = new Project;
+
+		$project_unique_id = uniqid();
+
+		$root = $_SERVER['DOCUMENT_ROOT']."/../";
+		$directory = $root.'includes/assets/files/uploads/' . $project_unique_id;
+
+		$project_img_directory = '/public/includes/assets/files/uploads/' . $project_unique_id .'/';
+
+		$project_type = $_POST['project_type'];
+
+		$project_duration = $_POST['project_duration'];
 
 		$project_cover_img = $_FILES["project_cover_img"]["name"];
 
@@ -82,7 +82,6 @@
 
 				$general_project_data['UX Design'] = check_array_images($general_project_data['UX Design'], $directory);
 				$general_project_data['UI Design'] = check_array_images($general_project_data['UI Design'], $directory);
-
 			break;
 
 			case 'Web design':
@@ -94,6 +93,8 @@
 				{
 					echo "error=project_website=You need to enter a website url for your project";
 					exit();
+				}else{
+					$general_project_data['Website']['project url'] = run_url_check($general_project_data['Website']['project url']);
 				}
 				
 			break;
@@ -103,11 +104,11 @@
 					'summary' => $_POST['project_ux-design'],
 					'User Research' => array(
 						'summary' => $_POST['project_research-summary'],
-						'images' => filter_var_array($_FILES["research_img"]["name"]),
+						'research_img' => filter_var_array($_FILES["research_img"]["name"]),
 					),
 					'User Personae' => array(
 						'summary' => $_POST['project_personae-summary'],
-						'images' => filter_var_array($_FILES["personae_img"]["name"]),
+						'personae_img' => filter_var_array($_FILES["personae_img"]["name"]),
 					)
 				);
 
@@ -115,11 +116,11 @@
 					'summary' => $_POST['project_ui-design'],
 					'Wireframes and Sketches' => array(
 						'summary' => $_POST['project_wireframes-summary'],
-						'images' => filter_var_array($_FILES["project_wireframes"]["name"]),
+						'wireframes_img' => filter_var_array($_FILES["wireframes_img"]["name"]),
 					),
 					'High Fidelity Mockup' => array(
 						'summary' => $_POST['project_hiFI-summary'],
-						'images' => filter_var_array($_FILES["hiFI_img"]["name"]),
+						'hiFI_img' => filter_var_array($_FILES["hiFI_img"]["name"]),
 					)
 				);
 
@@ -134,16 +135,13 @@
 				{
 					echo "error=project_website=You need to enter a website url for your project";
 					exit();
+				}else{
+					$general_project_data['Website']['project url'] = run_url_check($general_project_data['Website']['project url']);
 				}
 			break;
 		}
 
-		foreach ($_POST as $key => $value) {
-			$_POST[ucwords(str_replace("_", " ", $key))] = $value;
-			unset($_POST[$key]);
-		}
-
-		$project_data = json_encode($_POST, true);
+		$project_data = json_encode($general_project_data, true);
 
 		$addProject = $projectClass->addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration);
 		echo $addProject == true ? 'success' : $addProject;
@@ -168,7 +166,6 @@
 								echo "error=".$inside_key."= Select a ".ucwords(str_replace("_", " ", $inside_key))." image for your project";
 								exit();
 							}else{
-								$project_new_name_imgs = [];
 								foreach($img_array as $i => $name)
 								{
 			                        $name = $_FILES[$inside_key]['name'][$i];
@@ -196,4 +193,14 @@
 		}
 
 		return $array;
+	}
+
+	function run_url_check($url)
+	{
+		if (! filter_var($url, FILTER_VALIDATE_URL) === true) {
+			echo "Enter a valid url in the format \"http://www.example.com\"";
+			exit();
+		}
+
+		return $url;
 	}

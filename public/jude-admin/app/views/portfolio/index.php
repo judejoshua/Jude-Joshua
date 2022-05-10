@@ -33,82 +33,30 @@
                     <div class="case-studies-body">
                         <div class="projects-holder">
                             <div class="row">
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>Online men’s clothing store</h3>
-                                                <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for music player</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-2.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for messaging platform</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-3.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for online checkout</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>Online men’s clothing store</h3>
-                                                <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for music player</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
+                                <?php
+                                    foreach ($data['projectList'] as $key => $project) {
+                                        $project_data = json_decode($project['project_data'], true);
+
+                                        echo '
+                                            <a href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                <div class="project">
+                                                    <img src="http://jd.test'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
+                                                    <div class="caption">
+                                                        <div class="caption-text">
+                                                            <h4>'.$project_data['project_title'].'</h4>
+                                                            <span id="tags" class="paragraphsdescriptions">'.$project_data['project_tags'].'</span>
+                                                        </div>
+                                                        <i class="las la-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        ';
+                                    }
+                                ?>
                             </div>
                         </div>
                         <div class="pagination">
-                            <a href="" class="las la-angle-left mdi-dark-inactive"></a>
+                            <a href="" class="las la-angle-left"></a>
                             <a href="" class="las la-angle-right active"></a>
                         </div>
                     </div>

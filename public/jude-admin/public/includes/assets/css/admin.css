@@ -22,7 +22,8 @@ span.copyright {
 
 .img-upload.input-group {
     height: auto;
-    overflow: hidden;    /* display: table; */
+    overflow: hidden;
+    /* display: table; */
     align-items: flex-start;
     gap: 24px;
     width: auto;
@@ -61,12 +62,9 @@ span.copyright {
     gap: 32px;
 }
 
-.ux-buddy .form-group:last-child, .ui-buddy .form-group:last-child {
+.ux-buddy .form-group:last-child,
+.ui-buddy .form-group:last-child {
     margin-top: 48px;
-}
-
-.portfolio-section .personae .project {
-    width: 622px;
 }
 
 .close-image {

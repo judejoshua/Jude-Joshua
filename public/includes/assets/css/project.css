@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-body:not(#home-landing) #case-study {
+body:not(#admin-landing) #case-study {
     padding-top: 48px;
     padding-bottom: 96px;
 }
@@ -85,6 +85,10 @@ body:not(#home-landing) #case-study {
 .caption-text {
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 24px;
 }
 
 .projects-holder a {
@@ -190,8 +194,12 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 88px 128px 64px;
-    gap: 72px;
+    padding: 32px 128px 64px;
+    gap: 40px;
+}
+
+.add .portfolio-section {
+    padding-top: 16px;
 }
 
 .portfolio-section .project {
@@ -206,6 +214,10 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 
 .portfolio-section .text-divider {
     width: 100%;
+}
+
+.portfolio-section .text-divider:not(.sub-title) {
+    margin-top: 56px;
 }
 
 .portfolio-section .text-divider.sub-title {
@@ -288,4 +300,14 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     top: 56%;
     z-index: 100;
     padding: 0 20px;
+}
+
+.portfolio-section .personae .project {
+    width: 622px;
+    height: 350px;
+}
+
+.portfolio-section .personae .project img {
+    width: 100%;
+    height: 100%;
 }

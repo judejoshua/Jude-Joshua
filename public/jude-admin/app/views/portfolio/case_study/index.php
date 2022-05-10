@@ -1,5 +1,6 @@
 <?php
-    $title = 'Online men’s clothing store';
+
+    $title = json_decode($data['projectData'][0]['project_data'], true)['project_title'] .' || ';
     include './public/components/header.php';
 ?>
     </head>
@@ -25,7 +26,7 @@
                                 <div class="case-study-title-top">
                                     <a href="/portfolio" class="return-button">
                                         <i class="las la-arrow-left "></i>
-                                        <h5>Return to Past Works Page</h5>
+                                        <h5>Return to Portfolio Page</h5>
                                     </a>
                                     <div class="title-text">
                                         <h1>'.$project_data['project_title'].'</h1>
@@ -55,7 +56,8 @@
                         </header>
                         <article id="body ">
                             <div class="portfolio-section">';
-                            $body_project_data = array_splice($project_data, 4);
+                            
+                            $body_project_data = array_splice($project_data, 3);
 
                             foreach ($body_project_data as $key => $body_data)
                             {
@@ -115,7 +117,6 @@
                                         </div>
                                     ';
 
-                                    
                                     foreach ($body_data as $sub_title => $contents)
                                     {
                                         if(is_array($contents))
@@ -173,17 +174,13 @@
                             echo'
                                 <a href="/portfolio" class="return-button">
                                     <i class="las la-arrow-left "></i>
-                                    <h5>Return to Past Works Page</h5>
+                                    <h5>Return to Portfolio Page</h5>
                                 </a>
                             </div>
                         </article>
                     </div>
-                ';
-
-                
+                ';                
             }
-        ?>
-        <?php
             include './public/components/footer.php';
         ?>
     </body>

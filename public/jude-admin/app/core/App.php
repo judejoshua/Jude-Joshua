@@ -58,20 +58,20 @@ class App{
 
                 }else
                 {
-                    $this->controller = 'errors';
-                    $this->method = 'not_found';
-                    $option = $this->controller . '.contr.php';
-                    unset($url[1]);
-                    // if(method_exists($this->controller, $url[1]))
-                    // {
-                    //     $this->method = $url[1];
-                    //     unset($url[1]);
-                    // }else{
-                    //     $this->controller = 'errors';
-                    //     $this->method = 'not_found';
-                    //     $option = $this->controller . '.contr.php';
-                    //     unset($url[1]);
-                    // }
+                    // $this->controller = 'errors';
+                    // $this->method = 'not_found';
+                    // $option = $this->controller . '.contr.php';
+                    // unset($url[1]);
+                    if(method_exists($this->controller, $url[1]))
+                    {
+                        $this->method = $url[1];
+                        unset($url[1]);
+                    }else{
+                        $this->controller = 'errors';
+                        $this->method = 'not_found';
+                        $option = $this->controller . '.contr.php';
+                        unset($url[1]);
+                    }
                 }
 
                 unset($url[0]);

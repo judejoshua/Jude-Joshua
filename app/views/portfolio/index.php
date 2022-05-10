@@ -21,95 +21,43 @@
                     <p class="p4">
                         Here are some ideas that I have turned into end-user-ready products. You will see that these projects better display what stress-free user interaction and satisfaction is all about, with a rating of 4-5 stars.</p>
                 </div>
-                <div class="tags-row">
+                <!-- <div class="tags-row">
                     <span class="h5">Filter by:</span>
                     <div>
                         <span class="p5 secondary" id="tag-single" data-show="ui/ux">Design Case Studies</span>
                         <span class="p5 secondary" id="tag-single" data-show="web-dev">Web Development Projects</span>
                     </diV>
-                </div>
+                </div> -->
             </header>
             <article id="body">
                 <section id="case-study">
                     <div class="case-studies-body">
                         <div class="projects-holder">
                             <div class="row">
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>Online men’s clothing store</h3>
-                                                <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for music player</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-2.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for messaging platform</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-3.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for online checkout</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>Online men’s clothing store</h3>
-                                                <span id="tags" class="p4">UI/UX, Web Design, Branding</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="/portfolio/case_study">
-                                    <div class="project">
-                                        <img src="/public/includes/assets/img/project-image-1.png" alt="">
-                                        <div class="caption">
-                                            <div class="caption-text">
-                                                <h3>App design for music player</h3>
-                                                <span id="tags" class="p4">UI/UX, Prototyping</span>
-                                            </div>
-                                            <i class="las la-arrow-right"></i>
-                                        </div>
-                                    </div>
-                                </a>
+                                <?php
+                                    foreach ($data['projectList'] as $key => $project) {
+                                        $project_data = json_decode($project['project_data'], true);
+
+                                        echo '
+                                            <a href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                <div class="project">
+                                                    <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
+                                                    <div class="caption">
+                                                        <div class="caption-text">
+                                                            <h4>'.$project_data['project_title'].'</h4>
+                                                            <span id="tags" class="paragraphsdescriptions">'.$project_data['project_tags'].'</span>
+                                                        </div>
+                                                        <i class="las la-arrow-right"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        ';
+                                    }
+                                ?>
                             </div>
                         </div>
                         <div class="pagination">
-                            <a href="" class="las la-angle-left mdi-dark-inactive"></a>
+                            <a href="" class="las la-angle-left"></a>
                             <a href="" class="las la-angle-right active"></a>
                         </div>
                     </div>
