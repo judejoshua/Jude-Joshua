@@ -6,8 +6,8 @@
     width: 100%;
 }
 
-body:not(#admin-landing) #case-study {
-    padding-top: 48px;
+body#home-landing #case-study {
+    padding-top: 148px;
     padding-bottom: 96px;
 }
 
@@ -169,8 +169,7 @@ body#case-study-body .landing .case-study-title .scroll-down {
     position: relative;
     left: unset;
     bottom: unset;
-    height: 96px;
-    /* display: inline-block; */
+    height: 96px;    /* display: inline-block; */
 }
 
 body#case-study-body .landing .case-study-title .scroll-down .mouse {
@@ -277,8 +276,7 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);
 }
 
-.testimonials .pagination *:hover,
-.testimonials .pagination *.active:hover {
+.testimonials .pagination *:hover, .testimonials .pagination *.active:hover {
     background: var(--background-circles);
 }
 
