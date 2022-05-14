@@ -5,14 +5,6 @@
     </head>
 
     <body id="about">
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider">
@@ -186,7 +178,7 @@
                     </div>
                 </section>
                 <section id="CV">
-                    <img src="/public/includes/assets/img/resume-icon.png" />
+                    <img src="/public/assets/img/resume-icon.png" />
                     <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">

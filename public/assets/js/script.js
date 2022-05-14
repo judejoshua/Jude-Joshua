@@ -214,13 +214,42 @@ $(document).ready(function() {
     }
 
     //=================================================================================================
-    //                    A D D  T H E  L E T T E R  N A M E  F O R  N A M E
+    //                    A D D  T H E  L E T T E R  N A M E  F O R  T E S T I M O N I A L S
     //=================================================================================================
     if (window.location.href.indexOf("about") > -1) {
 
         $('.client-name-head').each(function() {
             $(this).text($(this).next('h4').text().charAt(0));
         })
+
+    }
+
+    //=================================================================================================
+    //                    I M A G E  M O D A L  F O R  C A S E  S T U D Y
+    //=================================================================================================
+    if (window.location.href.indexOf("case_study") > -1) {
+
+        $('.row.grid img').each(function() {
+            $(this).click(function(){
+                var img = $(this).attr('src');
+                $('#larger').attr('src', img);
+
+                $('html').addClass('no-scroll')
+
+                $('.modal').removeClass('hideout');
+                $('span#close').addClass('fixed');
+            });
+        })
+
+        $('span#close').click(function(){
+            var img = $(this).attr('src');
+            $('#larger').attr('src', img);
+
+            $('html').removeClass('no-scroll')
+
+            $('.modal').addClass('hideout');
+            $('span#close').removeClass('fixed');
+        });
 
     }
 

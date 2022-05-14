@@ -5,20 +5,12 @@
     </head>
 
     <body id="resume">
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider">
                     <h1>Résumé</h1>
                 </div>
-                <a href="/public/includes/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf" class="download p5 dwnld-btn"><i class="las la-cloud-download-alt"></i>Download</a>
+                <a href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf" class="download p5 dwnld-btn"><i class="las la-cloud-download-alt"></i>Download</a>
             </header>
             <article id="body">
                 <section id="resume-begins">
@@ -291,7 +283,7 @@
                         </div>
                     </div>
                     <div class="divisor"></div>
-                    <a class="btn lng ln dwnld-btn" href="/public/includes/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
+                    <a class="btn lng ln dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>Download</span> as a document</p>

@@ -1,19 +1,10 @@
 <?php
-
     $title = json_decode($data['projectData'][0]['project_data'], true)['project_title'] .' || ';
     include './public/components/header.php';
 ?>
     </head>
 
     <body id="case-study-body">
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <?php
             foreach ($data['projectData'] as $key => $projectData)
             {
@@ -31,6 +22,7 @@
                                     <div class="title-text">
                                         <h1>'.$project_data['project_title'].'</h1>
                                         <p class="p4">'.$project_data['project_description'].'</p>
+                                        <p class="p4">Project Duration: '.$projectData['project_duration'].'</p>
                                     </div>
                                     <div class="tags-row">';
                                         $tags = explode(', ', $project_data['project_tags']);
@@ -121,27 +113,40 @@
                                     {
                                         if(is_array($contents))
                                         {
-                                            if (array_key_exists("personae_img", $contents)){
+                                            if (array_key_exists("personae_img", $contents) || array_key_exists("research_img", $contents))
+                                            {
                                                 $personae = 'personae';
-                                            }else{
+                                                $notice = '';
+                                            }elseif (array_key_exists("hiFI_img", $contents) || array_key_exists("wireframes_img", $contents))
+                                            {
+                                                $personae = 'grid';
+                                                $notice = 'Click on the images to view their respective larger sizes';
+                                            }else
+                                            {
                                                 $personae = '';
+                                                $notice = '';
                                             }
                                             echo'
                                                 <div class="text-divider sub-title">
-                                                    <h3>'.$sub_title.'</h3>';
-                                                    if (!is_array($contents))
-                                                    {
-                                                        echo '<p class="p4">'.$contents.'</p>';
-                                                    }else{
-                                                        if (array_key_exists("summary", $contents))
+                                                    <div class="left">
+                                                        <h3>'.$sub_title.'</h3>';
+                                                        if (!is_array($contents))
                                                         {
-                                                            echo '<p class="p4">'.$contents['summary'].'</p>';
-                                                            unset($contents['summary']);
+                                                            echo '<p class="p4">'.$contents.'</p>';
+                                                        }else{
+                                                            if (array_key_exists("summary", $contents))
+                                                            {
+                                                                echo '<p class="p4">'.$contents['summary'].'</p>';
+                                                                unset($contents['summary']);
+                                                            }
                                                         }
-                                                    }
                                                 echo'
+                                                    </div>
                                                 </div>
                                                 <div class="projects-holder">
+                                                    <div class="notice">
+                                                        <p class="p5">'.$notice.'</p>
+                                                    </div>
                                                     <div class="row '.$personae.'">';
                                                         foreach ($contents as $images_alt_title => $images)
                                                         {
@@ -183,6 +188,12 @@
             }
             include './public/components/footer.php';
         ?>
+        <span id="close"><i class="las la-times"></i></span>
+        <div class="modal hideout">
+            <div class="img-holder">
+                <img src="" id="larger"/>
+            </div>
+        </div>
     </body>
 
     </html>

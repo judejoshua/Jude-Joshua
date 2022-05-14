@@ -21,6 +21,10 @@ body#resume navigation .nav-links li::after {
     background-color: var(--neutral);
 }
 
+body#resume navigation.fixed .nav-links li::after {
+    background-color: var(--secondary);
+}
+
 body#resume navigation.fixed a {
     color: var(--secondary);
 }

@@ -32,21 +32,24 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/includes/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/includes/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/includes/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/public/includes/assets/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/public/assets/favicon/site.webmanifest">
 
-        <link rel="stylesheet" href="/public/includes/assets/css/style.css">
-        <link rel="stylesheet" href="/public/includes/assets/css/line-awesome.min.css">
+        <link rel="stylesheet" href="/public/assets/css/style.css">
+        <link rel="stylesheet" href="/public/assets/css/line-awesome.min.css">
 
-        <script src="/public/includes/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="/public/includes/assets/js/script.js"></script>
+        <script src="/public/assets/js/jquery-3.6.0.min.js"></script>
+        <script src="/public/assets/js/script.js"></script>
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
                 $(".preloader").fadeOut("slow");
-                $("body").css("overflow-y", "scroll");
+                $("body").css("overflow-y", "scroll")
+                $(".wrapper, navigation").animate({
+                    "opacity": "1"
+                }, 2000);
             });
         </script>
         
@@ -68,3 +71,13 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T999G6L"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
+
+        <div class="preloader">
+            <p class="h1">JUDE JOSHUA</p>
+            <div class="loader-circles">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>

@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    padding-top: 0;
+    padding-bottom: 64px;
 }
 
 body:not(#admin-landing) #case-study {
@@ -29,7 +31,13 @@ body:not(#admin-landing) #case-study {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 48px;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.projects-holder .notice p {
+    color: var(--placeholders);
+    font-style: italic;
 }
 
 .project {
@@ -159,7 +167,7 @@ body#case-study-body .landing .case-study-title {
 
 body#case-study-body .landing .case-study-img {
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -195,7 +203,7 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     justify-content: center;
     align-items: center;
     padding: 32px 128px 64px;
-    gap: 40px;
+    gap: 16px;
 }
 
 .add .portfolio-section {
@@ -204,12 +212,27 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 
 .portfolio-section .project {
     width: 480px;
-    height: 480px;
+    height: auto;
 }
 
 .portfolio-section .project img {
     width: 480px;
-    height: 480px;
+    height: auto;
+}
+
+.row.grid .project img {
+    height: auto;
+    width: 300px;
+    cursor: pointer;
+}
+
+.row.grid .project {
+    width: auto;
+    height: auto;
+}
+
+.row.grid {
+    gap: 12px;
 }
 
 .portfolio-section .text-divider {
@@ -303,8 +326,8 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 .portfolio-section .personae .project {
-    width: 622px;
-    height: 350px;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-section .personae .project img {

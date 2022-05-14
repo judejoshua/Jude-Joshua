@@ -12,9 +12,13 @@
 		$project_unique_id = uniqid();
 
 		$root = $_SERVER['DOCUMENT_ROOT']."/../";
-		$directory = $root.'includes/assets/files/uploads/' . $project_unique_id;
+		$directory = $root.'assets/files/uploads/' . $project_unique_id;
 
-		$project_img_directory = '/public/includes/assets/files/uploads/' . $project_unique_id .'/';
+		if (!is_dir($directory)) {
+			mkdir($directory, 0755, true);
+		}
+
+		$project_img_directory = '/public/assets/files/uploads/' . $project_unique_id .'/';
 
 		$project_type = $_POST['project_type'];
 
@@ -33,16 +37,13 @@
 	        $ext = end($explode);
 	        $project_cover_img = uniqid().'.'.$ext;
 
-	        if (!is_dir($directory)) {
-			    mkdir($directory, 0755, true);
-			}
 
-	        $fold = $directory."/".$project_cover_img;
+	        $cover_move = $directory."/".$project_cover_img;
 
-	        $uploaded = move_uploaded_file($tmp, $fold);//move the image to the $directory
+	        $uploaded = move_uploaded_file($tmp, $cover_move);//move the image to the $directory
 		}
 
-		$general_project_data = array_slice($_POST, 1, 7);
+		$general_project_data = array_slice($_POST, 1, 8);
 
 		foreach ($general_project_data as $key => $value)
 		{
@@ -52,6 +53,8 @@
 				exit();
 			}
 		}
+
+		unset($general_project_data['project_duration']);
 
 		switch ($project_type)
 		{
@@ -82,6 +85,8 @@
 
 				$general_project_data['UX Design'] = check_array_images($general_project_data['UX Design'], $directory);
 				$general_project_data['UI Design'] = check_array_images($general_project_data['UI Design'], $directory);
+
+				$general_project_data = array_filter($general_project_data);
 			break;
 
 			case 'Web design':
@@ -131,6 +136,7 @@
 				$general_project_data['UX Design'] = check_array_images($general_project_data['UX Design'], $directory);
 				$general_project_data['UI Design'] = check_array_images($general_project_data['UI Design'], $directory);
 
+				
 				if(empty($general_project_data['Website']['project url']))
 				{
 					echo "error=project_website=You need to enter a website url for your project";
@@ -138,6 +144,8 @@
 				}else{
 					$general_project_data['Website']['project url'] = run_url_check($general_project_data['Website']['project url']);
 				}
+				
+				$general_project_data = array_filter($general_project_data);
 			break;
 		}
 
@@ -161,37 +169,41 @@
 					{
 						foreach ($img_array as $inside_img_array => $inside_img_array_value)
 						{
-							if($inside_img_array_value ==  '')
+							$img_array = array_filter($img_array);
+
+							if($inside_key == 'hiFI_img' && empty($img_array))
 							{
-								echo "error=".$inside_key."= Select a ".ucwords(str_replace("_", " ", $inside_key))." image for your project";
-								exit();
+								echo "error=".$inside_key."= Select atleast one ".ucwords(str_replace("_", " ", $inside_key))." image for your project";
 							}else{
-								foreach($img_array as $i => $name)
+								
+								$name = $_FILES[$inside_key]['name'][$inside_img_array];
+			                	$tmp = $_FILES[$inside_key]['tmp_name'][$inside_img_array];
+
+								if($name !== '')
 								{
-			                        $name = $_FILES[$inside_key]['name'][$i];
-			                        $tmp = $_FILES[$inside_key]['tmp_name'][$i];
-
 									$explode = explode('.', $name);
-			                        $ext = end($explode);
-			                        $new_img_name = uniqid().'.'.$ext;
+									$ext = end($explode);
+									$new_img_name = uniqid().'.'.$ext;
 
-			                        if (!is_dir($directory)) {
-									    mkdir($directory, 0755, true);
-									}
+									$move = $directory."/".$new_img_name;
 
-			                        $fold = $directory."/".$new_img_name;
+									$uploaded = move_uploaded_file($tmp, $move);//move the image to the $directory
+								}else{
+									$new_img_name = '';
+								}
 
-	                                $uploaded = move_uploaded_file($tmp, $fold);//move the image to the $directory
+								$array[$key][$inside_key][$inside_img_array] = $new_img_name;
 
-	                                $array[$key][$inside_key][$inside_img_array] = $new_img_name;
-			                    }
 							}
 						}
+						$array[$key][$inside_key] = array_filter($array[$key][$inside_key]);
 					}
+					$array[$key] = array_filter($array[$key]);
 				}
 			}
 		}
 
+		$array = array_filter($array);
 		return $array;
 	}
 

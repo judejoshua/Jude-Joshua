@@ -5,14 +5,6 @@
     </head>
 
     <body>
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider">

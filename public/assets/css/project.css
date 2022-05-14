@@ -1,0 +1,336 @@
+#case-study {
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 64px;
+}
+
+body#home-landing #case-study {
+    padding-top: 148px;
+    padding-bottom: 96px;
+}
+
+.case-study-title-top {
+    width: 556px;
+}
+
+.case-studies-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 56px;
+}
+
+.projects-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.projects-holder .notice p {
+    color: var(--placeholders);
+    font-style: italic;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project:hover .caption {
+    background: var(--placeholders);
+    background: linear-gradient(0deg, rgb(29, 29, 29) 70%, transparent 100%);
+    color: var(--neutral);
+    height: 35%;
+    -webkit-backdrop-filter: blur(16px);
+    -moz-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+}
+
+.project img {
+    width: 527px;
+    height: 527px;
+    background: var(--accent);
+    border: none;
+    transition: 1.2s;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    display: flex;
+    width: 100%;
+    height: 114px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px 24px;
+    color: var(--neutral);
+    transition: 0.6s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(29, 29, 29) 40%, transparent);
+    -webkit-backdrop-filter: blur(0px);
+    -moz-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+}
+
+.caption i {
+    font-size: 24px;
+    transform: rotate(-45deg);
+}
+
+.caption-text {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 24px;
+}
+
+.projects-holder a {
+    display: block;
+    overflow: hidden;
+    width: 47.5%;
+}
+
+#tag-single {
+    padding: 12px 24px;
+    display: inline-block;
+    background-color: var(--ink);
+    color: var(--neutral);
+}
+
+.tags-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.tags-row div {
+    display: flex;
+    gap: 12px;
+}
+
+.return-button {
+    display: flex;
+    margin: 0 0 48px;
+    gap: 16px;
+    color: var(--secondary);
+    align-items: center;
+    width: auto;
+}
+
+.return-button i {
+    font-size: 20px;
+}
+
+.return-button i+*::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    left: 0;
+    position: relative;
+    top: 2px;
+    transition: 0.6s;
+}
+
+.return-button:hover i+*::after {
+    width: 50%;
+}
+
+body#case-study-body .landing {
+    padding: 0;
+}
+
+body#case-study-body .landing .case-study-title {
+    padding: 152px 128px 88px;
+    background: var(--neutral);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+body#case-study-body .landing .case-study-img {
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body#case-study-body .landing .case-study-title .scroll-down {
+    position: relative;
+    left: unset;
+    bottom: unset;
+    height: 96px;
+    /* display: inline-block; */
+}
+
+body#case-study-body .landing .case-study-title .scroll-down .mouse {
+    border: 1px solid;
+}
+
+body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
+    height: 56px;
+}
+
+.scroll-down-indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 128px 64px;
+    gap: 16px;
+}
+
+.add .portfolio-section {
+    padding-top: 16px;
+}
+
+.portfolio-section .project {
+    width: 480px;
+    height: auto;
+}
+
+.portfolio-section .project img {
+    width: 480px;
+    height: auto;
+}
+
+.row.grid .project img {
+    height: auto;
+    width: 300px;
+    cursor: pointer;
+}
+
+.row.grid .project {
+    width: auto;
+    height: auto;
+}
+
+.row.grid {
+    gap: 12px;
+}
+
+.portfolio-section .text-divider {
+    width: 100%;
+}
+
+.portfolio-section .text-divider:not(.sub-title) {
+    margin-top: 56px;
+}
+
+.portfolio-section .text-divider.sub-title {
+    gap: 8px;
+}
+
+.text-divider.sub-title h3::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: var(--secondary);
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 12px;
+    position: relative;
+}
+
+#tag-single.secondary {
+    background-color: var(--neutral) transparent;
+    color: var(--secondary);
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+#tag-single.secondary:hover {
+    background-color: var(--background-circles);
+    color: var(--neutral);
+    border-color: var(--background-circles);
+}
+
+.pagination * {
+    font-size: 32px;
+    color: var(--placeholders);
+}
+
+.pagination *.active {
+    color: var(--background-circles);
+}
+
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .pagination * {
+    color: var(--placeholders);
+    background: rgb(255 255 255 / 60%);
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(32px);
+    -moz-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);
+}
+
+.testimonials .pagination *:hover,
+.testimonials .pagination *.active:hover {
+    background: var(--background-circles);
+}
+
+.testimonials .pagination *.active {
+    color: var(--neutral);
+    background: rgb(144 144 144 / 64%);
+    -webkit-backdrop-filter: blur(32px);
+    -moz-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);
+}
+
+.testimonials .pagination {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 56%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.portfolio-section .personae .project {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-section .personae .project img {
+    width: 100%;
+    height: 100%;
+}

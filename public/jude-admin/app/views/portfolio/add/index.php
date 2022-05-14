@@ -5,14 +5,6 @@
     </head>
 
     <body id="case-study-body">
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="case-study-title">
@@ -119,7 +111,7 @@
                                         <div class="input-field">
                                             <textarea type="text" id="project_about" name="project_about" class="form-input p4 form-area" maxlength="2000"></textarea>
                                             <div class="labels">
-                                                <p class="p5 placeholder">Let's talk about the project in details (Required)</p>
+                                                <p class="p5 placeholder">Let's talk about the client and what they intend to achieve with the project in details (Required)</p>
                                                 <p class="p5 error" data-error="project_about"></p>
                                             </div>
                                         </div>

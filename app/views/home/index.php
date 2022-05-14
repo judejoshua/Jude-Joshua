@@ -5,14 +5,6 @@
     </head>
 
     <body id="home-landing">
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="bg-play">
@@ -21,8 +13,8 @@
                 <div class="header_cont">
                     <div class="header">
                         <div class="header-text">
-                            <h1>Using creativity and passion to create a better world.</h1>
-                            <p class="p4">I am Jude Joshua, a product designer, with background in web design & development from Nigeria 🇳🇬.<br>I seek to fuse my design knowledge and skills in ways that will create new patterns and lifestyles through digital systems in the simplest way possible.</p>
+                            <h1>Using creativity and passion to <span id="landing-highlight"><span id="highlight-hidden">create.</span><span class="reveal" id="first">design</span><span class="reveal" id="second">build</span></span> a better world.</h1>
+                            <p class="p4">I am Jude Joshua, a product designer, with background in web design & development from Nigeria 🇳🇬.<br>I seek to fuse my design knowledge and skills in ways that will create new patterns and lifestyles through digital systems in the simplest (useable) way possible.</p>
                         </div>
                         <div class="header-cta">
                             <a class="btn" href="#body">
@@ -35,7 +27,7 @@
                         </div>
                     </div>
                     <div class="landing-image">
-                        <img src="/public/includes/assets/img/landing-img.png" alt="logo">
+                        <img src="/public/assets/img/landing-img.png" alt="logo">
                         <a href="/cv" class="services">
                             <p class="p5">View my Résumé</p><i class="las la-arrow-right"></i></a>
                     </div>
@@ -102,7 +94,7 @@
                             <div class="row">
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/public/includes/assets/img/design-style-1.svg" alt="research" />
+                                        <img src="/public/assets/img/design-style-1.svg" alt="research" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
@@ -119,22 +111,22 @@
                                 </div>
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/public/includes/assets/img/design-style-2.svg" alt="design" />
+                                        <img src="/public/assets/img/design-style-2.svg" alt="design" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
-                                            <h2>Design</h2>
+                                            <h2>Ideation</h2>
                                         </div>
                                         <div class="body">
                                             <p class="paragraphsdescriptions">
-                                                Here comes the most exciting part of the process. With an established understanding, I begin to create solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
+                                                Here comes the most exciting part of the process. With an established understanding, I begin to draft ideas and solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/public/includes/assets/img/design-style-3.svg" alt="prototyping" />
+                                        <img src="/public/assets/img/design-style-3.svg" alt="prototyping" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
@@ -150,7 +142,7 @@
                                 </div>
                                 <div class="design-rule">
                                     <div class="icon">
-                                        <img src="/public/includes/assets/img/design-style-4.svg" alt="testing" />
+                                        <img src="/public/assets/img/design-style-4.svg" alt="testing" />
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">

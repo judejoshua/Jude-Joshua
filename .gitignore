@@ -23,6 +23,6 @@ Thumbs.db
 *.sbr
 
 
-public/includes/assets/files/uploads/
+public/assets/files/uploads/
 .cgi-bin/
 .idea/
