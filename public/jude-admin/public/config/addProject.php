@@ -51,9 +51,11 @@
 			{
 				echo "error=".$key."=You need to enter an input for ".ucwords(str_replace("_", " ", $key));
 				exit();
+			}else{
+			    $general_project_data[$key] =  nl2br($value);
 			}
 		}
-
+		
 		unset($general_project_data['project_duration']);
 
 		switch ($project_type)

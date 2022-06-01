@@ -8,7 +8,7 @@
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider">
-                    <h1>Tell me a Story</h1>
+                    <h1>Let's Talk!</h1>
                     <div id="liner"></div>
                     <!-- 
                     <p class="p4"></p> -->

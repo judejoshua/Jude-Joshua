@@ -1,16 +1,1 @@
-#why {
-    width: 80%;
-    background: var(--accent);
-    padding-top: 128px;
-    padding-bottom: 128px;
-}
-
-#why .text-divider {
-    width: 100%;
-    margin-bottom: 48px;
-}
-
-#why .btn_cont {
-    left: 30px;
-    top: 23px;
-}
+#why {width: 100%;padding-top: 128px;padding-bottom: 128px;margin-right: 0;padding-right: 32%;}section#why::before {background: var(--accent);width: 80%;content: '';height: 100%;position: absolute;left: 0;top: 0;}#why .text-divider {width: 100%;margin-bottom: 48px;}#why .btn_cont {left: 30px;top: 23px;}

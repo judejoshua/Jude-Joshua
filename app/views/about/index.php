@@ -11,9 +11,16 @@
                     <h1>About Me</h1>
                     <div id="liner"></div>
                     <p class="p4">
-                        Hi, I am Jude Joshua. I began coding in 2014. And in 2017, I went through an internship, as a web developer intern. I have vast experience in website design, website development, and product design technologies. This knowledge and experience has helped me work hand-in-hand with business owners, startups, and individuals to bring ideas to life through product designing in a way that gives users a stress-free experience.<br/>
-                        Currently, I'm working on sharpening my design skills to foster my creativity and passion for design, and change the way the world works.<br/>
-                        My mission is to use my knowledge to create digital spaces and communities which will serve; not only as systems for better user experience, but will also train other designers on how to build empathy-based systems.
+                        Hello!<br/>
+                        I am a product designer and also a website developer. In the past three years, I have been working with the team at First Medtrade Africa, Nigeria, to build an improved medical lifestyle for easy and accessible healthcare to Nigerians.
+                        <br/><br/>
+                        I began my tech journey in 2013 when I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and Javascript. And after this, I picked up little web development tests and tried replicating some designs I found on the web to hone my skills. In 2017, I got an internship as a web developer intern in Akwa Ibom state's ministry. Because I was quick to learn and understand most of their existing systems, I was able to help the team in planning and carrying out a training program for tech newbies.
+                        <br/>
+                        I have a vast experience in web design/development and product design technologies. With my expertise, I have worked hand-in-hand with business owners, startups, and individuals to bring their ideas to life with a stress-free experience for their users.
+                        <br/><br/>
+                        Everyday, I am working on sharpening my design skills to foster my creativity and passion for design and change the way the world works.
+                        <br/>
+                        My mission is to use my knowledge to create digital spaces and communities that will serve as systems for a better user experience.
                     </p>
                 </div>
                 <div class="about-me-card-holder">

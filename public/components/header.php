@@ -4,7 +4,7 @@
         <title><?=$title?>Jude Joshua - Product designer, Web developer</title>
         
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -32,16 +32,16 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/public/assets/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
         <link rel="stylesheet" href="/public/assets/css/style.css">
         <link rel="stylesheet" href="/public/assets/css/line-awesome.min.css">
 
         <script src="/public/assets/js/jquery-3.6.0.min.js"></script>
-        <script src="/public/assets/js/script.js"></script>
+        <script async src="/public/assets/js/script.js"></script>
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
@@ -54,7 +54,7 @@
         </script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

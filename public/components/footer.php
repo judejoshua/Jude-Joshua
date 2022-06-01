@@ -7,10 +7,10 @@
         <li><a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Send me a message</a></li>
         <li><a>Other links<i class="las la-angle-right"></i></a>
             <ul id="inner-down">
-                <li><a href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li>
-                <li><a href="https://dribbble.com/JudeJoshua" target="_blank">Dribbble</a></li>
-                <li><a href="https://www.linkedin.com/in/judejoshua/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://twitter.com/_judejoshua" target="_blank">Twitter</a></li>
+                <li><a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li>
+                <li><a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank">Dribbble</a></li>
+                <li><a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank">LinkedIn</a></li>
+                <li><a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank">Twitter</a></li>
             </ul>
         </li>
     </ul>
@@ -21,12 +21,12 @@
             if(explode('/', $url)[3] == 'contact')
             {
                 echo '
-                    <p class="p3">If you\'re not fully convinced of my strength, why not have a <a href="/portfolio">look at the projects</a> that I have helped to design and build in the past.</p>
+                    <p class="p3">If you need more proof of my work strength, you can <a href="/portfolio">look at my past projects</a>.</p>
                 ';
-            }else if(explode('/', $url)[3] == 'portfolio')
+            }else if(explode('/', $url)[3] == 'portfolio' || explode('/', $url)[3] == 'about')
             { 
                 echo '
-                    <p class="p3">Your users desire a stress-free experience with your digital products and I can help you provide them with maximum satisfaction.</p>
+                    <p class="p3">Your users desire a stress-free experience with your digital product. I can help you provide them with maximum satisfaction.</p>
                     <a class="btn mdn" href="/contact">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
@@ -37,7 +37,7 @@
                 ';
             }else{
                 echo '
-                    <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here to send a message</a> or you can just go ahead and <a href="/about">learn more about me</a>.</p>
+                    <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here to send a message</a> or you can go ahead and <a href="/about">learn more about me</a>.</p>
                 ';
             }
         ?>
@@ -46,16 +46,18 @@
 <footer>
     <div class="footer-top">
         <div class="contact-links">
-            <a href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
-            <a href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a>
-            <a href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>
-            <a href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
-            <a href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
+            <a rel="nofollow" href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
+            <a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a>
+            <a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>
+            <a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
+            <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
         </div>
-        <a class="to-top" href="#top">
-            <p class="h4">TO TOP</p>
-            <i class="las la-angle-up"></i>
-        </a>
+        <div class="full-width">
+            <a class="to-top" href="#top">
+                <p class="h4">TO TOP</p>
+                <i class="las la-angle-up"></i>
+            </a>
+        </div>
     </div>
     <span class="copyright">&copy; Jude Joshua, 2022. All rights reserved.</span>
 </footer>

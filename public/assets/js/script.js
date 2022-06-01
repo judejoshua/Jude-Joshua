@@ -223,13 +223,28 @@ $(document).ready(function() {
         })
 
     }
+    
+    //=================================================================================================
+    //                            L A N D I N G  T E X T
+    //=================================================================================================
+    var roles = ['build', 'design'];
+    var counter = 0;
+    var work_role = $('#landing-highlight');
+    
+    setInterval(function () {
+        // work_role.hide().text(roles[counter++]).fadeIn('slow');
+        work_role.text(roles[counter++]);
+        if (counter >= roles.length) {
+            counter = 0;
+        }
+    }, 1500)
 
     //=================================================================================================
     //                    I M A G E  M O D A L  F O R  C A S E  S T U D Y
     //=================================================================================================
     if (window.location.href.indexOf("case_study") > -1) {
 
-        $('.row.grid img').each(function() {
+        $('.row img').each(function() {
             $(this).click(function(){
                 var img = $(this).attr('src');
                 $('#larger').attr('src', img);
@@ -249,7 +264,29 @@ $(document).ready(function() {
 
             $('.modal').addClass('hideout');
             $('span#close').removeClass('fixed');
+            
+            $('.modal img').css({ zoom: 1, 'transform': 'scale(1)' });
         });
+        
+        
+        $('.modal img').click(function(){
+            if($(this).hasClass('zoom-in'))
+            {
+                updateZoom(1.5);
+                $('.modal img').removeClass('zoom-in');
+            }else{
+                updateZoom(-1.5);
+                $('.modal img').addClass('zoom-in');
+            }
+        })
+        
+        
+        zoomLevel = 1;
+        
+        var updateZoom = function(zoom) {
+           zoomLevel += zoom;
+           $('.modal img').css({ zoom: zoomLevel, 'transform': 'scale(' + zoomLevel + ')' });
+        }
 
     }
 

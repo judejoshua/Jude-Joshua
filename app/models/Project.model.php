@@ -5,7 +5,7 @@ class Project extends Db
 	public function getProjectList()
     {
         try {
-            $query = "SELECT `unique_id`, `project_data`, `project_cover_img`, `project_img_directory` FROM `projects` ORDER BY  `time_added` DESC";
+            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_img_directory` FROM `projects` ORDER BY RAND()";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([]);
             $data = $stmt->fetchAll();

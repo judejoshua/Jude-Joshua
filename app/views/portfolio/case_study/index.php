@@ -43,12 +43,12 @@
                                     <p class="p5">Scroll down</p>
                                 </div>
                             </div>
-                            <div class="case-study-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(\'http://jd.test'.$projectData['project_img_directory'].$projectData['project_cover_img'].'\');">
+                            <div class="case-study-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(\'https://judejoshua.me'.$projectData['project_img_directory'].$projectData['project_cover_img'].'\');">
                             </div>
                         </header>
                         <article id="body ">
                             <div class="portfolio-section">';
-                            $body_project_data = array_splice($project_data, 4);
+                            $body_project_data = array_splice($project_data, 3);
 
                             foreach ($body_project_data as $key => $body_data)
                             {
@@ -154,7 +154,7 @@
                                                             {
                                                                 echo'
                                                                     <div class="project">
-                                                                        <img src="http://jd.test'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
+                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
                                                                     </div>
                                                                 ';
                                                             }
@@ -195,7 +195,7 @@
         <span id="close"><i class="las la-times"></i></span>
         <div class="modal hideout">
             <div class="img-holder">
-                <img src="" id="larger"/>
+                <img src="" class="zoom-in" id="larger"/>
             </div>
         </div>
     </body>
