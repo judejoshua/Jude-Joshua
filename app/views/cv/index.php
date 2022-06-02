@@ -17,8 +17,7 @@
                     <div class="title">
                         <div class="title-text">
                             <h2>Jude Joshua</h2>
-                            <div id="liner"></div>
-                            <h3>Product Designer</h3>
+                            <p class="p4">Digital Product Designer/Developer</p>
                         </div>
                         <div class="title-contact">
                             <p class="p4">hello@judejoshua.me</p>
@@ -33,9 +32,7 @@
                             <div class="summary title-text">
                                 <h3>Summary</h3>
                                 <div id="liner"></div>
-                                <p class="p4">Meticulous and ingenious Product Designer with 3 years experience in UI/UX Design and 7 years experience in Web Design and development. Leveraging expertise in user research, system design and UX writing to design seamless
-                                    interactions between the online platforms and end-users. Highly self-motivated design aesthetics expert with great time management techniques to deliver on tight deadlines. Possessing excellent interpersonal skills,
-                                    a strong team builder and a natural leader.</p>
+                                <p class="p4">I am a detailed and innovative Product Designer with three years of experience in UI/UX Design and seven years of experience in Web design and development. I leverage my expertise in user research, system design and UX writing to design seamless interactions between the online platforms and end-users.<br/>I am a highly self-motivated design aesthetics expert with tremendous time management techniques to deliver on tight deadlines.<br/>I possess excellent interpersonal skills, am a strong team builder and am a natural leader.</p>
                             </div>
                             <div class="education title-text">
                                 <h3>Education</h3>
@@ -49,7 +46,7 @@
                                     <div class="education-section title-text">
                                         <h4>IBML Computer Institute, Uyo, Nigeria</h4>
                                         <p class="p4">Advanced Diploma in Computer Engineering and maintenance</p>
-                                        <p class="p4">2011 - August 2012</p>
+                                        <p class="p4">2012 - August 2013</p>
                                     </div>
                                 </div>
                             </div>
@@ -90,6 +87,45 @@
                                 <h3>Skills</h3>
                                 <div id="liner"></div>
                                 <ul>
+                                    <li>
+                                        <p class="p4">Empathy</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Collaboration</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Presentation</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Team Work</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Problem Solving</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Conflict Management</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Adaptability</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Time Management</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Openness to Criticism</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Resourcefulness</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Critical Thinking</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Communication</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Timeliness</p>
+                                    </li>
                                     <li>
                                         <p class="p4">User Research</p>
                                     </li>
@@ -145,46 +181,58 @@
                                 <div class="section">
                                     <div class="experience-section title-text">
                                         <h4>First Medtrade Africa | Design Lead</h4>
-                                        <p class="paragraphsdescriptions dater">Decemeber 2020 - Present</p>
+                                        <p class="h4">Decemeber 2020 - Present</p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked with development team to ensure the optimum design results.</p>
+                                                <p class="p4">Worked with the development team to ensure that the medical store met both the users' needs and the company’s goals and objectives.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Delegated the monthly design updates on the medical store to design lead.</p>
+                                                <p class="p4">Optimized and created new designs for the medical store.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="experience-section title-text">
+                                        <h4>Felipe Gusta | UI/UX Developer (Remote)</h4>
+                                        <p class="h4">January 2022 - March 2022</p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Converted the design of a reiki timer platform that was provided to code.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Optimizing and maintenance the designs of the medical store.</p>
+                                                <p class="p4">Ensured that the design, especially on mobile version, was up to par with the standards and the requirements of the client.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Ensured that the interface was not confusing to the users, and was very easy to use.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="experience-section title-text">
                                         <h4>First Medtrade Africa | Web Developer/Administrator</h4>
-                                        <p class="paragraphsdescriptions dater">December 2017 - November 2020</p>
+                                        <p class="h4">December 2017 - November 2020</p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Maintained and worked on the design of the website.</p>
+                                                <p class="p4">Devloped, maintained and worked on the first version of the website.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Inspected the development team and ensured that the designs were implemented as provided.</p>
+                                                <p class="p4">Supervised the contract development team and ensured that the designs made on subsequent versions of the website were implemented as provided.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Ensured that the system/user interaction was seamless and easy to use.</p>
+                                                <p class="p4">Ensured that the system/user interaction was bugs free and easy to use.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="experience-section title-text">
                                         <h4>Akwa Ibom Ministry of Science and Technology | Intern</h4>
-                                        <p class="paragraphsdescriptions dater">May 2017 - October 2017</p>
+                                        <p class="h4">May 2017 - October 2017</p>
                                         <ol>
                                             <li>
                                                 <p class="p4">Assisted the product design team with ongoing projects and website updates.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Designed wireframes, prototypes.</p>
+                                                <p class="p4">Designed wireframes, and prototypes for ongoing projects</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Helped in preparing and organizing with the team for a 3-months internship program.</p>
+                                                <p class="p4">Helped the team in preparing and organizing a 3-months training program.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -196,49 +244,49 @@
                                 <div class="section">
                                     <div class="projects-section title-text">
                                         <h4>Thrive.NG | UI/UX Developer (Freelance)</h4>
-                                        <p class="paragraphsdescriptions dater">August 2021 - September 2021</p>
+                                        <p class="h4">August 2021 - September 2021</p>
                                         <ol>
                                             <li>
                                                 <p class="p4">Worked to provide a saas (services as a software) web platform for the client.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Ensured that the mobile version of the platform was as easy to use as possible.</p>
+                                                <p class="p4">Ensured that the mobile version of the platform was very easy to use and not confusing in any way.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Converted the final design to frontend codes.</p>
+                                                <p class="p4">Converted the final design to frontend code.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
                                         <h4>SoliumRise NFT | Visual/UI Desgner (Freelance)</h4>
-                                        <p class="paragraphsdescriptions dater">November 2021</p>
+                                        <p class="h4">November 2021</p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Provided sketches and implementable designs.</p>
+                                                <p class="p4">Provided sketches and implementable mockups for the design of an NFT landing page.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Designed the look and feel of the landing website for both mobile and desktop with daylight and night modes.</p>
+                                                <p class="p4">Designed the look and feel of the landing website for both mobile and desktop with daylight and night themes.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Worked to provide sketches and prototypes for the development team.</p>
+                                                <p class="p4">Worked to provide final prototypes and style guides for the development team.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
                                         <h4>The Victoria Nwaeke Cancer Foundation | Product Designer</h4>
-                                        <p class="paragraphsdescriptions dater">September 2021 - November 2021</p>
+                                        <p class="h4">September 2021 - November 2021</p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked to provide sketches and prototypes for the development team.</p>
+                                                <p class="p4">Worked to provide sketches and prototypes of the landing page design.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Converted sketches to implementable designs.</p>
+                                                <p class="p4">Converted the sketches to visual mockups and style guides for the development team.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
                                         <h4>Club and Country | Web Designer/Developer (Freelance)</h4>
-                                        <p class="paragraphsdescriptions dater">December 2020 - January 2021</p>
+                                        <p class="h4">December 2020 - January 2021</p>
                                         <ul>
                                             <li>
                                                 <p class="p4">Designed and curated the implementation of the company’s landing page.</p>
@@ -247,7 +295,7 @@
                                     </div>
                                     <div class="projects-section title-text" id="divisor">
                                         <h4>CypressEnergy | Web Designer/Developer (Freelance)</h4>
-                                        <p class="paragraphsdescriptions dater">December 2019 - January 2020</p>
+                                        <p class="h4">December 2019 - January 2020</p>
                                         <ul>
                                             <li>
                                                 <p class="p4">Designed and developed a saas landing page to showcase the company's services.</p>
@@ -256,25 +304,19 @@
                                     </div>
                                     <div class="projects-section title-text">
                                         <h4>Nweke Cynthia | Web Designer/Developer (Freelance)</h4>
-                                        <p class="paragraphsdescriptions dater">February 2019 - April 2019</p>
+                                        <p class="h4">February 2019 - April 2019</p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Provided sketches and implementable designs.</p>
-                                            </li>
-                                            <li>
-                                                <p class="p4">Designed the look and feel of the landing website for both mobile and desktop with daylight and night modes.</p>
-                                            </li>
-                                            <li>
-                                                <p class="p4">Worked to provide sketches and prototypes for the development team.</p>
+                                                <p class="p4">Developed a simple cms for a school clinic management system.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
                                         <h4>Ugochukwu Kizito | Web Developer (Freelance)</h4>
-                                        <p class="paragraphsdescriptions dater">July 2018 - August 2018</p>
+                                        <p class="h4">July 2018 - August 2018</p>
                                         <ul>
                                             <li>
-                                                <p class="p4">Designed and developed a saas landing page to showcase the company's services.</p>
+                                                <p class="p4">Designed and developed a simple vehicle license and offence booking system.</p>
                                             </li>
                                         </ul>
                                     </div>

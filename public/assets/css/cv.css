@@ -74,7 +74,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
     padding: 128px 144px;
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 48px;
     width: 100%;
     align-items: center;
 }
@@ -86,12 +86,12 @@ body#resume navigation.fixed .mobile-nav-opener div {
 }
 
 .title-contact {
-    text-align: right;
+    text-align: left;
 }
 
 .resume-body {
     display: flex;
-    gap: 72px;
+    gap: 64px;
 }
 
 .divisor {
@@ -105,7 +105,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
     display: flex;
     flex-direction: column;
     row-gap: 64px;
-    width: 40%;
+    width: 50%;
 }
 
 .left-text-divider .title-text,
@@ -114,7 +114,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
 }
 
 .right-text-divider {
-    width: 60%;
+    width: 50%;
 }
 
 .section {
@@ -126,6 +126,10 @@ body#resume navigation.fixed .mobile-nav-opener div {
 
 .section .title-text {
     gap: 0;
+}
+
+.section .title-text .h4 {
+    color: var(--ink);
 }
 
 ol li {
@@ -143,4 +147,14 @@ ol {
 
 #resume-begins #liner {
     width: 56px;
+}
+
+.skills ul,
+.tools ul {
+    padding-left: 16px;
+}
+
+.skills ul li,
+.tools ul li {
+    list-style: disc;
 }

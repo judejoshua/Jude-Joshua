@@ -11,7 +11,6 @@
                     <h1>About Me</h1>
                     <div id="liner"></div>
                     <p class="p4">
-                        Hello!<br/>
                         I am a product designer and also a website developer. In the past three years, I have been working with the team at First Medtrade Africa, Nigeria, to build an improved medical lifestyle for easy and accessible healthcare to Nigerians.
                         <br/><br/>
                         I began my tech journey in 2013 when I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and Javascript. And after this, I picked up little web development tests and tried replicating some designs I found on the web to hone my skills. In 2017, I got an internship as a web developer intern in Akwa Ibom state's ministry. Because I was quick to learn and understand most of their existing systems, I was able to help the team in planning and carrying out a training program for tech newbies.
@@ -71,6 +70,18 @@
                                 <div class="job-client-location">
                                     <h5>Uyo, Nigeria</h5>
                                     <p class="p5">Decmeber 2020 - Present</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="experience_card">
+                                <div class="job-client-location">
+                                    <h4>Felipe Gusta</h4>
+                                    <h5>UI/UX Developer (Freelance)</h5>
+                                </div>
+                                <div class="job-client-location">
+                                    <h5>Brazil</h5>
+                                    <p class="p5">January 2022 - March 2022</p>
                                 </div>
                             </div>
                         </div>

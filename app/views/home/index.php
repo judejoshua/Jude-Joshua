@@ -13,7 +13,7 @@
                 <div class="header_cont">
                     <div class="header">
                         <div class="header-text">
-                            <h1>Using creativity and passion to <span id="landing-highlight"></span> a better world.</h1>
+                            <h1>Using creativity and passion to <span id="landing-highlight">build</span> a better world.</h1>
                             <p class="p4">I am Jude Joshua, a product designer with experience in web design & development from Nigeria 🇳🇬.<br>I seek to fuse my design knowledge and skills in ways that will create better design patterns and improved lifestyles in the most uncomplicated (useable) way possible.</p>
                         </div>
                         <div class="header-cta">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="landing-image">
-                        <img src="/public/assets/img/landing-img.png" alt="logo">
+                        <img src="/public/assets/img/landing-img.webp" alt="logo">
                         <a href="/cv" class="services">
                             <p class="p5">View my Résumé</p><i class="las la-arrow-right"></i></a>
                     </div>
