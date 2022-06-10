@@ -13,7 +13,7 @@
                 <div class="header_cont">
                     <div class="header">
                         <div class="header-text">
-                            <h1>Using creativity and passion to <span id="landing-highlight">build</span> a better world.</h1>
+                            <h1>Using creativity and passion to <span id="landing-highlight"></span> a better world.</h1>
                             <p class="p4">I am Jude Joshua, a product designer with experience in web design & development from Nigeria 🇳🇬.<br>I seek to fuse my design knowledge and skills in ways that will create better design patterns and improved lifestyles in the most uncomplicated (useable) way possible.</p>
                         </div>
                         <div class="header-cta">
@@ -45,14 +45,19 @@
                         <div class="text-divider">
                             <h2>Digital Patterns that I have built</h2>
                             <div id="liner"></div>
-                            <p class="p4">"Building new design patterns" may sound easy to achieve, but they are not easy to create. My reason is that most users are already familiar with a particular way of life/lifestyle.<br/>However, what always pushes through, is how much of a solution a digital platform has to offer.
-                            And this is what I have done - I have spent years building and learning how to design what works and what gives users satisfaction.<br/><br/>
-                            Here are a few awesome samples.</p>
+                            <p class="p4">
+                                Many designs today have the beauty, luxury, and ease of a workable platform. But they often fail to consider one critical point - development feasibility. That is one of the key challenges developers experience when working with product designers.</br>
+                                A lot of work goes in from the design stage to the development stage. Most times, there are a lot of design changes that must take place during development to accommodate code functionality. And for this, developers make various design-code changes which usually results in a loss of style. I know this because I have been opportune to experience both sides of the web world as a web designer & developer and then a product designer.<br/>
+                                My ability to leverage this problem and provide a design that works in functionality and experience makes me different from the rest. I do this by providing a design system that respects the laws of coding and development. It is not prone to numerous developer alterations and balances the end users' needs and the business objectives.<br/><br/>
+                                Shown below are a few samples.
+                            </p>
                         </div>
                         <div class="projects-holder">
                             <div class="row">
                                 <?php
+                                    $count = 0;
                                     foreach ($data['projectList'] as $key => $project) {
+                                        $count++;
                                         $project_data = json_decode($project['project_data'], true);
 
                                         echo '
@@ -69,6 +74,10 @@
                                                 </div>
                                             </a>
                                         ';
+                                        
+                                        if($count > 3){
+                                            break;
+                                        }
                                     }
                                 ?>
                             </div>

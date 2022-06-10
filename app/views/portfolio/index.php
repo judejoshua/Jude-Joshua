@@ -11,7 +11,8 @@
                     <h1>Past Work</h1>
                     <div id="liner"></div>
                     <p class="p4">
-                        Here are some ideas that I have turned into end-user-ready products. You will see that these projects better display what stress-free user interaction and satisfaction are about, with a rating of 4-5 stars.</p>
+                        Here are more ideas from different industries and disciplines that I have turned into code-and-user-friendly digital products. You will see that these projects display what stress-free user interaction and satisfaction are about and my process to balance these with the clients' business goals.
+                    </p>
                 </div>
                 <div class="tags-row">
                     <span class="h5">Filter by:</span>

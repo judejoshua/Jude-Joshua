@@ -243,21 +243,6 @@
                                 <div id="liner"></div>
                                 <div class="section">
                                     <div class="projects-section title-text">
-                                        <h4>Thrive.NG | UI/UX Developer (Freelance)</h4>
-                                        <p class="h4">August 2021 - September 2021</p>
-                                        <ol>
-                                            <li>
-                                                <p class="p4">Worked to provide a saas (services as a software) web platform for the client.</p>
-                                            </li>
-                                            <li>
-                                                <p class="p4">Ensured that the mobile version of the platform was very easy to use and not confusing in any way.</p>
-                                            </li>
-                                            <li>
-                                                <p class="p4">Converted the final design to frontend code.</p>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <div class="projects-section title-text">
                                         <h4>SoliumRise NFT | Visual/UI Desgner (Freelance)</h4>
                                         <p class="h4">November 2021</p>
                                         <ol>
@@ -285,22 +270,37 @@
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
+                                        <h4>Thrive.NG | UI/UX Designer (Freelance)</h4>
+                                        <p class="h4">August 2021 - September 2021</p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Worked to provide a saas (services as a software) web platform for the client.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Ensured that the mobile version of the platform was very easy to use and not confusing in any way.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Converted the final design to frontend code.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="projects-section title-text">
                                         <h4>Club and Country | Web Designer/Developer (Freelance)</h4>
                                         <p class="h4">December 2020 - January 2021</p>
-                                        <ul>
+                                        <ol>
                                             <li>
                                                 <p class="p4">Designed and curated the implementation of the company’s landing page.</p>
                                             </li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                     <div class="projects-section title-text" id="divisor">
                                         <h4>CypressEnergy | Web Designer/Developer (Freelance)</h4>
                                         <p class="h4">December 2019 - January 2020</p>
-                                        <ul>
+                                        <ol>
                                             <li>
                                                 <p class="p4">Designed and developed a saas landing page to showcase the company's services.</p>
                                             </li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                     <div class="projects-section title-text">
                                         <h4>Nweke Cynthia | Web Designer/Developer (Freelance)</h4>
@@ -314,11 +314,11 @@
                                     <div class="projects-section title-text">
                                         <h4>Ugochukwu Kizito | Web Developer (Freelance)</h4>
                                         <p class="h4">July 2018 - August 2018</p>
-                                        <ul>
+                                        <ol>
                                             <li>
                                                 <p class="p4">Designed and developed a simple vehicle license and offence booking system.</p>
                                             </li>
-                                        </ul>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>

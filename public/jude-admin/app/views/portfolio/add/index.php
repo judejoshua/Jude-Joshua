@@ -15,7 +15,6 @@
                         </a>
                         <div class="title-text">
                             <h1>Add a new Project</h1>
-                            <p class="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus ullamcorper tellus malesuada. Habitant turpis sit vestibulum, ac nunc diam aliquet tristique.</p>
                         </div>
                     </div>
                     <div class="scroll-down-indicator">
@@ -142,6 +141,18 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="project_recommendation" id="to-title" class="h4">Recommendation*</label>
+                                    <div class="input-group">
+                                        <div class="input-field">
+                                            <textarea type="text" id="project_recommendation" name="project_recommendation" class="form-input p4 form-area" maxlength="1000"></textarea>
+                                            <div class="labels">
+                                                <p class="p5 placeholder">Any recommendations? (Required)</p>
+                                                <p class="p5 error" data-error="project_recommendation"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="project_role" id="to-title" class="h4">Role*</label>
                                     <div class="input-group">
                                         <div class="input-field">
@@ -173,7 +184,7 @@
                                         <label for="project_ux-design" id="to-title" class="h4"></label>
                                         <div class="input-group">
                                             <div class="input-field">
-                                                <textarea type="text" id="project_ux-design" name="project_ux-design" class="form-input p4 form-area" maxlength="500"></textarea>
+                                                <textarea type="text" id="project_ux-design" name="project_ux-design" class="form-input p4 form-area" maxlength="1000"></textarea>
                                                 <div class="labels">
                                                     <p class="p5 placeholder">What little summary can you give about the ux design process?</p>
                                                     <p class="p5 error" data-error="project_ux-design"></p>
@@ -187,7 +198,7 @@
                                             <label for="project_research-summary" id="to-title" class="h4"></label>
                                             <div class="input-group">
                                                 <div class="input-field">
-                                                    <textarea type="text" id="project_research-summary" name="project_research-summary" class="form-input p4 form-area" maxlength="500"></textarea>
+                                                    <textarea type="text" id="project_research-summary" name="project_research-summary" class="form-input p4 form-area" maxlength="1000"></textarea>
                                                     <div class="labels">
                                                         <p class="p5 placeholder">What little summary can you give about the user research process?</p>
                                                         <p class="p5 error" data-error="project_research-summary"></p>
@@ -222,7 +233,7 @@
                                             <label for="project_personae-summary" id="to-title" class="h4"></label>
                                             <div class="input-group">
                                                 <div class="input-field">
-                                                    <textarea type="text" id="project_personae-summary" name="project_personae-summary" class="form-input p4 form-area" maxlength="500"></textarea>
+                                                    <textarea type="text" id="project_personae-summary" name="project_personae-summary" class="form-input p4 form-area" maxlength="1000"></textarea>
                                                     <div class="labels">
                                                         <p class="p5 placeholder">What little summary can you give about the user personae?</p>
                                                         <p class="p5 error" data-error="project_personae-summary"></p>
@@ -258,7 +269,7 @@
                                         <label for="project_ui-design" id="to-title" class="h4"></label>
                                         <div class="input-group">
                                             <div class="input-field">
-                                                <textarea type="text" id="project_ui-design" name="project_ui-design" class="form-input p4 form-area" maxlength="500"></textarea>
+                                                <textarea type="text" id="project_ui-design" name="project_ui-design" class="form-input p4 form-area" maxlength="1000"></textarea>
                                                 <div class="labels">
                                                     <p class="p5 placeholder">What little summary can you give about the ui design process?</p>
                                                     <p class="p5 error" data-error="project_ui-design"></p>
@@ -272,7 +283,7 @@
                                             <label for="project_wireframes-summary" id="to-title" class="h4"></label>
                                             <div class="input-group">
                                                 <div class="input-field">
-                                                    <textarea type="text" id="project_wireframes-summary" name="project_wireframes-summary" class="form-input p4 form-area" maxlength="500"></textarea>
+                                                    <textarea type="text" id="project_wireframes-summary" name="project_wireframes-summary" class="form-input p4 form-area" maxlength="1000"></textarea>
                                                     <div class="labels">
                                                         <p class="p5 placeholder">What little summary can you give about the user wireframes process?</p>
                                                         <p class="p5 error" data-error="project_wireframes-summary"></p>
@@ -307,7 +318,7 @@
                                             <label for="project_hiFI-summary" id="to-title" class="h4"></label>
                                             <div class="input-group">
                                                 <div class="input-field">
-                                                    <textarea type="text" id="project_hiFI-summary" name="project_hiFI-summary" class="form-input p4 form-area" maxlength="500"></textarea>
+                                                    <textarea type="text" id="project_hiFI-summary" name="project_hiFI-summary" class="form-input p4 form-area" maxlength="1000"></textarea>
                                                     <div class="labels">
                                                         <p class="p5 placeholder">What little summary can you give about the high fidelity mockups?</p>
                                                         <p class="p5 error" data-error="project_hiFI-summary"></p>

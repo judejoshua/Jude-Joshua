@@ -45,29 +45,34 @@ $(document).ready(function() {
     //=================================================================================================
     //                           C O N T E X T  M E N U
     //=================================================================================================
-    if (!(screen.width <= 500)) {
-        document.onclick = hideMenu;
-        document.oncontextmenu = rightClick;
+    
+    document.onclick = hideMenu;
+    document.oncontextmenu = rightClick;
 
-        function hideMenu() {
-            $("#contextMenu").hide()
-        }
+    function hideMenu() {
+        $("#contextMenu").hide()
+    }
 
-        function rightClick(e) {
-            e.preventDefault();
+    function rightClick(e) {
+        e.preventDefault();
 
-            if ($(e.target).is('a, a *')) { //if current right click target is a link
-                var link = $(e.target).attr('href')
-                if ($("#contextMenu #new_tab").length) {
-                    $("#contextMenu #new_tab").remove()
-                }
-                $("#contextMenu ul").prepend('<li id="new_tab"><a href="' + link + '" target="_blank">Open link in new tab</a></li>')
-            } else {
+        if ($(e.target).is('a, a *')) { //if current right click target is a link or link children
+            if($(e.target).is('a')){
+                var link = $(e.target).attr('href');
+            }else{
+                var link = $(e.target).closest('a').attr('href');
+            }
+            if ($("#contextMenu #new_tab").length) {
                 $("#contextMenu #new_tab").remove()
             }
-            var menu = $("#contextMenu");
-            menu.show();
-
+            $("#contextMenu ul:not(#inner-down)").prepend('<li id="new_tab"><a href="' + link + '" target="_blank">Open link in new tab</a></li>')
+        } else {
+            $("#contextMenu #new_tab").remove()
+        }
+        var menu = $("#contextMenu");
+        menu.css({"display": "table"});
+        
+        if (!(screen.width <= 820)) {
             if (e.pageX >= ($(window).width() - $('#contextMenu').width() - $('#contextMenu').width())) {
                 menu.css("left", (e.pageX - ($('#contextMenu').width()) - 30) + "px");
                 $('.context-menu ul li #inner-down').css("left", "-100%");
@@ -82,18 +87,23 @@ $(document).ready(function() {
             } else {
                 menu.css("top", e.pageY + "px");
             }
+        }else{
+            menu.css("left", ($(window).width() * 0.4 - 100) + "px");
+            $('.context-menu ul li #inner-down').css({"left":"0", "top": "100%"});
+            menu.css("top", ($(window).height() * 0.4) + "px");
         }
-        $(window).keyup(function(event) {
-            if (event.which === 27) {
-                $('#contextMenu').hide();
-            }
-        });
-        $(window).scroll(function() {
-            if ($("#contextMenu").is(':visible')) {
-                hideMenu();
-            }
-        });
     }
+    $(window).keyup(function(event) {
+        if (event.which === 27) {
+            $('#contextMenu').hide();
+        }
+    });
+    $(window).scroll(function() {
+        if ($("#contextMenu").is(':visible')) {
+            hideMenu();
+        }
+    });
+    
 
     //=================================================================================================
     //                           S E N D  E M A I L  F U N C T I O N
@@ -223,26 +233,20 @@ $(document).ready(function() {
         })
 
     }
-    
-    //=================================================================================================
-    //                            L A N D I N G  T E X T
-    //=================================================================================================
-    var roles = ['build', 'design'];
-    var counter = 0;
-    var work_role = $('#landing-highlight');
-    
-    setInterval(function () {
-        // work_role.hide().text(roles[counter++]).fadeIn('slow');
-        work_role.text(roles[counter++]);
-        if (counter >= roles.length) {
-            counter = 0;
-        }
-    }, 1500)
 
     //=================================================================================================
     //                    I M A G E  M O D A L  F O R  C A S E  S T U D Y
     //=================================================================================================
     if (window.location.href.indexOf("case_study") > -1) {
+        
+        zoomLevel = 1;
+        if (!(screen.width <= 800)) {
+            img_width = $('.img-holder').width();
+            img_height = $('.modal img').height();
+        } else{
+            img_height = $('.img-holder').width();
+            img_width = $('.modal img').height();
+        }
 
         $('.row img').each(function() {
             $(this).click(function(){
@@ -253,6 +257,7 @@ $(document).ready(function() {
 
                 $('.modal').removeClass('hideout');
                 $('span#close').addClass('fixed');
+                $('.zooms').addClass('fixed');
             });
         })
 
@@ -264,28 +269,39 @@ $(document).ready(function() {
 
             $('.modal').addClass('hideout');
             $('span#close').removeClass('fixed');
+            $('.zooms').removeClass('fixed');
             
-            $('.modal img').css({ zoom: 1, 'transform': 'scale(1)' });
+            $('.modal img').css({
+                "width": img_width,
+                "height": img_height,
+            });
         });
         
-        
-        $('.modal img').click(function(){
-            if($(this).hasClass('zoom-in'))
-            {
-                updateZoom(1.5);
-                $('.modal img').removeClass('zoom-in');
+        $('#zoom-out').click(function(){
+            if(zoomLevel > 1 ){
+                updateZoom(-1);
             }else{
-                updateZoom(-1.5);
                 $('.modal img').addClass('zoom-in');
             }
         })
         
-        
-        zoomLevel = 1;
+        $('#zoom-in').click(function(){
+            if(zoomLevel < 4 ){
+                updateZoom(1);
+            }else{
+                $('.modal img').removeClass('zoom-in');
+            }
+        })
         
         var updateZoom = function(zoom) {
            zoomLevel += zoom;
-           $('.modal img').css({ zoom: zoomLevel, 'transform': 'scale(' + zoomLevel + ')' });
+           width = zoomLevel * img_width;
+           height = zoomLevel * img_height;
+           $('.modal img').css({
+                "width": width,
+                "height": height,
+            });
+           return zoomLevel;
         }
 
     }

@@ -17,6 +17,11 @@
         padding-left: 64px;
         padding-right: 64px;
     }
+
+    body#case-study-body .landing {
+        padding-right: 0;
+        padding-left: 0;
+    }
     .experience_card {
         width: 47.49%;
     }
@@ -220,7 +225,6 @@
     }
     .design-style .text-divider {
         margin-right: 32px;
-        padding-right: 32px;
     }
     .text-divider p {
         width: 100%;
@@ -379,7 +383,7 @@
         left: 21px;
     }
     body#case-study-body .landing {
-        padding: 0;
+        padding: 0 !important;
     }
     body#case-study-body .landing .case-study-title {
         padding: 136px 32px 48px;
@@ -399,6 +403,9 @@
     }
     .return-button {
         margin: 48px 0 24px;
+    }
+    .case-study-title .return-button {
+        margin-top: 0px;
     }
     .portfolio-section .text-divider:not(.sub-title) {
         margin-top: 12px;
@@ -614,6 +621,16 @@
     }
     .full-width-shift {
         padding: 0 48px;
+    }
+    .context-menu {
+        position: fixed;
+    }
+    .context-menu ul li #inner-down {
+        position: relative;
+        display: table;
+    }
+    #contextMenu i {
+        transform: rotate(90deg);
     }
 }
 

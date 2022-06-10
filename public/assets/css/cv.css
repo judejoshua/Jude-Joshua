@@ -2,9 +2,11 @@ body#resume .landing {
     background: url(../img/resume-background.png);
     background-size: cover;
     background-color: var(--secondary);
+    background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 120px;
     /* height: 428px; */
+    animation: shake-background 30s linear infinite;
 }
 
 body#resume .landing .text-divider {

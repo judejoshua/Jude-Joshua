@@ -4,11 +4,11 @@
         <title><?=$title?>Jude Joshua - Product designer, Web developer</title>
         
         <!-- Google Tag Manager -->
-        <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-T999G6L');</script>
+        <!--<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+        <!--new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+        <!--j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=-->
+        <!--'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+        <!--})(window,document,'script','dataLayer','GTM-T999G6L');</script>-->
         <!-- End Google Tag Manager -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +23,7 @@
         <meta name="dcterms.rightsHolder" content="Jude Joshua">
         <meta name="dcterms.rights" content="Unless otherwise indicated, this Website is our proprietary property and all source codes, databases, functionalities, softwares, audio, video, text, photographs, graphic content and designs on the Website (collectively, The 'Content') and the trademarks, service marks, and logos contained therein (the 'Marks') are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Nigeria, foreign jurisdictions, and international conventions." />
         <meta name="dcterms.dateCopyrighted" content="2022">
-        <meta content="I am a product designer with experience in web development. I seek to create new user-friendly systems with design in the easiest way possible. Check out my portfolio to see how." name="description">
+        <meta content="I am a product designer with experience in web development. I seek to create code-and-user-friendly systems with design in the easiest way possible. Check out my portfolio to see how." name="description">
         <meta content="UbyJude Josh, Josh, UbyJude, UbyJudeh, Jude, Joshua, Jude Joshua, Product design, design, ui/ux, ui, ux, ui design, ux design, ui/ux design, user experience, user interface, user-friendly" name="keywords">
         <meta id="browserColor" name="theme-color" content="#000000">
         <!--Windows Phone **-->
@@ -45,31 +45,34 @@
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
-                $(".preloader").fadeOut("slow");
+                $(".preloader").fadeOut(2000);
                 $("body").css("overflow-y", "scroll")
-                $(".wrapper, navigation").animate({
-                    "opacity": "1"
+                $("navigation").animate({
+                    "opacity": "1",
+                }, 500);
+                 $(".wrapper, footer").animate({
+                    "opacity": "1",
                 }, 2000);
             });
         </script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <!--<script defer src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>-->
+        <!--<script>-->
+        <!--  window.dataLayer = window.dataLayer || [];-->
+        <!--  function gtag(){dataLayer.push(arguments);}-->
+        <!--  gtag('js', new Date());-->
         
-          gtag('config', 'G-321KZ83579');
-        </script>
+        <!--  gtag('config', 'G-321KZ83579');-->
+        <!--</script>-->
 
         <?php
             include 'nav.php';
         ?>
         
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T999G6L"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T999G6L"-->
+        <!--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
         <!-- End Google Tag Manager (noscript) -->
 
 

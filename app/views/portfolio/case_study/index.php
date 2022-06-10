@@ -22,7 +22,7 @@
                                     <div class="title-text">
                                         <h1>'.$project_data['project_title'].'</h1>
                                         <p class="p4">'.$project_data['project_description'].'</p>
-                                        <p class="p4">Project Duration: '.$projectData['project_duration'].'</p>
+                                        <p class="p4 italic bold duration">Project Duration: '.$projectData['project_duration'].'</p>
                                     </div>
                                     <div class="tags-row">';
                                         $tags = explode(', ', $project_data['project_tags']);
@@ -192,7 +192,11 @@
         <?php
             include './public/components/footer.php';
         ?>
-        <span id="close"><i class="las la-times"></i></span>
+        <span class="cuddles" id="close"><i class="las la-times"></i></span>
+        <div class="zooms">
+            <span id="zoom-in" class="cuddles"><i class="las la-search-plus"></i></span>
+            <span id="zoom-out" class="cuddles"><i class="las la-search-minus"></i></span>
+        </div>
         <div class="modal hideout">
             <div class="img-holder">
                 <img src="" class="zoom-in" id="larger"/>

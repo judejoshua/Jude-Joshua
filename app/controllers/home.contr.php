@@ -6,7 +6,7 @@ class Home extends Controller
     {
         $projectClass = $this->model('Project');
 
-        $projectList = $projectClass->getProjectList();
+        $projectList = $projectClass->getHomeProjectList();
 
         $this->view('home/index', [
 

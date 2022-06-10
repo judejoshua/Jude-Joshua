@@ -88,18 +88,6 @@
                         <div class="row">
                             <div class="experience_card">
                                 <div class="job-client-location">
-                                    <h4>Thrive.NIG</h4>
-                                    <h5>UI/UX Developer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Lagos, Nigeria</h5>
-                                    <p class="p5">August 2021 - September 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
                                     <h4>SoliumRise NFT</h4>
                                     <h5>Visual/UI Designer (Freelance)</h5>
                                 </div>
@@ -118,6 +106,18 @@
                                 <div class="job-client-location">
                                     <h5>Imo, Nigeria</h5>
                                     <p class="p5">September 2021 - November 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="experience_card">
+                                <div class="job-client-location">
+                                    <h4>Thrive.NIG</h4>
+                                    <h5>UI/UX Designer (Freelance)</h5>
+                                </div>
+                                <div class="job-client-location">
+                                    <h5>Lagos, Nigeria</h5>
+                                    <p class="p5">August 2021 - September 2021</p>
                                 </div>
                             </div>
                         </div>

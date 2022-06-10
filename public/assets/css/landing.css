@@ -13,7 +13,7 @@
 .landing {
     width: 100%;
     height: auto;
-    padding-top: 168px;
+    padding-top: 160px;
 }
 
 .header_cont {
@@ -38,7 +38,7 @@
     height: 504px;
     background: var(--secondary);
     overflow: hidden;
-    flex: 24%;
+    flex: 30%;
 }
 
 .landing-image .services {
@@ -58,10 +58,15 @@
     align-items: center;
     gap: 16px;
     padding: 16px 24px;
+    transition: 0.6s;
+}
+
+.landing-image .services:hover{
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .landing-image img {
-    width: 114%;
+    width: 120%;
     object-fit: cover;
     left: -21px;
 }
@@ -86,7 +91,7 @@
 body:not(#home-landing) .landing {
     width: 100%;
     text-align: center;
-    padding: 192px 128px 48px;
+    padding: 160px 128px 48px;
     height: auto;
     min-height: auto;
 }
@@ -113,15 +118,42 @@ body#contact .landing .text-divider {
 
 #landing-highlight {
     color: var(--links);
+    display: inline-block;
+    letter-spacing: 1px;
 }
 
-#landing-highlight::after {
+#landing-highlight::before {
     content: '';
-    width: 100%;
-    height: 2px;
+    border: 2px solid var(--links);
+    display: inline-block;
+    min-width: 100%;
+    min-height: 12px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
     position: absolute;
-    bottom: 5px;
-    left: 0;
-    background: var(--links);
-    border-radius: 2px;
+    bottom: -12px;
+    left: 5px;
+    top: unset;
+}
+
+
+#landing-highlight::after {
+    content: "";
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    0% { content:"design"; opacity: 0; }
+    10% { content:"design"; opacity: 1;}
+    20% { content:"design"; opacity: 1;}
+    30% { content:"design"; opacity: 1;}
+    40% { content:"design"; opacity: 0.5;}
+    50% { content: "design"; opacity: 0;}
+    60% { content: "build"; opacity: 0;}
+    70% { content: "build"; opacity: 1;}
+    80% { content: "build"; opacity: 1;}
+    90% { content: "build"; opacity: 1;}
+    100% { content: "build"; opacity: 0;}
 }

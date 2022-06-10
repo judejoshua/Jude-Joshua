@@ -38,10 +38,10 @@
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
-                $(".preloader").fadeOut("slow");
+                $(".preloader").fadeOut(2000);
                 $("body").css("overflow-y", "scroll")
-                $(".wrapper, navigation").animate({
-                    "opacity": "1"
+                $(".wrapper, footer").animate({
+                    "opacity": "1",
                 }, 2000);
             });
         </script>

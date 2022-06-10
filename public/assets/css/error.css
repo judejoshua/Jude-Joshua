@@ -1,9 +1,5 @@
 section.error {
     padding: 148px 128px 64px;
-    background: url(../img/results-background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: 24px;

@@ -53,20 +53,21 @@ body {
     background: var(--neutral);
     scroll-behavior: smooth;
     color: var(--secondary);
-    min-height: 100%;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     scrollbar-width: none
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     background: url(../img/results-background.png);
     background-size: contain;
     background-position-x: -252px;
     background-position-y: center;
     background-repeat: no-repeat;
     background-color: var(--neutral);
-    background-attachment: fixed
+    background-attachment: fixed;
+    animation: shake-background 30s linear infinite;
 }
 
 .no-scroll {
@@ -87,4 +88,12 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--background-circles)
+}
+
+@keyframes shake-background{
+    0%{background-position-x: -252px;background-position-y: center;}
+    25%{background-position-x: -56px;background-position-y: top;}
+    50%{background-position-x: -252px;background-position-y: center;}
+    75%{background-position-x: -252px;background-position-y: bottom;}
+    100%{background-position-x: -252px;background-position-y: center;}
 }
