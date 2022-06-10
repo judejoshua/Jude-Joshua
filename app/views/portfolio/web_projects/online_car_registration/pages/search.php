@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$username = "judegniz_web_projects";
+$password = "web_projects234#";
+$dbname = "judegniz_online_car_registration";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
