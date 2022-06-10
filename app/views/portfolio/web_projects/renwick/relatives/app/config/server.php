@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $db = mysqli_connect('localhost:3306', 'root', '', 'bidforme');
+    $db = mysqli_connect('localhost', 'judegniz_web_projects', 'web_projects234#', 'judegniz_bidforme');
     if(! $db ) {
         die('Could not connect to the database: ' . mysqli_connect_error());
     }

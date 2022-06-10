@@ -2,9 +2,9 @@
 
     $db = new mysqli(
         $host = 'localhost',
-        $user = 'root',
-        $password = 'zQ1v0JFtFtfhDIqd',
-        $database = 'converter',
+        $user = 'judegniz_web_projects',
+        $password = 'web_projects234#',
+        $database = 'judegniz_converter',
         $port = '3306'//,
         //$socket = '',
     );

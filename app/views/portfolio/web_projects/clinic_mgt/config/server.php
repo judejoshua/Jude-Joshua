@@ -4,7 +4,7 @@
     $errors = array();
     $successes = array();
     
-    $conn = mysqli_connect('localhost:3306', 'root', '', 'cms');
+    $conn = mysqli_connect('localhost', 'judegniz_web_projects', 'web_projects234#', 'judegniz_cms');
     if(! $conn ) {
         die('Could not connect to the database: ' . mysqli_connect_error());
     }
