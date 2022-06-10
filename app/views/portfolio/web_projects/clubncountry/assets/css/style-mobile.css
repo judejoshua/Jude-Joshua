@@ -1,0 +1,362 @@
+@media screen and (max-width: 1024px) {
+    body,
+    html {
+        font-size: 15px;
+    }
+    section {
+        padding: 60px 10% 50px;
+    }
+    label {
+        font-size: 17px;
+    }
+    input {
+        font-size: 15px;
+    }
+    button {
+        padding: 15px;
+        font-size: 15px;
+        width: 46%;
+    }
+    header {
+        height: 500px;
+    }
+    #about .section-title {
+        width: 78%;
+    }
+    #footer #section-left-header {
+        padding: 100px 20px;
+    }
+    footer .section-right {
+        padding: 15px 60px;
+    }
+    .credits {
+        padding: 30px 50px;
+    }
+    .form-group-minor {
+        width: 42%;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    .section-title hr {
+        margin: 10px 0 17px;
+        border: 2px solid;
+    }
+    .section-title {
+        margin-bottom: 24px;
+    }
+    #mium {
+        height: 100px;
+    }
+    svg#shadow {
+        height: 100px;
+    }
+    section#contact {
+        padding-bottom: 40px;
+    }
+    .contact .section-right {
+        width: 56%;
+    }
+    .contact .section-left {
+        height: 285px;
+        width: 33%;
+    }
+    #title {
+        font-size: 30pt;
+    }
+    main {
+        margin-top: 454px;
+    }
+    .bg_text img {
+        margin: 0 5px;
+        width: 100%;
+    }
+    .bannLinks a {
+        margin-top: 25px;
+    }
+    section#portfolio {
+        height: 280px;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 600px;
+        }
+    }
+    .portf-cover {
+        padding: 100px 0;
+    }
+    .portf-cover h2 {
+        font-size: 65px;
+        width: 600px;
+        border-right: 2px solid;
+    }
+    .portf-cover h2 img {
+        width: 50px;
+        height: 54.5px;
+        top: 6px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        padding: 60px 10% 50px;
+    }
+    label {
+        font-size: 18px;
+    }
+    button {
+        padding: 15px 20px;
+        font-size: 15px;
+        width: 46%;
+    }
+    header {
+        height: 530px;
+    }
+    main {
+        margin-top: 460px;
+    }
+    .form-group-minor {
+        width: 42%;
+        margin-left: 15px;
+        padding: 3px 0;
+    }
+    .bannLinks a {
+        font-size: 17px;
+        margin: 30px 13px 10px;
+    }
+    .section-left {
+        width: 100%;
+        height: auto;
+        display: table;
+        padding: 0 30px;
+    }
+    .section-left h1 {
+        font-size: 24pt;
+    }
+    svg#shadow,
+    #mium {
+        width: 200%;
+        left: -100%;
+        height: 100px;
+    }
+    #title {
+        font-size: 24pt;
+    }
+    .section-title hr {
+        margin: 5px 0 23px;
+        border: 2px solid;
+        width: 120px;
+    }
+    .section-title {
+        width: 100%;
+    }
+    #about .section-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card {
+        height: 370px;
+    }
+    .card_img {
+        height: 300px;
+    }
+    .card_caption {
+        height: 70px;
+    }
+    .portf-cover h2 img {
+        width: 35px;
+        top: 8px;
+        height: 38px;
+    }
+    section#portfolio {
+        height: 250px;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 240px;
+        }
+    }
+    .portf-cover {
+        padding: 100px 0;
+    }
+    .portf-cover h2 {
+        font-size: 30px;
+        width: 200px;
+        border-right: 2px solid;
+    }
+    .contact .section-left {
+        display: none;
+    }
+    .contact .section-right {
+        width: 100%;
+    }
+    footer .section-right {
+        width: 100%;
+        padding: 40px 30px 10px;
+    }
+    #footer #section-left-header {
+        padding: 15px 20px 15px 0;
+        text-align: left;
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    #footer-contact li a::before {
+        margin-right: 10px;
+    }
+    #footer li a {
+        line-height: 25px;
+    }
+    .credits {
+        padding: 20px 30px;
+    }
+    .credits p {
+        padding-top: 20px;
+        font-size: 11px;
+    }
+    span.back-to-top {
+        bottom: 14%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+    section {
+        padding: 60px 10% 50px;
+    }
+    label {
+        font-size: 16px;
+    }
+    input {
+        font-size: 14px;
+    }
+    button {
+        padding: 15px;
+        font-size: 15px;
+        width: 46%;
+    }
+    header {
+        height: 530px;
+    }
+    main {
+        margin-top: 460px;
+    }
+    .form-group-minor {
+        width: 42%;
+        margin-left: 15px;
+        padding: 3px 0;
+    }
+    .bg_text {
+        top: 41%;
+    }
+    .bannLinks a {
+        font-size: 14px;
+        margin: 25px 13px 10px;
+    }
+    .section-left {
+        width: 100%;
+        height: auto;
+        display: table;
+        padding: 0 30px;
+    }
+    .section-left h1 {
+        font-size: 24pt;
+    }
+    svg#shadow,
+    #mium {
+        width: 200%;
+        left: -100%;
+        height: 100px;
+    }
+    #title {
+        font-size: 24pt;
+    }
+    .section-title hr {
+        margin: 5px 0 23px;
+        border: 2px solid;
+        width: 100px;
+    }
+    .section-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about .section-title {
+        width: 100%;
+    }
+    .card {
+        height: 370px;
+        margin-right: 2px;
+        width: 31%;
+        height: 120px;
+    }
+    .card_img {
+        height: 100px;
+        padding: 5px 5px 0;
+    }
+    .card_caption {
+        height: 20px;
+    }
+    .portf-cover h2 img {
+        width: 35px;
+        top: 8px;
+        height: 38px;
+    }
+    section#portfolio {
+        height: 250px;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 300px;
+        }
+    }
+    .portf-cover {
+        padding: 100px 0;
+    }
+    .portf-cover h2 {
+        font-size: 30px;
+        width: 300px;
+        border-right: 2px solid;
+    }
+    .contact .section-left {
+        display: none;
+    }
+    .contact .section-right {
+        width: 100%;
+    }
+    footer .section-right {
+        width: 100%;
+        padding: 40px 30px 10px;
+    }
+    #footer #section-left-header {
+        padding: 15px 20px 15px 0;
+        text-align: left;
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    #footer-contact li a::before {
+        margin-right: 10px;
+    }
+    #footer li a {
+        line-height: 25px;
+    }
+    .credits {
+        padding: 20px 30px;
+    }
+    .credits p {
+        padding-top: 20px;
+        font-size: 11px;
+    }
+    span.back-to-top {
+        bottom: 14%;
+    }
+}

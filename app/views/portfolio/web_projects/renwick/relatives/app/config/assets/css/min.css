@@ -1,0 +1,1553 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('/config/assets/css/main.css');
+span#recha {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.74);
+    text-align: center;
+    padding-top: 22%;
+    color: #fff;
+    animation-name: fade;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+}
+
+.read {
+    clear: left;
+    padding-top: 10px;
+    display: table;
+    width: 100%;
+}
+
+div#pro-id,
+div#galleria {
+    display: table;
+    padding-top: 17px;
+    width: 100%;
+}
+
+div#pro-id p {
+    color: rgb(161, 161, 161);
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
+form#search {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+form#search button {
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    bottom: 0;
+    border-color: #fb86b2;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+form#search input {
+    margin-bottom: 0;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.07);
+    border-bottom: 0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    padding-right: 80px;
+}
+
+
+/*=======================================================
+=========================================================
+FOR ANY PRESENT SLIDERS
+=========================================================
+=========================================================*/
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 82%;
+}
+
+.carousel-inner>.item {
+    position: absolute;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    display: block
+}
+
+.carousel-inner>.active {
+    left: 0
+}
+
+.carousel-inner .item .fill {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.carousel-inner>.next {
+    left: 100%
+}
+
+.carousel-inner>.prev {
+    left: -100%
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    left: 0
+}
+
+.carousel-inner>.active.left {
+    left: -100%
+}
+
+.carousel-inner>.active.right {
+    left: 100%
+}
+
+.carousel-control-hold {
+    position: absolute;
+    bottom: 0;
+    display: table;
+    right: 0;
+}
+
+.carousel-control {
+    font-size: 20px;
+    background-color: rgba(60, 121, 18, 0.47);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 13px 18px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 12%;
+    right: 2%;
+    line-height: 25px;
+    border: 1px solid rgb(60, 121, 18);
+    transition: 0.6s;
+}
+
+.carousel-control.right {
+    bottom: 2%;
+}
+
+.carousel-control:hover {
+    background-color: rgb(60, 121, 18);
+}
+
+.carousel-control .icon-prev:before {
+    content: '\f141';
+    font-family: "Material Design Icons";
+}
+
+.carousel-control .icon-next:before {
+    content: '\f142';
+    font-family: "Material Design Icons";
+}
+
+.carousel-indicators {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    height: 17%;
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    background: rgb(148, 3, 252);
+    display: inline-block;
+    margin: 0px 0px;
+    border: 1px solid rgb(148, 3, 252);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+.carousel-indicators li.active {
+    background: rgb(148, 3, 252);
+    width: 25px;
+    border-radius: 23px;
+}
+
+
+/*=======================================================
+=========================================================
+ANIMATIONS
+=========================================================
+=========================================================*/
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: -10px;
+    }
+    35% {
+        top: 0px;
+    }
+    70% {
+        top: 10px
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: -10px;
+    }
+    35% {
+        top: 0px;
+    }
+    70% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.fader {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.animation {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+/*=======================================================
+=========================================================
+FOR BODY
+=========================================================
+=========================================================*/
+
+.divWrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    margin: 15px 0px;
+    display: inline-table;
+    width: 100%;
+    clear: both;
+}
+
+.form-group.error-hold {
+    margin: 0;
+}
+
+.form-group.header {
+    margin-bottom: 30px;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.form {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: table;
+    text-align: center;
+    padding: 40px 60px 50px;
+}
+
+.form.login {
+    background: rgb(255, 255, 255);
+    padding: 170px 0px 60px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    display: table;
+    margin: 0px auto;
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card.flipped {
+    -webkit-transform: rotateY( -180deg);
+    -moz-transform: rotateY( -180deg);
+    -o-transform: rotateY( -180deg);
+    transform: rotateY( -180deg);
+}
+
+.card .front,
+.card .back {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.form form {
+    display: block;
+    height: auto;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.15);
+    padding: 40px 45px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.card .back {
+    -webkit-transform: rotateY( -180deg);
+    -moz-transform: rotateY( -180deg);
+    -o-transform: rotateY( -180deg);
+    transform: rotateY( -180deg);
+    display: none;
+}
+
+.card .front {
+    z-index: 1;
+}
+
+.card.flipped .front {
+    z-index: -1;
+    display: none;
+}
+
+.card.flipped .back {
+    display: block;
+}
+
+.form .header h1 {
+    font-size: 50px;
+    line-height: 40px;
+    font-family: Abel;
+    font-weight: 700;
+    color: rgb(148, 3, 252);
+    margin-bottom: 15px;
+}
+
+.form .header p {
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
+
+.form form h1 span {
+    font-size: 40px;
+}
+
+.form form button {
+    padding: 14px 15px;
+    font-size: 13px;
+    color: #fff;
+    background: rgb(148, 3, 252);
+    float: right;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+    border: 1.3px solid;
+}
+
+.form form button:hover {
+    padding: 14px 40px;
+    border-radius: 30px;
+    background: rgb(252, 171, 202);
+    color: rgb(255, 255, 255);
+    border: 1.3px solid;
+}
+
+.form .forget p,
+.form .forget a {
+    /* margin-top: 30px; */
+    color: rgb(113, 113, 113);
+    font-size: 16px;
+    font-family: abel;
+    border-bottom: 1px solid rgba(113, 113, 113, 0.48);
+    padding: 1px 10px 6px;
+    cursor: pointer;
+    float: right;
+}
+
+.form .forget p:hover,
+.form .forget a:hover {
+    color: rgb(148, 3, 252);
+    border-color: rgb(247, 17, 103, 0.48);
+}
+
+.form .forget p {
+    float: left;
+}
+
+.card.verify form {
+    text-align: center;
+}
+
+.card.verify form h1 {
+    margin-bottom: 33px;
+}
+
+.card.verify form p {
+    line-height: 21px;
+}
+
+.card.verify form input {
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 30px;
+    color: rgb(148, 3, 252);
+}
+
+.form.login.verify {
+    padding: 0px;
+}
+
+.id {
+    text-align: right;
+    padding: 30px 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.28);
+}
+
+.id p {
+    font-size: 19px;
+    color: rgb(161, 161, 161);
+    display: inline-block;
+}
+
+.id i {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 8.5px 5px 7px;
+    border: 1.3px solid;
+    border-radius: 50%;
+    color: rgb(161, 161, 161);
+}
+
+.id i:hover {
+    color: rgb(148, 3, 252);
+}
+
+h1#userpage-title {
+    font-size: 30px;
+    color: rgb(148, 3, 252);
+}
+
+@media screen and (max-width: 1200px) {
+    .form form {
+        padding: 70px 55px;
+        width: 40%;
+        margin: 0px auto;
+    }
+    .form.login {
+        overflow-y: scroll;
+        display: inline-table;
+        padding-top: 120px;
+    }
+    .form-group.header {
+        margin-bottom: 40px;
+    }
+    .card {
+        width: 100%;
+        padding: 0px 25px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form form {
+        padding: 60px 55px;
+        width: 50%;
+    }
+    .form-group.header {
+        margin-bottom: 30px;
+    }
+    .form form h1 span {
+        font-size: 32px;
+    }
+    .form .forget a {
+        font-size: 14px;
+        padding: 1px 8px 5px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form form {
+        padding: 50px 32px 40px;
+        width: 65%;
+    }
+    .form .forget p,
+    .form .forget a {
+        font-size: 12px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form form {
+        padding: 45px 35px 40px;
+        width: 100%;
+        height: 100%;
+    }
+    .form .header h1 {
+        font-size: 40px;
+        line-height: 37px;
+    }
+    .form .header p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .form form {
+        width: 100%;
+        padding: 45px 35px 40px;
+    }
+    .form .forget a {
+        padding: 1px 8px 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .form form {
+        padding: 45px 35px 40px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.side-nav {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    padding: 0;
+    transition: 1s;
+    overflow: hidden;
+    background: linear-gradient(rgb(211, 150, 254) -11%, rgb(148, 3, 252) 85%);
+}
+
+.navigation-options {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.navigation-options .logo {
+    width: 100%;
+    height: 10%;
+}
+
+.navigation-options .logo .logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-options .logo .logo-img {
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding: 3px 9px 3px 25px;
+}
+
+.navigation-options .logo .exita {
+    float: right;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    right: -9%;
+    background: rgb(161, 161, 161);
+    padding: 13px 11px;
+    cursor: pointer;
+    transition: 0.6s;
+    display: none;
+}
+
+.navigation-options .logo .exita:hover {
+    background: rgb(113, 113, 113);
+}
+
+.navigation-options .logo .exita i {
+    color: rgb(218, 218, 218);
+    font-size: 30px;
+}
+
+.navigation-options ul#side-links {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 83px;
+}
+
+.navigation-options ul#side-links li a,
+.user-options ul li a {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 12.5px;
+    padding: 18px 35px;
+    cursor: pointer;
+    transition: 0.6s;
+    left: 5%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 8px;
+}
+
+.navigation-options ul#side-links li a p {
+    font-size: 11px;
+    float: right;
+    top: 8px;
+    left: -5px;
+}
+
+.navigation-options ul#side-links li a:hover p {
+    left: 10px;
+}
+
+.navigation-options ul#side-links li#last {
+    margin-top: 47px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.navigation-options ul#side-links li#last a {
+    background: rgb(57, 2, 97);
+    color: rgb(185, 185, 185);
+    left: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    border-right: 0;
+}
+
+.navigation-options ul#side-links li#last a:hover {
+    border-right: 20px solid;
+}
+
+.navigation-options ul#side-links li a i,
+.user-options ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+    top: 4px;
+}
+
+.navigation-options ul#side-links li a.active,
+.navigation-options ul#side-links li a:hover,
+.user-options ul li a:hover {
+    background: rgb(245, 245, 245);
+    padding-left: 45px;
+    color: rgb(148, 3, 252);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.profile-right {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-left: 20%;
+    background: rgb(245, 245, 245);
+    display: table;
+    text-align: center;
+}
+
+#nav-row .nav {
+    padding: 20px 70px;
+    margin: 0;
+    height: auto;
+    display: inline-block;
+    width: 87.6%;
+    background: #fff;
+    border-radius: 70px;
+    box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.07);
+    transition: 0.6s;
+}
+
+#nav-row {
+    padding: 35px 0px 15px;
+}
+
+.navlinks-holder {
+    float: left;
+    width: auto;
+}
+
+.navlinks-holder div#mobile-opener {
+    cursor: pointer;
+    display: none;
+}
+
+.navlinks-holder div#mobile-opener:hover i {
+    background: rgb(113, 113, 113);
+}
+
+.profilenav-right {
+    display: table;
+    float: right;
+}
+
+.welcome-user p {
+    display: inline-block;
+    color: rgb(208, 208, 208);
+    cursor: pointer;
+    transition: 0.6s;
+    padding: 10px 13px;
+    margin-right: 20px;
+}
+
+.welcome-user p:nth-of-type(2) {
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 50%;
+    margin-right: 0;
+    background: rgb(230, 230, 230);
+    color: rgb(148, 3, 252);
+    cursor: auto;
+}
+
+.welcome-user p i {
+    font-size: 25px;
+}
+
+.welcome-user .user-options {
+    position: fixed;
+    z-index: 100;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    top: 0;
+    width: 25%;
+    right: -40%;
+    box-shadow: 0 0 17px 8px rgba(0, 0, 0, 0.09);
+    transition: 0.6s;
+    text-align: center;
+    padding: 60px 50px;
+    overflow-y: scroll;
+}
+
+.fillers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    background: rgb(255, 248, 251);
+    border-radius: 50%;
+}
+
+div#big {
+    width: 300px;
+    height: 300px;
+    bottom: -33%;
+    right: -38%;
+}
+
+div#small {
+    width: 100px;
+    height: 100px;
+    top: 11%;
+    right: -1%;
+}
+
+div#medium {
+    width: 300px;
+    height: 300px;
+    bottom: 20%;
+    left: -16%;
+}
+
+div#right {
+    width: 100px;
+    height: 100px;
+    top: -22px;
+    left: -25px;
+}
+
+.welcome-user .user-options span.exiter,
+.exita {
+    font-size: 30px;
+    color: #cacaca;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+}
+
+.exita {
+    left: unset;
+    margin-top: 0px;
+    margin-right: 20px;
+    right: 0;
+    top: 10px;
+    display: none;
+}
+
+.welcome-user .user-options span.exiter:hover,
+.exita:hover {
+    color: #a2a2a2;
+}
+
+.welcome-user .user-options ul {
+    text-align: center;
+    margin: 10px 0px;
+    display: inline-table;
+    width: 100%;
+}
+
+.welcome-user .user-options ul:nth-of-type(3) {
+    text-align: left;
+    padding: 25px 0px 0px;
+    margin: 10px auto 25px;
+    border-top: 1px solid rgb(230, 230, 230);
+    width: 100%;
+}
+
+.welcome-user .user-options ul li {
+    font-weight: 700;
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+    padding: 13px 0px;
+    font-family: sans-serif;
+    display: inline-table;
+    width: 100%;
+}
+
+.welcome-user .user-options ul:nth-of-type(3) li {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.welcome-user .user-options ul:nth-of-type(3) li span {
+    font-weight: 700;
+    color: rgb(136, 136, 136);
+    font-style: normal;
+    font-size: 12px;
+    margin-right: 9px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.welcome-user .user-options ul:nth-of-type(3) li h5 {
+    float: right;
+    color: rgb(146, 146, 146);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.welcome-user .user-options .profilePic {
+    width: 78%;
+    height: 190px;
+    margin: 0px auto;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 50%;
+    padding: 19px;
+    background: rgb(230, 230, 230);
+}
+
+.welcome-user .user-options ul .profilePic p#icon {
+    margin-right: 0;
+    cursor: unset;
+}
+
+.welcome-user .user-options ul .profilePic p#icon i {
+    font-size: 110px;
+    color: rgb(148, 3, 252);
+}
+
+.welcome-user .user-options.shower {
+    right: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .welcome-user .user-options.shower {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .welcome-user .user-options.shower {
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .welcome-user .user-options.shower {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .welcome-user .user-options.shower {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .welcome-user .user-options.shower {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .welcome-user .user-options.shower {
+        width: 90%;
+        padding: 60px 40px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .welcome-user .user-options.shower {
+        width: 100%;
+        padding: 60px 40px;
+    }
+}
+
+.logout {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 20px 40px;
+}
+
+.logout a {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(148, 3, 252);
+    transition: 0.8s;
+}
+
+.logout a:hover {
+    color: #4d013f;
+}
+
+.logout a i {
+    font-size: 26px;
+}
+
+.profilebody-bottom {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0px 0px 40px;
+}
+
+.profilebody-bottom.padding {
+    padding-top: 200px;
+}
+
+.table {
+    width: 87.6%;
+    height: auto;
+    display: inline-table;
+    background: #fff;
+    box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0;
+    text-align: left;
+    padding: 31px 35px 37px;
+}
+
+.table.products {
+    width: 47%;
+    float: left;
+    margin-right: 30px;
+    display: block;
+}
+
+.table.products:nth-of-type(2) {
+    margin-right: 0;
+}
+
+.table.products form {
+    margin: 0;
+    margin-top: 28px;
+}
+
+.table.products form p {
+    clear: left;
+    color: rgb(161, 161, 161);
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 22px;
+    top: -2px;
+}
+
+.table.store {
+    width: 98.4%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+div#store form {
+    box-shadow: none;
+    width: 100%;
+    padding: 0px 30px;
+    margin: 0;
+}
+
+.table.store h1 {
+    color: rgb(148, 3, 252);
+    font-size: 33px;
+    line-height: 65px;
+}
+
+.table.store p {
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    margin: 10px 0px 30px;
+}
+
+.table.store a {
+    background: rgb(148, 3, 252);
+    border: 1px solid rgb(148, 3, 252);
+    color: #fff;
+    padding: 16px 35px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: 0.6s;
+    cursor: pointer;
+    word-spacing: 3px;
+    display: inline-block;
+}
+
+.table.store a:hover {
+    color: rgb(148, 3, 252);
+    background: #fff;
+}
+
+.table.statistics {
+    box-shadow: none;
+    background: transparent;
+    padding: 31px 0px 37px;
+    padding-bottom: 0px;
+    overflow: unset;
+}
+
+.table h1 {
+    color: rgb(161, 161, 161);
+    font-size: 28px;
+    font-family: abel;
+}
+
+.table h1 span {
+    font-size: 16px;
+}
+
+.table h1 span span {
+    color: rgb(148, 3, 252);
+    font-size: 17px;
+    margin-right: 4px;
+}
+
+.table ul {
+    text-align: right;
+}
+
+.table ul li {
+    display: inline-table;
+    width: auto;
+    margin: 0;
+    font-family: abel;
+}
+
+.table ul li a#liners.active {
+    padding: 9px 13px;
+    border: 1px solid;
+    text-align: center;
+    background: #fff;
+    color: #fa5e98;
+}
+
+.table ul li .nums#liners:hover {
+    background: rgba(251, 134, 178, 0.62);
+    color: #fff;
+}
+
+.table.recent ul {
+    margin-top: 25px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 84.5%;
+    overflow: hidden;
+    color: rgb(113, 113, 113);
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.11);
+}
+
+.table.recent ul li {
+    width: 100%;
+    padding: 20.3px 16px;
+    border-bottom: 1px solid rgb(247, 247, 247);
+    display: inline-block;
+    font-size: 13px;
+}
+
+.table.recent ul li:last-child {
+    border-bottom: none;
+}
+
+a#liners {
+    border: 1px solid rgb(250, 94, 152);
+    border-radius: 50%;
+    padding: 12px 14px;
+    margin-right: 8px;
+    margin-top: 10px;
+    background: rgb(250, 94, 152);
+    color: #fff;
+    display: inline-block;
+    transition: 0.6s;
+}
+
+a#liners:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(148, 3, 252);
+}
+
+a#liners[href="none"] {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.nums#liners {
+    background: none;
+    color: rgb(148, 3, 252);
+    border: none;
+    padding: 9px 13px;
+}
+
+.table.recent ul li p {
+    width: 65%;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    color: rgb(93, 93, 93);
+}
+
+.table.recent ul li span {
+    width: 27%;
+    float: right;
+    color: rgb(93, 93, 93);
+}
+
+.stats {
+    width: 100%;
+    margin-top: 25px;
+    height: 84.5%;
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.07);
+}
+
+div#stats {
+    width: 22%;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    margin: 6px 10px 0px;
+    padding: 25px 20px;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+}
+
+div#stats h3 {
+    font-size: 29px;
+    margin-right: 10px;
+    color: rgb(148, 3, 252);
+    float: left;
+}
+
+div#stats span {
+    font-size: 11.5px;
+    float: right;
+    vertical-align: bottom;
+    width: 52%;
+    clear: left;
+    color: rgb(146, 146, 146);
+    line-height: 17px;
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 13px;
+    box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.07);
+}
+
+td h3 {
+    color: rgb(146, 146, 146);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+th {
+    background-color: rgb(148, 3, 252);
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 12px;
+    padding: 13px 0px;
+    height: 40px;
+    font-weight: 600;
+}
+
+td p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(140, 140, 140);
+}
+
+.form.change {
+    width: 50%;
+    position: relative;
+    float: left;
+}
+
+.form.change.sell {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .side-nav {
+        width: 26%;
+    }
+    .profile-right {
+        padding-left: 26%;
+    }
+    .table {
+        width: 42.5%;
+        margin: 0px 8px 20px;
+    }
+    .profilebody-top {
+        padding-left: 30px;
+    }
+    #nav-row .nav {
+        padding: 17px 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profilebody-top h1 {
+        font-size: 30px;
+    }
+    #nav-row .nav {
+        padding: 17px 20px 17px 35px;
+    }
+    .side-nav {
+        width: 0;
+        left: -5%;
+    }
+    .show {
+        width: 34.5%;
+        left: 0;
+    }
+    .navlinks-holder div#mobile-opener {
+        display: block;
+    }
+    .profile-right {
+        padding-left: 0;
+        width: 100%;
+    }
+    .table {
+        width: 45%;
+        margin: 0px 8px 15px;
+    }
+    .profilebody-top {
+        padding-left: 36px;
+    }
+    .navigation-options .logo .exita {
+        display: block;
+    }
+    .profilebody-bottom {
+        padding: 30px 20px;
+    }
+    .welcome-user .user-options span.exiter,
+    .exita {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .show {
+        width: 50%;
+    }
+    .table {
+        width: 65%;
+        margin: 0px 0px 30px;
+    }
+    .table.products {
+        width: 100%;
+        margin: 0px 0px 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .form form[name="change"] {
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form form[name="change"] {
+        width: 100%;
+        padding: 0;
+    }
+    .form.change {
+        padding: 0;
+        width: 100%;
+    }
+    .form table.messages {
+        padding: 45px 35px;
+    }
+}
+
+td a {
+    padding: 11px 17px;
+    color: #fff;
+    background: rgb(250, 94, 152);
+    border-radius: 4px;
+    font-size: 12px;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.12);
+    transition: 0.6s;
+}
+
+td a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(148, 3, 252);
+}
+
+td.reply {
+    padding: 30px 0px;
+}
+
+.form-group.def {
+    width: 40%;
+}
+
+.form-group.def td p {
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .form.about form {
+        margin: 20px auto;
+    }
+    .form-group.def {
+        width: 100%;
+    }
+}
+
+img#output {
+    position: absolute;
+    width: 67px;
+    height: 66px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.product_holder {
+    display: inline-table;
+    width: 30%;
+    height: 230px;
+    margin: 0px 6px 24px 6px;
+}
+
+.form-group.ref {
+    padding: 0px 20px;
+}
+
+.form-group.def td:nth-of-type(1) {
+    width: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+span#copytag {
+    position: absolute;
+    right: 2%;
+    top: 12.7%;
+    padding: 15px 22px 15px 18px;
+    background: rgb(57, 2, 97);
+    color: #fff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    form[name="save-product"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product_holder {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .show {
+        width: 90%;
+    }
+    .table {
+        width: 95%;
+        padding: 30px 23px 37px;
+    }
+    .table.statistics {
+        padding-top: 0;
+    }
+    div#stats {
+        width: 100%;
+    }
+    .form.change {
+        padding-top: 0;
+        left: 0;
+        position: relative;
+        text-align: left;
+    }
+    .form form[name="change"] {
+        width: 100%;
+        padding: 45px 36px;
+        margin: 0px 0px 10px;
+        display: inline-block;
+    }
+    h1#userpage-title {
+        font-size: 30px;
+        color: rgb(148, 3, 252);
+    }
+}

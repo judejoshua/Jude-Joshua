@@ -1,0 +1,24 @@
+@import url('booking.css');
+#cont1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.527)), url(../images/index/verification.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div#booker_form form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+div#booker_form {
+    text-align: center;
+}
+div#booker_form p{
+    text-align: left;
+}
+div#booker_form form {
+    width: 50%;
+    display: inline-block;
+    margin: 25px 0px;
+}
+div#booker_form .form-group input[type="submit"]{
+    margin: 0%;
+}

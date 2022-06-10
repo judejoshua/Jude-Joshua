@@ -1,0 +1,1977 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body, html{
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background: #ffffff;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #808080;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(16, 126, 215);
+    border-radius: 10px;
+}
+::placeholder{
+    color: rgb(175, 175, 175);
+}
+label {
+    letter-spacing: 1px;
+    color: darkgrey;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'abel', sans-serif;
+}
+input{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(232, 232, 232);
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    width: 100%;
+    margin: 12px 0px;
+    font-size: 11px;
+    color: dimgray;
+}
+*{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+.payment {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    background: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    padding-top: 9%;
+}
+.modal {
+    display: block;
+}
+.form-group-minor:nth-of-type(1) {
+    width: 63%;
+    display: inline-block;
+}
+.form-group-minor:nth-of-type(2) {
+    width: 28%;
+    display: inline-block;
+    margin-left: 20px;
+}
+.modal a{
+	display: inline-block;
+	position: absolute;
+    top: -4%;
+    right: -3%;
+	background: rgb(255, 255, 255);
+    padding: 5px 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgb(46, 116, 171);
+    font-size: 21px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+
+}
+h3#alert.error{
+	color: red;
+}
+/*=======================================================
+=========================================================
+FOR ANY PRESENT SLIDERS
+=========================================================
+=========================================================*/
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.carousel-inner{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    height: 100%;
+}
+.carousel-inner>.item{
+    position:relative;
+    display:none;
+    -webkit-transition:.6s ease-in-out left;
+    -o-transition:.6s ease-in-out left;
+    transition:.6s ease-in-out left
+}
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{
+    display:block
+}
+.carousel-inner>.active{
+    left:0
+}
+.carousel-inner>.next,.carousel-inner>.prev{
+    position:absolute;
+    top:0;
+    width:100%
+}
+.carousel-inner>.next{
+    left:100%
+}
+.carousel-inner>.prev{
+    left:-100%
+}
+.carousel-inner>.next.left,.carousel-inner>.prev.right{
+    left:0
+}
+.carousel-inner>.active.left{
+    left:-100%
+}
+.carousel-inner>.active.right{
+    left:100%
+}
+.carousel-control-hold {
+    position: absolute;
+    bottom: 0;
+    display: table;
+    right: 0;
+}
+.carousel-control{
+    font-size: 15px;
+    background-color: rgb(16, 126, 215);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    line-height: 25px;
+    border: 1px solid rgb(16, 126, 215);
+    transition: 0.6s;
+}
+.carousel-control.right{
+    right: 0;
+}
+.carousel-control:hover{
+    background-color: rgba(16, 126, 215, 0.57);
+}
+.carousel-control .icon-prev:before{
+    content:'\f141';
+    font-family: "Material Design Icons";
+}
+.carousel-control .icon-next:before{
+    content:'\f142';
+    font-family: "Material Design Icons";
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.carousel-indicators li{
+    width: 60px;
+    height: 6px;
+    background: rgba(16, 126, 215, 0.33);
+    display: inline-block;
+    margin: 0px 2px;
+}
+.carousel-indicators li.active {
+    background: rgb(16, 126, 215);
+}
+
+
+/*=======================================================
+=========================================================
+ANIMATIONS
+=========================================================
+=========================================================*/
+@-webkit-keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 0.25;}
+    50% { opacity: 0.75;}
+    90% { opacity: 0.95;}
+    100% { opacity: 1;}
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 0.25;}
+    50% { opacity: 0.75;}
+    90% { opacity: 0.95;}
+    100% { opacity: 1;}
+}
+@-webkit-keyframes bounce{
+    0% {top: -10px;}
+    35% {top: 0px;}
+    70% {top: 10px}
+    100% {top: 0px;}
+
+}
+@keyframes bounce{
+    0% {top: -10px;}
+    35% {top: 0px;}
+    70% {top: 10px;}
+    100% {top: 0px;}
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+.fader {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+/*=======================================================
+=========================================================
+FOR BODY
+=========================================================
+=========================================================*/
+.divWrap{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.form-group{
+    margin: 10px 0px;
+    display: table;
+    width: 100%;
+}
+.container{
+    display: table;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.navigation {
+    width: 85%;
+    display: table;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    top: 8%;
+    margin: 0px auto;
+    left: 7.5%;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.07), -1px 12px 20px 0px rgba(0, 0, 0, 0), -1px 4px 20px 0px rgba(0, 0, 0, 0.1), 0px 12px 20px 0px rgba(0, 0, 0, 0);
+}
+.nav {
+    padding: 10px 4% 3px;
+    text-align: right;
+    display: table;
+    width: 100%;
+    background: rgb(232, 232, 232);
+}
+div#logo_class {
+    float: left;
+    display: table;
+    left: 15px;
+}
+div#logo_class .block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+#logo_class img {
+    width: 45px;
+    max-height: 40px;
+}
+.right_nav {
+    float: right;
+    width: 60%;
+    display: table;
+    padding: 20px 20px 20px 0px;
+    text-align: right;
+}
+.right_nav_options {
+    display: inline-table;
+    width: 30%;
+}
+.right_nav_options_left {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding-top: 8px;
+}
+.right_nav_options_right {
+    float: right;
+    text-align: left;
+    width: 70%;
+}
+.right_nav_options_right p {
+    font-size: 13px;
+    margin-top: 4px;
+}
+.right_nav_options_right h3 {
+    color: rgb(16, 126, 215);
+    font-size: 14px;
+    font-weight: 700;
+}
+.right_nav_options_left i {
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 50%;
+    border: 1px solid;
+    color: rgb(12, 118, 204);
+    right: -3px;
+}
+.bottom-nav {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 12px 3%;
+    background: rgb(255, 255, 255);
+}
+.scrolled {
+    position: fixed;
+    top: 0;
+    padding: 20px 185px;
+    z-index: 100;
+    left: 0;
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.44);
+    background: #fff;
+    width: 100%;
+}
+div#mobile-opener {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 3px 20px;
+    color: rgb(16, 126, 215);
+    border: none;
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+div#links_class {
+    display: inline-table;
+    width: 92%;
+    float: right;
+}
+span#exitpa {
+    display: none;
+    color: rgb(255, 255, 255);
+}
+div#links_class a {
+    font-size: 11px;
+    color: rgb(12, 118, 204);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    transition: 0.5s;
+}
+.left-links {
+    float: left;
+    transition: 0.6s;
+}
+div#links_class .left-links a {
+    padding: 0px 12px;
+    display: inline-block;
+    margin: 15px 5px;
+}
+div#links_class .left-links a:hover{
+    margin-bottom: 0px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid rgb(12, 118, 204);
+    color: rgba(12, 118, 204, 0.54);
+}
+.right-links {
+    float: right;
+}
+.bottom-nav.scrolled div#logo_class {
+    display: block;
+}
+.bottom-nav.scrolled div#logo_class .logo_nav_options_left i {
+    top: 0;
+    font-size: 35px;
+}
+.bottom-nav.scrolled div#logo_class .logo_nav_options_right h3 {
+    font-size: 13px;
+}
+.bottom-nav.scrolled div#logo_class .logo_nav_options_right p {
+    font-size: 10px;
+    color: rgb(204, 204, 204);
+}
+.bottom-nav.scrolled div#logo_class .logo_nav_options_right {
+    top: 4px;
+    width: 77%;
+}
+.bottom-nav.scrolled div#logo_class .logo_nav_options_left {
+    width: 20%;
+}
+.bottom-nav.scrolled div#links_class {
+    width: 89.5%;
+    display: table;
+    transition: 0.6s;
+}
+.bottom-nav.scrolled div#links_class a{
+    color: rgb(16, 126, 215);
+}
+.bottom-nav.scrolled div#links_class a#mil{
+    background: rgb(16, 126, 215);
+}
+div#links_class .right-links a {
+    margin: 0px 11px;
+}
+div#links_class .right-links a i {
+    font-size: 19px;
+    top: 2px;
+}
+div#links_class .right-links a#mil i {
+    font-size: 18px;
+    right: 9px;
+}
+div#links_class .right-links a#mil, .login-form form button {
+    padding: 14px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    margin: 0;
+    transition: 0.8s;
+    background: rgb(16, 126, 215);
+    color: #fff;
+    border: 1px solid rgb(16, 126, 215);
+}
+div#links_class .right-links a#mil:hover, .login-form form button:hover{
+    color: rgb(16, 126, 215);
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    transform: scale(0.9);
+    border: 1px solid;
+    margin-left: 0;
+    padding: 14px 40px;
+}
+#homecontent {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('../images/homebng.jpg');
+	background: -webkit-radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('../images/homebng.jpg');
+	background: radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('../images/homebng.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+.slider-text {
+    position: absolute;
+    left: 11%;
+    top: 35%;
+    height: 330px;
+    width: 46%;
+}
+.slider-text h1 {
+    font-size: 54px;
+    line-height: 55px;
+    color: rgb(255, 255, 255);
+}
+.slider-text h1 span {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.slider-text p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: rgb(202, 202, 202);
+    margin-top: 18px;
+}
+.slider-text a {
+    background: rgb(16, 126, 215);
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 110px;
+    padding: 20px 40px;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 0;
+    transition: 0.8s;
+    letter-spacing: 2px;
+    border: 2px solid rgb(16, 126, 215);
+}
+.slider-text a:hover {
+    color: rgb(16, 126, 215);
+    background: rgb(255, 255, 255);
+    border: 2px solid;
+    transform: scale(0.9);
+}
+span#more {
+    position: absolute;
+    color: #ccc;
+    bottom: 10%;
+    left: 50%;
+    font-size: 30px;
+    text-shadow: 0 0 4px black;
+}
+span#more i{
+    animation: bounce 0.8s infinite;
+}
+#home div#two {
+    height: 50px;
+    background: rgb(0, 53, 97);
+    border-top: 1px solid rgb(46, 116, 171);
+}
+.divisor {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    left: 0;
+}
+.divisor div#one {
+    width: 100%;
+    height: 0;
+    border-bottom: 135px solid rgba(16, 126, 215, 0.65);
+    border-right: 1940px solid transparent;
+}
+.divisor div#two {
+    width: calc(100%*1.1);
+    height: 0;
+    border-bottom: 135px solid rgb(0, 53, 97);
+    border-left: 1900px solid transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -0.6%;
+}
+section{
+    padding: 135px 195px 135px;
+}
+section#about {
+    height: 400px;
+    width: 100%;
+    background: rgb(0, 53, 97);
+    padding: 45px 195px;
+    border-bottom: 1px solid rgb(46, 116, 171);
+}
+section#about div#traped {
+    float: left;
+    border-right: 1px solid rgba(40, 109, 166, 0.53);
+    width: 49.5%;
+    padding: 30px 50px 30px 50px;
+    text-align: center;
+    height: 100%;
+}
+section#about div#traped .success:nth-child(even) {
+    border-top: 1px solid rgb(45, 112, 162);
+}
+section#about div#traped .success .success_mini {
+    display: inline-block;
+    margin: 27px 25px;
+    width: 31%;
+}
+section#about div#traped .success .success_mini h3 {
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 6px;
+}
+section#about div#traped .success .success_mini h5 {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(193, 193, 193);
+}
+section#about div#traped_box {
+    float: right;
+    width: 50%;
+    padding: 40px 75px 15px;
+    height: 100%;
+    overflow: hidden;
+}
+section#about div#traped_box h2 {
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+section#about div#traped_box p {
+    font-size: 11px;
+    line-height: 27px;
+    color: rgb(187, 186, 186);
+}
+section#services {
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.13)), url(../images/happy.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.13)), url(../images/happy.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.13)), url(../images/happy.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+.services {
+    padding: 125px 80px 45px;
+    text-align: center;
+    float: right;
+    right: 10.5%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 40%;
+    display: table;
+}
+section#services .servdivisor {
+    bottom: unset;
+    top: 0;
+}
+section#services .servdivisor div#two {
+    border-top: 135px solid rgb(0, 53, 97);
+    border-bottom: unset;
+    border-right: unset;
+}
+section#services .servdivisor div#one {
+    border-top: 135px solid rgba(16, 126, 215, 0.65);
+    border-bottom: unset;
+    border-left: unset;
+}
+section h1, .login-form div#reg-holder h1{
+    font-size: 40px;
+    margin: 20px  0px 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(0, 157, 220);
+    font-weight: 600;
+    text-align: right;
+    word-spacing: 1px;
+}
+
+#testimonial h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    /* font-variant: unicase; */
+}
+section h1 span {
+    font-weight: 400;
+    font-variant: unicase;
+    font-size: 34px;
+    color: rgb(0, 198, 220);
+}
+.services_header, .services_body {
+    display: table;
+    width: 100%;
+}
+.services_body {
+    padding: 0px 0px 20px;
+    text-align: right;
+}
+.group_header {
+    border-right: 3px solid rgb(0, 198, 220);
+    padding: 0px 10px 0px;
+}
+.group_header h3 {
+    font-size: 17px;
+    color: rgb(0, 198, 220);
+    margin-top: 25px;
+}
+.group_header h3 span{
+    color: rgb(0, 198, 220);
+    margin-right: 8px;
+}
+.group_body {
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+.group_body p {
+    font-size: 12px;
+    line-height: 22px;
+}
+section#work_info {
+    background: rgb(16, 126, 215);
+    padding: 110px 190px;
+}
+.days, .table, .tr {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.table {
+    overflow: hidden;
+}
+.table .tr .th, .table .tr .td {
+    display: inline-table;
+    padding: 21px 10px;
+    width: 13.5%;
+    border-right: 1px solid rgb(0, 198, 220);
+}
+.table .tr .th {
+    border-bottom: 1px solid rgb(0, 198, 220);
+    border-right: 1px solid rgb(0, 198, 220);
+}
+.table .tr .th:last-child, .table .tr .td:last-child {
+    border-right: none;
+}
+.table .tr .th h4 {
+    font-size: 15px;
+    font-variant: unicase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+.table .tr .td h5 {
+    color: rgb(220, 220, 220);
+    font-size: 11.5px;
+}
+.table .tr .td h5 span {
+    margin: 0px 5px;
+}
+#doctors{
+    padding: 125px 200px 70px;
+}
+.doctors_header {
+    display: table;
+    width: 100%;
+}
+.doctors_body .row {
+    margin-top: 40px;
+    text-align: left;
+    width: 100%;
+}
+#doctors h1{
+    text-align: center;
+    font-weight: 600;
+}
+.doctor {
+    display: inline-table;
+    width: 200px;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    margin: 5px 25px 5px 0px;
+    background: #fff;
+    box-shadow: 0px -8px 20px 0px rgba(0, 0, 0, 0.15), 10px 0px 20px 0px rgba(0, 0, 0, 0.12), -10px 0px 20px 0px rgba(0, 0, 0, 0.08), 0px 12px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.doctor_img {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.doctor_img div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.doctor_img img {
+    width: 50%;
+    height: 68%;
+    position: absolute;
+    top: 18%;
+    left: 26%;
+    border-radius: 50%;
+}
+.doctor_details {
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 2px 30px 35px;
+    height: auto;
+    color: rgba(109, 106, 106, 0.8);
+}
+.doctor_details h2 {
+    font-size: 12px;
+    margin: 6px 0px;
+    font-weight: 600;
+    color: rgba(68, 68, 68, 0.71);
+}
+.doctor_details h4 {
+    margin: 7px 0px;
+    font-size: 11px;
+    font-weight: 600;
+}
+#testimonial {
+    width: 100%;
+    padding: 60px 175px 75px;
+    background: rgb(0, 53, 97);
+    border-top: 1px solid rgb(46, 116, 171);
+	border-bottom: 1px solid rgb(46, 116, 171);
+}
+.fm_client.carousel .item .fill{
+    text-align: center;
+}
+.fm_client.carousel .item {
+    padding: 20px 0px;
+}
+.talk {
+    height: 280px;
+    width: 30%;
+    display: inline-table;
+    margin: 0px 10px;
+    padding: 45px 30px 32px;
+    color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(45, 112, 162);
+}
+
+.talk:last-of-type {
+    border-right: none;
+}
+.talk #body{
+    margin-bottom: 25px;
+}
+.talk #body p {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.talk #talkfooter {
+    position: relative;
+    font-weight: 600;
+    color: rgb(181, 181, 181);
+}
+.talk #talkfooter #talkwho{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.talk #talkfooter #talkwhere{
+    color: rgb(46, 116, 171);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 11px;
+    margin-top: 7px;
+    display: none;
+}
+#contact{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.13)), url(../images/contact.jpg);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.13)), url(../images/contact.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.13)), url(../images/contact.jpg);
+    background-size: cover;
+    height: 650px;
+}
+#contact h1 {
+    color: rgb(16, 126, 215);
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0px 0px 10px;
+    text-align: left;
+}
+#contact h2{
+    color: rgb(0, 53, 97);
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+.contactform {
+    position: absolute;
+    width: 40%;
+    padding: 120px 65px 80px;
+    text-align: left;
+    margin-top: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.79);
+    left: 15%;
+    display: table;
+}
+.contactform form input, .login-form form input{
+    padding: 12px 10px;
+    margin: 7px 0px;
+    padding-left: 13px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 53, 97, 0.24);
+    width: 80%;
+    color: rgb(0, 53, 97);
+    border-radius: 8px;
+    font-size: 11px;
+}
+.contactform form textarea {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    margin: 10px 0px;
+    resize: none;
+    background-color: #fff;
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    border: 1px solid rgba(0, 53, 97, 0.24);
+    color: rgb(0, 53, 97);
+    border-radius: 8px;
+    font-family: 'open-sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+.contactform form .form-group:last-of-type{
+    text-align: right;
+}
+.contactform form .form-group:last-of-type button {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(16, 126, 215);
+    background-color: rgb(12, 118, 204);
+    padding: 13px 40px;
+    font-size: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0px 5px 0px;
+    border-radius: 50px;
+}
+.contactinfo {
+    width: 40%;
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(140, 200, 249);
+    height: 100%;
+    color: #fff;
+    padding-top: 105px;
+}
+#contact .contactinfo h1 {
+    text-align: center;
+    margin: 60px 0px;
+    font-size: 39px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.contactinfo hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.58);
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+}
+.contactinfo div {
+    text-align: center;
+    margin: 30px 0px;
+    display: inline-block;
+    width: 100%;
+}
+.contactinfo div h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.contactinfo div h4 {
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.contactinfo iframe {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    text-align: center;
+    margin: 30px 0px 0px;
+    position: relative;
+}
+.contactinfo span {
+    font-size: 15px;
+    color: #999;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 10px;
+}
+.contactsocialinks {
+    margin-bottom: 8px;
+}
+.contactsocialinks a.mdi {
+    font-size: 26px;
+    margin: 10px;
+    margin-left: 0px;
+    color: rgb(0, 53, 97);
+    transition: 0.5s;
+    padding: 8px 13px 8px 0px;
+    left: -6px;
+}
+a.mdi.mdi-linkedin {
+    color: steelblue;
+}
+a.mdi.mdi-youtube {
+    color: red;
+}
+a.mdi.mdi-twitter {
+    color: deepskyblue;
+}
+a.mdi.mdi-instagram {
+    color: deeppink;
+}
+a.mdi.mdi-facebook {
+    color: dodgerblue;
+}
+.contactsocialinks a.mdi:hover{
+    text-decoration: none;
+    padding: 8px 13px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.31);
+    border-radius: 5px;
+}
+#support {
+    padding: 90px 180px 50px;
+    background: rgb(215, 215, 215);
+}
+#support ul {
+    list-style: none;
+    height: 250px;
+    width: auto;
+    padding: 10px 25px;
+    display: inline-table;
+}
+#support ul:nth-of-type(2){
+    padding-left: 40px;
+}
+#support ul h3 {
+    margin-top: 0px;
+    font-size: 25px;
+    color: rgb(0, 53, 97);
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+#support ul .aleft, #support ul .aright{
+    float: left;
+    width: 180px;
+}
+#support ul .aleft.full {
+    width: 100%;
+}
+#support ul .aright{
+    float: right;
+}
+#support ul p {
+    font-size: 12px;
+    line-height: 30px;
+    color: #444;
+}
+#support ul li a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+}
+#support ul li {
+    margin: 16px 0px;
+    color: rgb(85, 85, 85);
+}
+#support ul li a:hover {
+    color: rgb(3, 58, 66);
+    text-decoration: underline;
+}
+#support ul li i {
+    margin-right: 10px;
+}
+#support ul iframe{
+    border: 1px solid #555;
+    width: 100%;
+}
+div#copyright p {
+    color: gray;
+    font-size: 11px;
+}
+div#copyright p a {
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(16, 126, 215);
+}
+div#copyright {
+    text-align: center;
+    padding: 30px 170px;
+    background: #333;
+}
+.login-form {
+    width: 100%;
+    display: table;
+    text-align: center;
+    padding: 140px 60px 50px;
+    background: linear-gradient(100deg, rgba(111, 16, 215, 0.57) 15% 35%, rgba(16, 215, 151, 0.65) 65% 100%);
+    background-size: cover;
+    background-position: center;
+}
+.login-form.register .navigation {
+	top: 4%;
+}
+.inhouse, .visiting{
+    transition: 0.9s;
+    width: 32%;
+    display: inline-table;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
+    margin: 25px 45px;
+    padding: 25px 30px;
+    border-radius: 13px;
+    background: rgb(255, 255, 255);
+}
+.form-content {
+    padding: 0 10px;
+    text-align: left;
+}
+.form-content.contct {
+    text-align: unset;
+}
+.login-form div#reg-holder {
+    display: inline-table;
+    padding: 25px 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.login-form form input {
+    width: 100%;
+}
+.form-group.header {
+    display: table;
+    width: 100%;
+    padding: 20px 0px;
+	text-align: center;
+}
+
+.patient form[name="profile"] .form-group.header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.patient .messages {
+    box-shadow: unset;
+    padding: 0;
+    width: 100%;
+}
+h3#alert {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(130, 130, 130);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.success#alert {
+    color: green;
+}
+h3#alert a {
+    text-decoration: underline;
+    color: rgb(46, 116, 171);
+    font-style: italic;
+}
+form .body input {
+    font-size: 12px;
+    padding: 14px;
+    color: rgb(46, 116, 171);
+    border: 1px solid rgba(134, 134, 134, 0.31);
+}
+.form-group.header h1, .login-form div#reg-holder h1{
+	font-variant: all-small-caps;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.staff .login-form div#reg-holder h1 {
+    font-size: 20px;
+}
+
+.login-form.register div#reg-holder h1 {
+    font-size: 30px;
+}
+.form-group.header p{
+	font-size: 11px;
+	color: rgb(123, 123, 123);
+	font-style: italic;
+}
+
+.form-group.header p span {
+    font-weight: 600;
+    font-style: normal;
+}
+.form-group.header p a{
+	font-style: italic;
+	text-decoration: underline;
+	color: rgb(16, 126, 215);
+}
+.login-form form button{
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 12px 40px;
+}
+.error p{
+    color: red;
+	font-size: 11px;
+    margin: 15px 0px 0px;
+}
+.form-group i {
+    position: absolute;
+    right: 5%;
+    left: unset;
+    top: 50%;
+    color: rgb(175, 175, 175);
+}
+.vi{
+	display: none;
+}
+p#warning {
+    font-size: 11px;
+    color: rgb(0, 157, 220);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+p#warning span {
+    color: gray;
+    cursor: pointer;
+    text-decoration: underline;
+}
+select {
+    padding: 12px 10px;
+    margin: 7px 0px;
+    padding-left: 13px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 53, 97, 0.24);
+    color: rgb(0, 53, 97);
+    border-radius: 8px;
+    font-size: 11px;
+    width: 70%;
+    display: inline-block;
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+}
+.form-group-minor-box{
+    display: inline-table;
+    width: 49%;
+}
+.form-group-minor-box span {
+    font-size: 11px;
+    color: gray;
+    font-weight: 500;
+    margin-left: 5px;
+}
+/*=======================================================
+=========================================================
+P R O F I L E   P A G E
+=========================================================
+=========================================================*/
+.divwrap {
+    width: 100%;
+    height: 100%;
+    background: rgb(232, 232, 232);
+    display: table;
+    position: absolute;
+}
+.admin .profilebody-left, .admin .profilebody-bottom-left {
+    padding-top: 50px;
+}
+.side-nav{
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 200;
+    top: 0;
+    background: rgb(52, 152, 219);
+    padding: 0;
+    transition: 1s;
+}
+.admin.divwrap .side-nav{
+    background: rgb(255, 255, 255);
+    box-shadow: 7px 1px 10px 2px rgba(0, 0, 0, 0.12);
+}
+
+.navigation-options {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.img {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+.img div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+}
+.navigation-options ul#side-links{
+    background: linear-gradient(100deg, rgba(111, 16, 215, 0.95) 10% -59%, rgb(16, 215, 151) 90% 100%);
+}
+
+.patient .navigation-options ul#side-links, .patient .welcome-user:hover > .user-options, .patient .profilenav-right {
+    background: rgb(46, 116, 171);
+}
+.patient .navigation-options ul#side-links a:hover {
+    color: rgb(46, 116, 171);
+    padding-left: 30px;
+    background: rgb(232, 232, 232);
+}
+.navigation-options ul#side-links li a, .navigation-options ul#side-links li p {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'abel', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.patient .navigation-options ul#side-links li a, .patient .welcome-user p, .patient .user-options a {
+    font-weight: 500;
+    padding: 15px 20px;
+}
+.patient .welcome-user p{
+	padding: 10px 20px;
+}
+.navigation-options ul#side-links li#last a {
+    background: rgb(85, 85, 85);
+    color: rgb(175, 175, 175);
+}
+.navigation-options ul#side-links li ul {
+    display: none;
+    transition: 0.6s;
+    opacity: 0;
+}
+.navigation-options ul#side-links li a i, .navigation-options ul#side-links li p i {
+    font-size: 20px;
+    margin-right: 6px;
+    top: 4px;
+}
+.navigation-options ul#side-links li a:hover, .navigation-options ul#side-links li p:hover {
+    background: rgb(255, 255, 255);
+    padding-left: 40px;
+    color: rgb(0, 53, 97);
+    border-right: 20px solid;
+}
+.navigation-options ul#side-links li:hover >  ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(100deg, rgba(111, 16, 215, 0.98) 10% -59%, rgba(16, 215, 151, 0.9) 90% 100%);
+    list-style: none;
+    box-shadow: -3px 6px 10px 2px rgba(0, 0, 0, 0.34);
+    z-index: 1;
+    width: 97%;
+    right: -35%;
+    opacity: 1;
+}
+.navigation-options ul#side-links li:hover > p {
+    background: rgb(255, 255, 255);
+    padding-left: 50px;
+    color: rgb(0, 53, 97);
+    border-right: 30px solid;
+}
+.staff.divwrap .navigation-options {
+    bottom: unset;
+    height: 100%;
+    padding: 100px 0px;
+}
+.staff.divwrap .navigation-options ul#side-links li a, .staff.divwrap .navigation-options ul#side-links li p {
+    padding: 16px 25px;
+}
+.Doctor.divwrap .navigation-options ul#side-links li a, .Doctor.divwrap .navigation-options ul#side-links li p {
+    color: rgb(16, 186, 215);
+}
+.Doctor.divwrap .navigation-options ul#side-links li a:hover {
+    background: rgba(255, 255, 255, 0.38);
+    color: rgb(8, 95, 8);
+}
+.staff.divwrap .navigation-options div.img {
+    margin-bottom: 80px;
+    height: 150px;
+    width: 150px;
+}
+.Doctor.divwrap .navigation-options ul#side-links, .Doctor.divwrap .profilenav-right, .Doctor.divwrap .welcome-user:hover > .user-options {
+    background: rgb(16, 186, 215);
+}
+.Doctor.divwrap .user-options ul li a:hover {
+    color: limegreen;
+    background: rgb(255, 255, 255);
+}
+.Doctor.divwrap .navigation-options ul#side-links {
+    background: rgb(232, 232, 232);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%;
+}
+.profile-right {
+    width: 83%;
+    height: 100%;
+    left: 17%;
+    top: 0;
+}
+.divwrap .nav{
+    padding-bottom: 20px;
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.12);
+    height: 74px;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+}
+.profilenav-right {
+    display: table;
+    padding: 14px 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(100deg, rgb(111, 16, 215) 10% -59%, rgb(16, 215, 151) 90% 100%);
+}
+.welcome-user p{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: 'abel', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.welcome-user p i{
+    font-size: 20px;
+    margin-right: 15px;
+    top: 4px;
+}
+.welcome-user .user-options {
+    display: none;
+    transition: 0.6s;
+    opacity: 0;
+}
+.welcome-user:hover > .user-options {
+    display: block;
+    position: absolute;
+    background: linear-gradient(100deg, rgb(111, 16, 215) 10% -59%, rgb(16, 215, 151) 90% 100%);
+    list-style: none;
+    box-shadow: -3px 6px 10px 2px rgba(0, 0, 0, 0.34);
+    z-index: 1;
+    opacity: 1;
+    width: 265px;
+    right: 0%;
+    top: 100%;
+}
+.user-options ul li a{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: 'abel', sans-serif;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    cursor: pointer;
+    transition: 0.6s;
+    text-align: left;
+}
+.user-options ul li a i{
+    font-size: 19px;
+    margin-right: 10px;
+    top: 4px;
+}
+.user-options ul li a:hover{
+    background: rgb(255, 255, 255);
+    padding-left: 40px;
+    color: rgb(0, 53, 97);
+    border-right: 20px solid;
+}
+.admin div#logo_class {
+    margin: 0px;
+    position: absolute;
+    width: auto;
+    top: 0;
+    padding: 4px 0;
+    left: 16%;
+}
+.admin div#logo_class .logo_nav_options_right {
+    top: 9px;
+}
+.admin div#logo_class .logo_nav_options_left i {
+    top: 0;
+}
+.profilebody-left, .profilebody-bottom-left {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.profilebody-bottom-left .investlinks a {
+    border-radius: 15px;
+    display: inline-table;
+    width: 250px;
+    margin: 25px 25px;
+    padding: 51px 20px;
+    text-align: center;
+    color: rgb(12, 118, 204);
+    background: #fff;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.16);
+    font-family: 'abel', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    height: 160px;
+}
+
+.Doctor.staff .profilebody-bottom-left .investlinks a {
+    color: rgb(16, 186, 215);
+}
+.profilebody-bottom-left .investlinks a i, .profilebody-bottom-left .investlinks a h5 {
+    font-size: 30px;
+}
+fieldset input[type="text"], fieldset input[type="date"], fieldset input[type="email"], fieldset input[type="time"], fieldset textarea, fieldset input[type="tel"] {
+    padding: 13px 15px;
+    border: none;
+    border-radius: 4px;
+    background: rgb(232, 232, 232);
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    width: 230px;
+    margin: 12px 10px;
+    font-size: 11px;
+}
+form[name="contact"] input {
+}
+
+.divwrap input[type="time"] {
+    width: 150px;
+}
+
+form .body input[type="time"] {
+    width: 100%;
+}
+fieldset {
+    display: inline-table;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.31);
+    border: none;
+}
+fieldset textarea {
+    width: 375px;
+    height: 435px;
+    resize: none;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 11px;
+}
+legend {
+    font-size: 13px;
+    background: linear-gradient(100deg, rgba(111, 16, 215, 0.87) 10% -59%, rgba(16, 215, 151, 0.65) 90% 100%);
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-shadow: 0px -2px 10px 2px rgba(0, 0, 0, 0.31);
+    color: #fff;
+}
+.admin form {
+    display: inline-table;
+    margin: 20px 22px;
+}
+
+.patient .inhouse {
+    padding: 20px 40px;
+}
+fieldset label, fieldset td h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: 'abel', sans-serif;
+    letter-spacing: 2px;
+}
+th {
+    text-align: center;
+    background: transparent;
+    font-size: 13px;
+}
+input.closed {
+    width: unset;
+}
+fieldset button, a#view {
+    float: right;
+    margin-right: 10px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 35px;
+    color: #fff;
+    background: rgb(46, 116, 171);
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 11px;
+}
+fieldset button:hover, a#view:hover {
+    color: rgb(46, 116, 171);
+    background: rgb(0, 225, 255);
+}
+fieldset input.id {
+    width: 50px;
+}
+p#view_error {
+    font-size: 14px;
+    font-weight: 900;
+    color: linear-gradient(100deg, rgba(111, 16, 215, 0.57) 10% -59%, rgba(16, 215, 151, 0.65) 90% 100%);
+    letter-spacing: 2px;
+}
+p#view_error a {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.form-content.contact{
+    text-align: unset;
+}
+.messages {
+    display: inline-table;
+    background: #fff;
+    box-shadow:  -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    padding: 45px 25px;
+    width: 450px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+.messages.pays {
+    background: rgba(0, 53, 97, 0.18);
+}
+.messages h3 {
+    font-size: 11px;
+    margin: 13px 0px;
+    color: rgb(113, 113, 113);
+    line-height: 15px;
+    font-weight: 400;
+}
+.messages h3 span {
+    color: rgb(16, 126, 215);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    margin-right: 5px;
+}
+.Doctor.divwrap .messages h3 span {
+    color: limegreen;
+}
+.messages p {
+    font-size: 12px;
+    line-height: 29px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: rgb(0, 53, 97);
+    font-style: italic;
+}
+div#messages_who {
+    padding: 27px 0px;
+}
+p#sent {
+    font-style: italic;
+    color: green;
+    font-size: 13px;
+    font-weight: 800;
+}
+.messages a {
+    display: inline-block;
+    margin: 0px 0px 25px;
+    color: rgb(255, 255, 255);
+    background: rgb(12, 118, 204);
+    letter-spacing: 1px;
+    padding: 11px 23px;
+    border-radius: 36px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.messages a:nth-of-type(1)::before{
+    content: "\f04d";
+    font-family: "Material design icons";
+    margin-right: 5px;
+}
+.messages textarea {
+    width: 405px;
+    height: 166px;
+    resize: none;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 12px;
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    margin: 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+form#sender {
+    margin: 0;
+}
+.messages button{
+    float: right;
+    margin-right: 10px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    background: rgb(0, 53, 97);
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: 0.6s;
+}
+.messages button span {
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(12, 118, 204);
+}
+.Doctor.divwrap .messages button {
+    background: rgb(16, 186, 215);
+}
+.messages button:hover {
+    color: #fff;
+    background: rgb(0, 225, 255);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: rgb(52, 152, 219);
+    font-size: 14px;
+}
+td, th {
+    text-align: center;
+    padding: 16px 20px;
+}
+.about.divwrap td {
+    padding: 0;
+    text-align: center;
+}
+td h3 {
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: rgb(123, 118, 118);
+    font-weight: 400;
+}
+
+.staff fieldset td h3 {
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-family: unset;
+    font-weight: 500;
+}
+td p {
+    text-overflow: ellipsis;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+}
+td h4 {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 13px;
+    color: rgb(21, 60, 86);
+}
+tr:nth-child(odd) {
+    background-color: rgb(232, 232, 232);
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+td#input-holder-hold input {
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+}
+td#input-holder-hold.reply a#view {
+    margin-right: 0;
+}
+tbody {
+    background: rgb(244, 244, 244);
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.staff tbody {
+    padding: 0px;
+    overflow: hidden;
+}
+.about.divwrap tbody {
+    padding: 0;
+    border-radius: 0;
+    background: unset;
+    box-shadow: unset;
+}
+form#contct{
+    margin: 22px auto;
+    display: inline-block;
+}
+a#view.delete {
+    background: rgb(193, 0, 0);
+}
+a#view.delete:hover {
+    background: pink;
+    color: rgb(193, 0, 0);
+}
+h1#adminpage-title {
+    font-size: 24px;
+    margin: 25px 0px 28px;
+    color: rgb(16, 126, 215);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.patient h1#adminpage-title {
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+div#image {
+    position: absolute;
+    right: 10px;
+    top: -2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+div#image div {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+div#image img {
+    width: 100%;
+    height: 100%;
+}
+.staff.divwrap .messages {
+    width: 65%;
+}
+.staff.divwrap .messages form {
+    margin: 0px 15px;
+    width: 56%;
+    background: rgba(232, 232, 232, 0.48);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -1px 3px 10px 5px rgba(0, 0, 0, 0.19);
+    float: left;
+}
+.staff.divwrap .messages form:nth-of-type(1) {
+    width: 30%;
+}
+input[name="staffimg"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+}
+.staff.divwrap .messages form:nth-of-type(2) input {
+    width: 65%;
+    margin-left: 11px;
+    background: rgba(255, 255, 255, 0.52);
+}
+.staff.divwrap .messages.password {
+    width: auto;
+    display: table;
+}
+.staff.divwrap .messages.password form {
+    width: 100%;
+    margin: 0;
+}
+.staff.divwrap fieldset {
+    display: block;
+    text-align: left;
+    width: auto;
+    margin: 0px 35px 45px 0px;
+    float: left;
+}
+.staff.divwrap fieldset table td {
+    padding: 15px 30px;
+}
+.Doctor.divwrap fieldset legend {
+    background: rgb(16, 186, 215);
+}
+form[name="appointments"] {
+    padding: 0px 35px;
+    float: left;
+}
+.Doctor.divwrap td#input-holder-hold.reply a#view {
+}
+.Receptionist .profile-right {
+    width: 100%;
+    left: 0;
+}
+.Receptionist.divwrap .user-options ul li a:hover {
+    background: #fff;
+    color: chocolate;
+}
+.Receptionist.divwrap .welcome-user:hover > .user-options {
+    background: chocolate;
+}
+.Receptionist.divwrap .profilenav-right {
+    background: chocolate;
+}
+.Receptionist.divwrap .messages button {
+    background: chocolate;
+}
+.Receptionist.divwrap .messages h3 span {
+    color: chocolate;
+}
+.Pharmacist.divwrap .user-options ul li a:hover {
+    background: #fff;
+    color: gray;
+}
+.Pharmacist.divwrap .welcome-user:hover > .user-options {
+    background: gray;
+}
+.Pharmacist.divwrap .profilenav-right {
+    background: gray;
+}
+.Pharmacist.divwrap .messages button {
+    background: gray;
+}
+.Pharmacist.divwrap .messages h3 span {
+    color: gray;
+}
+.Lab_assistant.divwrap .user-options ul li a:hover {
+    background: #fff;
+    color: maroon;
+}
+.Lab_assistant.divwrap .welcome-user:hover > .user-options {
+    background: maroon;
+}
+.Lab_assistant.divwrap .profilenav-right {
+    background: maroon;
+}
+.PharmLab.Lab_assistantacist.divwrap .messages button {
+    background: maroon;
+}
+.Lab_assistant.divwrap .messages h3 span {
+    color: maroon;
+}
+.staff.Receptionist.divwrap .navigation-options, .staff.Lab_assistant .navigation-options, .staff.Pharmacist.divwrap .navigation-options{
+    display: table;
+    position: relative;
+    height: auto;
+    padding: 0;
+}
+.staff.Receptionist.divwrap .side-nav, .staff.Lab_assistant .side-nav, .staff.Pharmacist.divwrap .side-nav{
+    height: unset;
+    box-shadow: unset;
+}
+.form-group form {
+    width: 30%;
+    margin: 20px 5px;
+}

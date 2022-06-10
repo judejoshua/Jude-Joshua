@@ -1,0 +1,1258 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body,
+html {
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: absolute;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(63, 119, 56);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(63, 119, 56);
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: rgba(84, 86, 84, 0.6);
+    font-size: 11px;
+}
+
+label {
+    letter-spacing: 1px;
+    color: rgb(63, 119, 56);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'abel', sans-serif;
+}
+
+input {
+    padding: 12px 10px;
+    border: none;
+    background: none;
+    width: 100%;
+    margin: 12px 0px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.modal {
+    display: block;
+}
+
+.form-group-minor:nth-of-type(1) {
+    width: 63%;
+    display: inline-block;
+}
+
+.form-group-minor:nth-of-type(2) {
+    width: 28%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.modal a {
+    display: inline-block;
+    position: absolute;
+    top: -4%;
+    right: -3%;
+    background: rgb(255, 255, 255);
+    padding: 5px 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgb(46, 116, 171);
+    font-size: 21px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+h3#alert.error {
+    color: red;
+}
+
+.error p {
+    color: red;
+    font-weight: 500;
+    font-size: 11px;
+    margin: 5px 0px;
+}
+
+
+/*=======================================================
+=========================================================
+FOR ANY PRESENT SLIDERS
+=========================================================
+=========================================================*/
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    display: block
+}
+
+.carousel-inner>.active {
+    left: 0
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.carousel-inner>.next {
+    left: 100%
+}
+
+.carousel-inner>.prev {
+    left: -100%
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    left: 0
+}
+
+.carousel-inner>.active.left {
+    left: -100%
+}
+
+.carousel-inner>.active.right {
+    left: 100%
+}
+
+.carousel-control-hold {
+    position: absolute;
+    bottom: 0;
+    display: table;
+    right: 0;
+}
+
+.carousel-control {
+    font-size: 15px;
+    background-color: rgb(16, 126, 215);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    line-height: 25px;
+    border: 1px solid rgb(16, 126, 215);
+    transition: 0.6s;
+}
+
+.carousel-control.right {
+    right: 0;
+}
+
+.carousel-control:hover {
+    background-color: rgba(16, 126, 215, 0.57);
+}
+
+.carousel-control .icon-prev:before {
+    content: '\f141';
+    font-family: "Material Design Icons";
+}
+
+.carousel-control .icon-next:before {
+    content: '\f142';
+    font-family: "Material Design Icons";
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-indicators li {
+    width: 60px;
+    height: 6px;
+    background: rgba(16, 126, 215, 0.33);
+    display: inline-block;
+    margin: 0px 2px;
+}
+
+.carousel-indicators li.active {
+    background: rgb(16, 126, 215);
+}
+
+
+/*=======================================================
+=========================================================
+ANIMATIONS
+=========================================================
+=========================================================*/
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: -10px;
+    }
+    35% {
+        top: 0px;
+    }
+    70% {
+        top: 10px
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: -10px;
+    }
+    35% {
+        top: 0px;
+    }
+    70% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.fader {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+
+/*=======================================================
+=========================================================
+FOR BODY
+=========================================================
+=========================================================*/
+
+.divWrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    margin: 10px 0px;
+    display: table;
+    width: 100%;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.form {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: table;
+    text-align: center;
+    padding: 140px 60px 50px;
+}
+
+.form.login {
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.form form {
+    transition: 0.9s;
+    width: 40%;
+    display: inline-table;
+    /*box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.24);*/
+    margin: 0;
+    padding: 90px 100px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    float: left;
+    height: 100%;
+}
+
+.form form h1 {
+    font-size: 45px;
+    line-height: 49px;
+    font-family: Abel;
+    font-weight: 700;
+    color: rgb(52, 148, 40);
+    margin-bottom: 20px;
+}
+
+.form form h1 span {
+    font-size: 40px;
+}
+
+.form form h3 {
+    font-size: 21px;
+    float: left;
+    color: rgb(63, 119, 56);
+    margin-top: 5px;
+    font-family: Abel;
+    font-weight: 700;
+}
+
+.form form button {
+    border: none;
+    padding: 13px 15px;
+    font-size: 14px;
+    color: #fff;
+    background: rgb(63, 119, 56);
+    float: right;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.form form button:hover {
+    padding: 13px 40px;
+    border-radius: 30px;
+}
+
+.form form a {
+    float: right;
+    margin-top: 60px;
+    color: rgb(63, 119, 56);
+    font-size: 16px;
+    font-family: abel;
+    font-weight: 600;
+    border-bottom: 1.5px solid rgba(63, 119, 56, 0.95);
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+.form .misc {
+    float: right;
+    width: 60%;
+    height: 100%;
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('/config/assets/images/misc.jpg');
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('/config/assets/images/misc.jpg');
+    background: radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('/config/assets/images/misc.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.6s;
+}
+
+@media screen and (max-width: 1200px) {
+    .form form {
+        padding: 90px 75px;
+        width: 45%;
+    }
+    .form .misc {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form form {
+        padding: 70px 65px;
+        width: 55%;
+    }
+    .form .misc {
+        width: 45%;
+    }
+    .form form h1 {
+        font-size: 40px;
+        line-height: 37px;
+    }
+    .form form h1 span {
+        font-size: 32px;
+    }
+    .form form a {
+        font-size: 14px;
+        padding: 1px 8px;
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form form {
+        padding: 70px 55px;
+        width: 65%;
+    }
+    .form .misc {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form form {
+        padding: 70px 55px;
+        width: 100%;
+    }
+    .form .misc {
+        display: none;
+    }
+}
+
+.side-nav {
+    width: 18%;
+    height: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    padding: 0;
+    transition: 1s;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.navigation-options {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.navigation-options .logo {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 3%;
+    height: 60px;
+    background: #fff;
+}
+
+.navigation-options .logo .logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-options .logo .logo-img {
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding: 3px 9px 3px 25px;
+}
+
+.navigation-options .logo .exita {
+    float: right;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    right: -9%;
+    background: rgb(161, 161, 161);
+    padding: 13px 11px;
+    cursor: pointer;
+    transition: 0.6s;
+    display: none;
+}
+
+.navigation-options .logo .exita:hover {
+    background: rgb(113, 113, 113);
+}
+
+.navigation-options .logo .exita i {
+    color: rgb(218, 218, 218);
+    font-size: 30px;
+}
+
+.navigation-options ul#side-links {
+    background: rgb(255, 255, 255);
+    height: 100%;
+    padding-top: 90px;
+    overflow-y: auto;
+}
+
+.navigation-options ul#side-links li a,
+.user-options ul li a {
+    display: inline-block;
+    width: 100%;
+    color: rgb(63, 119, 56);
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.navigation-options ul#side-links li a p {
+    font-size: 11px;
+    float: right;
+    top: 8px;
+    left: -5px;
+}
+
+.navigation-options ul#side-links li a:hover p {
+    left: 10px;
+}
+
+.navigation-options ul#side-links li#last a {
+    background: rgb(85, 85, 85);
+    color: rgb(175, 175, 175);
+}
+
+.navigation-options ul#side-links li a i,
+.user-options ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+    top: 4px;
+}
+
+.navigation-options ul#side-links li a:hover,
+.user-options ul li a:hover {
+    background: rgb(255, 255, 255);
+    padding-left: 45px;
+    color: rgb(52, 148, 40);
+    border-right: 15px solid;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.22);
+}
+
+.navigation-options ul#side-links hr {
+    border: none;
+    border-top: 1px solid rgb(208, 208, 208);
+    width: 22%;
+    left: 11%;
+    margin: 14px 0px;
+}
+
+.navigation-options ul#side-links li#last {
+    margin-top: 47px;
+    width: 100%;
+    bottom: 0;
+    /*position: sticky;*/
+    position: absolute;
+}
+
+.profile-right {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-left: 18%;
+}
+
+.divWrap .nav {
+    padding: 17px 55px;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.35);
+}
+
+.navlinks-holder {
+    float: left;
+    width: auto;
+}
+
+.navlinks-holder div#mobile-opener {
+    cursor: pointer;
+    display: none;
+}
+
+.navlinks-holder div#mobile-opener i {
+    font-size: 40px;
+    color: rgb(161, 161, 161);
+}
+
+.navlinks-holder div#mobile-opener:hover i {
+    background: rgb(113, 113, 113);
+}
+
+.profilenav-right {
+    display: table;
+    padding: 10px 10px;
+    float: right;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid rgb(63, 119, 56);
+}
+
+.welcome-user p {
+    display: inline-block;
+    width: 100%;
+    color: rgb(63, 119, 56);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.welcome-user p i {
+    font-size: 20px;
+}
+
+.welcome-user .user-options {
+    display: none;
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.profilenav-right:hover>.welcome-user .user-options {
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    list-style: none;
+    box-shadow: 1px -2px 13px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    opacity: 1;
+    width: 245px;
+    overflow: hidden;
+    right: 0;
+    top: 100%;
+    border-radius: 12px;
+}
+
+.profilebody-top {
+    height: 200px;
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('/config/assets/images/misc.jpg');
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('/config/assets/images/misc.jpg');
+    background: radial-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.47)), url('/config/assets/images/misc.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: 0.6s;
+    padding-top: 90px;
+    color: #fff;
+    padding-left: 130px;
+    text-align: left;
+}
+
+.profilebody-top h1 {
+    color: #fff;
+    font-size: 47px;
+}
+
+.profilebody-top p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.profilebody-left,
+.profilebody-bottom {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.profilebody-bottom .investlinks a {
+    border-radius: 15px;
+    display: inline-table;
+    width: 250px;
+    margin: 25px 25px;
+    padding: 51px 20px;
+    text-align: center;
+    color: rgb(12, 118, 204);
+    background: #fff;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.16);
+    font-family: 'abel', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    height: 160px;
+}
+
+.profilebody-bottom .investlinks a i,
+.profilebody-bottom .investlinks a h5 {
+    font-size: 30px;
+}
+
+.table {
+    width: 27%;
+    display: inline-table;
+    background: #fff;
+    box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    margin: 15px 15px;
+    text-align: center;
+    padding: 50px 35px;
+}
+
+.table h1 {
+    color: rgb(63, 119, 56);
+    font-size: 32px;
+    font-family: abel;
+}
+
+.table ul li {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 0px;
+    font-family: abel;
+}
+
+.table ul li h5 {
+    color: rgb(63, 119, 56);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.table ul li a {
+    color: gray;
+    padding-bottom: 1px;
+    border-bottom: 2px solid;
+    transition: 0.4s;
+}
+
+.table ul li a:hover {
+    border-bottom: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 13px;
+    box-shadow: -1px 1px 6px 3px rgba(0, 0, 0, 0.11);
+    word-break: keep-all;
+}
+
+td h3 {
+    color: rgb(146, 146, 146);
+    text-align: left;
+    font-size: 11px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+    float: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+th {
+    background-color: rgb(63, 119, 56);
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 12px;
+    padding: 13px 0px;
+    height: 40px;
+    font-weight: 600;
+}
+
+th:nth-of-type(1),
+td.sn {
+    width: 10%;
+}
+
+.table ul.counterss {
+    margin-top: 6px;
+}
+
+.table.reviews h1 {
+    color: rgb(171, 46, 164);
+}
+
+.table.reviews th {
+    background: rgb(171, 46, 164);
+}
+
+.table.messages h1 {
+    color: rgb(187, 4, 4);
+}
+
+.table.messages th {
+    background: rgb(187, 4, 4);
+}
+
+td p {
+    text-overflow: ellipsis;
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px;
+    text-align: center;
+    color: rgb(140, 140, 140);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .side-nav {
+        width: 26%;
+    }
+    .profile-right {
+        padding-left: 26%;
+    }
+    .table {
+        width: 45%;
+    }
+    .profilebody-top {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profilebody-top h1 {
+        font-size: 30px;
+    }
+    .divWrap .nav {
+        padding: 17px 20px;
+    }
+    .side-nav {
+        width: 0;
+    }
+    .show {
+        width: 34.5%;
+    }
+    .navlinks-holder div#mobile-opener {
+        display: block;
+    }
+    .profile-right {
+        padding-left: 0;
+        width: 100%;
+    }
+    .table {
+        width: 45%;
+    }
+    .profilebody-top {
+        padding-left: 36px;
+    }
+    .navigation-options .logo .exita {
+        display: block;
+    }
+    .profilebody-bottom {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .show {
+        width: 50%;
+    }
+    .table {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .show {
+        width: 90%;
+    }
+    .table {
+        width: 95%;
+    }
+}
+
+.form.change {
+    padding-top: 0;
+    left: 0;
+    position: relative;
+}
+
+.form form[name="change"] {
+    width: 50%;
+    padding: 0 60px;
+    margin: 0px auto;
+}
+
+.form table.messages {
+    display: inline-table;
+    background: #fff;
+    box-shadow: -1px 3px 10px 2px rgba(0, 0, 0, 0.19);
+    padding: 45px 55px;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+h1#adminpage-title {
+    font-size: 24px;
+    margin: 25px 0px 28px;
+    color: rgb(61, 119, 58);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: abel;
+}
+
+.messages button {
+    margin-right: 10px;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    background: rgb(62, 118, 57);
+    box-shadow: -1px 3px 10px 5px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.messages button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(63, 119, 56);
+    padding: 14px 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .form form[name="change"] {
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form form[name="change"] {
+        width: 280px;
+        padding: 0;
+        display: block;
+        word-break: break-word;
+    }
+    .form.change {
+        padding: 0;
+    }
+    .form table.messages {
+        padding: 45px 35px;
+    }
+}
+
+td#input-holder-hold {
+    width: 28.5%;
+    float: left;
+}
+
+td#input-holder-hold:nth-of-type(1) {
+    width: 7%;
+}
+
+td a {
+    padding: 10px 14px;
+    color: #fff;
+    background: rgb(63, 119, 56);
+    border-radius: 5px;
+    font-size: 11px;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.12);
+    transition: 0.6s;
+}
+
+td a:hover {
+    background: rgb(128, 190, 52);
+    color: rgb(63, 119, 56);
+}
+
+td.reply {
+    padding: 15px 8px;
+}
+
+.messages td a {
+    background: rgb(187, 4, 4);
+    color: #fff;
+    border-bottom: none;
+}
+
+.messages td a:hover {
+    background: #fff;
+    color: rgb(187, 4, 4);
+}
+
+.reviews td a {
+    background: rgb(171, 46, 164);
+    color: #fff;
+    border-bottom: none;
+}
+
+.reviews td a:hover {
+    background: #fff;
+    color: rgb(171, 46, 164);
+}
+
+.table.messages.display,
+.table.reviews.display {
+    padding: 0;
+    display: unset;
+}
+
+form#contct {
+    width: 90%;
+}
+
+form#contct th {
+    padding: 30px 0px;
+}
+
+
+/*form#contct td#input-holder-hold {
+    float: unset;
+}*/
+
+form#contct h3 {
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+form#contct a {
+    font-size: 12px;
+    padding: 10px 30px;
+    margin-top: 0;
+    border-radius: 20px;
+}
+
+form#contct td p {
+    width: 150px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 600px) {
+    form#contct {
+        width: 100%;
+    }
+    form#contct td p {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form#contct td p {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    form#contct td p {
+        width: 40px;
+    }
+}
+
+div.messages.view a {
+    margin-top: 0;
+    float: left;
+    margin-bottom: 45px;
+    border-bottom: 0;
+}
+
+fieldset {
+    padding: 40px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-radius: 15px;
+}
+
+.form.about form {
+    padding: 0px;
+    display: inline-block;
+    margin: 20px;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+}
+
+legend {
+    font-size: 20px;
+    color: rgb(63, 119, 56);
+    font-weight: 600;
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .form.about form {
+        margin: 20px auto;
+    }
+}
+
+img#output {
+    position: absolute;
+    width: 67px;
+    height: 66px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.form.about form[name="show-gallery"] {
+    width: 53%;
+    margin: 20px 5px;
+}
+
+.gallery_holder {
+    display: inline-table;
+    width: 30%;
+    height: 230px;
+    margin: 0px 6px 24px 6px;
+}
+
+.galery_holder_top {
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.galery_holder_top div {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.49);
+    width: 100%;
+    height: 100%;
+}
+
+.galery_holder_top img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+a#liners {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 12px 14px;
+    margin-right: 8px;
+    margin-top: 10px;
+    background: rgb(63, 119, 56);
+    color: #fff;
+}
+
+.galery_holder_bottom #nam {
+    font-size: 16px;
+    display: block;
+    float: unset;
+    color: black;
+    margin: 4px 0px;
+}
+
+.galery_holder_bottom #date {
+    color: rgb(107, 107, 107);
+    font-size: 12px;
+    margin: 0px 0px 9px;
+}
+
+.galery_holder_bottom #des {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+a#delete {
+    position: absolute;
+    z-index: 5;
+    top: -11px;
+    right: -11px;
+    margin-top: 0;
+    color: rgb(253, 255, 253);
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(63, 119, 56);
+    border-radius: 50%;
+    padding: 5px 7px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    form[name="save-gallery"],
+    .form.about form[name="show-gallery"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery_holder {
+        width: 44%;
+    }
+    .form.about form[name="show-gallery"] {
+        text-align: center;
+    }
+    .form.about form[name="show-gallery"] fieldset {
+        padding: 35px 10px;
+    }
+}

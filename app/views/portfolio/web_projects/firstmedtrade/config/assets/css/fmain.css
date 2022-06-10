@@ -1,0 +1,1426 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body,
+html {
+    font-family: 'Abel', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #808080;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #022f7e;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background: #136eb9;
+    border: none;
+    padding: 12.8px 20px;
+    text-transform: uppercase;
+    font-size: 11px;
+    border-radius: 4px;
+    font-family: 'abel', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+input[type="submit"]:hover {
+    background: #fff;
+    color: #136eb9;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+div#mobile_navlinks {
+    display: none;
+}
+
+div#mobile_links_class {
+    display: none;
+}
+
+.divWrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#home {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.72);
+}
+
+.navigation {
+    width: 100%;
+    z-index: 100;
+    display: table;
+    position: absolute;
+    left: 0;
+}
+
+.nav {
+    padding: 0px 30px;
+    text-align: right;
+    display: table;
+    width: 100%;
+}
+
+div#logo_class {
+    float: left;
+    padding: 10px 0px;
+    bottom: -90px;
+    left: 2.3%;
+}
+
+div#logo_class .block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+div#logo_class .img {
+    width: 322px;
+    height: 60px;
+}
+
+div#logo_class .img img {
+    max-width: 100%;
+    height: 100%;
+}
+
+div#links_class {
+    float: right;
+    top: 30px;
+}
+
+div#links_class a {
+    font-size: 17px;
+    margin: 0 35px 0px 0px;
+    color: #022f7e;
+    font-weight: 900;
+    transition: 0.4s;
+    display: inline-block;
+    text-align: left;
+}
+
+div#links_class a span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+div#links_class a:hover {
+    color: #027e35;
+}
+
+div#links_class a#userlinks {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 0px;
+    top: -12px;
+}
+
+div#links_class a#userlinks:hover {
+    color: #fff;
+    background: #136eb9;
+    border: 1px solid #136eb9;
+}
+
+#homecontent {
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.69)), url(/po/firstmedtrade/config/assets/images/fmedtrade_banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item,
+.active {
+    height: 100%;
+}
+
+.item .fill {
+    width: 100%;
+    height: 100%;
+}
+
+.fillers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    background: rgb(202, 223, 242);
+    border-radius: 50%;
+}
+
+div#big {
+    width: 300px;
+    height: 300px;
+    bottom: -30%;
+    right: -10%;
+}
+
+div#small {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    right: 5%;
+}
+
+div#medium {
+    width: 300px;
+    height: 300px;
+    bottom: 30%;
+    left: 23%;
+}
+
+div#right {
+    width: 100px;
+    height: 100px;
+    top: -22px;
+    left: -25px;
+}
+
+.item .fill .slider-text-padding {
+    position: absolute;
+    left: 7%;
+    top: 35%;
+    display: table;
+    width: 425px;
+    padding-left: 39px;
+    border-left: 1px solid rgba(2, 47, 126, 0.46);
+}
+
+.item .fill .slider-text {
+    height: 270px;
+}
+
+.item .fill .slider-text p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    font-weight: 900;
+    color: #2a2a2a;
+    top: 0;
+}
+
+.item .fill .slider-text a#learn {
+    background: #022f7e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #022f7e;
+    border-radius: 3px;
+    padding: 12px 25px;
+    position: absolute;
+    bottom: 0;
+    width: 146px;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+.item .fill .slider-text a#learn:hover {
+    color: #022f7e;
+    background: #fff;
+}
+
+.item .fill .slider-text a#learn i {
+    font-size: 18px;
+    position: absolute;
+    margin-left: 7px;
+}
+
+.item .fill .slider-text .home_social {
+    position: absolute;
+    width: 100%;
+    bottom: -33%;
+    left: -22%;
+}
+
+.item .fill .slider-text .home_social a {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 20px;
+    color: #022f7e;
+    line-height: 17px;
+    transition: 0.6s;
+}
+
+.item .fill .slider-text .home_social a#ussd {
+    font-weight: 900;
+}
+
+.item .fill .slider-text .home_social a:hover {
+    font-size: 23px;
+    margin-right: 14px;
+}
+
+.slider-image-holder {
+    position: absolute;
+    width: 695px;
+    display: table;
+    height: 350px;
+    top: 27%;
+    left: 46%;
+}
+
+.item .fill .slider-image {
+    height: 77%;
+    width: 280px;
+    background: #022f7e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    display: inline-block;
+    box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.33);
+    position: absolute;
+    left: 1%;
+    bottom: 9%;
+}
+
+.item .fill .slider-image:nth-of-type(2) {
+    height: 100%;
+    left: 31%;
+    z-index: 2;
+    box-shadow: 0px 11px 19px 3px rgba(0, 0, 0, 0.59);
+    bottom: 0;
+}
+
+.item .fill .slider-image:nth-of-type(3) {
+    right: 0%;
+    left: unset;
+}
+
+.item .fill .slider-image .services-image {
+    background: #022f7e;
+    height: 60%;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 88px 45px 18px;
+}
+
+.item .fill .slider-image:nth-of-type(2) .services-image {
+    height: 70%;
+    padding: 85px 77px 30px;
+}
+
+.item .fill .slider-image:nth-of-type(3) .services-image {
+    padding: 45px 18px 45px 88px;
+}
+
+.item .fill .slider-image .services-image i {
+    font-size: 50px;
+}
+
+.item .fill .slider-image:nth-of-type(2) .services-image i {
+    font-size: 80px;
+}
+
+.item .fill .services-list {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    color: #022f7e;
+    text-align: left;
+    background: #e3e8f1;
+    padding: 30px 20px;
+}
+
+.item .fill .slider-image:nth-of-type(1) .services-list {
+    padding-right: 80px;
+}
+
+.item .fill .slider-image:nth-of-type(2) .services-list {
+    text-align: center;
+}
+
+.item .fill .slider-image:nth-of-type(3) .services-list {
+    padding-left: 83px;
+    text-align: right;
+}
+
+.item .fill .services-list h4 {
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/**********************************************************************
+                            BODY
+**********************************************************************/
+
+section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    clear: left;
+}
+
+.patients,
+.doctors,
+.hospitals {
+    display: table;
+    width: 100%;
+    height: 250px;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.26);
+}
+
+.category {
+    width: 55%;
+    background: #2a2a2a;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    transform: skewX(28deg);
+    left: -5%;
+    padding-left: 107px;
+}
+
+.doctors .category,
+.hospitals .category {
+    left: unset;
+    right: -5%;
+    transform: skew(-28deg);
+    padding-right: 107px;
+    padding-left: unset;
+}
+
+.category_body {
+    transform: skewX(-28deg);
+}
+
+.doctors .category_body,
+.hospitals .category_body {
+    transform: skewX(28deg);
+    text-align: right;
+}
+
+.doctors .category_body ul,
+.hospitals .category_body ul {
+    text-align: left;
+    left: 17%;
+    right: unset;
+    top: 60%;
+}
+
+div#options-head {
+    width: auto;
+    height: auto;
+    color: #fff;
+    background: #022f7e;
+    display: table;
+    padding: 35px;
+}
+
+.doctors div#options-head,
+.hospitals div#options-head {
+    display: inline-block;
+}
+
+div#options-head h1 {
+    line-height: 30px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+.category ul {
+    position: absolute;
+    list-style: none;
+    right: 20%;
+    top: 40%;
+}
+
+.category ul li {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+
+.category ul li::before {
+    content: '\f374';
+    font-family: 'material design icons';
+    margin-right: 14px;
+    color: #2077fd;
+}
+
+.options {
+    width: 56%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_patients.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.doctors .options {
+    left: 0;
+    right: unset;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_doctors.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hospitals .options {
+    left: 0;
+    right: unset;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_hospitals.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#options-body {
+    height: 100%;
+    width: 100%;
+}
+
+div#options-body .options-icon {
+    display: inline-block;
+    background: #022f7e;
+    height: auto;
+    padding: 18px 40px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: 0.6s;
+    border-radius: 5px;
+}
+
+#doctors div#options-body .options-icon,
+#hospitals div#options-body .options-icon {
+    left: 28%;
+}
+
+div#options-body .options-icon:hover {
+    color: #ffffff;
+    background: #136eb9;
+}
+
+div#options-body .options-icon i {
+    font-size: 40px;
+}
+
+div#options-body .options-icon p {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#success_story,
+#hype_story {
+    background: #ffffff;
+    height: auto;
+    padding: 60px;
+    border-top: 1px solid rgba(204, 204, 204, 0.72);
+    border-bottom: 1px solid rgba(204, 204, 204, 0.72);
+    text-align: center;
+}
+
+#hype_story {
+    padding: 90px 60px;
+    background: #e3e8f1;
+}
+
+#success_story h2,
+#hype_story h2 {
+    font-size: 35px;
+    font-variant: small-caps;
+    color: #022f7e;
+    padding: 0px 0px 23px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#hype_story h2 i {
+    margin-left: 20px;
+}
+
+.success_box {
+    float: left;
+    width: 25%;
+    color: #022f7e;
+    padding: 30px;
+}
+
+.success_box h3 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #022f7e;
+}
+
+.success_box h5,
+#hype_story h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #022f7e;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.success_box h3 i {
+    font-size: 40px;
+}
+
+.success_box h3 span {
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#testimonial {
+    width: 100%;
+    padding: 65px 165px;
+    background: #ffffff;
+}
+
+#testimonial div#medium {
+    bottom: 79%;
+}
+
+#testimonial div#right {
+    top: 35%;
+}
+
+#testimonial .carousel {
+    padding: 0px 50px;
+}
+
+.talkheader img {
+    height: 100%;
+    width: 100%;
+}
+
+#testimonial .fill .clientheader {
+    padding: 30px 20px;
+    float: left;
+    height: 84%;
+    width: 19%;
+}
+
+#testimonial .fill .talkheader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 50%;
+    font-size: 120px;
+    color: #fff;
+    border: 1px solid rgba(204, 204, 204, 0.64);
+    overflow: hidden;
+}
+
+.clientslider.carousel .fill {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: table;
+    height: 250px;
+}
+
+.testbody {
+    float: left;
+    width: 81%;
+    height: inherit;
+    padding: 30px;
+}
+
+#testimonial .fill #body {
+    position: relative;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    text-align: left;
+}
+
+#testimonial .fill #body p {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    color: #022f7e;
+}
+
+#testimonial .fill #talkfooter {
+    position: relative;
+    font-weight: 600;
+    color: #022f7e;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+    padding-right: 100px;
+    border-left: 1px solid #ccc;
+    text-align: left;
+}
+
+#testimonial .fill #talkfooter #talkwho {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+section#newsletter {
+    padding: 0;
+    height: 300px;
+    display: inline-block;
+}
+
+.newsletter_action {
+    position: absolute;
+    padding: 60px 100px;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #022f7e;
+    color: #fff;
+}
+
+.newsletter-text h4 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+.newsletter-text p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin: 5px 0px 10px;
+    padding: 10px 0px;
+    border-top: 1px solid #fff;
+    line-height: 25px;
+    color: #ddd;
+}
+
+.newsletter_action input[type="email"] {
+    width: 300px;
+    padding: 13px 20px;
+    border: none;
+    font-size: 11px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    color: #6d6d6d;
+    font-family: tahoma;
+}
+
+.newsletter_add {
+    position: absolute;
+    right: 0;
+    padding: 70px 100px;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_miscellaneous.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+}
+
+.newsletter_add i {
+    font-size: 150px;
+    color: #fff;
+}
+
+div#footer {
+    padding: 35px;
+    background: rgba(2, 47, 126, 0.11);
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+#footer ul.footer_left {
+    padding-bottom: 0;
+}
+
+#footer .circle {
+    background: rgb(237, 240, 246);
+}
+
+#footer h3 {
+    font-size: 40px;
+    color: #022f7e;
+    padding: 0px 0px 23px;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+
+.footer_left_top {
+    display: table;
+    width: 100%;
+}
+
+#footer ul {
+    float: left;
+    list-style: none;
+    height: auto;
+    width: 100%;
+    padding: 25px 30px;
+}
+
+#footer ul .aleft {
+    float: left;
+    width: 20%;
+}
+
+#footer ul .aright {
+    float: right;
+}
+
+#footer ul li a {
+    color: #022f7e;
+    font-size: 12px;
+    display: inline-block;
+    margin: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_left_top {
+    display: table;
+    width: 100%;
+}
+
+#footer ul .apayment {
+    clear: both;
+    width: 430px;
+    top: -30px;
+    height: 140px;
+    left: 30px;
+}
+
+#footer ul .apayment img {
+    width: 100%;
+    height: 100%;
+}
+
+#footer ul .apayment div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#footer ul li a i {
+    font-size: 19px;
+    margin-right: 29px;
+    color: #022f7e;
+    transition: 0.6s;
+}
+
+#footer ul li a i:hover {
+    transform: rotate(20deg);
+    display: inline-block;
+}
+
+#footer ul li span {
+    font-size: 15px;
+    margin: 10px 0px;
+    color: #136eb9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+}
+
+#footer div#left {
+    background: #ecf5ee;
+}
+
+#footer div#medium {
+    left: 38%;
+}
+
+#footer div#big {
+    bottom: -20%;
+    right: -5%;
+}
+
+#footer div#right {
+    top: 0px;
+    left: 25px;
+}
+
+#copyright {
+    clear: both;
+    background: #1a1a1a;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 16px 0px 16px 0px;
+    margin: 0px;
+    text-align: right;
+}
+
+#copyright p {
+    line-height: 25px;
+    margin: 0px 10px 0px 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/**********************************************************************
+                Find Doctors page and Find Hospitals page
+**********************************************************************/
+
+#fdoctorshome #homecontent,
+#fhospitalshome #homecontent,
+#fcontacthome #homecontent {
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    background: #167a84;
+    background: radial-gradient(at 14% 100px, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.2)), url(/po/firstmedtrade/config/assets/images/fmedtrade_appointments.png);
+    background-position: top;
+    background-size: cover;
+}
+
+#fhospitalshome #homecontent {
+    background: radial-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.43)), url(/po/firstmedtrade/config/assets/images/fmedtrade_referrals.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#fcontacthome #homecontent {
+    background: radial-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.43)), url(/po/firstmedtrade/config/assets/images/fmedtrade_contact.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 350px;
+}
+
+.slider-form-padding {
+    top: 34%;
+    text-align: center;
+    padding: 20px;
+}
+
+.slider-form {
+    display: table;
+    margin: 0px auto;
+    width: auto;
+    background: rgba(255, 255, 255, 0.39);
+    padding: 28px;
+}
+
+.slider-form h3 {
+    margin: 0px 0px 35px;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.slider-form-padding input:nth-of-type(1),
+.slider-form-padding input:nth-of-type(2) {
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    width: 350px;
+    color: #022f7e;
+}
+
+.nav-pagination {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #022f7e;
+    padding: 20px;
+    text-align: right;
+}
+
+.nav-pagination span {
+    margin: 7px;
+    color: #fff;
+}
+
+.nav-pagination a {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.nav-pagination a#active {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#fdoctorshome .nav,
+#fhospitalshome .nav,
+#fcontacthome .nav {
+    background: #fff;
+    box-shadow: 0px 5px 9px rgba(2, 47, 126, 0.37);
+}
+
+#fdoctorshome div#logo_class,
+#fhospitalshome div#logo_class,
+#fcontacthome div#logo_class {
+    bottom: 0;
+}
+
+#fdoctorshome div#links_class,
+#fhospitalshome div#links_class,
+#fcontacthome div#links_class {
+    top: 22px;
+}
+
+#fdoctorshome div#links_class a,
+#fhospitalshome div#links_class a,
+#fcontacthome div#links_class a {
+    color: #022f7e;
+}
+
+#fdoctorshome div#links_class a:hover,
+#fhospitalshome div#links_class a:hover,
+#fcontacthome div#links_class a:hover {
+    color: #027e35;
+}
+
+#fdoctorshome div#links_class a#userlinks,
+#fhospitalshome div#links_class a#userlinks,
+#fcontacthome div#links_class a#userlinks {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 2px;
+    margin: 0px;
+    top: -12px;
+}
+
+#fdoctorshome div#links_class a#userlinks:hover,
+#fhospitalshome div#links_class a#userlinks:hover,
+#fcontacthome div#links_class a#userlinks:hover {
+    color: #fff;
+    background: #136eb9;
+    border: 1px solid #136eb9;
+}
+
+#fdoctorsbody .success_box,
+#fhospitalsbody .success_box {
+    margin: 12px;
+    width: 23%;
+    background: #022f7e;
+}
+
+#fdoctorsbody .success_box h5,
+#fhospitalsbody .success_box h5 {
+    color: #ffffff;
+}
+
+#fdoctorsbody .success_box h3,
+#fhospitalsbody .success_box h3 {
+    color: #ffffff;
+}
+
+#fdoctorsbody .hospitals .options,
+#fhospitalsbody .hospitals .options {
+    width: 100%;
+    background-attachment: fixed;
+}
+
+#fhospitalsbody .hospitals .options {
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_appointments.png);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+#fdoctorsbody .hospitals div#options-body .options-icon,
+#fhospitalsbody .hospitals div#options-body .options-icon {
+    top: 0;
+    height: 100%;
+    right: 0;
+    left: unset;
+    border-radius: unset;
+    padding: 60px 85px;
+}
+
+#fdoctorsbody .hospitals,
+#fhospitalsbody .hospitals {
+    height: 170px;
+}
+
+#fdoctorsbody .hospitals h2,
+#fhospitalsbody .hospitals h2 {
+    font-size: 55px;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    color: #fff;
+    font-weight: 400;
+    padding: 41px 100px;
+}
+
+#fdoctorsbody .hospitals h2 span,
+#fhospitalsbody .hospitals h2 span {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color: #ddd;
+}
+
+#fcontacthome #homecontent h1 {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+    top: 38%;
+    left: 7%;
+}
+
+#contact_action {
+    padding: 70px 100px;
+}
+
+.contactform {
+    float: left;
+    width: 60%;
+    padding: 20px 65px;
+    text-align: left;
+    margin-top: 0px;
+    border-right: 1px solid rgba(204, 204, 204, 0.788);
+}
+
+#contact_action h2 {
+    color: #022f7e;
+}
+
+.contactform form,
+.contactinfo ul {
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+    padding: 12px 0px 10px;
+    border-top: 1px solid rgba(51, 51, 51, 0.47);
+}
+
+.contactform form .form-group label {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: rgb(0, 80, 136);
+    padding: 16px 0px;
+}
+
+.contactform form input,
+.contactform form textarea {
+    font-size: 13px;
+    letter-spacing: 3px;
+    resize: none;
+    width: 100%;
+    color: rgb(70, 70, 70);
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-radius: 3px;
+}
+
+.contactform form .form-group:last-of-type {
+    text-align: right;
+}
+
+.contactform form .form-group button {
+    color: rgb(255, 255, 255);
+    font-family: 'abel', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: rgb(25, 80, 136);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(25, 80, 136);
+    border-image: initial;
+    padding: 13px 34px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all 0.6s ease 0s;
+}
+
+.contactform form .form-group button i {
+    left: 16px;
+    display: inline-block;
+    transform: rotate(-50deg);
+    top: -1px;
+}
+
+.contactform form .form-group button:hover {
+    color: rgb(25, 80, 136);
+    background: rgb(168, 203, 233);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(168, 203, 233);
+    border-image: initial;
+}
+
+.contactinfo {
+    width: 40%;
+    float: left;
+    padding: 20px 0px 20px 70px;
+}
+
+.contactinfo ul {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.contactinfo ul li {
+    font-size: 14px;
+    margin: 30px 0px;
+    color: #022f7e;
+}
+
+.contactinfo ul li a {
+    color: #022f7e;
+    font-weight: 600;
+}
+
+.contactinfo ul li i {
+    font-size: 20px;
+    margin: 0px 0px 10px;
+    display: inline-block;
+    color: #022f7e;
+}
+
+.contactinfo span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #022f7e;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 10px;
+}
+
+
+/**********************************************************************
+                            SCROLL TO TOP
+**********************************************************************/
+
+.to-top {
+    color: #136eb9;
+    font-size: 14px;
+    padding: 5px;
+    position: fixed;
+    right: 2%;
+    background: #fff;
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 900;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: 0.6s;
+    z-index: 50;
+    box-shadow: 0 0 9px rgba(2, 47, 126, 0.5);
+}
+
+.to-top p {
+    margin: 0;
+}
+
+.to-top:hover {
+    background-color: #136eb9;
+    color: #fff;
+    opacity: 1;
+}
+
+
+/**********************************************************************
+                            FOR ANY PRESENT SLIDERS
+**********************************************************************/
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    display: block
+}
+
+.carousel-inner>.active {
+    left: 0
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.carousel-inner>.next {
+    left: 100%
+}
+
+.carousel-inner>.prev {
+    left: -100%
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    left: 0
+}
+
+.carousel-inner>.active.left {
+    left: -100%
+}
+
+.carousel-inner>.active.right {
+    left: 100%
+}
+
+.carousel-control-hold {
+    position: absolute;
+    bottom: 0;
+    display: table;
+    right: 0;
+}
+
+.carousel-indicators {
+    position: absolute;
+    z-index: 15;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 30px;
+    height: 7px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid rgb(19, 110, 185);
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.carousel-indicators .active {
+    width: 30px;
+    height: 7px;
+    margin: 0px;
+    border: 1px solid rgb(19, 110, 185);
+    background-color: rgb(19, 110, 185);
+}
+
+.carousel-control {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #fff;
+    color: rgb(19, 110, 185);
+    text-align: center;
+    border: 1px solid;
+    padding: 13px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.carousel-control.right {
+    right: 2%;
+    left: auto;
+}
+
+.carousel-control:hover {
+    background-color: rgb(19, 110, 185);
+    color: #fff;
+}
+
+.carousel-control .icon-prev:before {
+    content: '\f141';
+    font-family: "Material Design Icons";
+}
+
+.carousel-control .icon-next:before {
+    content: '\f142';
+    font-family: "Material Design Icons";
+}
