@@ -769,7 +769,7 @@ h1#userpage-title {
 
 .navlinks-holder {
     float: left;
-    width: auto;
+    width: 100%;
 }
 
 .navlinks-holder div#mobile-opener {
