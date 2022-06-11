@@ -32,9 +32,9 @@
 
                     <title>Patient Login</title>
         
-                    <link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+                    <link rel="icon" href="/config/assets/images/logo-mini.png"/>
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
                     <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
 
                 </head>
@@ -50,17 +50,17 @@
 										<div id="logo_class">
 											<div class="block"></div>
 											<div class="logo_nav_options">
-												<img src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo.jpeg" alt="Logo"/>
+												<img src="/config/assets/images/logo.jpeg" alt="Logo"/>
 											</div>
 										</div>
 										<div id="links_class">
 											<span id="exitpa"><i class="mdi mdi-close"></i></span>
 											<div class="left-links">
-												<a href="https://ubyjude.bitbucket.io/clinic_mgt/">Home</a>
-												<a href="https://ubyjude.bitbucket.io/clinic_mgt/#two">About</a>
-												<a href="https://ubyjude.bitbucket.io/clinic_mgt/#services">Services</a>
-												<a href="https://ubyjude.bitbucket.io/clinic_mgt/#doctors">Doctors</a>
-												<a href="https://ubyjude.bitbucket.io/clinic_mgt/#contact">Contact Us</a>
+												<a href="/">Home</a>
+												<a href="/#two">About</a>
+												<a href="/#services">Services</a>
+												<a href="/#doctors">Doctors</a>
+												<a href="/#contact">Contact Us</a>
 											</div>
 											<div class="right-links">
 												<a id="mil" href="#">Patient Portal</a>
@@ -74,7 +74,7 @@
                                     <div class="form-content">
                                         <div class="form-group header">
                                             <h1>Login</h1>
-                                            <p id="register">Not Registered? <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/registration/">Register here</a></p>
+                                            <p id="register">Not Registered? <a href="/branches/registration/">Register here</a></p>
                                         </div>
                                         <div class="form-group">
                                             <label for="patientuser">Patient ID</label>
@@ -118,7 +118,7 @@
 									<li><a href="#services">Services</a></li>
 								</div>
 								<div class="aleft">
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/staff/">Staff Portal</a></li>
+									<li><a href="/branches/portal/staff/">Staff Portal</a></li>
 									<li><a href="#">Privacy Policy</a></li>
 									<li><a href="#">Terms of use</a></li>
 								</div>
@@ -134,8 +134,8 @@
 					</div>
                 </body>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/jquery-2.0.3.min.js"></script>
-                <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/landing.js"></script>
+                <script src="/config/assets/js/jquery-2.0.3.min.js"></script>
+                <script src="/config/assets/js/landing.js"></script>
             </html>
 <?php
     }

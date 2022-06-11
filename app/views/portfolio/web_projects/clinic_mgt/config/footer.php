@@ -50,7 +50,7 @@
             <li><a href="#services">Services</a></li>
         </div>
 		<div class="aleft">
-			<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/staff/">Staff Portal</a></li>
+			<li><a href="/branches/portal/staff/">Staff Portal</a></li>
 			<li><a href="#">Privacy Policy</a></li>
 			<li><a href="#">Terms of use</a></li>
 		</div>

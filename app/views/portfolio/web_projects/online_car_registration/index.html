@@ -1,460 +1,495 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Online Car registration</title>
-        <link href="assets/css/main.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialdesignicons.min.css" />
-    </head>
 
-    <body>
-        <div class="wrapper">
-            <div class="container" id="header">
-                <div class="navbar">
-                    <div id="navlink"><a href="#home">Home</a></div>
-                    <div id="navlink"><a href="#product">Products</a></div>
-                    <div id="navlink"><a href="#testimonial">Testimonials</a></div>
-                    <div id="navlink">
-                        <a id="nav-link" href="#">Road Officials <i class="mdi mdi-chevron-down" aria-hidden="true"></i></a>
-                        <div class="navlink-drop">
-                            <div id="navlink"><a href="pages/booking/">Booking</a></div>
-                            <div id="navlink"><a href="pages/verification/">Verification</a></div>
-                        </div>
-                    </div>
-                    <div id="navlink"><a href="pages/offence/">Offences / Penalties</a></div>
-                    <div id="navlink"><a href="#contact">Contact</a></div>
-                    <div id="acctlink"><a href="pages/enroll/">Enrollment</a></div>
-                </div>
-            </div>
-            <div class="container" id="body">
-                <div class="container" id="home">
-                    <div id="bannertext">
-                        <h1>Online</h1>
-                        <h3>Car Registration <span></span></h3>
-                        <p>Update License number, get insurance and change of ownership...</p>
-                        <a href="#product">Let's Get Started <i class="mdi mdi-chevron-double-right"></i></a>
-                    </div>
-                </div>
-                <div class="container" id="product">
-                    <div class="products">
-                        <h2>Our Products</h2>
-                        <div id="btnContainer">
-                            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                            <button class="btn" onclick="filterSelection('suvs')"> SUVs</button>
-                            <button class="btn" onclick="filterSelection('buses')"> Buses</button>
-                            <button class="btn" onclick="filterSelection('trucks')"> Trucks</button>
-                        </div>
-                        <div class="row">
-                            <div class="column cars">
-                                <div class="content">
-                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
-                                    <div class="content_text"><h3>Car</h3><h4>Change Of Ownership</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column buses">
-                                <div class="content">
-                                    <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
-                                    <div class="content_text"><h3>Bus</h3><h4>Change of Ownership</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column suvs">
-                                <div class="content">
-                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
-                                    <div class="content_text"><h3>SUV</h3><h4>Change of Ownership</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column suvs">
-                                <div class="content">
-                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
-                                    <div class="content_text"><h3>SUV</h3><h4>Road Worthiness</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column trucks">
-                                <div class="content">
-                                    <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
-                                    <div class="content_text"><h3>Truck</h3><h4>Change of Ownership</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column buses">
-                                <div class="content">
-                                    <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
-                                    <div class="content_text"><h3>Bus</h3><h4>Vehicle License</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column cars">
-                                <div class="content">
-                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
-                                    <div class="content_text"><h3>Car</h3><h4>Road Worthiness</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column trucks">
-                                <div class="content">
-                                <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
-                                    <div class="content_text"><h3>Truck</h3><h4>Insurance</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column cars">
-                                <div class="content">
-                                    <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
-                                    <div class="content_text">
-                                        <h3>Car</h3>
-                                        <h4>Vehicle Licence</h4>
-                                        <p>#50, 000</p>
-                                        <a href="#">Checkout</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column suvs">
-                                <div class="content">
-                                    <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
-                                    <div class="content_text"><h3>SUV</h3><h4>Vehicle License</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column buses">
-                                <div class="content">
-                                <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
-                                    <div class="content_text"><h3>Bus</h3><h4>Insurance</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column trucks">
-                                <div class="content">
-                                <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
-                                    <div class="content_text"><h3>Truck</h3><h4>Road Worthiness</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column buses">
-                                <div class="content">
-                                <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
-                                    <div class="content_text"><h3>Bus</h3><h4>Road Worthiness</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column cars">
-                                <div class="content">
-                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
-                                    <div class="content_text"><h3>Car</h3><h4>Insurance</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column trucks">
-                                <div class="content">
-                                    <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
-                                    <div class="content_text"><h3>Truck</h3><h4>Vehicle License</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                            <div class="column suvs">
-                                <div class="content">
-                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
-                                    <div class="content_text"><h3>SUV</h3><h4>Insurance</h4>
-                                    <p>#50, 000</p><a href="#">Checkout</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="success_story"></div>
-                </div>
-                <div class="container" id="testimonial">
-                    <h1><sup><i class="mdi mdi-format-quote-open"></i></sup><span>Testimonials</span><sup><i class="mdi mdi-format-quote-close"></i></sup></h1>
-                    <div class="fm_client carousel slide" id="clientCarousel">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="fill">
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="fill">
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="fill">
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="fill">
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="fill">
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="fill">
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                    <div class="talk">
-                                        <i class="mdi mdi-format-quote-close"></i>
-                                        <div id="body">
-                                            <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj  jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj  kkm    jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc  j jcjdn m.</p>
-                                        </div>
-                                        <div id="talkfooter">
-                                            <p id="talkwho">Name,</p>
-                                            <p id="talkwhere">Portfolio.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<head>
+    <title>Online Car registration</title>
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialdesignicons.min.css" />
+</head>
 
-                        <a class="left carousel-control" data-target="#clientCarousel" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" data-target="#clientCarousel" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
+<body>
+    <div class="wrapper">
+        <div class="container" id="header">
+            <div class="navbar">
+                <div id="navlink"><a href="#home">Home</a></div>
+                <div id="navlink"><a href="#product">Products</a></div>
+                <div id="navlink"><a href="#testimonial">Testimonials</a></div>
+                <div id="navlink">
+                    <a id="nav-link" href="#">Road Officials <i class="mdi mdi-chevron-down" aria-hidden="true"></i></a>
+                    <div class="navlink-drop">
+                        <div id="navlink"><a href="pages/booking/">Booking</a></div>
+                        <div id="navlink"><a href="pages/verification/">Verification</a></div>
                     </div>
                 </div>
-                <div class="container" id="contact">
-                    <h1>Contact Us</h1>
-                    <div class="contactform">
-                        <form method="POST" action="">
-                            <h2>Please fill the form below, we'll get back to you within 24 hours.</h2>
-                            <div class="form-group">
-                                <label for="name"></label><br>
-                                <input placeholder="Your name" name="name" type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for="email"></label><br>
-                                <input placeholder="Your email" name="email" type="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone"></label><br>
-                                <input placeholder="Your phone" name="phone" type="tel">
-                            </div>
-                            <div class="form-group">
-                                <label for="message"></label><br>
-                                <textarea name="message" placeholder="Your message" rows="4"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="reset">Clear</button>
-                                <button type="submit" name="submit">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="contactinfo">
-                        <h2>Contact Information</h2>
-                        <ul>
-                            <li><i class="mdi mdi-phone-classic"></i><span>Phone</span><br><a href="tel:070******8">0701*******8</a></li>
-                            <li><i class="mdi mdi-email-outline"></i><span>Email</span><br>info@onlinecarregistration.com</li>
-                            <li><i class="mdi mdi-map-marker"></i><span>Location</span><br>Caritas University, Amorji-Nike, Enugu, Nigeria</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container" id="support">
-                    <ul>
-                        <h3>About Us</h3>
-                        <li></li><p>dvdjvbjbdjvbjdsvsdvn vjdsv dsjbv vjdsdjvnv ddjdjsdjsdj vjvnsdjvd dsjndfnv sdvsvsd vjdjdsjvjd vjd vjdnna a cjnd aj djd j djdjdd cjdj cjccjc cjdnjd dj dj djd js dje kamsamsa cckc cckjcnc cnncjccnncjjcn cjc cjc ajwejk ckdkdmkc ckcmckd. jvnvjsdvn vjdsv.</p></li>
-                        <div class="contactsocialinks">
-                            <a class="mdi mdi-facebook" href="#"></a>
-                            <a class="mdi mdi-instagram" href="#"></a>
-                            <a class="mdi mdi-linkedin" href="#"></a>
-                        </div>
-                    </ul>
-                    <ul>
-                        <h3>Explore</h3>
-                        <div class="aleft">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#contact">Help</a></li>
-                            <li><a href="">Booking</a></li>
-                            <li><a href="">Penalties</a></li>
-                        </div>
-                        <div class="aright">
-                            <li><a href="#product">Products</a></li>
-                            <li><a href="">License Validation</a></li>
-                        </div>
-                    </ul>
-                    <ul>
-                        <h3>Contact Us</h3>
-                        <iframe id="map-canvas" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe>
-                    </ul>
-                </div>
-            </div>
-            <div class="container" id="footer">
-                <p>Copyright &copy; Kizito Technologies. All rights reserved</p>
+                <div id="navlink"><a href="pages/offence/">Offences / Penalties</a></div>
+                <div id="navlink"><a href="#contact">Contact</a></div>
+                <div id="acctlink"><a href="pages/enroll/">Enrollment</a></div>
             </div>
         </div>
+        <div class="container" id="body">
+            <div class="container" id="home">
+                <div id="bannertext">
+                    <h1>Online</h1>
+                    <h3>Car Registration <span></span></h3>
+                    <p>Update License number, get insurance and change of ownership...</p>
+                    <a href="#product">Let's Get Started <i class="mdi mdi-chevron-double-right"></i></a>
+                </div>
+            </div>
+            <div class="container" id="product">
+                <div class="products">
+                    <h2>Our Products</h2>
+                    <div id="btnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                        <button class="btn" onclick="filterSelection('suvs')"> SUVs</button>
+                        <button class="btn" onclick="filterSelection('buses')"> Buses</button>
+                        <button class="btn" onclick="filterSelection('trucks')"> Trucks</button>
+                    </div>
+                    <div class="row">
+                        <div class="column cars">
+                            <div class="content">
+                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Car</h3>
+                                    <h4>Change Of Ownership</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column buses">
+                            <div class="content">
+                                <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Bus</h3>
+                                    <h4>Change of Ownership</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column suvs">
+                            <div class="content">
+                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
+                                <div class="content_text">
+                                    <h3>SUV</h3>
+                                    <h4>Change of Ownership</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column suvs">
+                            <div class="content">
+                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
+                                <div class="content_text">
+                                    <h3>SUV</h3>
+                                    <h4>Road Worthiness</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column trucks">
+                            <div class="content">
+                                <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Truck</h3>
+                                    <h4>Change of Ownership</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column buses">
+                            <div class="content">
+                                <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Bus</h3>
+                                    <h4>Vehicle License</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column cars">
+                            <div class="content">
+                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Car</h3>
+                                    <h4>Road Worthiness</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column trucks">
+                            <div class="content">
+                                <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Truck</h3>
+                                    <h4>Insurance</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column cars">
+                            <div class="content">
+                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Car</h3>
+                                    <h4>Vehicle Licence</h4>
+                                    <p>#50, 000</p>
+                                    <a href="#">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column suvs">
+                            <div class="content">
+                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
+                                <div class="content_text">
+                                    <h3>SUV</h3>
+                                    <h4>Vehicle License</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column buses">
+                            <div class="content">
+                                <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Bus</h3>
+                                    <h4>Insurance</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column trucks">
+                            <div class="content">
+                                <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Truck</h3>
+                                    <h4>Road Worthiness</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column buses">
+                            <div class="content">
+                                <img src="assets/images/index/buses.jpg" alt="buses" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Bus</h3>
+                                    <h4>Road Worthiness</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column cars">
+                            <div class="content">
+                                <img src="assets/images/index/cars.jpg" alt="cars" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Car</h3>
+                                    <h4>Insurance</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column trucks">
+                            <div class="content">
+                                <img src="assets/images/index/trucks.jpg" alt="Trucks" style="width:100%">
+                                <div class="content_text">
+                                    <h3>Truck</h3>
+                                    <h4>Vehicle License</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <div class="column suvs">
+                            <div class="content">
+                                <img src="assets/images/index/suvs.jpg" alt="suvs" style="width:100%">
+                                <div class="content_text">
+                                    <h3>SUV</h3>
+                                    <h4>Insurance</h4>
+                                    <p>#50, 000</p><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="success_story"></div>
+            </div>
+            <div class="container" id="testimonial">
+                <h1><sup><i class="mdi mdi-format-quote-open"></i></sup><span>Testimonials</span><sup><i class="mdi mdi-format-quote-close"></i></sup></h1>
+                <div class="fm_client carousel slide" id="clientCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="fill">
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                                <div class="talk">
+                                    <i class="mdi mdi-format-quote-close"></i>
+                                    <div id="body">
+                                        <p>Athebe dhs sddhjc cjd jsdk djsdjd df dj sj jddnkdkdk sdjdsn dnsn ddndnc fhfjd dsjdjd cjdjcf cncnc cnbcncn sbcnc chnd dhd dhfd fhfncj kkm jdjsnsjnsj cnd dndc c cnasjncj cjdndjnc chd c chc dehwweiroincjc j jcjdn m.</p>
+                                    </div>
+                                    <div id="talkfooter">
+                                        <p id="talkwho">Name,</p>
+                                        <p id="talkwhere">Portfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <script src="assets/js/jquery-2.0.3.min.js"></script>
-        <script src="assets/js/index.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+                    <a class="left carousel-control" data-target="#clientCarousel" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" data-target="#clientCarousel" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="container" id="contact">
+                <h1>Contact Us</h1>
+                <div class="contactform">
+                    <form method="POST" action="">
+                        <h2>Please fill the form below, we'll get back to you within 24 hours.</h2>
+                        <div class="form-group">
+                            <label for="name"></label><br>
+                            <input placeholder="Your name" name="name" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label><br>
+                            <input placeholder="Your email" name="email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"></label><br>
+                            <input placeholder="Your phone" name="phone" type="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"></label><br>
+                            <textarea name="message" placeholder="Your message" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="reset">Clear</button>
+                            <button type="submit" name="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactinfo">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li><i class="mdi mdi-phone-classic"></i><span>Phone</span><br><a href="tel:070******8">0701*******8</a></li>
+                        <li><i class="mdi mdi-email-outline"></i><span>Email</span><br>info@onlinecarregistration.com</li>
+                        <li><i class="mdi mdi-map-marker"></i><span>Location</span><br>Caritas University, Amorji-Nike, Enugu, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="support">
+                <ul>
+                    <h3>About Us</h3>
+                    <li></li>
+                    <p>dvdjvbjbdjvbjdsvsdvn vjdsv dsjbv vjdsdjvnv ddjdjsdjsdj vjvnsdjvd dsjndfnv sdvsvsd vjdjdsjvjd vjd vjdnna a cjnd aj djd j djdjdd cjdj cjccjc cjdnjd dj dj djd js dje kamsamsa cckc cckjcnc cnncjccnncjjcn cjc cjc ajwejk ckdkdmkc ckcmckd.
+                        jvnvjsdvn vjdsv.</p>
+                    </li>
+                    <div class="contactsocialinks">
+                        <a class="mdi mdi-facebook" href="#"></a>
+                        <a class="mdi mdi-instagram" href="#"></a>
+                        <a class="mdi mdi-linkedin" href="#"></a>
+                    </div>
+                </ul>
+                <ul>
+                    <h3>Explore</h3>
+                    <div class="aleft">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contact">Help</a></li>
+                        <li><a href="">Booking</a></li>
+                        <li><a href="">Penalties</a></li>
+                    </div>
+                    <div class="aright">
+                        <li><a href="#product">Products</a></li>
+                        <li><a href="">License Validation</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <h3>Contact Us</h3>
+                    <iframe id="map-canvas" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="footer">
+            <p>Copyright &copy; 2018. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
 </html>

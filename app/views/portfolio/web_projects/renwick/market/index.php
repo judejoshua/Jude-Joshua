@@ -1,10 +1,10 @@
 <?php
 
-    // include ('../config/server.php');
+    include ('../config/server.php');
     
     $pagelink = 'market';
 
-    // $query = mysqli_query($db, "SELECT * FROM `products` WHERE `product_cat` = '".$pagelink."' ");
+    $query = mysqli_query($db, "SELECT * FROM `products` WHERE `product_cat` = '".$pagelink."' ");
 
     
 ?>
@@ -40,31 +40,31 @@
             <div class="container" id="body">
                 <section id="items">
                     <?php
-                        // if(mysqli_num_rows($query) > 0){
-                        //     //output data of each row
-                        //     while($show = mysqli_fetch_array($query)){
-                        //         $target_file = $show['product_img'];
-                        //         $target_dir = base64_decode($show['img_loc']);
-                        //         echo'
-                        //             <div class="product">
-                        //                 <div class="product_img">
-                        //                     <div></div>
-                        //                     <img src="/relatives/app/config/'.$target_dir.$target_file.'" />
-                        //                 </div>
-                        //                 <div class="product_details">
-                        //                     <h1>'.$show['product_name'].'</h1>
-                        //                     <h3>'.$show['product_price'].'</h3>
-                        //                     <p>Sold by: '.$show['store_name'].'</p>
-                        //                 </div>
-                        //             </div>
-                        //         ';
-                        //     }
-                        // }else{
-                        //     echo '
-                        //         <h3>No items found for this Category.</h3>
-                        //     ';
-                        // }
-                        // mysqli_close($db);
+                        if(mysqli_num_rows($query) > 0){
+                            //output data of each row
+                            while($show = mysqli_fetch_array($query)){
+                                $target_file = $show['product_img'];
+                                $target_dir = base64_decode($show['img_loc']);
+                                echo'
+                                    <div class="product">
+                                        <div class="product_img">
+                                            <div></div>
+                                            <img src="/relatives/app/config/'.$target_dir.$target_file.'" />
+                                        </div>
+                                        <div class="product_details">
+                                            <h1>'.$show['product_name'].'</h1>
+                                            <h3>'.$show['product_price'].'</h3>
+                                            <p>Sold by: '.$show['store_name'].'</p>
+                                        </div>
+                                    </div>
+                                ';
+                            }
+                        }else{
+                            echo '
+                                <h3>No items found for this Category.</h3>
+                            ';
+                        }
+                        mysqli_close($db);
                     ?>
                 </section>
 			</div>

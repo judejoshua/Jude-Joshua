@@ -41,9 +41,9 @@
 
         <title>CMS</title>
 
-        <link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+        <link rel="icon" href="/config/assets/images/logo-mini.png"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
     </head>
     <body>
@@ -164,7 +164,7 @@
                                             <div class="doctor">
                                                 <div class="doctor_img">
                                                     <div></div>
-                                                    <img src="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/staff/config/assets/uploads/'.$photo_loc.$photo_name.'">
+                                                    <img src="/branches/portal/staff/config/assets/uploads/'.$photo_loc.$photo_name.'">
                                                 </div>
                                                 <div class="doctor_details">
                                                     <h2>'.$return['name'].'</h2>
@@ -257,9 +257,9 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/jquery-2.0.3.min.js"></script>
-        <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/landing.js"></script>
-        <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/bootstrap.min.js"></script>
+        <script src="/config/assets/js/jquery-2.0.3.min.js"></script>
+        <script src="/config/assets/js/landing.js"></script>
+        <script src="/config/assets/js/bootstrap.min.js"></script>
         <script>
             $('.carousel').carousel({
                 interval: 6500,

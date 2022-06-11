@@ -32,9 +32,9 @@
 
                     <title>Central Admin Login</title>
 					
-					<link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-					<link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-					<link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+					<link rel="icon" href="/config/assets/images/logo-mini.png"/>
+					<link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+					<link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
 					<link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
                 </head>
                 <body>
@@ -83,18 +83,18 @@
 							<ul>
 								<h3>Explore</h3>
 								<div class="aleft">
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/">Home</a></li>
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/#two">About us</a></li>
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/#services">Services</a></li>
+									<li><a href="/">Home</a></li>
+									<li><a href="/#two">About us</a></li>
+									<li><a href="/#services">Services</a></li>
 								</div>
 								<div class="aleft">
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/staff/">Staff Portal</a></li>
+									<li><a href="/branches/portal/staff/">Staff Portal</a></li>
 									<li><a href="#">Privacy Policy</a></li>
 									<li><a href="#">Terms of use</a></li>
 								</div>
 								<div class="aright">
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/#doctors">Doctors</a></li>
-									<li><a href="https://ubyjude.bitbucket.io/clinic_mgt/#contact">Contact Us</a></li>
+									<li><a href="/#doctors">Doctors</a></li>
+									<li><a href="/#contact">Contact Us</a></li>
 								</div>
 							</ul>
 						</div>

@@ -32,9 +32,9 @@
 
 			<title>Book an Appointment - <?php echo $name ?></title>
 			
-			<link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-			<link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-			<link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+			<link rel="icon" href="/config/assets/images/logo-mini.png"/>
+			<link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+			<link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
 			<link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
 		</head>
 		<body>
@@ -81,7 +81,7 @@
 							<div id="logo_class">
 								<div class="block"></div>
 								<div class="logo_nav_options">
-									<img src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo.jpeg" alt="Logo"/>
+									<img src="/config/assets/images/logo.jpeg" alt="Logo"/>
 								</div>
 							</div>
 						</div>
@@ -136,7 +136,7 @@
 													<form method="POST" action="./" name="login" class="inhouse">
 														<div class="form-group header">
 															<h1 id="adminpage-title">Book an Appointment</h1>
-															<p><span>Note: </span>We charge 1, 500 NGN as appointment fee for all our appointments.<a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/patient/branches/relatives/appointments/view.php">View appointments</a></p>
+															<p><span>Note: </span>We charge 1, 500 NGN as appointment fee for all our appointments.<a href="/branches/portal/patient/branches/relatives/appointments/view.php">View appointments</a></p>
 														</div>
 														<div class="messages body">
 															<div class="form-group">
@@ -215,7 +215,7 @@
 														<form method="POST" action="./" class="visiting">
 															<div class="form-group header">
 																<h1 id="adminpage-title">Book an Appointment</h1>
-																<p><span>Note: </span>We charge 1, 500 NGN as appointment fee for all our appointments.<a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/patient/branches/relatives/appointments/view.php">View appointments</a></p>
+																<p><span>Note: </span>We charge 1, 500 NGN as appointment fee for all our appointments.<a href="/branches/portal/patient/branches/relatives/appointments/view.php">View appointments</a></p>
 															</div>
 															<div class="messages body">
 																<div class="form-group">
@@ -291,8 +291,8 @@
 			</div>
 		</body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/jquery-2.0.3.min.js"></script>
-		<script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/landing.js"></script>
+		<script src="/config/assets/js/jquery-2.0.3.min.js"></script>
+		<script src="/config/assets/js/landing.js"></script>
 	</html>
 <?php
         }

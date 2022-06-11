@@ -20,7 +20,7 @@
                     <a href="#contact">Contact Us</a>
                 </div>
                 <div class="right-links">
-                    <a id="mil" href="https://ubyjude.bitbucket.io/clinic_mgt/branches/login/">Patient Portal</a>
+                    <a id="mil" href="/branches/login/">Patient Portal</a>
                 </div>
             </div>
         </div>

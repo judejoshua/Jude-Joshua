@@ -21,7 +21,7 @@
         <body>
             <div class="divWrap fade">
                 <div class="container" id="body">
-                    <!-- <?php include('../../../config/nav.php');?> -->
+                    <?php include('../../../config/nav.php');?>
                     <div class="form login">
                         <div class="card">
                             <div class="front">
@@ -102,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="container" id="footer">
+                <div class="container" id="footer">
                     <?php include('../../../config/footer.php') ?>
                     <a href="#home" class="to-top">
                         <i class="mdi mdi-chevron-up"></i>
@@ -118,7 +118,7 @@
                             </div>
                         </form>
                     </div>
-                </div> -->
+                </div>
             </div>
         </body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

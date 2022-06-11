@@ -33,9 +33,9 @@
 
                     <title>Dashboard - <?php echo $name ?></title>
 					
-					<link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+					<link rel="icon" href="/config/assets/images/logo-mini.png"/>
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
                     <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
                 </head>
                 <body>
@@ -52,7 +52,7 @@
 									<div id="logo_class">
 										<div class="block"></div>
 										<div class="logo_nav_options">
-											<img src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo.jpeg" alt="Logo"/>
+											<img src="/config/assets/images/logo.jpeg" alt="Logo"/>
 										</div>
 									</div>
 								</div>
@@ -66,10 +66,10 @@
                             <div class="profilebody-left">
                                 <div class="profilebody-bottom-left">
 									<div class="investlinks">
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/patient/branches/relatives/appointments/view.php"><i class="mdi mdi-calendar"></i><h3>My appointments</h3></a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/patient/branches/relatives/medics"><i class="mdi mdi-database"></i><h3>My history</h3></a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/patient/branches/relatives/transactions/"><i class="mdi mdi-currency-ngn"></i><h3>My transactions</h3></a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/patient/branches/relatives/profile/"><i class="mdi mdi-account-outline"></i><h3>My profile</h3></a>
+                                        <a href="/branches/portal/patient/branches/relatives/appointments/view.php"><i class="mdi mdi-calendar"></i><h3>My appointments</h3></a>
+                                        <a href="/branches/portal/patient/branches/relatives/medics"><i class="mdi mdi-database"></i><h3>My history</h3></a>
+                                        <a href="/branches/portal/patient/branches/relatives/transactions/"><i class="mdi mdi-currency-ngn"></i><h3>My transactions</h3></a>
+                                        <a href="/branches/portal/patient/branches/relatives/profile/"><i class="mdi mdi-account-outline"></i><h3>My profile</h3></a>
                                     </div>
                                 </div>
                             </div>

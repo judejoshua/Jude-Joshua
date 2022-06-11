@@ -165,7 +165,7 @@ if(!empty($_POST["officialenroll"])) {
                 </div>
             </div>
             <div class="container" id="footer">
-                <p>Copyright &copy; Kizito Technologies. All rights reserved</p>
+                <p>Copyright &copy; 2018. All rights reserved.</p>
             </div>
 
         </div>

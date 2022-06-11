@@ -1,6 +1,6 @@
 <?php
 
-	// include ('./config/server.php');
+	include ('./config/server.php');
 
 ?>
 <!DOCTYPE html>
@@ -110,7 +110,7 @@
 						});
 					});
 				//-------------------------------------Links
-					/*$(".left-links a").click(function(event) {
+					$(".left-links a").click(function(event) {
 						link = $(this).attr("href");
 						$('ul#side-links li a').removeClass('active');
 						$(this).addClass('active');
@@ -122,7 +122,7 @@
 							}
 						})
 						return false;
-					});*/
+					});
 			});
 
 		</script>

@@ -20,9 +20,9 @@
 
                     <title>System dashboard</title>
 
-                    <link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+                    <link rel="icon" href="/config/assets/images/logo-mini.png"/>
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
                     <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
                 </head>
                 <body>
@@ -60,8 +60,8 @@
                     </div>
                 </body>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/jquery-2.0.3.min.js"></script>
-                <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/landing.js"></script>
+                <script src="/config/assets/js/jquery-2.0.3.min.js"></script>
+                <script src="/config/assets/js/landing.js"></script>
             </html>
         ';
         mysqli_close($db);

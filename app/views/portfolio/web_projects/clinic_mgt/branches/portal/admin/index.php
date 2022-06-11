@@ -39,9 +39,9 @@
 
                     <title>System dashboard</title>
 
-                    <link rel="icon" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo-mini.png"/>
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/main.css" />
-                    <link rel="stylesheet" type="text/css" media="screen" href="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/css/materialdesignicons.min.css" />
+                    <link rel="icon" href="/config/assets/images/logo-mini.png"/>
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/main.css" />
+                    <link rel="stylesheet" type="text/css" media="screen" href="/config/assets/css/materialdesignicons.min.css" />
                     <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
                 </head>
                 <body>
@@ -58,7 +58,7 @@
 									<div id="logo_class">
 										<div class="block"></div>
 										<div class="logo_nav_options">
-											<img src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/images/logo.jpeg" alt="Logo"/>
+											<img src="/config/assets/images/logo.jpeg" alt="Logo"/>
 										</div>
 									</div>
 								</div>
@@ -72,13 +72,13 @@
                             <div class="profilebody-left">
                                 <div class="profilebody-bottom-left">
                                     <div class="investlinks">
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/patients/"><?php echo "<h5>$patients</h5>" ?>Patients</a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/management/"><?php echo "<h5>$staff</h5>" ?>Staff</a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/appointments/"><?php echo "<h5>$appointments</h5>" ?>Appointments</a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/reviews/"><?php echo "<h5>$reviews</h5>" ?>Reviews</a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/contacts/"><?php echo "<h5>$contacts</h5>" ?>Contact Messages</a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/financials/"><i class="mdi mdi-currency-ngn"></i><h3>Financials</h3></a>
-                                        <a href="https://ubyjude.bitbucket.io/clinic_mgt/branches/portal/admin/branches/relatives/thesaurus/about/"><i class="mdi mdi-dictionary"></i><h3>Thesaurus</h3></a>
+                                        <a href="/branches/portal/admin/branches/relatives/patients/"><?php echo "<h5>$patients</h5>" ?>Patients</a>
+                                        <a href="/branches/portal/admin/branches/relatives/management/"><?php echo "<h5>$staff</h5>" ?>Staff</a>
+                                        <a href="/branches/portal/admin/branches/relatives/appointments/"><?php echo "<h5>$appointments</h5>" ?>Appointments</a>
+                                        <a href="/branches/portal/admin/branches/relatives/reviews/"><?php echo "<h5>$reviews</h5>" ?>Reviews</a>
+                                        <a href="/branches/portal/admin/branches/relatives/contacts/"><?php echo "<h5>$contacts</h5>" ?>Contact Messages</a>
+                                        <a href="/branches/portal/admin/branches/relatives/financials/"><i class="mdi mdi-currency-ngn"></i><h3>Financials</h3></a>
+                                        <a href="/branches/portal/admin/branches/relatives/thesaurus/about/"><i class="mdi mdi-dictionary"></i><h3>Thesaurus</h3></a>
                                     </div>
                                 </div>
                             </div>
@@ -86,8 +86,8 @@
                     </div>
                 </body>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/jquery-2.0.3.min.js"></script>
-                <script src="https://ubyjude.bitbucket.io/clinic_mgt/config/assets/js/landing.js"></script>
+                <script src="/config/assets/js/jquery-2.0.3.min.js"></script>
+                <script src="/config/assets/js/landing.js"></script>
             </html>
 <?php
     }

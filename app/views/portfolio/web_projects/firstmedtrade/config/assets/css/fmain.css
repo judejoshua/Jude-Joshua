@@ -163,7 +163,7 @@ div#links_class a#userlinks:hover {
     width: 100%;
     height: 660px;
     overflow: hidden;
-    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.69)), url(/po/firstmedtrade/config/assets/images/fmedtrade_banner.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.69)), url(/config/assets/images/fmedtrade_banner.png);
     background-position: center;
     background-size: cover;
 }
@@ -504,7 +504,7 @@ div#options-head h1 {
     height: 100%;
     right: 0;
     position: absolute;
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_patients.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/config/assets/images/fmedtrade_patients.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -513,7 +513,7 @@ div#options-head h1 {
 .doctors .options {
     left: 0;
     right: unset;
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_doctors.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/config/assets/images/fmedtrade_doctors.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -522,7 +522,7 @@ div#options-head h1 {
 .hospitals .options {
     left: 0;
     right: unset;
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_hospitals.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/config/assets/images/fmedtrade_hospitals.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -771,7 +771,7 @@ section#newsletter {
     padding: 70px 100px;
     width: 40%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_miscellaneous.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/config/assets/images/fmedtrade_miscellaneous.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -934,19 +934,19 @@ div#footer {
     height: 460px;
     overflow: hidden;
     background: #167a84;
-    background: radial-gradient(at 14% 100px, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.2)), url(/po/firstmedtrade/config/assets/images/fmedtrade_appointments.png);
+    background: radial-gradient(at 14% 100px, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.2)), url(/config/assets/images/fmedtrade_appointments.png);
     background-position: top;
     background-size: cover;
 }
 
 #fhospitalshome #homecontent {
-    background: radial-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.43)), url(/po/firstmedtrade/config/assets/images/fmedtrade_referrals.png);
+    background: radial-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.43)), url(/config/assets/images/fmedtrade_referrals.png);
     background-position: bottom;
     background-size: cover;
 }
 
 #fcontacthome #homecontent {
-    background: radial-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.43)), url(/po/firstmedtrade/config/assets/images/fmedtrade_contact.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.43)), url(/config/assets/images/fmedtrade_contact.jpg);
     background-position: top;
     background-size: cover;
     height: 350px;
@@ -1081,7 +1081,7 @@ div#footer {
 }
 
 #fhospitalsbody .hospitals .options {
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/po/firstmedtrade/config/assets/images/fmedtrade_appointments.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.64)), url(/config/assets/images/fmedtrade_appointments.png);
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
