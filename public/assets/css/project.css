@@ -5,14 +5,19 @@
     align-items: flex-start;
     width: 100%;
     padding-top: 0;
-    padding-bottom: 128px;
+    padding-bottom: 228px;
+    overflow-y: auto;
+    height: auto;
+    display: table;
 }
 body#home-landing #case-study {
     padding-top: 148px;
     padding-bottom: 96px;
+    display: flex;
 }
 .case-study-title-top {
     width: 556px;
+    text-align: left;
 }
 .case-studies-body {
     display: flex;
@@ -29,6 +34,10 @@ body#home-landing #case-study {
     padding: 0px;
     gap: 12px;
 }
+
+body:not(#home-landing) #case-study {
+    padding-top: 24px;
+}
 .projects-holder .notice p {
     color: var(--placeholders);
     font-style: italic;
@@ -36,9 +45,10 @@ body#home-landing #case-study {
 .project {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: auto;
     transition: 0.4s;
+    align-items: center;
 }
 .project:hover{
 }
@@ -56,41 +66,52 @@ body#home-landing #case-study {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    padding: 32px 0 32px;
-    color: var(--secondary);
+    align-items: flex-end;
+    padding: 24px 24px;
+    color: var(--neutral);
     transition: 0.6s ease-in-out;
-    /* opacity: 0;
-     */
-    bottom: -114px;
+    position: absolute;
+    bottom: -4%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, .6);
+    -webkit-backdrop-filter: blur(24px);
+    -moz-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
 }
-.project:hover .caption {
-    bottom: 0;
-}
+
 .caption i {
-    font-size: 24px;
+    font-size: 16px;
     transform: rotate(-45deg);
+    /* display: none; */
 }
 .caption-text {
     display: flex;
     flex-direction: column;
-    white-space: nowrap;
+    /* overflow: hidden; */
+    /* padding-right: 16px; */
+    gap: 24px;
+}
+.caption-text h4 {
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    line-height: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 24px;
-    gap: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
+
 .projects-holder a {
     display: block;
-    overflow: hidden;
-    width: 47.5%;
+    /* overflow: hidden; */
+    width: 47%;
     height: fit-content;
-    flex: 47.5%;
-    max-width: 47.5%;
+    flex: 29%;
+    flex-grow: 0;
 }
-.projects-holder a:nth-child(even){
-    top: 160px;
-}
+
 #tag-single {
     padding: 12px 24px;
     display: inline-block;
@@ -100,7 +121,7 @@ body#home-landing #case-study {
 .tags-row {
     display: flex;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 32px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -109,12 +130,12 @@ body#home-landing #case-study {
     gap: 12px;
 }
 .return-button {
-    display: flex;
     margin: 80px 0 32px;
     gap: 16px;
     color: var(--secondary);
     align-items: center;
     width: auto;
+    display: inline-flex;
 }
 .case-study-title .return-button {
     margin-top: 0;
@@ -160,6 +181,7 @@ body#case-study-body .landing .case-study-title .scroll-down {
     bottom: unset;
     height: 96px;
 }
+
 body#case-study-body .landing .case-study-title .scroll-down .mouse {
     border: 1px solid;
 }
@@ -230,6 +252,13 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     cursor: pointer;
     transition: 0.8s;
 }
+span#project-counter {
+    padding: 2.5px 6px;
+    border-radius: 50%;
+    background: var(--placeholders);
+    margin-left: 4px;
+    top: -1px;
+}
 #tag-single.secondary:hover, #tag-single.secondary.active {
     background-color: var(--background-circles);
     color: var(--neutral);
@@ -292,3 +321,38 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     width: 100%;
     height: auto;
 }
+
+/*Grid styles*/
+    
+/*.projects-holder a {*/
+/*    display: block;*/
+/*    overflow: hidden;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.projects-holder a:nth-child(4n + 1) {*/
+/*  grid-column: auto /span 2;*/
+/*  grid-row: auto /span 2;*/
+/*}*/
+
+/*.caption {*/
+/*    background-color: rgba(0, 0, 0, .4);*/
+/*    -webkit-backdrop-filter: blur(32px);*/
+/*    -moz-backdrop-filter: blur(32px);*/
+/*    backdrop-filter: blur(32px);*/
+/*    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);*/
+/*    padding: 24px 20px;*/
+/*    padding-left: 40px;*/
+/*    left: -100%;*/
+/*    display: flex;*/
+/*    gap: 16px;*/
+/*    height: auto;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    color: var(--accent);*/
+/*    transition: 0.6s ease-in-out;*/
+/*    width: 100%;*/
+/*}*/
+/*.project:hover .caption {*/
+/*    padding-left: 20px;*/
+/*}*/

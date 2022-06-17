@@ -112,12 +112,12 @@ navigation.fixed {
 .nav-links li a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 13px;
     /* identical to box height, or 140% */
     /* secondary */
     color: var(--secondary);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     flex: none;
     flex-grow: 0;
 }

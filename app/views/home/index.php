@@ -43,12 +43,10 @@
                 <section id="case-study">
                     <div class="case-studies-body">
                         <div class="text-divider">
-                            <h2>Digital Patterns that I have built</h2>
+                            <!--<h2>Design Systems that I have built</h2>-->
                             <div id="liner"></div>
                             <p class="p4">
-                                Many designs today have the beauty, luxury, and ease of a workable platform. But they often fail to consider one critical point - development feasibility. That is one of the key challenges developers experience when working with product designers.</br>
-                                A lot of work goes in from the design stage to the development stage. Most times, there are a lot of design changes that must take place during development to accommodate code functionality. And for this, developers make various design-code changes which usually results in a loss of style. I know this because I have been opportune to experience both sides of the web world as a web designer & developer and then a product designer.<br/>
-                                My ability to leverage this problem and provide a design that works in functionality and experience makes me different from the rest. I do this by providing a design system that respects the laws of coding and development. It is not prone to numerous developer alterations and balances the end users' needs and the business objectives.<br/><br/>
+                                I have worked on ideas from different industries and disciplines and everytime, I always combine my technical and creative expertise to help my clients explore and get the best value of technology in their business. I work to ensure that your project scope is delivered in such a way that the idea of the product is conveyed to the user and they can understand it at once, at the pace that you need.<br/><br/>
                                 Shown below are a few samples.
                             </p>
                         </div>
@@ -66,8 +64,8 @@
                                                     <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
                                                     <div class="caption">
                                                         <div class="caption-text">
-                                                            <h5 class="h4">'.$project_data['project_title'].'</h5>
-                                                            <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
+                                                            <h4 class="h4">'.$project_data['project_title'].'</h4>
+                                                            <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                         </div>
                                                         <i class="las la-arrow-right"></i>
                                                     </div>
@@ -95,10 +93,12 @@
                     <div class="design-style">
                         <div class="full-width-shift">
                             <div class="text-divider">
-                            <h2>How do I achieve these patterns?</h2>
+                            <h2>My Design Process</h2>
                             <div id="liner"></div>
-                            <p class="p4">Creating user-friendly systems doesn't just happen. It calls for some skills applied through different processes. When I work on projects (on the web or mobile), I prefer to break them down into smaller processes which I will work on first. After that, I put them back together to achieve a harmonious solution.<br/>
-                            Here's what I mean;</p>
+                            <p class="p4">
+                                Creating user-friendly systems doesn't just happen. It calls for some skills applied through different processes. When I work on projects (on the web or mobile), I prefer to break them down into smaller processes which I will work on first. After that, I put them back together to achieve a harmonious solution.<br/>
+                                Here's what I mean;
+                            </p>
                         </div>
                         </div>
                         <div class="design-styles">
@@ -183,13 +183,17 @@
                 </section>
                 <section id="why">
                     <div class="text-divider">
-                        <h2>What keeps me going</h2>
+                        <h2>A good fit?</h2>
                         <div id="liner"></div>
                         <p class="p4">
-                            There is always a driving force that pushes one to excellence or otherwise. Me, I'm driven by a deep passion for design. A single day doesn't go by without me engaging my design skills with some task.<br/>
-                            Like Samadara Ginige, an award-winning logo user interface designer and software developer, once said,"<span id="quote">Design is everywhere. From the dress, you're wearing to the smartphone you're holding, its design.</span>"<br/>
-                            I have loved design and arts since my childhood. And combining this love with a zeal to make life better and easy for people is what pushed me to develop my skills in design.<br/>
-                            And whether it is through design or coding, I always seek to make the digital life of my users as easy as I can make it.</p>
+                            There is always a driving force that pushes one to excellence or otherwise. Me, I'm driven by a deep passion for design.<br/>
+                            Many designs today have the beauty, luxury, and ease of a workable platform. But they often fail to consider one critical point - development feasibility. That is one of the key challenges developers experience when working with product designers.</br>
+                            <!--A lot of work goes in from the design stage to the development stage. Most times, there are a lot of design changes that must take place during development to accommodate code functionality.-->To this end, developers make various design-code changes which usually results in a loss of style. I know this because I have been opportune to experience both sides of the web world as a web designer & developer and then a product designer.<br/>
+                            My ability to leverage this problem and provide a design that works in functionality and experience makes me different from the rest. I do this by providing a design system that respects the laws of coding and development. It is not prone to numerous developer alterations and balances the end users' needs and the business objectives.
+                            <!--There is always a driving force that pushes one to excellence or otherwise. Me, I'm driven by a deep passion for design. A single day doesn't go by without me engaging my design skills with some task.</br>-->
+                            <!--<span id="quote">"Design is everywhere. From the dress, you're wearing to the smartphone you're holding, its design."<br/><br/>- Samandara Ginige</span>-->
+                            <!--I have loved design and arts since my childhood. And combining this love with a zeal to make life better and easy for people is what pushed me to develop my skills in design. And whether it is through design or coding, I always seek to make the digital life of my users as easy as I can make it.-->
+                        </p>
                     </div>
                     <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>

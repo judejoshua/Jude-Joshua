@@ -18,7 +18,7 @@ class Project extends Db
     public function getHomeProjectList()
     {
         try {
-            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_img_directory` FROM `projects` WHERE `project_type` = 'UI/UX' ORDER BY RAND()";
+            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_img_directory` FROM `projects` WHERE `project_type` = 'UI/UX' OR  `project_type` = 'UI/UX, Web design' ORDER BY RAND()";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([]);
             $data = $stmt->fetchAll();

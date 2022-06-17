@@ -158,7 +158,7 @@
         font-size: 30px;
     }
     .p4 {
-        font-size: 14px;
+        font-size: 13px;
     }
     .header_cont {
         padding: 0 48px;
@@ -242,7 +242,7 @@
         margin-bottom: 0;
     }
     .row {
-        gap: 32px;
+        gap: 56px;
     }
     .project {
         width: 100%;
@@ -256,14 +256,18 @@
     #why {
         width: 100%;
         padding-bottom: 80px;
-        padding-right: 32px;
+        padding-right: 40px;
         padding-top: 80px;
+        padding-left: 40px;
     }
     section#why::before {
         width: 50%;
         left: unset;
         right: 40px;
         height: 48%;
+        width: 100%;
+        height: 100%;
+        right: 0;
     }
     .btn.mdn {
         width: 168px;
@@ -283,11 +287,12 @@
         text-overflow: ellipsis;
     }
     .caption {
-        padding: 16px 8px;
-        bottom: 0;
+        padding: 16px 24px;
+        /* bottom: 0; */
     }
     .caption-text {
         width: 80%;
+        gap: 16px;
     }
     .results-section {
         padding: 64px;
@@ -600,9 +605,11 @@
     body:not(#home-landing) #case-study {
         padding-bottom: 64px;
         padding-top: 0;
+        display: block;
     }
     #design-section {
         padding-bottom: 64px;
+        gap: 80px;
     }
     .experience-body .row:nth-child(even) .experience_card::before {
         display: none;
@@ -631,6 +638,11 @@
     }
     #contextMenu i {
         transform: rotate(90deg);
+    }
+    #quote {
+        width: 90%;
+        font-size: 24px;
+        line-height: 1.4;
     }
 }
 

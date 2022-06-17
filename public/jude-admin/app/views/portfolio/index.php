@@ -32,7 +32,7 @@
                                         echo '
                                             <a href="/portfolio/case_study/'.$project['unique_id'].'">
                                                 <div class="project">
-                                                    <img src="http://jd.test'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
+                                                    <img src="https://judejoshua.me'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
                                                     <div class="caption">
                                                         <div class="caption-text">
                                                             <h4>'.$project_data['project_title'].'</h4>

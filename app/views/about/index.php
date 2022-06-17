@@ -28,7 +28,7 @@
                         <div class="title-text">
                             <h3>Product Designer</h3>
                             <p class="paragraphsdescriptions">
-                                As someone who has a passion for designing, I worked on it. Now, it's my responsibility to transform ideas in a creative way into products that give the users a stress-free experience.</p>
+                                As a designer with a burning passion for better design, it's my responsibility to provide users with an easy and stress-free experience by transforming ideas in a creative way into implementable digital designs.</p>
                         </div>
                     </div>
                     <div class="about-cards">
@@ -45,7 +45,7 @@
                         <div class="title-text">
                             <h3>Web Developer</h3>
                             <p class="paragraphsdescriptions">
-                                My creativity and passion for designing to make life better don't just stop at product designing. I also develop the parts of an application or website that a user sees and interacts with. I achieve these through my responsibility as a front-end developer.
+                                My creativity and passion don't just stop at product design. I also build the parts of a website that a user sees and interacts with such that it fits with the design and business goals. I achieve these through my responsibility as a front-end developer.
                             </p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         <div class="row">
                             <div class="experience_card">
                                 <div class="job-client-location">
-                                    <h4>SoliumRise NFT</h4>
+                                    <h4>SoliumRise</h4>
                                     <h5>Visual/UI Designer (Freelance)</h5>
                                 </div>
                                 <div class="job-client-location">

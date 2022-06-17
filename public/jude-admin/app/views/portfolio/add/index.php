@@ -39,8 +39,8 @@
                                         <select id="project_type" name="project_type" class="form-input p4">
                                             <option value="" selected hidden>Choose project type</option>
                                             <option value="UI/UX">UI/UX</option>
-                                            <option value="Web design">Website</option>
-                                            <option value="UI/UX, Web design">Both</option>
+                                            <option value="Web development">Website development</option>
+                                            <option value="UI/UX, Web development">Both</option>
                                         </select>
                                         <div class="labels">
                                             <p class="p5 placeholder">Choose your project type (Required)</p>

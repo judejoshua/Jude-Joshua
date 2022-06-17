@@ -84,20 +84,20 @@
                                 </ul>
                             </div>
                             <div class="skills title-text">
-                                <h3>Skills</h3>
+                                <h3>Soft skills</h3>
                                 <div id="liner"></div>
                                 <ul>
                                     <li>
                                         <p class="p4">Empathy</p>
                                     </li>
                                     <li>
-                                        <p class="p4">Collaboration</p>
+                                        <p class="p4">Analytical Thinking</p>
                                     </li>
                                     <li>
                                         <p class="p4">Presentation</p>
                                     </li>
                                     <li>
-                                        <p class="p4">Team Work</p>
+                                        <p class="p4">Teamwork and collaboration</p>
                                     </li>
                                     <li>
                                         <p class="p4">Problem Solving</p>
@@ -126,6 +126,18 @@
                                     <li>
                                         <p class="p4">Timeliness</p>
                                     </li>
+                                    <li>
+                                        <p class="p4">Story Telling</p>
+                                    </li>
+                                    <li>
+                                        <p class="p4">Team management and Organization</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills title-text">
+                                <h3>Hard skills</h3>
+                                <div id="liner"></div>
+                                <ul>
                                     <li>
                                         <p class="p4">User Research</p>
                                     </li>
@@ -243,11 +255,11 @@
                                 <div id="liner"></div>
                                 <div class="section">
                                     <div class="projects-section title-text">
-                                        <h4>SoliumRise NFT | Visual/UI Desgner (Freelance)</h4>
+                                        <h4>SoliumRise | Visual/UI Desgner (Freelance)</h4>
                                         <p class="h4">November 2021</p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Provided sketches and implementable mockups for the design of an NFT landing page.</p>
+                                                <p class="p4">Provided sketches and implementable mockups for the design of a DEX landing page.</p>
                                             </li>
                                             <li>
                                                 <p class="p4">Designed the look and feel of the landing website for both mobile and desktop with daylight and night themes.</p>

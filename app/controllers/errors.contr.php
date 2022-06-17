@@ -9,10 +9,10 @@ class Errors extends Controller
         ]);
     }
 
-    public static function not_found()
+    public function not_found()
     {
-        $controller = new Controller;
-        $controller->view('404/index', [
+        // $controller = new Controller;
+        $this->view('404/index', [
 
         ]);
     }

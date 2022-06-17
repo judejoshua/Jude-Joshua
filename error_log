@@ -1,6 +1,0 @@
-[10-Jun-2022 09:08:13 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, null given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 11
-[10-Jun-2022 09:08:13 Africa/Lagos] PHP Warning:  array_splice() expects parameter 1 to be array, null given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 51
-[10-Jun-2022 09:08:13 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 53
-[10-Jun-2022 09:08:38 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, null given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 11
-[10-Jun-2022 09:08:38 Africa/Lagos] PHP Warning:  array_splice() expects parameter 1 to be array, null given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 51
-[10-Jun-2022 09:08:38 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 53

@@ -45,16 +45,16 @@
 
 		$general_project_data = array_slice($_POST, 1, 8);
 
-		foreach ($general_project_data as $key => $value)
-		{
-			if($value ==  '')
-			{
-				echo "error=".$key."=You need to enter an input for ".ucwords(str_replace("_", " ", $key));
-				exit();
-			}else{
-			    $general_project_data[$key] =  nl2br($value);
-			}
-		}
+// 		foreach ($general_project_data as $key => $value)
+// 		{
+// 			if($value ==  '')
+// 			{
+// 				echo "error=".$key."=You need to enter an input for ".ucwords(str_replace("_", " ", $key));
+// 				exit();
+// 			}else{
+// 			    $general_project_data[$key] =  nl2br($value);
+// 			}
+// 		}
 		
 		unset($general_project_data['project_duration']);
 

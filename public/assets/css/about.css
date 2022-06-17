@@ -236,6 +236,7 @@
 #xp .text-divider {
     align-items: center;
     text-align: center;
+    width: 61%;
 }
 
 .xp-vector {

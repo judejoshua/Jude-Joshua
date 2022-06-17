@@ -129,7 +129,7 @@ h6,
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2;
+    line-height: 2.2;
 }
 
 .p5 {
@@ -181,4 +181,12 @@ p a::after {
 
 #quote {
     font-style: italic;
+    margin: 40px 0;
+    display: block;
+    font-size: 26px;
+    width: 100%;
+    line-height: 1.5;
+    color: var(--placeholders);
+    border-left: 4px solid;
+    padding-left: 12px;
 }

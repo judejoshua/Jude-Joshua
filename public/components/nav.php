@@ -11,16 +11,16 @@
                 <a href="/">Home</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'about' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About Me</a>
+                <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'portfolio' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Past Work</a>
+                <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
                 <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">Résumé</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact Me</a>
+                <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
             </li>
         </ul>
     </div>
@@ -39,16 +39,16 @@
             <a href="/">Home</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'about' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About Me</a>
+            <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'portfolio' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Past Work</a>
+            <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
             <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">Résumé</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact Me</a>
+            <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
         </li>
     </ul>
 </div>

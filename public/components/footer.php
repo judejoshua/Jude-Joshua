@@ -46,6 +46,7 @@
 <footer>
     <div class="footer-top">
         <div class="contact-links">
+            <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank" class="Dribbble">Medium</a>
             <a rel="nofollow" href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
             <a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a>
             <a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>

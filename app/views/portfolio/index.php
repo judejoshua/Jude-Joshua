@@ -17,8 +17,8 @@
                 <div class="tags-row">
                     <span class="h5">Filter by:</span>
                     <div>
-                        <span class="p5 secondary" id="tag-single" data-show="UI/UX">Design Case Studies</span>
-                        <span class="p5 secondary" id="tag-single" data-show="Web design">Web Development Projects</span>
+                        <span class="p5 secondary" id="tag-single" data-show="UI/UX">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="Web development">Web Development Projects <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
                     </diV>
                 </div>
             </header>
@@ -28,7 +28,8 @@
                         <div class="projects-holder">
                             <div class="row">
                                 <?php
-                                    foreach ($data['projectList'] as $key => $project) {
+                                    foreach ($data['projectList'] as $key => $project)
+                                    {
                                         $project_data = json_decode($project['project_data'], true);
 
                                         echo '
@@ -38,13 +39,14 @@
                                                     <div class="caption">
                                                         <div class="caption-text">
                                                             <h4>'.$project_data['project_title'].'</h4>
-                                                            <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
+                                                            <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                         </div>
                                                         <i class="las la-arrow-right"></i>
                                                     </div>
                                                 </div>
                                             </a>
                                         ';
+                                        
                                     }
                                 ?>
                             </div>
@@ -94,7 +96,7 @@
                 
                 project_data_array = JSON.parse(project.project_data);
                 
-                $(".projects-holder .row").append('<a href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h4>'+ project_data_array.project_title +'</h4><span id="tags" class="p5">'+ project_data_array.project_tags +'</span></div><i class="las la-arrow-right"></i></div></div></a>')
+                $(".projects-holder .row").append('<a href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h4>'+ project_data_array.project_title +'</h4><span id="tags" class="p5">'+ project.project_type +'</span></div><i class="las la-arrow-right"></i></div></div></a>')
             });
             
         })
