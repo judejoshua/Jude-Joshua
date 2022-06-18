@@ -1,5 +1,8 @@
 <?php
-    $title = json_decode($data['projectData'][0]['project_data'], true)['project_title'] .' || ';
+    $title = json_decode($data['projectData'][0]['project_data'], true)['project_title'] .' - Jude Joshua || Product designer and Web developer';
+    $description = json_decode($data['projectData'][0]['project_data'], true)['project_description'];
+    $img = $data['projectData'][0]['project_img_directory'].$data['projectData'][0]['project_cover_img'];
+
     include './public/components/header.php';
 ?>
     </head>
@@ -43,7 +46,7 @@
                                     <p class="p5">Scroll down</p>
                                 </div>
                             </div>
-                            <div class="case-study-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(\'https://judejoshua.me'.$projectData['project_img_directory'].$projectData['project_cover_img'].'\');">
+                            <div class="case-study-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(\''.$projectData['project_img_directory'].$projectData['project_cover_img'].'\');">
                             </div>
                         </header>
                         <article id="body ">
@@ -154,7 +157,7 @@
                                                             {
                                                                 echo'
                                                                     <div class="project">
-                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
+                                                                        <img src="'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
                                                                     </div>
                                                                 ';
                                                             }

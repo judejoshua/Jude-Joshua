@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title><?=$title?>Jude Joshua - Product designer, Web developer</title>
+        <title><?=$title?></title>
         
         <!-- Google Tag Manager -->
         <!--<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
@@ -23,7 +23,7 @@
         <meta name="dcterms.rightsHolder" content="Jude Joshua">
         <meta name="dcterms.rights" content="Unless otherwise indicated, this Website is our proprietary property and all source codes, databases, functionalities, softwares, audio, video, text, photographs, graphic content and designs on the Website (collectively, The 'Content') and the trademarks, service marks, and logos contained therein (the 'Marks') are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Nigeria, foreign jurisdictions, and international conventions." />
         <meta name="dcterms.dateCopyrighted" content="2022">
-        <meta content="I am a product designer with experience in web development. I seek to create code-and-user-friendly systems with design in the easiest way possible. Check out my portfolio to see how." name="description">
+        <meta content="<?=$description?>" name="description">
         <meta content="UbyJude Josh, Josh, UbyJude, UbyJudeh, Jude, Joshua, Jude Joshua, Product design, design, ui/ux, ui, ux, ui design, ux design, ui/ux design, user experience, user interface, user-friendly" name="keywords">
         <meta id="browserColor" name="theme-color" content="#000000">
         <!--Windows Phone **-->
@@ -36,6 +36,19 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+
+        <!--og tags -->
+        <meta property="og:url" content="<?= (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="<?=$title?>" />
+        <meta property="og:description" content="<?=$description?>" />
+        <meta property="og:image" content="<?=$img?>" />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:title" content="<?=$title?>" />
+        <meta property="twitter:description" content="<?=$description?>" />
+        <meta property="twitter:url" content="<?= (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" />
+        <meta property="twitter:image" content="<?=$img?>" />
 
         <link rel="stylesheet" href="/public/assets/css/style.css">
         <link rel="stylesheet" href="/public/assets/css/line-awesome.min.css">

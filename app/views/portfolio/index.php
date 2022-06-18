@@ -1,5 +1,8 @@
 <?php
-    $title = 'Past work || ';
+    $title = 'Past work - Jude Joshua || Product designer and Web developer';
+    $description = 'Here are more ideas from different industries and disciplines that I have turned into code-and-user-friendly digital products.';
+    $img = '/public/assets/img/landing-image.webp';
+
     include './public/components/header.php';
 ?>
     </head>

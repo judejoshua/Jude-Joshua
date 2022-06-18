@@ -1,5 +1,8 @@
 <?php
-    $title = 'About || ';
+    $title = 'About Jude Joshua || Product designer and Web developer';
+    $description = 'I have over 7 years experience in web design & development and 3 years experience in product design. I seek to create code-and-user-friendly systems with design in the easiest way possible.';
+    $img = '/public/assets/img/landing-image.webp';
+
     include './public/components/header.php';
 ?>
     </head>
@@ -11,8 +14,7 @@
                     <h1>About Me</h1>
                     <div id="liner"></div>
                     <p class="p4">
-                        I am a product designer and also a website developer. In the past three years, I have been working with the team at First Medtrade Africa, Nigeria, to build an improved medical lifestyle for easy and accessible healthcare to Nigerians.
-                        <br/><br/>
+                        In the past three years, I have been working with the team at First Medtrade Africa, Nigeria, to build an improved medical lifestyle for easy and accessible healthcare to Nigerians.
                         I began my tech journey in 2013 when I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and Javascript. And after this, I picked up little web development tests and tried replicating some designs I found on the web to hone my skills. In 2017, I got an internship as a web developer intern in Akwa Ibom state's ministry. Because I was quick to learn and understand most of their existing systems, I was able to help the team in planning and carrying out a training program for tech newbies.
                         <br/>
                         I have a vast experience in web design/development and product design technologies. With my expertise, I have worked hand-in-hand with business owners, startups, and individuals to bring their ideas to life with a stress-free experience for their users.

@@ -1,5 +1,8 @@
 <?php
-    $title = 'Résumé || ';
+    $title = 'Résumé - Jude Joshua || Product designer and Web developer';
+    $description = 'I have over 7 years experience in web design & development and 3 years experience in product design. I seek to create code-and-user-friendly systems with design in the easiest way possible.';
+    $img = '/public/assets/img/landing-image.webp';
+
     include './public/components/header.php';
 ?>
     </head>
