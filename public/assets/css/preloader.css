@@ -68,13 +68,13 @@
 }
 
 .loader-circles div {
-    border: 4px solid var(--placeholders);
+    border: 3px solid var(--placeholders);
     width: 100%;
     height: 100%;
     position: absolute;
     background: none;
     border-radius: 50%;
-    border-top: 5px solid transparent;
+    border-top: 3px solid transparent;
     -moz-animation: rotatecircle 4s infinite linear;
     -webkit-animation: rotatecircle 4s infinite linear;
     animation: rotatecircle 4s infinite linear;
@@ -85,9 +85,9 @@
     height: 75%;
     left: calc(25%/2);
     top: calc(25%/2);
-    border-left: 4px solid transparent;
-    border-right: 4px solid var(--placeholders);
-    border-top: 4px solid var(--placeholders);
+    border-left: 3px solid transparent;
+    border-right: 3px solid var(--placeholders);
+    border-top: 3px solid var(--placeholders);
     animation-direction: reverse;
 }
 
@@ -96,9 +96,9 @@
     height: 50%;
     left: calc(50%/2);
     top: calc(50%/2);
-    border-bottom: 4px solid transparent;
-    border-right: 4px solid var(--placeholders);
-    border-top: 4px solid var(--placeholders);
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid var(--placeholders);
+    border-top: 3px solid var(--placeholders);
 }
 
 .recha.preloader .h1 {

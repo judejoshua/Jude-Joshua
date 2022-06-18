@@ -17,7 +17,6 @@
         padding-left: 64px;
         padding-right: 64px;
     }
-
     body#case-study-body .landing {
         padding-right: 0;
         padding-left: 0;
@@ -222,6 +221,7 @@
     #xp .text-divider {
         text-align: left;
         align-items: flex-start;
+        width: 100%;
     }
     .design-style .text-divider {
         margin-right: 32px;
@@ -234,6 +234,9 @@
         width: 100%;
         gap: 4px;
     }
+    .title-text .section {
+        gap: 16px;
+    }
     .case-studies-body {
         gap: 32px;
     }
@@ -245,12 +248,11 @@
         gap: 24px;
         flex-direction: column;
     }
-
-.flexer {
-    width: 100%;
-    flex: 100%;
-    gap: 24px;
-}
+    .flexer {
+        width: 100%;
+        flex: 100%;
+        gap: 24px;
+    }
     .project {
         width: 100%;
     }
@@ -451,7 +453,7 @@
         height: 350px;
     }
     .pop-up {
-        right: -80%;
+        right: -86%;
     }
     .pop-up p {
         width: 196px;
@@ -471,9 +473,9 @@
     }
     .title-contact {
         text-align: left;
+        column-gap: 11px;
     }
     .resume-body {
-        flex-direction: column;
         gap: 36px;
     }
     .left-text-divider,
@@ -482,7 +484,19 @@
         row-gap: 36px;
     }
     .btn.lng.ln {
-        width: 228px;
+        width: 198px;
+        height: 72px;
+    }
+    .btn.lng.ln .btn_cont {
+        top: 29px;
+        left: 16px;
+    }
+    .btn.lng.ln .btn_cont #text {
+        font-size: 12px;
+    }
+    .btn.lng.ln .btn_bg {
+        height: 72px;
+        width: 72px;
     }
     a.download i {
         font-size: 20px;
@@ -557,7 +571,7 @@
         width: 100%;
     }
     #CV .btn.mdn {
-        width: 264px;
+        width: 196px;
         height: 80px;
     }
     #xp {
@@ -653,7 +667,18 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:560px) {
+    .preloader .h1 {
+        font-size: 16px;
+        letter-spacing: 0.5em;
+    }
+    .loader-circles {
+        width: 32px;
+        height: 32px;
+    }
+    .loader-circles div {
+        border-width: 2px !important;
+    }
     .design-styles .row {
         padding: 0 32px;
     }

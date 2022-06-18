@@ -5,7 +5,6 @@ body#resume .landing {
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 120px;
-    /* height: 428px; */
     animation: shake-background 30s linear infinite;
 }
 
@@ -89,12 +88,37 @@ body#resume navigation.fixed .mobile-nav-opener div {
 
 .title-contact {
     text-align: left;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap
+}
+
+.title-contact p {
+    font-size: 13px;
+    color: var(--background-circles);
+    font-weight: 500;
+}
+
+.title-contact p a {
+    color: var(--background-circles);
+}
+
+.title-contact p a::after {
+    display: none;
 }
 
 .resume-body {
     display: flex;
     gap: 64px;
+    flex-direction: column-reverse;
 }
+
+
+/* .resume-body-row {
+    display: flex;
+    justify-content: space-between;
+} */
 
 .divisor {
     height: 1px;
@@ -107,7 +131,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
     display: flex;
     flex-direction: column;
     row-gap: 64px;
-    width: 50%;
+    width: 100%;
 }
 
 .left-text-divider .title-text,
@@ -116,7 +140,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
 }
 
 .right-text-divider {
-    width: 50%;
+    width: 100%;
 }
 
 .section {

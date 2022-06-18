@@ -202,7 +202,7 @@
                     <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text" class="h1"><span>View</span> my Résumé</p>
+                            <p id="text" class="h1"><span>View</span> my CV</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </a>

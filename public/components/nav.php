@@ -17,7 +17,7 @@
                 <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">Résumé</a>
+                <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">CV</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
                 <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
@@ -45,7 +45,7 @@
             <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">Résumé</a>
+            <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">CV</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
             <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>

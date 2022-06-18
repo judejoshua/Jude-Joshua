@@ -49,7 +49,7 @@
                             <!--<h2>Design Systems that I have built</h2>-->
                             <div id="liner"></div>
                             <p class="p4">
-                                I have worked on ideas from different industries and disciplines and everytime, I always combine my technical and creative expertise to help my clients explore and get the best value of technology in their business. I work to ensure that your project scope is delivered in such a way that the idea of the product is conveyed to the user and they can understand it at once, at the pace that you need.<br/><br/>
+                                I have worked on digital product ideas spanning diverse industries and every time, I always combine my technical and creative expertise to help my clients explore and get the best value of technology in their business. I work to ensure that your project scope is delivered in such a way that the idea of the product is conveyed to the user and they can understand it at once, at the pace that you need.<br/><br/>
                                 Shown below are a few samples.
                             </p>
                         </div>
@@ -63,7 +63,7 @@
                                     {
                                         $count++;
                                         $columns[$key % $columnLimit][] = $project;
-                                        if($count > 3){
+                                        if($count > 4){
                                             break;
                                         }
                                     }
@@ -116,7 +116,7 @@
                             <h2>My Design Process</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                Creating user-friendly systems doesn't just happen. It calls for some skills applied through different processes. When I work on projects (on the web or mobile), I prefer to break them down into smaller processes which I will work on first. After that, I put them back together to achieve a harmonious solution.<br/>
+                                When I work on digital projects (either web or mobile), I break them down my work process into smaller bits. This allows me to achieve solutions to complex ideas easily and faster. After following these processes diligently, I put them back together and the final outcome is usually a harmonious solution.<br/>
                                 Here's what I mean;
                             </p>
                         </div>
@@ -218,7 +218,7 @@
                     <a class="btn mdn" href="/cv">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>View</span> my Résumé</p>
+                            <p id="text"><span>View</span> my CV</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </a>

@@ -1,5 +1,5 @@
 <?php
-    $title = 'Résumé - Jude Joshua || Product designer and Web developer';
+    $title = 'CV - Jude Joshua || Product designer and Web developer';
     $description = 'I have over 7 years experience in web design & development and 3 years experience in product design. I seek to create code-and-user-friendly systems with design in the easiest way possible.';
     $img = '/public/assets/img/landing-image.webp';
 
@@ -20,23 +20,19 @@
                     <div class="title">
                         <div class="title-text">
                             <h2>Jude Joshua</h2>
-                            <p class="p4">Digital Product Designer/Developer</p>
+                            <p class="p4">Product Designer/Developer</p>
                         </div>
-                        <div class="title-contact">
-                            <p class="p4">hello@judejoshua.me</p>
-                            <p class="p4">+234-904-113-4407</p>
-                            <p class="p4">www.judejoshua.me</p>
-                            <p class="p4">linkedin.com/in/judejoshua</p>
-                        </div>
+                    </div>
+                    <div class="divisor"></div>
+                    <div class="title-contact title-text full-width">
+                        <p class="p4"><a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a></p>
+                        <p class="p4"><a href="tel:+234-904-113-4407">+234-904-113-4407</a></p>
+                        <p class="p4"><a href="https://www.judejoshua.me">https://www.judejoshua.me</a></p>
+                        <p class="p4"><a href="https://linkedin.com/in/judejoshua">https://linkedin.com/in/judejoshua</a></p>
                     </div>
                     <div class="divisor"></div>
                     <div class="resume-body">
                         <div class="left-text-divider">
-                            <div class="summary title-text">
-                                <h3>Summary</h3>
-                                <div id="liner"></div>
-                                <p class="p4">I am a detailed and innovative Product Designer with three years of experience in UI/UX Design and seven years of experience in Web design and development. I leverage my expertise in user research, system design and UX writing to design seamless interactions between the online platforms and end-users.<br/>I am a highly self-motivated design aesthetics expert with tremendous time management techniques to deliver on tight deadlines.<br/>I possess excellent interpersonal skills, am a strong team builder and am a natural leader.</p>
-                            </div>
                             <div class="education title-text">
                                 <h3>Education</h3>
                                 <div id="liner"></div>
@@ -53,6 +49,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="divisor"></div>
                             <div class="tools title-text">
                                 <h3>Tools</h3>
                                 <div id="liner"></div>
@@ -61,31 +58,26 @@
                                         <p class="p4">Figma</p>
                                     </li>
                                     <li>
-                                        <p class="p4">Adobe XD</p>
-                                    </li>
-                                    <li>
                                         <p class="p4">Zeplin</p>
                                     </li>
                                     <li>
                                         <p class="p4">Framer</p>
                                     </li>
                                     <li>
-                                        <p class="p4">Invision</p>
+                                        <p class="p4">Trello</p>
                                     </li>
                                     <li>
-                                        <p class="p4">Adobe After Effects</p>
+                                        <p class="p4">Slack</p>
                                     </li>
                                     <li>
                                         <p class="p4">CorelDraw</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">WordPress</p>
                                     </li>
                                     <li>
                                         <p class="p4">Adobe Illustrator</p>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="divisor"></div>
                             <div class="skills title-text">
                                 <h3>Soft skills</h3>
                                 <div id="liner"></div>
@@ -169,9 +161,6 @@
                                         <p class="p4">User Experience Design</p>
                                     </li>
                                     <li>
-                                        <p class="p4">Branding</p>
-                                    </li>
-                                    <li>
                                         <p class="p4">HTML5/CSS3</p>
                                     </li>
                                     <li>
@@ -189,7 +178,13 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="divisor"></div>
                         <div class="right-text-divider">
+                            <div class="summary title-text">
+                                <h3>Summary</h3>
+                                <div id="liner"></div>
+                                <p class="p4">I am a detailed and innovative Product Designer with three years of experience in UI/UX Design and seven years of experience in Web design and development. I leverage my expertise in user research, system design and UX writing to design seamless interactions between the online platforms and end-users.<br/>I am a highly self-motivated design aesthetics expert with tremendous time management techniques to deliver on tight deadlines.<br/>I possess excellent interpersonal skills, am a strong team builder and am a natural leader.</p>
+                            </div>
                             <div class="experience title-text">
                                 <h3>Work Experience</h3>
                                 <div id="liner"></div>
