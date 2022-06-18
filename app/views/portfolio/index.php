@@ -18,7 +18,7 @@
                     <span class="h5">Filter by:</span>
                     <div>
                         <span class="p5 secondary" id="tag-single" data-show="UI/UX">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="Web development">Web Development Projects <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
                     </diV>
                 </div>
             </header>
@@ -28,26 +28,43 @@
                         <div class="projects-holder">
                             <div class="row">
                                 <?php
+                                    $columnLimit = 3;
+                                    $columns = array_fill(0, $columnLimit, []);
                                     foreach ($data['projectList'] as $key => $project)
                                     {
-                                        $project_data = json_decode($project['project_data'], true);
-
+                                        $columns[$key % $columnLimit][] = $project;
+                                    };
+                                    
+                                    foreach ($columns as $column)
+                                    {
                                         echo '
-                                            <a href="/portfolio/case_study/'.$project['unique_id'].'">
-                                                <div class="project">
-                                                    <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
-                                                    <div class="caption">
-                                                        <div class="caption-text">
-                                                            <h4>'.$project_data['project_title'].'</h4>
-                                                            <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                            <div class="flexer">';
+                                            
+                                            foreach ($column as $project)
+                                            {
+                                                $project_data = json_decode($project['project_data'], true);
+                                               
+                                                echo '
+                                                    <a href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                        <div class="project">
+                                                            <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
+                                                            <div class="caption">
+                                                                <div class="caption-text">
+                                                                    <h4>'.$project_data['project_title'].'</h4>
+                                                                    <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                </div>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </div>
                                                         </div>
-                                                        <i class="las la-arrow-right"></i>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                                    </a>
+                                                ';   
+                                            }
+                                            
+                                            echo '
+                                            </div>
                                         ';
-                                        
                                     }
+                                    
                                 ?>
                             </div>
                         </div>

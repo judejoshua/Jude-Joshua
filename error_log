@@ -1,0 +1,32 @@
+[18-Jun-2022 01:31:22 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:31:22 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:31:22 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:31:22 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:31:22 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:05 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:05 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:05 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:05 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:05 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:47 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:47 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:47 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:47 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:32:47 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 35
+[18-Jun-2022 01:33:13 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 36
+[18-Jun-2022 01:33:13 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 36
+[18-Jun-2022 01:33:13 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 36
+[18-Jun-2022 01:33:13 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 36
+[18-Jun-2022 01:33:13 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 36
+[18-Jun-2022 01:33:31 Africa/Lagos] PHP Notice:  Array to string conversion in /home/judegniz/public_html/app/views/portfolio/index.php on line 37
+[18-Jun-2022 01:34:23 Africa/Lagos] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/judegniz/public_html/app/views/portfolio/index.php on line 41
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 49
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 52
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 49
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 52
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 49
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 52
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 49
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 52
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 49
+[18-Jun-2022 02:05:31 Africa/Lagos] PHP Notice:  Undefined variable: project_data in /home/judegniz/public_html/app/views/portfolio/index.php on line 52

@@ -242,8 +242,15 @@
         margin-bottom: 0;
     }
     .row {
-        gap: 56px;
+        gap: 24px;
+        flex-direction: column;
     }
+
+.flexer {
+    width: 100%;
+    flex: 100%;
+    gap: 24px;
+}
     .project {
         width: 100%;
     }

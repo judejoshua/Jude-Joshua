@@ -50,8 +50,15 @@ body:not(#home-landing) #case-study {
     transition: 0.4s;
     align-items: center;
 }
-.project:hover{
+
+.flexer {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    flex: 29%;
+    gap: 32px;
 }
+
 .project img {
     width: 100%;
     height: auto;
@@ -71,7 +78,7 @@ body:not(#home-landing) #case-study {
     color: var(--neutral);
     transition: 0.6s ease-in-out;
     position: absolute;
-    bottom: -4%;
+    bottom: 4%;
     width: 80%;
     background-color: rgba(0, 0, 0, .6);
     -webkit-backdrop-filter: blur(24px);
@@ -106,9 +113,8 @@ body:not(#home-landing) #case-study {
 .projects-holder a {
     display: block;
     /* overflow: hidden; */
-    width: 47%;
+    width: 100%;
     height: fit-content;
-    flex: 29%;
     flex-grow: 0;
 }
 
@@ -250,12 +256,13 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     color: var(--secondary);
     border: 1px solid;
     cursor: pointer;
-    transition: 0.8s;
+    transition: 0.6s all;
 }
 span#project-counter {
     padding: 2.5px 6px;
     border-radius: 50%;
-    background: var(--placeholders);
+    background: var(--secondary);
+    color: var(--neutral);
     margin-left: 4px;
     top: -1px;
 }
@@ -263,6 +270,9 @@ span#project-counter {
     background-color: var(--background-circles);
     color: var(--neutral);
     border-color: var(--background-circles);
+}
+#tag-single.secondary:hover span#project-counter{
+    background: var(--placeholders)
 }
 .pagination * {
     font-size: 32px;
@@ -322,37 +332,3 @@ span#project-counter {
     height: auto;
 }
 
-/*Grid styles*/
-    
-/*.projects-holder a {*/
-/*    display: block;*/
-/*    overflow: hidden;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.projects-holder a:nth-child(4n + 1) {*/
-/*  grid-column: auto /span 2;*/
-/*  grid-row: auto /span 2;*/
-/*}*/
-
-/*.caption {*/
-/*    background-color: rgba(0, 0, 0, .4);*/
-/*    -webkit-backdrop-filter: blur(32px);*/
-/*    -moz-backdrop-filter: blur(32px);*/
-/*    backdrop-filter: blur(32px);*/
-/*    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);*/
-/*    padding: 24px 20px;*/
-/*    padding-left: 40px;*/
-/*    left: -100%;*/
-/*    display: flex;*/
-/*    gap: 16px;*/
-/*    height: auto;*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    color: var(--accent);*/
-/*    transition: 0.6s ease-in-out;*/
-/*    width: 100%;*/
-/*}*/
-/*.project:hover .caption {*/
-/*    padding-left: 20px;*/
-/*}*/

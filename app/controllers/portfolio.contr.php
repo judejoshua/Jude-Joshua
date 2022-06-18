@@ -19,7 +19,6 @@ class Portfolio extends Controller
             }
         }
         
-        
         $this->view('portfolio/index', [
             
             'projectList' => $projectList,

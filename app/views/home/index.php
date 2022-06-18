@@ -54,28 +54,45 @@
                             <div class="row">
                                 <?php
                                     $count = 0;
-                                    foreach ($data['projectList'] as $key => $project) {
+                                    $columnLimit = 2;
+                                    $columns = array_fill(0, $columnLimit, []);
+                                    foreach ($data['projectList'] as $key => $project)
+                                    {
                                         $count++;
-                                        $project_data = json_decode($project['project_data'], true);
-
-                                        echo '
-                                            <a href="/portfolio/case_study/'.$project['unique_id'].'">
-                                                <div class="project">
-                                                    <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
-                                                    <div class="caption">
-                                                        <div class="caption-text">
-                                                            <h4 class="h4">'.$project_data['project_title'].'</h4>
-                                                            <span id="tags" class="p5">'.$project['project_type'].'</span>
-                                                        </div>
-                                                        <i class="las la-arrow-right"></i>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        ';
-                                        
+                                        $columns[$key % $columnLimit][] = $project;
                                         if($count > 3){
                                             break;
                                         }
+                                    }
+                                    
+                                    foreach ($columns as $column)
+                                    {
+                                        echo '
+                                            <div class="flexer">';
+                                            
+                                            foreach ($column as $project)
+                                            {
+                                                $project_data = json_decode($project['project_data'], true);
+                                               
+                                                echo '
+                                                    <a href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                        <div class="project">
+                                                            <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
+                                                            <div class="caption">
+                                                                <div class="caption-text">
+                                                                    <h4>'.$project_data['project_title'].'</h4>
+                                                                    <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                </div>
+                                                                <i class="las la-arrow-right"></i>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                ';   
+                                            }
+                                            
+                                            echo '
+                                            </div>
+                                        ';
                                     }
                                 ?>
                             </div>
