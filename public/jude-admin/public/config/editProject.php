@@ -8,17 +8,12 @@
 		echo "error=project_type=You need to select a project type!";
 	}else{
 		$projectClass = new Project;
-
-		$project_unique_id = uniqid();
-
+		
+		$project_unique_id = $_POST['project_id'];
+		unset($_POST['project_id']);
+		
 		$root = $_SERVER['DOCUMENT_ROOT']."/../";
 		$directory = $root.'assets/files/uploads/' . $project_unique_id;
-
-		if (!is_dir($directory)) {
-			mkdir($directory, 0755, true);
-		}
-
-		$project_img_directory = '/public/assets/files/uploads/' . $project_unique_id .'/';
 
 		$project_type = $_POST['project_type'];
 
@@ -28,8 +23,8 @@
 
 		if(empty($project_cover_img))
 		{
-			echo "error=project_cover_img=Select a cover image for your project";
-			exit();
+			$project_cover_img = $_POST['project_cover_img_old'];
+			unset($_POST['project_cover_img_old']);
 		}else{
 	        $tmp = $_FILES['project_cover_img']['tmp_name'];
 
@@ -44,17 +39,6 @@
 		}
 
 		$general_project_data = array_slice($_POST, 1, 8);
-
-// 		foreach ($general_project_data as $key => $value)
-// 		{
-// 			if($value ==  '')
-// 			{
-// 				echo "error=".$key."=You need to enter an input for ".ucwords(str_replace("_", " ", $key));
-// 				exit();
-// 			}else{
-// 			    $general_project_data[$key] =  nl2br($value);
-// 			}
-// 		}
 
 		switch ($project_type)
 		{
@@ -188,7 +172,7 @@
 
 		$project_data = json_encode($general_project_data, true);
 
-		$addProject = $projectClass->addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration);
+		$addProject = $projectClass->updateProjectData($project_unique_id, $project_type, $project_cover_img, $project_data, $project_duration);
 		echo $addProject == true ? 'success' : $addProject;
 
 	}
@@ -208,13 +192,15 @@
 						{
 							$img_array = array_filter($img_array);
 
-							if($inside_key == 'hiFI_img' && empty($img_array))
+							if(empty($img_array))
 							{
-								echo "error=".$inside_key."= Select atleast one ".ucwords(str_replace("_", " ", $inside_key))." image for your project";
+								$array[$key][$inside_key][$inside_img_array] = $_POST[$inside_key.'_old'];
+								unset($array[$inside_key.'_old']);
+								unset($_POST[$inside_key.'_old']);
 							}else{
-								
+
 								$name = $_FILES[$inside_key]['name'][$inside_img_array];
-			                	$tmp = $_FILES[$inside_key]['tmp_name'][$inside_img_array];
+								$tmp = $_FILES[$inside_key]['tmp_name'][$inside_img_array];
 
 								if($name !== '')
 								{
@@ -230,7 +216,6 @@
 								}
 
 								$array[$key][$inside_key][$inside_img_array] = $new_img_name;
-
 							}
 						}
 						$array[$key][$inside_key] = array_filter($array[$key][$inside_key]);

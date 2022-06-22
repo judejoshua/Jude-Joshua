@@ -35,6 +35,19 @@ class Portfolio extends Controller
         ]);
     }
 
+    public function edit($project_unique_id)
+    {
+        $projectClass = new Project;
+
+        $projectData = $projectClass->getProjectData($project_unique_id);
+
+        $this->view('portfolio/edit/index', [
+            
+            'projectData' => $projectData
+
+        ]);
+    }
+
 
     
 }

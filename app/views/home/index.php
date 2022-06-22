@@ -57,13 +57,13 @@
                             <div class="row">
                                 <?php
                                     $count = 0;
-                                    $columnLimit = 2;
+                                    $columnLimit = 3;
                                     $columns = array_fill(0, $columnLimit, []);
                                     foreach ($data['projectList'] as $key => $project)
                                     {
                                         $count++;
                                         $columns[$key % $columnLimit][] = $project;
-                                        if($count > 4){
+                                        if($count > 6){
                                             break;
                                         }
                                     }

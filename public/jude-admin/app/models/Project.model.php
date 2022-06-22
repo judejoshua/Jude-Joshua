@@ -49,4 +49,26 @@ class Project extends Db
         }
     }
 
+    public function updateProjectData($project_unique_id, $project_type, $project_cover_img, $project_data, $project_duration)
+    {
+        try {
+            $query = "UPDATE `projects` SET `project_type` = :project_type, 
+                                            `project_cover_img` = :project_cover_img,
+                                            `project_data`= :project_data, 
+                                            `project_duration` = :project_duration
+                                        WHERE `unique_id` = :project_unique_id";
+            $stmt = $this->connect()->prepare($query);
+            $stmt->execute([
+                ':project_type' => $project_type,
+            	':project_cover_img' => $project_cover_img,
+            	':project_data' => $project_data,
+            	':project_duration' => $project_duration,
+            	':project_unique_id' => $project_unique_id
+            ]);
+            return true;
+        } catch(PDOException $e){
+            return "error=Failed! <br>" . $e->getMessage();
+        }
+    }
+
 }

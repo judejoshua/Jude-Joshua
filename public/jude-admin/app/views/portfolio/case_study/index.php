@@ -24,13 +24,10 @@
                                         <p class="p4">'.$project_data['project_description'].'</p>
                                         <p class="p4">Project Duration: '.$projectData['project_duration'].'</p>
                                     </div>
-                                    <div class="tags-row">';
-                                        $tags = explode(', ', $project_data['project_tags']);
-                                        
-                                        foreach ($tags as $single_tag) {
-                                            echo '<span class="p5 " id="tag-single">'.$single_tag.'</span>';
-                                        }
-                                    echo'
+                                    <div class="tags-row">
+                                        <div>
+                                            <a href="/portfolio/edit/'.$projectData['unique_id'].'" class="p5 secondary" id="tag-single" data-show="ui/ux">Edit this project</a>
+                                        </diV>
                                     </div>
                                 </div>
                                 <div class="scroll-down-indicator">
@@ -43,7 +40,7 @@
                                     <p class="p5">Scroll down</p>
                                 </div>
                             </div>
-                            <div class="case-study-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(\'http://jd.test'.$projectData['project_img_directory'].$projectData['project_cover_img'].'\');">
+                            <div class="case-study-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url(\'https://judejoshua.me'.$projectData['project_img_directory'].$projectData['project_cover_img'].'\');">
                             </div>
                         </header>
                         <article id="body ">
@@ -93,7 +90,7 @@
                                         <div class="text-divider">';
                                             if($key == 'Website')
                                             {
-                                                echo '<h2>Project Links</h2>';
+                                                echo '<h2>Details</h2>';
                                             }else{
                                                 echo '<h2>'.$key.'</h2>';
                                             }
@@ -154,7 +151,7 @@
                                                             {
                                                                 echo'
                                                                     <div class="project">
-                                                                        <img src="http://jd.test'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
+                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
                                                                     </div>
                                                                 ';
                                                             }
@@ -164,13 +161,21 @@
                                                 </div>
                                             ';
                                         }else{
-                                            echo'
-                                                <div class="text-divider sub-title">
-                                                    <h3>'.$sub_title.'</h3>
-                                                    <p class="p4"><a class="case-study-link" href="'.$contents.'" target="_blank">'.$contents.'</a></p>';
+                                            if($sub_title == 'prototype')
+                                            {
+                                                echo '
+                                                    <div class="text-divider sub-title">
+                                                        '.$contents.'
+                                                    </div>
+                                                ';
+                                            }else{
                                                 echo'
-                                                </div>
-                                            ';
+                                                    <div class="text-divider sub-title">
+                                                        <h3>'.$sub_title.'</h3>
+                                                        <p class="p4"><a class="case-study-link" href="'.$contents.'" target="_blank">'.$contents.'</a></p>
+                                                    </div>
+                                                ';
+                                            }
                                         }
                                     }
                                 }
@@ -184,7 +189,7 @@
                             </div>
                         </article>
                     </div>
-                ';                
+                ';
             }
             include './public/components/footer.php';
         ?>

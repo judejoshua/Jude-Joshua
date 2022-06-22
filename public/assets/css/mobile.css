@@ -233,6 +233,7 @@
     .title-text {
         width: 100%;
         gap: 4px;
+        word-break: break-word;
     }
     .title-text .section {
         gap: 16px;

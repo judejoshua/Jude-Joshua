@@ -21,7 +21,7 @@
                     <span class="h5">Filter by:</span>
                     <div>
                         <span class="p5 secondary" id="tag-single" data-show="UI/UX">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="Web design, Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
                     </diV>
                 </div>
             </header>
@@ -112,12 +112,51 @@
             
             $(".projects-holder .row").empty();
             
-             jQuery.each(showArray, function(index, project) {
+            //shuffle showArray
+            function shuffle(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    let j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+            shuffle(showArray);
+
+
+            jQuery.each(showArray, function(index, project) {
                 
                 project_data_array = JSON.parse(project.project_data);
                 
                 $(".projects-holder .row").append('<a href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h4>'+ project_data_array.project_title +'</h4><span id="tags" class="p5">'+ project.project_type +'</span></div><i class="las la-arrow-right"></i></div></div></a>')
             });
+
+
+            const outerHTML = elem => elem.outerHTML
+
+            const sortIntoColumns = (numCols) =>
+            (columns, value, i) => {
+                const index = i % numCols
+
+                columns[index] = Array.isArray(columns[index])
+                ? [...columns[index], value]
+                : [value]
+
+                return columns
+            }
+
+            const concatHTML = (html, column) =>
+            `${html}<div class='flexer'>\n${column.join('\n')}\n</div>\n`
+
+
+            const toColumns = (elems, numCols = 1) =>
+            Array.from(elems)
+                .map(outerHTML)
+                .reduce(sortIntoColumns(numCols), [])
+                .reduce(concatHTML, '')
+
+            const posts = document.querySelectorAll('.projects-holder .row a')
+            
+            const motherbox = document.querySelector(".projects-holder .row");
+            motherbox.innerHTML = toColumns(posts, 3);
             
         })
     </script>

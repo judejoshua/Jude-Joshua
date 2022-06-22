@@ -95,7 +95,7 @@
                                         <div class="text-divider">';
                                             if($key == 'Website')
                                             {
-                                                echo '<h2>Project Links</h2>';
+                                                echo '<h2>Details</h2>';
                                             }else{
                                                 echo '<h2>'.$key.'</h2>';
                                             }
@@ -167,13 +167,21 @@
                                                 </div>
                                             ';
                                         }else{
-                                            echo'
-                                                <div class="text-divider sub-title">
-                                                    <h3>'.$sub_title.'</h3>
-                                                    <p class="p4"><a class="case-study-link" href="'.$contents.'" target="_blank">'.$contents.'</a></p>';
+                                            if($sub_title == 'prototype')
+                                            {
+                                                echo '
+                                                    <div class="text-divider sub-title">
+                                                        '.$contents.'
+                                                    </div>
+                                                ';
+                                            }else{
                                                 echo'
-                                                </div>
-                                            ';
+                                                    <div class="text-divider sub-title">
+                                                        <h3>'.$sub_title.'</h3>
+                                                        <p class="p4"><a class="case-study-link" href="'.$contents.'" target="_blank">'.$contents.'</a></p>
+                                                    </div>
+                                                ';
+                                            }
                                         }
                                     }
                                 }

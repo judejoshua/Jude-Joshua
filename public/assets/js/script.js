@@ -27,6 +27,9 @@ $(document).ready(function() {
         }
         return false;
     });
+    $('a[href]:not([href^="#"], [href^="/#"])').click(function() {
+        $(".preloader").fadeIn("fast");
+    });
     $('.mobile-nav-opener').click(function() {
         $('.mobile-nav').addClass('in');
         $('.mobile-nav-opener.close').addClass('out');
@@ -45,7 +48,7 @@ $(document).ready(function() {
     //=================================================================================================
     //                           C O N T E X T  M E N U
     //=================================================================================================
-    
+
     document.onclick = hideMenu;
     document.oncontextmenu = rightClick;
 
@@ -57,9 +60,9 @@ $(document).ready(function() {
         e.preventDefault();
 
         if ($(e.target).is('a, a *')) { //if current right click target is a link or link children
-            if($(e.target).is('a')){
+            if ($(e.target).is('a')) {
                 var link = $(e.target).attr('href');
-            }else{
+            } else {
                 var link = $(e.target).closest('a').attr('href');
             }
             if ($("#contextMenu #new_tab").length) {
@@ -70,8 +73,8 @@ $(document).ready(function() {
             $("#contextMenu #new_tab").remove()
         }
         var menu = $("#contextMenu");
-        menu.css({"display": "table"});
-        
+        menu.css({ "display": "table" });
+
         if (!(screen.width <= 820)) {
             if (e.pageX >= ($(window).width() - $('#contextMenu').width() - $('#contextMenu').width())) {
                 menu.css("left", (e.pageX - ($('#contextMenu').width()) - 30) + "px");
@@ -87,9 +90,9 @@ $(document).ready(function() {
             } else {
                 menu.css("top", e.pageY + "px");
             }
-        }else{
+        } else {
             menu.css("left", ($(window).width() * 0.4 - 100) + "px");
-            $('.context-menu ul li #inner-down').css({"left":"0", "top": "100%"});
+            $('.context-menu ul li #inner-down').css({ "left": "0", "top": "100%" });
             menu.css("top", ($(window).height() * 0.4) + "px");
         }
     }
@@ -103,7 +106,7 @@ $(document).ready(function() {
             hideMenu();
         }
     });
-    
+
 
     //=================================================================================================
     //                           S E N D  E M A I L  F U N C T I O N
@@ -238,18 +241,18 @@ $(document).ready(function() {
     //                    I M A G E  M O D A L  F O R  C A S E  S T U D Y
     //=================================================================================================
     if (window.location.href.indexOf("case_study") > -1) {
-        
+
         zoomLevel = 1;
         if (!(screen.width <= 800)) {
             img_width = $('.img-holder').width();
             img_height = $('.modal img').height();
-        } else{
+        } else {
             img_height = $('.img-holder').width();
             img_width = $('.modal img').height();
         }
 
         $('.row img').each(function() {
-            $(this).click(function(){
+            $(this).click(function() {
                 var img = $(this).attr('src');
                 $('#larger').attr('src', img);
 
@@ -261,7 +264,7 @@ $(document).ready(function() {
             });
         })
 
-        $('span#close').click(function(){
+        $('span#close').click(function() {
             var img = $(this).attr('src');
             $('#larger').attr('src', img);
 
@@ -270,38 +273,38 @@ $(document).ready(function() {
             $('.modal').addClass('hideout');
             $('span#close').removeClass('fixed');
             $('.zooms').removeClass('fixed');
-            
+
             $('.modal img').css({
                 "width": img_width,
                 "height": img_height,
             });
         });
-        
-        $('#zoom-out').click(function(){
-            if(zoomLevel > 1 ){
+
+        $('#zoom-out').click(function() {
+            if (zoomLevel > 1) {
                 updateZoom(-1);
-            }else{
+            } else {
                 $('.modal img').addClass('zoom-in');
             }
         })
-        
-        $('#zoom-in').click(function(){
-            if(zoomLevel < 4 ){
+
+        $('#zoom-in').click(function() {
+            if (zoomLevel < 4) {
                 updateZoom(1);
-            }else{
+            } else {
                 $('.modal img').removeClass('zoom-in');
             }
         })
-        
+
         var updateZoom = function(zoom) {
-           zoomLevel += zoom;
-           width = zoomLevel * img_width;
-           height = zoomLevel * img_height;
-           $('.modal img').css({
+            zoomLevel += zoom;
+            width = zoomLevel * img_width;
+            height = zoomLevel * img_height;
+            $('.modal img').css({
                 "width": width,
                 "height": height,
             });
-           return zoomLevel;
+            return zoomLevel;
         }
 
     }

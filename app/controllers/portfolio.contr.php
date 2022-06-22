@@ -12,10 +12,10 @@ class Portfolio extends Controller
         $web = 0;
         foreach ($projectList as $key => $project)
         {
-            if($project['project_type'] == 'Web development'){
-                $web++;
-            }else if($project['project_type'] == 'UI/UX'){
+            if($project['project_type'] == 'UI/UX'){
                 $ui_ux++;
+            }else{
+                $web++;
             }
         }
         

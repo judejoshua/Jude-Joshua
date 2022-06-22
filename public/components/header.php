@@ -44,11 +44,12 @@
         <meta property="og:description" content="<?=$description?>" />
         <meta property="og:image" content="<?=$img?>" />
 
-        <meta property="twitter:card" content="summary" />
-        <meta property="twitter:title" content="<?=$title?>" />
-        <meta property="twitter:description" content="<?=$description?>" />
-        <meta property="twitter:url" content="<?= (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" />
-        <meta property="twitter:image" content="<?=$img?>" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="<?=$title?>" />
+        <meta name="twitter:description" content="<?=$description?>" />
+        <meta name="twitter:url" content="<?= (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>" />
+        <meta name="twitter:image" content="<?=$img?>" />
+        <meta name="twitter:site" content="@_judejoshua">
 
         <link rel="stylesheet" href="/public/assets/css/style.css">
         <link rel="stylesheet" href="/public/assets/css/line-awesome.min.css">

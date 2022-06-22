@@ -1,12 +1,27 @@
-navigation, .wrapper, footer {
+navigation,
+.wrapper,
+footer {
     opacity: 0;
 }
+
+
 /*.wrapper{*/
+
+
 /*    left: -100%;*/
+
+
 /*}*/
+
+
 /*footer{*/
+
+
 /*    right: -100%;*/
+
+
 /*}*/
+
 .btn {
     display: inline-block;
     width: 160px;
@@ -271,7 +286,7 @@ section {
     height: 8px;
 }
 
-.zoom-in{
+.zoom-in {
     cursor: grab;
 }
 
@@ -281,11 +296,10 @@ section {
     object-fit: contain;
 }
 
-.img-holder img.zoom-in{
+.img-holder img.zoom-in {
     top: 0;
     left: 0;
 }
-
 
 span.cuddles {
     background: var(--secondary);
@@ -299,7 +313,8 @@ span.cuddles {
     color: var(--neutral);
 }
 
-span#close, .zooms{
+span#close,
+.zooms {
     z-index: -20000;
     opacity: 0;
     position: fixed;
@@ -307,7 +322,8 @@ span#close, .zooms{
     top: 6%;
 }
 
-span#close.fixed, .zooms.fixed {
+span#close.fixed,
+.zooms.fixed {
     z-index: 20000;
     opacity: 1;
 }
@@ -337,9 +353,15 @@ span#close.fixed, .zooms.fixed {
     width: 100%;
 }
 
-.italic{
+.italic {
     font-style: italic;
 }
-.bold{
+
+.bold {
     font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
 }

@@ -39,7 +39,7 @@
                                         <select id="project_type" name="project_type" class="form-input p4">
                                             <option value="" selected hidden>Choose project type</option>
                                             <option value="UI/UX">UI/UX</option>
-                                            <option value="Web development">Website development</option>
+                                            <option value="Web design, Web development">Website development</option>
                                             <option value="UI/UX, Web development">Both</option>
                                         </select>
                                         <div class="labels">
@@ -117,36 +117,36 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="project_problem_statement" id="to-title" class="h4">Problem Statement*</label>
+                                    <label for="project_problem_statement" id="to-title" class="h4">Problem Statement</label>
                                     <div class="input-group">
                                         <div class="input-field">
                                             <textarea type="text" id="project_problem_statement" name="project_problem_statement" class="form-input p4 form-area" maxlength="2000"></textarea>
                                             <div class="labels">
-                                                <p class="p5 placeholder">What problem were you trying to solve (Required)</p>
+                                                <p class="p5 placeholder">What problem were you trying to solve (Required for UI/UX)</p>
                                                 <p class="p5 error" data-error="project_problem_statement"></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="project_solution" id="to-title" class="h4">Solution*</label>
+                                    <label for="project_solution" id="to-title" class="h4">Solution</label>
                                     <div class="input-group">
                                         <div class="input-field">
                                             <textarea type="text" id="project_solution" name="project_solution" class="form-input p4 form-area" maxlength="1000"></textarea>
                                             <div class="labels">
-                                                <p class="p5 placeholder">What was the solution? (Required)</p>
+                                                <p class="p5 placeholder">What was the solution? (Optional)</p>
                                                 <p class="p5 error" data-error="project_solution"></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="project_recommendation" id="to-title" class="h4">Recommendation*</label>
+                                    <label for="project_recommendation" id="to-title" class="h4">Recommendation</label>
                                     <div class="input-group">
                                         <div class="input-field">
                                             <textarea type="text" id="project_recommendation" name="project_recommendation" class="form-input p4 form-area" maxlength="1000"></textarea>
                                             <div class="labels">
-                                                <p class="p5 placeholder">Any recommendations? (Required)</p>
+                                                <p class="p5 placeholder">Any recommendations? (Required for UI/UX)</p>
                                                 <p class="p5 error" data-error="project_recommendation"></p>
                                             </div>
                                         </div>
@@ -348,9 +348,44 @@
                                         </div>
                                     </div>
                                 </fieldset>
+                                <fieldset id="prototype">
+                                    <legend>Project Prototype</legend>
+                                    <div class="form-group">
+                                        <label for="project_prototype" id="to-title" class="h4">Project Prototype*</label>
+                                        <div class="input-group">
+                                            <div class="input-field">
+                                                <input type="text" id="project_prototype" name="project_prototype" class="form-input p4"/>
+                                                <div class="labels">
+                                                    <p class="p5 placeholder">Enter the prototype of the project (Required)</p>
+                                                    <p class="p5 error" data-error="project_prototype"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </div>
                             <fieldset id="web" class="hidden">
                                 <legend>Project Website</legend>
+                                <div class="form-group">
+                                    <label id="to-title" class="h4">Upload snapshots*</label>
+                                    <div class="labels">
+                                        <p class="p5 placeholder">Upload some snapshots of the web project</p>
+                                        <p class="p5 error" data-error="snap_img"></p>
+                                    </div>
+                                    <div class="img-upload input-group d-flex flex-wrap">
+                                        <div class="d-flex flex-wrap" id="img-container" data-type="snap">
+                                            <div class="input-field" id="snap_img">
+                                                <input type="file" id="snap_img-1" name="snap_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById('snap-imagePreview-1').src = window.URL.createObjectURL(this.files[0])"/>
+                                                <label for="snap_img-1" class="choose-img-label">
+                                                    <div class="project">
+                                                        <img id="snap-imagePreview-1" alt="snap image" />
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <span id="tag-single" class="add-more-images">Add another image</span>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <label for="project_website" id="to-title" class="h4">Project Website*</label>
                                     <div class="input-group">
@@ -365,7 +400,7 @@
                                 </div>
                             </fieldset>
                         </div>
-                        <button class="btn" type="submit">
+                        <button class="btn" type="submit" id="add-project">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>Save</span> project</p>
