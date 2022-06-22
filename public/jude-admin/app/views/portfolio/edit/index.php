@@ -223,7 +223,7 @@
                                                             <p class="p5 error" data-error="research_img"></p>
                                                         </div>
                                                         <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(is_array($project_data['UX Design']['User Research']['research_img'])){
+                                                            if(isset($project_data['UX Design']['User Research']['research_img'])){
                                                                 $x=0;
                                                                 foreach ($project_data['UX Design']['User Research']['research_img'] as $key => $img)
                                                                 {
@@ -242,6 +242,19 @@
                                                                         </div>
                                                                     ';
                                                                 }
+                                                            }else{
+                                                                echo'
+                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="research">
+                                                                        <div class="input-field" id="research_img">
+                                                                            <input type="file" id="research_img-1" name="research_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'research-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
+                                                                            <label for="research_img-1" class="choose-img-label">
+                                                                                <div class="project">
+                                                                                    <img id="research-imagePreview-1" alt="research image" />
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                ';
                                                             }
                                                             echo'
                                                             <span id="tag-single" class="add-more-images">Add another image</span>
@@ -269,7 +282,7 @@
                                                             <p class="p5 error" data-error="personae_img"></p>
                                                         </div>
                                                         <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(is_array($project_data['UX Design']['User Personae']['personae_img'])){
+                                                            if(isset($project_data['UX Design']['User Personae']['personae_img'])){
                                                                 $x=0;
                                                                 foreach ($project_data['UX Design']['User Personae']['personae_img'] as $key => $img)
                                                                 {
@@ -288,6 +301,19 @@
                                                                         </div>
                                                                     ';
                                                                 }
+                                                            }else{
+                                                                echo'
+                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="personae">
+                                                                        <div class="input-field" id="personae_img">
+                                                                            <input type="file" id="personae_img-1" name="personae_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'personae-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
+                                                                            <label for="personae_img-1" class="choose-img-label">
+                                                                                <div class="project">
+                                                                                    <img id="personae-imagePreview-1" alt="personae image" />
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                ';
                                                             }
                                                             echo'
                                                             <span id="tag-single" class="add-more-images">Add another image</span>
@@ -330,7 +356,7 @@
                                                             <p class="p5 error" data-error="wireframes_img"></p>
                                                         </div>
                                                         <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(is_array($project_data['UI Design']['Wireframes and Sketches']['wireframes_img'])){
+                                                            if(isset($project_data['UI Design']['Wireframes and Sketches']['wireframes_img'])){
                                                                 $x=0;
                                                                 foreach ($project_data['UI Design']['Wireframes and Sketches']['wireframes_img'] as $key => $img)
                                                                 {
@@ -349,6 +375,19 @@
                                                                         </div>
                                                                     ';
                                                                 }
+                                                            }else{
+                                                                echo '
+                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="wireframes">
+                                                                        <div class="input-field" id="wireframes_img">
+                                                                            <input type="file" id="wireframes_img-1" name="wireframes_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'wireframes-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
+                                                                            <label for="wireframes_img-1" class="choose-img-label">
+                                                                                <div class="project">
+                                                                                    <img id="wireframes-imagePreview-1" alt="wireframes image" />
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                ';
                                                             }
                                                             echo'
                                                             <span id="tag-single" class="add-more-images">Add another image</span>
@@ -376,7 +415,8 @@
                                                             <p class="p5 error" data-error="hiFI_img"></p>
                                                         </div>
                                                         <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(is_array($project_data['UI Design']['High Fidelity Mockup']['hiFI_img'])){
+                                                            if(isset($project_data['UI Design']['High Fidelity Mockup']['hiFI_img']))
+                                                            {
                                                                 $x=0;
                                                                 foreach ($project_data['UI Design']['High Fidelity Mockup']['hiFI_img'] as $key => $img)
                                                                 {
@@ -395,6 +435,19 @@
                                                                         </div>
                                                                     ';
                                                                 }
+                                                            }else{
+                                                                echo '
+                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="hiFI">
+                                                                        <div class="input-field" id="hiFI_img">
+                                                                            <input type="file" id="hiFI_img-1" name="hiFI_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'hiFI-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
+                                                                            <label for="hiFI_img-1" class="choose-img-label">
+                                                                                <div class="project">
+                                                                                    <img id="hiFI-imagePreview-1" alt="hiFI image" />
+                                                                                </div>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                ';
                                                             }
                                                             echo'
                                                             <span id="tag-single" class="add-more-images">Add another image</span>
@@ -408,7 +461,7 @@
                                                 <label for="project_prototype" id="to-title" class="h4">Project Prototype*</label>
                                                 <div class="input-group">
                                                     <div class="input-field">
-                                                        <input type="url" id="project_prototype" value="'; echo isset($project_data['Prototype']['project prototype']) ? $project_data['Prototype']['project prototype'] : ''; echo'" name="project_prototype" class="form-input p4"/>
+                                                        <input type="url" id="project_prototype" value="'; echo isset($project_data['Prototype']['prototype']) ? $project_data['Prototype']['prototype'] : ''; echo'" name="project_prototype" class="form-input p4"/>
                                                         <div class="labels">
                                                             <p class="p5 placeholder">Enter the prototype of the project (Required)</p>
                                                             <p class="p5 error" data-error="project_prototype"></p>
@@ -427,7 +480,8 @@
                                                     <p class="p5 error" data-error="snap_img"></p>
                                                 </div>
                                                 <div class="img-upload input-group d-flex flex-wrap">';
-                                                    if(is_array($project_data['Website']['snap_img'])){
+                                                    if(isset($project_data['Website']['snap_img']))
+                                                    {
                                                         $x=0;
                                                         foreach ($project_data['Website']['snap_img'] as $key => $img)
                                                         {
@@ -446,6 +500,19 @@
                                                                 </div>
                                                             ';
                                                         }
+                                                    }else{
+                                                        echo'
+                                                            <div class="d-flex flex-wrap" id="img-container" data-type="snap">
+                                                                <div class="input-field" id="snap_img">
+                                                                    <input type="file" id="snap_img-1" name="snap_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'snap-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
+                                                                    <label for="snap_img-1" class="choose-img-label">
+                                                                        <div class="project">
+                                                                            <img id="snap-imagePreview-1" alt="snap image" />
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        ';
                                                     }
                                                     echo'
                                                     <span id="tag-single" class="add-more-images">Add another image</span>

@@ -3,15 +3,16 @@ RewriteEngine On
 
 RewriteBase /
 
+# There's no need for this forced redirect because Namecheap already has an SSL certificate that I can use
+# RewriteCond %{HTTPS} off 
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.pdf|\.jpg|\.gif|\.woff2|\.woff|\.ttf|\.svg|\.eot|robots\.txt)$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 
-RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
-
-#RewriteCond %{HTTP_HOST} ^www\.judejoshua\.me$
-#RewriteRule ^/?$ "https\:\/\/judejoshua\.me\/" [R=301,L]
+RewriteRule ^(.+)$ index.php?url=$1 [QSA]
 
 RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR] 
 RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR]

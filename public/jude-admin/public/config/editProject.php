@@ -2,7 +2,6 @@
 
 	require_once 'config.php';
 
-
 	if(empty($_POST['project_type']))
 	{
 		echo "error=project_type=You need to select a project type!";
@@ -194,9 +193,14 @@
 
 							if(empty($img_array))
 							{
-								$array[$key][$inside_key][$inside_img_array] = $_POST[$inside_key.'_old'];
-								unset($array[$inside_key.'_old']);
-								unset($_POST[$inside_key.'_old']);
+							    if(isset($_POST[$inside_key.'_old']))
+							    {
+    								$array[$key][$inside_key][$inside_img_array] = $_POST[$inside_key.'_old'];
+    								unset($array[$inside_key.'_old']);
+    								unset($_POST[$inside_key.'_old']);
+							    }else{
+							        $array[$key][$inside_key][$inside_img_array] = '';
+							    }
 							}else{
 
 								$name = $_FILES[$inside_key]['name'][$inside_img_array];

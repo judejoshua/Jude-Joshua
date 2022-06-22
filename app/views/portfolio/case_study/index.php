@@ -171,7 +171,7 @@
                                             {
                                                 echo '
                                                     <div class="text-divider sub-title">
-                                                        '.$contents.'
+                                                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="'.$contents.'" allowfullscreen></iframe>
                                                     </div>
                                                 ';
                                             }else{

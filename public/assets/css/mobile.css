@@ -246,13 +246,13 @@
         margin-bottom: 0;
     }
     .row {
-        gap: 24px;
+        gap: 40px;
         flex-direction: column;
     }
     .flexer {
         width: 100%;
         flex: 100%;
-        gap: 24px;
+        gap: 40px;
     }
     .project {
         width: 100%;
@@ -298,7 +298,7 @@
     }
     .caption {
         padding: 16px 24px;
-        /* bottom: 0; */
+        bottom: 4%;
     }
     .caption-text {
         width: 80%;
