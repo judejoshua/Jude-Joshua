@@ -2,14 +2,6 @@
 <html lang="en-us">
     <head>
         <title><?=$title?></title>
-        
-        <!-- Google Tag Manager -->
-        <!--<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
-        <!--new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
-        <!--j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=-->
-        <!--'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
-        <!--})(window,document,'script','dataLayer','GTM-T999G6L');</script>-->
-        <!-- End Google Tag Manager -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -69,27 +61,23 @@
                 }, 2000);
             });
         </script>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <!--<script defer src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>-->
-        <!--<script>-->
-        <!--  window.dataLayer = window.dataLayer || [];-->
-        <!--  function gtag(){dataLayer.push(arguments);}-->
-        <!--  gtag('js', new Date());-->
-        
-        <!--  gtag('config', 'G-321KZ83579');-->
-        <!--</script>-->
 
         <?php
             include 'nav.php';
         ?>
         
-        <!-- Google Tag Manager (noscript) -->
-        <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T999G6L"-->
-        <!--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
-        <!-- End Google Tag Manager (noscript) -->
-
-
+                
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-321KZ83579');
+        </script>
+        
+        
         <div class="preloader">
             <p class="h1">JUDE JOSHUA</p>
             <div class="loader-circles">
