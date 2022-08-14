@@ -3,17 +3,13 @@
     gap: 32px;
     flex-direction: column;
     padding-top: 24px;
-    flex: 50%;
-}
-
-#home .mouse {
-    border: none;
+    width: 70%;
 }
 
 .landing {
     width: 100%;
     height: auto;
-    padding-top: 160px;
+    padding: 160px 128px 0;
 }
 
 .header_cont {
@@ -21,7 +17,6 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 128px;
     gap: 32px;
 }
 
@@ -29,63 +24,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 480px;
-    gap: 8px;
-}
-
-.landing-image {
-    width: 440px;
-    height: 504px;
-    background: var(--secondary);
-    overflow: hidden;
-    flex: 30%;
-}
-
-.landing-image .services {
-    background-color: rgba(128, 128, 128, .1);
-    -webkit-backdrop-filter: blur(50px);
-    -moz-backdrop-filter: blur(50px);
-    backdrop-filter: blur(50px);
-    box-shadow: 0px 4px 30px rgba(94, 94, 94, 10%);
-    position: absolute;
-    bottom: 16%;
-    left: unset;
-    top: unset;
-    right: 8%;
-    color: var(--neutral);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     gap: 16px;
-    padding: 16px 24px;
-    transition: 0.6s;
-}
-
-.landing-image .services:hover{
-    background-color: rgba(0, 0, 0, .2);
 }
 
 .landing-image img {
     width: 120%;
     object-fit: cover;
     left: -21px;
-}
-
-.bg-play {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.bg-play .shade {
-    position: absolute;
-    width: 456px;
-    height: 480px;
-    right: 156px;
-    top: -76px;
-    background: var(--accent);
 }
 
 body:not(#home-landing) .landing {
@@ -133,7 +79,7 @@ body#contact .landing .text-divider {
     border-bottom-color: transparent;
     border-right-color: transparent;
     position: absolute;
-    bottom: -12px;
+    bottom: -6px;
     left: 5px;
     top: unset;
 }
@@ -141,19 +87,14 @@ body#contact .landing .text-divider {
 
 #landing-highlight::after {
     content: "";
-    animation: spin 10s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-    0% { content:"design"; opacity: 0; }
-    10% { content:"design"; opacity: 1;}
-    20% { content:"design"; opacity: 1;}
-    30% { content:"design"; opacity: 1;}
-    40% { content:"design"; opacity: 0.5;}
-    50% { content: "design"; opacity: 0;}
-    60% { content: "build"; opacity: 0;}
-    70% { content: "build"; opacity: 1;}
-    80% { content: "build"; opacity: 1;}
-    90% { content: "build"; opacity: 1;}
-    100% { content: "build"; opacity: 0;}
+    from{
+        content: 'design';
+    }
+    to{
+        content: 'build';
+    }
 }

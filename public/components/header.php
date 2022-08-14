@@ -56,7 +56,7 @@
                 $("navigation").animate({
                     "opacity": "1",
                 }, 500);
-                 $(".wrapper, footer").animate({
+                 $(".wrapper, footer, .cursor").animate({
                     "opacity": "1",
                 }, 2000);
             });
@@ -78,11 +78,37 @@
         </script>
         
         
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
+        <div class="preloader d-flex flex-justify-between d-flex-column">
+            <div class="bg-coach">
             </div>
+            <div>
+                <div class="pulse-effect">
+                    <span id="countdown"></span>
+                </div>
+                <h1 id="status">
+                    <span class="loader-dots">
+                        <span class="loader__dot">.</span>
+                        <span class="loader__dot">.</span>
+                        <span class="loader__dot">.</span>
+                    </span>
+                </h1>
+            </div>
+            <div class="status d-flex flex-justify-between col-100">
+                <div class="status-loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p><span class="copyright">&copy; Jude Joshua, 2022. All rights reserved.</span></p>
+            </div>
+            <!-- <div style="display: none;">
+                <p class="h1">JUDE JOSHUA</p>
+                <div class="loader-circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div> -->
         </div>
+
+        <div id="cursor" class="cursor"></div>

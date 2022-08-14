@@ -8,20 +8,34 @@
     </head>
 
     <body id="home-landing">
-        <div class="bg-coach">
-        </div>
         <div class="wrapper" id="top">
-            <header class="landing d-flex d-flex-row flex-justify-between flex-align-end" id="home">
+            <header class="landing" id="home">
+                <!-- <div class="bg-play">
+                    <div class="shade"></div>
+                </div> -->
                 <div class="header_cont">
                     <div class="header">
                         <div class="header-text">
                             <h1>Using creativity and passion to <span id="landing-highlight"></span> a better world.</h1>
-                            <p class="p3">I am Jude Joshua, a UX designer from Nigeria 🇳🇬. I seek to use my design knowledge and skills in ways that create better design patterns and improved lifestyles in the most intuitive and useful way possible.</p>
+                            <p class="p4">I am Jude Joshua, a product designer with experience in web design & development from Nigeria 🇳🇬. I seek to fuse my design knowledge and skills in ways that will create better design patterns and improved lifestyles in the most uncomplicated (useable) way possible.</p>
                         </div>
+                        <div class="header-cta">
+                            <a class="btn" href="#body">
+                                <div class="btn_bg"></div>
+                                <div class="btn_cont">
+                                    <p id="text"><span>See</span> how</p>
+                                    <i class="las la-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="landing-image">
+                        <img src="/public/assets/img/landing-img.webp" alt="logo">
+                        <a href="/cv" class="services">
+                            <p class="p5">View my Résumé</p><i class="las la-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="scroll-down">
-                    <p>SCROLL</p>
                     <div class="mouse">
                         <div id="arrow-tail-short"></div>
                     </div>
@@ -32,13 +46,18 @@
                 <section id="case-study">
                     <div class="case-studies-body">
                         <div class="text-divider">
+                            <!--<h2>Design Systems that I have built</h2>-->
                             <div id="liner"></div>
+                            <!-- <p class="p4">
+                                I have worked on digital product ideas spanning diverse industries and every time, I always combine my technical and creative expertise to help my clients explore and get the best value of technology in their business. I work to ensure that your project scope is delivered in such a way that the idea of the product is conveyed to the user and they can understand it at once, at the pace that you need.<br/><br/>
+                                Shown below are a few samples.
+                            </p> -->
                         </div>
                         <div class="projects-holder">
                             <div class="row">
                                 <?php
                                     $count = 0;
-                                    $columnLimit = 2;
+                                    $columnLimit = 3;
                                     $columns = array_fill(0, $columnLimit, []);
                                     foreach ($data['projectList'] as $key => $project)
                                     {
@@ -113,9 +132,10 @@
                                             <h2>Research</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="paragraphsdescriptions">
                                                 This is the key process in getting the desired results. First, I pay close attention to the problem or idea, and try to understand the goals.<br/>
-                                                After this, I conduct interviews, deep findings/researches and then, I create user personaes based on my findings. My research methodolgy is simple - <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
+                                                After this, I conduct deep findings/researches and then, I create user personaes based on my findings.<br/>
+                                                My research methodolgy is simple; <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
                                             </p>
                                         </div>
                                     </div>
@@ -129,7 +149,7 @@
                                             <h2>Ideation</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="paragraphsdescriptions">
                                                 Here comes the most exciting part of the process. With an established understanding, I analyse and then begin to draft ideas and solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
                                             </p>
                                         </div>
@@ -144,7 +164,7 @@
                                             <h2>Prototyping</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="paragraphsdescriptions">
                                                 After designing, I carry out tests on the draft version of the product. I explore the product as a user while taking note of the 'why' behind the experience.<br/>
                                                 From here, I can know what is lacking; or if the product is working as it should, and then adjust it to satisfy the desired needs.
                                             </p>
@@ -160,7 +180,7 @@
                                             <h2>Testing</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="paragraphsdescriptions">
                                                 This is the main testing process.</br>
                                                 After the initial prototype testing and implementation of the product, I test the product further with real users.</br>
                                                 After I get feedback, I cross-check it with the desired needs and if needed, re-adjust the product to meet the desired business and user objectives.

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'vonique_43';
+    src: url('/public/assets/fonts/vonique_43/vonique_43_d-webfont.woff2') format('woff2'),
+         url('/public/assets/fonts/vonique_43/vonique_43_d-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elyaris';
+    src: url('/public/assets/fonts/elyaris/elyaris-vgbgb-webfont.woff2') format('woff2'),
+         url('/public/assets/fonts/elyaris/elyaris-vgbgb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sans_italic';
+    src: url('/public/assets/fonts/josefinsans/josefinsans-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/public/assets/fonts/josefinsans/josefinsans-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefinsans/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/public/assets/fonts/josefinsans/josefinsans-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

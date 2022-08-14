@@ -1,115 +1,115 @@
 fieldset {
-    padding: 24px 56px 56px;
-    border: 1px solid var(--placeholders);
-    display: flex;
-    gap: 48px;
-    flex-direction: column
+  padding: 24px 56px 56px;
+  border: 1px solid var(--placeholders);
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
 }
 
 legend {
-    padding: 0 0 0 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-variant: all-small-caps;
-    font-family: 'Roboto', sans-serif;
-    color: var(--placeholders);
-    left: -14px;
-    background: var(--neutral)
+  padding: 0 0 0 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-variant: all-small-caps;
+  font-family: "vonique_43", sans-serif;
+  color: var(--placeholders);
+  left: -14px;
+  background: var(--neutral);
 }
 
 form {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    gap: 32px;
-    flex-direction: column;
-    background: url(../img/background.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat
+  width: 100%;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  background: url(../img/background.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .form-body {
-    display: flex;
-    gap: 48px;
-    flex-direction: column;
-    width: 100%
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  width: 100%;
 }
 
 .form-group {
-    width: 100%
+  width: 100%;
 }
 
 .form-group.dual {
-    display: flex;
-    gap: 48px
+  display: flex;
+  gap: 48px;
 }
 
 .input-group {
-    display: flex;
-    margin-top: 6px
+  display: flex;
+  margin-top: 6px;
 }
 
 .input-field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
 }
 
 #img-container .input-field {
-    width: fit-content;
+  width: fit-content;
 }
 
 .form-input {
-    width: 100%;
-    padding: 8px 16px 8px 4px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--placeholders);
-    color: var(--secondary);
-    background: none
+  width: 100%;
+  padding: 8px 16px 8px 4px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--placeholders);
+  color: var(--secondary);
+  background: none;
 }
 
 select.form-input {
-    padding: 14px 16px 14px 4px
+  padding: 14px 16px 14px 4px;
 }
 
 .form-area {
-    height: 104px;
-    resize: none
+  height: 104px;
+  resize: none;
 }
 
 button {
-    border: none;
-    outline: none;
-    background: none
+  border: none;
+  outline: none;
+  background: none;
 }
 
 button.btn {
-    width: 156px
+  width: 156px;
 }
 
 button .btn_cont {
-    left: 26px;
-    top: 24px
+  left: 26px;
+  top: 24px;
 }
 
 body#contact article {
-    display: flex;
-    column-gap: 72px;
-    padding: 0 128px 128px
+  display: flex;
+  column-gap: 72px;
+  padding: 0 128px 128px;
 }
 
 .contact-info {
-    width: 64%
+  width: 64%;
 }
 
 .contact-info a {
-    color: var(--links);
-    display: inline-block
+  color: var(--links);
+  display: inline-block;
 }
 
 .contact-info a span {
-    margin-right: 10px
+  margin-right: 10px;
 }
