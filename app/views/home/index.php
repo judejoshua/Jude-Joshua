@@ -16,7 +16,7 @@
                     <div class="header">
                         <div class="header-text">
                             <h1>Using creativity and passion to <span id="landing-highlight"></span> a better world.</h1>
-                            <p class="p3">I am Jude Joshua, a UX designer from Nigeria 🇳🇬. I seek to use my design knowledge and skills in ways that create better design patterns and improved lifestyles in the most intuitive and useful way possible.</p>
+                            <p class="p4">I am Jude Joshua, a product designer from Nigeria 🇳🇬. I seek to use my design knowledge and skills in ways that create better design patterns and improved lifestyles in the most intuitive and useful way possible.</p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,6 @@
                                                     </a>
                                                 ';   
                                             }
-                                            
                                             echo '
                                             </div>
                                         ';
@@ -82,22 +81,22 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn mdn" href="/portfolio">
+                    <a class="btn lng" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>See</span> more work</p>
+                            <p id="text"><span>See</span> more case-studies</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 </section>
                 <section id="design-section">
                     <div class="design-style">
-                        <div class="full-width-shift">
+                        <div class="col-100-shift">
                             <div class="text-divider">
                             <h2>My Design Process</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                When I work on digital projects (either web or mobile), I break them down my work process into smaller bits. This allows me to achieve solutions to complex ideas easily and faster. After following these processes diligently, I put them back together and the final outcome is usually a harmonious solution.<br/>
+                                When I work on digital projects (either web or mobile), I like to break them down into smaller bits. This allows me to achieve solutions to complex ideas easily and faster. After following these processes diligently, I put them back together and the final outcome is usually a harmonious solution.<br/>
                                 Here's what I mean;
                             </p>
                         </div>
@@ -110,10 +109,10 @@
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
-                                            <h2>Research</h2>
+                                            <h2><span>01.</span> Research</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="p5">
                                                 This is the key process in getting the desired results. First, I pay close attention to the problem or idea, and try to understand the goals.<br/>
                                                 After this, I conduct interviews, deep findings/researches and then, I create user personaes based on my findings. My research methodolgy is simple - <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
                                             </p>
@@ -126,10 +125,10 @@
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
-                                            <h2>Ideation</h2>
+                                            <h2><span>02.</span> Ideation</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="p5">
                                                 Here comes the most exciting part of the process. With an established understanding, I analyse and then begin to draft ideas and solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
                                             </p>
                                         </div>
@@ -141,10 +140,10 @@
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
-                                            <h2>Prototyping</h2>
+                                            <h2><span>03.</span> Prototyping</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="p5">
                                                 After designing, I carry out tests on the draft version of the product. I explore the product as a user while taking note of the 'why' behind the experience.<br/>
                                                 From here, I can know what is lacking; or if the product is working as it should, and then adjust it to satisfy the desired needs.
                                             </p>
@@ -157,10 +156,10 @@
                                     </div>
                                     <div class="design-rule-set">
                                         <div class="title">
-                                            <h2>Testing</h2>
+                                            <h2><span>04.</span> Testing</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p4">
+                                            <p class="p5">
                                                 This is the main testing process.</br>
                                                 After the initial prototype testing and implementation of the product, I test the product further with real users.</br>
                                                 After I get feedback, I cross-check it with the desired needs and if needed, re-adjust the product to meet the desired business and user objectives.
@@ -171,37 +170,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="full-width-shift">
+                    <div class="col-100-shift">
                         <a class="btn mdn" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>See</span> my work</p>
+                            <p id="text"><span>See</span> a sample</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                     </div>
                 </section>
                 <section id="why">
-                    <div class="text-divider">
-                        <h2>A good fit?</h2>
-                        <div id="liner"></div>
-                        <p class="p4">
-                            There is always a driving force that pushes one to excellence or otherwise. Me, I'm driven by a deep passion for design.<br/>
-                            Many designs today have the beauty, luxury, and ease of a workable platform. But they often fail to consider one critical point - development feasibility. That is one of the key challenges developers experience when working with product designers.</br>
-                            <!--A lot of work goes in from the design stage to the development stage. Most times, there are a lot of design changes that must take place during development to accommodate code functionality.-->To this end, developers make various design-code changes which usually results in a loss of style. I know this because I have been opportune to experience both sides of the web world as a web designer & developer and then a product designer.<br/>
-                            My ability to leverage this problem and provide a design that works in functionality and experience makes me different from the rest. I do this by providing a design system that respects the laws of coding and development. It is not prone to numerous developer alterations and balances the end users' needs and the business objectives.
-                            <!--There is always a driving force that pushes one to excellence or otherwise. Me, I'm driven by a deep passion for design. A single day doesn't go by without me engaging my design skills with some task.</br>-->
-                            <!--<span id="quote">"Design is everywhere. From the dress, you're wearing to the smartphone you're holding, its design."<br/><br/>- Samandara Ginige</span>-->
-                            <!--I have loved design and arts since my childhood. And combining this love with a zeal to make life better and easy for people is what pushed me to develop my skills in design. And whether it is through design or coding, I always seek to make the digital life of my users as easy as I can make it.-->
-                        </p>
-                    </div>
-                    <a class="btn mdn" href="/cv">
-                        <div class="btn_bg"></div>
-                        <div class="btn_cont">
-                            <p id="text"><span>View</span> my CV</p>
-                            <i class="las la-arrow-right"></i>
+                    <div class="col-100 why-boxed">
+                        <div class="text-divider">
+                            <h2>A good fit?</h2>
+                            <div id="liner"></div>
+                            <p class="p4">
+                                Every successful person has a driving force that motivates them to excel. For me, It is my deep passion for design that drives me. There isn't a day that goes by without me utilizing my design skills in some way.<br/>I have been fascinated by design since my childhood. This love combined with a desire to simplify and improve people's lives is what inspired me to become a designer. This is why, whether it is through design or coding, I strive to make the digital life of my users as easy as possible through accessible, minimalist, and useful designs.
+                            </p>
                         </div>
-                    </a>
+                        <a class="btn" href="/cv">
+                            <div class="btn_bg"></div>
+                            <div class="btn_cont">
+                                <p id="text"><span>View</span> my CV</p>
+                                <i class="las la-arrow-right"></i>
+                            </div>
+                        </a>
+                        <div class="img-why-me"></div>
+                    </div>
                 </section>
             </article>
         </div>

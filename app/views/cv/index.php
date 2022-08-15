@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="divisor"></div>
-                    <div class="title-contact title-text full-width">
+                    <div class="title-contact title-text col-100">
                         <p class="p4"><a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a></p>
                         <p class="p4"><a href="tel:+234-904-113-4407">+234-904-113-4407</a></p>
                         <p class="p4"><a href="https://www.judejoshua.me">https://www.judejoshua.me</a></p>

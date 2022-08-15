@@ -44,7 +44,7 @@
     </div>
 </div>
 <footer>
-    <div class="footer-top">
+    <div class="footer-top d-flex flex-justify-between">
         <div class="contact-links">
             <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank" class="Dribbble">Medium</a>
             <a rel="nofollow" href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
@@ -53,12 +53,10 @@
             <a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
         </div>
-        <div class="full-width">
-            <a class="to-top" href="#top">
-                <p class="h4">TO TOP</p>
-                <i class="las la-angle-up"></i>
-            </a>
-        </div>
+        <a class="to-top" href="#top">
+            <p class="p6">SCROLL UP</p>
+            <i class="las la-angle-up"></i>
+        </a>
     </div>
-    <span class="copyright">&copy; Jude Joshua, 2022. All rights reserved.</span>
+    <span class="copyright"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
 </footer>

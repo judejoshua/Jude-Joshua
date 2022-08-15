@@ -86,6 +86,11 @@ body#resume navigation.fixed .mobile-nav-opener div {
     width: 100%;
 }
 
+.title span {
+    font-size: 24px;
+    color: var(--placeholders);
+}
+
 .title-contact {
     text-align: left;
     flex-direction: row;

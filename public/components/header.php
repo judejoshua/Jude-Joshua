@@ -99,7 +99,7 @@
                     <div></div>
                     <div></div>
                 </div>
-                <p><span class="copyright">&copy; Jude Joshua, 2022. All rights reserved.</span></p>
+                <p><span class="copyright"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span></p>
             </div>
             <!-- <div style="display: none;">
                 <p class="h1">JUDE JOSHUA</p>

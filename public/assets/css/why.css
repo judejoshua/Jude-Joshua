@@ -1,1 +1,44 @@
-#why {width: 100%;padding: 128px;margin-right: 0;}section#why::before {background: var(--accent);width: 100%;content: '';height: 100%;position: absolute;left: 0;top: 0;}#why .text-divider {width: 100%;margin-bottom: 48px;}#why .btn_cont {left: 30px;top: 23px;}
+#why {
+    width: 100%;
+    padding: 0 128px;
+    margin-right: 0;
+    overflow: visible;
+}
+
+.why-boxed {
+    padding: 64px;
+}
+
+.why-boxed::before {
+    background: var(--accent);
+    width: 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#why .text-divider {
+    width: 52%;
+    margin-bottom: 48px;
+}
+
+.img-why-me {
+    position: absolute;
+    right: -2%;
+    top: 19%;
+    width: 45%;
+    height: 84%;
+    background: url(../img/why-me-2.jpg);
+    background-position-y: center;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* filter: grayscale(1); */
+    /* transform: rotate(12deg); */
+    z-index: 1;
+    background-color: var(--secondary);
+    /*     border-radius: 1000px 1000px 0 0; */
+}

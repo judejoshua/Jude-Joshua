@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=vonique_43:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grathink:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
 @import "preloader.css";
 @import "font.css";
 @import "texts.css";
@@ -18,102 +19,93 @@
 @import "about.css";
 @import "mobile.css";
 @import "error.css";
-
 :root {
-  --neutral: #fff;
-  --secondary: #010101;
-  --accent: #eaeaea;
-  --ink: #5e5e5e;
-  --links: #006ba7;
-  --placeholders: #aaaaaa;
-  --error: #d90606;
-  --background-circles: #1d1d1d;
-  --highlight: #a18700;
+    --neutral: #fff;
+    --secondary: #101010;
+    --accent: #eaeaea;
+    --ink: #3e3e3e;
+    --links: #006ba7;
+    --placeholders: #aaaaaa;
+    --error: #d90606;
+    --background-circles: #2f2f2f;
+    --highlight: #a18700;
 }
 
 * {
-  box-sizing: border-box;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  text-decoration: none;
-  list-style: none;
-  user-select: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-touch-callout: none;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 html,
 body {
-  font-size: 15px;
-  width: 100%;
-  background: var(--neutral);
-  scroll-behavior: smooth;
-  color: var(--secondary);
-  min-height: 100vh;
-  font-family: "vonique_43", sans-serif;
-  scrollbar-width: none;
-  cursor: none;
+    font-size: 15px;
+    width: 100%;
+    background: var(--neutral);
+    scroll-behavior: smooth;
+    color: var(--secondary);
+    min-height: 100vh;
+    font-family: "Grathink", serif;
+    scrollbar-width: none;
+    cursor: none;
 }
 
 body {
-  overflow: hidden;
-  /* background: url(../img/results-background.png);
-  background-size: contain;
-  background-position-x: -252px;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-color: var(--neutral);
-  background-attachment: fixed;
-  animation: shake-background 30s linear infinite; */
+    overflow: hidden;
 }
 
 .no-scroll {
-  overflow: hidden !important;
+    overflow: hidden !important;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--accent);
+    background: var(--accent);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary);
+    background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--background-circles);
+    background: var(--background-circles);
 }
 
 @keyframes shake-background {
-  0% {
-    background-position-x: -352px;
-    background-position-y: center;
-    /* transform: rotate(0deg); */
-  }
-  25% {
-    background-position-x: -586px;
-    background-position-y: -50px;
-}
-50% {
-    background-position-x: 62px;
-    background-position-y: center;
-    /* transform: rotate(-20deg); */
-  }
-  75% {
-    background-position-x: -586px;
-    background-position-y: 50px;
-  }
-  100% {
-    background-position-x: -352px;
-    background-position-y: center;
-    /* transform: rotate(0deg); */
-  }
+    0% {
+        background-position-x: -352px;
+        background-position-y: center;
+        /* transform: rotate(0deg); */
+    }
+    25% {
+        background-position-x: -586px;
+        background-position-y: -50px;
+    }
+    50% {
+        background-position-x: 62px;
+        background-position-y: center;
+        /* transform: rotate(-20deg); */
+    }
+    75% {
+        background-position-x: -586px;
+        background-position-y: 50px;
+    }
+    100% {
+        background-position-x: -352px;
+        background-position-y: center;
+        /* transform: rotate(0deg); */
+    }
 }

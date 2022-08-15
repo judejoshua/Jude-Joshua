@@ -1,35 +1,64 @@
-@font-face {
-    font-family: 'vonique_43';
-    src: url('/public/assets/fonts/vonique_43/vonique_43_d-webfont.woff2') format('woff2'),
-         url('/public/assets/fonts/vonique_43/vonique_43_d-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'elyaris';
-    src: url('/public/assets/fonts/elyaris/elyaris-vgbgb-webfont.woff2') format('woff2'),
-         url('/public/assets/fonts/elyaris/elyaris-vgbgb-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'josefin_sans_italic';
-    src: url('/public/assets/fonts/josefinsans/josefinsans-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/public/assets/fonts/josefinsans/josefinsans-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'josefin_sans';
-    src: url('/public/assets/fonts/josefinsans/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/public/assets/fonts/josefinsans/josefinsans-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+    @font-face {
+        font-family: 'vonique_43';
+        src: url('/public/assets/fonts/vonique_43/vonique_43_d-webfont.woff2') format('woff2'), url('/public/assets/fonts/vonique_43/vonique_43_d-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'elyaris';
+        src: url('/public/assets/fonts/elyaris/elyaris-vgbgb-webfont.woff2') format('woff2'), url('/public/assets/fonts/elyaris/elyaris-vgbgb-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'josefin_sans_italic';
+        src: url('/public/assets/fonts/josefinsans/josefinsans-italic-variablefont_wght-webfont.woff2') format('woff2'), url('/public/assets/fonts/josefinsans/josefinsans-italic-variablefont_wght-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'josefin_sans';
+        src: url('/public/assets/fonts/josefinsans/josefinsans-variablefont_wght-webfont.woff2') format('woff2'), url('/public/assets/fonts/josefinsans/josefinsans-variablefont_wght-webfont.woff') format('woff')/*, url('/public/assets/fonts/josefinsans/JosefinSans-VariableFont_wght.ttf') format('truetype')*/
+        ;
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Mongek';
+        src: url('/public/assets/fonts/Mongek/Mongek-Regular.eot');
+        src: local('Mongek Regular'), local('Mongek-Regular'), url('/public/assets/fonts/Mongek/Mongek-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/Mongek/Mongek-Regular.woff2') format('woff2'), url('/public/assets/fonts/Mongek/Mongek-Regular.woff') format('woff'), url('/public/assets/fonts/Mongek/Mongek-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Mongek';
+        src: url('/public/assets/fonts/Mongek/Mongek-Thin.eot');
+        src: local('Mongek Thin'), local('Mongek-Thin'), url('/public/assets/fonts/Mongek/Mongek-Thin.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/Mongek/Mongek-Thin.woff2') format('woff2'), url('/public/assets/fonts/Mongek/Mongek-Thin.woff') format('woff'), url('/public/assets/fonts/Mongek/Mongek-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Mongek';
+        src: url('/public/assets/fonts/Mongek/Mongek-Bold.eot');
+        src: local('Mongek Bold'), local('Mongek-Bold'), url('/public/assets/fonts/Mongek/Mongek-Bold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/Mongek/Mongek-Bold.woff2') format('woff2'), url('/public/assets/fonts/Mongek/Mongek-Bold.woff') format('woff'), url('/public/assets/fonts/Mongek/Mongek-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Grathink';
+        src: url('/public/assets/fonts/Grathink/Grathink.eot');
+        src: local('Grathink'), url('/public/assets/fonts/Grathink/Grathink.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/Grathink/Grathink.woff2') format('woff2'), url('/public/assets/fonts/Grathink/Grathink.woff') format('woff'), url('/public/assets/fonts/Grathink/Grathink.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }

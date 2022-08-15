@@ -29,7 +29,7 @@
                         <p class="p5">work</p>
                         <div class="title-text">
                             <h3>Product Designer</h3>
-                            <p class="paragraphsdescriptions">
+                            <p class="p5">
                                 As a designer with a burning passion for better design, it's my responsibility to provide users with an easy and stress-free experience by transforming ideas in a creative way into implementable digital designs.</p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <p class="p5">hobbies</p>
                         <div class="title-text">
                             <h3>Writer</h3>
-                            <p class="paragraphsdescriptions">
+                            <p class="p5">
                                 When I’m not coding nor designing, I write. Writing is among one of the things I enjoy doing aside from designing. It's like an escape route that takes me into another world of creativity. I write short stories, poems, and sometimes self-care articles.
                             </p>
                         </div>
@@ -46,7 +46,7 @@
                         <p class="p5">work</p>
                         <div class="title-text">
                             <h3>Web Developer</h3>
-                            <p class="paragraphsdescriptions">
+                            <p class="p5">
                                 My creativity and passion don't just stop at product design. I also build the parts of a website that a user sees and interacts with such that it fits with the design and business goals. I achieve these through my responsibility as a front-end developer.
                             </p>
                         </div>

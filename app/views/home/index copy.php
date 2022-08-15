@@ -111,7 +111,7 @@
                 </section>
                 <section id="design-section">
                     <div class="design-style">
-                        <div class="full-width-shift">
+                        <div class="col-100-shift">
                             <div class="text-divider">
                             <h2>My Design Process</h2>
                             <div id="liner"></div>
@@ -132,7 +132,7 @@
                                             <h2>Research</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">
+                                            <p class="p5">
                                                 This is the key process in getting the desired results. First, I pay close attention to the problem or idea, and try to understand the goals.<br/>
                                                 After this, I conduct deep findings/researches and then, I create user personaes based on my findings.<br/>
                                                 My research methodolgy is simple; <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
@@ -149,7 +149,7 @@
                                             <h2>Ideation</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">
+                                            <p class="p5">
                                                 Here comes the most exciting part of the process. With an established understanding, I analyse and then begin to draft ideas and solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
                                             </p>
                                         </div>
@@ -164,7 +164,7 @@
                                             <h2>Prototyping</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">
+                                            <p class="p5">
                                                 After designing, I carry out tests on the draft version of the product. I explore the product as a user while taking note of the 'why' behind the experience.<br/>
                                                 From here, I can know what is lacking; or if the product is working as it should, and then adjust it to satisfy the desired needs.
                                             </p>
@@ -180,7 +180,7 @@
                                             <h2>Testing</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="paragraphsdescriptions">
+                                            <p class="p5">
                                                 This is the main testing process.</br>
                                                 After the initial prototype testing and implementation of the product, I test the product further with real users.</br>
                                                 After I get feedback, I cross-check it with the desired needs and if needed, re-adjust the product to meet the desired business and user objectives.
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="full-width-shift">
+                    <div class="col-100-shift">
                         <a class="btn mdn" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">

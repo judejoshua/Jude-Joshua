@@ -75,12 +75,14 @@ body:not(#home-landing) #case-study {
 }
 
 .project:hover {
-    transform: rotate(-2deg) scale(1.02);
-    z-index: 1
+    transform: rotate(-2deg) scale(1.12);
+    z-index: 1;
+    box-shadow: -8px 8px 32px 7px rgb(0 0 0 / 8%);
 }
 .flexer:nth-child(2) .project:hover {
-    transform: rotate(2deg) scale(1.02);
-    z-index: 1
+    transform: rotate(2deg) scale(1.12);
+    z-index: 1;
+    box-shadow: 8px 8px 32px 7px rgb(0 0 0 / 8%);
 }
 .caption {
     display: flex;
@@ -114,7 +116,7 @@ body:not(#home-landing) #case-study {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
 

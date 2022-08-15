@@ -1,11 +1,12 @@
 .scroll-down {
-    height: 104px;
+    height: 96px;
     display: table;
 }
 
 .scroll-down p {
     transform: rotate(-90deg);
     font-weight: 900;
+    left: 2px;
 }
 
 #arrow-tail-long {
@@ -15,11 +16,9 @@
     position: absolute;
     bottom: 0;
     left: 49%;
-    margin-top: 10px;
 }
 
-
-#arrow-tail-long::before{
+#arrow-tail-long::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -41,13 +40,13 @@
     bottom: 0;
 }
 
-@keyframes scroll-in{
-    from{
+@keyframes scroll-in {
+    from {
         height: 20%;
         bottom: 80%;
     }
-    to{
-        height: 80%;
+    to {
+        height: 60%;
         bottom: 0;
     }
 }

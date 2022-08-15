@@ -1,203 +1,209 @@
 .h0 {
-  font-family: "vonique_43", serif;
-  font-size: 64px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
-  letter-spacing: 3.2px;
+    font-family: "Grathink", serif;
+    font-size: 64px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 3.2px;
 }
 
 h1,
 .h1 {
-  font-family: "vonique_43", serif;
-  font-size: 40px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.62;
-  word-spacing: 12px;
+    font-family: "Grathink", serif;
+    font-size: 56px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    /* word-spacing: 12px; */
 }
 
 h2,
 .h2 {
-  font-family: "vonique_43", serif;
-  font-size: 32px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
-  letter-spacing: 0.64px;
-  word-spacing: 10px;
+    font-family: "Grathink", serif;
+    font-size: 48px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
 }
 
 h3,
 .h3 {
-  font-family: "vonique_43", serif;
-  font-size: 24px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
-  letter-spacing: 0.96px;
+    font-family: "Grathink", serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.96px;
 }
 
 h4,
 .h4 {
-  font-family: "vonique_43", serif;
-  font-size: 14px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: 0.26px;
+    font-family: "Grathink", serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.26px;
 }
 
 h5,
 .h5 {
-  font-family: "vonique_43", serif;
-  font-size: 12px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
+    font-family: "Grathink", serif;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
 }
 
 h6,
 .h6 {
-  font-family: "vonique_43", serif;
-  font-size: 8px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
-  letter-spacing: 0.16px;
+    font-family: "Grathink", serif;
+    font-size: 12px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.16px;
 }
 
 .p0 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 64px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
 }
 
 .p1 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 48px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
 }
 
 .p2 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 32px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
 }
 
 .p3 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
-}
-
-.paragraphsdescriptions {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -1px;
 }
 
 .p4 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: -1px;
 }
 
 .p5 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 12px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: -1px;
 }
 
 .p6 {
-  font-family: "josefin_sans", sans-serif;
-  font-size: 8px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
+    font-family: "josefin_sans", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: -1px;
 }
 
 h2 a,
 p a {
-  color: var(--links);
-  text-decoration: underline;
-  transition: 0.5s opacity;
-  font-weight: 600;
+    color: var(--links);
+    text-decoration: underline;
+    transition: 0.5s opacity;
+    font-weight: 600;
 }
 
 h2 a:hover,
 p a:hover {
-  text-decoration: none;
-  opacity: 0.9;
+    text-decoration: none;
+    opacity: 0.9;
 }
 
 h2 a::after,
 p a::after {
-  content: "\f061";
-  display: inline-block;
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  margin-left: 2px;
-  transform: rotate(-45deg);
+    content: "\f061";
+    display: inline-block;
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    margin-left: 2px;
+    transform: rotate(-45deg);
 }
 
 #highlight {
-  font-style: italic;
-  font-weight: 800;
+    font-style: italic;
+    font-weight: 800;
 }
 
 #highlight::after {
-  content: '';
-  width: 100%;
-  background-color: var(--accent);
-  height: 1px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+    content: "";
+    width: 100%;
+    background-color: var(--accent);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #quote {
-  font-style: italic;
-  margin: 40px 0;
-  display: block;
-  font-size: 26px;
-  width: 100%;
-  line-height: 1.5;
-  color: var(--placeholders);
-  border-left: 4px solid;
-  padding-left: 12px;
+    font-style: italic;
+    margin: 40px 0;
+    display: block;
+    font-size: 26px;
+    width: 100%;
+    line-height: 1.5;
+    color: var(--placeholders);
+    border-left: 4px solid;
+    padding-left: 12px;
+}
+
+.nav-links li a {
+    font-family: "josefin_sans", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    /* identical to box height, or 140% */
+    /* secondary */
+    color: var(--secondary);
+    text-transform: uppercase;
+    flex: none;
+    flex-grow: 0;
+    padding: 8px;
 }
