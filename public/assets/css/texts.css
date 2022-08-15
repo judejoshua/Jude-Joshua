@@ -195,14 +195,14 @@ p a::after {
 }
 
 .nav-links li a {
-    font-family: "josefin_sans", sans-serif;
+    /* font-family: "josefin_sans", sans-serif; */
     font-style: normal;
-    font-weight: 900;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 18px;
     /* identical to box height, or 140% */
     /* secondary */
     color: var(--secondary);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     flex: none;
     flex-grow: 0;
     padding: 8px;
