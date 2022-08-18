@@ -168,7 +168,7 @@ span#spacer::after {
 }
 
 #resume-begins #liner {
-    width: 56px;
+    /* width: 56px; */
 }
 
 .skills ul,

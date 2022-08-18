@@ -23,6 +23,10 @@
             </header>
             <article id="body">
                 <section id="case-study">
+                    <div class="text-divider">
+                        <h2>Recent work</h2>
+                        <div id="liner"></div>
+                    </div>
                     <div class="case-studies-body">
                         <div class="projects-holder">
                             <div class="row">
@@ -83,13 +87,13 @@
                     <div class="design-style">
                         <div class="col-100-shift">
                             <div class="text-divider">
-                            <h2>My Design Process</h2>
-                            <div id="liner"></div>
-                            <p class="p4">
-                                When I work on digital projects (either web or mobile), I like to break them down into smaller bits. This allows me to achieve solutions to complex ideas easily and faster. After following these processes diligently, I put them back together and the final outcome is usually a harmonious solution.<br/>
-                                Here's what I mean;
-                            </p>
-                        </div>
+                                <h2>My Design Process</h2>
+                                <div id="liner"></div>
+                                <p class="p4">
+                                    When I work on digital projects (either web or mobile), I like to break them down into smaller bits. This allows me to achieve solutions to complex ideas easily and faster. After following these processes diligently, I put them back together and the final outcome is usually a harmonious solution.<br/>
+                                    Here's what I mean;
+                                </p>
+                            </div>
                         </div>
                         <div class="design-styles">
                             <div class="row">
