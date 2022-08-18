@@ -36,14 +36,14 @@ $(document).ready(function() {
         } else {
             $("navigation").removeClass("fixed");
         }
-        if (window.location.href.indexOf("cv") > -1) {
-            var scrollDivi = $('#divisor').offset().top;
-            if (scroll >= scrollDivi) {
-                $("a.download").fadeOut('slow');
-            } else {
-                $("a.download").fadeIn('slow');
-            }
-        }
+        // if (window.location.href.indexOf("cv") > -1) {
+        //     var scrollDivi = $('#divisor').offset().top;
+        //     if (scroll >= scrollDivi) {
+        //         $("a.download").fadeOut('slow');
+        //     } else {
+        //         $("a.download").fadeIn('slow');
+        //     }
+        // }
     });
     $('a[href^="#"], a[href^="/#"]').click(function() {
         let target = $(this).attr('href');
@@ -76,8 +76,8 @@ $(document).ready(function() {
     //                           C O N T E X T  M E N U
     //=================================================================================================
 
-    document.onclick = hideMenu;
-    document.oncontextmenu = rightClick;
+    // document.onclick = hideMenu;
+    // document.oncontextmenu = rightClick;
 
     function hideMenu() {
         $("#contextMenu").hide()
@@ -140,8 +140,8 @@ $(document).ready(function() {
     //=================================================================================================
     $('button.btn').click(function(e) {
         e.preventDefault();
-        $('.preloader').addClass('recha');
-        $(".preloader").fadeIn("slow");
+        $('.contact.preloader').removeClass('hidden').addClass('recha');
+        $(".contact.preloader").fadeIn("slow");
 
         let link = '/public/config/sendEmail.php';
         let form = $(this).closest('form')[0];
@@ -156,7 +156,7 @@ $(document).ready(function() {
             processData: false,
             success: function(response) {
                 let status = response.split('=');
-                $(".preloader").fadeOut("slow");
+                $(".contact.preloader").fadeOut("slow");
                 if (status[0] === 'error') {
                     if (status[1] === 'name') {
                         $('.error[data-error="name"]').fadeIn(1000).text('You forgot to enter your name...');

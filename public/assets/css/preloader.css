@@ -1,641 +1,186 @@
 @-moz-keyframes rotatecircle {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(-360deg);
-  }
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
 }
 
 @-webkit-keyframes rotatecircle {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
 }
 
 @keyframes rotatecircle {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
 }
 
 .no-js #loader {
-  display: none;
+    display: none;
 }
 
 .js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
 }
 
 .preloader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: var(--neutral);
-  gap: 32px;
-  padding: 160px 128px 32px;
-}
-.bg-coach{
-  background: url(../img/results-background.png);
-  background-size: cover;
-  background-position-x: -252px;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  background-color: var(--neutral);
-  background-attachment: fixed;
-  animation: shake-background 30s linear infinite;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* filter: blur(48px); */
-  /* z-index: -1; */
-}
-
-.preloader .h1 {
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.6em;
-  color: var(--background-circles);
-}
-
-.pulse-effect {
-  /* background-color: var(--); */
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  position: relative;
-  margin: 0 0 32px;
-  animation: loading 2s linear infinite;
-  /* animation-delay: 10s; */
-  animation-fill-mode: forwards;
-  border: 3px solid var(--secondary);
-  border-top: 3px solid transparent;
-}
-
-#countdown {
-  position: absolute;
-  top: 36%;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  z-index: 100;
-  color: var(--secondary);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--neutral);
+    gap: 32px;
+    padding: 32px 128px 32px;
 }
 
 .preloader #status {
-  color: var(--secondary);
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-variant: all-small-caps;
+    font-weight: 500;
+    text-align: center;
 }
 
 .preloader #status::before {
-  content: "";
-  animation: status 30s linear;
-  animation-fill-mode: forwards;
-  transition: 0.6s;
+    content: "";
+    animation: status 24s linear;
+    animation-fill-mode: forwards;
+    transition: 0.6s;
+}
+
+.contact.preloader #status::before {
+    content: "";
+    animation: contact-status 24s linear;
+    animation-fill-mode: forwards;
+    transition: 0.6s;
 }
 
 .status-loader div {
-  height: 2px;
-  background-color: var(--accent);
-  width: 100px;
-  display: inline-block;
-  margin-right: 16px;
+    height: 2px;
+    background-color: var(--accent);
+    width: 100%;
+    display: inline-block;
 }
 
-.status-loader div:nth-child(2)::before {
-  animation-delay: 10s;
+.status-loader {
+    width: 100%;
+    margin-bottom: 32px;
 }
 
-.status-loader div:nth-child(3)::before {
-  animation-delay: 20s;
+.remmit {
+    font-family: 'Romantica Signature';
+    font-size: 64px;
+    line-height: 1;
 }
 
 .status-loader div::before {
-  content: "";
-  position: absolute;
-  width: auto;
-  top: 0;
-  left: 0;
-  background: var(--secondary);
-  height: 100%;
-  animation: loaded 10s ease-in-out;
-  animation-fill-mode: forwards;
+    content: "";
+    position: absolute;
+    width: auto;
+    top: 0;
+    left: 0;
+    background: var(--secondary);
+    height: 100%;
+    animation: loaded 24s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .loader__dot {
-  animation: 1s blink infinite;
+    animation: 1s blink infinite;
+    font-weight: 900;
 }
+
 .loader__dot:nth-child(2) {
-  animation-delay: 250ms;
+    animation-delay: 250ms;
 }
+
 .loader__dot:nth-child(3) {
-  animation-delay: 500ms;
+    animation-delay: 500ms;
 }
 
 @keyframes blink {
-  50% {
-    color: transparent;
-  }
+    50% {
+        color: transparent;
+    }
 }
 
 @keyframes loaded {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    background: transparent;
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    background: transparent;
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+        background: transparent;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        background: transparent;
+    }
 }
 
 @keyframes status {
-  0% {
-    content: "Loading up fonts and styles";
-  }
-
-  10% {
-    content: "Loading up fonts and styles";
-  }
-
-  20% {
-    content: "Loading up fonts and styles";
-  }
-
-  33% {
-    content: "Loading up fonts and styles";
-  }
-
-  34% {
-    content: "Applying the layouts";
-  }
-
-  50% {
-    content: "Applying the layouts";
-  }
-
-  60% {
-    content: "Applying the layouts";
-  }
-
-  66% {
-    content: "Applying the layouts";
-  }
-
-  67% {
-    content: "Removing the unncessary stuff";
-  }
-
-  90% {
-    content: "Removing the unncessary stuff";
-  }
-
-  100% {
-    content: "Removing the unncessary stuff";
-  }
+    0% {
+        content: "Loading up fonts and styles";
+    }
+    10% {
+        content: "Loading up fonts and styles";
+    }
+    20% {
+        content: "Loading up fonts and styles";
+    }
+    33% {
+        content: "Loading up fonts and styles";
+    }
+    34% {
+        content: "Applying the layouts";
+    }
+    50% {
+        content: "Applying the layouts";
+    }
+    60% {
+        content: "Applying the layouts";
+    }
+    66% {
+        content: "Applying the layouts";
+    }
+    67% {
+        content: "Removing the unncessary stuff";
+    }
+    90% {
+        content: "Removing the unncessary stuff";
+    }
+    100% {
+        content: "Removing the unncessary stuff";
+    }
 }
 
-@keyframes pulse {
-  100% {
-    transform: scale(1.75);
-    opacity: 0;
-  }
-}
-
-@keyframes counter {
-  0% {
-    counter-increment: count 0;
-  }
-
-  1% {
-    counter-increment: count 1;
-  }
-
-  2% {
-    counter-increment: count 2;
-  }
-
-  3% {
-    counter-increment: count 3;
-  }
-
-  4% {
-    counter-increment: count 4;
-  }
-
-  5% {
-    counter-increment: count 5;
-  }
-
-  6% {
-    counter-increment: count 6;
-  }
-
-  7% {
-    counter-increment: count 7;
-  }
-
-  8% {
-    counter-increment: count 8;
-  }
-
-  9% {
-    counter-increment: count 9;
-  }
-
-  10% {
-    counter-increment: count 10;
-  }
-
-  11% {
-    counter-increment: count 11;
-  }
-
-  12% {
-    counter-increment: count 12;
-  }
-
-  13% {
-    counter-increment: count 13;
-  }
-
-  14% {
-    counter-increment: count 14;
-  }
-
-  15% {
-    counter-increment: count 15;
-  }
-
-  16% {
-    counter-increment: count 16;
-  }
-
-  17% {
-    counter-increment: count 17;
-  }
-
-  18% {
-    counter-increment: count 18;
-  }
-
-  19% {
-    counter-increment: count 19;
-  }
-
-  20% {
-    counter-increment: count 20;
-  }
-
-  21% {
-    counter-increment: count 21;
-  }
-
-  22% {
-    counter-increment: count 22;
-  }
-
-  23% {
-    counter-increment: count 23;
-  }
-
-  24% {
-    counter-increment: count 24;
-  }
-
-  25% {
-    counter-increment: count 25;
-  }
-
-  26% {
-    counter-increment: count 26;
-  }
-
-  27% {
-    counter-increment: count 27;
-  }
-
-  28% {
-    counter-increment: count 28;
-  }
-
-  29% {
-    counter-increment: count 29;
-  }
-
-  30% {
-    counter-increment: count 30;
-  }
-
-  31% {
-    counter-increment: count 31;
-  }
-
-  32% {
-    counter-increment: count 32;
-  }
-
-  33% {
-    counter-increment: count 33;
-  }
-
-  34% {
-    counter-increment: count 34;
-  }
-
-  35% {
-    counter-increment: count 35;
-  }
-
-  36% {
-    counter-increment: count 36;
-  }
-
-  37% {
-    counter-increment: count 37;
-  }
-
-  38% {
-    counter-increment: count 38;
-  }
-
-  39% {
-    counter-increment: count 39;
-  }
-
-  40% {
-    counter-increment: count 40;
-  }
-
-  41% {
-    counter-increment: count 41;
-  }
-
-  42% {
-    counter-increment: count 42;
-  }
-
-  43% {
-    counter-increment: count 43;
-  }
-
-  44% {
-    counter-increment: count 44;
-  }
-
-  45% {
-    counter-increment: count 45;
-  }
-
-  46% {
-    counter-increment: count 46;
-  }
-
-  47% {
-    counter-increment: count 47;
-  }
-
-  48% {
-    counter-increment: count 48;
-  }
-
-  49% {
-    counter-increment: count 49;
-  }
-
-  50% {
-    counter-increment: count 50;
-  }
-
-  51% {
-    counter-increment: count 51;
-  }
-
-  52% {
-    counter-increment: count 52;
-  }
-
-  53% {
-    counter-increment: count 53;
-  }
-
-  54% {
-    counter-increment: count 54;
-  }
-
-  55% {
-    counter-increment: count 55;
-  }
-
-  56% {
-    counter-increment: count 56;
-  }
-
-  57% {
-    counter-increment: count 57;
-  }
-
-  58% {
-    counter-increment: count 58;
-  }
-
-  59% {
-    counter-increment: count 59;
-  }
-
-  60% {
-    counter-increment: count 60;
-  }
-
-  61% {
-    counter-increment: count 61;
-  }
-
-  62% {
-    counter-increment: count 62;
-  }
-
-  63% {
-    counter-increment: count 63;
-  }
-
-  64% {
-    counter-increment: count 64;
-  }
-
-  65% {
-    counter-increment: count 65;
-  }
-
-  66% {
-    counter-increment: count 66;
-  }
-
-  67% {
-    counter-increment: count 67;
-  }
-
-  68% {
-    counter-increment: count 68;
-  }
-
-  69% {
-    counter-increment: count 69;
-  }
-
-  70% {
-    counter-increment: count 70;
-  }
-
-  71% {
-    counter-increment: count 71;
-  }
-
-  72% {
-    counter-increment: count 72;
-  }
-
-  73% {
-    counter-increment: count 73;
-  }
-
-  74% {
-    counter-increment: count 74;
-  }
-
-  75% {
-    counter-increment: count 75;
-  }
-
-  76% {
-    counter-increment: count 76;
-  }
-
-  77% {
-    counter-increment: count 77;
-  }
-
-  78% {
-    counter-increment: count 78;
-  }
-
-  79% {
-    counter-increment: count 79;
-  }
-
-  80% {
-    counter-increment: count 80;
-  }
-
-  81% {
-    counter-increment: count 81;
-  }
-
-  82% {
-    counter-increment: count 82;
-  }
-
-  83% {
-    counter-increment: count 83;
-  }
-
-  84% {
-    counter-increment: count 84;
-  }
-
-  85% {
-    counter-increment: count 85;
-  }
-
-  86% {
-    counter-increment: count 86;
-  }
-
-  87% {
-    counter-increment: count 87;
-  }
-
-  88% {
-    counter-increment: count 88;
-  }
-
-  89% {
-    counter-increment: count 89;
-  }
-
-  90% {
-    counter-increment: count 90;
-  }
-
-  91% {
-    counter-increment: count 91;
-  }
-
-  92% {
-    counter-increment: count 92;
-  }
-
-  93% {
-    counter-increment: count 93;
-  }
-
-  94% {
-    counter-increment: count 94;
-  }
-
-  95% {
-    counter-increment: count 95;
-  }
-
-  96% {
-    counter-increment: count 96;
-  }
-
-  97% {
-    counter-increment: count 97;
-  }
-
-  98% {
-    counter-increment: count 100;
-  }
-
-  99% {
-    counter-increment: count 100;
-    opacity: 1;
-  }
-
-  100% {
-    counter-increment: count 100;
-    opacity: 0;
-  }
+@keyframes contact-status {
+    0% {
+        content: "Sending your message";
+    }
+    100% {
+        content: "Sending your message";
+    }
 }

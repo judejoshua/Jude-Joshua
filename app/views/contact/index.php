@@ -10,26 +10,13 @@
                 <div class="text-divider">
                     <h1>Let's Talk!</h1>
                     <div id="liner"></div>
-                    <!-- 
-                    <p class="p4"></p> -->
                 </div>
             </header>
             <article id="body">
                 <div class="contact-info">
-                    <p class="p4">Tell me a story of your project through messages or questions. Send me an email at
-                        <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call
-                        <a href="tel:+2349041134926">+234-904-113-4926</a>.<br/>However, you can quickly fill the spaces below and I will respond within 24 hours of receipt.
+                    <p class="p4">
+                        Send me a message about your project or any other questions that you have. You can send me an email to <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call <a href="tel:+2349041134926">+234-904-113-4926</a>. However, you can quickly fill the form to the right and I will respond asap.
                     </p>
-                    <!-- <ul>
-                        <li>
-                            <a href="#" class="p4">
-                                <span class="las la-18px mdi-email"></span>hello@judejoshua.me</a>
-                        </li>
-                        <li>
-                            <a href="#" class="p4">
-                                <span class="las la-18px mdi-phone"></span>+234-904-113-4926</a>
-                        </li>
-                    </ul> -->
                 </div>
                 <form>
                     <div class="form-body">
@@ -62,7 +49,7 @@
                                 <label for="name" id="to-title" class="h4">Phone Number</label>
                                 <div class="input-group">
                                     <div class="input-field">
-                                        <input type="text" id="phone" name="phone" class="form-input p4" maxlength="15"/>
+                                        <input type="tel" id="phone" name="phone" class="form-input p4" maxlength="15"/>
                                         <div class="labels">
                                             <p class="p5 placeholder">Enter your phone number (Optional)</p>
                                             <p class="p5 error"></p>
@@ -84,13 +71,11 @@
                             </div>
                         </div>
                         <div class="form-group"></div>
-                        <!-- <div class="form-group"></div>
-                        <div class="form-group dual"></div> -->
                     </div>
-                    <button class="btn" type="submit">
+                    <button class="btn mdn" type="submit">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>Send</span> now</p>
+                            <p id="text"><span>Send</span> message</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </button>

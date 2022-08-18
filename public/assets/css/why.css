@@ -1,17 +1,17 @@
 #why {
     width: 100%;
-    padding: 0 128px;
+    padding: 0 128px 90px;
     margin-right: 0;
     overflow: visible;
 }
 
 .why-boxed {
-    padding: 64px;
+    padding: 72px 64px;
 }
 
 .why-boxed::before {
     background: var(--accent);
-    width: 100%;
+    width: 95%;
     content: '';
     height: 100%;
     position: absolute;
@@ -20,16 +20,16 @@
 }
 
 #why .text-divider {
-    width: 52%;
+    width: 50%;
     margin-bottom: 48px;
 }
 
 .img-why-me {
     position: absolute;
-    right: -2%;
+    right: 0;
     top: 19%;
     width: 45%;
-    height: 84%;
+    height: 90%;
     background: url(../img/why-me-2.jpg);
     background-position-y: center;
     background-size: cover;

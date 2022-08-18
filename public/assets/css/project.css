@@ -5,14 +5,14 @@
     align-items: flex-start;
     width: 100%;
     padding-top: 0;
-    padding-bottom: 228px;
+    padding-bottom: 128px;
     overflow-y: auto;
     height: auto;
     display: table;
 }
 
 body#home-landing #case-study {
-    padding-top: 104px;
+    padding-top: 194px;
     padding-bottom: 96px;
     display: flex;
 }
@@ -27,7 +27,7 @@ body#home-landing #case-study {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 56px;
+    gap: 64px;
 }
 
 .projects-holder {
@@ -55,15 +55,14 @@ body:not(#home-landing) #case-study {
     height: auto;
     transition: 0.4s;
     align-items: center;
-    border: 1px solid var(--accent);
+    /* border: 1px solid var(--accent); */
 }
 
 .flexer {
-    width: 49%;
+    width: 48.5%;
     display: flex;
     flex-direction: column;
-    flex: 49%;
-    gap: 16px;
+    gap: 120px;
 }
 
 .project img {
@@ -74,22 +73,34 @@ body:not(#home-landing) #case-study {
     transition: 1.2s;
 }
 
-.project:hover {
-    transform: rotate(-2deg) scale(1.12);
+a#projector .project:hover {
     z-index: 1;
-    box-shadow: -8px 8px 32px 7px rgb(0 0 0 / 8%);
+    /* box-shadow: 0px 0px 32px 32px rgba(0, 0, 0, 0.8%); */
+    animation: shake-card 0.2s ease-in-out;
+    animation-fill-mode: forwards;
 }
-.flexer:nth-child(2) .project:hover {
-    transform: rotate(2deg) scale(1.12);
-    z-index: 1;
-    box-shadow: 8px 8px 32px 7px rgb(0 0 0 / 8%);
+
+@keyframes shake-card {
+    0% {
+        transform: rotate(0deg) scale(1.04);
+    }
+    25% {
+        transform: rotate(-1deg) scale(1.04);
+    }
+    75% {
+        transform: rotate(1deg) scale(1.04);
+    }
+    100% {
+        transform: rotate(0deg) scale(1.04);
+    }
 }
+
 .caption {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 24px 24px;
+    padding: 24px 0px;
     color: var(--secondary);
     /* transition: 0.6s; */
     background: var(--neutral);
@@ -120,12 +131,16 @@ body:not(#home-landing) #case-study {
     -webkit-box-orient: vertical;
 }
 
-.projects-holder a {
+.projects-holder a#projector {
     display: block;
     /* overflow: hidden; */
-    width: 100%;
+    width: 68%;
     height: fit-content;
     flex-grow: 0;
+}
+
+.projects-holder .flexer a#projector:nth-child(even) {
+    left: 28%;
 }
 
 #tag-single {

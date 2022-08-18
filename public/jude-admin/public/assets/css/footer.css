@@ -1,99 +1,215 @@
-.results-section {
-    padding: 140px 128px 96px;
-    background: url(../img/results-background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    justify-content: center;
-    align-items: center;
-}
-
-body:not(#admin-landing) .results-section {
-    background: var(--accent);
-}
-
-.results-section-title {
-    width: 556px;
-    text-align: center;
-    color: var(--ink);
-}
-
-.results-section-title>p {
-    margin-bottom: 24px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-}
-
-.results-section-title>p a {
-    font-weight: 800;
-}
-
-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 72px 128px;
-    z-index: 2;
-}
-
-.footer-top {
-    width: 100%;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    justify-content: space-between;
-}
-
-.contact-links {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-top a:not(.to-top) {
-    flex-grow: 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
+.h0 {
+    font-family: "Clobber Grotesk";
+    font-size: 64px;
     font-weight: 900;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+h1,
+.h1 {
+    font-family: "Clobber Grotesk";
+    font-size: 48px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    /* word-spacing: 12px; */
+}
+
+h2,
+.h2 {
+    font-family: "Clobber Grotesk";
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+h3,
+.h3 {
+    font-family: "Clobber Grotesk";
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
     letter-spacing: 0.96px;
-    text-align: left;
-    color: var(--secondary);
 }
 
-.footer-top a:not(.to-top):hover {
-    color: var(--placeholders);
+h4,
+.h4 {
+    font-family: "Clobber Grotesk";
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.26px;
 }
 
-.to-top {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--secondary);
-    border: 1px solid var(--accent);
-    border-radius: 1px;
-    padding: 8px;
-    background: var(--accent);
+h5,
+.h5 {
+    font-family: "Clobber Grotesk";
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
 }
 
-.to-top:hover {
-    color: var(--ink);
-}
-
-.to-top i {
-    font-size: 19px;
-}
-
-span.copyright {
+h6,
+.h6 {
+    font-family: "Clobber Grotesk";
     font-size: 12px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.16px;
+}
+
+.p0 {
+    font-family: "Clobber Grotesk";
+    font-size: 36px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
     color: var(--ink);
+}
+
+.p1 {
+    font-family: "Clobber Grotesk";
+    font-size: 32px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p2 {
+    font-family: "Clobber Grotesk";
+    font-size: 28px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p3 {
+    font-family: "Clobber Grotesk";
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -1px;
+    color: var(--ink);
+}
+
+.p4 {
+    font-family: "Clobber Grotesk";
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -0.7px;
+    color: var(--ink);
+}
+
+.p5 {
+    font-family: "Clobber Grotesk";
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -1px;
+    color: var(--ink);
+}
+
+.p6 {
+    font-family: "Clobber Grotesk";
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--ink);
+}
+
+h2 a,
+p a {
+    color: var(--links);
+    text-decoration: underline;
+    transition: 0.5s opacity;
+    font-weight: 400;
+}
+
+h2 a:hover,
+p a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+h2 a::after,
+p a::after {
+    content: "\f061";
+    display: inline-block;
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    margin-left: 2px;
+    transform: rotate(-45deg);
+}
+
+#highlight {
+    font-style: italic;
+    font-weight: 800;
+}
+
+#highlight::after {
+    content: "";
+    width: 100%;
+    background-color: var(--accent);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#quote {
+    font-style: italic;
+    margin: 40px 0;
+    display: block;
+    font-size: 26px;
+    width: 100%;
+    line-height: 1.5;
+    color: var(--placeholders);
+    border-left: 4px solid;
+    padding-left: 12px;
+}
+
+.nav-links li a {
+    font-family: "Clobber Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* identical to box height, or 140% */
+    /* secondary */
+    color: var(--ink);
+    /* text-transform: uppercase; */
+    flex: none;
+    flex-grow: 0;
+    padding: 8px;
 }

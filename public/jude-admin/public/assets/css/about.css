@@ -1,216 +1,217 @@
-.testimonials {
-    background: url(../img/testimonials-background.png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    padding-bottom: 96px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-right: 0;
-    /* padding-left: 0; */
+.h0 {
+    font-family: "Clobber Grotesk";
+    font-size: 64px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
 }
 
-.testimonials-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    overflow-y: scroll;
-    padding: 24px 128px 0 0;
+h1,
+.h1 {
+    font-family: "Clobber Grotesk";
+    font-size: 48px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    /* word-spacing: 12px; */
 }
 
-.testimonials-wrapper::-webkit-scrollbar {
-    height: 4px;
+h2,
+.h2 {
+    font-family: "Clobber Grotesk";
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
 }
 
-.client {
-    /* width: 372px; */
-    width: 30%;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 16px;
-    height: 100%;
-}
-
-.testimonials-wrapper .row {
-    justify-content: space-between;
-    display: inline-flex;
-    /* width: calc(333px * 8); */
-    width: 100%;
-    row-gap: 80px;
-}
-
-.client-review .p1 {
-    line-height: 12px;
-    color: var(--placeholders);
-}
-
-#CV {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 136px 96px;
-    gap: 32px;
-    background: var(--accent);
-}
-
-#CV img {
-    width: 104px;
-}
-
-#CV .btn.mdn .btn_cont {
-    left: 26px;
-    top: 28px;
-}
-
-#CV .btn_cont #text,
-#CV .btn_cont i {
+h3,
+.h3 {
+    font-family: "Clobber Grotesk";
     font-size: 32px;
     font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.96px;
 }
 
-#CV .btn_cont #text {
-    font-family: 'Playfair Display', serif;
+h4,
+.h4 {
+    font-family: "Clobber Grotesk";
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.26px;
 }
 
-#CV .btn.mdn {
-    width: 360px;
-    height: 104px;
+h5,
+.h5 {
+    font-family: "Clobber Grotesk";
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
 }
 
-#CV .btn.mdn .btn_bg {
-    height: 104px;
-    width: 104px;
+h6,
+.h6 {
+    font-family: "Clobber Grotesk";
+    font-size: 12px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.16px;
 }
 
-#CV .btn.mdn:hover>.btn_bg {
-    width: 100%;
+.p0 {
+    font-family: "Clobber Grotesk";
+    font-size: 36px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
 }
 
-#CV .btn_cont i {
+.p1 {
+    font-family: "Clobber Grotesk";
+    font-size: 32px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p2 {
+    font-family: "Clobber Grotesk";
+    font-size: 28px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p3 {
+    font-family: "Clobber Grotesk";
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -1px;
+    color: var(--ink);
+}
+
+.p4 {
+    font-family: "Clobber Grotesk";
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -0.7px;
+    color: var(--ink);
+}
+
+.p5 {
+    font-family: "Clobber Grotesk";
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -1px;
+    color: var(--ink);
+}
+
+.p6 {
+    font-family: "Clobber Grotesk";
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--ink);
+}
+
+h2 a,
+p a {
+    color: var(--links);
+    text-decoration: underline;
+    transition: 0.5s opacity;
+    font-weight: 400;
+}
+
+h2 a:hover,
+p a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+h2 a::after,
+p a::after {
+    content: "\f061";
+    display: inline-block;
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    margin-left: 2px;
     transform: rotate(-45deg);
 }
 
-.testimonials .title-text {
-    align-items: center;
-    margin-right: 128px;
+#highlight {
+    font-style: italic;
+    font-weight: 800;
 }
 
-.about-me-card-holder {
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-    margin-top: 56px;
-}
-
-.about-cards {
-    width: 424px;
-    height: 360px;
-    background: url(../img/about-me-1.png);
-    background-color: var(--secondary);
-    background-position-x: right;
-    background-position-y: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: var(--neutral);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 32px;
-    overflow: hidden;
-}
-
-.about-cards .title-text {
+#highlight::after {
+    content: "";
     width: 100%;
-}
-
-.about-cards:nth-child(2) {
-    background: url(../img/about-me-2.png);
-    background-color: var(--secondary);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: top;
-    margin-top: 32px;
-    background-position-x: right;
-}
-
-.about-cards:nth-child(3) {
-    background: url(../img/about-me-3.png);
-    background-color: var(--secondary);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-}
-
-.experience_card {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    padding: 20px 0;
-}
-
-.experience-body .row:nth-child(odd) .experience_card {
-    text-align: right;
-}
-
-.experience-body .row:nth-child(odd) .experience_card::after,
-.experience-body .row:nth-child(even) .experience_card::after {
-    content: '';
-    width: 1px;
-    height: 100%;
-    background: var(--placeholders);
+    background-color: var(--accent);
+    height: 1px;
     position: absolute;
-    top: 0;
-    right: -26px;
-}
-
-.experience-body .row .experience_card .job-client-location {
-    z-index: 10;
-}
-
-.experience-body .row:nth-child(even) .experience_card::after {
-    right: unset;
-    left: -19px;
-}
-
-.experience-body .row:nth-child(even) .experience_card {
-    text-align: left;
-}
-
-.experience-body .row:nth-child(even) .experience_card::before,
-.experience-body .row:nth-child(odd) .experience_card::before {
-    position: absolute;
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: var(--placeholders);
-    border-radius: 50%;
-    top: 50%;
-    left: -24px;
-}
-
-.experience-body .row:nth-child(odd) .experience_card::before {
-    left: unset;
-    right: -31px;
-}
-
-.experience-body .row:nth-child(even) .experience_card::before {
-    right: unset;
-    left: -24px;
-}
-
-.experience-body .row:last-child .experience_card::after {
-    height: 50%;
-}
-
-.experience-body .row:first-child .experience_card::after {
-    height: 50%;
+    left: 0;
     bottom: 0;
-    top: unset;
+}
+
+#quote {
+    font-style: italic;
+    margin: 40px 0;
+    display: block;
+    font-size: 26px;
+    width: 100%;
+    line-height: 1.5;
+    color: var(--placeholders);
+    border-left: 4px solid;
+    padding-left: 12px;
+}
+
+.nav-links li a {
+    font-family: "Clobber Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* identical to box height, or 140% */
+    /* secondary */
+    color: var(--ink);
+    /* text-transform: uppercase; */
+    flex: none;
+    flex-grow: 0;
+    padding: 8px;
 }
 
 .experience-body .row:nth-child(odd) {

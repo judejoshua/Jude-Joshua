@@ -23,7 +23,7 @@
         <!--iOS Safari-->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        
+
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -65,50 +65,57 @@
         <?php
             include 'nav.php';
         ?>
-        
-                
+
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'G-321KZ83579');
         </script>
-        
-        
-        <div class="preloader d-flex flex-justify-between d-flex-column">
-            <div class="bg-coach">
+
+
+        <div class="preloader d-flex flex-justify-between d-flex-column flex-align-center">
+            <div class="empty-div"></div>
+            <div class="pulse-effect">
+                <p class="remmit">Jude Joshua</p>
             </div>
-            <div>
-                <div class="pulse-effect">
-                    <span id="countdown"></span>
+            <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">
+                <div class="status-loader">
+                    <div></div>
                 </div>
-                <h1 id="status">
+                <p id="status" class="p5">
                     <span class="loader-dots">
                         <span class="loader__dot">.</span>
                         <span class="loader__dot">.</span>
                         <span class="loader__dot">.</span>
                     </span>
-                </h1>
+                </p>
             </div>
-            <div class="status d-flex flex-justify-between col-100">
+        </div>
+
+        <div class="contact preloader d-flex flex-justify-between d-flex-column hidden flex-align-center">
+            <div class="empty-div"></div>
+            <div class="pulse-effect">
+                <p class="remmit">Jude Joshua</p>
+            </div>
+            <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">
                 <div class="status-loader">
                     <div></div>
-                    <div></div>
-                    <div></div>
                 </div>
-                <p><span class="copyright"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span></p>
+                <p id="status" class="p5">
+                    <span class="loader-dots">
+                        <span class="loader__dot">.</span>
+                        <span class="loader__dot">.</span>
+                        <span class="loader__dot">.</span>
+                    </span>
+                </p>
             </div>
-            <!-- <div style="display: none;">
-                <p class="h1">JUDE JOSHUA</p>
-                <div class="loader-circles">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div> -->
         </div>
 
         <div id="cursor" class="cursor"></div>
+
+        <!-- <div class="bg-coach"></div> -->

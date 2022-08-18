@@ -20,24 +20,24 @@
         <?php
             if(explode('/', $url)[3] == 'contact')
             {
-                echo '
-                    <p class="p3">If you need more proof of my work strength, you can <a href="/portfolio">look at my past projects</a>.</p>
-                ';
+                //echo '
+                 //   <p class="p3">If you need more proof of my work strength, you can <a href="/portfolio">look at my past projects</a>.</p>
+                //';
             }else if(explode('/', $url)[3] == 'portfolio' || explode('/', $url)[3] == 'about')
-            { 
+            {
                 echo '
-                    <p class="p3">Your users desire a stress-free experience with your digital product. I can help you provide them with maximum satisfaction.</p>
+                    <p class="p4">Your users desire a stress-free experience with your digital product. I can help you provide this with maximum satisfaction.</p>
                     <a class="btn mdn" href="/contact">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
-                            <p id="text"><span>Find</span> out how</p>
+                            <p id="text"><span>Send</span> a message</p>
                             <i class="las la-arrow-right"></i>
                         </div>
                     </a>
                 ';
             }else{
                 echo '
-                    <p class="p3">If you\'re satisfied with what you\'ve seen and think that I am a good fit for your project, <a href="/contact">click here to send a message</a> or you can go ahead and <a href="/about">learn more about me</a>.</p>
+                    <p class="p4">If you are satisfied with what you\'ve seen and would love to discuss your project with me, <a href="/contact">send me a message</a> or <a href="/about">click here</a> to know about more my design journey.</p>
                 ';
             }
         ?>

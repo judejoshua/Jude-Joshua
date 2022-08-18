@@ -2,22 +2,23 @@
     display: flex;
     gap: 32px;
     flex-direction: column;
-    padding-top: 24px;
-    width: 64%;
+    width: 42%;
 }
 
 .landing {
     width: 100%;
     height: auto;
-    padding: 160px 128px 0;
+    padding: 128px 128px 0;
 }
 
 .header_cont {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 32px;
+    padding: 48px;
+    padding-left: 64px;
+    width: 100%;
+    background: var(--accent);
+    height: 464px;
 }
 
 .header-text {
@@ -25,7 +26,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 16px;
+    gap: 24px;
 }
 
 .landing-image img {
@@ -37,7 +38,7 @@
 body:not(#home-landing) .landing {
     width: 100%;
     text-align: center;
-    padding: 160px 128px 48px;
+    padding: 160px 128px 32px;
     height: auto;
     min-height: auto;
 }
@@ -65,7 +66,7 @@ body#contact .landing .text-divider {
 #landing-highlight {
     color: var(--links);
     display: inline-block;
-    letter-spacing: 1px;
+    /* font-family: "Romantica Signature"; */
 }
 
 #landing-highlight::before {
@@ -79,11 +80,26 @@ body#contact .landing .text-divider {
     border-bottom-color: transparent;
     border-right-color: transparent;
     position: absolute;
-    bottom: -6px;
+    bottom: -12px;
     left: 5px;
     top: unset;
 }
 
+#landing-img {
+    width: 42%;
+    background: url(/public/assets/img/ed.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #444444;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    right: 48px;
+    top: 48px;
+    /* border-radius: 270px; */
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
 #landing-highlight::after {
     content: "";
@@ -91,10 +107,10 @@ body#contact .landing .text-divider {
 }
 
 @keyframes spin {
-    from{
+    from {
         content: 'design';
     }
-    to{
-        content: 'build';
+    to {
+        content: 'design';
     }
 }

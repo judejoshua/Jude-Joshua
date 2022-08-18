@@ -8,7 +8,7 @@ footer {
 .cursor {
     pointer-events: none;
     position: fixed;
-    padding: 12px;
+    padding: 8px;
     background-color: var(--placeholders);
     border-radius: 50%;
     transition: transform 0.3s ease;
@@ -20,39 +20,39 @@ a:hover~.cursor {
 }
 
 .col-20 {
-    width: 20%;
+    width: 20% !important;
 }
 
 .col-30 {
-    width: 30%;
+    width: 30% !important;
 }
 
 .col-40 {
-    width: 40%;
+    width: 40% !important;
 }
 
 .col-50 {
-    width: 50%;
+    width: 50% !important;
 }
 
 .col-60 {
-    width: 60%;
+    width: 60% !important;
 }
 
 .col-70 {
-    width: 70%;
+    width: 70% !important;
 }
 
 .col-80 {
-    width: 80%;
+    width: 80% !important;
 }
 
 .col-90 {
-    width: 90%;
+    width: 90% !important;
 }
 
 .col-100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 .d-flex {
@@ -111,13 +111,13 @@ a:hover~.cursor {
 }
 
 .btn.lng {
-    width: 264px;
+    width: 280px;
     height: 72px;
 }
 
 .btn.lng .btn_cont {
-    top: 27px;
-    left: 42px;
+    top: 21px;
+    left: 43px;
 }
 
 .btn.lng .btn_bg {
@@ -149,7 +149,7 @@ a:hover~.cursor {
 }
 
 .btn.mdn .btn_cont {
-    left: 33px;
+    left: 38px;
 }
 
 .btn:hover>.btn_cont #text,
@@ -163,8 +163,8 @@ a:hover~.cursor {
 }
 
 .btn_bg {
-    width: 64px;
-    height: 64px;
+    width: 68px;
+    height: 68px;
     background: var(--secondary);
     border-radius: 64px;
     position: absolute;
@@ -175,32 +175,26 @@ a:hover~.cursor {
 
 .btn_cont {
     position: absolute;
-    top: 23px;
-    left: 22px;
+    top: 19px;
+    left: 31px;
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.results-section .btn_cont {
-    left: 34px;
+.results-section .btn.mdn .btn_cont {
+    left: 22px;
     top: 24px;
 }
 
 .btn_cont #text,
 .btn_cont i {
-    font-size: 18px;
-    font-weight: 700 !important;
+    font-size: 27px;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
     color: var(--secondary);
     transition: 1.5s;
-    word-spacing: 4px;
-}
-
-btn_cont #text {
-    font-family: "Grathink", sans-serif;
 }
 
 .btn_cont #text span {
@@ -208,10 +202,11 @@ btn_cont #text {
 }
 
 .row {
+    justify-content: space-between;
     display: flex;
     width: 100%;
     height: 100%;
-    gap: 16px;
+    gap: 32px;
     flex-wrap: wrap;
 }
 
@@ -268,7 +263,7 @@ section {
 }
 
 #liner {
-    width: 124px;
+    width: 24px;
     background: var(--secondary);
     height: 2px;
 }
@@ -443,4 +438,22 @@ span#close.fixed,
 iframe {
     width: 100%;
     height: 500px;
+}
+
+.bg-coach {
+    background: url(../img/results-background.png);
+    background-size: cover;
+    background-position-x: -252px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-color: var(--neutral);
+    background-attachment: fixed;
+    animation: shake-background 30s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* filter: blur(48px); */
+    /* z-index: -1; */
 }

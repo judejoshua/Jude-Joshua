@@ -1,115 +1,116 @@
-fieldset {
-  padding: 24px 56px 56px;
-  border: 1px solid var(--placeholders);
-  display: flex;
-  gap: 48px;
-  flex-direction: column;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-Light.eot');
+    src: local('Josefin Sans Light'), local('JosefinSans-Light'), url('/public/assets/fonts/josefin-sans/JosefinSans-Light.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-Light.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-Light.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
-legend {
-  padding: 0 0 0 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-variant: all-small-caps;
-  font-family: "Grathink", sans-serif;
-  color: var(--placeholders);
-  left: -14px;
-  background: var(--neutral);
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-Regular.eot');
+    src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url('/public/assets/fonts/josefin-sans/JosefinSans-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-Regular.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-Regular.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-form {
-  width: 100%;
-  padding: 0;
-  display: flex;
-  gap: 32px;
-  flex-direction: column;
-  background: url(../img/background.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.eot');
+    src: local('Josefin Sans SemiBold Italic'), local('JosefinSans-SemiBoldItalic'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
 }
 
-.form-body {
-  display: flex;
-  gap: 48px;
-  flex-direction: column;
-  width: 100%;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-LightItalic.eot');
+    src: local('Josefin Sans Light Italic'), local('JosefinSans-LightItalic'), url('/public/assets/fonts/josefin-sans/JosefinSans-LightItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-LightItalic.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-LightItalic.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
 }
 
-.form-group {
-  width: 100%;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBold.eot');
+    src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBold.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBold.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
 
-.form-group.dual {
-  display: flex;
-  gap: 48px;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-BoldItalic.eot');
+    src: local('Josefin Sans Bold Italic'), local('JosefinSans-BoldItalic'), url('/public/assets/fonts/josefin-sans/JosefinSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-BoldItalic.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-BoldItalic.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
 
-.input-group {
-  display: flex;
-  margin-top: 6px;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-ThinItalic.eot');
+    src: local('Josefin Sans Thin Italic'), local('JosefinSans-ThinItalic'), url('/public/assets/fonts/josefin-sans/JosefinSans-ThinItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-ThinItalic.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-ThinItalic.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
 }
 
-.input-field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 100%;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-Thin.eot');
+    src: local('Josefin Sans Thin'), local('JosefinSans-Thin'), url('/public/assets/fonts/josefin-sans/JosefinSans-Thin.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-Thin.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-Thin.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
 }
 
-#img-container .input-field {
-  width: fit-content;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-Bold.eot');
+    src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url('/public/assets/fonts/josefin-sans/JosefinSans-Bold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-Bold.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-Bold.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.form-input {
-  width: 100%;
-  padding: 8px 16px 8px 4px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--placeholders);
-  color: var(--secondary);
-  background: none;
+@font-face {
+    font-family: 'josefin_sans';
+    src: url('/public/assets/fonts/josefin-sans/JosefinSans-Italic.eot');
+    src: local('Josefin Sans Italic'), local('JosefinSans-Italic'), url('/public/assets/fonts/josefin-sans/JosefinSans-Italic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/josefin-sans/JosefinSans-Italic.woff2') format('woff2'), url('/public/assets/fonts/josefin-sans/JosefinSans-Italic.woff') format('woff'), url('/public/assets/fonts/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
-select.form-input {
-  padding: 14px 16px 14px 4px;
-}
-
-.form-area {
-  height: 104px;
-  resize: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background: none;
+@font-face {
+    font-family: 'Shegisha';
+    src: url('/public/assets/fonts/shegisha/Shegisha-Regular.eot');
+    src: local('Shegisha Regular'), local('Shegisha-Regular'), url('/public/assets/fonts/shegisha/Shegisha-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/shegisha/Shegisha-Regular.woff2') format('woff2'), url('/public/assets/fonts/shegisha/Shegisha-Regular.woff') format('woff'), url('/public/assets/fonts/shegisha/Shegisha-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 button.btn {
-  width: 156px;
+    width: 156px;
 }
 
 button .btn_cont {
-  left: 26px;
-  top: 24px;
+    left: 26px;
+    top: 24px;
 }
 
 body#contact article {
-  display: flex;
-  column-gap: 72px;
-  padding: 0 128px 128px;
+    display: flex;
+    column-gap: 72px;
+    padding: 0 128px 128px;
 }
 
 .contact-info {
-  width: 64%;
+    width: 64%;
 }
 
 .contact-info a {
-  color: var(--links);
-  display: inline-block;
+    color: var(--links);
+    display: inline-block;
 }
 
 .contact-info a span {
-  margin-right: 10px;
+    margin-right: 10px;
 }

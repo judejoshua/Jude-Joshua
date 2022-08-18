@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-Italic.eot');
+    src: local('Skarpa Italic'), local('Skarpa-Italic'),
+        url('Skarpa-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-Italic.woff2') format('woff2'),
+        url('Skarpa-Italic.woff') format('woff'),
+        url('Skarpa-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-ThinItalic.eot');
+    src: local('Skarpa Thin Italic'), local('Skarpa-ThinItalic'),
+        url('Skarpa-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-ThinItalic.woff2') format('woff2'),
+        url('Skarpa-ThinItalic.woff') format('woff'),
+        url('Skarpa-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-Light.eot');
+    src: local('Skarpa Light'), local('Skarpa-Light'),
+        url('Skarpa-Light.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-Light.woff2') format('woff2'),
+        url('Skarpa-Light.woff') format('woff'),
+        url('Skarpa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-Medium.eot');
+    src: local('Skarpa Medium'), local('Skarpa-Medium'),
+        url('Skarpa-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-Medium.woff2') format('woff2'),
+        url('Skarpa-Medium.woff') format('woff'),
+        url('Skarpa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa Semi';
+    src: url('Skarpa-SemiLightItalic.eot');
+    src: local('Skarpa Semi Light Italic'), local('Skarpa-SemiLightItalic'),
+        url('Skarpa-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-SemiLightItalic.woff2') format('woff2'),
+        url('Skarpa-SemiLightItalic.woff') format('woff'),
+        url('Skarpa-SemiLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa Semi';
+    src: url('Skarpa-SemiLight.eot');
+    src: local('Skarpa Semi Light'), local('Skarpa-SemiLight'),
+        url('Skarpa-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-SemiLight.woff2') format('woff2'),
+        url('Skarpa-SemiLight.woff') format('woff'),
+        url('Skarpa-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-LightItalic.eot');
+    src: local('Skarpa Light Italic'), local('Skarpa-LightItalic'),
+        url('Skarpa-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-LightItalic.woff2') format('woff2'),
+        url('Skarpa-LightItalic.woff') format('woff'),
+        url('Skarpa-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa Semi Light Demo';
+    src: url('Skarpa-SemiLightDemo.eot');
+    src: local('Skarpa Semi Light Demo'), local('Skarpa-SemiLightDemo'),
+        url('Skarpa-SemiLightDemo.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-SemiLightDemo.woff2') format('woff2'),
+        url('Skarpa-SemiLightDemo.woff') format('woff'),
+        url('Skarpa-SemiLightDemo.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-BoldItalic.eot');
+    src: local('Skarpa Bold Italic'), local('Skarpa-BoldItalic'),
+        url('Skarpa-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-BoldItalic.woff2') format('woff2'),
+        url('Skarpa-BoldItalic.woff') format('woff'),
+        url('Skarpa-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-Bold.eot');
+    src: local('Skarpa Bold'), local('Skarpa-Bold'),
+        url('Skarpa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-Bold.woff2') format('woff2'),
+        url('Skarpa-Bold.woff') format('woff'),
+        url('Skarpa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa Light Italic Demo';
+    src: url('Skarpa-LightItalicDemo.eot');
+    src: local('Skarpa Light Italic Demo'), local('Skarpa-LightItalicDemo'),
+        url('Skarpa-LightItalicDemo.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-LightItalicDemo.woff2') format('woff2'),
+        url('Skarpa-LightItalicDemo.woff') format('woff'),
+        url('Skarpa-LightItalicDemo.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-MediumItalic.eot');
+    src: local('Skarpa Medium Italic'), local('Skarpa-MediumItalic'),
+        url('Skarpa-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-MediumItalic.woff2') format('woff2'),
+        url('Skarpa-MediumItalic.woff') format('woff'),
+        url('Skarpa-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-Regular.eot');
+    src: local('Skarpa'), local('Skarpa-Regular'),
+        url('Skarpa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-Regular.woff2') format('woff2'),
+        url('Skarpa-Regular.woff') format('woff'),
+        url('Skarpa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skarpa';
+    src: url('Skarpa-Thin.eot');
+    src: local('Skarpa Thin'), local('Skarpa-Thin'),
+        url('Skarpa-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Skarpa-Thin.woff2') format('woff2'),
+        url('Skarpa-Thin.woff') format('woff'),
+        url('Skarpa-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

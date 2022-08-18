@@ -5,17 +5,34 @@
 
 .scroll-down p {
     transform: rotate(-90deg);
-    font-weight: 900;
-    left: 2px;
+    left: 12px;
+    top: -64px;
+    font-weight: 500;
+    width: 56px;
+    display: none;
+}
+
+body#resume .scroll-down p {
+    top: -5px;
 }
 
 #arrow-tail-long {
     width: 1px;
-    height: 56px;
+    height: 104px;
     background: transparent;
     position: absolute;
     bottom: 0;
-    left: 49%;
+    right: 15px;
+}
+.mouse {
+    border: 1px solid;
+    width: 32px;
+    /* position: absolute; */
+    height: 64px;
+    border-radius: 12px;
+}
+#resume div#arrow-tail-long {
+    /* height: 48px; */
 }
 
 #arrow-tail-long::before {
@@ -46,7 +63,7 @@
         bottom: 80%;
     }
     to {
-        height: 60%;
+        height: 80%;
         bottom: 0;
     }
 }

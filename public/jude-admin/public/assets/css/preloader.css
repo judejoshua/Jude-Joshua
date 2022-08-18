@@ -1,106 +1,215 @@
-@-moz-keyframes rotatecircle {
-    0% {
-        -moz-transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(-360deg);
-    }
-}
-
-@-webkit-keyframes rotatecircle {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
-}
-
-@keyframes rotatecircle {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
-}
-
-.no-js #loader {
-    display: none;
-}
-
-.js #loader {
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 0;
-}
-
-.preloader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background-color: var(--neutral);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.preloader .h1 {
-    font-family: 'Playfair Display', serif;
+.h0 {
+    font-family: "Clobber Grotesk";
+    font-size: 64px;
+    font-weight: 900;
+    font-stretch: normal;
     font-style: normal;
-    font-weight: 800;
+    line-height: 1.6;
+}
+
+h1,
+.h1 {
+    font-family: "Clobber Grotesk";
+    font-size: 48px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    /* word-spacing: 12px; */
+}
+
+h2,
+.h2 {
+    font-family: "Clobber Grotesk";
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+h3,
+.h3 {
+    font-family: "Clobber Grotesk";
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.96px;
+}
+
+h4,
+.h4 {
+    font-family: "Clobber Grotesk";
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.26px;
+}
+
+h5,
+.h5 {
+    font-family: "Clobber Grotesk";
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+}
+
+h6,
+.h6 {
+    font-family: "Clobber Grotesk";
+    font-size: 12px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.16px;
+}
+
+.p0 {
+    font-family: "Clobber Grotesk";
+    font-size: 36px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p1 {
+    font-family: "Clobber Grotesk";
+    font-size: 32px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p2 {
+    font-family: "Clobber Grotesk";
+    font-size: 28px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p3 {
+    font-family: "Clobber Grotesk";
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: -1px;
+    color: var(--ink);
+}
+
+.p4 {
+    font-family: "Clobber Grotesk";
     font-size: 20px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.6em;
-    color: var(--secondary);
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -0.7px;
+    color: var(--ink);
 }
 
-.loader-circles {
-    height: 48px;
-    width: 48px;
+.p5 {
+    font-family: "Clobber Grotesk";
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -1px;
+    color: var(--ink);
 }
 
-.loader-circles div {
-    border: 4px solid var(--placeholders);
+.p6 {
+    font-family: "Clobber Grotesk";
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--ink);
+}
+
+h2 a,
+p a {
+    color: var(--links);
+    text-decoration: underline;
+    transition: 0.5s opacity;
+    font-weight: 400;
+}
+
+h2 a:hover,
+p a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+h2 a::after,
+p a::after {
+    content: "\f061";
+    display: inline-block;
+    font-family: "Line Awesome Free";
+    font-weight: 900;
+    margin-left: 2px;
+    transform: rotate(-45deg);
+}
+
+#highlight {
+    font-style: italic;
+    font-weight: 800;
+}
+
+#highlight::after {
+    content: "";
     width: 100%;
-    height: 100%;
+    background-color: var(--accent);
+    height: 1px;
     position: absolute;
-    background: none;
-    border-radius: 50%;
-    border-top: 5px solid transparent;
-    -moz-animation: rotatecircle 4s infinite linear;
-    -webkit-animation: rotatecircle 4s infinite linear;
-    animation: rotatecircle 4s infinite linear;
+    left: 0;
+    bottom: 0;
 }
 
-.loader-circles div:nth-child(2) {
-    width: 75%;
-    height: 75%;
-    left: calc(25%/2);
-    top: calc(25%/2);
-    border-left: 4px solid transparent;
-    border-right: 4px solid var(--placeholders);
-    border-top: 4px solid var(--placeholders);
-    animation-direction: reverse;
+#quote {
+    font-style: italic;
+    margin: 40px 0;
+    display: block;
+    font-size: 26px;
+    width: 100%;
+    line-height: 1.5;
+    color: var(--placeholders);
+    border-left: 4px solid;
+    padding-left: 12px;
 }
 
-.loader-circles div:nth-child(3) {
-    width: 50%;
-    height: 50%;
-    left: calc(50%/2);
-    top: calc(50%/2);
-    border-bottom: 4px solid transparent;
-    border-right: 4px solid var(--placeholders);
-    border-top: 4px solid var(--placeholders);
-}
-
-.recha.preloader .h1 {
-    display: none;
+.nav-links li a {
+    font-family: "Clobber Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    /* identical to box height, or 140% */
+    /* secondary */
+    color: var(--ink);
+    /* text-transform: uppercase; */
+    flex: none;
+    flex-grow: 0;
+    padding: 8px;
 }

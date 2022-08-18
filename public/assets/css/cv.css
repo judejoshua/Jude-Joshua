@@ -1,17 +1,20 @@
 body#resume .landing {
-    background: url(../img/resume-background.png);
-    background-size: cover;
+    /* background: linear-gradient(to bottom, #0000001f, #101010), url(../img/resume-background.png); */
+    background: linear-gradient(to bottom, #0000001f, #101010), url(../img/landing-img.webp);
+    background-size: contain;
     background-color: var(--secondary);
     background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 120px;
-    animation: shake-background 30s linear infinite;
+    background-position: left;
+    background-position-x: 32px;
+    padding: 210px 128px 90px;
+    background-attachment: fixed;
 }
 
 body#resume .landing .text-divider {
     align-items: flex-start;
     color: var(--neutral);
     width: 100%;
+    opacity: 0;
 }
 
 body#resume navigation a {
@@ -34,33 +37,9 @@ body#resume navigation.fixed .nav-links li.active::after {
     background-color: var(--secondary);
 }
 
-a.download {
-    padding: 24px 18px;
-    color: var(--accent);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    left: unset;
-    position: fixed;
-    z-index: 100;
-    background: var(--ink);
-    bottom: 4%;
-    right: 4%;
-    box-shadow: 0px 4px 30px rgb(94 94 94 / 24%);
-    transition: 0.8s;
-}
-
-a.download i {
-    line-height: 20px;
-    font-size: 36px;
-}
-
-a.download:hover {
-    color: var(--neutral);
-    background: var(--secondary);
+.title-contact p a {
+    color: var(--links);
+    text-decoration: none;
 }
 
 body#resume .mobile-nav-opener div {
@@ -72,12 +51,12 @@ body#resume navigation.fixed .mobile-nav-opener div {
 }
 
 #resume-begins {
-    padding: 128px 144px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 64px;
     width: 100%;
     align-items: center;
+    padding-top: 96px;
 }
 
 .title {
@@ -94,19 +73,6 @@ body#resume navigation.fixed .mobile-nav-opener div {
 .title-contact {
     text-align: left;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 24px;
-    flex-wrap: wrap
-}
-
-.title-contact p {
-    font-size: 13px;
-    color: var(--background-circles);
-    font-weight: 500;
-}
-
-.title-contact p a {
-    color: var(--background-circles);
 }
 
 .title-contact p a::after {
@@ -114,9 +80,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
 }
 
 .resume-body {
-    display: flex;
-    gap: 64px;
-    flex-direction: column-reverse;
+    gap: 80px;
 }
 
 
@@ -135,7 +99,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
 .right-text-divider {
     display: flex;
     flex-direction: column;
-    row-gap: 64px;
+    row-gap: 80px;
     width: 100%;
 }
 
@@ -151,24 +115,51 @@ body#resume navigation.fixed .mobile-nav-opener div {
 .section {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 56px;
     margin-top: 8px;
 }
 
 .section .title-text {
-    gap: 0;
+    gap: 16px;
 }
 
-.section .title-text .h4 {
+.section .title-text .p4 {
     color: var(--ink);
+    font-weight: 600;
+}
+
+.section .title-text .p4 span {
+    font-weight: 400;
 }
 
 ol li {
-    list-style: decimal;
+    list-style: disc;
 }
 
 ol {
     padding-left: 16px;
+}
+
+.section .title-text ol .p4 {
+    font-weight: 400;
+}
+
+span#spacer {
+    display: inline-block;
+    width: 18px;
+    margin: 0 12px;
+    top: -6px;
+}
+
+span#spacer::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: var(--secondary);
+    height: 1.5px;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
 }
 
 .dater {

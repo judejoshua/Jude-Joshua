@@ -8,32 +8,22 @@
     </head>
 
     <body id="home-landing">
-        <div class="bg-coach">
-        </div>
         <div class="wrapper" id="top">
             <header class="landing d-flex d-flex-row flex-justify-between flex-align-end" id="home">
-                <div class="header_cont">
+                <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
                     <div class="header">
                         <div class="header-text">
-                            <h1>Using creativity and passion to <span id="landing-highlight"></span> a better world.</h1>
-                            <p class="p4">I am Jude Joshua, a product designer from Nigeria 🇳🇬. I seek to use my design knowledge and skills in ways that create better design patterns and improved lifestyles in the most intuitive and useful way possible.</p>
+                            <h1>Using creativity and</br>passion to <span id="landing-highlight"></span> a</br>better world.</h1>
+                            <div id="liner"></div>
+                            <p class="p4">I seek to use my design knowledge and skills in ways that create better user patterns and improved lifestyles in the most intuitive and useful way possible.</p>
                         </div>
                     </div>
-                </div>
-                <div class="scroll-down">
-                    <p>SCROLL</p>
-                    <div class="mouse">
-                        <div id="arrow-tail-short"></div>
-                    </div>
-                    <div id="arrow-tail-long"></div>
+                    <div id="landing-img"></div>
                 </div>
             </header>
             <article id="body">
                 <section id="case-study">
                     <div class="case-studies-body">
-                        <div class="text-divider">
-                            <div id="liner"></div>
-                        </div>
                         <div class="projects-holder">
                             <div class="row">
                                 <?php
@@ -48,30 +38,30 @@
                                             break;
                                         }
                                     }
-                                    
+
                                     foreach ($columns as $column)
                                     {
                                         echo '
                                             <div class="flexer">';
-                                            
+
                                             foreach ($column as $project)
                                             {
                                                 $project_data = json_decode($project['project_data'], true);
-                                               
+
                                                 echo '
-                                                    <a href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                    <a id="projector" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
                                                             <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
-                                                                    <h4>'.$project_data['project_title'].'</h4>
+                                                                    <h5>'.$project_data['project_title'].'</h5>
                                                                     <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                 </div>
                                                                 <i class="las la-arrow-right"></i>
                                                             </div>
                                                         </div>
                                                     </a>
-                                                ';   
+                                                ';
                                             }
                                             echo '
                                             </div>
@@ -112,7 +102,7 @@
                                             <h2><span>01.</span> Research</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p5">
+                                            <p class="p4">
                                                 This is the key process in getting the desired results. First, I pay close attention to the problem or idea, and try to understand the goals.<br/>
                                                 After this, I conduct interviews, deep findings/researches and then, I create user personaes based on my findings. My research methodolgy is simple - <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
                                             </p>
@@ -128,7 +118,7 @@
                                             <h2><span>02.</span> Ideation</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p5">
+                                            <p class="p4">
                                                 Here comes the most exciting part of the process. With an established understanding, I analyse and then begin to draft ideas and solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
                                             </p>
                                         </div>
@@ -143,7 +133,7 @@
                                             <h2><span>03.</span> Prototyping</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p5">
+                                            <p class="p4">
                                                 After designing, I carry out tests on the draft version of the product. I explore the product as a user while taking note of the 'why' behind the experience.<br/>
                                                 From here, I can know what is lacking; or if the product is working as it should, and then adjust it to satisfy the desired needs.
                                             </p>
@@ -159,7 +149,7 @@
                                             <h2><span>04.</span> Testing</h2>
                                         </div>
                                         <div class="body">
-                                            <p class="p5">
+                                            <p class="p4">
                                                 This is the main testing process.</br>
                                                 After the initial prototype testing and implementation of the product, I test the product further with real users.</br>
                                                 After I get feedback, I cross-check it with the desired needs and if needed, re-adjust the product to meet the desired business and user objectives.
@@ -186,7 +176,7 @@
                             <h2>A good fit?</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                Every successful person has a driving force that motivates them to excel. For me, It is my deep passion for design that drives me. There isn't a day that goes by without me utilizing my design skills in some way.<br/>I have been fascinated by design since my childhood. This love combined with a desire to simplify and improve people's lives is what inspired me to become a designer. This is why, whether it is through design or coding, I strive to make the digital life of my users as easy as possible through accessible, minimalist, and useful designs.
+                                Every successful person has a driving force that motivates them to excel. For me, it is my deep passion for design. There isn't a day that goes by without me utilizing my design skills in some way.<br/>I have been fascinated by design since my childhood. This love combined with a desire to simplify and improve people's lives is what inspired me to become a designer. This is why, whether it is through design or coding, I strive to make the digital life of my users as easy as possible through accessible, minimalist, and useful designs.
                             </p>
                         </div>
                         <a class="btn" href="/cv">

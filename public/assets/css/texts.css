@@ -1,61 +1,59 @@
 .h0 {
-    font-family: "Grathink", serif;
+    font-family: "Skarpa";
     font-size: 64px;
-    font-weight: 900;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
-    letter-spacing: 3.2px;
+    line-height: 0.9;
 }
 
 h1,
 .h1 {
-    font-family: "Grathink", serif;
-    font-size: 56px;
-    font-weight: 900;
+    font-family: "Skarpa";
+    font-size: 64px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
-    /* word-spacing: 12px; */
+    line-height: 0.9;
+    word-spacing: -8px;
+    letter-spacing: -1px;
 }
 
 h2,
 .h2 {
-    font-family: "Grathink", serif;
+    font-family: "Skarpa";
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 0.9;
 }
 
 h3,
 .h3 {
-    font-family: "Grathink", serif;
+    font-family: "Skarpa";
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
-    letter-spacing: 0.96px;
+    line-height: 0.9;
 }
 
 h4,
 .h4 {
-    font-family: "Grathink", serif;
+    font-family: "Skarpa";
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2;
-    letter-spacing: 0.26px;
+    line-height: 0.9;
 }
 
 h5,
 .h5 {
-    font-family: "Grathink", serif;
-    font-size: 16px;
-    font-weight: 900;
+    font-family: "Skarpa";
+    font-size: 20px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
@@ -64,83 +62,88 @@ h5,
 
 h6,
 .h6 {
-    font-family: "Grathink", serif;
-    font-size: 12px;
-    font-weight: 900;
+    font-family: "Skarpa";
+    font-size: 16px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.6;
-    letter-spacing: 0.16px;
+    line-height: 0.9;
 }
 
 .p0 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 40px;
-    font-weight: 900;
+    font-family: "Skarpa";
+    font-size: 56px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.8;
     letter-spacing: normal;
+    color: var(--ink);
 }
 
 .p1 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 36px;
-    font-weight: 900;
+    font-family: "Skarpa";
+    font-size: 48px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.8;
     letter-spacing: normal;
+    color: var(--ink);
 }
 
 .p2 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 32px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: normal;
-}
-
-.p3 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 28px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: -1px;
-}
-
-.p4 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.7;
-    letter-spacing: -1px;
-}
-
-.p5 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.7;
-    letter-spacing: -1px;
-}
-
-.p6 {
-    font-family: "josefin_sans", sans-serif;
-    font-size: 16px;
-    font-weight: 900;
+    font-family: "Skarpa";
+    font-size: 40px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.4;
-    letter-spacing: -1px;
+    letter-spacing: normal;
+    color: var(--ink);
+}
+
+.p3 {
+    font-family: "Skarpa";
+    font-size: 32px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    color: var(--ink);
+}
+
+.p4 {
+    font-family: "Skarpa";
+    font-size: 24px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: -0.6px;
+    color: var(--ink);
+}
+
+.p5 {
+    font-family: "Skarpa";
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: -0.7px;
+    color: var(--ink);
+}
+
+.p6 {
+    font-family: "Skarpa";
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--ink);
 }
 
 h2 a,
@@ -148,7 +151,7 @@ p a {
     color: var(--links);
     text-decoration: underline;
     transition: 0.5s opacity;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h2 a:hover,
@@ -195,15 +198,22 @@ p a::after {
 }
 
 .nav-links li a {
-    /* font-family: "josefin_sans", sans-serif; */
+    font-family: "Skarpa";
     font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 20px;
     /* identical to box height, or 140% */
     /* secondary */
-    color: var(--secondary);
+    color: var(--ink);
     /* text-transform: uppercase; */
     flex: none;
     flex-grow: 0;
     padding: 8px;
+}
+
+.btn_cont #text {
+    font-family: "Skarpa";
+    font-weight: 400;
+    /* word-spacing: 1px; */
+    font-size: 21px !important;
 }
