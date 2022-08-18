@@ -48,7 +48,7 @@
                                                 $project_data = json_decode($project['project_data'], true);
                                                
                                                 echo '
-                                                    <a href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                    <a id="projector" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
                                                             <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">

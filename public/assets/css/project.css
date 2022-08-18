@@ -1,6 +1,6 @@
 #case-study {
     display: flex;
-    gap: 88px;
+    gap: 40px;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -12,7 +12,7 @@
 }
 
 body#home-landing #case-study {
-    padding-top: 194px;
+    padding-top: 136px;
     padding-bottom: 96px;
     display: flex;
 }
@@ -28,6 +28,7 @@ body#home-landing #case-study {
     align-items: flex-start;
     width: 100%;
     gap: 64px;
+    padding-bottom: 72px;
 }
 
 .projects-holder {
