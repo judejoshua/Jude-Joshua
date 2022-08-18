@@ -53,7 +53,7 @@
                                                             <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
-                                                                    <h4>'.$project_data['project_title'].'</h4>
+                                                                    <h5>'.$project_data['project_title'].'</h5>
                                                                     <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                 </div>
                                                                 <i class="las la-arrow-right"></i>
@@ -126,7 +126,7 @@
                 
                 project_data_array = JSON.parse(project.project_data);
                 
-                $(".projects-holder .row").append('<a id="projector" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h4>'+ project_data_array.project_title +'</h4><span id="tags" class="p5">'+ project.project_type +'</span></div><i class="las la-arrow-right"></i></div></div></a>')
+                $(".projects-holder .row").append('<a id="projector" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h5>'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span></div><i class="las la-arrow-right"></i></div></div></a>')
             });
 
 

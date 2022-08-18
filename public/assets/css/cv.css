@@ -186,3 +186,7 @@ span#spacer::after {
 .tools .title-text.section {
     gap: 24px;
 }
+
+.caption-text #tags {
+    color: var(--placeholders);
+}
