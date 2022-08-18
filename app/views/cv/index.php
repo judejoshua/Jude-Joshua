@@ -18,7 +18,7 @@
                 <section id="resume-begins" class="d-flex d-flex-column">
                     <div class="title d-flex d-flex-row flex-justify-between">
                         <div class="title-text">
-                            <h2>Jude Joshua</h2>
+                            <h1>Jude Joshua</h1>
                             <p class="p4">Product Designer/Developer</p>
                         </div>
                         <div class="scroll-down">
@@ -37,15 +37,47 @@
                         <p class="p4"><a href="https://linkedin.com/in/judejoshua">https://linkedin.com/in/judejoshua</a></p>
                     </div>
                     <div class="divisor"></div>
-                    <div class="resume-body">
+                    <div class="resume-body d-flex d-flex-column">
                         <div class="left-text-divider">
                             <div class="summary title-text">
-                                <h3>Summary</h3>
+                                <h2>Summary</h3>
                                 <div id="liner"></div>
                                 <p class="p4">Detailed and innovative Product Designer with three years of experience in UI/UX Design and seven years of experience in Web design and development. Leveraging my expertise in user research, design systems and UX writing to design usable interactions between the digital platforms and end-users. Highly self-motivated, design aesthetics expert with tremendous time management techniques to deliver on tight deadlines. Possessing excellent interpersonal skills. A strong team builder and a natural leader.</p>
                             </div>
+                            <div class="tools title-text">
+                                <h2>Tools</h2>
+                                <div id="liner"></div>
+                                <ul class="section">
+                                    <div class="title-text section">
+                                        <li>
+                                            <p class="p4">Figma<br/><span>Design, prototyping, wireframes, case studies, design systems, user research, information architecture, user flow, user persona, empathy maps, style guide generation, competitor analysis</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Google & Microsoft forms<br/><span>User surveys, user research</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Zeplin<br/><span>Developer collaboration & hand-offs, style guide generation</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Protopie<br/><span>Advanced prototyping, wireframing, user testing, usability testing.</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Adobe XD<br/><span>Basic designs, prototyping, wireframing</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Trello<br/><span>Task management, team collaboration, time management</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Slack<br/><span>Task management, team collaboration</span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4">Visual Studio Code<br/><span>Php, Jquery/Javascript, Html/Css, Vue.js, MySql</span></p>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
                             <div class="experience title-text">
-                                <h3>Work Experience</h3>
+                                <h2>Work Experience</h3>
                                 <div id="liner"></div>
                                 <div class="section">
                                     <div class="experience-section title-text">
@@ -92,8 +124,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- <div class="divisor"></div> -->
                             <div class="projects title-text">
-                                <h3>Projects</h3>
+                                <h2>Projects</h3>
                                 <div id="liner"></div>
                                 <div class="section">
                                     <div class="projects-section title-text">
@@ -111,7 +144,7 @@
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
-                                        <p class="p4">Visual/UI Desgner <span id="spacer"></span><span>November 2021</span><br/><span>Olamide Damilare for SoliumRise</span></p>
+                                        <p class="p4">Visual/UI Designer <span id="spacer"></span><span>November 2021</span><br/><span>Olamide Damilare for SoliumRise</span></p>
                                         <ol>
                                             <li>
                                                 <p class="p4">Worked to provide sketches & wireframes, prototypes and style guides for the development of their DEX web app.</p>
@@ -133,208 +166,65 @@
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
-                                        <p>Thrive.NG | UI/UX Designer (Freelance)</p>
-                                        <p class="h4">August 2021 - September 2021</p>
+                                        <p class="p4">UI/UX Designer <span id="spacer"></span><span>August 2021 - September 2021</span><br/><span>Ugochukwu Kizito for Thrive.NG</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked to provide a saas (services as a software) web platform for the client.</p>
-                                            </li>
-                                            <li>
-                                                <p class="p4">Ensured that the mobile version of the platform was very easy to use and not confusing in any way.</p>
-                                            </li>
-                                            <li>
-                                                <p class="p4">Converted the final design to frontend code.</p>
+                                                <p class="p4">Worked to design and develop a responsive saas (services as a software) landing web platform for the client, in addition to providing style guides, prototypes for usability testing and a design system for developer handoff.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
-                                        <p>Club and Country | Web Designer/Developer (Freelance)</p>
-                                        <p class="h4">December 2020 - January 2021</p>
+                                        <p class="p4">Web Designer/Developer <span id="spacer"></span><span>December 2020 - January 2021</span><br/><span>Club and Country</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Designed and curated the implementation of the company’s landing page.</p>
+                                                <p class="p4">Designed and developed a responsive landing page to provide a way for over 100+ users to ask questions and get feedback about the client’s services.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text" id="divisor">
-                                        <p>CypressEnergy | Web Designer/Developer (Freelance)</p>
-                                        <p class="h4">December 2019 - January 2020</p>
+                                        <p class="p4">Web Designer/Developer <span id="spacer"></span><span>December 2019 - January 2020</span><br/><span>CypressEnergy</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Designed and developed a saas landing page to showcase the company's services.</p>
+                                                <p class="p4">Designed and developed a responsive saas (services as a software) landing webpage showcasing the company's services and a means for users to reach out and request these services.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
-                                        <p>Nweke Cynthia | Web Designer/Developer (Freelance)</p>
-                                        <p class="h4">February 2019 - April 2019</p>
+                                        <p class="p4">Web Designer/Developer <span id="spacer"></span><span>February 2019 - April 2019</span><br/><span>Nweke Cynthia</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Developed a simple cms for a school clinic management system.</p>
+                                                <p class="p4">Worked to design and develop a simple clinic management system for a university clinic with dashboard areas for 3 clinic doctors to manage their schedule, 10+ clinic admin staff, and over 500+ students to book clinic appointments.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="projects-section title-text">
-                                        <p>Ugochukwu Kizito | Web Developer (Freelance)</p>
-                                        <p class="h4">July 2018 - August 2018</p>
+                                        <p class="p4">Web Designer/Developer <span id="spacer"></span><span>July 2018 - August 2018</span><br/><span>Ugochukwu Kizito</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Designed and developed a simple vehicle license and offence booking system.</p>
+                                                <p class="p4">Designed and developed an MVP of a vehicle license and offence booking system providing road officials with a way to validate driving licenses and car owners with a way to update their driving licenses from the comfort of digital devices.</p>
                                             </li>
                                         </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="divisor"></div> -->
+                        <div class="right-text-divider">
+                            <div class="education title-text">
+                                <h2>Education</h3>
+                                <div id="liner"></div>
+                                <div class="section">
+                                    <div class="education-section title-text">
+                                        <p class="p4">Computer Engineering<br/><span>Caritas University, Enugu, Nigeria</span><br/><span>September 2013 - August 2018</span></p>
+                                    </div>
+                                    <div class="education-section title-text">
+                                        <p class="p4">Advanced Diploma in Computer Engineering and maintenance<br/><span>IBML Computer Institute, Uyo, Nigeria</span><br/><span>2012 - August 2013</span></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="divisor"></div>
-                        <div class="right-text-divider">
-                            <div class="education title-text">
-                                <h3>Education</h3>
-                                <div id="liner"></div>
-                                <div class="section">
-                                    <div class="education-section title-text">
-                                        <p>Caritas University, Enugu, Nigeria</p>
-                                        <p class="p4">Computer Engineering</p>
-                                        <p class="p4">September 2013 - August 2018</p>
-                                    </div>
-                                    <div class="education-section title-text">
-                                        <p>IBML Computer Institute, Uyo, Nigeria</p>
-                                        <p class="p4">Advanced Diploma in Computer Engineering and maintenance</p>
-                                        <p class="p4">2012 - August 2013</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="divisor"></div>
-                            <div class="tools title-text">
-                                <h3>Tools</h3>
-                                <div id="liner"></div>
-                                <ul>
-                                    <li>
-                                        <p class="p4">Figma</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Zeplin</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Framer</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Trello</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Slack</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">CorelDraw</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Adobe Illustrator</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="divisor"></div>
-                            <div class="skills title-text">
-                                <h3>Soft skills</h3>
-                                <div id="liner"></div>
-                                <ul>
-                                    <li>
-                                        <p class="p4">Empathy</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Analytical Thinking</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Presentation</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Teamwork and collaboration</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Problem Solving</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Conflict Management</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Adaptability</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Time Management</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Openness to Criticism</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Resourcefulness</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Critical Thinking</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Communication</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Timeliness</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Story Telling</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Team management and Organization</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="skills title-text">
-                                <h3>Hard skills</h3>
-                                <div id="liner"></div>
-                                <ul>
-                                    <li>
-                                        <p class="p4">User Research</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Prototyping</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Design Systems</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">User Personas</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Sketching/Wireframing</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Interaction Design</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Usability Testing</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Visual/UI Design</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">User Experience Design</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">HTML5/CSS3</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">MySql</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Javascript/Jquery</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Vue.js</p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">PHP</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                    <div class="divisor"></div>
                     <a class="btn lng ln dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">

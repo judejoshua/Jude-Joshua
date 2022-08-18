@@ -140,8 +140,13 @@ a:hover~.cursor {
 }
 
 .btn.lng.ln .btn_cont {
-    top: 36px;
-    left: 23px;
+    top: 29px;
+    left: 17px;
+    transition: 0.5s;
+}
+
+.btn.lng.ln:hover>.btn_cont {
+    left: 29px;
 }
 
 .btn.mdn {
@@ -183,8 +188,8 @@ a:hover~.cursor {
 }
 
 .results-section .btn.mdn .btn_cont {
-    left: 22px;
-    top: 24px;
+    left: 29px;
+    top: 19px;
 }
 
 .btn_cont #text,

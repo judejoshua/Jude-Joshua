@@ -1,11 +1,11 @@
 body#resume .landing {
     /* background: linear-gradient(to bottom, #0000001f, #101010), url(../img/resume-background.png); */
-    background: linear-gradient(to bottom, #0000001f, #101010), url(../img/landing-img.webp);
+    background: url(../img/landing-image.webp);
     background-size: contain;
-    background-color: var(--secondary);
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: left;
-    background-position-x: 32px;
+    background-position-x: -104px;
     padding: 210px 128px 90px;
     background-attachment: fixed;
 }
@@ -42,6 +42,10 @@ body#resume navigation.fixed .nav-links li.active::after {
     text-decoration: none;
 }
 
+.title-contact p a:hover {
+    opacity: 0.5;
+}
+
 body#resume .mobile-nav-opener div {
     background: var(--neutral);
 }
@@ -53,10 +57,11 @@ body#resume navigation.fixed .mobile-nav-opener div {
 #resume-begins {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 48px;
     width: 100%;
     align-items: center;
     padding-top: 96px;
+    padding-bottom: 104px;
 }
 
 .title {
@@ -80,7 +85,8 @@ body#resume navigation.fixed .mobile-nav-opener div {
 }
 
 .resume-body {
-    gap: 80px;
+    gap: 64px;
+    padding-bottom: 56px;
 }
 
 
@@ -92,14 +98,14 @@ body#resume navigation.fixed .mobile-nav-opener div {
 .divisor {
     height: 1px;
     width: 100%;
-    background-color: var(--ink);
+    background-color: var(--placeholders);
 }
 
 .left-text-divider,
 .right-text-divider {
     display: flex;
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 64px;
     width: 100%;
 }
 
@@ -115,12 +121,12 @@ body#resume navigation.fixed .mobile-nav-opener div {
 .section {
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 36px;
     margin-top: 8px;
 }
 
 .section .title-text {
-    gap: 16px;
+    gap: 0;
 }
 
 .section .title-text .p4 {
@@ -167,10 +173,6 @@ span#spacer::after {
     margin: 4px 0;
 }
 
-#resume-begins #liner {
-    /* width: 56px; */
-}
-
 .skills ul,
 .tools ul {
     padding-left: 16px;
@@ -179,4 +181,8 @@ span#spacer::after {
 .skills ul li,
 .tools ul li {
     list-style: disc;
+}
+
+.tools .title-text.section {
+    gap: 24px;
 }

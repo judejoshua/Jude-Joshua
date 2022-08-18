@@ -41,7 +41,8 @@ body#home-landing #case-study {
 }
 
 body:not(#home-landing) #case-study {
-    padding-top: 24px;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
 .projects-holder .notice p {
@@ -311,19 +312,18 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 span#project-counter {
-    padding: 2.5px 6px;
+    padding: 0px 6px;
     border-radius: 50%;
     background: var(--secondary);
     color: var(--neutral);
     margin-left: 4px;
-    top: -1px;
 }
 
 #tag-single.secondary:hover,
 #tag-single.secondary.active {
-    background-color: var(--background-circles);
+    background-color: var(--ink);
     color: var(--neutral);
-    border-color: var(--background-circles);
+    border-color: var(--ink);
 }
 
 #tag-single.secondary:hover span#project-counter {
