@@ -285,8 +285,9 @@
 #div-about-grab {
     width: 33%;
     height: 680px;
-    background: url('../img/about-me.webp');
+    background: url('../img/landing-image.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(1);
+    background-position: center;
+    /* filter: grayscale(1); */
 }

@@ -177,7 +177,7 @@
                                         <p class="p4">Web Designer/Developer <span id="spacer"></span><span>December 2020 - January 2021</span><br/><span>Club and Country</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Designed and developed a responsive landing page to provide a way for over 100+ users to ask questions and get feedback about the client’s services.</p>
+                                                <p class="p4">Designed and developed a responsive landing page to provide a way for 100+ users to ask questions and get feedback about the client’s services.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -193,7 +193,7 @@
                                         <p class="p4">Web Designer/Developer <span id="spacer"></span><span>February 2019 - April 2019</span><br/><span>Nweke Cynthia</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked to design and develop a simple clinic management system for a university clinic with dashboard areas for 3 clinic doctors to manage their schedule, 10+ clinic admin staff, and over 500+ students to book clinic appointments.</p>
+                                                <p class="p4">Worked to design and develop a simple clinic management system for a university clinic with dashboard areas for 3 clinic doctors to manage their schedule, 10+ clinic admin staff, and over 1500+ students to book clinic appointments.</p>
                                             </li>
                                         </ol>
                                     </div>

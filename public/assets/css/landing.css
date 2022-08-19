@@ -45,7 +45,7 @@ body:not(#home-landing) .landing {
 
 .landing .text-divider {
     text-align: left;
-    gap: 32px;
+    gap: 24px;
 }
 
 body#about .landing .text-divider {
