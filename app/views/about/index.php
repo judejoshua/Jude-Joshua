@@ -10,43 +10,41 @@
     <body id="about">
         <div class="wrapper" id="top">
             <header class="landing" id="home">
-                <div class="text-divider">
-                    <h1>About Me</h1>
-                    <div id="liner"></div>
-                    <p class="p4">
-                        In the past three years, I have been working with the team at First Medtrade Africa, Nigeria, to build an improved medical lifestyle for easy and accessible healthcare to Nigerians.
-                        I began my tech journey in 2013 when I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and Javascript. And after this, I picked up little web development tests and tried replicating some designs I found on the web to hone my skills. In 2017, I got an internship as a web developer intern in Akwa Ibom state's ministry. Because I was quick to learn and understand most of their existing systems, I was able to help the team in planning and carrying out a training program for tech newbies.
-                        <br/>
-                        I have a vast experience in web design/development and product design technologies. With my expertise, I have worked hand-in-hand with business owners, startups, and individuals to bring their ideas to life with a stress-free experience for their users.
-                        <br/><br/>
-                        Everyday, I am working on sharpening my design skills to foster my creativity and passion for design and change the way the world works.
-                        <br/>
-                        My mission is to use my knowledge to create digital spaces and communities that will serve as systems for a better user experience.
-                    </p>
+                <div class="d-flex d-flex-row flex-justify-between col-100">
+                    <div id="div-about-grab"></div>
+                    <div class="text-divider">
+                        <h1>About Me</h1>
+                        <div id="liner"></div>
+                        <p class="p4">
+                            I am a product designer currently working with the team at First Medtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians.<br/><br/>
+                            I began my tech journey in 2013 when I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and JavaScript. And after this, I picked up little web design tests and tried replicating some designs I found on the web to hone my skills. In 2017, I interned at the Ministry of Science and Technology in Akwa Ibom state, Nigeria as a Web Designer. Having the ability to quickly learn and understand most of their existing systems, I was added to a team that was responsible for planning and carrying out a training program for tech newbies. My expertise allows me to work with business owners, startups, and individuals and make their ideas a reality with a stress-free experience for their customers.<br/><br/>
+                            Fun fact about me is that I love to have a good laugh. In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.
+                        </p>
+                    </div>
                 </div>
                 <div class="about-me-card-holder">
                     <div class="about-cards">
-                        <p class="p5">work</p>
+                        <p class="p6">work</p>
                         <div class="title-text">
                             <h3>Product Designer</h3>
-                            <p class="p5">
+                            <p class="p4">
                                 As a designer with a burning passion for better design, it's my responsibility to provide users with an easy and stress-free experience by transforming ideas in a creative way into implementable digital designs.</p>
                         </div>
                     </div>
                     <div class="about-cards">
-                        <p class="p5">hobbies</p>
+                        <p class="p6">hobbies</p>
                         <div class="title-text">
                             <h3>Writer</h3>
-                            <p class="p5">
+                            <p class="p4">
                                 When I’m not coding nor designing, I write. Writing is among one of the things I enjoy doing aside from designing. It's like an escape route that takes me into another world of creativity. I write short stories, poems, and sometimes self-care articles.
                             </p>
                         </div>
                     </div>
                     <div class="about-cards">
-                        <p class="p5">work</p>
+                        <p class="p6">work</p>
                         <div class="title-text">
                             <h3>Web Developer</h3>
-                            <p class="p5">
+                            <p class="p4">
                                 My creativity and passion don't just stop at product design. I also build the parts of a website that a user sees and interacts with such that it fits with the design and business goals. I achieve these through my responsibility as a front-end developer.
                             </p>
                         </div>
@@ -56,10 +54,10 @@
             <article id="body">
                 <section id="xp">
                     <div class="text-divider">
-                        <h1>My Experience</h1>
+                        <h2>My Experience</h2>
                         <div id="liner"></div>
                         <p class="p4">
-                            I have been privileged to work with many wonderful people in diverse environments performing different roles. Here are some of the work responsibilities I've taken on so far.
+                            I have been privileged to work with many wonderful people in diverse environments performing different roles. Here are some of them.
                         </p>
                     </div>
                     <div class="experience-body">
@@ -198,14 +196,16 @@
                     </div>
                 </section>
                 <section id="CV">
-                    <img src="/public/assets/img/resume-icon.png" />
-                    <a class="btn mdn" href="/cv">
-                        <div class="btn_bg"></div>
-                        <div class="btn_cont">
-                            <p id="text" class="h1"><span>View</span> my CV</p>
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                    </a>
+                    <div class="cv-block">
+                        <img src="/public/assets/img/resume-icon.png" />
+                        <a class="btn mdn" href="/cv">
+                            <div class="btn_bg"></div>
+                            <div class="btn_cont">
+                                <p id="text" class="h1"><span>View</span> my CV</p>
+                                <i class="las la-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
                 </section>
                 <section class="testimonials">
                     <div class="title-text">

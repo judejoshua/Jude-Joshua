@@ -122,7 +122,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
     display: flex;
     flex-direction: column;
     gap: 36px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 
 .section .title-text {
@@ -184,7 +184,7 @@ span#spacer::after {
 }
 
 .tools .title-text.section {
-    gap: 24px;
+    gap: 12px;
 }
 
 .caption-text #tags {

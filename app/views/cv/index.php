@@ -112,13 +112,13 @@
                                         <p class="p4">Web Design Intern <span id="spacer"></span><span>May 2017 - October 2017</span><br/><span>Akwa Ibom Ministry of Science and Technology</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Assisted the product design team with ongoing projects and website updates.</p>
+                                                <p class="p4">Worked with the development team to provide updates to the ministry’s website and ensured that it provided accessibility and usability to it’s users.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Designed wireframes, and prototypes for ongoing projects</p>
+                                                <p class="p4">Designed new sketches and wireframes for new projects that were meant to move some departments of the ministry from a paper-based database management system to an online database management system.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Helped the team in preparing and organizing a 3-months training program.</p>
+                                                <p class="p4">Worked with the training team to prepare and organize a 3-months internship program for 1000 tech newbies.</p>
                                             </li>
                                         </ol>
                                     </div>

@@ -38,7 +38,7 @@
 body:not(#home-landing) .landing {
     width: 100%;
     text-align: center;
-    padding: 160px 128px 32px;
+    padding: 160px 128px 64px;
     height: auto;
     min-height: auto;
 }
@@ -49,7 +49,7 @@ body:not(#home-landing) .landing {
 }
 
 body#about .landing .text-divider {
-    width: 100%;
+    width: 60%;
 }
 
 .landing .text-divider .liner {

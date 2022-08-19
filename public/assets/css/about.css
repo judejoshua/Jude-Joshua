@@ -5,6 +5,7 @@
     gap: 48px;
     padding-bottom: 96px;
     background-size: contain;
+    padding-top: 128px;
 }
 
 .testimonials-wrapper {
@@ -22,7 +23,7 @@
 .client {
     width: 30%;
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 16px;
     height: 100%;
     flex: 30%;
@@ -32,51 +33,54 @@
     justify-content: space-between;
     display: inline-flex;
     width: 100%;
-    row-gap: 80px;
+    row-gap: 56px;
+    column-gap: 64px;
 }
 
 .client-review .p1 {
     line-height: 12px;
     color: var(--placeholders);
+    display: none;
 }
 
-#CV {
+#CV .cv-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 136px 96px;
-    gap: 32px;
+    padding: 112px 96px;
+    gap: 48px;
     background: var(--accent);
 }
 
+#CV {
+    padding: 0 128px;
+}
+
 #CV img {
-    width: 104px;
+    width: 72px;
 }
 
 #CV .btn.mdn .btn_cont {
-    left: 26px;
-    top: 28px;
+    left: 27px;
+    top: 22px;
 }
 
 #CV .btn_cont #text,
 #CV .btn_cont i {
-    font-size: 32px;
+    font-size: 24px !important;
     font-weight: 900 !important;
-}
-
-#CV .btn_cont #text {
-    font-family: 'Playfair Display';
+    word-spacing: 1px;
 }
 
 #CV .btn.mdn {
-    width: 280px;
-    height: 104px;
+    width: 199px;
+    height: 72px;
 }
 
 #CV .btn.mdn .btn_bg {
-    height: 104px;
-    width: 104px;
+    height: 72px;
+    width: 72px;
 }
 
 #CV .btn.mdn:hover>.btn_bg {
@@ -93,14 +97,14 @@
 
 .about-me-card-holder {
     display: flex;
-    gap: 24px;
+    gap: 40px;
     justify-content: space-between;
-    margin-top: 80px;
+    padding-top: 104px;
 }
 
 .about-cards {
     width: 424px;
-    height: 360px;
+    height: 405px;
     background: url(../img/about-me-1.png);
     background-color: var(--secondary);
     background-position-x: right;
@@ -112,12 +116,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 32px;
+    padding: 32px 32px 48px;
     overflow: hidden;
+    margin-top: 96px;
+    gap: 40px;
 }
 
 .about-cards .title-text {
     width: 100%;
+}
+
+.about-cards p {
+    color: var(--accent);
 }
 
 .about-cards:nth-child(2) {
@@ -126,8 +136,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: top;
-    margin-top: 80px;
+    margin-top: 0px;
     background-position-x: right;
+    height: 437px;
 }
 
 .about-cards:nth-child(3) {
@@ -137,6 +148,7 @@
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
+    height: 437px;
 }
 
 .experience_card {
@@ -222,13 +234,13 @@
 }
 
 #xp {
-    padding-top: 64px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 128px;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    gap: 48px;
+    gap: 24px;
 }
 
 #xp .text-divider {
@@ -257,16 +269,25 @@
     padding: 10px 14px;
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Playfair Display';
     justify-content: center;
     display: inline-flex;
     align-items: center;
     width: 41px;
     height: 41px;
+    display: none;
 }
 
 .client-name {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+#div-about-grab {
+    width: 33%;
+    height: 680px;
+    background: url('../img/about-me.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: grayscale(1); */
 }

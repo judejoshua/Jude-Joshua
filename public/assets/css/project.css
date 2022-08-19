@@ -312,7 +312,7 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 span#project-counter {
-    padding: 0px 6px;
+    padding: 0px 10px 4px;
     border-radius: 50%;
     background: var(--secondary);
     color: var(--neutral);
