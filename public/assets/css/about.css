@@ -21,12 +21,11 @@
 }
 
 .client {
-    width: 30%;
+    width: 46%;
     display: inline-flex;
     flex-direction: column-reverse;
     gap: 16px;
     height: 100%;
-    flex: 30%;
 }
 
 .testimonials-wrapper .row {
@@ -34,7 +33,7 @@
     display: inline-flex;
     width: 100%;
     row-gap: 56px;
-    column-gap: 64px;
+    column-gap: 6%;
 }
 
 .client-review .p1 {
@@ -99,7 +98,7 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
-    padding-top: 104px;
+    padding-top: 128px;
 }
 
 .about-cards {
@@ -234,7 +233,7 @@
 }
 
 #xp {
-    padding-top: 80px;
+    padding-top: 64px;
     padding-bottom: 128px;
     display: flex;
     align-items: center;
@@ -289,5 +288,5 @@
     background: url('../img/about-me.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    /* filter: grayscale(1); */
+    filter: grayscale(1);
 }
