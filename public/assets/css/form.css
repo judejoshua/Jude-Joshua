@@ -67,7 +67,7 @@ button.btn.mdn .btn_cont {
 
 body#contact article {
     display: flex;
-    column-gap: 72px;
+    column-gap: 128px;
     padding: 0 128px 128px;
 }
 
