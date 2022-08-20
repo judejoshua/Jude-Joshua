@@ -32,7 +32,7 @@
     justify-content: space-between;
     display: inline-flex;
     width: 100%;
-    row-gap: 56px;
+    row-gap: 60px;
     column-gap: 6%;
 }
 
@@ -103,7 +103,7 @@
 
 .about-cards {
     width: 424px;
-    height: 405px;
+    height: 437px;
     background: url(../img/about-me-1.png);
     background-color: var(--secondary);
     background-position-x: right;
@@ -117,7 +117,7 @@
     justify-content: space-between;
     padding: 32px 32px 48px;
     overflow: hidden;
-    margin-top: 96px;
+    /* margin-top: 96px; */
     gap: 40px;
 }
 
@@ -233,7 +233,7 @@
 }
 
 #xp {
-    padding-top: 64px;
+    padding-top: 88px;
     padding-bottom: 128px;
     display: flex;
     align-items: center;
