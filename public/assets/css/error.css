@@ -1,80 +1,12 @@
 section.error {
-  padding: 148px 128px 64px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-  color: var(--background-circles);
-}
-
-section.error .results-error-title {
-  width: 601px;
-  text-align: center;
-}
-
-section.error h1 {
-  font-family: "Grathink", sans-serif;
-  font-size: 128px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0;
-  letter-spacing: 0;
-}
-
-section.error h1 i {
-  font-size: 96px;
-  top: -14px;
-}
-
-.results-error-title p {
-  font-family: "Grathink", sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
-}
-
-.results-error-description p {
-  font-family: "Grathink", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: normal;
-  text-align: center;
-}
-
-.return-links a {
-  color: var(--links);
-  display: inline-block;
-  margin: 0 10px;
-  margin-top: 12px;
-  text-decoration: underline;
-  font-weight: 500;
-  font-size: 13px;
-}
-
-.results-error-description {
-  text-align: center;
-}
-
-/* section.error {
-    padding: 64px 128px 64px;
-    background: url(../img/results-background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 148px 128px 96px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 24px;
     justify-content: center;
     align-items: center;
-    color: var(--background-circles);
+    color: var(--secondary);
+    height: 81vh;
 }
 
 section.error .results-error-title {
@@ -83,51 +15,40 @@ section.error .results-error-title {
 }
 
 section.error h1 {
-    font-size: 160px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
+    font-family: Skarpa;
+    font-size: 128px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
     letter-spacing: 0;
 }
 
 section.error h1 i {
-    font-size: 112px;
-    top: 9px;
-}
-
-.results-error-title p {
-    font-family: 'Grathink', sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: normal;
-}
-
-.results-error-description p {
-    font-family: 'Grathink', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: normal;
-    text-align: center;
+    font-size: 64px;
+    top: -14px;
 }
 
 .return-links a {
     color: var(--links);
     display: inline-block;
     margin: 0 10px;
-    margin-top: 12px;
     text-decoration: underline;
-    font-weight: 500;
-    font-size: 13px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.return-links a:hover {
+    color: var(--ink);
+    text-decoration: none;
 }
 
 .results-error-description {
     text-align: center;
-} */
+}
+
+.error-footer {
+    gap: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 19vh;
+}

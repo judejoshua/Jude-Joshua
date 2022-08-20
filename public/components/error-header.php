@@ -46,14 +46,25 @@
             });
         </script>
 
-        <div class="preloader">
-            <p class="h1">JUDE JOSHUA</p>
-            <div class="loader-circles">
-                <div></div>
-                <div></div>
-                <div></div>
+        <div class="preloader d-flex flex-justify-between d-flex-column flex-align-center">
+            <div class="empty-div"></div>
+            <div class="pulse-effect">
+                <p class="remmit">Jude Joshua</p>
+            </div>
+            <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">
+                <div class="status-loader">
+                    <div></div>
+                </div>
+                <p id="status" class="p5">
+                    <span class="loader-dots">
+                        <span class="loader__dot">.</span>
+                        <span class="loader__dot">.</span>
+                        <span class="loader__dot">.</span>
+                    </span>
+                </p>
             </div>
         </div>
+
 
 
     

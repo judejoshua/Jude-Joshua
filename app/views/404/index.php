@@ -1,5 +1,5 @@
     <?php
-        $title = 'Error 404';
+        $title = 'Not found!';
         include './public/components/error-header.php';
     ?>
     </head>
@@ -14,7 +14,7 @@
                         <p>File could not be located</p>
                     </div>
                     <div class="results-error-description">
-                        <p class="p5">I didn't see a need for the file, so I moved it out.</br>Try this links instead:</p>
+                        <p class="p5">I didn't see a need for the file, so I moved it out. Try this links instead:</p>
                         <div class="return-links">
                             <a href="/">Home</a>
                             <a href="/about">About Me</a>
