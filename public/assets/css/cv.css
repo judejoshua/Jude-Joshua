@@ -86,7 +86,7 @@ body#resume navigation.fixed .mobile-nav-opener div {
 
 .resume-body {
     gap: 64px;
-    padding-bottom: 56px;
+    /* padding-bottom: 56px; */
 }
 
 

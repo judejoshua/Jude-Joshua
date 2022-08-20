@@ -2,10 +2,11 @@
     $url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
 <navigation class="d-flex flex-justify-between flex-align-center">
-    <!-- <div class="logo">
-        <img src="/public/assets/img/logo.png" alt="logo">
-    </div> -->
-    <p class="remmit">Jude Joshua</p>
+    <a href="/">
+        <div class="logo">
+            <p class="remmit">Jude Joshua</p>
+        </div>
+    </a>
     <div class="nav">
         <ul class="nav-links">
             <li class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">

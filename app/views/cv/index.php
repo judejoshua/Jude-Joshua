@@ -208,7 +208,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="divisor"></div> -->
                         <div class="right-text-divider">
                             <div class="education title-text">
                                 <h2>Education</h3>
@@ -223,15 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="divisor"></div>
                     </div>
-                    <a class="btn lng ln dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
-                        <div class="btn_bg"></div>
-                        <div class="btn_cont">
-                            <p id="text"><span>Download</span> as a document</p>
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                    </a>
                 </section>
             </article>
         </div>

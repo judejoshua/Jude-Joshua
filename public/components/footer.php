@@ -18,11 +18,17 @@
 <div class="results-section">
     <div class="results-section-title">
         <?php
-            if(explode('/', $url)[3] == 'contact')
+            if(explode('/', $url)[3] == 'cv')
             {
-                //echo '
-                 //   <p class="p3">If you need more proof of my work strength, you can <a href="/portfolio">look at my past projects</a>.</p>
-                //';
+                echo '
+                   <a class="btn dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
+                        <div class="btn_bg"></div>
+                        <div class="btn_cont">
+                            <p id="text"><span>Save</span> my cv</p>
+                            <i class="las la-arrow-right"></i>
+                        </div>
+                    </a>
+                ';
             }else if(explode('/', $url)[3] == 'portfolio' || explode('/', $url)[3] == 'about')
             {
                 echo '

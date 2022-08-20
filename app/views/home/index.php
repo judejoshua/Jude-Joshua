@@ -14,8 +14,14 @@
                     <div class="header">
                         <div class="header-text">
                             <h1>Using creativity and</br>passion to <span id="landing-highlight"></span> a</br>better world.</h1>
-                            <div id="liner"></div>
                             <p class="p4">I seek to use my design knowledge and skills in ways that create better user patterns and improved lifestyles in the most intuitive and useful way possible.</p>
+                            <a class="btn" href="#case-study">
+                            <div class="btn_bg"></div>
+                            <div class="btn_cont">
+                                <p id="text"><span>See</span> how</p>
+                                <i class="las la-arrow-down"></i>
+                            </div>
+                        </a>
                         </div>
                     </div>
                     <div id="landing-img"></div>

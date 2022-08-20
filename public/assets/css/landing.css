@@ -14,11 +14,11 @@
 .header_cont {
     display: flex;
     gap: 32px;
-    padding: 48px;
+    padding: 60px;
     padding-left: 64px;
     width: 100%;
     background: var(--accent);
-    height: 464px;
+    /* height: 464px; */
 }
 
 .header-text {
@@ -26,7 +26,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 24px;
+    gap: 12px;
 }
 
 .landing-image img {

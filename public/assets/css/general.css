@@ -125,6 +125,8 @@ a:hover~.cursor {
     height: 72px;
 }
 
+
+/* 
 .btn.lng.ln {
     height: 88px;
 }
@@ -148,13 +150,14 @@ a:hover~.cursor {
 .btn.lng.ln:hover>.btn_cont {
     left: 29px;
 }
+ */
 
 .btn.mdn {
-    width: 200px;
+    width: 212px;
 }
 
 .btn.mdn .btn_cont {
-    left: 38px;
+    left: 34px;
 }
 
 .btn:hover>.btn_cont #text,
@@ -168,8 +171,8 @@ a:hover~.cursor {
 }
 
 .btn_bg {
-    width: 68px;
-    height: 68px;
+    width: 64px;
+    height: 64px;
     background: var(--secondary);
     border-radius: 64px;
     position: absolute;
@@ -180,16 +183,25 @@ a:hover~.cursor {
 
 .btn_cont {
     position: absolute;
-    top: 19px;
-    left: 31px;
+    top: 17px;
+    left: 27px;
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+body#home-landing .landing .btn_cont {
+    left: 35px;
+}
+
+body#home-landing .landing .btn {
+    width: 168px;
+    margin-top: 18px;
+}
+
 .results-section .btn.mdn .btn_cont {
-    left: 29px;
-    top: 19px;
+    left: 26px;
+    top: 17px;
 }
 
 .btn_cont #text,

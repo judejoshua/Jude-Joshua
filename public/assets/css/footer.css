@@ -7,8 +7,7 @@
     align-items: center;
 }
 
-body#contact .results-section,
-body#resume .results-section {
+body#contact .results-section {
     display: none;
 }
 
@@ -29,7 +28,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     gap: 72px;
-    padding: 72px 128px;
+    padding: 72px 128px 32px;
     z-index: 2;
 }
 
@@ -44,6 +43,18 @@ body:not(#resume) .results-section::before {
     right: 128px;
     background-color: var(--accent);
     height: 1px;
+}
+
+body:not(#home-landing) .results-section::before {
+    height: 100%;
+}
+
+body:not(#home-landing) footer {
+    padding-top: 104px;
+}
+
+body#home-landing .results-section::before {
+    display: none;
 }
 
 .footer-top {
