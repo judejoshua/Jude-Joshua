@@ -38,7 +38,7 @@
 body:not(#home-landing) .landing {
     width: 100%;
     text-align: center;
-    padding: 160px 128px 48px;
+    padding: 160px 128px 24px;
     height: auto;
     min-height: auto;
 }
