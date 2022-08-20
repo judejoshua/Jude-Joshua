@@ -57,7 +57,7 @@
                         <h2>My Experience</h2>
                         <div id="liner"></div>
                         <p class="p4">
-                            I have been privileged to work with many wonderful people in diverse environments performing different roles. Here are some of them.
+                            I have been privileged to work with many wonderful people from diverse industries. Here are some of them.
                         </p>
                     </div>
                     <div class="experience-body">
@@ -197,7 +197,7 @@
                 </section>
                 <section id="CV">
                     <div class="cv-block">
-                        <img src="/public/assets/img/resume-icon.png" />
+                        <img src="/public/assets/img/resume-icon.webp" />
                         <a class="btn mdn" href="/cv">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">

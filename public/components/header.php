@@ -118,4 +118,3 @@
 
         <div id="cursor" class="cursor"></div>
 
-        <!-- <div class="bg-coach"></div> -->

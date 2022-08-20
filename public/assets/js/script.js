@@ -206,6 +206,7 @@ $(document).ready(function() {
                 }
             },
             error: function(jqXHR, exception) {
+                $(".contact.preloader").fadeOut("slow");
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connected.\n Verify Network.';
@@ -243,6 +244,8 @@ $(document).ready(function() {
             var valFileDownloadPath = link;
             window.open(valFileDownloadPath, '_blank');
         }, 4000);
+
+        $(".preloader").fadeOut("slow");
 
     });
 

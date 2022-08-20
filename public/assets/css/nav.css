@@ -114,11 +114,7 @@ navigation.fixed {
 }
 
 .mobile-nav .nav-links {
-    background: url(../img/sidebar-navigation.png);
     background-color: var(--neutral);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 navigation .remmit {

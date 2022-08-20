@@ -315,6 +315,8 @@ section {
 
 .pop-up p {
     width: 236px;
+    line-height: 1;
+    color: var(--neutral);
 }
 
 .pop-up.show {
@@ -443,22 +445,4 @@ span#close.fixed,
 iframe {
     width: 100%;
     height: 500px;
-}
-
-.bg-coach {
-    background: url(../img/results-background.png);
-    background-size: cover;
-    background-position-x: -252px;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-color: var(--neutral);
-    background-attachment: fixed;
-    animation: shake-background 30s linear infinite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* filter: blur(48px); */
-    /* z-index: -1; */
 }

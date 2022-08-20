@@ -96,7 +96,6 @@ body#contact .landing .text-divider {
     height: 100%;
     right: 48px;
     top: 48px;
-    /* border-radius: 270px; */
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
