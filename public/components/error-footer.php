@@ -25,10 +25,6 @@
             <a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
         </div>
-        <!-- <a class="to-top" href="#top">
-            <p class="p6">SCROLL UP</p>
-            <i class="las la-angle-up"></i>
-        </a> -->
         <span class="copyright"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
     </div>
 </footer>

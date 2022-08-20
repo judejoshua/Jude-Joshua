@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Error 500</title>
+    <title>Internal server Error</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -53,12 +53,22 @@
 
 <body id="home-landing">
 
-    <div class="preloader">
-        <p class="h1">JUDE JOSHUA</p>
-        <div class="loader-circles">
-            <div></div>
-            <div></div>
-            <div></div>
+    <div class="preloader d-flex flex-justify-between d-flex-column flex-align-center">
+        <div class="empty-div"></div>
+        <div class="pulse-effect">
+            <p class="remmit">Jude Joshua</p>
+        </div>
+        <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">
+            <div class="status-loader">
+                <div></div>
+            </div>
+            <p id="status" class="p5">
+                <span class="loader-dots">
+                    <span class="loader__dot">.</span>
+                <span class="loader__dot">.</span>
+                <span class="loader__dot">.</span>
+                </span>
+            </p>
         </div>
     </div>
 
@@ -67,10 +77,17 @@
             <section class="error">
                 <div class="results-error-title">
                     <h1>5<i class="lar la-grin-beam-sweat"></i><i class="las la-grin-beam-sweat"></i></h1>
-                    <p>Internal Server Error</p>
+                    <p class="h4">Internal Server Error</p>
                 </div>
                 <div class="results-error-description">
-                    <p class="p5">Don't worry, it's not your fault. I was working and broke something.</br>It will be fixed shortly.</p>
+                    <p class="p4">Don't worry, it's not your fault. I was working and broke something. It will be fixed shortly.<br/>Try again with any of these links:</p>
+                    <div class="return-links">
+                        <a href="/">Home</a>
+                        <a href="/about">About Me</a>
+                        <a href="/portfolio">Past works</a>
+                        <a href="/cv">CV</a>
+                        <a href="/contact">Send a message</a>
+                    </div>
                 </div>
             </section>
         </article>
@@ -92,22 +109,20 @@
             </li>
         </ul>
     </div>
-    <footer>
-        <div class="footer-top">
+    <footer class="error-footer">
+        <div class="footer-top d-flex flex-justify-between">
             <div class="contact-links">
-                <a href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
-                <a href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a>
-                <a href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>
-                <a href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
-                <a href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
+                <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank" class="Dribbble">Medium</a>
+                <a rel="nofollow" href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
+                <a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a>
+                <a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>
+                <a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
+                <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
             </div>
-            <a class="to-top" href="#top">
-                <p class="h4">TO TOP</p>
-                <i class="las la-angle-up"></i>
-            </a>
+            <span class="copyright"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
         </div>
-        <span class="copyright">&copy; Jude Joshua, 2022. All rights reserved.</span>
     </footer>
+
 </body>
 
 </html>

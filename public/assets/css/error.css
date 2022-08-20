@@ -17,10 +17,14 @@ section.error .results-error-title {
 section.error h1 {
     font-family: Skarpa;
     font-size: 128px;
-    font-weight: 500;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     letter-spacing: 0;
+}
+
+section.error .h4 {
+    font-weight: 900;
 }
 
 section.error h1 i {
@@ -34,11 +38,12 @@ section.error h1 i {
     margin: 0 10px;
     text-decoration: underline;
     font-weight: 400;
+    font-size: 22px;
     transition: 0.4s;
+    margin-top: 12px;
 }
 
 .return-links a:hover {
-    color: var(--ink);
     text-decoration: none;
 }
 

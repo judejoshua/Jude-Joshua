@@ -1,5 +1,5 @@
     <?php
-        $title = 'Error 403';
+        $title = 'Access Denied';
         include './public/components/error-header.php';
     ?>
     
@@ -12,10 +12,10 @@
                 <section class="error">
                     <div class="results-error-title">
                         <h1>4<i class="las la-ban"></i>3</h1>
-                        <p>You're not allowed in here!</p>
+                        <p class="h4">You're not allowed in here!</p>
                     </div>
                     <div class="results-error-description">
-                        <p class="p5">Your visitor's badge does not have the access to view this.</br>Try this links instead:</p>
+                        <p class="p4">Your visitor's badge does not have the access to view this. Try this links instead:</p>
                         <div class="return-links">
                             <a href="/">Home</a>
                             <a href="/about">About Me</a>

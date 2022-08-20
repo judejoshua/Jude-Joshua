@@ -11,10 +11,10 @@
                 <section class="error">
                     <div class="results-error-title">
                         <h1>4<i class="las la-low-vision"></i>4</h1>
-                        <p>File could not be located</p>
+                        <p class="h4">File could not be located</p>
                     </div>
                     <div class="results-error-description">
-                        <p class="p5">I didn't see a need for the file, so I moved it out. Try this links instead:</p>
+                        <p class="p4">I didn't see a need for the file, so I moved it out. Try this links instead:</p>
                         <div class="return-links">
                             <a href="/">Home</a>
                             <a href="/about">About Me</a>
