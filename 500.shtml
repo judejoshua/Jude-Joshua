@@ -71,6 +71,7 @@
             </p>
         </div>
     </div>
+    <div id="cursor" class="cursor"></div>
 
     <div class="wrapper" id="top">
         <article id="body">
