@@ -28,7 +28,7 @@ body#home-landing #case-study {
     align-items: flex-start;
     width: 100%;
     gap: 64px;
-    padding-bottom: 48px;
+    /* padding-bottom: 48px; */
 }
 
 .projects-holder {
