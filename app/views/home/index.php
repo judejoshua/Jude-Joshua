@@ -24,8 +24,8 @@
                         </a>
                         </div>
                     </div>
-                    <div id="landing-img"></div>
                 </div>
+                <div id="landing-img"></div>
             </header>
             <article id="body">
                 <section id="case-study">

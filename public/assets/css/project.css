@@ -12,7 +12,7 @@
 }
 
 body#home-landing #case-study {
-    padding-top: 136px;
+    padding-top: 104px;
     padding-bottom: 96px;
     display: flex;
 }
@@ -64,7 +64,7 @@ body:not(#home-landing) #case-study {
     width: 48.5%;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 32px;
 }
 
 .project img {
@@ -136,13 +136,9 @@ a#projector .project:hover {
 .projects-holder a#projector {
     display: block;
     /* overflow: hidden; */
-    width: 68%;
+    width: 100%;
     height: fit-content;
     flex-grow: 0;
-}
-
-.projects-holder .flexer a#projector:nth-child(even) {
-    left: 28%;
 }
 
 #tag-single {

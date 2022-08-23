@@ -1,4 +1,4 @@
-@media screen and (max-width:1100px) {
+@media screen and (max-width: 1100px) {
     .preloader {
         padding: 32px 64px;
     }
@@ -14,8 +14,7 @@
     }
     #landing-img {
         background-size: 144%;
-        right: 64px;
-        top: 64px;
+        height: 480px;
     }
     h2,
     .h2 {
@@ -187,7 +186,7 @@
         top: 40px;
     }
     .header {
-        width: 40%;
+        width: 100%;
     }
     .mobile-nav-opener {
         display: block;
@@ -259,6 +258,9 @@
     .btn {
         width: 150px;
         height: 56px;
+    }
+    body#home-landing .landing .btn {
+        margin-top: 8px;
     }
     .btn_bg {
         top: 0;
@@ -724,7 +726,7 @@
     body#home-landing #case-study {
         padding-top: 96px;
         padding-bottom: 24px;
-        gap: 24px !important;
+        gap: 28px !important;
     }
     body:not(#home-landing) #case-study {
         padding-bottom: 64px;
@@ -776,6 +778,9 @@
         font-size: 24px;
         line-height: 1.4;
     }
+    #landing-img {
+        height: 358px;
+    }
 }
 
 @media screen and (max-width:560px) {
@@ -799,8 +804,13 @@
         top: 0;
     }
     .landing h1 br {
-        content: ' ';
-        margin-right: 10px;
+        content: "";
+    }
+    .landing h1 br:before {
+        content: " ";
+    }
+    .landing h1 br:after {
+        content: " ";
     }
     #landing-img {
         display: none;
@@ -816,7 +826,7 @@
     }
     body#home-landing #case-study {
         padding: 64px 32px 64px !important;
-        gap: 32px !important;
+        gap: 20px !important;
     }
     .flexer {
         width: 100%;
@@ -879,6 +889,13 @@
     section {
         padding: 36px 32px !important;
         gap: 32px;
+    }
+    .header_cont {
+        width: 100%;
+        padding-left: 28px !important;
+        padding-right: 28px !important;
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
     }
     #resume-begins {
         padding: 42px 32px;
