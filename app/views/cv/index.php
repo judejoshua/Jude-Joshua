@@ -158,10 +158,10 @@
                                         <p class="p4">Product Designer <span id="spacer"></span><span>September 2021 - November 2021</span><br/><span>The Victoria Nwaeke Cancer Foundation</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked to provide sketches and high-fidelity mockups of the landing page design.</p>
+                                                <p class="p4">Worked to provide sketches and high-fidelity mock-ups of the landing page design.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Created style guides and prototypes from the high-fidelity mockups for handoff to the development team.</p>
+                                                <p class="p4">Created style guides and prototypes from the high-fidelity mock-ups for handoff to the development team.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -169,7 +169,7 @@
                                         <p class="p4">UI/UX Designer <span id="spacer"></span><span>August 2021 - September 2021</span><br/><span>Ugochukwu Kizito for Thrive.NG</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked to design and develop a responsive saas (services as a software) landing web platform for the client, in addition to providing style guides, prototypes for usability testing and a design system for developer handoff.</p>
+                                                <p class="p4">Worked to design and develop a responsive SaaS (services as a software) landing web platform for the client, in addition to providing style guides, prototypes for usability testing and a design system for developer handoff.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -185,7 +185,7 @@
                                         <p class="p4">Web Designer/Developer <span id="spacer"></span><span>December 2019 - January 2020</span><br/><span>CypressEnergy</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Designed and developed a responsive saas (services as a software) landing webpage showcasing the company's services and a means for users to reach out and request these services.</p>
+                                                <p class="p4">Designed and developed a responsive SaaS (services as a software) landing webpage showcasing the company's services and a means for users to reach out and request these services.</p>
                                             </li>
                                         </ol>
                                     </div>

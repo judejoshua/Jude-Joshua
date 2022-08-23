@@ -15,7 +15,7 @@
             <article id="body">
                 <div class="contact-info">
                     <p class="p4">
-                        Send me a message about your project or any other questions that you have. You can send me an email to <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call <a href="tel:+2349041134926">+234-904-113-4926</a>. However, you can quickly fill the form to the right and I will respond asap.
+                        Send me a message about your project or any other questions that you have. You can send me an email to <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call <a href="tel:+2349041134926">+234-904-113-4926</a>. However, you can quickly fill the form and I will respond as soon as possible.
                     </p>
                 </div>
                 <form>

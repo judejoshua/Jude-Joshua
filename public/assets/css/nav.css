@@ -39,7 +39,7 @@ navigation.fixed {
 .mobile-nav-opener {
     display: none;
     padding: 8px;
-    width: 40px;
+    /* width: 40px; */
 }
 
 .mobile-nav-opener:hover div {

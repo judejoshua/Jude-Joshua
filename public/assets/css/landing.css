@@ -94,8 +94,8 @@ body#contact .landing .text-divider {
     background-position: center;
     position: absolute;
     height: 100%;
-    right: 48px;
-    top: 48px;
+    right: 64px;
+    top: 64px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
