@@ -1,5 +1,5 @@
     <?php
-        $title = 'Not found!';
+        $title = 'Not found! - Jude Joshua | Expert Product designer and Web experience developer';
         include './public/components/error-header.php';
     ?>
     </head>

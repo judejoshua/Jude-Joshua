@@ -18,7 +18,7 @@
 }
 
 .context-menu ul li a {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color: var(--secondary);
@@ -45,6 +45,7 @@
     bottom: 0;
     padding: 8px;
     border: 1px solid var(--accent);
+    box-shadow: -4px 4px 20px 5px rgba(128, 128, 128, 0.24);
 }
 
 .context-menu ul li:hover>#inner-down {

@@ -1,5 +1,5 @@
 <?php
-    $title = 'Jude Joshua || Product designer and Web developer';
+    $title = 'Jude Joshua | Expert Product designer and Web experience developer';
     $description = 'I am a product designer with experience in web design & development. I seek to create code-and-user-friendly systems with design in the easiest way possible. Check out my portfolio to see how.';
     $img = '/public/assets/img/landing-image.webp';
 
@@ -13,7 +13,7 @@
                 <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
                     <div class="header">
                         <div class="header-text">
-                            <p class="p4">Hello.</p>
+                            <p class="p4">Hello. Minimalist.</p>
                             <h1>I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1>
                         </div>
                         <a class="btn" href="#case-study">

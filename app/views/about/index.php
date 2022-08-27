@@ -1,5 +1,5 @@
 <?php
-    $title = 'About Jude Joshua || Product designer and Web developer';
+    $title = 'About - Jude Joshua | Expert Product designer and Web experience developer';
     $description = 'I have over 7 years experience in web design & development and 3 years experience in product design. I seek to create code-and-user-friendly systems with design in the easiest way possible.';
     $img = '/public/assets/img/landing-image.webp';
 
@@ -13,12 +13,12 @@
                 <div class="d-flex d-flex-row flex-justify-between col-100">
                     <div id="div-about-grab"></div>
                     <div class="text-divider">
-                        <h1>Bio</h1>
+                        <h1>About</h1>
                         <div id="liner"></div>
                         <p class="p4">
                             I am a product designer currently working with the team at First Medtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians.<br/><br/>
                             Outside of this, I focus on creating intuitive and user-friendly experiences for small and medium-sized businesses. My goal is to create minimal, accessible and useful designs that help businesses relate to their target audience and provide them with the right solutions.<br/><br/>
-                            One fun fact about me is that I love to have a good laugh.<br/>In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.                           
+                            My favourite thing about myself is that I love to have a good laugh.<br/>In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.                           
                         </p>
                     </div>
                 </div>
@@ -64,11 +64,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section id="CV">
-                    <div class="cv-block">
-                        <img src="/public/assets/img/resume-icon.webp" />
-                        <a class="btn four mdn" href="/cv">
+                    <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
+                        <a class="btn four" href="/cv">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>View</span> my CV</p>
@@ -79,7 +76,7 @@
                 </section>
                 <section class="testimonials">
                     <div class="title-text">
-                        <h2>What others say about me</h2>
+                        <h2>What they said.</h2>
                         <div id="liner"></div>
                     </div>
                     <div class="testimonials-wrapper">

@@ -42,42 +42,6 @@
     display: none;
 }
 
-#CV .cv-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 112px 96px;
-    gap: 48px;
-    background: var(--accent);
-    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
-    background-size: 5px 5px;
-}
-
-#CV {
-    padding: 0 128px;
-}
-
-#CV img {
-    width: 72px;
-}
-
-#CV .btn.mdn {
-    width: 182px;
-}
-
-#CV .btn.mdn:hover>.btn_bg {
-    width: 100%;
-}
-
-#CV .btn_cont i {
-    transform: rotate(-45deg);
-}
-
-.testimonials .title-text {
-    /* gap: 48px; */
-}
-
 .experience_card {
     display: flex;
     flex-direction: column;
@@ -159,7 +123,6 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 152px;
 }
 
 #xp {
@@ -218,16 +181,15 @@
 #xp #div-about-grab {
     width: 40%;
     background: url(../img/xp.webp);
-    background-size: 60%;
+    background-size: 50%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position-x: 600px;
-    background-position-y: 100%;
+    background-position: right;
 }
 
 #clients .deliverables {
     background: none;
-    padding: 64px 128px 0;
+    padding: 64px 128px 96px;
 }
 
 #clients .deliverables .deliverables-list {
@@ -245,6 +207,6 @@
         transform: translateX(0%);
     }
     to {
-        transform: translateX(-40%);
+        transform: translateX(-38%);
     }
 }

@@ -106,10 +106,12 @@ navigation.fixed {
 .nav-links li:hover::after,
 .nav-links li.active::after {
     width: 50%;
+    background-color: var(--placeholders);
 }
 
-.nav-links li:hover a {
-    color: var(--secondary);
+.nav-links li:hover a,
+.nav-links li.active a {
+    color: var(--placeholders);
 }
 
 .mobile-nav .nav-links {

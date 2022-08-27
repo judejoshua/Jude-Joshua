@@ -44,8 +44,12 @@ body#home-landing #case-study {
 }
 
 body:not(#home-landing) #case-study {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 88px;
+    padding-bottom: 120px;
+}
+
+body:not(#home-landing) #case-study .case-studies-body {
+    padding-bottom: 0;
 }
 
 .project {

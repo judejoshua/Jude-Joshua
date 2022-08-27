@@ -41,7 +41,6 @@ body:not(#resume) .results-section::before {
     top: 0;
     left: 128px;
     right: 128px;
-    /* background-color: var(--accent); */
     background-color: var(--placeholders);
     height: 1px;
 }
@@ -54,6 +53,10 @@ body:not(#home-landing) .results-section::before {
 
 body:not(#home-landing) footer::before {
     display: none;
+}
+
+body#contact footer::before {
+    display: block;
 }
 
 body:not(#home-landing) footer {

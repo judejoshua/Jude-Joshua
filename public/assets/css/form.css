@@ -37,7 +37,7 @@ form {
 .form-input {
     width: 100%;
     padding: 8px 16px 8px 4px;
-    height: 32px;
+    /* height: 32px; */
     border: none;
     outline: none;
     border-bottom: 1px solid var(--placeholders);
@@ -45,8 +45,12 @@ form {
     background: none;
 }
 
+.form-input::placeholder {
+    color: var(--placeholders)
+}
+
 .form-area {
-    height: 104px;
+    height: 128px;
     resize: none;
 }
 
@@ -57,18 +61,13 @@ button {
 }
 
 button.btn.mdn {
-    width: 200px;
-}
-
-button.btn.mdn .btn_cont {
-    left: 26px;
-    top: 17px;
+    width: 208px;
 }
 
 body#contact article {
     display: flex;
     column-gap: 96px;
-    padding: 0 128px 128px;
+    padding: 28px 128px 128px;
 }
 
 .contact-info {
@@ -76,7 +75,6 @@ body#contact article {
 }
 
 .contact-info a {
-    color: var(--links);
     display: inline-block;
 }
 

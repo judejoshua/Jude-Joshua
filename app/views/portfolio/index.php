@@ -1,5 +1,5 @@
 <?php
-    $title = 'Past work - Jude Joshua || Product designer and Web developer';
+    $title = 'Past work - Jude Joshua | Expert Product designer and Web experience developer';
     $description = 'Here are more ideas from different industries and disciplines that I have turned into code-and-user-friendly digital products.';
     $img = '/public/assets/img/landing-image.webp';
 
@@ -11,19 +11,19 @@
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider">
-                    <h1>Past Work</h1>
+                    <h1>Work</h1>
                     <div id="liner"></div>
                     <p class="p4">
-                        Here are more ideas from different industries and disciplines that I have turned into code-and-user-friendly digital products. You will see that these projects display what stress-free user interaction and satisfaction are about and my process to balance these with the clients' business goals.
+                        The goal of every digital project is to provide the best solution in a code-and-user-friendly manner. Here are ideas that I worked on, turning the businesses goals into have turned into code-ready and user-friendly digital products with a stress-free user flow.
                     </p>
                 </div>
-                <div class="tags-row">
+                <!-- <div class="tags-row">
                     <span class="h5">Filter by:</span>
                     <div>
                         <span class="p5 secondary" id="tag-single" data-show="UI/UX">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
                         <span class="p5 secondary" id="tag-single" data-show="Web design, Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
                     </diV>
-                </div>
+                </div> -->
             </header>
             <article id="body">
                 <section id="case-study">
@@ -55,6 +55,7 @@
                                                                 <div class="caption-text">
                                                                     <h5>'.$project_data['project_title'].'</h5>
                                                                     <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                    <span class="p5 view">View case study</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -72,7 +73,7 @@
                         </div>
                         <div class="pagination">
                             <a href="" class="las la-angle-left"></a>
-                            <a href="" class="las la-angle-right active"></a>
+                            <a href="" class="las la-angle-right"></a>
                         </div>
                     </div>
                 </section>
@@ -125,7 +126,7 @@
                 
                 project_data_array = JSON.parse(project.project_data);
                 
-                $(".projects-holder .row").append('<a id="projector" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h5>'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span></div><i class="las la-arrow-right"></i></div></div></a>')
+                $(".projects-holder .row").append('<a id="projector" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><h5>'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span><span class="p5 view">View case study</span></div><i class="las la-arrow-right"></i></div></div></a>')
             });
 
 

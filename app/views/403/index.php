@@ -1,5 +1,5 @@
     <?php
-        $title = 'Access Denied';
+        $title = 'Access Denied! - Jude Joshua | Expert Product designer and Web experience developer';
         include './public/components/error-header.php';
     ?>
     

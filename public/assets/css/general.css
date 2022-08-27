@@ -181,8 +181,6 @@ body#home-landing .landing .btn {
     margin-top: 18px;
 }
 
-.results-section .btn.mdn .btn_cont {}
-
 .btn_cont #text,
 .btn_cont i {
     font-size: 20px;
@@ -230,7 +228,7 @@ section {
 }
 
 .title-text {
-    gap: 24px;
+    gap: 20px;
     text-align: left;
     width: 556px;
 }
@@ -268,10 +266,6 @@ section {
     display: none !important;
 }
 
-.placeholder {
-    color: var(--placeholders);
-}
-
 .error {
     color: var(--error);
     font-weight: 800;
@@ -306,7 +300,6 @@ section {
 
 .pop-up p {
     width: 236px;
-    line-height: 1;
     color: var(--neutral);
 }
 

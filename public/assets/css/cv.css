@@ -17,24 +17,13 @@ body#resume .landing .text-divider {
     opacity: 0;
 }
 
-body#resume navigation a {
-    color: var(--neutral);
-}
-
-body#resume navigation .nav-links li::after {
-    background-color: var(--neutral);
-}
-
-body#resume navigation.fixed .nav-links li::after {
-    background-color: var(--secondary);
-}
-
-body#resume navigation.fixed a {
-    color: var(--secondary);
-}
-
-body#resume navigation.fixed .nav-links li.active::after {
-    background-color: var(--secondary);
+body#resume #div-about-grab {
+    height: 520px;
+    width: 100%;
+    background: url(../img/landing-image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title-contact p a {
@@ -46,22 +35,20 @@ body#resume navigation.fixed .nav-links li.active::after {
     opacity: 0.5;
 }
 
-body#resume .mobile-nav-opener div {
-    background: var(--neutral);
-}
-
-body#resume navigation.fixed .mobile-nav-opener div {
-    background: var(--secondary);
-}
-
 #resume-begins {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
     width: 100%;
-    align-items: center;
-    padding-top: 96px;
-    padding-bottom: 104px;
+    padding-top: 192px;
+    padding-bottom: 120px;
+    gap: 80px;
+}
+
+.resume-detailers {
+    gap: 48px;
+    width: 60%;
+}
+
+#lefter-detailers {
+    width: 40%;
 }
 
 .title {
@@ -77,7 +64,6 @@ body#resume navigation.fixed .mobile-nav-opener div {
 
 .title-contact {
     text-align: left;
-    flex-direction: row;
 }
 
 .title-contact p a::after {
@@ -88,12 +74,6 @@ body#resume navigation.fixed .mobile-nav-opener div {
     gap: 64px;
     /* padding-bottom: 56px; */
 }
-
-
-/* .resume-body-row {
-    display: flex;
-    justify-content: space-between;
-} */
 
 .divisor {
     height: 1px;
@@ -184,9 +164,13 @@ span#spacer::after {
 }
 
 .tools .title-text.section {
-    gap: 12px;
+    gap: 32px;
 }
 
 .caption-text #tags {
-    color: var(--placeholders);
+    color: var(--ink);
+}
+
+.title .title-text {
+    gap: 0;
 }

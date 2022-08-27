@@ -21,7 +21,7 @@
             if(explode('/', $url)[3] == 'cv')
             {
                 echo '
-                   <a class="btn dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
+                   <a class="btn four dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>Save</span> my cv</p>

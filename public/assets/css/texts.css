@@ -109,16 +109,31 @@ h6,
 h2 a,
 p a {
     color: var(--links);
-    text-decoration: underline;
     transition: 1.2s opacity;
     font-weight: 400;
     display: inline-block;
+}
+
+h2 a::before,
+p a::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background: var(--links);
+    height: 1px;
+    bottom: 6px;
+    transition: 1s;
 }
 
 h2 a:hover,
 p a:hover {
     text-decoration: none;
     opacity: 0.9;
+}
+
+h2 a:hover::before,
+p a:hover::before {
+    width: 20%;
 }
 
 h2 a::after,
@@ -141,12 +156,11 @@ p a::after {
 #highlight::after {
     content: "";
     width: 100%;
-    background-color: var(--placeholders);
+    background-color: var(--secondary);
     height: 1px;
     position: absolute;
     left: 0;
     bottom: 14px;
-    z-index: -1;
 }
 
 .nav-links li a {
