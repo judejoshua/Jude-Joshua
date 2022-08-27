@@ -10,19 +10,19 @@
     <div class="nav">
         <ul class="nav-links">
             <li class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">
-                <a href="/">Home</a>
+                <a class="p4" href="/">Home</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'about' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About</a>
+                <a class="p4" href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'portfolio' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
+                <a class="p4" href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">CV</a>
+                <a class="p4" href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">CV</a>
             </li>
             <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
-                <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
+                <a class="p4" href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
             </li>
         </ul>
     </div>
@@ -38,19 +38,19 @@
     </div>
     <ul class="nav-links">
         <li class="<?=explode('/', $url)[3] == '' ? 'hidden' : '' ?>">
-            <a href="/">Home</a>
+            <a class="p4" href="/">Home</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'about' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About</a>
+            <a class="p4" href="<?=explode('/', $url)[3] == 'about' ? '#' : '/about' ?>">About</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'portfolio' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
+            <a class="p4" href="<?=explode('/', $url)[3] == 'portfolio' ? '#' : '/portfolio' ?>">Work</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'cv' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">CV</a>
+            <a class="p4" href="<?=explode('/', $url)[3] == 'cv' ? '#' : '/cv' ?>">CV</a>
         </li>
         <li class="<?=explode('/', $url)[3] == 'contact' ? 'active' : '' ?>">
-            <a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
+            <a class="p4" href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Contact</a>
         </li>
     </ul>
 </div>

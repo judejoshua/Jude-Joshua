@@ -7,38 +7,30 @@
 
 .landing {
     width: 100%;
-    height: auto;
-    padding: 152px 128px 0;
+    height: 100vh;
+    padding: 128px 128px 0;
+    /* background: linear-gradient(33deg, #aaaaaa1f 1px, var(--neutral) 1px); */
+    /* background-size: 5px 5px; */
 }
 
 .header_cont {
     display: flex;
     gap: 32px;
-    padding: 60px;
-    padding-left: 64px;
-    width: 50%;
-    background: var(--accent);
-    /* height: 464px; */
+    width: 100%;
 }
 
 .header-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 78%;
     gap: 12px;
-}
-
-.landing-image img {
-    width: 120%;
-    object-fit: cover;
-    left: -21px;
 }
 
 body:not(#home-landing) .landing {
     width: 100%;
     text-align: center;
-    padding: 160px 128px 24px;
+    padding: 192px 128px 0;
     height: auto;
     min-height: auto;
 }
@@ -83,19 +75,6 @@ body#contact .landing .text-divider {
     bottom: -12px;
     left: 5px;
     top: unset;
-}
-
-#landing-img {
-    width: 50%;
-    background: url(/public/assets/img/ed.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #444444;
-    background-position: center;
-    /* position: absolute; */
-    height: 492px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 #landing-highlight::after {

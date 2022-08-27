@@ -18,10 +18,10 @@
 :root {
     --neutral: #fff;
     --secondary: #1a1a1a;
-    --accent: #efefef;
+    --accent: #f5f5f5;
     --ink: #3e3e3e;
     --links: #006ba7;
-    --placeholders: #aaaaaa;
+    --placeholders: #cdcdcd;
     --error: #b60707;
 }
 
@@ -45,13 +45,15 @@ html,
 body {
     font-size: 20px;
     width: 100%;
-    background: var(--neutral);
+    margin: 0 auto;
     scroll-behavior: smooth;
     color: var(--secondary);
     min-height: 100vh;
     /* cursor: none; */
     scrollbar-width: none;
-    font-family: "Skarpa";
+    font-family: "Evolventa";
+    background: linear-gradient(45deg, var(--placeholders) 1px, var(--neutral) 1px);
+    background-size: 10px 10px;
 }
 
 body {
@@ -72,34 +74,4 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: var(--secondary);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--background-circles);
-}
-
-@keyframes shake-background {
-    0% {
-        background-position-x: -352px;
-        background-position-y: center;
-        /* transform: rotate(0deg); */
-    }
-    25% {
-        background-position-x: -586px;
-        background-position-y: -50px;
-    }
-    50% {
-        background-position-x: 62px;
-        background-position-y: center;
-        /* transform: rotate(-20deg); */
-    }
-    75% {
-        background-position-x: -586px;
-        background-position-y: 50px;
-    }
-    100% {
-        background-position-x: -352px;
-        background-position-y: center;
-        /* transform: rotate(0deg); */
-    }
 }

@@ -6,7 +6,7 @@
 }
 
 .why-boxed {
-    padding: 72px 64px;
+    padding: 88px 64px;
 }
 
 .why-boxed::before {
@@ -17,6 +17,8 @@
     position: absolute;
     left: 0;
     top: 0;
+    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    background-size: 5px 5px;
 }
 
 #why .text-divider {
@@ -31,14 +33,7 @@
     width: 45%;
     height: 90%;
     background: url(../img/why-me-2.webp);
-    background-position-y: center;
+    background-position: top;
     background-size: cover;
-    background-position-x: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /* filter: grayscale(1); */
-    /* transform: rotate(12deg); */
-    z-index: 1;
     background-color: var(--secondary);
-    /*     border-radius: 1000px 1000px 0 0; */
 }

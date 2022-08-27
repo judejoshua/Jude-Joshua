@@ -55,7 +55,7 @@
                 <div class="status-loader">
                     <div></div>
                 </div>
-                <p id="status" class="p5">
+                <p id="status" class="p6">
                     <span class="loader-dots">
                         <span class="loader__dot">.</span>
                         <span class="loader__dot">.</span>

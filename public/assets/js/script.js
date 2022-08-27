@@ -76,8 +76,8 @@ $(document).ready(function() {
     //                           C O N T E X T  M E N U
     //=================================================================================================
 
-    document.onclick = hideMenu;
-    document.oncontextmenu = rightClick;
+    // document.onclick = hideMenu;
+    // document.oncontextmenu = rightClick;
 
     function hideMenu() {
         $("#contextMenu").hide()

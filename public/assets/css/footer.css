@@ -1,5 +1,5 @@
 .results-section {
-    padding: 128px 128px 128px;
+    padding: 152px 128px 140px;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -17,8 +17,8 @@ body#contact .results-section {
     color: var(--ink);
 }
 
-.results-section-title>p {
-    margin-bottom: 24px;
+body:not(#home-landing) .results-section-title>p {
+    margin-bottom: 32px;
 }
 
 footer {
@@ -28,7 +28,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     gap: 72px;
-    padding: 72px 128px 32px;
+    padding: 72px 128px 48px;
     z-index: 2;
 }
 
@@ -41,12 +41,19 @@ body:not(#resume) .results-section::before {
     top: 0;
     left: 128px;
     right: 128px;
-    background-color: var(--accent);
+    /* background-color: var(--accent); */
+    background-color: var(--placeholders);
     height: 1px;
 }
 
 body:not(#home-landing) .results-section::before {
     height: 100%;
+    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    background-size: 5px 5px;
+}
+
+body:not(#home-landing) footer::before {
+    display: none;
 }
 
 body:not(#home-landing) footer {
@@ -82,7 +89,23 @@ body#home-landing .results-section::before {
     letter-spacing: 0.96px;
     text-align: left;
     color: var(--secondary);
-    transition: 0.6s;
+    transition: 1.2s;
+}
+
+.footer-top a:not(.to-top)::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--placeholders);
+    transition: 0.8s;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-top a:not(.to-top):hover::after {
+    width: 50%;
 }
 
 .footer-top a:not(.to-top):hover {
@@ -97,7 +120,7 @@ body#home-landing .results-section::before {
     border-radius: 1px;
     padding: 8px 20px;
     background: transparent;
-    transition: 0.6s;
+    transition: 1.2s;
 }
 
 .to-top:hover {
@@ -114,11 +137,5 @@ body#home-landing .results-section::before {
 }
 
 span.copyright {
-    font-size: 20px;
     color: var(--ink);
-    font-weight: 400;
-}
-
-span.copyright i {
-    font-size: 12px;
 }

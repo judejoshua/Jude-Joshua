@@ -1,8 +1,8 @@
 .testimonials {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 48px;
+    /* align-items: center; */
+    gap: 24px;
     padding-bottom: 128px;
     background-size: contain;
     padding-top: 128px;
@@ -50,6 +50,8 @@
     padding: 112px 96px;
     gap: 48px;
     background: var(--accent);
+    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    background-size: 5px 5px;
 }
 
 #CV {
@@ -60,26 +62,8 @@
     width: 72px;
 }
 
-#CV .btn.mdn .btn_cont {
-    left: 27px;
-    top: 22px;
-}
-
-#CV .btn_cont #text,
-#CV .btn_cont i {
-    font-size: 24px !important;
-    font-weight: 900 !important;
-    word-spacing: 1px;
-}
-
 #CV .btn.mdn {
-    width: 199px;
-    height: 72px;
-}
-
-#CV .btn.mdn .btn_bg {
-    height: 72px;
-    width: 72px;
+    width: 182px;
 }
 
 #CV .btn.mdn:hover>.btn_bg {
@@ -91,63 +75,7 @@
 }
 
 .testimonials .title-text {
-    align-items: center;
-}
-
-.about-me-card-holder {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    padding-top: 128px;
-}
-
-.about-cards {
-    width: 424px;
-    height: 437px;
-    background: url(../img/about-me-1.png);
-    background-color: var(--secondary);
-    background-position-x: right;
-    background-position-y: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: var(--neutral);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 32px 32px 48px;
-    overflow: hidden;
-    /* margin-top: 96px; */
-    gap: 40px;
-}
-
-.about-cards .title-text {
-    width: 100%;
-}
-
-.about-cards p {
-    color: var(--accent);
-}
-
-.about-cards:nth-child(2) {
-    background: url(../img/about-me-2.png);
-    background-color: var(--secondary);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: top;
-    margin-top: 0px;
-    background-position-x: right;
-    height: 437px;
-}
-
-.about-cards:nth-child(3) {
-    background: url(../img/about-me-3.png);
-    background-color: var(--secondary);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-    height: 437px;
+    /* gap: 48px; */
 }
 
 .experience_card {
@@ -228,24 +156,21 @@
 .experience-body {
     display: flex;
     flex-direction: column;
-    /* margin-top: 16px; */
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 152px;
 }
 
 #xp {
-    padding-top: 88px;
-    padding-bottom: 128px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding-top: 152px;
+    padding-bottom: 0;
     width: 100%;
-    gap: 24px;
+    gap: 152px;
 }
 
 #xp .text-divider {
-    align-items: center;
-    text-align: center;
-    width: 61%;
+    width: 51%;
 }
 
 .xp-vector {
@@ -284,10 +209,42 @@
 
 #div-about-grab {
     width: 33%;
-    height: 680px;
-    background: url('../img/landing-image.webp');
+    background: url('../img/about-me.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* filter: grayscale(1); */
+}
+
+#xp #div-about-grab {
+    width: 40%;
+    background: url(../img/xp.webp);
+    background-size: 60%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: 600px;
+    background-position-y: 100%;
+}
+
+#clients .deliverables {
+    background: none;
+    padding: 64px 128px 0;
+}
+
+#clients .deliverables .deliverables-list {
+    animation: scroll-clients 25s linear infinite;
+}
+
+#clients .deliverables .deliverables-list:nth-child(2) {
+    /* left: 8%; */
+    animation-direction: reverse;
+    animation-duration: 30s;
+}
+
+@keyframes scroll-clients {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-40%);
+    }
 }

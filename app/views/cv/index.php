@@ -84,10 +84,10 @@
                                         <p class="p4">Design Lead <span id="spacer"></span><span>Decemeber 2020 - Present</span><br/><span >First Medtrade Africa</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Carried out user research and interviews to find out why end-users preferred placing orders on WhatsApp chats to buying from the online medical store.</p>
+                                                <p class="p4">Carried out user research and interviews to find out why end-users preferred placing orders via WhatsApp chats to buying from the online medical store.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Worked with the development team to design an optimized version of the medical store for easy shopping.</p>
+                                                <p class="p4">Worked with the development team to design an intuitive and optimized version of the medical store for users to shop easily resulting in a 20% increase in user purchases online.</p>
                                             </li>
                                             <li>
                                                 <p class="p4">Carried out usability tests to ensure that the new design met the desired goal of the users - to shop easily.</p>
@@ -95,7 +95,7 @@
                                         </ol>
                                     </div>
                                     <div class="experience-section title-text">
-                                        <p class="p4">Senior Web Administrator <span id="spacer"></span><span>December 2017 - November 2020</span><br/><span>First Medtrade Africa</span></p>
+                                        <p class="p4">Web Developer/Administrator <span id="spacer"></span><span>December 2017 - November 2020</span><br/><span>First Medtrade Africa</span></p>
                                         <ol>
                                             <li>
                                                 <p class="p4">Designed, developed, and maintained the beta version of the website for use by over 500+ users.</p>
@@ -112,7 +112,7 @@
                                         <p class="p4">Web Design Intern <span id="spacer"></span><span>May 2017 - October 2017</span><br/><span>Akwa Ibom Ministry of Science and Technology</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Worked with the development team to provide updates to the ministry’s website and ensured that it provided accessibility and usability to it’s users.</p>
+                                                <p class="p4">Worked with the development team to provide ideas and updates to the ministry’s website and ensured that it provided accessibility and usability to its users.</p>
                                             </li>
                                             <li>
                                                 <p class="p4">Designed new sketches and wireframes for new projects that were meant to move some departments of the ministry from a paper-based database management system to an online database management system.</p>
@@ -214,7 +214,7 @@
                                 <div id="liner"></div>
                                 <div class="section">
                                     <div class="education-section title-text">
-                                        <p class="p4">Computer Engineering<br/><span>Caritas University, Enugu, Nigeria</span><br/><span>September 2013 - August 2018</span></p>
+                                        <p class="p4">Bachelor of Engineering (BEng) in Computer Engineering<br/><span>Caritas University, Enugu, Nigeria</span><br/><span>September 2013 - August 2018</span></p>
                                     </div>
                                     <div class="education-section title-text">
                                         <p class="p4">Advanced Diploma in Computer Engineering and maintenance<br/><span>IBML Computer Institute, Uyo, Nigeria</span><br/><span>2012 - August 2013</span></p>

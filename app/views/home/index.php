@@ -9,23 +9,22 @@
 
     <body id="home-landing">
         <div class="wrapper" id="top">
-            <header class="landing d-flex d-flex-row flex-justify-between flex-align-end" id="home">
+            <header class="landing d-flex d-flex-row flex-justify-center flex-align-center" id="home">
                 <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
                     <div class="header">
                         <div class="header-text">
-                            <h1>Using creativity and</br>passion to <span id="landing-highlight"></span> a</br>better world.</h1>
-                            <p class="p4">I seek to use my design knowledge and skills in ways that create better user patterns and improved lifestyles in the most intuitive and useful way possible.</p>
-                            <a class="btn" href="#case-study">
+                            <p class="p4">Hello.</p>
+                            <h1>I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1>
+                        </div>
+                        <a class="btn" href="#case-study">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>See</span> how</p>
                                 <i class="las la-arrow-down"></i>
                             </div>
                         </a>
-                        </div>
                     </div>
                 </div>
-                <div id="landing-img"></div>
             </header>
             <article id="body">
                 <section id="case-study">
@@ -65,9 +64,9 @@
                                                             <div class="caption">
                                                                 <div class="caption-text">
                                                                     <h5>'.$project_data['project_title'].'</h5>
-                                                                    <span id="tags" class="p6">'.$project_data['project_tags'].'</span>
+                                                                    <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
+                                                                    <span class="p5 view">View case study</span>
                                                                 </div>
-                                                                <i class="las la-arrow-right"></i>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -91,93 +90,51 @@
                 </section>
                 <section id="design-section">
                     <div class="design-style">
-                        <div class="col-100-shift">
+                        <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
                             <div class="text-divider">
-                                <h2>My Design Process</h2>
-                                <div id="liner"></div>
-                                <p class="p4">
-                                    When I work on digital projects (either web or mobile), I like to break them down into smaller bits. This allows me to achieve solutions to complex ideas easily and faster. After following these processes diligently, I put them back together and the final outcome is usually a harmonious solution.<br/>
-                                    Here's what I mean;
-                                </p>
+                                <div class="designer-caption d-flex d-flex-column">
+                                    <p class="p4">For the human.</p>
+                                    <h2 class="h1">I create excellent <span id="highlight">user-centered</span> solutions from <span id="highlight">great</span> ideas.</h2>
+                                </div>
+                            </div>
+                            <div class="design-style-image">
+                                <img src="/public/assets/img/style-gif.webp">
                             </div>
                         </div>
-                        <div class="design-styles">
-                            <div class="row">
-                                <div class="design-rule">
-                                    <div class="icon">
-                                        <img src="/public/assets/img/design-style-1.svg" alt="research" />
-                                    </div>
-                                    <div class="design-rule-set">
-                                        <div class="title">
-                                            <h2><span>01.</span> Research</h2>
-                                        </div>
-                                        <div class="body">
-                                            <p class="p4">
-                                                This is the key process in getting the desired results. First, I pay close attention to the problem or idea, and try to understand the goals.<br/>
-                                                After this, I conduct interviews, deep findings/researches and then, I create user personaes based on my findings. My research methodolgy is simple - <span id="highlight">Know</span>, <span id="highlight">Learn</span> and <span id="highlight">Understand</span>.
-                                            </p>
-                                        </div>
-                                    </div>
+                        <div class="deliverables">
+                            <div class="row d-flex d-flex-column">
+                                <div class="deliverables-list d-flex d-flex-row">
+                                    <span class="p1">Success</span>
+                                    <span class="p1">Numbers</span>
+                                    <span class="p1">Human-centered</span>
+                                    <span class="p1">Learn</span>
+                                    <span class="p1">Know</span>
+                                    <span class="p1">Understand</span>
+                                    <span class="p1">Ideas</span>
+                                    <span class="p1">Implement</span>
                                 </div>
-                                <div class="design-rule">
-                                    <div class="icon">
-                                        <img src="/public/assets/img/design-style-2.svg" alt="design" />
-                                    </div>
-                                    <div class="design-rule-set">
-                                        <div class="title">
-                                            <h2><span>02.</span> Ideation</h2>
-                                        </div>
-                                        <div class="body">
-                                            <p class="p4">
-                                                Here comes the most exciting part of the process. With an established understanding, I analyse and then begin to draft ideas and solutions to solve the problem and implement concepts. I pay keen attention to the needs and details of both the client and the user through sketches, wireframes, and visual mockups.
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div class="deliverables-list d-flex d-flex-row">
+                                    <span class="p1">Analyse</span>
+                                    <span class="p1">Needs</span>
+                                    <span class="p1">Attention</span>
+                                    <span class="p1">Prototype</span>
+                                    <span class="p1">Wireframes</span>
+                                    <span class="p1">Sketch</span>
+                                    <span class="p1">Business</span>
+                                    <span class="p1">Objectives</span>
                                 </div>
-                                <div class="design-rule">
-                                    <div class="icon">
-                                        <img src="/public/assets/img/design-style-3.svg" alt="prototyping" />
-                                    </div>
-                                    <div class="design-rule-set">
-                                        <div class="title">
-                                            <h2><span>03.</span> Prototyping</h2>
-                                        </div>
-                                        <div class="body">
-                                            <p class="p4">
-                                                After designing, I carry out tests on the draft version of the product. I explore the product as a user while taking note of the 'why' behind the experience.<br/>
-                                                From here, I can know what is lacking; or if the product is working as it should, and then adjust it to satisfy the desired needs.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="design-rule">
-                                    <div class="icon">
-                                        <img src="/public/assets/img/design-style-4.svg" alt="testing" />
-                                    </div>
-                                    <div class="design-rule-set">
-                                        <div class="title">
-                                            <h2><span>04.</span> Testing</h2>
-                                        </div>
-                                        <div class="body">
-                                            <p class="p4">
-                                                This is the main testing process.</br>
-                                                After the initial prototype testing and implementation of the product, I test the product further with real users.</br>
-                                                After I get feedback, I cross-check it with the desired needs and if needed, re-adjust the product to meet the desired business and user objectives.
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div class="deliverables-list d-flex d-flex-row">
+                                    <span class="p1">Satisfy</span>
+                                    <span class="p1">Concepts</span>
+                                    <span class="p1">Experience</span>
+                                    <span class="p1">User</span>
+                                    <span class="p1">Testing</span>
+                                    <span class="p1">Feedback</span>
+                                    <span class="p1">Goals</span>
+                                    <span class="p1">Details</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-100-shift">
-                        <a class="btn mdn" href="/portfolio">
-                        <div class="btn_bg"></div>
-                        <div class="btn_cont">
-                            <p id="text"><span>See</span> a sample</p>
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                    </a>
                     </div>
                 </section>
                 <section id="why">
@@ -186,10 +143,10 @@
                             <h2>A good fit?</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                Every successful person has a driving force that motivates them to excel. For me, it is my deep passion for design. There isn't a day that goes by without me utilizing my design skills in some way.<br/>I have been fascinated by design since my childhood. This love combined with a desire to simplify and improve people's lives is what inspired me to become a designer. This is why, whether it is through design or coding, I strive to make the digital life of my users as easy as possible through accessible, minimalist, and useful designs.
+                                My goal is to create minimal, accessible and useful designs that help businesses relate to their target audience and provide them with the right solutions through design. <br/>The concept of design has fascinated me since I was a child, and so I try in some way to hone my skills every day. This love, combined with a desire to improve the digital experiences for users are what pushed me to become a designer. This is why I consistently try to make the user experience as convenient as possible through accessible, minimalist, and useful design.
                             </p>
                         </div>
-                        <a class="btn" href="/cv">
+                        <a class="btn four" href="/cv">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>View</span> my CV</p>

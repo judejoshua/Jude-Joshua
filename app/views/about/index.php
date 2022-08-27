@@ -13,184 +13,54 @@
                 <div class="d-flex d-flex-row flex-justify-between col-100">
                     <div id="div-about-grab"></div>
                     <div class="text-divider">
-                        <h1>About Me</h1>
+                        <h1>Bio</h1>
                         <div id="liner"></div>
                         <p class="p4">
                             I am a product designer currently working with the team at First Medtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians.<br/><br/>
-                            I began my tech journey in 2013 when I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and JavaScript. And after this, I picked up little web design tests and tried replicating some designs I found on the web to hone my skills. In 2017, I interned at the Ministry of Science and Technology in Akwa Ibom state, Nigeria as a Web Designer. Having the ability to quickly learn and understand most of their existing systems, I was added to a team that was responsible for planning and carrying out a training program for tech newbies. My expertise allows me to work with business owners, startups, and individuals and make their ideas a reality with a stress-free experience for their customers.<br/><br/>
-                            One fun fact about me is that I love to have a good laugh. In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.
+                            Outside of this, I focus on creating intuitive and user-friendly experiences for small and medium-sized businesses. My goal is to create minimal, accessible and useful designs that help businesses relate to their target audience and provide them with the right solutions.<br/><br/>
+                            One fun fact about me is that I love to have a good laugh.<br/>In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.                           
                         </p>
-                    </div>
-                </div>
-                <div class="about-me-card-holder">
-                    <div class="about-cards">
-                        <p class="p6">work</p>
-                        <div class="title-text">
-                            <h3>Product Designer</h3>
-                            <p class="p4">
-                                As a designer with a burning passion for better design, it's my responsibility to provide users with an easy and stress-free experience by transforming ideas in a creative way into implementable digital designs.</p>
-                        </div>
-                    </div>
-                    <div class="about-cards">
-                        <p class="p6">hobbies</p>
-                        <div class="title-text">
-                            <h3>Writer</h3>
-                            <p class="p4">
-                                When I’m not coding nor designing, I write. Writing is among one of the things I enjoy doing aside from designing. It's like an escape route that takes me into another world of creativity. I write short stories, poems, and sometimes self-care articles.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-cards">
-                        <p class="p6">work</p>
-                        <div class="title-text">
-                            <h3>Web Developer</h3>
-                            <p class="p4">
-                                My creativity and passion don't just stop at product design. I also build the parts of a website that a user sees and interacts with such that it fits with the design and business goals. I achieve these through my responsibility as a front-end developer.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </header>
             <article id="body">
-                <section id="xp">
-                    <div class="text-divider">
-                        <h2>My Experience</h2>
-                        <div id="liner"></div>
-                        <p class="p4">
-                            I have been privileged to work with many wonderful people from diverse industries. Here are some of them.
-                        </p>
+                <section id="xp" class="d-flex d-flex-column">
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="text-divider">
+                            <h2>My Journey</h2>
+                            <div id="liner"></div>
+                            <p class="p4">
+                                I began my tech journey in 2013 after I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and JavaScript. From there, I picked up little web design tests and tried replicating some designs I found on the web to hone my skills. In 2017, I interned at the Ministry of Science and Technology in Akwa Ibom state, Nigeria as a Web Designer. Having the ability to quickly learn and understand most of their existing systems, I was added to a team that was responsible for planning and carrying out a training program for 1000+ tech newbies.<br/><br/>My expertise allows me to work with business owners, startups and individuals to help them build their solutions with a stress-free experience for their users.
+                            </p>
+                        </div>
+                        <div id="div-about-grab"></div>
                     </div>
-                    <div class="experience-body">
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>First Medtrade Africa</h4>
-                                    <h5>Design Lead / Front-end Developer</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Uyo, Nigeria</h5>
-                                    <p class="p5">Decmeber 2020 - Present</p>
-                                </div>
-                            </div>
+                </section>
+                <section id="clients" class="experience-body">
+                    <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
+                        <div class="text-divider">
+                            <h2>My Clients</h2>
+                            <div id="liner"></div>
+                            <p class="p4">
+                                I have been privileged to work with many wonderful people from diverse industries. Here are some of them.
+                            </p>
                         </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>Felipe Gusta</h4>
-                                    <h5>UI/UX Developer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Brazil</h5>
-                                    <p class="p5">January 2022 - March 2022</p>
-                                </div>
+                    </div>
+                    <div class="deliverables">
+                        <div class="row d-flex d-flex-column">
+                            <div class="deliverables-list d-flex d-flex-row">
+                                <span class="p1">Thrive.NIG</span>
+                                <span class="p1">First Medtrade Africa</span>
+                                <span class="p1">SoliumRise</span>
+                                <span class="p1">Felipe Gusta</span>
+                                <span class="p1">TVNR Cancer Foundation</span>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>SoliumRise</h4>
-                                    <h5>Visual/UI Designer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Ibadan, Nigeria</h5>
-                                    <p class="p5">November 2021 - November 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>The Victoria Nwaeke Cancer Foundation</h4>
-                                    <h5>Product Designer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Imo, Nigeria</h5>
-                                    <p class="p5">September 2021 - November 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>Thrive.NIG</h4>
-                                    <h5>UI/UX Designer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Lagos, Nigeria</h5>
-                                    <p class="p5">August 2021 - September 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>Club and Country</h4>
-                                    <h5>Web Designer/Developer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Abuja, Nigeria</h5>
-                                    <p class="p5">December 2020 - January 2021</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>CypressEnergy</h4>
-                                    <h5>Web Designer/Developer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Imo, Nigeria</h5>
-                                    <p class="p5">December 2019 - January 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>Nweke Cynthia</h4>
-                                    <h5>Web Designer/Developer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Enugu, Nigeria</h5>
-                                    <p class="p5">February 2019 - April 2019</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>Ugochukwu Kizito</h4>
-                                    <h5>Web Developer (Freelance)</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Enugu, Nigeria</h5>
-                                    <p class="p5">July 2018 - August 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>First Medtrade Africa</h4>
-                                    <h5>Web Developer/Administrator</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Uyo, Nigeria</h5>
-                                    <p class="p5">December 2017 - November 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="experience_card">
-                                <div class="job-client-location">
-                                    <h4>Akwa Ibom Mininstry of Science and Technology</h4>
-                                    <h5>Intern</h5>
-                                </div>
-                                <div class="job-client-location">
-                                    <h5>Uyo, Nigeria</h5>
-                                    <p class="p5">May 2017 - October 2017</p>
-                                </div>
+                            <div class="deliverables-list d-flex d-flex-row">
+                                <span class="p1">CypressEnergy</span>
+                                <span class="p1">Club and Country</span>
+                                <span class="p1">James Plus Consulting</span>
+                                <span class="p1">Nweke Cynthia</span>
+                                <span class="p1">Kizito</span>
                             </div>
                         </div>
                     </div>
@@ -198,10 +68,10 @@
                 <section id="CV">
                     <div class="cv-block">
                         <img src="/public/assets/img/resume-icon.webp" />
-                        <a class="btn mdn" href="/cv">
+                        <a class="btn four mdn" href="/cv">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
-                                <p id="text" class="h1"><span>View</span> my CV</p>
+                                <p id="text"><span>View</span> my CV</p>
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </a>

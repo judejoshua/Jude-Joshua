@@ -33,7 +33,7 @@
             {
                 echo '
                     <p class="p4">Your users desire a stress-free experience with your digital product. I can help you provide this with maximum satisfaction.</p>
-                    <a class="btn mdn" href="/contact">
+                    <a class="btn four mdn" href="/contact">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>Send</span> a message</p>
@@ -60,9 +60,9 @@
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
         </div>
         <a class="to-top" href="#top">
-            <p class="p6">SCROLL UP</p>
+            <p class="p5">SCROLL UP</p>
             <i class="las la-angle-up"></i>
         </a>
     </div>
-    <span class="copyright"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
+    <span class="copyright p6"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
 </footer>

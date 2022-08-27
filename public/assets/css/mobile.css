@@ -35,7 +35,6 @@
     .design-rule {
         width: 47%;
     }
-    .header_cont,
     section {
         padding-left: 64px !important;
         padding-right: 64px !important;
@@ -234,7 +233,7 @@
         top: 18px;
         left: 33px;
     }
-    .header_cont {
+    section {
         padding: 48px 48px !important;
         gap: 32px;
     }
@@ -740,7 +739,6 @@
     .design-style {
         gap: 40px;
     }
-    .header_cont,
     section {
         padding-left: 48px !important;
         padding-right: 48px !important;
@@ -804,7 +802,7 @@
         top: 0;
     }
     .landing h1 br {
-        content: "";
+        display: none;
     }
     .landing h1 br:before {
         content: " ";
@@ -885,17 +883,12 @@
         padding: 32px 32px 32px;
         gap: 36px;
     }
-    .header_cont,
     section {
         padding: 36px 32px !important;
         gap: 32px;
     }
     .header_cont {
         width: 100%;
-        padding-left: 28px !important;
-        padding-right: 28px !important;
-        padding-top: 32px !important;
-        padding-bottom: 32px !important;
     }
     #resume-begins {
         padding: 42px 32px;

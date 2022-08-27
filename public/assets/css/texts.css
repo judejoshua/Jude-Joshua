@@ -1,157 +1,118 @@
-.h0 {
-    font-family: "Skarpa";
-    font-size: 64px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.9;
-}
-
 h1,
 .h1 {
-    font-family: "Skarpa";
-    font-size: 64px;
-    font-weight: 400;
+    font-family: "Evolventa";
+    font-size: 52px;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.9;
-    word-spacing: -8px;
-    letter-spacing: -1px;
 }
 
 h2,
 .h2 {
-    font-family: "Skarpa";
-    font-size: 48px;
+    font-family: "Evolventa";
+    font-size: 40px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.9;
 }
 
 h3,
 .h3 {
-    font-family: "Skarpa";
+    font-family: "Evolventa";
     font-size: 32px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.9;
 }
 
 h4,
 .h4 {
-    font-family: "Skarpa";
+    font-family: "Evolventa";
     font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
 }
 
 h5,
 .h5 {
-    font-family: "Skarpa";
+    font-family: "Evolventa";
     font-size: 20px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
     letter-spacing: normal;
 }
 
 h6,
 .h6 {
-    font-family: "Skarpa";
+    font-family: "Evolventa";
     font-size: 16px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.3;
-}
-
-.p0 {
-    font-family: "Skarpa";
-    font-size: 56px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: normal;
-    color: var(--ink);
 }
 
 .p1 {
-    font-family: "Skarpa";
-    font-size: 48px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.8;
-    letter-spacing: normal;
-    color: var(--ink);
-}
-
-.p2 {
-    font-family: "Skarpa";
+    font-family: "Evolventa";
     font-size: 40px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: var(--ink);
 }
 
-.p3 {
-    font-family: "Skarpa";
+.p2 {
+    font-family: "Evolventa";
     font-size: 32px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
-    color: var(--ink);
+    line-height: 1.7;
 }
 
-.p4 {
-    font-family: "Skarpa";
+.p3 {
+    font-family: "Evolventa";
     font-size: 24px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.3;
-    letter-spacing: -0.6px;
-    color: var(--ink);
+    line-height: 1.8;
 }
 
-.p5 {
-    font-family: "Skarpa";
+.p4 {
+    font-family: "Evolventa";
     font-size: 20px;
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.8;
-    letter-spacing: -0.7px;
-    color: var(--ink);
+}
+
+.p5 {
+    font-family: "Evolventa";
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
 }
 
 .p6 {
-    font-family: "Skarpa";
-    font-size: 16px;
-    font-weight: 500;
+    font-family: "Evolventa";
+    font-size: 12px;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.4;
-    letter-spacing: 0;
-    color: var(--ink);
+    line-height: 1.8;
 }
 
 h2 a,
 p a {
     color: var(--links);
     text-decoration: underline;
-    transition: 0.5s opacity;
+    transition: 1.2s opacity;
     font-weight: 400;
+    display: inline-block;
 }
 
 h2 a:hover,
@@ -173,47 +134,30 @@ p a::after {
 #highlight {
     font-style: italic;
     font-weight: 800;
+    display: inline-block;
+    line-height: 1.4;
 }
 
 #highlight::after {
     content: "";
     width: 100%;
-    background-color: var(--accent);
+    background-color: var(--placeholders);
     height: 1px;
     position: absolute;
     left: 0;
-    bottom: 0;
-}
-
-#quote {
-    font-style: italic;
-    margin: 40px 0;
-    display: block;
-    font-size: 26px;
-    width: 100%;
-    line-height: 1.5;
-    color: var(--placeholders);
-    border-left: 4px solid;
-    padding-left: 12px;
+    bottom: 14px;
+    z-index: -1;
 }
 
 .nav-links li a {
-    font-family: "Skarpa";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    /* identical to box height, or 140% */
-    /* secondary */
+    font-family: "Evolventa";
     color: var(--ink);
-    /* text-transform: uppercase; */
     flex: none;
     flex-grow: 0;
     padding: 8px;
 }
 
 .btn_cont #text {
-    font-family: "Skarpa";
+    font-family: "Evolventa";
     font-weight: 400;
-    /* word-spacing: 1px; */
-    font-size: 21px !important;
 }

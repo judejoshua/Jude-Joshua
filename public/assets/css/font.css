@@ -1,116 +1,4 @@
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('/public/assets/fonts/playfair/PlayfairDisplay-Black.eot');
-    src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), url('/public/assets/fonts/playfair/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/playfair/PlayfairDisplay-Black.woff2') format('woff2'), url('/public/assets/fonts/playfair/PlayfairDisplay-Black.woff') format('woff'), url('/public/assets/fonts/playfair/PlayfairDisplay-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('/public/assets/fonts/playfair/PlayfairDisplay-Regular.eot');
-    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url('/public/assets/fonts/playfair/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/playfair/PlayfairDisplay-Regular.woff2') format('woff2'), url('/public/assets/fonts/playfair/PlayfairDisplay-Regular.woff') format('woff'), url('/public/assets/fonts/playfair/PlayfairDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('/public/assets/fonts/playfair/PlayfairDisplay-Bold.eot');
-    src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url('/public/assets/fonts/playfair/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/playfair/PlayfairDisplay-Bold.woff2') format('woff2'), url('/public/assets/fonts/playfair/PlayfairDisplay-Bold.woff') format('woff'), url('/public/assets/fonts/playfair/PlayfairDisplay-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('/public/assets/fonts/playfair/PlayfairDisplay-Italic.eot');
-    src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url('/public/assets/fonts/playfair/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/playfair/PlayfairDisplay-Italic.woff2') format('woff2'), url('/public/assets/fonts/playfair/PlayfairDisplay-Italic.woff') format('woff'), url('/public/assets/fonts/playfair/PlayfairDisplay-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('/public/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot');
-    src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), url('/public/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff2') format('woff2'), url('/public/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff') format('woff'), url('/public/assets/fonts/playfair/PlayfairDisplay-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('/public/assets/fonts/playfair/PlayfairDisplay-BoldItalic.eot');
-    src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url('/public/assets/fonts/playfair/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/playfair/PlayfairDisplay-BoldItalic.woff2') format('woff2'), url('/public/assets/fonts/playfair/PlayfairDisplay-BoldItalic.woff') format('woff'), url('/public/assets/fonts/playfair/PlayfairDisplay-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Medium.eot');
-    src: local('Clobber Grotesk Medium'), local('ClobberGrotesk-Medium'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Medium.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Medium.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Medium.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Light.eot');
-    src: local('Clobber Grotesk Light'), local('ClobberGrotesk-Light'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Light.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Light.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Light.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Italic.eot');
-    src: local('Clobber Grotesk Italic'), local('ClobberGrotesk-Italic'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Italic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Italic.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Italic.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Regular.eot');
-    src: local('Clobber Grotesk Regular'), local('ClobberGrotesk-Regular'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Regular.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Regular.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-BoldItalic.eot');
-    src: local('Clobber Grotesk Bold Italic'), local('ClobberGrotesk-BoldItalic'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-BoldItalic.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-BoldItalic.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Bold.eot');
-    src: local('Clobber Grotesk Bold'), local('ClobberGrotesk-Bold'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Bold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Bold.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Bold.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-MediumItalic.eot');
-    src: local('Clobber Grotesk Medium Italic'), local('ClobberGrotesk-MediumItalic'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-MediumItalic.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-MediumItalic.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Clobber Grotesk';
-    src: url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-DemiBold.eot');
-    src: local('Clobber Grotesk DemiBold'), local('ClobberGrotesk-DemiBold'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-DemiBold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-DemiBold.woff2') format('woff2'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-DemiBold.woff') format('woff'), url('/public/assets/fonts/ClobberGrotesk/ClobberGrotesk-DemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Romantica Signature';
     src: url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.eot');
     src: local('Romantica Signature Regular'), local('RomanticaSignature-Regular'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.woff2') format('woff2'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.woff') format('woff'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.ttf') format('truetype');
@@ -120,127 +8,29 @@
 }
 
 @font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-Italic.eot');
-    src: local('Skarpa Italic'), local('Skarpa-Italic'), url('/public/assets/fonts/skarpa/Skarpa-Italic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-Italic.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-Italic.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-ThinItalic.eot');
-    src: local('Skarpa Thin Italic'), local('Skarpa-ThinItalic'), url('/public/assets/fonts/skarpa/Skarpa-ThinItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-ThinItalic.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-ThinItalic.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-Light.eot');
-    src: local('Skarpa Light'), local('Skarpa-Light'), url('/public/assets/fonts/skarpa/Skarpa-Light.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-Light.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-Light.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-Medium.eot');
-    src: local('Skarpa Medium'), local('Skarpa-Medium'), url('/public/assets/fonts/skarpa/Skarpa-Medium.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-Medium.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-Medium.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa Semi';
-    src: url('/public/assets/fonts/skarpa/Skarpa-SemiLightItalic.eot');
-    src: local('Skarpa Semi Light Italic'), local('Skarpa-SemiLightItalic'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightItalic.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightItalic.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa Semi';
-    src: url('/public/assets/fonts/skarpa/Skarpa-SemiLight.eot');
-    src: local('Skarpa Semi Light'), local('Skarpa-SemiLight'), url('/public/assets/fonts/skarpa/Skarpa-SemiLight.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-SemiLight.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-SemiLight.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-SemiLight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-LightItalic.eot');
-    src: local('Skarpa Light Italic'), local('Skarpa-LightItalic'), url('/public/assets/fonts/skarpa/Skarpa-LightItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-LightItalic.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-LightItalic.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa Semi Light Demo';
-    src: url('/public/assets/fonts/skarpa/Skarpa-SemiLightDemo.eot');
-    src: local('Skarpa Semi Light Demo'), local('Skarpa-SemiLightDemo'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightDemo.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightDemo.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightDemo.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-SemiLightDemo.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-BoldItalic.eot');
-    src: local('Skarpa Bold Italic'), local('Skarpa-BoldItalic'), url('/public/assets/fonts/skarpa/Skarpa-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-BoldItalic.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-BoldItalic.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-Bold.eot');
-    src: local('Skarpa Bold'), local('Skarpa-Bold'), url('/public/assets/fonts/skarpa/Skarpa-Bold.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-Bold.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-Bold.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa Light Italic Demo';
-    src: url('/public/assets/fonts/skarpa/Skarpa-LightItalicDemo.eot');
-    src: local('Skarpa Light Italic Demo'), local('Skarpa-LightItalicDemo'), url('/public/assets/fonts/skarpa/Skarpa-LightItalicDemo.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-LightItalicDemo.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-LightItalicDemo.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-LightItalicDemo.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-MediumItalic.eot');
-    src: local('Skarpa Medium Italic'), local('Skarpa-MediumItalic'), url('/public/assets/fonts/skarpa/Skarpa-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-MediumItalic.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-MediumItalic.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-Regular.eot');
-    src: local('Skarpa'), local('Skarpa-Regular'), url('/public/assets/fonts/skarpa/Skarpa-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-Regular.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-Regular.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-Regular.ttf') format('truetype');
+    font-family: Evolventa;
+    src: local("Evolventa"), url("/public/assets/fonts/evolventa/Evolventa-Regular.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Skarpa';
-    src: url('/public/assets/fonts/skarpa/Skarpa-Thin.eot');
-    src: local('Skarpa Thin'), local('Skarpa-Thin'), url('/public/assets/fonts/skarpa/Skarpa-Thin.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/skarpa/Skarpa-Thin.woff2') format('woff2'), url('/public/assets/fonts/skarpa/Skarpa-Thin.woff') format('woff'), url('/public/assets/fonts/skarpa/Skarpa-Thin.ttf') format('truetype');
-    font-weight: 100;
+    font-family: Evolventa;
+    src: local("Evolventa Oblique"), url("/public/assets/fonts/evolventa/Evolventa-Oblique.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Bold"), url("/public/assets/fonts/evolventa/Evolventa-Bold.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-    font-display: swap;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Bold Oblique"), url("/public/assets/fonts/evolventa/Evolventa-BoldOblique.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
