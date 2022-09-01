@@ -88,7 +88,7 @@
                                                 }
                                             echo
                                             '</p>
-                                        </div>                                    
+                                        </div>                  
                                     ';
                                 }else{
                                     echo'
