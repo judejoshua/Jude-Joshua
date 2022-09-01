@@ -64,7 +64,7 @@
                                                             <div class="caption">
                                                                 <div class="caption-text">
                                                                     <h5>'.$project_data['project_title'].'</h5>
-                                                                    <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
+                                                                    <span id="tags" class="p5">'.$project_data['project_type'].'</span>
                                                                     <span class="p5 view">View case study</span>
                                                                 </div>
                                                             </div>

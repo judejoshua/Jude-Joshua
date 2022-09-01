@@ -17,15 +17,6 @@
                             <h1>Add a new Project</h1>
                         </div>
                     </div>
-                    <div class="scroll-down-indicator">
-                        <div class="scroll-down">
-                            <div class="mouse">
-                                <div id="arrow-tail-short"></div>
-                            </div>
-                            <div id="arrow-tail-long"></div>
-                        </div>
-                        <p class="p5">Scroll down</p>
-                    </div>
                 </div>
             </header>
             <article id="body" class="add">
@@ -81,85 +72,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="project_description" id="to-title" class="h4">Project Mini Description*</label>
+                                    <label for="project_description" id="to-title" class="h4">Project Description*</label>
                                     <div class="input-group">
                                         <div class="input-field">
                                             <textarea type="text" id="project_description" name="project_description" class="form-input p4 form-area" maxlength="200"></textarea>
                                             <div class="labels">
                                                 <p class="p5 placeholder">Say a little talk about your project (Required)</p>
                                                 <p class="p5 error" data-error="project_description"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project_tags" id="to-title" class="h4">Project Tags*</label>
-                                    <div class="input-group">
-                                        <div class="input-field">
-                                            <input type="text" id="project_tags" name="project_tags" class="form-input p4"/>
-                                            <div class="labels">
-                                                <p class="p5 placeholder">Enter your project tags seperated by a comma (Required)</p>
-                                                <p class="p5 error" data-error="project_tags"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project_about" id="to-title" class="h4">About the project*</label>
-                                    <div class="input-group">
-                                        <div class="input-field">
-                                            <textarea type="text" id="project_about" name="project_about" class="form-input p4 form-area" maxlength="2000"></textarea>
-                                            <div class="labels">
-                                                <p class="p5 placeholder">Let's talk about the client and what they intend to achieve with the project in details (Required)</p>
-                                                <p class="p5 error" data-error="project_about"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project_problem_statement" id="to-title" class="h4">Problem Statement</label>
-                                    <div class="input-group">
-                                        <div class="input-field">
-                                            <textarea type="text" id="project_problem_statement" name="project_problem_statement" class="form-input p4 form-area" maxlength="2000"></textarea>
-                                            <div class="labels">
-                                                <p class="p5 placeholder">What problem were you trying to solve (Required for UI/UX)</p>
-                                                <p class="p5 error" data-error="project_problem_statement"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project_solution" id="to-title" class="h4">Solution</label>
-                                    <div class="input-group">
-                                        <div class="input-field">
-                                            <textarea type="text" id="project_solution" name="project_solution" class="form-input p4 form-area" maxlength="1000"></textarea>
-                                            <div class="labels">
-                                                <p class="p5 placeholder">What was the solution? (Optional)</p>
-                                                <p class="p5 error" data-error="project_solution"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project_recommendation" id="to-title" class="h4">Recommendation</label>
-                                    <div class="input-group">
-                                        <div class="input-field">
-                                            <textarea type="text" id="project_recommendation" name="project_recommendation" class="form-input p4 form-area" maxlength="1000"></textarea>
-                                            <div class="labels">
-                                                <p class="p5 placeholder">Any recommendations? (Required for UI/UX)</p>
-                                                <p class="p5 error" data-error="project_recommendation"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project_role" id="to-title" class="h4">Role*</label>
-                                    <div class="input-group">
-                                        <div class="input-field">
-                                            <input type="text" id="project_role" name="project_role" class="form-input p4"/>
-                                            <div class="labels">
-                                                <p class="p5 placeholder">Your role in the project (Required)</p>
-                                                <p class="p5 error" data-error="project_role"></p>
                                             </div>
                                         </div>
                                     </div>
@@ -176,8 +95,77 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label for="project_tools" id="to-title" class="h4">Tools Used*</label>
+                                    <div class="input-group">
+                                        <div class="input-field">
+                                            <input type="text" id="project_tools" name="project_tools" class="form-input p4"/>
+                                            <div class="labels">
+                                                <p class="p5 placeholder">Enter your project tools seperated by a comma (Required)</p>
+                                                <p class="p5 error" data-error="project_tools"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="project_problem_statement" id="to-title" class="h4">Problem</label>
+                                    <div class="input-group">
+                                        <div class="input-field">
+                                            <textarea type="text" id="project_problem_statement" name="project_problem_statement" class="form-input p4 form-area" maxlength="500"></textarea>
+                                            <div class="labels">
+                                                <p class="p5 placeholder">What problem were you trying to solve? (Optional)</p>
+                                                <p class="p5 error" data-error="project_problem_statement"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="project_solution" id="to-title" class="h4">Solution</label>
+                                    <div class="input-group">
+                                        <div class="input-field">
+                                            <textarea type="text" id="project_solution" name="project_solution" class="form-input p4 form-area" maxlength="500"></textarea>
+                                            <div class="labels">
+                                                <p class="p5 placeholder">What was the solution? (Optional)</p>
+                                                <p class="p5 error" data-error="project_solution"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="showReel-imagePreview" id="to-title" class="h4">Project Show-reel</label>
+                                    <div class="img-upload input-group">
+                                        <div class="input-field">
+                                            <div class="labels">
+                                                <p class="p5 placeholder">Add a show-reel for your project (Optional)</p>
+                                                <p class="p5 error" data-error="project_show_reel"></p>
+                                            </div>
+                                            <input type="file" id="project_show_reel" name="project_show_reel" class="form-input p4" accept="image/gif" onchange="document.getElementById('showReel-imagePreview').src = window.URL.createObjectURL(this.files[0])"/>
+                                            <label for="project_show_reel" class="choose-img-label">
+                                                <div class="project">
+                                                    <img id="showReel-imagePreview" alt="showReel image" />
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </fieldset>
-                            <div class="form-group hidden" id="ui-ux">
+                            <div class="process">
+                                <div class="title-text">
+                                    <h2>The process</h2>
+                                    <p>Click on the "+" below to add a process</p>
+                                    <br/><br/>
+                                </div>
+                                <div class="process-list d-flex">
+                                    
+                                </div>
+                                <div class="field-button-group d-flex d-flex-row flex-align-start">
+                                    <div class="input-field field-set-field">
+                                        <input type="text" id="fieldset_title" name="fieldset_title" class="form-input p4" placeholder="Enter name of the process step"/>
+                                    </div>
+                                    <a class="p5 secondary add-process" id="tag-single">+ Add process step</a>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group hidden" id="ui-ux">
                                 <fieldset id="ux">
                                     <legend>UX Design</legend>
                                     <div class="form-group">
@@ -398,7 +386,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </fieldset>
+                            </fieldset> -->
                         </div>
                         <button class="btn" type="submit" id="add-project">
                             <div class="btn_bg"></div>
@@ -413,7 +401,7 @@
         </div>
         <div class="success-message pop-up">
             <i class="las la-check"></i>
-            <p class="p5">Your form message was sent successfullly. Please expect my response in the next few minutes.</p>
+            <p class="p5"></p>
         </div>
 
         <?php

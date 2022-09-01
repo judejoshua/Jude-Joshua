@@ -14,12 +14,12 @@
     height: 100vh;
     overflow: hidden;
     padding-top: 168px;
-    background: url(../img/results-background.png);
-    background-size: contain;
-    background-position-x: -252px;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-color: var(--neutral);
+    /* background: url(../img/results-background.png); */
+    /* background-size: contain; */
+    /* background-position-x: -252px; */
+    /* background-position-y: center; */
+    /* background-repeat: no-repeat; */
+    /* background-color: var(--neutral); */
 }
 
 .header_cont {
@@ -92,10 +92,10 @@
 }
 
 body:not(#admin-landing) .landing {
-    background: url(../img/results-background.png);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    /* background: url(../img/results-background.png); */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+    /* background-repeat: no-repeat; */
     width: 100%;
     text-align: center;
     padding: 192px 128px 32px;
@@ -148,214 +148,4 @@ body#contact .landing .text-divider {
 
 #landing-highlight #highlight-hidden {
     opacity: 0;
-}
-
-#landing-highlight .reveal {
-    -ms-animation: topToBottom 8s linear infinite 0s;
-    -moz-animation: topToBottom 8s linear infinite 0s;
-    -o-animation: topToBottom 8s linear infinite 0s;
-    -webkit-animation: topToBottom 8s linear infinite 0s;
-    animation: topToBottom 8s linear infinite 0s;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-    text-align: center;
-    width: 100%;
-
-}
-
-#landing-highlight #second {
-    -ms-animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    -o-animation-delay: 4s;
-    animation-delay: 4s;
-}
-
-
-@-webkit-keyframes topToBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-
-    17% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    69% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    84% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes topToBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-
-    17% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    69% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    84% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-ms-keyframes topToBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-
-    17% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    69% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    84% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes topToBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-
-    0% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-
-    17% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    69% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    84% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes topToBottom {
-    0% {
-        opacity: 1;
-        transform: translateY(-20px);
-    }
-
-    17% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    33% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    50% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    69% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    84% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 0;
-    }
 }

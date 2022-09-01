@@ -72,7 +72,7 @@ body:not(#home-landing) #case-study .case-studies-body {
     width: 100%;
     height: auto;
     background: var(--accent);
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 .project:hover img {

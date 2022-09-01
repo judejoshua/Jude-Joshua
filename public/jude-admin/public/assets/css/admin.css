@@ -9,7 +9,7 @@ footer {
 }
 
 span.copyright {
-    color: var(--ink);
+    color: var(--placeholders);
 }
 
 .admin {
@@ -38,6 +38,7 @@ span.copyright {
     height: 350px;
     width: 350px;
     margin: 0;
+    padding: 0;
 }
 
 .choose-img-label {

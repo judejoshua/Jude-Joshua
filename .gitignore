@@ -26,4 +26,5 @@ Thumbs.db
 public/assets/files/uploads/
 .cgi-bin/
 .idea/
+.vscode/
 app/views/portfolio/web_projects/

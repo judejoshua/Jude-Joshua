@@ -1,6 +1,7 @@
 <?php
     $title = 'Portfolio || ';
     include './public/components/header.php';
+    $get_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . explode('admin.', $_SERVER["HTTP_HOST"])[1];
 ?>
     </head>
 
@@ -30,18 +31,21 @@
                                         $project_data = json_decode($project['project_data'], true);
 
                                         echo '
-                                            <a href="/portfolio/case_study/'.$project['unique_id'].'">
-                                                <div class="project">
-                                                    <img src="https://judejoshua.me'.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
-                                                    <div class="caption">
-                                                        <div class="caption-text">
-                                                            <h4>'.$project_data['project_title'].'</h4>
-                                                            <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
-                                                        </div>
-                                                        <i class="las la-arrow-right"></i>
+                                            <div class="project">
+                                                <img src="'.$get_url.$project['project_img_directory'].$project['project_cover_img'].'" alt="">
+                                                <div class="caption">
+                                                    <div class="caption-text">
+                                                        <h4>'.$project_data['project_title'].'</h4>
+                                                        <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <a href="/portfolio/edit/'.$project['unique_id'].'" class="las la-pen edit"></a>
+                                                        <a data-id="'.$project['unique_id'].'" class="las la-trash delete"></a>
+                                                        <a href="/portfolio/case_study/'.$project['unique_id'].'#" class="las la-eye hide"></a>
+                                                        <a href="/portfolio/case_study/'.$project['unique_id'].'" class="las la-angle-right view"></a>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </div>
                                         ';
                                     }
                                 ?>
@@ -53,6 +57,10 @@
                         </div>
                     </div>
                 </section>
+                <div class="success-message pop-up">
+                    <i class="las la-check"></i>
+                    <p class="p5"></p>
+                </div>
             </article>
         </div>
         <?php

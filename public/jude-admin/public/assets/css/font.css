@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Romantica Signature';
+    src: url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.eot');
+    src: local('Romantica Signature Regular'), local('RomanticaSignature-Regular'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.eot?#iefix') format('embedded-opentype'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.woff2') format('woff2'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.woff') format('woff'), url('/public/assets/fonts/romantica_signature/RomanticaSignature-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa"), url("/public/assets/fonts/evolventa/Evolventa-Regular.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Oblique"), url("/public/assets/fonts/evolventa/Evolventa-Oblique.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Bold"), url("/public/assets/fonts/evolventa/Evolventa-Bold.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Evolventa;
+    src: local("Evolventa Bold Oblique"), url("/public/assets/fonts/evolventa/Evolventa-BoldOblique.woff") format('woff2'), url('/public/assets/fonts/evolventa/Evolventa-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

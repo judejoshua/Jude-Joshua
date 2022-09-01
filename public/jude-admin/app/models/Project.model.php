@@ -71,4 +71,18 @@ class Project extends Db
         }
     }
 
+    public function deleteProjectData($project_unique_id)
+    {
+        try {
+            $query = "DELETE FROM `projects` WHERE `unique_id` = :project_unique_id";
+            $stmt = $this->connect()->prepare($query);
+            $stmt->execute([
+            	':project_unique_id' => $project_unique_id
+            ]);
+            return true;
+        } catch(PDOException $e){
+            return "error=Failed! <br>" . $e->getMessage();
+        }
+    }
+
 }

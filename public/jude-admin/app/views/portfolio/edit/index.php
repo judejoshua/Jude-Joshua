@@ -1,6 +1,7 @@
 <?php
     $title = 'Edit project '.$data['projectData'][0]['unique_id'].' || ';
     include './public/components/header.php';
+    $get_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . explode('admin.', $_SERVER["HTTP_HOST"])[1];
 ?>
     </head>
 
@@ -17,7 +18,7 @@
                                 <div class="case-study-title-top">
                                     <a href="/portfolio/case_study/'.$projectData['unique_id'].'" class="return-button">
                                         <i class="las la-arrow-left "></i>
-                                        <h5>Return to Portfolio Page</h5>
+                                        <h5 class="p5">Return to Portfolio Page</h5>
                                     </a>
                                     <div class="title-text">
                                         <h1>Edit project</h1>
@@ -70,7 +71,7 @@
                                                     <input type="file" id="project_cover_img" name="project_cover_img" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'cover-imagePreview\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'project_cover_img_old\').value=\'\'"/>
                                                     <label for="project_cover_img" class="choose-img-label">
                                                         <div class="project">
-                                                            <img id="cover-imagePreview" src="https://judejoshua.me'.$projectData['project_img_directory'].$projectData['project_cover_img'].'" alt="cover image" />
+                                                            <img id="cover-imagePreview" src="'.$get_url.$projectData['project_img_directory'].$projectData['project_cover_img'].'" alt="cover image" />
                                                         </div>
                                                     </label>
                                                 </div>
@@ -235,7 +236,7 @@
                                                                                 <input type="file" id="research_img'.$x.'" name="research_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'research-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'research_img_old'.$x.'\').value=\'\'"/>
                                                                                 <label for="research_img'.$x.'" class="choose-img-label">
                                                                                     <div class="project">
-                                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$img.'" id="research-imagePreview-'.$x.'" alt="research image" />
+                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="research-imagePreview-'.$x.'" alt="research image" />
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
@@ -294,7 +295,7 @@
                                                                                 <input type="file" id="personae_img'.$x.'" name="personae_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'personae-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'personae_img_old'.$x.'\').value=\'\'"/>
                                                                                 <label for="personae_img'.$x.'" class="choose-img-label">
                                                                                     <div class="project">
-                                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$img.'" id="personae-imagePreview-'.$x.'" alt="personae image" />
+                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="personae-imagePreview-'.$x.'" alt="personae image" />
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
@@ -368,7 +369,7 @@
                                                                                 <input type="file" id="wireframes_img'.$x.'" name="wireframes_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'wireframes-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'wireframes_img_old'.$x.'\').value=\'\'"/>
                                                                                 <label for="wireframes_img'.$x.'" class="choose-img-label">
                                                                                     <div class="project">
-                                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$img.'" id="wireframes-imagePreview-'.$x.'" alt="wireframes image" />
+                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="wireframes-imagePreview-'.$x.'" alt="wireframes image" />
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
@@ -428,7 +429,7 @@
                                                                                 <input type="file" id="hiFI_img'.$x.'" name="hiFI_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'hiFI-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'hiFI_img_old'.$x.'\').value=\'\'"/>
                                                                                 <label for="hiFI_img'.$x.'" class="choose-img-label">
                                                                                     <div class="project">
-                                                                                        <img src="https://judejoshua.me'.$projectData['project_img_directory'].$img.'" id="hiFI-imagePreview-'.$x.'" alt="hiFI image" />
+                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="hiFI-imagePreview-'.$x.'" alt="hiFI image" />
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
@@ -493,7 +494,7 @@
                                                                         <input type="file" id="snap_img'.$x.'" name="snap_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'snap-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'snap_img_old'.$x.'\').value=\'\'"/>
                                                                         <label for="snap_img'.$x.'" class="choose-img-label">
                                                                             <div class="project">
-                                                                                <img src="https://judejoshua.me'.$projectData['project_img_directory'].$img.'" id="snap-imagePreview-'.$x.'" alt="snap image" />
+                                                                                <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="snap-imagePreview-'.$x.'" alt="snap image" />
                                                                             </div>
                                                                         </label>
                                                                     </div>
@@ -548,7 +549,7 @@
         ?>
         <div class="success-message pop-up">
             <i class="las la-check"></i>
-            <p class="p5">Your form message was sent successfullly. Please expect my response in the next few minutes.</p>
+            <p class="p5"></p>
         </div>
 
         <?php
