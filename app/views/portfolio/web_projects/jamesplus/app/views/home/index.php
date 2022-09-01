@@ -7,8 +7,8 @@
     <body>
         <header id="home" class="col-100 d-flex flex-align-center flex-justify-between">
             <div class="text-holder d-flex d-flex-column col-100">
-                <h1>Business name <span id="highlight">registration</span><br/> for <span id="highlight">businesses</span>, <span id="highlight">brands</span> and <span id="highlight">service</span> providers.</h1>
-                <!-- <h1>Business name <span id="highlight">registration</span><br/> for <span id="highlight">B2B</span> and <span id="highlight">B2C</span> brands and service providers.</h1> -->
+                <h1>Business <span id="highlight">registration</span> and <span id="highlight">support</span> services for <span id="highlight">brands</span> and <span id="highlight">service</span> providers.</h1>
+                <!-- <h1>Business <span id="highlight">registration</span> and <span id="highlight">support</span> services for <span id="highlight">businesses</span> and <span id="highlight">service</span> providers.</h1> -->
                 <p>We take care of the paperwork approvals, long queues and time-wasting obstacles prevent businesses from getting started</p>
                 <div class="section-cta d-flex flex-align-center d-flex-row">
                     <a href="#break-down" class="btn btn-primary"><span>Get started</span> <i class="ph-arrow-circle-up-right-fill"></i></a>
