@@ -8,9 +8,7 @@
 .landing {
     width: 100%;
     height: 100vh;
-    padding: 128px 128px 0;
-    /* background: linear-gradient(33deg, #aaaaaa1f 1px, var(--neutral) 1px); */
-    /* background-size: 5px 5px; */
+    padding: 144px 128px 0;
 }
 
 .header_cont {

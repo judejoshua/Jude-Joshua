@@ -27,7 +27,7 @@ body#home-landing #case-study {
 }
 
 .case-study-header {
-    gap: 48px;
+    gap: 24px;
 }
 
 .case-study-header-details {
@@ -35,7 +35,7 @@ body#home-landing #case-study {
 }
 
 .case-study-header-details-text {
-    gap: 24px;
+    gap: 12px;
 }
 
 .case-studies-body {
@@ -100,7 +100,7 @@ body:not(#home-landing) #case-study .case-studies-body {
 }
 
 .flexer {
-    width: 48.5%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -273,7 +273,7 @@ body#case-study-body .landing .case-study-title {
 }
 
 .sectioners {
-    gap: 56px;
+    gap: 4%;
 }
 
 .process-sectioners {
@@ -281,7 +281,7 @@ body#case-study-body .landing .case-study-title {
 }
 
 .sectioners .text-divider.sub-title {
-    width: 80%;
+    width: 76%;
 }
 
 .process-contents .text-divider.sub-title {

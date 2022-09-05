@@ -5,7 +5,7 @@
         <li><a href="/portfolio">See my past works</a></li>
         <li><a href="/cv">View my CV</a></li>
         <li><a href="/contact">Send me a message</a></li>
-        <li><a>Other links<i class="las la-angle-right"></i></a>
+        <li><a>Social Media<i class="las la-angle-right"></i></a>
             <ul id="inner-down">
                 <li><a href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li>
                 <li><a href="https://dribbble.com/JudeJoshua" target="_blank">Dribbble</a></li>

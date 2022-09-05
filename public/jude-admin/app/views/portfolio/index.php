@@ -41,7 +41,7 @@
                                                     <div class="actions">
                                                         <a href="/portfolio/edit/'.$project['unique_id'].'" class="las la-pen edit"></a>
                                                         <a data-id="'.$project['unique_id'].'" class="las la-trash delete"></a>
-                                                        <a href="/portfolio/case_study/'.$project['unique_id'].'#" class="las la-eye hide"></a>
+                                                        <a data-id="'.$project['unique_id'].'" class="las la-ban hide"></a>
                                                         <a href="/portfolio/case_study/'.$project['unique_id'].'" class="las la-angle-right view"></a>
                                                     </div>
                                                 </div>

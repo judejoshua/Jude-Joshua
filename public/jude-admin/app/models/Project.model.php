@@ -85,4 +85,36 @@ class Project extends Db
         }
     }
 
+    public function hideProjectData($hide, $project_unique_id)
+    {
+        try {
+            $query = "UPDATE `projects` SET `hidden` = :hide
+                                        WHERE `unique_id` = :project_unique_id";
+            $stmt = $this->connect()->prepare($query);
+            $stmt->execute([
+                ':hide' => $hide,
+                ':project_unique_id' => $project_unique_id
+            ]);
+            return true;
+        } catch(PDOException $e){
+            return "error=Failed! <br>" . $e->getMessage();
+        }
+    }
+
+    public function showProjectData($hide, $project_unique_id)
+    {
+        try {
+            $query = "UPDATE `projects` SET `hidden` = :hide
+                                        WHERE `unique_id` = :project_unique_id";
+            $stmt = $this->connect()->prepare($query);
+            $stmt->execute([
+                ':hide' => $hide,
+                ':project_unique_id' => $project_unique_id
+            ]);
+            return true;
+        } catch(PDOException $e){
+            return "error=Failed! <br>" . $e->getMessage();
+        }
+    }
+
 }

@@ -16,7 +16,10 @@ body:not(#admin-landing) #case-study {
 }
 
 .case-study-title-top {
-    width: 556px;
+    width: 100%;
+}
+.case-study-header-details {
+    gap: 60px;
 }
 
 .case-studies-body {
@@ -35,6 +38,7 @@ body:not(#admin-landing) #case-study {
     padding: 0px;
     gap: 12px;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .projects-holder .notice p {
@@ -54,9 +58,20 @@ body:not(#admin-landing) #case-study {
 }
 
 #case-study-body .project {
-    width: auto;
+    width: 48%;
     padding: 0;
     border: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#case-study-body .row {
+    gap: 4%;
+    align-items: flex-start;
+}
+
+#case-study-body .project:hover {
+    background: none;
 }
 
 .project:hover {
@@ -179,13 +194,7 @@ body#case-study-body .landing .case-study-title {
     align-items: flex-end;
 }
 
-body#case-study-body .landing .case-study-img {
-    width: 100%;
-    height: 300px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
+body#case-study-body .landing .case-study-img {object-fit: cover;}
 
 body#case-study-body .landing .case-study-title .scroll-down {
     position: relative;
@@ -217,7 +226,7 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     justify-content: center;
     align-items: center;
     padding: 32px 128px 64px;
-    gap: 16px;
+    gap: 56px;
 }
 
 .add .portfolio-section {
@@ -225,7 +234,7 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 .portfolio-section .project img {
-    width: 480px;
+    width: 100%;
     height: auto;
 }
 
@@ -245,11 +254,11 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 .portfolio-section .text-divider {
-    width: 100%;
+    width: 76%;
 }
 
 .portfolio-section .text-divider:not(.sub-title) {
-    margin-top: 56px;
+    width: 24%;
 }
 
 .portfolio-section .text-divider.sub-title {
@@ -257,14 +266,6 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
 }
 
 .text-divider.sub-title h3::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: var(--secondary);
-    display: inline-block;
-    border-radius: 20px;
-    margin-right: 12px;
-    position: relative;
 }
 
 #tag-single.secondary {
@@ -306,3 +307,9 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     width: 100%;
     height: 100%;
 }
+.case-study-header-details-text {
+     justify-content: flex-start;
+     text-align: left;
+     gap: 8px;
+     padding-top: 24px;
+ }

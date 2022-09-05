@@ -122,7 +122,6 @@ $(document).ready(function() {
 
     $(document).on("click", '.add-more-images', function() {
 
-
         let img_container = $(this).siblings('#img-container');
         let type = img_container.data('type');
 
@@ -278,6 +277,76 @@ $(document).ready(function() {
                     $('.success-message').addClass('show');
                     $('.success-message i').removeClass().addClass('las la-check');
                     $('.success-message p').text('Your project was added successfully!');
+
+                    setTimeout(removePop, 5000);
+
+                    setTimeout(function() { location.href = "/portfolio" }, 5000);
+                } else {
+                    $('.success-message').addClass('show error');
+                    $('.success-message i').removeClass().addClass('las la-alert-outline');
+                    $('.success-message p').text(status[0]);
+
+                    setTimeout(removePop, 5000);
+                }
+            },
+            error: function(jqXHR, exception) {
+                var msg = '';
+                if (jqXHR.status === 0) {
+                    msg = 'Not connected.\n Verify Network.';
+                } else if (jqXHR.status == 404) {
+                    msg = 'Requested page not found. [404]';
+                } else if (jqXHR.status == 500) {
+                    msg = 'Internal Server Error [500].';
+                } else if (exception === 'parsererror') {
+                    msg = 'Requested JSON parse failed.';
+                } else if (exception === 'timeout') {
+                    msg = 'Time out error.';
+                } else if (exception === 'abort') {
+                    msg = 'Ajax request aborted.';
+                } else {
+                    msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                }
+                $('.success-message').addClass('show error');
+                $('.success-message i').removeClass().addClass('las la-alert-outline');
+                $('.success-message p').text(msg);
+                setTimeout(removePop, 5000);
+            },
+        })
+    });
+
+
+    //=================================================================================================
+    //                        H I D E   P R O J E C T   F U N C T I O N
+    //=================================================================================================
+    $('.hide').click(function(e) {
+        e.preventDefault();
+        $('.preloader').addClass('recha');
+        $(".preloader").fadeIn("slow");
+
+        let link = '/public/config/hideProject.php?id=' + $(this).data('id');
+
+        $.ajax({
+            url: link,
+            type: "POST",
+            success: function(response) {
+                let status = response.split('=');
+                $(".preloader").fadeOut("slow");
+
+                if (status[0] === 'error') {
+                    $('.error[data-error="' + status[1] + '"]').fadeIn(1000).text(status[2]);
+
+                    $('html,body').animate({
+                        scrollTop: $('#' + status[1]).offset().top - 200
+                    }, 500);
+
+                    setTimeout(() => {
+                        $('.error').fadeOut('slow').text('');
+                    }, 5000);
+
+                } else if (status[0] === 'success') {
+                    $('.success-message').addClass('show');
+                    $('.success-message i').removeClass().addClass('las la-check');
+                    $('.success-message p').text(status[1]);
 
                     setTimeout(removePop, 5000);
 
