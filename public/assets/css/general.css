@@ -1,4 +1,4 @@
-navigation,
+nav,
 .wrapper,
 .cursor,
 footer {
@@ -336,13 +336,9 @@ section {
     align-items: flex-start;
     padding: 32px 32px;
     gap: 32px;
-    opacity: 1;
     overflow-y: scroll;
     transform: scale(1);
-    -webkit-transition: opacity 0.9s linear, z-index 0.3s linear, transform 0.9s linear;
-    -moz-transition: opacity 0.9s linear, z-index 0.3s linear, transform 0.9s linear;
-    -o-transition: opacity 0.9s linear, z-index 0.3s linear, transform 0.9s linear;
-    transition: opacity 0.9s linear, z-index 0.3s linear, transform 0.9s linear;
+    transition: left 0.9s linear, z-index 0.3s linear, transform 0.9s linear;
 }
 
 .img-holder {
@@ -374,8 +370,8 @@ section {
 
 span.cuddles {
     background: var(--neutral);
-    padding: 10px 12px;
-    border-radius: 24px;
+    padding: 10px 12px 5px;
+    border-radius: 50%;
     -webkit-transition: all 1.4s linear;
     -moz-transition: all 1.4s linear;
     -o-transition: all 1.4s linear;
@@ -409,21 +405,13 @@ span#close.fixed,
 
 .modal.hideout {
     z-index: -10000;
-    opacity: 0;
+    left: -200%;
     transform: scale(0.1);
 }
 
 .col-100-shift {
     padding: 0 128px;
     width: 100%;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 iframe {

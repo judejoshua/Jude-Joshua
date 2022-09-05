@@ -64,7 +64,7 @@
                                                             <div class="caption">
                                                                 <div class="caption-text">
                                                                     <h5>'.$project_data['project_title'].'</h5>
-                                                                    <span id="tags" class="p5">'.$project_data['project_type'].'</span>
+                                                                    <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                     <span class="p5 view">View case study</span>
                                                                 </div>
                                                             </div>
@@ -94,7 +94,7 @@
                             <div class="text-divider">
                                 <div class="designer-caption d-flex d-flex-column">
                                     <p class="p4">For the human.</p>
-                                    <h2 class="h1">I create excellent <span id="highlight">user-centered</span> solutions from <span id="highlight">great</span> ideas.</h2>
+                                    <h2 class="h1">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
                                 </div>
                             </div>
                             <div class="design-style-image">

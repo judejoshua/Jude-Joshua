@@ -43,23 +43,4 @@ class Project extends Db
         }
     }
 
-    public function addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration)
-    {
-        try {
-            $query = "INSERT INTO `projects`(`unique_id`, `project_type`, `project_cover_img`, `project_img_directory`, `project_data`, `project_duration`) VALUES (:project_unique_id,:project_type,:project_cover_img,:project_img_directory,:project_data,:project_duration)";
-            $stmt = $this->connect()->prepare($query);
-            $stmt->execute([
-            	':project_unique_id' => $project_unique_id,
-            	':project_type' => $project_type,
-            	':project_cover_img' => $project_cover_img,
-            	':project_img_directory' => $project_img_directory,
-            	':project_data' => $project_data,
-            	':project_duration' => $project_duration
-            ]);
-            return true;
-        } catch(PDOException $e){
-            return "error=Failed! <br>" . $e->getMessage();
-        }
-    }
-
 }

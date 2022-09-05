@@ -14,7 +14,7 @@
                     <h1>Work</h1>
                     <div id="liner"></div>
                     <p class="p4">
-                        The goal of every digital project is to provide the best solution in a code-and-user-friendly manner. Here are ideas that I worked on, turning the businesses goals into have turned into code-ready and user-friendly digital products with a stress-free user flow.
+                        The goal of every digital project is to provide the best solution in a code and user-friendly manner. Here are ideas that I worked on, turning the goals into code-ready and user-friendly digital products with a stress-free user flow.
                     </p>
                 </div>
                 <!-- <div class="tags-row">

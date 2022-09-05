@@ -1,7 +1,7 @@
 <?php
     $url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
-<navigation class="d-flex flex-justify-between flex-align-center">
+<nav class="d-flex flex-justify-between flex-align-center">
     <a href="/">
         <div class="logo">
             <p class="remmit">Jude Joshua</p>
@@ -31,7 +31,7 @@
         <div class="liner"></div>
         <div class="liner" id="last-liner"></div>
     </div>
-</navigation>
+</nav>
 <div class="mobile-nav">
     <div class="mobile-nav-opener close">
         <i class="las la-arrow-right"></i>

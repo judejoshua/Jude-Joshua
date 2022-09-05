@@ -1,11 +1,13 @@
 #case-study {
     display: flex;
-    gap: 80px;
+    gap: 40px;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     padding-top: 0;
-    padding-bottom: 64px;
+    padding-bottom: 128px;
+    height: auto;
+    display: table;
 }
 
 body:not(#admin-landing) #case-study {
@@ -47,7 +49,14 @@ body:not(#admin-landing) #case-study {
     overflow: hidden;
     gap: 48px;
     width: 100%;
+    cursor: pointer;
     padding: 12px;
+}
+
+#case-study-body .project {
+    width: auto;
+    padding: 0;
+    border: none;
 }
 
 .project:hover {
@@ -62,6 +71,10 @@ body:not(#admin-landing) #case-study {
     border: none;
     transition: 1.2s;
     object-fit: cover;
+}
+
+.project img#cover-imagePreview {
+    width: 480px;
 }
 
 .project:hover img {
@@ -111,6 +124,7 @@ body:not(#admin-landing) #case-study {
     display: inline-block;
     background-color: var(--ink);
     color: var(--neutral);
+    text-align: center;
 }
 
 .tags-row {

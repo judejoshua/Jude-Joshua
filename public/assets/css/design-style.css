@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
-    padding: 152px 0 152px;
+    padding: 128px 0 152px;
 }
 
 .design-style {
@@ -24,7 +24,7 @@
 
 .design-style .col-100-shift {
     gap: 80px;
-    padding-bottom: 154px;
+    padding-bottom: 128px;
 }
 
 .deliverables {

@@ -15,7 +15,7 @@
                             <h2>5 proven ways to establish your brand's online presence.</h2>
                             <p>We take care of the paperwork approvals, long queues and time-wasting obstacles prevent businesses from getting started</p>
                             <div class="section-cta d-flex flex-align-center d-flex-row">
-                                <a href="#break-down" class="btn btn-tertiary"><span>Read Story</span></a>
+                                <a href="#break-down" class="btn btn-tertiary"><span>Read Story</span><i class="ph-book-open"></i></a>
                             </div>
                         </div>
                     </div>

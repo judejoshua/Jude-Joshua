@@ -32,9 +32,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 24) {
-            $("navigation").addClass("fixed");
+            $("nav").addClass("fixed");
         } else {
-            $("navigation").removeClass("fixed");
+            $("nav").removeClass("fixed");
         }
         // if (window.location.href.indexOf("cv") > -1) {
         //     var scrollDivi = $('#divisor').offset().top;

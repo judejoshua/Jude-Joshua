@@ -1,7 +1,7 @@
 <?php
     $url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 ?>
-<navigation>
+<nav>
     <!-- <div class="logo">
         <img src="/public/assets/img/logo.png" alt="logo">
     </div> -->
@@ -20,7 +20,7 @@
         <div class="liner"></div>
         <div class="liner" id="last-liner"></div>
     </div>
-</navigation>
+</nav>
 <div class="mobile-nav">
     <div class="mobile-nav-opener close">
         <i class="las la-arrow-right"></i>

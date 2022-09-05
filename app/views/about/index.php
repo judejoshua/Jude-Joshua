@@ -18,7 +18,7 @@
                         <p class="p4">
                             I am currently working as the lead product designer with the team at First Medtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians.<br/><br/>
                             Outside of this, I focus on creating intuitive and user-friendly experiences for small and medium-sized businesses. My goal is to create minimal, accessible and useful designs that help businesses relate to their target audience and provide them with the right solutions.<br/><br/>
-                            My favourite thing about myself is that I love to have a good laugh.<br/>In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.                           
+                            A favourite thing about myself would be that I love to have a good laugh. In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or designing.
                         </p>
                     </div>
                 </div>

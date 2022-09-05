@@ -36,7 +36,7 @@
                 // Animate loader off screen
                 $(".preloader").fadeOut("slow");
                 $("body").css("overflow-y", "scroll")
-                $(".wrapper, navigation").animate({
+                $(".wrapper, nav").animate({
                     "opacity": "1"
                 }, 2000);
             });

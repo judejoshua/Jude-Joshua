@@ -35,8 +35,8 @@ span.copyright {
 }
 
 .img-upload.input-group .project {
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     margin: 0;
     padding: 0;
 }
@@ -68,7 +68,8 @@ span.copyright {
     margin-top: 48px;
 }
 
-.close-image {
+.close-image,
+.close-div {
     position: absolute;
     z-index: 1;
     border-radius: 50%;

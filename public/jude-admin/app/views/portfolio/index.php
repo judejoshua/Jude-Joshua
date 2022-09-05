@@ -36,7 +36,7 @@
                                                 <div class="caption">
                                                     <div class="caption-text">
                                                         <h4>'.$project_data['project_title'].'</h4>
-                                                        <span id="tags" class="p5">'.$project_data['project_tags'].'</span>
+                                                        <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                     </div>
                                                     <div class="actions">
                                                         <a href="/portfolio/edit/'.$project['unique_id'].'" class="las la-pen edit"></a>

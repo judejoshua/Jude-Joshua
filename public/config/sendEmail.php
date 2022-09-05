@@ -27,7 +27,7 @@ switch($_POST) {
                 $name = htmlspecialchars($_POST['name']);
                 $firstname = explode(" ",$name)[0];
                 $email = htmlspecialchars($_POST['email']);
-                $phone = !empty($_POST['phone']) ? htmlspecialchars($_POST['phone']) : 'NAN';
+                // $phone = !empty($_POST['phone']) ? htmlspecialchars($_POST['phone']) : 'NAN';
                 $msg = htmlspecialchars($_POST['message']);
  
                 //Enable SMTP debugging.
@@ -73,8 +73,8 @@ switch($_POST) {
                         <p>You have a new message from <i>".$name."</i>.</p>
                         <p><b>Their email is: </b><br/><i>".$email."</i></p>
                         <p><b>Here is their message: </b><br/><i>".$msg."</i></p>
-                        <p><b>Here is their phone number: </b><br/><i>".$phone."</i></p>
-                    ";
+                    ";// <p><b>Here is their phone number: </b><br/><i>".$phone."</i></p>
+                    
                     $mail->send();
                     echo 'success=sent';
                     // echo "Message has been sent successfully";

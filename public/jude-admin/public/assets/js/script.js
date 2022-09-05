@@ -5,9 +5,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 24) {
-            $("navigation").addClass("fixed");
+            $("nav").addClass("fixed");
         } else {
-            $("navigation").removeClass("fixed");
+            $("nav").removeClass("fixed");
         }
         if (window.location.href.indexOf("cv") > -1) {
             var scrollDivi = $('#divisor').offset().top;
@@ -119,80 +119,57 @@ $(document).ready(function() {
             },
         })
     });
-    
+
     $(document).on("click", '.add-more-images', function() {
 
-    
-            let img_container = $(this).siblings('#img-container');
-            let type = img_container.data('type');
-    
-            var i = img_container.children().length;
-    
-            ++i;
 
-            img_container.append('<div class="input-field"><span id="tag-single" class="close-image">X</span><input type="file" id="' + type + '_img-' + i + '" name="' + type + '_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'' + type + '-imagePreview-' + i + '\').src = window.URL.createObjectURL(this.files[0])"/><label for="' + type + '_img-' + i + '" class="choose-img-label"><div class="project"><img id="' + type + '-imagePreview-' + i + '" alt="' + type + ' image"/></div></label></div>');
+        let img_container = $(this).siblings('#img-container');
+        let type = img_container.data('type');
+
+        var i = img_container.children().length;
+
+        ++i;
+
+        img_container.append('<div class="input-field col-100"><span id="tag-single" class="close-image">X</span><input type="file" id="' + type + '_img-' + i + '" name="' + type + '_img[]" class="form-input p4 col-100" accept="image/webp" onchange="document.getElementById(\'' + type + '-imagePreview-' + i + '\').src = window.URL.createObjectURL(this.files[0])"/><label for="' + type + '_img-' + i + '" class="choose-img-label col-100"><div class="project col-100"><img id="' + type + '-imagePreview-' + i + '" alt="' + type + ' image"/></div></label></div>');
     })
 
     $(document).on("click", ".close-image", function() {
         $(this).parent('.input-field').remove();
     })
 
-    $('.add-process').click(function(){
-        var input = $(this).siblings().children().val();
-        if(input == ''){
+    $(document).on("click", ".close-div", function() {
+        $(this).parent().remove();
+        if ($(this).parent().parent('.process-list').children().length == 0) {
+            $('#process_filled').val('');
+        }
+    })
+
+    $('.add-process').click(function() {
+        $('#process_filled').val('1');
+        var input = $(this).siblings().children('#fieldset_title').val();
+        if (input == '') {
             $('.success-message').addClass('show error');
             $('.success-message i').removeClass().addClass('las la-alert-outline');
             $('.success-message p').text('Please enter a title for your process step.');
             setTimeout(removePop, 5000);
-        }else{
+        } else {
             let add_process = $(this).parent().siblings('.process-list');
 
             let step = input.split(' ');
-            if(step[1] == undefined){
+            if (step[1] == undefined) {
                 step[1] = ''
                 process = step[0]
-            }else{
+            } else {
                 step[1] = '_' + step[1];
             }
             process_step = step[0] + step[1];
             process = process_step;
 
-            add_process.append('<fieldset id="ui"><legend>'+ input +'</legend><div class="field-button-group d-flex d-flex-row flex-align-start"><div class="title-text"><div class="form-group"><label for="' + process_step + '-summary" id="to-title" class="h4"></label><div class="input-group"><div class="input-field"><textarea type="text" id="' + process_step + '-summary" name="' + process_step + '-summary" class="form-input p4 form-area" maxlength="1000"></textarea><div class="labels"><p class="p5 placeholder">What little summary can you give about the '+ input +' process?</p><p class="p5 error" data-error="' + process_step + '-summary"></p></div></div></div></div></div><div class="form-group"><div class="labels"><p class="p5 error" data-error="' + process + '_img"></p></div><div class="img-upload input-group d-flex flex-wrap"><div class="d-flex flex-wrap" id="img-container" data-type="' + process + '"><div class="input-field" id="' + process + '_img"><input type="file" id="' + process + '_img-1" name="' + process + '_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'' + process + '-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/><label for="' + process + '_img-1" class="choose-img-label"><div class="project"><img id="' + process + '-imagePreview-1" alt="'+ process +' image" /></div></label></div></div><span id="tag-single" class="add-more-images">Add another image</span></div></div></div></fieldset>');
+            add_process.append('<fieldset class="col-100"><span id="tag-single" class="close-div">X</span><legend>' + input + '</legend><div class="field-button-group d-flex d-flex-row flex-align-start col-100"><div class="title-text"><div class="form-group"><label for="' + process_step + '-summary" id="to-title" class="h4"></label><div class="input-group"><div class="input-field"><textarea type="text" id="' + process_step + '-summary" name="' + process_step + '-summary" class="form-input p4 form-area" maxlength="1000"></textarea><div class="labels"><p class="p5 placeholder">What little summary can you give about the ' + input + ' process?</p><p class="p5 error" data-error="' + process_step + '-summary"></p></div></div></div></div></div><div class="form-group"><div class="labels"><p class="p5 error" data-error="' + process + '_img"></p></div><div class="col-100 img-upload input-group d-flex flex-wrap"><div class="d-flex flex-wrap col-100" id="img-container" data-type="' + process + '"><div class="input-field col-100" id="' + process + '_img"><input type="file" id="' + process + '_img-1" name="' + process + '_img[]" class="form-input p4 col-100" accept="image/webp" onchange="document.getElementById(\'' + process + '-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/><label for="' + process + '_img-1" class="choose-img-label col-100"><div class="project col-100"><img id="' + process + '-imagePreview-1" alt="' + process + ' image" /></div></label></div></div><span id="tag-single" class="add-more-images">Add another image</span></div></div></div></fieldset>');
 
-            $(this).siblings().children().val('');            
+            $(this).siblings().children('#fieldset_title').val('');
         }
     })
-
-    // $('#project_type').change(function(e) {
-    //     switch ($(this).val()) {
-    //         case "UI/UX":
-    //             if (!$("#web").hasClass('hidden')) {
-    //                 $("#web").addClass('hidden');
-    //             }
-    //             if ($("#ui-ux").hasClass('hidden')) {
-    //                 $("#ui-ux").removeClass('hidden');
-    //             }
-    //             break;
-
-    //         case "Web design, Web development":
-    //             if (!$("#ui-ux").hasClass('hidden')) {
-    //                 $("#ui-ux").addClass('hidden');
-    //             }
-    //             if ($("#web").hasClass('hidden')) {
-    //                 $("#web").removeClass('hidden');
-    //             }
-    //             break;
-
-    //         default:
-    //             if ($("#web").hasClass('hidden')) {
-    //                 $("#web").removeClass('hidden');
-    //             }
-    //             if ($("#ui-ux").hasClass('hidden')) {
-    //                 $("#ui-ux").removeClass('hidden');
-    //             }
-    //             break;
-    //     }
-    // })
 
     //=================================================================================================
     //                           E D I T   P R O J E C T   F U N C T I O N

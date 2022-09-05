@@ -78,10 +78,11 @@
                         </div>
                     </div>
                     <div class="d-flex d-flex-column flex-align-center resume-detailers">
+                        <div id="mobile-div-about-grab"></div>
                         <div class="title d-flex d-flex-row">
                             <div class="title-text">
                                 <h1>Jude Joshua</h1>
-                                <p class="p4">Product Designer/Developer</p>
+                                <p class="p4">Product Designer</p>
                             </div>
                         </div>
                         <div class="divisor"></div>
@@ -190,7 +191,7 @@
                                             <p class="p4">UI/UX Designer <span id="spacer"></span><span>August 2021 - September 2021</span><br/><span>Ugochukwu Kizito for Thrive.NG</span></p>
                                             <ol>
                                                 <li>
-                                                    <p class="p4">Worked to design and develop a responsive SaaS (services as a software) landing web platform for the client, in addition to providing style guides, prototypes for usability testing and a design system for developer handoff.</p>
+                                                    <p class="p4">Worked to design and develop a responsive SaaS (services as a software) landing web platform for the client, in addition to providing style guides, design system and prototypes for usability testing.</p>
                                                 </li>
                                             </ol>
                                         </div>

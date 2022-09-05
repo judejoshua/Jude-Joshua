@@ -1,4 +1,4 @@
-navigation {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -14,7 +14,7 @@ navigation {
     transition: 1s;
 }
 
-navigation.fixed {
+nav.fixed {
     background-color: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(16px);
     -moz-backdrop-filter: blur(16px);
@@ -113,7 +113,7 @@ navigation.fixed {
     background-color: var(--neutral);
 }
 
-navigation .remmit {
+nav .remmit {
     font-size: 48px;
     color: var(--secondary);
 }
