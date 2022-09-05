@@ -139,6 +139,7 @@
                 </section>
                 <section id="why">
                     <div class="col-100 why-boxed">
+                        <div class="mobile-img-why-me"></div>
                         <div class="text-divider">
                             <h2>A good fit?</h2>
                             <div id="liner"></div>

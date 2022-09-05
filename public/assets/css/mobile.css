@@ -939,6 +939,11 @@
     span.cuddles {
         padding: 12px 12px 10px;
     }
+    .mobile-img-why-me {
+        display: block;
+        height: 200px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:560px) {

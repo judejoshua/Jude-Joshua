@@ -26,7 +26,8 @@
     margin-bottom: 48px;
 }
 
-.img-why-me {
+.img-why-me,
+.mobile-img-why-me {
     position: absolute;
     right: 0;
     top: 19%;
@@ -36,4 +37,9 @@
     background-position: top;
     background-size: cover;
     background-color: var(--secondary);
+}
+
+.mobile-img-why-me {
+    position: relative;
+    display: none;
 }
