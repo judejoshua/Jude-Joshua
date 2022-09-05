@@ -115,6 +115,9 @@
                                                 <li>
                                                     <p class="p4">Carried out usability tests to ensure that the new design met the desired goal of the users - to shop easily.</p>
                                                 </li>
+                                                <li>
+                                                    <p class="p4">Worked with the QA team to formulate the product strategy to ensure that the vision of the product was realized when used in the market.</p>
+                                                </li>
                                             </ol>
                                         </div>
                                         <div class="experience-section title-text">
