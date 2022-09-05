@@ -1,5 +1,8 @@
 <?php
     $title = 'Send a message - Jude Joshua | Expert Product designer and Web experience developer ';
+    $description = 'I help businesses connect with their target users through design. Check out my portfolio to see how.';
+    $img = '/public/assets/img/landing-image.webp';
+    
     include './public/components/header.php';
 ?>
     </head>
