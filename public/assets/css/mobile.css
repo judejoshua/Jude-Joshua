@@ -941,8 +941,9 @@
     }
     .mobile-img-why-me {
         display: block;
-        height: 200px;
+        height: 248px;
         width: 100%;
+        margin-bottom: 40px;
     }
 }
 
