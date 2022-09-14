@@ -54,7 +54,7 @@
                                 if($section == 'project_show_reel')
                                 {
                                     echo '
-                                        <div class="sectioners col-100 d-flex d-flex-row flex-align-start">
+                                        <div class="sectioners show_reeler col-100 d-flex d-flex-row flex-align-start">
                                             <img src="'.$projectData['project_img_directory'].$section_data.'" class="col-100" id="show_reeler" alt="showreel of project screens">
                                         </div>
                                     ';
@@ -81,8 +81,8 @@
                                         <div class="sectioners col-100 d-flex d-flex-column flex-align-start">
                                             <div class="process-contents col-100 d-flex d-flex-column">';
                                                 if (is_array($section_data)) {
-                                                        reset($section_data);
-                                                        $firstKey = key($section_data);
+                                                    reset($section_data);
+                                                    $firstKey = key($section_data);
                                                     foreach ($section_data as $sub_title => $contents)
                                                     {
                                                         echo'
@@ -151,7 +151,7 @@
 
                             
                             echo'
-                                <div class="col-100 returner d-flex d-flex-column flex-align-start">
+                                <div class="col-100-shift returner d-flex d-flex-column flex-align-start">
                                     <a href="/portfolio" class="return-button">
                                         <i class="las la-arrow-left "></i>
                                         <h6>Return to Past Works Page</h6>

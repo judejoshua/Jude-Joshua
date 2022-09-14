@@ -1,6 +1,6 @@
 <?php
-    $title = 'Jude Joshua | Expert Product designer and Web experience developer';
-    $description = 'I help businesses connect with their target users through design. Check out my portfolio to see how.';
+    $title = 'Jude Joshua | Expert mobile and web experience designer';
+    $description = 'I help brands and businesses connect with their target users through product design. See my portfolio to know more.';
     $img = '/public/assets/img/landing-image.webp';
 
     include './public/components/header.php';
@@ -29,7 +29,7 @@
             <article id="body">
                 <section id="case-study">
                     <div class="text-divider">
-                        <h2>Recent work</h2>
+                        <h2>Featured work</h2>
                         <div id="liner"></div>
                     </div>
                     <div class="case-studies-body">
@@ -58,12 +58,12 @@
                                                 $project_data = json_decode($project['project_data'], true);
 
                                                 echo '
-                                                    <a id="projector" href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                    <a id="projector" class="projector" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
-                                                            <img src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
+                                                            <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
-                                                                    <h5>'.$project_data['project_title'].'</h5>
+                                                                    <h5 class="p4">'.$project_data['project_title'].'</h5>
                                                                     <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                     <span class="p5 view">View case study</span>
                                                                 </div>
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="design-style-image">
-                                <img src="/public/assets/img/style-gif.webp">
+                                <img src="/public/assets/img/style-gif.webp" alt="gif showing a line being balanced by two rotating circles between three circles">
                             </div>
                         </div>
                         <div class="deliverables">

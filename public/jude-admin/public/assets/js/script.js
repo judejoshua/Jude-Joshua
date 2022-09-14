@@ -159,7 +159,12 @@ $(document).ready(function() {
                 step[1] = ''
                 process = step[0]
             } else {
-                step[1] = '_' + step[1];
+                if(step[2] == undefined)
+                {
+                    step[1] = '_' + step[1];
+                }else{
+                    step[1] = '_' + step[1] + '_' + step[2];
+                }
             }
             process_step = step[0] + step[1];
             process = process_step;

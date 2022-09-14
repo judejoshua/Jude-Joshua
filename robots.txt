@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: 
-Disallow: /cgi-bin/
+Disallow: /.cgi-bin/
+Disallow: /public/jude-admin/
 Sitemap: https://judejoshua.me/sitemap.xml

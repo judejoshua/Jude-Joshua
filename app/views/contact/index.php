@@ -1,6 +1,6 @@
 <?php
-    $title = 'Send a message - Jude Joshua | Expert Product designer and Web experience developer ';
-    $description = 'I help businesses connect with their target users through design. Check out my portfolio to see how.';
+    $title = 'Send a message - Jude Joshua | Expert mobile and web experience designer';
+    $description = 'I help brands and businesses connect with their target users through product design.  See my portfolio to know more.';
     $img = '/public/assets/img/landing-image.webp';
     
     include './public/components/header.php';
@@ -18,7 +18,7 @@
             <article id="body">
                 <div class="contact-info">
                     <p class="p4">
-                        Let's talk about your project or any other questions that you have. You can quickly fill the form and I will respond as soon as possible. Or send me an email me on <a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a> or call <a href="tel:+2349041134926">+234-904-113-4926</a>.
+                        Let's talk about your project or any other questions that you have. You can quickly fill the form and I will respond as soon as possible. Otherwise send me an <a href="mailto:hello@judejoshua.me">email</a> or call <a href="tel:+2349041134926">me</a>.
                     </p>
                 </div>
                 <form>

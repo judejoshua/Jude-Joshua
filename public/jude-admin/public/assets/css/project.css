@@ -65,6 +65,14 @@ body:not(#admin-landing) #case-study {
     gap: 20px;
 }
 
+.choose-img-label .project {
+    width: 100% !important;
+}
+
+.field-button-group .title-text {
+    width: 50%;
+}
+
 #case-study-body .row {
     gap: 4%;
     align-items: flex-start;
@@ -308,8 +316,8 @@ body#case-study-body .landing .case-study-title .scroll-down #arrow-tail-long {
     height: 100%;
 }
 .case-study-header-details-text {
-     justify-content: flex-start;
-     text-align: left;
-     gap: 8px;
-     padding-top: 24px;
- }
+    justify-content: flex-start;
+    text-align: left;
+    gap: 8px;
+    padding-top: 24px;
+}

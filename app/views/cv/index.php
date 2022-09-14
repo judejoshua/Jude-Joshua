@@ -1,6 +1,6 @@
 <?php
-    $title = 'CV - Jude Joshua | Expert Product designer and Web experience developer';
-    $description = 'I help businesses connect with their target users through design. Check out my portfolio to see how.';
+    $title = 'CV - Jude Joshua | Expert mobile and web experience designer';
+    $description = 'I help brands and businesses connect with their target users through product design. See my portfolio to know more.';
     $img = '/public/assets/img/landing-image.webp';
 
     include './public/components/header.php';

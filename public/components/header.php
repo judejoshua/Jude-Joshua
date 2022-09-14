@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
     <head>
         <title><?=$title?></title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv = "content-language" content = "en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Jude Joshua" />
         <meta name="robots" content="index, follow" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="language" content="English">
+        <meta name="language" content="en">
         <meta name="revisit-after" content="1 days">
         <meta name="dcterms.rightsHolder" content="Jude Joshua">
         <meta name="dcterms.rights" content="Unless otherwise indicated, this Website is our proprietary property and all source codes, databases, functionalities, softwares, audio, video, text, photographs, graphic content and designs on the Website (collectively, The 'Content') and the trademarks, service marks, and logos contained therein (the 'Marks') are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of Nigeria, foreign jurisdictions, and international conventions." />

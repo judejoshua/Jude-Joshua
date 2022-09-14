@@ -1,55 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for http://judejoshua.me/</title>
-  <link>http://judejoshua.me/</link>
+  <title>ROR Sitemap for https://judejoshua.me/</title>
+  <link>https://judejoshua.me/</link>
 
 <item>
      <link>https://judejoshua.me/</link>
-     <title>Jude Joshua || Product designer with background in web design &amp; development</title>
-     <description>Jude Joshua || Product designer with background in web design &amp; development</description>
+     <title>Jude Joshua | Expert Product designer and Web experience developer</title>
+     <description>Jude Joshua | Expert Product designer and Web experience developer</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://judejoshua.me/about</link>
-     <title>About || Jude Joshua || Product designer with background in web design &amp; development</title>
-     <description>About || Jude Joshua || Product designer with background in web design &amp; development</description>
+     <title>About - Jude Joshua | Expert Product designer and Web experience developer</title>
+     <description>About - Jude Joshua | Expert Product designer and Web experience developer</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://judejoshua.me/portfolio</link>
-     <title>Past work || Jude Joshua || Product designer with background in web design &amp; development</title>
-     <description>Past work || Jude Joshua || Product designer with background in web design &amp; development</description>
+     <title>Past work - Jude Joshua | Expert Product designer and Web experience developer</title>
+     <description>Past work - Jude Joshua | Expert Product designer and Web experience developer</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://judejoshua.me/cv</link>
-     <title>Résumé || Jude Joshua || Product designer with background in web design &amp; development</title>
-     <description>Résumé || Jude Joshua || Product designer with background in web design &amp; development</description>
+     <title>CV - Jude Joshua | Expert Product designer and Web experience developer</title>
+     <description>CV - Jude Joshua | Expert Product designer and Web experience developer</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://judejoshua.me/contact</link>
-     <title>Send a message || Jude Joshua || Product designer with background in web design &amp; development</title>
-     <description>Send a message || Jude Joshua || Product designer with background in web design &amp; development</description>
+     <title>Send a message - Jude Joshua | Expert Product designer and Web experience developer </title>
+     <description>Send a message - Jude Joshua | Expert Product designer and Web experience developer </description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://judejoshua.me/portfolio/case_study</link>
-     <title>Jude Joshua || Product designer with background in web design &amp; development</title>
-     <description>Jude Joshua || Product designer with background in web design &amp; development</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>

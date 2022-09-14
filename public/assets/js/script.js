@@ -1,31 +1,60 @@
 $(document).ready(function() {
 
-    (function() {
+    //=================================================================================================
+    //                           C U R S O R
+    //=================================================================================================
+    var cursor = $(".cursor");
+    $(window).mousemove(function(e) {
+        cursor.css({
+            top: e.clientY - cursor.height() - 10,
+            left: e.clientX - cursor.width() - 9
+        });
+    });
 
-        const link = document.querySelectorAll('a');
-        const cursor = document.querySelector('.cursor');
+    $(window)
+        .mouseleave(function() {
+            cursor.css({
+                "opacity": "0"
+            });
+        })
+        .mouseenter(function() {
+            cursor.css({
+                "opacity": "1"
+            });
+        });
 
-        const animateit = function(e) {
-            const span = this.querySelector('span');
-            const { offsetX: x, offsetY: y } = e, { offsetWidth: width, offsetHeight: height } = this,
+    $(".projector")
+        .mouseenter(function() {
+            cursor.css({
+                "padding": "16px 12px 15px",
+                "mix-blend-mode": "unset",
+                "background-color" : "var(--secondary)",
+                "color": "var(--neutral)"
+                
+            });
+            cursor.html('<p class="p5">View</p>');
+        })
+        .mouseleave(function() {
+            cursor.css({
+                "padding": "8px",
+                "mix-blend-mode": "difference",
+                "color" : "var(--secondary)",
+                "background-color": "var(--neutral)"
+            });
+            cursor.html('')
+        });
 
-            move = 25,
-                xMove = x / width * (move * 2) - move,
-                yMove = y / height * (move * 2) - move;
-
-        };
-
-        const editCursor = e => {
-            const { clientX: x, clientY: y } = e;
-            cursor.style.left = x + 'px';
-            cursor.style.top = y + 'px';
-        };
-
-        link.forEach(b => b.addEventListener('mousemove', animateit));
-        link.forEach(b => b.addEventListener('mouseleave', animateit));
-        window.addEventListener('mousemove', editCursor);
-
-    })();
+    $(window)
+        .mousedown(function() {
+            cursor.css({
+                "transform": "scale(.2)"
+            });
+        })
+        .mouseup(function() {
+            cursor.css({
+                "transform": "scale(1)"
+            });
+        });
     //=================================================================================================
     //                           N A V I G A T I O N
     //=================================================================================================

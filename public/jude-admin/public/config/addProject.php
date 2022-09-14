@@ -96,7 +96,7 @@
                 $project_process_step = explode('-', $step)[0];
 
                 $general_project_data['project_process'][$project_process_step] = array(
-                    'summary' => $value,
+                    'summary' => nl2br($value),
                     $project_process_step . '_img' => filter_var_array($_FILES[$project_process_step . '_img']["name"]),
                 );
             }
