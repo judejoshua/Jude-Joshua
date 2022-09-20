@@ -53,8 +53,13 @@
                                                             <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
-                                                                    <h5 class="p4">'.$project_data['project_title'].'</h5>
-                                                                    <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                    <div class="d-flex d-flex-row flex-justify-between flex-align-start">
+                                                                        <div>
+                                                                            <h5 class="p4">'.$project_data['project_title'].'</h5>
+                                                                            <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                        </div>
+                                                                        <span class="p5">'.$project['project_year'].'</span>
+                                                                    </div>
                                                                     <span class="p5 view">View case study</span>
                                                                 </div>
                                                             </div>

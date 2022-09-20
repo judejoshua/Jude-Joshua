@@ -29,8 +29,9 @@
                                     <div class="input-field">
                                         <select id="project_type" name="project_type" class="form-input p4">
                                             <option value="" selected hidden>Choose project type</option>
+                                            <option value="UI(Visual) Design">UI(Visual) Design</option>
                                             <option value="UI/UX">UI/UX</option>
-                                            <option value="Web design, Web development">Website development</option>
+                                            <option value="Web UI design, Web development">Website development</option>
                                             <option value="UI/UX, Web development">Both</option>
                                         </select>
                                         <div class="labels">
@@ -91,6 +92,18 @@
                                             <div class="labels">
                                                 <p class="p5 placeholder">How long did you work on this project? (Required)</p>
                                                 <p class="p5 error" data-error="project_duration"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="project_year" id="to-title" class="h4">Project Year*</label>
+                                    <div class="input-group">
+                                        <div class="input-field">
+                                            <input type="text" id="project_year" name="project_year" class="form-input p4"/>
+                                            <div class="labels">
+                                                <p class="p5 placeholder">In what year did you complete this project? (Required)</p>
+                                                <p class="p5 error" data-error="project_year"></p>
                                             </div>
                                         </div>
                                     </div>

@@ -1,38 +1,7 @@
-[07-Sep-2022 18:38:59 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[07-Sep-2022 18:38:59 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[07-Sep-2022 18:38:59 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[07-Sep-2022 18:38:59 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 63
-[07-Sep-2022 23:12:30 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[07-Sep-2022 23:12:30 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[07-Sep-2022 23:12:30 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[07-Sep-2022 23:12:30 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 63
-[09-Sep-2022 13:36:57 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[09-Sep-2022 13:36:57 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[09-Sep-2022 13:36:57 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[09-Sep-2022 13:36:57 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 63
-[11-Sep-2022 02:42:14 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[11-Sep-2022 02:42:14 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[11-Sep-2022 02:42:14 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[11-Sep-2022 04:35:17 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[11-Sep-2022 04:35:17 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[11-Sep-2022 04:35:17 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[11-Sep-2022 15:28:51 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[11-Sep-2022 15:28:51 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[11-Sep-2022 15:28:51 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[12-Sep-2022 09:12:03 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[12-Sep-2022 09:12:03 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[12-Sep-2022 09:12:03 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[12-Sep-2022 09:12:03 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 63
-[12-Sep-2022 09:12:05 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[12-Sep-2022 09:12:05 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[12-Sep-2022 09:12:05 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[12-Sep-2022 09:12:05 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 63
-[13-Sep-2022 00:50:02 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[13-Sep-2022 00:50:02 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[13-Sep-2022 00:50:02 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[13-Sep-2022 15:48:35 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[13-Sep-2022 15:48:35 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[13-Sep-2022 15:48:35 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
-[14-Sep-2022 13:33:15 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
-[14-Sep-2022 13:33:15 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
-[14-Sep-2022 13:33:15 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
+[20-Sep-2022 06:11:06 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
+[20-Sep-2022 06:11:06 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
+[20-Sep-2022 06:11:06 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36
+[20-Sep-2022 06:11:06 Africa/Lagos] PHP Warning:  array_filter() expects parameter 1 to be array, string given in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 63
+[20-Sep-2022 07:44:43 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
+[20-Sep-2022 07:44:43 Africa/Lagos] PHP Notice:  Undefined index: project_brief in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
+[20-Sep-2022 07:44:43 Africa/Lagos] PHP Notice:  Undefined index: project_tools in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36

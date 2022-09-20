@@ -23,6 +23,8 @@
         $project_type = $_POST['project_type'];
 
         $project_duration = $_POST['project_duration'];
+        
+        $project_year = $_POST['project_year'];
 
         $project_cover_img = $_FILES["project_cover_img"]["name"];
 
@@ -45,7 +47,7 @@
         $project_process = array_slice($_POST, 9);
 
         foreach ($general_project_data as $key => $value) {
-            if ($key == 'project_title' || $key == 'project_brief' || $key == 'project_duration' || $key == 'project_tools') {
+            if ($key == 'project_title' || $key == 'project_brief' || $key == 'project_duration' || $key == 'project_tools' || $key = 'project_year') {
                 if ($value == '') {
                     echo "error=" . $key . "=You need to enter a " . ucwords(str_replace("_", " ", $key));
                     exit();
@@ -58,6 +60,7 @@
         unset($project_process['process_filled']);
         unset($project_process['fieldset_title']);
         unset($general_project_data['project_duration']);
+        unset($general_project_data['project_year']);
         unset($general_project_data['project_problem_statement']);
         unset($general_project_data['project_problem_statement_title']);
         unset($general_project_data['project_solution_title']);
@@ -110,7 +113,7 @@
 
 		$project_data = json_encode($general_project_data, true);
 
-		$addProject = $projectClass->addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration);
+		$addProject = $projectClass->addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration, $project_year);
 		echo $addProject ? 'success' : $addProject;
 	}
 

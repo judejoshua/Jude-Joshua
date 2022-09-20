@@ -5,7 +5,7 @@ class Project extends Db
 	public function getProjectList()
     {
         try {
-            $query = "SELECT `id`, `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_img_directory` FROM `projects` WHERE `hidden` != '1' ORDER BY `projects`.`id` DESC";
+            $query = "SELECT `id`, `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_year`, `project_img_directory` FROM `projects` WHERE `hidden` != '1' ORDER BY `projects`.`id` DESC";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([]);
             $data = $stmt->fetchAll();
@@ -18,7 +18,8 @@ class Project extends Db
     public function getHomeProjectList()
     {
         try {
-            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_img_directory` FROM `projects` WHERE `project_type` = 'UI/UX' AND `hidden` != '1' OR  `project_type` = 'UI/UX, Web development' AND `hidden` != '1' ORDER BY RAND()";
+            // $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_year`, `project_img_directory` FROM `projects` WHERE `project_type` LIKE '%{$needle}%'= 'UI/UX' AND `hidden` != '1' OR  `project_type` = 'UI/UX, Web development' AND `hidden` != '1' ORDER BY RAND()";
+            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_year`, `project_img_directory` FROM `projects` WHERE `project_type` LIKE '%UI%' AND `hidden` != '1' ORDER BY RAND()";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([]);
             $data = $stmt->fetchAll();

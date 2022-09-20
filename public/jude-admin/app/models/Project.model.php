@@ -30,10 +30,10 @@ class Project extends Db
         }
     }
 
-    public function addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration)
+    public function addProjectData($project_unique_id, $project_type, $project_cover_img, $project_img_directory, $project_data, $project_duration, $project_year)
     {
         try {
-            $query = "INSERT INTO `projects`(`unique_id`, `project_type`, `project_cover_img`, `project_img_directory`, `project_data`, `project_duration`) VALUES (:project_unique_id,:project_type,:project_cover_img,:project_img_directory,:project_data,:project_duration)";
+            $query = "INSERT INTO `projects`(`unique_id`, `project_type`, `project_cover_img`, `project_img_directory`, `project_data`, `project_duration`, `project_year`) VALUES (:project_unique_id,:project_type,:project_cover_img,:project_img_directory,:project_data,:project_duration,:project_year)";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([
             	':project_unique_id' => $project_unique_id,
@@ -41,7 +41,8 @@ class Project extends Db
             	':project_cover_img' => $project_cover_img,
             	':project_img_directory' => $project_img_directory,
             	':project_data' => $project_data,
-            	':project_duration' => $project_duration
+            	':project_duration' => $project_duration,
+            	':project_year' => $project_year
             ]);
             return true;
         } catch(PDOException $e){

@@ -120,12 +120,11 @@ body:not(#admin-landing) #case-study {
 }
 
 .caption-text {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-right: 24px;
+    width: 70%;
 }
 
 .projects-holder a {

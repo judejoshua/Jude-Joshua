@@ -63,8 +63,13 @@
                                                             <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
-                                                                    <h5 class="p4">'.$project_data['project_title'].'</h5>
-                                                                    <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                    <div class="d-flex d-flex-row flex-justify-between flex-align-start">
+                                                                        <div>
+                                                                            <h5 class="p4">'.$project_data['project_title'].'</h5>
+                                                                            <span id="tags" class="p5">'.$project['project_type'].'</span>
+                                                                        </div>
+                                                                        <span class="p5">'.$project['project_year'].'</span>
+                                                                    </div>
                                                                     <span class="p5 view">View case study</span>
                                                                 </div>
                                                             </div>
@@ -93,7 +98,7 @@
                         <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
                             <div class="text-divider">
                                 <div class="designer-caption d-flex d-flex-column">
-                                    <p class="p4">For the human.</p>
+                                    <p class="p4">Human. First.</p>
                                     <h2 class="h1">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
                                 </div>
                             </div>
