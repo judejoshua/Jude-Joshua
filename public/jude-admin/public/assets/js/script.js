@@ -438,7 +438,7 @@ $(document).ready(function() {
                     } else if (status[0] === 'success') {
                         $('.success-message').addClass('show');
                         $('.success-message i').removeClass().addClass('las la-alert-outline');
-                        $('.success-message p').text("The password was correct. The system will log you in now.");
+                        $('.success-message p').text("The password is correct. The system will log you in now.");
 
                         setTimeout(removePop, 5000);
 

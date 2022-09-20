@@ -12,7 +12,7 @@
 
     if (password_verify($password, $auth[0]['auth_code']))
     {
-        $_SESSION['auid'] = '1fwf';
+        $_SESSION['auid'] = '1';
         echo 'success';
     }
     else 
