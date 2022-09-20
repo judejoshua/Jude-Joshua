@@ -96,6 +96,7 @@ $(document).ready(function() {
                 }
             },
             error: function(jqXHR, exception) {
+                $(".preloader").fadeOut("slow");
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connected.\n Verify Network.';
@@ -159,10 +160,9 @@ $(document).ready(function() {
                 step[1] = ''
                 process = step[0]
             } else {
-                if(step[2] == undefined)
-                {
+                if (step[2] == undefined) {
                     step[1] = '_' + step[1];
-                }else{
+                } else {
                     step[1] = '_' + step[1] + '_' + step[2];
                 }
             }
@@ -226,6 +226,7 @@ $(document).ready(function() {
                 }
             },
             error: function(jqXHR, exception) {
+                $(".preloader").fadeOut("slow");
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connected.\n Verify Network.';
@@ -365,6 +366,7 @@ $(document).ready(function() {
                 }
             },
             error: function(jqXHR, exception) {
+                $(".preloader").fadeOut("slow");
                 var msg = '';
                 if (jqXHR.status === 0) {
                     msg = 'Not connected.\n Verify Network.';
@@ -397,5 +399,84 @@ $(document).ready(function() {
         $('.success-message').removeClass('show error');
     }
 
+
+    //=================================================================================================
+    //                           A U T H   F U N C T I O N
+    //=================================================================================================
+    $('#login-submit').click(function(e) {
+        e.preventDefault();
+
+        $(this).html('<span class="loader-dots"><span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span></span>');
+
+        if ($('#password_input').val() == '') {
+            $(this).text('Continue');
+            $('.success-message').addClass('show error');
+            $('.success-message i').removeClass().addClass('las la-alert-outline');
+            $('.success-message p').text("Enter a password.");
+            setTimeout(removePop, 5000);
+        } else {
+            let link = '/public/config/logUser.php?input=' + $('#password_input').val();
+
+            $.ajax({
+                url: link,
+                type: "POST",
+                success: function(response) {
+                    let status = response.split('=');
+                    $('#login-submit').html('Continue');
+
+                    if (status[0] === 'error') {
+                        $('.error[data-error="' + status[1] + '"]').fadeIn(1000).text(status[2]);
+
+                        $('html,body').animate({
+                            scrollTop: $('#' + status[1]).offset().top - 200
+                        }, 500);
+
+                        setTimeout(() => {
+                            $('.error').fadeOut('slow').text('');
+                        }, 5000);
+
+                    } else if (status[0] === 'success') {
+                        $('.success-message').addClass('show');
+                        $('.success-message i').removeClass().addClass('las la-alert-outline');
+                        $('.success-message p').text("The password was correct. The system will log you in now.");
+
+                        setTimeout(removePop, 5000);
+
+                        setTimeout(function() { location.href = "/" }, 4000);
+                    } else {
+                        $('.success-message').addClass('show error');
+                        $('.success-message i').removeClass().addClass('las la-alert-outline');
+                        $('.success-message p').text(status[0]);
+
+                        setTimeout(removePop, 5000);
+                    }
+                },
+                error: function(jqXHR, exception) {
+                    $(this).text('Continue');
+
+                    var msg = '';
+                    if (jqXHR.status === 0) {
+                        msg = 'Not connected.\n Verify Network.';
+                    } else if (jqXHR.status == 404) {
+                        msg = 'Requested page not found. [404]';
+                    } else if (jqXHR.status == 500) {
+                        msg = 'Internal Server Error [500].';
+                    } else if (exception === 'parsererror') {
+                        msg = 'Requested JSON parse failed.';
+                    } else if (exception === 'timeout') {
+                        msg = 'Time out error.';
+                    } else if (exception === 'abort') {
+                        msg = 'Ajax request aborted.';
+                    } else {
+                        msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                    }
+                    $('.success-message').addClass('show error');
+                    $('.success-message i').removeClass().addClass('las la-alert-outline');
+                    $('.success-message p').text(msg);
+                    setTimeout(removePop, 5000);
+                },
+            })
+        }
+    })
 
 })

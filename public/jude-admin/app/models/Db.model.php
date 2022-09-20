@@ -9,7 +9,8 @@ class Db
     private $dbName = 'judegniz_jude';
     
     
-    protected function connect(){//try database connection
+    protected function connect()//try database connection
+    {
         static $dbConn;
         try {
             if (!$dbConn) {

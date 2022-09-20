@@ -1,10 +1,9 @@
 <?php
 
-class Controller{
+class Controller
+{
 
-    
-    
-    protected function model($model){
+    public function model($model){
         require_once './app/models/' . $model . '.model.php';
         return new $model;
     }
@@ -25,3 +24,7 @@ class Controller{
     }
     
 }
+
+$controller = new Controller;
+$session = $controller->model('Session');
+$session->startSession();

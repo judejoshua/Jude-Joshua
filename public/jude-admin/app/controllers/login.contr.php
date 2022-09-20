@@ -1,13 +1,13 @@
 <?php
 
-class Home extends Controller
+class Login extends Controller
 {
     public function __construct()
     {
-        if(!isset($_SESSION['auid']))
+        if(isset($_SESSION['auid']))
         {
             $redirect = $this->model('Redirect');
-            $page = '/login';
+            $page = '/';
             $redirect->redirectTo($page);
         }
         else
@@ -18,7 +18,7 @@ class Home extends Controller
 
     public function index()
     {
-        $this->view('home/index', [
+        $this->view('login/index', [
 
         ]);
     }

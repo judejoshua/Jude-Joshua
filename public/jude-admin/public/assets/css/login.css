@@ -1,0 +1,32 @@
+.admin-login p a::after {
+    content: "";
+}
+
+.admin-login p a::before {
+    display: none;
+}
+
+.admin-login p a {
+    padding: 4px 16px;
+    border: 1px solid;
+    color: var(--neutral);
+    background-color: var(--secondary);
+    transition: 0.6s;
+    min-width: 160px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.admin-login p a:hover {
+    background-color: var(--neutral);
+    color: var(--secondary);
+}
+
+.admin-login .input-field {
+    gap: 32px;
+}
+
+.admin-login .results-section-title {
+    width: 640px;
+    text-align: left;
+}
