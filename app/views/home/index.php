@@ -149,7 +149,7 @@
                             <h2>A good fit?</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                It is my mission to bring businesses closer to their target audiences and provide them with the right solutions through minimal, accessible and useful designs. <br/>My fascination with design began as a child, and I strove every day to enhance my skills in some way. It was this love, combined with a desire to improve user experiences that pushed me to become a designer. One whose vision is to bring businesses and their target audiences closer together. This is done by carefully communicating the business goals in a simple manner to the users.
+                                It is my mission to bring businesses closer to their target audiences and provide them with the right solutions through minimal, accessible and useful designs. <br/>My fascination with design began as a child, and I strove every day to enhance my skills in some way. It was this love, combined with a desire to improve user experiences that pushed me to become a designer &mdash; a designer with the vision to bring businesses and their target audiences closer together. This, I achieve by carefully communicating the business goals in a simple manner to the users.
                             </p>
                         </div>
                         <a class="btn four" href="/cv">
