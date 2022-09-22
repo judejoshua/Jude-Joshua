@@ -7,10 +7,12 @@
         <li><a href="<?=explode('/', $url)[3] == 'contact' ? '#' : '/contact' ?>">Send me a message</a></li>
         <li><a>Social Media<i class="las la-angle-right"></i></a>
             <ul id="inner-down">
-                <li><a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li>
-                <li><a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank">Dribbble</a></li>
                 <li><a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank">LinkedIn</a></li>
+                <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank">Medium</a>
+                <!-- <li><a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li> -->
                 <li><a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank">Twitter</a></li>
+                <li><a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank">Dribbble</a></li>
+                <li><a rel="nofollow" href="https://www.youtube.com/channel/UCckcpzjMMEak8ef4AIjQYDg/" target="_blank">Youtube</a></li>
             </ul>
         </li>
     </ul>
@@ -52,12 +54,12 @@
 <footer>
     <div class="footer-top d-flex flex-justify-between">
         <div class="contact-links">
-            <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank" class="Dribbble">Medium</a>
-            <a rel="nofollow" href="mailto:hello@judejoshua.me" target="_blank" class="Email">Email</a>
-            <a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a>
             <a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>
+            <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank" class="Medium">Medium</a>
+            <!-- <a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a> -->
             <a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
+            <a rel="nofollow" href="https://www.youtube.com/channel/UCckcpzjMMEak8ef4AIjQYDg/" target="_blank" class="Youtube">Youtube</a>
         </div>
         <a class="to-top" href="#top">
             <p class="p5">SCROLL UP</p>

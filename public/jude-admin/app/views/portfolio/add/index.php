@@ -29,10 +29,10 @@
                                     <div class="input-field">
                                         <select id="project_type" name="project_type" class="form-input p4">
                                             <option value="" selected hidden>Choose project type</option>
-                                            <option value="UI(Visual) Design">UI(Visual) Design</option>
-                                            <option value="UI/UX">UI/UX</option>
+                                            <option value="UI(Visual) design">UI(Visual) Design</option>
+                                            <option value="UI/UX design">UI/UX</option>
                                             <option value="Web UI design, Web development">Website development</option>
-                                            <option value="UI/UX, Web development">Both</option>
+                                            <option value="UI/UX design, Web development">Both</option>
                                         </select>
                                         <div class="labels">
                                             <p class="p5 placeholder">Choose your project type (Required)</p>

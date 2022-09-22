@@ -1,6 +1,6 @@
 <?php
-    $title = 'Past work - Jude Joshua | Expert mobile and web experience designer';
-    $description = 'I help brands and businesses connect with their target users through product design. See my portfolio to know more.';
+    $title = 'Design solutions | Jude Joshua';
+    $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 
     include './public/components/header.php';
@@ -11,19 +11,20 @@
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider">
-                    <h1>Work</h1>
+                    <h1>Design solutions for Businesses and Brands.</h1>
                     <div id="liner"></div>
                     <p class="p4">
                         The goal of every digital project is to provide the best solution in a code and user-friendly manner. Here are ideas that I worked on, turning the goals into code-ready and user-friendly digital products with a stress-free user flow.
                     </p>
                 </div>
-                <!-- <div class="tags-row">
-                    <span class="h5">Filter by:</span>
-                    <div>
-                        <span class="p5 secondary" id="tag-single" data-show="UI/UX">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="Web design, Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
-                    </diV>
-                </div> -->
+                <!-- <div class="tags-row"> -->
+                    <!-- <span class="h5">Filter by:</span> -->
+                    <!-- <div>
+                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual designs <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="UI/UX design">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="Web UI design, Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
+                    </diV> -->
+                <!-- </div> -->
             </header>
             <article id="body">
                 <section id="case-study">

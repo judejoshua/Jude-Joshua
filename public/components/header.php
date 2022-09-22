@@ -67,7 +67,6 @@
             include 'nav.php';
         ?>
 
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
         <script>
@@ -118,4 +117,3 @@
         </div>
 
         <div id="cursor" class="cursor"></div>
-
