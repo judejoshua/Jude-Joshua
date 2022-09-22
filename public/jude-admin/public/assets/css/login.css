@@ -1,12 +1,12 @@
-.admin-login p a::after {
-    content: "";
-}
+/*.admin-login p a::after {*/
+/*    content: "";*/
+/*}*/
 
-.admin-login p a::before {
-    display: none;
-}
+/*.admin-login p a::before {*/
+/*    display: none;*/
+/*}*/
 
-.admin-login p a {
+.admin-login button {
     padding: 4px 16px;
     border: 1px solid;
     color: var(--neutral);
@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.admin-login p a:hover {
+.admin-login button:hover {
     background-color: var(--neutral);
     color: var(--secondary);
 }

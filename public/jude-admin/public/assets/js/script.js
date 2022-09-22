@@ -282,7 +282,7 @@ $(document).ready(function() {
                 } else if (status[0] === 'success') {
                     $('.success-message').addClass('show');
                     $('.success-message i').removeClass().addClass('las la-check');
-                    $('.success-message p').text('Your project was added successfully!');
+                    $('.success-message p').text('Your project is deleted successfully!');
 
                     setTimeout(removePop, 5000);
 
@@ -403,13 +403,13 @@ $(document).ready(function() {
     //=================================================================================================
     //                           A U T H   F U N C T I O N
     //=================================================================================================
-    $('#login-submit').click(function(e) {
+    $('#admin-landing form').submit(function(e) {
         e.preventDefault();
 
-        $(this).html('<span class="loader-dots"><span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span></span>');
+        $('#login-submit').html('<span class="loader-dots"><span class="loader__dot">.</span><span class="loader__dot">.</span><span class="loader__dot">.</span></span>');
 
         if ($('#password_input').val() == '') {
-            $(this).text('Continue');
+            $('#login-submit').text('Continue');
             $('.success-message').addClass('show error');
             $('.success-message i').removeClass().addClass('las la-alert-outline');
             $('.success-message p').text("Enter a password.");

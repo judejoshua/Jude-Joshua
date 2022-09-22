@@ -43,8 +43,8 @@
             $uploaded = move_uploaded_file($tmp, $cover_move);
         }
 
-        $general_project_data = array_slice($_POST, 1, 8);
-        $project_process = array_slice($_POST, 9);
+        $general_project_data = array_slice($_POST, 1, 9);
+        $project_process = array_slice($_POST, 10);
 
         foreach ($general_project_data as $key => $value) {
             if ($key == 'project_title' || $key == 'project_brief' || $key == 'project_duration' || $key == 'project_tools' || $key = 'project_year') {

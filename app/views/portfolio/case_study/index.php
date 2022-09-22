@@ -87,7 +87,7 @@
                                                     {
                                                         echo'
                                                             <div>
-                                                                <div class="process-sectioners sectioners col-100 d-flex d-flex-column flex-align-start">';
+                                                                <div class="process-sectioners sectioners col-100 d-flex d-flex-column flex-align-end">';
                                                                     if ($sub_title === $firstKey) {
                                                                         echo '
                                                                             <div class="text-divider" id="process-text-divider">
@@ -97,8 +97,8 @@
                                                                     }
                                                                     echo' 
                                                                     <div class="text-divider sub-title">
-                                                                        <div class="left">
-                                                                            <h3>'.ucwords(str_replace("_", " ", $sub_title)).'</h3>';
+                                                                        <div class="left d-flex d-flex-row flex-justify-start flex-align-start">
+                                                                            <h3>'.ucwords(str_replace("_", " ", $sub_title)).':</h3>';
                                                                             if (!is_array($contents))
                                                                             {
                                                                                 echo '<p class="p4">'.$contents.'</p>';

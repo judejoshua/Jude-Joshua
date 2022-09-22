@@ -8,7 +8,7 @@
         <div class="admin results-section">
             <div class="results-section-title">
                 <p class="p3">Hi there, enter the system password below to continue.</p>
-                <div>
+                <form>
                     <div class="input-field d-flex-row flex-align-end">
                         <div class="d-flex d-flex-column flex-align-end">
                             <input type="password" id="password_input" name="password_input" class="form-input h1"/>
@@ -17,9 +17,9 @@
                                 <p class="p5 error" data-error="password_input"></p>
                             </div>
                         </div>
-                        <p class="p4"><a id="login-submit" data-role="login">Continue</a></p>
+                        <button class="p4" id="login-submit" data-role="login">Continue</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="success-message pop-up">

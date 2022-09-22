@@ -149,7 +149,7 @@
         padding-top: 160px;
     }
     .portfolio-section {
-        gap: 56px;
+        gap: 104px;
     }
     .sectioners .text-divider.sub-title {
         /* width: 75%; */
@@ -161,11 +161,20 @@
 
 .process-contents {
     padding-top: 0;
+    gap: 104px;
 }
     .process-sectioners {
-        gap: 24px;
+        gap: 32px;
         padding: 0;
     }
+
+.process-sectioners .text-divider .left {
+    gap: 4%;
+}
+
+.process-sectioners .text-divider .p4 {
+    width: 60% !important;
+}
     .returner {
         padding-top: 0;
     }
@@ -485,6 +494,10 @@
         gap: 32px;
         margin-bottom: 0;
     }
+
+.sectioners~.projects-holder {
+    margin-top: 32px;
+}
     #case-study-body .projects-holder .row {
         gap: 48px;
     }
@@ -694,7 +707,7 @@
     }
     .portfolio-section {
         padding: 64px 0 32px;
-        gap: 32px;
+        gap: 80px;
     }
 
 .sectioners {
@@ -707,7 +720,7 @@
 
 .process-contents {
     padding-top: 16px;
-    gap: 48px;
+    gap: 80px;
 }
     .return-button {
         margin: 48px 0 32px;
@@ -987,6 +1000,14 @@
         height: 248px;
         width: 100%;
         margin-bottom: 40px;
+    }
+    
+.process-sectioners .text-divider .left {
+    flex-direction: column;
+}
+    .process-sectioners .text-divider .p4{
+        width: 100% !important;
+        padding-top: 16px;
     }
 }
 
@@ -1365,6 +1386,7 @@
     .sectioners .text-divider {
         width: 100%;
     }
+
     .sectioners .text-divider.sub-title {
         width: 100%;
     }

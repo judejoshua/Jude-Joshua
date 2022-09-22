@@ -123,12 +123,12 @@ body#home-landing .results-section::before {
     border-radius: 1px;
     padding: 8px 20px;
     background: transparent;
-    transition: 1.2s;
+    transition: 0.6s;
 }
 
 .to-top:hover {
     color: var(--neutral);
-    background: var(--placeholders);
+    background: var(--secondary);
 }
 
 .to-top:hover .p6 {

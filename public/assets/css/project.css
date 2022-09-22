@@ -78,7 +78,7 @@ img#show_reeler {
 }
 
 .sectioners~.projects-holder {
-    margin-top: 32px;
+    margin-top: 40px;
 }
 
 body:not(#home-landing) #case-study {
@@ -218,7 +218,7 @@ body#case-study-body .landing .case-study-title {
     justify-content: center;
     align-items: center;
     padding: 12px 0 128px;
-    gap: 88px;
+    gap: 120px;
 }
 
 .add .portfolio-section {
@@ -269,7 +269,7 @@ body#case-study-body .landing .case-study-title {
 }
 
 .sectioners #process-text-divider {
-    width: auto;
+    width: 100%;
 }
 
 .sectioners {
@@ -282,11 +282,17 @@ body#case-study-body .landing .case-study-title {
 }
 
 .process-sectioners {
-    gap: 24px;
+    gap: 40px;
     padding: 0;
 }
 
-.process-sectioners .text-divider .p4 {padding-top: 12px;}
+.process-sectioners .text-divider .p4 {width: 64% !important;flex-grow: 1;}
+
+.process-sectioners .text-divider .left {
+    gap: 2%;
+}
+
+.process-sectioners .text-divider h3 {width: fit-content;margin: 0;}
 
 .sectioners .text-divider.sub-title {
     width: 76%;
@@ -297,7 +303,7 @@ body#case-study-body .landing .case-study-title {
 }
 
 .process-contents {
-    gap: 72px;
+    gap: 120px;
 }
 
 .sectioners .text-divider.sub-title p {
