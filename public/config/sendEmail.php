@@ -67,7 +67,7 @@ switch($_POST) {
                     $mail->FromName = "Contact Form Message";
                     
                     $mail->addAddress("hello@judejoshua.me");
-                    $mail->AddCC("officialuby@gmail.com");
+                    $mail->AddCC("thejudejoshua@gmail.com");
                     $mail->Subject = "NEW CONTACT FORM MESSAGE";
                     $mail->Body = "
                         <p>You have a new message from <i>".$name."</i>.</p>
