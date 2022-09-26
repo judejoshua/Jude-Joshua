@@ -28,9 +28,9 @@ $(document).ready(function() {
             cursor.css({
                 "padding": "16px 12px 15px",
                 "mix-blend-mode": "unset",
-                "background-color" : "var(--secondary)",
+                "background-color": "var(--secondary)",
                 "color": "var(--neutral)"
-                
+
             });
             cursor.html('<p class="p5">View</p>');
         })
@@ -38,7 +38,7 @@ $(document).ready(function() {
             cursor.css({
                 "padding": "8px",
                 "mix-blend-mode": "difference",
-                "color" : "var(--secondary)",
+                "color": "var(--secondary)",
                 "background-color": "var(--neutral)"
             });
             cursor.html('')
@@ -84,7 +84,15 @@ $(document).ready(function() {
         return false;
     });
     $('a[href]:not([href^="#"], [href^="/#"])').click(function() {
-        $(".preloader").fadeIn("fast");
+
+        $('.links.preloader').removeClass('hidden').addClass('recha');
+        $(".links.preloader").fadeIn("slow");
+
+        setTimeout(() => {
+            $(".links.preloader").fadeOut("slow");
+            $('.links.preloader').removeClass('recha').addClass('hidden');
+        }, 5000);
+
     });
     $('.mobile-nav-opener').click(function() {
         $('.mobile-nav').addClass('in');

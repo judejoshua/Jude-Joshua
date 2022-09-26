@@ -72,6 +72,13 @@
     transition: 0.6s;
 }
 
+.links.preloader #status::before {
+    content: "";
+    animation: links-status 24s linear;
+    animation-fill-mode: forwards;
+    transition: 0.6s;
+}
+
 .status-loader div {
     height: 2px;
     background-color: var(--placeholders);
@@ -183,5 +190,14 @@
     }
     100% {
         content: "Sending your message";
+    }
+}
+
+@keyframes links-status {
+    0% {
+        content: "Getting your link";
+    }
+    100% {
+        content: "Getting your link";
     }
 }
