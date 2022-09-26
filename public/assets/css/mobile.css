@@ -17,10 +17,9 @@
     .h1 {
         font-size: 40px;
     }
-
-.header-text {
-    width: 94%;
-}
+    .header-text {
+        width: 94%;
+    }
     .p4 {
         font-size: 17px;
         line-height: 2;
@@ -43,11 +42,10 @@
     .btn.four .btn_cont {
         top: 19px;
     }
-
-.results-section-title .btn.four .btn_cont {
-    top: 17px;
-    left: 12px;
-}
+    .results-section-title .btn.four .btn_cont {
+        top: 17px;
+        left: 12px;
+    }
     .btn_bg {
         width: 58px;
         height: 58px;
@@ -76,10 +74,9 @@
         height: 56px;
         width: 152px;
     }
-
-.results-section-title .btn.four {
-    width: 190px;
-}
+    .results-section-title .btn.four {
+        width: 190px;
+    }
     .btn.four .btn_bg {
         height: 56px;
         width: 56px;
@@ -151,37 +148,30 @@
     .portfolio-section {
         gap: 104px;
     }
-    .sectioners .text-divider.sub-title {
-        /* width: 75%; */
-    }
     .sectioners {
         gap: 3%;
         padding: 0 64px;
     }
-
-.process-contents {
-    padding-top: 0;
-    gap: 104px;
-}
+    .process-contents {
+        padding-top: 0;
+        gap: 104px;
+    }
     .process-sectioners {
         gap: 32px;
         padding: 0;
     }
-
-.process-sectioners .text-divider .left {
-    gap: 4%;
-}
-
-.process-sectioners .text-divider .p4 {
-    width: 60% !important;
-}
+    .process-sectioners .text-divider .left {
+        gap: 4%;
+    }
+    .process-sectioners .text-divider .p4 {
+        width: 60% !important;
+    }
     .returner {
         padding-top: 0;
     }
-
-.col-100-shift.returner {
-    padding: 0 64px;
-}
+    .col-100-shift.returner {
+        padding: 0 64px;
+    }
     body#case-study-body .landing {
         padding-right: 0;
         padding-left: 0;
@@ -191,7 +181,7 @@
         width: 47.49%;
     }
     .results-section {
-        padding: 88px 64px;
+        padding: 128px 64px;
     }
     .results-section-title {
         width: 64%;
@@ -213,13 +203,14 @@
     body#contact article {
         padding-left: 64px;
         padding-right: 64px;
+        column-gap: 48px;
     }
     .about-me-card-holder {
         padding-top: 72px;
     }
     #xp {
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 112px;
+        padding-bottom: 112px;
     }
     #clients {
         padding: 48px 0 48px !important;
@@ -253,25 +244,24 @@
     .mobile-nav {
         display: block;
         position: fixed;
-        background: rgba(218, 218, 218, 0.8);
-        z-index: -9999;
+        z-index: 99999;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: -100%;
+        width: 70%;
         height: 100%;
-        -webkit-backdrop-filter: blur(4px);
-        -moz-backdrop-filter: blur(4px);
-        backdrop-filter: blur(4px);
         opacity: 0;
-        transition: 0.1s;
+        transition: 0.4s;
+    }
+    nav.fixed {
+        top: 0;
     }
     .nav-links li:hover::after,
     .nav-links li.active::after {
         width: 10%;
     }
     .mobile-nav.in {
-        z-index: 9999;
         opacity: 1;
+        right: 0;
     }
     nav {
         padding: 32px 48px;
@@ -283,9 +273,9 @@
         font-size: 35px;
     }
     .nav-links {
-        position: fixed;
+        /* position: fixed; */
         height: 100%;
-        width: 40%;
+        width: 100%;
         background: var(--neutral);
         left: unset;
         top: 0;
@@ -293,10 +283,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-left: 32px;
+        padding-left: 56px;
         transition: 0.8s;
         box-shadow: -14px 0px 30px rgba(94, 94, 94, 0.24);
         gap: 14px;
+    }
+    .wrapper.rolled,
+    nav.rolled {
+        left: -40%;
     }
     .nav-links.get-in {
         right: 0;
@@ -342,7 +336,7 @@
         transition: 0.8s;
     }
     .mobile-nav-opener.close.out {
-        left: calc(60% + 32px);
+        left: 56px;
     }
     .mobile-nav-opener.close:hover {
         color: var(--placeholders);
@@ -357,7 +351,13 @@
         height: auto;
     }
     #xp #div-about-grab {
-        display: none;
+        /* display: none; */
+        width: 100%;
+        background-attachment: unset;
+        background-size: cover;
+        background-position-x: center;
+        margin-bottom: 60px;
+        height: 304px;
     }
     h1,
     .h1 {
@@ -494,10 +494,9 @@
         gap: 32px;
         margin-bottom: 0;
     }
-
-.sectioners~.projects-holder {
-    margin-top: 32px;
-}
+    .sectioners~.projects-holder {
+        margin-top: 32px;
+    }
     #case-study-body .projects-holder .row {
         gap: 48px;
     }
@@ -526,7 +525,10 @@
         padding-left: 40px;
     }
     .why-boxed {
-        padding: 64px 48px 40px;
+        padding: 0 0 40px;
+    }
+    .why-boxed a {
+        left: 48px;
     }
     .img-why-me {
         width: 30%;
@@ -539,6 +541,7 @@
     #why .text-divider {
         margin-bottom: 32px;
         width: 100%;
+        padding: 0 48px;
     }
     section#why::before {
         width: 50%;
@@ -552,15 +555,14 @@
     .btn.mdn {
         width: 180px;
     }
-
-.results-section-title .btn.four {
-    width: 180px;
-}
+    .results-section-title .btn.four {
+        width: 180px;
+    }
     button.btn.mdn {
         width: 164px;
     }
     .btn.four .btn_cont {
-        left: 14px;
+        left: 16px;
     }
     .btn:hover>.btn_bg {
         width: 100%;
@@ -584,7 +586,7 @@
         width: 100%;
     }
     .results-section {
-        padding: 64px 48px;
+        padding: 104px 48px;
         gap: 38px;
     }
     footer::before,
@@ -648,7 +650,7 @@
         top: 64px;
     }
     .results-section .btn.mdn .btn_cont {
-        left: 13px;
+        left: 15px;
         top: 18px;
     }
     .icon {
@@ -656,7 +658,7 @@
         height: 48px;
     }
     body:not(#home-landing) .landing {
-        padding: 136px 48px 40px;
+        padding: 184px 48px 40px;
         overflow-x: hidden;
     }
     form {
@@ -709,26 +711,22 @@
         padding: 64px 0 32px;
         gap: 80px;
     }
-
-.sectioners {
-    padding: 0 48px;
-}
-
-.process-sectioners {
-    padding: 0;
-}
-
-.process-contents {
-    padding-top: 16px;
-    gap: 80px;
-}
+    .sectioners {
+        padding: 0 48px;
+    }
+    .process-sectioners {
+        padding: 0;
+    }
+    .process-contents {
+        padding-top: 16px;
+        gap: 80px;
+    }
     .return-button {
         margin: 48px 0 32px;
     }
-
-.col-100-shift.returner {
-    padding: 0 48px;
-}
+    .col-100-shift.returner {
+        padding: 0 48px;
+    }
     .case-study-title .return-button {
         margin: 0;
     }
@@ -850,6 +848,7 @@
         background-size: cover;
         padding-top: 72px !important;
         gap: 20px !important;
+        padding-bottom: 72px !important;
     }
     body#resume .landing {
         background-position-x: -110px;
@@ -899,7 +898,10 @@
     }
     #xp {
         padding-bottom: 64px !important;
-        padding-top: 32px !important;
+        padding-top: 64px !important;
+    }
+    #xp .d-flex.col-100 {
+        flex-direction: column-reverse;
     }
     .experience_card {
         width: 100%;
@@ -949,11 +951,11 @@
         display: block;
     }
     #design-section {
-        padding: 64px 0 48px !important;
+        padding: 120px 0 120px !important;
         gap: 80px;
     }
     .design-style {
-        gap: 40px;
+        gap: 104px;
     }
     .experience-body .row:nth-child(even) .experience_card::before {
         display: none;
@@ -997,26 +999,36 @@
     }
     .mobile-img-why-me {
         display: block;
-        height: 248px;
+        height: 380px;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 72px;
     }
-    
-.process-sectioners .text-divider .left {
-    flex-direction: column;
-}
-    .process-sectioners .text-divider .p4{
+    .process-sectioners .text-divider .left {
+        flex-direction: column;
+    }
+    .process-sectioners .text-divider .p4 {
         width: 100% !important;
         padding-top: 16px;
+    }
+    a.btn.four.dwnld-btn {
+        width: 132px;
     }
 }
 
 @media screen and (max-width:560px) {
     .nav-links {
-        width: 60%;
+        width: 100%;
+        padding-left: 48px;
+    }
+    .wrapper.rolled,
+    nav.rolled {
+        left: -60%;
+    }
+    .mobile-nav {
+        width: 80%;
     }
     .mobile-nav-opener.close.out {
-        left: calc(42% + 32px);
+        left: 48px;
     }
     footer::before,
     body:not(#home-landing) .results-section::before,
@@ -1060,11 +1072,11 @@
     }
     body#home-landing #case-study {
         padding: 120px 32px 104px !important;
-        gap: 20px !important;
+        gap: 44px !important;
     }
     .flexer {
         width: 100%;
-        gap: 32px;
+        gap: 80px;
     }
     .preloader .h1 {
         font-size: 16px;
@@ -1104,7 +1116,7 @@
         left: 32px;
     }
     body:not(#home-landing) .landing {
-        padding: 104px 32px 40px;
+        padding: 128px 32px 24px;
         background-position-x: -72px;
         background-size: 100%;
     }
@@ -1113,10 +1125,10 @@
         padding-right: 32px;
     }
     .results-section {
-        padding: 36px 32px;
+        padding: 56px 32px;
     }
     footer {
-        padding: 32px 32px 32px;
+        padding: 32px 32px 32px !important;
         gap: 36px;
     }
     section {
@@ -1150,6 +1162,11 @@
     }
     #why .text-divider {
         width: 100%;
+        padding: 0 40px;
+    }
+    .mobile-img-why-me {
+        margin-bottom: 56px;
+        height: 310px;
     }
     .why-boxed::before {
         width: 100%;
@@ -1181,16 +1198,14 @@
     }
     .row {
         flex-direction: column;
-        gap: 32px;
+        gap: 80px;
     }
-
-#case-study-body .projects-holder .row {
-    gap: 24px;
-}
-
-.sectioners~.projects-holder {
-    margin-top: 12px;
-}
+    #case-study-body .projects-holder .row {
+        gap: 24px;
+    }
+    .sectioners~.projects-holder {
+        margin-top: 12px;
+    }
     .caption-text h5 {
         font-size: 16px;
     }
@@ -1209,7 +1224,7 @@
     }
     #about #home .d-flex {
         flex-direction: column;
-        gap: 48px;
+        gap: 56px;
     }
     .about-cards:nth-child(2) {
         margin-left: 0;
@@ -1280,7 +1295,7 @@
         width: 100%;
     }
     .design-style .col-100-shift {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -1295,7 +1310,10 @@
         animation-duration: 50s;
     }
     .why-boxed {
-        padding: 40px 24px;
+        padding: 0 0 52px;
+    }
+    .why-boxed .btn.four {
+        left: 40px;
     }
     .btn.four .btn_bg {
         height: 52px;
@@ -1307,6 +1325,9 @@
     }
     .btn.mdn {
         width: 160px;
+    }
+    .results-section-title .btn.four {
+        width: 164px;
     }
     .btn.four .btn_cont {
         top: 18px;
@@ -1327,11 +1348,17 @@
     .btn.four .btn_cont {
         left: 16px;
     }
+    .results-section-title .btn.four .btn_cont {
+        left: 16px;
+    }
+    #why .btn_cont {
+        left: 18px;
+    }
     .results-section .btn.mdn .btn_cont {
-        left: 14px;
+        left: 15px;
     }
     .text-divider {
-        gap: 16px;
+        gap: 20px;
     }
     h2,
     .h2 {
@@ -1376,17 +1403,15 @@
         gap: 16px;
         padding: 0 32px;
     }
-
-.process-sectioners {
-    padding: 0;
-}
+    .process-sectioners {
+        padding: 0;
+    }
     .case-study-header-details-text {
         gap: 12px;
     }
     .sectioners .text-divider {
         width: 100%;
     }
-
     .sectioners .text-divider.sub-title {
         width: 100%;
     }

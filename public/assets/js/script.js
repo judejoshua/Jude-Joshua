@@ -97,11 +97,13 @@ $(document).ready(function() {
     $('.mobile-nav-opener').click(function() {
         $('.mobile-nav').addClass('in');
         $('.mobile-nav-opener.close').addClass('out');
+        $('.wrapper, nav').addClass('rolled');
         $('.mobile-nav .nav-links').addClass('get-in');
         $('body').addClass('no-scroll');
     });
     $('.mobile-nav-opener.close').click(function() {
         $('.mobile-nav-opener.close').removeClass('out');
+        $('.wrapper, nav').removeClass('rolled');
         $('.mobile-nav .nav-links').removeClass('get-in');
         $('body').removeClass('no-scroll');
         setTimeout(function() {

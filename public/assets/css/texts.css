@@ -165,10 +165,14 @@ p a::after {
 
 .nav-links li a {
     font-family: "Evolventa";
-    color: var(--ink);
+    color: var(--secondary);
     flex: none;
     flex-grow: 0;
     padding: 8px;
+}
+
+.mobile-nav .nav-links li a {
+    color: var(--neutral);
 }
 
 .btn_cont #text {

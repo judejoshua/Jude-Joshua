@@ -15,7 +15,7 @@ body#home-landing #case-study {
     padding-bottom: 152px;
     display: flex;
     background-color: var(--accent);
-    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    /* background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px); */
     background-size: 5px 5px;
 }
 
@@ -113,9 +113,6 @@ body:not(#home-landing) #case-study .case-studies-body {
     transition: 0.5s;
 }
 
-.project:hover img {
-}
-
 .caption {
     display: flex;
     width: 100%;
@@ -175,10 +172,6 @@ body:not(#home-landing) #case-study .case-studies-body {
     align-items: center;
     width: auto;
     display: inline-flex;
-}
-
-.returner {
-    /* padding-top: 64px; */
 }
 
 .return-button i {
@@ -286,13 +279,19 @@ body#case-study-body .landing .case-study-title {
     padding: 0;
 }
 
-.process-sectioners .text-divider .p4 {width: 64% !important;flex-grow: 1;}
+.process-sectioners .text-divider .p4 {
+    width: 64% !important;
+    flex-grow: 1;
+}
 
 .process-sectioners .text-divider .left {
     gap: 2%;
 }
 
-.process-sectioners .text-divider h3 {width: fit-content;margin: 0;}
+.process-sectioners .text-divider h3 {
+    width: fit-content;
+    margin: 0;
+}
 
 .sectioners .text-divider.sub-title {
     width: 76%;

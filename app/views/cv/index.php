@@ -161,7 +161,7 @@
                                                     <p class="p4">Converted the design of a Reiki-timer platform to a usable and functional code prototype.</p>
                                                 </li>
                                                 <li>
-                                                    <p class="p4">Worked to ensure that the mobile version of the design was responsive, accessible and usable as the client settled for a website because he could not work on a mobile app for their design.</p>
+                                                    <p class="p4">Worked to ensure that the mobile version of the design was responsive, accessible and usable by +100k users of the platform.</p>
                                                 </li>
                                                 <li>
                                                     <p class="p4">Worked to ensure that the user experience was seamless and the user interface was not confusing or overwhelming for the users.</p>
@@ -218,7 +218,7 @@
                                             <p class="p4">Web Designer/Developer <span id="spacer"></span><span>February 2019 - April 2019</span><br/><span>Nweke Cynthia</span></p>
                                             <ol>
                                                 <li>
-                                                    <p class="p4">Worked to design and develop a simple clinic management system for a university clinic with dashboard areas for 3 clinic doctors to manage their schedule, 10+ clinic admin staff, and over 1500+ students to book clinic appointments.</p>
+                                                    <p class="p4">Worked to design and develop a simple clinic management system for a university clinic with dashboard areas for 3 clinic doctors to manage their schedule, 10+ clinic admin staff, and over 1.5M+ students to book clinic appointments.</p>
                                                 </li>
                                             </ol>
                                         </div>

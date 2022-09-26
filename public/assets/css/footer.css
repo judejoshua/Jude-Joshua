@@ -47,7 +47,8 @@ body:not(#resume) .results-section::before {
 
 body:not(#home-landing) .results-section::before {
     height: 100%;
-    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    background-color: var(--accent);
+    /* background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px); */
     background-size: 5px 5px;
 }
 

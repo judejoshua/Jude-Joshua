@@ -181,10 +181,10 @@
 #xp #div-about-grab {
     width: 40%;
     background: url(../img/xp.webp);
-    background-size: 50%;
-    background-attachment: fixed;
+    background-size: cover;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: -50px;
 }
 
 #clients .deliverables {

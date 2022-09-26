@@ -31,7 +31,7 @@
     padding: 152px 128px;
     background-color: var(--accent);
     overflow: hidden;
-    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    /* background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px); */
     background-size: 5px 5px;
 }
 

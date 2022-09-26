@@ -62,12 +62,12 @@
                             </div> -->
                         </div>
                         <div class="form-group">
-                            <label for="message" id="to-title" class="h4">Message*</label>
+                            <label for="message" id="to-title" class="h4">Details*</label>
                             <div class="input-group">
                                 <div class="input-field">
                                     <textarea type="text" id="message" name="message" class="form-input p4 form-area" maxlength="900" placeholder="E.g. I need a design for..."></textarea>
                                     <div class="labels">
-                                        <p class="p5 placeholder">Talk about your project (Required)</p>
+                                        <p class="p5 placeholder">Tell me about your project (Required)</p>
                                         <p class="p5 error" data-error="message"></p>
                                     </div>
                                 </div>

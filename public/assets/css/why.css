@@ -17,7 +17,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px);
+    background-color: var(--accent);
+    /* background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px); */
     background-size: 5px 5px;
 }
 
@@ -37,6 +38,7 @@
     background-position: top;
     background-size: cover;
     background-color: var(--secondary);
+    border: none;
 }
 
 .mobile-img-why-me {
