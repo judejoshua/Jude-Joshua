@@ -184,7 +184,7 @@
     background-size: cover;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    background-position-x: -50px;
+    background-position-x: center;
 }
 
 #clients .deliverables {
