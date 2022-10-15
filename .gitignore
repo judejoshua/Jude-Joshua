@@ -28,3 +28,4 @@ public/assets/files/uploads/
 .idea/
 .vscode/
 app/views/portfolio/web_projects/
+.htaccess
