@@ -19,13 +19,13 @@
                             <div class="case-study-title">
                                 <div class="case-study-title-top">
                                     <div class="col-100 returner d-flex d-flex-column flex-align-start">
-                                        <a href="/portfolio" class="return-button">
+                                        <a href="/portfolio" class="return-button hideme left">
                                             <i class="las la-arrow-left "></i>
                                             <h6>Return to Past Works Page</h6>
                                         </a>
                                     </div>
                                     <div class="col-100 case-study-header-details d-flex d-flex-row flex-justify-between">
-                                        <div class="case-study-header col-50 d-flex d-flex-column">
+                                        <div class="case-study-header col-50 d-flex d-flex-column hideme right">
                                             <div class="title-text">
                                                 <h1>'.$project_data['project_title'].'</h1>
                                                 <p class="p4">'.$project_data['project_brief'].'</p>
@@ -36,13 +36,12 @@
                                                 <p class="p4 p-tools d-flex d-flex-row"><span class="h5">Tools Used:</span><span class="project_tools_mother d-flex d-flex-column"><span class="project_tools">'.str_replace(',', '</span><span class="project_tools">', $project_data['project_tools']).'</span><span></p>
                                             </div>
                                         </div>
-                                        <img class="case-study-img col-50" src="'.$projectData['project_img_directory'].$projectData['project_cover_img'].'" alt="project cover-image">
-                                            
+                                        <img class="case-study-img col-50 hideme left" src="'.$projectData['project_img_directory'].$projectData['project_cover_img'].'" alt="project cover-image">
                                     </div>
                                 </div>
                             </div>
                         </header>
-                        <article id="body ">
+                        <article id="body">
                             <div class="portfolio-section">';
 
                             $body_project_data = array_splice($project_data, 3);
@@ -54,7 +53,7 @@
                                 if($section == 'project_show_reel')
                                 {
                                     echo '
-                                        <div class="sectioners show_reeler col-100 d-flex d-flex-row flex-align-start">
+                                        <div class="sectioners show_reeler col-100 d-flex d-flex-row flex-align-start hideme left">
                                             <img src="'.$projectData['project_img_directory'].$section_data.'" class="col-100" id="show_reeler" alt="showreel of project screens">
                                         </div>
                                     ';
@@ -64,10 +63,10 @@
                                     {
                                         echo '
                                             <div class="sectioners col-100 d-flex d-flex-row flex-align-start">
-                                                <div class="text-divider">
+                                                <div class="text-divider hideme left">
                                                     <h2>'.$section_heading.':</h2>
                                                 </div>
-                                                <div class="text-divider sub-title">
+                                                <div class="text-divider sub-title hideme right">
                                                     <h3>'.implode('</h3><p class="p4">',$section_data).'</p>
                                                 </div>
                                             </div>
@@ -90,7 +89,7 @@
                                                                 <div class="process-sectioners sectioners col-100 d-flex d-flex-column flex-align-end">';
                                                                     if ($sub_title === $firstKey) {
                                                                         echo '
-                                                                            <div class="text-divider" id="process-text-divider">
+                                                                            <div class="text-divider hideme left" id="process-text-divider">
                                                                                 <h2>The '.$section_heading.':</h2>
                                                                             </div>
                                                                         ';
@@ -98,15 +97,15 @@
                                                                     echo' 
                                                                     <div class="text-divider sub-title">
                                                                         <div class="left d-flex d-flex-row flex-justify-start flex-align-start">
-                                                                            <h3>'.ucwords(str_replace("_", " ", $sub_title)).':</h3>';
+                                                                            <h3 class="hideme left">'.ucwords(str_replace("_", " ", $sub_title)).':</h3>';
                                                                             if (!is_array($contents))
                                                                             {
-                                                                                echo '<p class="p4">'.$contents.'</p>';
+                                                                                echo '<p class="p4 hideme right">'.$contents.'</p>';
                                                                             }else{
                                                                                 if (array_key_exists("summary", $contents))
                                                                                 {
-                                                                                    echo '<p class="p4">'.$contents['summary'].'</p>';
-                                                                                    unset($contents['summary']);
+                                                                                    echo '<p class="p4 hideme right">'.$contents['summary'].'</p>';
+                                                                                    // unset($contents['summary']);
                                                                                 }
                                                                             }
                                                                         echo'
@@ -118,20 +117,23 @@
                                                                     <div class="row">';
                                                                         foreach ($contents as $images_alt_title => $images)
                                                                         {
-                                                                            foreach ($images as $image)
+                                                                            if(is_array($images))
                                                                             {
-                                                                                echo'
-                                                                                    <div class="project">
-                                                                                        <img src="'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
-                                                                                ';
-                                                                                if(!empty($contents))
+                                                                                foreach ($images as $image)
                                                                                 {
-                                                                                    echo '
-                                                                                        <div class="notice">
-                                                                                            <p class="p6">Click on the image to view it\'s large size</p>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                    echo'
+                                                                                        <div class="project hideme">
+                                                                                            <img src="'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
                                                                                     ';
+                                                                                    if(!empty($contents))
+                                                                                    {
+                                                                                        echo '
+                                                                                            <div class="notice">
+                                                                                                <p class="p6">Click on the image to view it\'s large size</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        ';
+                                                                                    }
                                                                                 }
                                                                             }
                                                                         }

@@ -72,6 +72,7 @@
                                                                     </div>
                                                                     <span class="p5 view">View case study</span>
                                                                 </div>
+                                                                <i class="las la-arrow-right"></i>
                                                             </div>
                                                         </div>
                                                     </a>

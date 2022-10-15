@@ -423,27 +423,33 @@ iframe {
 }
 
 .hideme.left,
-.flexer:nth-child(1) .projector {
+.flexer:nth-child(1) .projector,
+#case-study-body .projects-holder .row .project:nth-child(odd) {
     left: -100%;
     opacity: 0;
     transition: 1s ease;
 }
 
 .hideme.left.showme,
-.flexer:nth-child(1) .projector.showme {
+.flexer:nth-child(1) .projector.showme,
+#case-study-body .projects-holder .row .project:nth-child(odd).showme {
     opacity: 1;
     left: 0;
 }
 
 .hideme.right,
-.flexer:nth-child(2) .projector {
+.flexer:nth-child(2) .projector,
+#case-study-body .projects-holder .row .project:nth-child(even) {
     right: -100%;
     opacity: 0;
     transition: 1s ease;
+    left: unset;
 }
 
 .hideme.right.showme,
-.flexer:nth-child(2) .projector.showme {
+.flexer:nth-child(2) .projector.showme,
+#case-study-body .projects-holder .row .project:nth-child(even).showme {
     opacity: 1;
     right: 0;
+    left: unset;
 }
