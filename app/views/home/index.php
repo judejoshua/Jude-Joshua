@@ -150,7 +150,7 @@
                             <h2>A good fit?</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                In my work, I strive to bring businesses closer to their target audiences by providing them with a minimal and accessible design. <br/><br/>From a young age, I have been fascinated by design, and every day I work to improve my abilities. Combining this love with a desire to enhance user experiences led me to become a designer &mdash; carefully communicating the business goals to the users in a language they understand.
+                                In my work, I strive to bring businesses closer to their target audiences by providing clear, readable and beautiful designs. <br/><br/>From a young age, I have been fascinated by design, and every day I work to improve my abilities. Combining this love with a desire to enhance user experiences led me to become a designer &mdash; carefully communicating the business goals to the users in a language they understand.
                             </p>
                         </div>
                         <a class="btn four hideme left" href="/cv">
