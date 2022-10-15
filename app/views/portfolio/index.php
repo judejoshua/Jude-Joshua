@@ -1,5 +1,5 @@
 <?php
-    $title = 'Design solutions | Jude Joshua';
+    $title = 'Design solutions - Jude Joshua | Top-notch mobile and web experience designer';
     $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 
@@ -10,21 +10,21 @@
     <body>
         <div class="wrapper" id="top">
             <header class="landing" id="home">
-                <div class="text-divider">
-                    <h1>Design solutions, for </br>Businesses and Brands.</h1>
-                    <div id="liner"></div>
-                    <p class="p4">
+                <div class="text-divider hideme left">
+                    <h1>Design solutions, for </br><span id="highlight">Businesses</span> and <span id="highlight">Brands</span>.</h1>
+                    <!-- <div id="liner"></div> -->
+                    <!-- <p class="p4">
                         The goal of every digital project is to provide the best solution in a code and user-friendly manner. Here are ideas that I worked on, turning the goals into code-ready and user-friendly digital products with a stress-free user flow.
-                    </p>
+                    </p> -->
                 </div>
-                <!-- <div class="tags-row"> -->
-                    <!-- <span class="h5">Filter by:</span> -->
-                    <!-- <div>
-                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual designs <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
+                <div class="tags-row hideme right">
+                    <span class="h5">Filter by:</span>
+                    <div>
                         <span class="p5 secondary" id="tag-single" data-show="UI/UX design">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual designs <span id="project-counter"><?= $data['ui'] ?></span></span>
                         <span class="p5 secondary" id="tag-single" data-show="Web UI design, Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
-                    </diV> -->
-                <!-- </div> -->
+                    </diV>
+                </div>
             </header>
             <article id="body">
                 <section id="case-study">
@@ -49,7 +49,7 @@
                                                 $project_data = json_decode($project['project_data'], true);
                                                
                                                 echo '
-                                                    <a id="projector" class="projector" href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                    <a id="projector" class="projector hideme" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
                                                             <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">

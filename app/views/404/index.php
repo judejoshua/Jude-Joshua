@@ -1,5 +1,5 @@
     <?php
-        $title = 'Not found! - Jude Joshua | Expert Product designer and Web experience developer';
+        $title = 'Not found! - Jude Joshua | Top-notch mobile and web experience designer';
         include './public/components/error-header.php';
     ?>
     </head>

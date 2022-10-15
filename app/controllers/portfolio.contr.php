@@ -9,11 +9,14 @@ class Portfolio extends Controller
         $projectList = $projectClass->getProjectList();
         
         $ui_ux = 0;
+        $ui = 0;
         $web = 0;
         foreach ($projectList as $key => $project)
         {
-            if($project['project_type'] == 'UI/UX'){
+            if($project['project_type'] == 'UI/UX design'){
                 $ui_ux++;
+            }else if($project['project_type'] == 'UI(Visual) design'){
+                $ui++;
             }else{
                 $web++;
             }
@@ -23,6 +26,7 @@ class Portfolio extends Controller
             
             'projectList' => $projectList,
             'web' => $web,
+            'ui' => $ui,
             'ui_ux' => $ui_ux
 
         ]);

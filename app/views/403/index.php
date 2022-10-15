@@ -1,5 +1,5 @@
     <?php
-        $title = 'Access Denied! - Jude Joshua | Expert Product designer and Web experience developer';
+        $title = 'Access Denied! - Jude Joshua | Top-notch mobile and web experience designer';
         include './public/components/error-header.php';
     ?>
     

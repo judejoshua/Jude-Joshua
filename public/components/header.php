@@ -1,3 +1,10 @@
+<?php
+    $url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+    $index = (explode('/', $url)[3] == '') ? 'index' : 'no-index' ;
+    $follow = (explode('/', $url)[3] == '') ? 'follow' : 'no-follow' ;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,7 +16,7 @@
         <meta http-equiv = "content-language" content = "en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Jude Joshua" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="<?=$index?>, <?=$follow?>" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="language" content="en">
         <meta name="revisit-after" content="1 days">
@@ -52,14 +59,17 @@
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
-                $(".preloader").fadeOut(2000);
-                $("body").css("overflow-y", "scroll")
-                $("nav").animate({
-                    "opacity": "1",
-                }, 500);
-                 $(".wrapper, footer, .cursor").animate({
-                    "opacity": "1",
-                }, 2000);
+                $(".preloader").fadeOut(1000);
+                $("body").css("overflow-y", "scroll");
+                $("nav").addClass("ready");
+                $(".header").addClass("contents");
+                // $("nav").animate({
+                //     "opacity": "1",
+                //     "top" : "0"
+                // }, 1000);
+                //  $(".wrapper, footer, .cursor").animate({
+                //     "opacity": "1",
+                // }, 1000);
             });
         </script>
 

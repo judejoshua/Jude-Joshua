@@ -17,6 +17,7 @@ body#home-landing #case-study {
     background-color: var(--accent);
     /* background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px); */
     background-size: 5px 5px;
+    overflow: hidden;
 }
 
 .case-study-title-top {
@@ -147,7 +148,7 @@ body:not(#home-landing) #case-study .case-studies-body {
 }
 
 #tag-single {
-    padding: 4px 24px;
+    padding: 12px 24px;
     display: inline-block;
     background-color: var(--ink);
     color: var(--neutral);
@@ -156,7 +157,7 @@ body:not(#home-landing) #case-study .case-studies-body {
 .tags-row {
     display: flex;
     gap: 16px;
-    margin-top: 32px;
+    margin-top: 80px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -319,11 +320,11 @@ body#case-study-body .landing .case-study-title {
 }
 
 span#project-counter {
-    padding: 0px 10px 4px;
+    padding: 6px 12px 4px;
     border-radius: 50%;
     background: var(--secondary);
     color: var(--neutral);
-    margin-left: 4px;
+    margin-left: 10px;
 }
 
 #tag-single.secondary:hover,

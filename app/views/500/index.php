@@ -1,5 +1,5 @@
     <?php
-        $title = 'Internal server Error! - Jude Joshua | Expert Product designer and Web experience developer';
+        $title = 'Internal server Error! - Jude Joshua | Top-notch mobile and web experience designer';
         include './public/components/error-header.php';
     ?>
     

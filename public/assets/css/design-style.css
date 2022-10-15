@@ -25,6 +25,7 @@
 .design-style .col-100-shift {
     gap: 80px;
     padding-bottom: 128px;
+    overflow: hidden;
 }
 
 .deliverables {

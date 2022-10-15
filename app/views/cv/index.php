@@ -1,5 +1,5 @@
 <?php
-    $title = 'CV | Jude Joshua';
+    $title = 'CV - Jude Joshua | Top-notch mobile and web experience designer';
     $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 

@@ -1,11 +1,10 @@
-nav,
-.wrapper,
+/* .wrapper,
 .cursor,
 footer {
     opacity: 0;
     transition: 0.6s ease-in-out;
     left: 0;
-}
+} */
 
 .cursor {
     pointer-events: none;
@@ -421,4 +420,30 @@ span#close.fixed,
 iframe {
     width: 100%;
     height: 500px;
+}
+
+.hideme.left,
+.flexer:nth-child(1) .projector {
+    left: -100%;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.hideme.left.showme,
+.flexer:nth-child(1) .projector.showme {
+    opacity: 1;
+    left: 0;
+}
+
+.hideme.right,
+.flexer:nth-child(2) .projector {
+    right: -100%;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.hideme.right.showme,
+.flexer:nth-child(2) .projector.showme {
+    opacity: 1;
+    right: 0;
 }

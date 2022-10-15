@@ -519,16 +519,13 @@
     }
     #why {
         width: 100%;
-        padding-bottom: 12px !important;
+        padding-bottom: 0px !important;
         padding-right: 40px;
         padding-top: 80px;
         padding-left: 40px;
     }
     .why-boxed {
-        padding: 0 0 40px;
-    }
-    .why-boxed a {
-        left: 48px;
+        padding: 0 0 136px;
     }
     .img-why-me {
         width: 30%;
@@ -537,11 +534,14 @@
     }
     .why-boxed::before {
         width: 100%;
+        /*         display: none; */
+        height: 1px;
+        top: 100%;
+        background-color: var(--placeholders);
     }
     #why .text-divider {
         margin-bottom: 32px;
         width: 100%;
-        padding: 0 48px;
     }
     section#why::before {
         width: 50%;
@@ -769,10 +769,11 @@
         width: 196px;
     }
     #tag-single {
-        padding: 4px 16px;
+        padding: 12px 16px;
     }
     .tags-row div {
-        gap: 8px;
+        gap: 12px 12px;
+        flex-wrap: wrap;
     }
     #resume-begins {
         padding: 128px 48px 42px !important;
@@ -941,6 +942,7 @@
     }
     .tags-row {
         gap: 8px;
+        margin-top: 48px;
     }
     body#home-landing #case-study {
         padding: 120px 48px 104px !important;
@@ -951,7 +953,7 @@
         display: block;
     }
     #design-section {
-        padding: 120px 0 120px !important;
+        padding: 120px 0 80px !important;
         gap: 80px;
     }
     .design-style {
@@ -998,7 +1000,7 @@
         padding: 12px 12px 10px;
     }
     .mobile-img-why-me {
-        display: block;
+        /* display: block; */
         height: 380px;
         width: 100%;
         margin-bottom: 72px;
@@ -1016,6 +1018,13 @@
 }
 
 @media screen and (max-width:560px) {
+    #design-section {
+        padding: 72px 0 48px !important;
+        gap: 80px;
+    }
+    .design-style {
+        gap: 48px;
+    }
     .nav-links {
         width: 100%;
         padding-left: 48px;
@@ -1071,7 +1080,7 @@
         padding: 24px 32px;
     }
     body#home-landing #case-study {
-        padding: 120px 32px 104px !important;
+        padding: 80px 32px 80px !important;
         gap: 44px !important;
     }
     .flexer {
@@ -1162,14 +1171,10 @@
     }
     #why .text-divider {
         width: 100%;
-        padding: 0 40px;
     }
     .mobile-img-why-me {
         margin-bottom: 56px;
         height: 310px;
-    }
-    .why-boxed::before {
-        width: 100%;
     }
     .results-section-title {
         width: 86%;
@@ -1310,10 +1315,7 @@
         animation-duration: 50s;
     }
     .why-boxed {
-        padding: 0 0 52px;
-    }
-    .why-boxed .btn.four {
-        left: 40px;
+        padding: 0 0 40px;
     }
     .btn.four .btn_bg {
         height: 52px;

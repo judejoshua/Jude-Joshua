@@ -19,7 +19,7 @@ class Project extends Db
     {
         try {
             // $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_year`, `project_img_directory` FROM `projects` WHERE `project_type` LIKE '%{$needle}%'= 'UI/UX' AND `hidden` != '1' OR  `project_type` = 'UI/UX, Web development' AND `hidden` != '1' ORDER BY RAND()";
-            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_year`, `project_img_directory` FROM `projects` WHERE `project_type` LIKE '%UI%' AND `hidden` != '1' ORDER BY RAND()";
+            $query = "SELECT `unique_id`, `project_type`, `project_data`, `project_cover_img`, `project_year`, `project_img_directory` FROM `projects` WHERE `project_type` LIKE '%UX%' AND `hidden` != '1' ORDER BY RAND()";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([]);
             $data = $stmt->fetchAll();

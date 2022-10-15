@@ -44,7 +44,7 @@
     height: 100%;
     z-index: 9999;
     background-color: var(--neutral);
-    /* background: linear-gradient(45deg, var(--placeholders) 1px, var(--neutral) 1px); */
+    background: linear-gradient(45deg, var(--placeholders) 1px, var(--neutral) 1px);
     background-size: 10px 10px;
     gap: 32px;
     padding: 32px 128px 32px;

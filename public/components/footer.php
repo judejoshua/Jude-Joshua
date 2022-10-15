@@ -18,7 +18,7 @@
     </ul>
 </div>
 <div class="results-section">
-    <div class="results-section-title">
+    <div class="results-section-title hideme left">
         <?php
             if(explode('/', $url)[3] == 'cv')
             {
@@ -52,7 +52,7 @@
     </div>
 </div>
 <footer>
-    <div class="footer-top d-flex flex-justify-between">
+    <div class="footer-top d-flex flex-justify-between hideme left">
         <div class="contact-links">
             <a rel="nofollow" href="https://www.linkedin.com/in/judejoshua/" target="_blank" class="LinkedIn">LinkedIn</a>
             <a rel="nofollow" href="https://medium.com/@judejoshua" target="_blank" class="Medium">Medium</a>
@@ -61,10 +61,10 @@
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
             <a rel="nofollow" href="https://www.youtube.com/channel/UCckcpzjMMEak8ef4AIjQYDg/" target="_blank" class="Youtube">Youtube</a>
         </div>
-        <a class="to-top" href="#top">
+        <a class="to-top hideme right" href="#top">
             <p class="p5">SCROLL UP</p>
             <i class="las la-angle-up"></i>
         </a>
     </div>
-    <span class="copyright p6"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
+    <span class="copyright p6 hideme left"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
 </footer>

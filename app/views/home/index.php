@@ -28,7 +28,7 @@
             </header>
             <article id="body">
                 <section id="case-study">
-                    <div class="text-divider">
+                    <div class="text-divider hideme left">
                         <h2>Featured work</h2>
                         <div id="liner"></div>
                     </div>
@@ -58,7 +58,7 @@
                                                 $project_data = json_decode($project['project_data'], true);
 
                                                 echo '
-                                                    <a id="projector" class="projector" href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                    <a id="projector" class="projector hideme" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
                                                             <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="btn lng" href="/portfolio">
+                    <a class="btn lng hideme left" href="/portfolio">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>See</span> more case-studies</p>
@@ -96,13 +96,13 @@
                 <section id="design-section">
                     <div class="design-style">
                         <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
-                            <div class="text-divider">
+                            <div class="text-divider hideme left">
                                 <div class="designer-caption d-flex d-flex-column">
                                     <p class="p4">Human. First.</p>
                                     <h2 class="h1">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
                                 </div>
                             </div>
-                            <div class="design-style-image">
+                            <div class="design-style-image hideme right">
                                 <img src="/public/assets/img/style-gif.webp" alt="gif showing a line being balanced by two rotating circles between three circles">
                             </div>
                         </div>
@@ -112,8 +112,8 @@
                                     <span class="p1">Success</span>
                                     <span class="p1">Numbers</span>
                                     <span class="p1">Human-centered</span>
-                                    <span class="p1">Learn</span>
-                                    <span class="p1">Know</span>
+                                    <span class="p1">Accessible</span>
+                                    <span class="p1">Empathy</span>
                                     <span class="p1">Understand</span>
                                     <span class="p1">Ideas</span>
                                     <span class="p1">Implement</span>
@@ -144,22 +144,22 @@
                 </section>
                 <section id="why">
                     <div class="col-100 why-boxed">
-                        <div class="mobile-img-why-me"></div>
-                        <div class="text-divider">
+                        <!-- <div class="mobile-img-why-me"></div> -->
+                        <div class="text-divider hideme left">
                             <h2>A good fit?</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                It is my mission to bring businesses closer to their target audiences and provide them with the right solutions through minimal, accessible and useful designs. <br/>My fascination with design began as a child, and I strove every day to enhance my skills in some way. It was this love, combined with a desire to improve user experiences that pushed me to become a designer &mdash; trying to bring businesses and brands closer to their target audiences. This, I achieve by carefully communicating the business goals in the users' language to the users.
+                                In my work, I strive to bring businesses closer to their target audiences by providing them with a minimal and accessible design. <br/><br/>From a young age, I have been fascinated by design, and every day I work to improve my abilities. Combining this love with a desire to enhance user experiences led me to become a designer &mdash; carefully communicating the business goals to the users in a language they understand.
                             </p>
                         </div>
-                        <a class="btn four" href="/cv">
+                        <a class="btn four hideme left" href="/cv">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>View</span> my CV</p>
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </a>
-                        <div class="img-why-me"></div>
+                        <div class="img-why-me hideme right"></div>
                     </div>
                 </section>
             </article>

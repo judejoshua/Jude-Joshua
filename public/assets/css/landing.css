@@ -5,6 +5,33 @@
     width: 100%;
 }
 
+.header p {
+    left: -100%;
+    transition: 1s;
+}
+
+.header h1 {
+    left: -100%;
+    transition: 1.6s;
+}
+
+.header a {
+    left: -100%;
+    transition: 2s;
+}
+
+.header.contents p {
+    left: 0;
+}
+
+.header.contents h1 {
+    left: 0;
+}
+
+.header.contents a {
+    left: 0;
+}
+
 .landing {
     width: 100%;
     height: 100vh;

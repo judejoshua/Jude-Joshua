@@ -1,6 +1,3 @@
-<?php
-    $url = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-?>
 <nav class="d-flex flex-justify-between flex-align-center">
     <a href="/">
         <div class="logo">

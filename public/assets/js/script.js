@@ -65,15 +65,28 @@ $(document).ready(function() {
         } else {
             $("nav").removeClass("fixed");
         }
-        // if (window.location.href.indexOf("cv") > -1) {
-        //     var scrollDivi = $('#divisor').offset().top;
-        //     if (scroll >= scrollDivi) {
-        //         $("a.download").fadeOut('slow');
-        //     } else {
-        //         $("a.download").fadeIn('slow');
-        //     }
-        // }
-    });
+
+        $('.header').each(function(i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            // if (scroll > bottom_of_object / 2) {
+            //     $(this).removeClass('contents');
+            // }
+            if (scroll < bottom_of_object / 2) {
+                $(this).addClass('contents');
+            }
+        });
+
+        $('.hideme').each(function(i) {
+            var bottom_of_object = $(this).offset().top + ($(this).outerHeight() * 0.3);
+            var bottom_of_window = $(window).scrollTop() + ($(window).innerHeight() / 0.85);
+            if (bottom_of_window > bottom_of_object) {
+                $(this).addClass('showme');
+            }
+            if (bottom_of_window < bottom_of_object) {
+                $(this).removeClass('showme');
+            }
+        });
+    }).scroll();
     $('a[href^="#"], a[href^="/#"]').click(function() {
         let target = $(this).attr('href');
         if (target.length) {

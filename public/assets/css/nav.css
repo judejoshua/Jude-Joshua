@@ -11,7 +11,12 @@ nav {
     left: 0px;
     top: 0px;
     background: transparent;
-    transition: 0.35s ease-in-out !important;
+    transition: 0.5s ease-in-out !important;
+    top: -100%;
+}
+
+nav.ready {
+    top: 0;
 }
 
 nav.fixed {

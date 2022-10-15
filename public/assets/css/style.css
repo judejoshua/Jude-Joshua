@@ -52,7 +52,7 @@ body {
     scrollbar-width: none;
     font-family: "Evolventa";
     background-color: var(--neutral);
-    /* background: linear-gradient(45deg, var(--placeholders) 1.5px, var(--neutral) 1.5px); */
+    background: linear-gradient(45deg, var(--placeholders) 1px, var(--neutral) 1px);
     background-size: 10px 10px;
 }
 
