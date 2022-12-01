@@ -1,0 +1,4 @@
+
+[29-Nov-2022 20:03:12 Africa/Lagos] PHP Warning:  Undefined array key "project_brief" in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 3
+[29-Nov-2022 20:03:12 Africa/Lagos] PHP Warning:  Undefined array key "project_brief" in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 31
+[29-Nov-2022 20:03:12 Africa/Lagos] PHP Warning:  Undefined array key "project_tools" in /home/judegniz/public_html/app/views/portfolio/case_study/index.php on line 36

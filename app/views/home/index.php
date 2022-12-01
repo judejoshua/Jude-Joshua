@@ -13,10 +13,10 @@
                 <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
                     <div class="header">
                         <div class="header-text">
-                            <p class="p4">Hello. Minimalist.</p>
-                            <h1>I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1>
+                            <p class="p4 hideme left">Hello. Minimalist.</p>
+                            <h1 class="hideme right">I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1>
                         </div>
-                        <a class="btn" href="#case-study">
+                        <a class="btn hideme left" href="#case-study">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>See</span> how</p>
@@ -56,23 +56,31 @@
                                             foreach ($column as $project)
                                             {
                                                 $project_data = json_decode($project['project_data'], true);
+                                                
+                                                if($project['project_type'] == 'UI/UX design'){
+                                                    $show = 'case study';
+                                                }else{
+                                                    $show = 'design process';
+                                                }
 
                                                 echo '
                                                     <a id="projector" class="projector hideme" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
-                                                            <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
+                                                            <img class="projector-image lazy-image" loading="lazy" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
                                                                     <div class="d-flex d-flex-row flex-justify-between flex-align-start">
-                                                                        <div>
+                                                                        <div class="before-year">
                                                                             <h5 class="p4">'.$project_data['project_title'].'</h5>
                                                                             <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                         </div>
-                                                                        <span class="p5">'.$project['project_year'].'</span>
+                                                                        <span class="p5 year">'.explode(' ', $project['project_year'])[1].'</span>
                                                                     </div>
-                                                                    <span class="p5 view">View case study</span>
+                                                                    <div class="d-flex d-flex-row flex-justify-between flex-align-start">
+                                                                        <span class="p5 view">View '.$show.'</span>
+                                                                        <i class="las la-arrow-right"></i>
+                                                                    </div>
                                                                 </div>
-                                                                <i class="las la-arrow-right"></i>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -104,15 +112,15 @@
                                 </div>
                             </div>
                             <div class="design-style-image hideme right">
-                                <img src="/public/assets/img/style-gif.webp" alt="gif showing a line being balanced by two rotating circles between three circles">
+                                <img src="/public/assets/img/style-gif.webp" loading="lazy" alt="picture showing a sketchbook and a pen laying on the table">
                             </div>
                         </div>
                         <div class="deliverables">
                             <div class="row d-flex d-flex-column">
                                 <div class="deliverables-list d-flex d-flex-row">
-                                    <span class="p1">Success</span>
-                                    <span class="p1">Numbers</span>
+                                    <span class="p1">HTML</span>
                                     <span class="p1">Human-centered</span>
+                                    <span class="p1">CSS</span>
                                     <span class="p1">Accessible</span>
                                     <span class="p1">Empathy</span>
                                     <span class="p1">Understand</span>
@@ -150,7 +158,7 @@
                             <h2>A good fit?</h2>
                             <div id="liner"></div>
                             <p class="p4">
-                                In my work, I strive to bring businesses closer to their target audiences by providing clear, readable and beautiful designs. <br/><br/>From a young age, I have been fascinated by design, and every day I work to improve my abilities. Combining this love with a desire to enhance user experiences led me to become a designer &mdash; carefully communicating the business goals to the users in a language they understand.
+                                In my work, I strive to bring businesses closer to their target audiences by providing clear, readable and beautiful designs. <br/><br/>My focus is on end-to-end product design that combines my passion for design with a desire to improve user experiences &mdash; through providing product design strategy, component-based design systems, user research, market/competition analysis, interaction design, sketches, visual design, digital prototypes, and mockups. <br/><br/>This enables me to carefully communicate the business goals to the users in a language they understand.
                             </p>
                         </div>
                         <a class="btn four hideme left" href="/cv">

@@ -100,7 +100,7 @@
                                     <label for="project_year" id="to-title" class="h4">Project Year*</label>
                                     <div class="input-group">
                                         <div class="input-field">
-                                            <input type="text" id="project_year" name="project_year" class="form-input p4"/>
+                                            <input type="month" id="project_year" name="project_year" class="form-input p4"/>
                                             <div class="labels">
                                                 <p class="p5 placeholder">In what year did you complete this project? (Required)</p>
                                                 <p class="p5 error" data-error="project_year"></p>
@@ -166,7 +166,7 @@
                                                 <p class="p5 placeholder">Add a show-reel for your project (Optional)</p>
                                                 <p class="p5 error" data-error="project_show_reel"></p>
                                             </div>
-                                            <input type="file" id="project_show_reel" name="project_show_reel" class="form-input p4" accept="image/gif" onchange="document.getElementById('showReel-imagePreview').src = window.URL.createObjectURL(this.files[0])"/>
+                                            <input type="file" id="project_show_reel" name="project_show_reel" class="form-input p4" accept="image/gif, image/webp" onchange="document.getElementById('showReel-imagePreview').src = window.URL.createObjectURL(this.files[0])"/>
                                             <label for="project_show_reel" class="choose-img-label col-100">
                                                 <div class="project col-100">
                                                     <img id="showReel-imagePreview" alt="showReel image" />
@@ -201,6 +201,7 @@
                                             <option value="tests and feedback">tests and feedback</option>
                                             <option value="improvements/insights">improvements/insights</option>
                                             <option value="conclusion">conclusion</option>
+                                            <option value="url">url</option>
                                         </datalist>
                                     </div>
                                     <a class="p5 secondary add-process" id="tag-single">+ Add process step</a>

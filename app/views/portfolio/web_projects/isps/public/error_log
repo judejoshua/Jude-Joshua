@@ -15,3 +15,33 @@
 [05-Jul-2022 16:45:54 Africa/Lagos] PHP Notice:  Undefined index: name in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/public/includes/components/topNav.php on line 12
 [05-Jul-2022 16:45:54 Africa/Lagos] PHP Notice:  Undefined index: sector in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/public/includes/components/topNav.php on line 12
 [05-Jul-2022 16:45:54 Africa/Lagos] PHP Notice:  Undefined index: designation in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/public/includes/components/topNav.php on line 12
+[21-Nov-2022 07:13:23 America/New_York] PHP Warning:  Undefined variable $table_prefix in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/models/Project.model.php on line 503
+[21-Nov-2022 13:13:23 Africa/Lagos] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'judegniz_isps._projects_metrics' doesn't exist in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/models/Project.model.php on line 573
+[21-Nov-2022 13:13:28 Africa/Lagos] PHP Warning:  Undefined array key 0 in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/views/sector/budget/index.php on line 148
+[21-Nov-2022 13:13:28 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/views/sector/budget/index.php on line 148
+[21-Nov-2022 13:13:28 Africa/Lagos] PHP Warning:  Undefined array key 0 in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/views/sector/budget/index.php on line 156
+[21-Nov-2022 13:13:28 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/views/sector/budget/index.php on line 156
+[21-Nov-2022 13:13:28 Africa/Lagos] PHP Warning:  Undefined array key 0 in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/views/sector/budget/index.php on line 200
+[21-Nov-2022 13:13:28 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/views/sector/budget/index.php on line 200
+[21-Nov-2022 07:22:26 America/New_York] PHP Warning:  Undefined array key 0 in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/core/App.php on line 40
+[21-Nov-2022 13:33:16 Africa/Lagos] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'judegniz_isps.admin' doesn't exist in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/models/Db.model.php on line 33
+[21-Nov-2022 13:33:28 Africa/Lagos] PHP Warning:  PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'judegniz_isps.admin' doesn't exist in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/models/Db.model.php on line 33
+[21-Nov-2022 07:41:01 America/New_York] PHP Fatal error:  Uncaught Error: Class "Projects" not found in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/controllers/edit.contr.php:3
+Stack trace:
+#0 /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/core/App.php(31): require_once()
+#1 /home/judegniz/public_html/app/views/portfolio/web_projects/isps/public/index.php(5): App->__construct()
+#2 {main}
+  thrown in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/controllers/edit.contr.php on line 3
+[21-Nov-2022 07:41:06 America/New_York] PHP Fatal error:  Uncaught Error: Class "Projects" not found in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/controllers/edit.contr.php:3
+Stack trace:
+#0 /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/core/App.php(31): require_once()
+#1 /home/judegniz/public_html/app/views/portfolio/web_projects/isps/public/index.php(5): App->__construct()
+#2 {main}
+  thrown in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/controllers/edit.contr.php on line 3
+[21-Nov-2022 07:41:07 America/New_York] PHP Fatal error:  Uncaught Error: Class "Projects" not found in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/controllers/edit.contr.php:3
+Stack trace:
+#0 /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/core/App.php(31): require_once()
+#1 /home/judegniz/public_html/app/views/portfolio/web_projects/isps/public/index.php(5): App->__construct()
+#2 {main}
+  thrown in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/controllers/edit.contr.php on line 3
+[21-Nov-2022 07:49:12 America/New_York] PHP Warning:  Undefined array key 0 in /home/judegniz/public_html/app/views/portfolio/web_projects/isps/app/core/App.php on line 40

@@ -27,7 +27,7 @@
                                     <div class="col-100 case-study-header-details d-flex d-flex-row flex-justify-between">
                                         <div class="case-study-header col-50 d-flex d-flex-column hideme right">
                                             <div class="title-text">
-                                                <h1>'.$project_data['project_title'].'</h1>
+                                                <h2>'.$project_data['project_title'].'</h2>
                                                 <p class="p4">'.$project_data['project_brief'].'</p>
                                             </div>
                                             <div class="case-study-header-details-text d-flex d-flex-column flex-justify-start">
@@ -54,7 +54,7 @@
                                 {
                                     echo '
                                         <div class="sectioners show_reeler col-100 d-flex d-flex-row flex-align-start hideme left">
-                                            <img src="'.$projectData['project_img_directory'].$section_data.'" class="col-100" id="show_reeler" alt="showreel of project screens">
+                                            <img lsrc="'.$projectData['project_img_directory'].$section_data.'" class="col-100 lazies" loading="lazy" id="show_reeler" alt="showreel of project screens">
                                         </div>
                                     ';
                                 }else if($section == 'project_problem' || $section == 'project_solution')
@@ -87,7 +87,7 @@
                                                         echo'
                                                             <div>
                                                                 <div class="process-sectioners sectioners col-100 d-flex d-flex-column flex-align-end">';
-                                                                    if ($sub_title === $firstKey) {
+                                                                    if ($sub_title == $firstKey) {
                                                                         echo '
                                                                             <div class="text-divider hideme left" id="process-text-divider">
                                                                                 <h2>The '.$section_heading.':</h2>
@@ -96,16 +96,28 @@
                                                                     }
                                                                     echo' 
                                                                     <div class="text-divider sub-title">
-                                                                        <div class="left d-flex d-flex-row flex-justify-start flex-align-start">
-                                                                            <h3 class="hideme left">'.ucwords(str_replace("_", " ", $sub_title)).':</h3>';
-                                                                            if (!is_array($contents))
+                                                                        <div class="left d-flex d-flex-row flex-justify-start flex-align-start">';
+                                                                            if($sub_title == 'url')
                                                                             {
-                                                                                echo '<p class="p4 hideme right">'.$contents.'</p>';
+                                                                                echo '';
                                                                             }else{
-                                                                                if (array_key_exists("summary", $contents))
+                                                                                echo'
+                                                                                    <h3 class="hideme left">'.ucwords(str_replace("_", " ", $sub_title)).':</h3>
+                                                                                ';
+                                                                            }
+                                                                            
+                                                                            if($sub_title == 'url'){
+                                                                                echo '<a href="'.$contents['summary'].'" target="_blank">View this project</a>';
+                                                                            }else{
+                                                                                if (!is_array($contents))
                                                                                 {
-                                                                                    echo '<p class="p4 hideme right">'.$contents['summary'].'</p>';
-                                                                                    // unset($contents['summary']);
+                                                                                    echo '<p class="p4 hideme right">'.$contents.'</p>';
+                                                                                }else{
+                                                                                    if (array_key_exists("summary", $contents))
+                                                                                    {
+                                                                                        echo '<p class="p4 hideme right">'.$contents['summary'].'</p>';
+                                                                                        // unset($contents['summary']);
+                                                                                    }
                                                                                 }
                                                                             }
                                                                         echo'
@@ -123,7 +135,7 @@
                                                                                 {
                                                                                     echo'
                                                                                         <div class="project hideme">
-                                                                                            <img src="'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
+                                                                                            <img class="lazies" loading="lazy" lsrc="'.$projectData['project_img_directory'].$image.'" alt="'.ucwords(str_replace("_", " ", $images_alt_title)).'">
                                                                                     ';
                                                                                     if(!empty($contents))
                                                                                     {
@@ -181,5 +193,19 @@
             </div>
         </div>
     </body>
-
+    <script>
+        $(window).on("load", function () {
+            $.each($('.lazies'), function(){
+                var this_image = this;
+                var lsrc = $(this_image).attr('lsrc') || '' ;
+                
+                if(lsrc.length > 0){
+                   var img = new Image();
+                   img.src = lsrc;
+                   
+                   this_image.src = img.src;
+                }
+            })
+        });
+    </script>
     </html>

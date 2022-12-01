@@ -9,6 +9,7 @@ footer {
 .cursor {
     pointer-events: none;
     position: fixed;
+    top: -8%;
     padding: 8px;
     color: var(--secondary);
     background-color: var(--neutral);
@@ -60,6 +61,10 @@ a:hover~.cursor {
 
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .d-flex-wrap {
@@ -314,14 +319,6 @@ section {
     background-color: var(--error);
 }
 
-.d-flex {
-    display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
 .modal {
     position: fixed;
     z-index: 10000;
@@ -452,4 +449,17 @@ iframe {
     opacity: 1;
     right: 0;
     left: unset;
+}
+
+.lazies, .lazy-image{
+    animation: lazy-load 1.5s infinite;
+}
+
+@keyframes lazy-load{
+    from{
+        background-color: var(--accent);
+    }
+    to{
+        background-color: var(--placeholders);
+    }
 }

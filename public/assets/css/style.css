@@ -58,6 +58,7 @@ body {
 
 body {
     overflow: hidden;
+    /*overflow-y: scroll;*/
 }
 
 .no-scroll {

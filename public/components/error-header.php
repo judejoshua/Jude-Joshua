@@ -38,7 +38,6 @@
 
         <script>
             $(window).on("load", function() {
-                // Animate loader off screen
                 $(".preloader").fadeOut(2000);
                 $("body").css("overflow-y", "scroll")
                 $(".wrapper, footer").animate({

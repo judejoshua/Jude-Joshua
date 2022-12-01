@@ -34,15 +34,16 @@ body#resume #mobile-div-about-grab {
     padding-top: 192px;
     padding-bottom: 120px;
     gap: 80px;
+    overflow: hidden;
 }
 
 .resume-detailers {
-    gap: 48px;
-    width: 60%;
+    gap: 24px;
+    width: 66%;
 }
 
 #lefter-detailers {
-    width: 40%;
+    width: 34%;
 }
 
 .title {
@@ -95,7 +96,7 @@ body#resume #mobile-div-about-grab {
 .section {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 44px;
     /* margin-top: 8px; */
 }
 
@@ -123,25 +124,10 @@ ol {
 .section .title-text ol .p4 {
     font-weight: 400;
 }
-
-span#spacer {
-    display: inline-block;
-    width: 18px;
-    margin: 0 12px;
-    top: -6px;
+.experience-section {
+    width: 100% !important;
+    gap: 16px !important;
 }
-
-span#spacer::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    background: var(--secondary);
-    height: 1.5px;
-    border-radius: 16px;
-    top: 0;
-    left: 0;
-}
-
 .dater {
     display: inline-block;
     margin: 4px 0;
@@ -167,4 +153,25 @@ span#spacer::after {
 
 .title .title-text {
     gap: 0;
+}
+
+a.save.dwnld-btn {
+    position: fixed;
+    bottom: 9%;
+    right: 2%;
+    left: unset;
+    top: unset;
+    background: var(--secondary);
+    color: var(--neutral);
+    border-radius: 50%;
+    padding: 20px 17px 18px;
+    z-index: 10;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: -2px 2px 19px 5px rgb(0 0 0 / 30%);
+}
+
+a.save.dwnld-btn:hover {
+    background: var(--placeholders);
+    color: var(--ink);
 }

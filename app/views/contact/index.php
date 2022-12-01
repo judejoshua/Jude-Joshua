@@ -18,7 +18,7 @@
             <article id="body">
                 <div class="contact-info">
                     <p class="p4 hideme left">
-                        Let's talk about your project or any other questions that you have. You can quickly fill the form and I will respond as soon as possible. Otherwise send me an <a href="mailto:hello@judejoshua.me">email</a> or <a href="tel:+2349041134926">call</a> me.
+                        Let's talk about your project or any other questions that you have. You can quickly fill the form and I will respond as soon as possible. Otherwise send me an <a href="mailto:hello@judejoshua.me">email</a> or <a href="tel:+2349041134407">call</a> me.
                     </p>
                 </div>
                 <form class="hideme right">

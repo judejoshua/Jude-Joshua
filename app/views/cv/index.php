@@ -10,226 +10,230 @@
     <body id="resume">
         <div class="wrapper" id="top">
             <article id="body">
-                <section id="resume-begins" class="d-flex d-flex-row flex-justify-between">
-                    <div class="left-text-divider" id="lefter-detailers">
-                        <div id="div-about-grab"></div>
-                        <div class="tools title-text">
-                            <h3>Traits</h3>
-                            <div id="liner"></div>
-                            <ul class="section">
-                                <div class="title-text section">
-                                    <li>
-                                        <p class="p4">Problem-Solving Skills<br/><span>Empathy, resourcefulness, adaptability, story telling, time management</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Analytical Skills<br/><span>Analytical thinking, critical thinking</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Communication Skills<br/><span>Conflict management, openness to criticism, team management and organization, team work and collaboration</span></p>
-                                    </li>
-                                </div>
-                            </ul>
+                <section id="resume-begins" class="d-flex d-flex-column flex-justify-between">
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider title" id="lefter-detailers">
+                            <div class="title-text hideme left">
+                                <h2>Jude Joshua</h2>
+                                <p class="p4">Product Designer</p>
+                            </div>
                         </div>
-                        <div class="tools title-text">
-                            <h3>Tools</h3>
-                            <div id="liner"></div>
-                            <ul class="section">
-                                <div class="title-text section">
-                                    <li>
-                                        <p class="p4">Figma<br/><span>Design, prototyping, wireframes, motion design, case studies, design systems, user research, information architecture, user flow, user persona, empathy maps, style guide generation, competitor analysis</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Google & Microsoft forms<br/><span>User surveys, user research</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Zeplin<br/><span>Developer collaboration & hand-offs, style guide generation</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Protopie<br/><span>Advanced prototyping, wireframing, user testing, usability testing.</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Adobe XD<br/><span>Basic designs, prototyping, wireframing</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Trello<br/><span>Task management, team collaboration, time management</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Slack<br/><span>Task management, team collaboration</span></p>
-                                    </li>
-                                    <li>
-                                        <p class="p4">Visual Studio Code<br/><span>Php, Jquery/Javascript, Html/Css, Vue.js, MySql</span></p>
-                                    </li>
-                                </div>
-                            </ul>
+                        <div class="d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
+                                <p class="p4 hideme right">Uyo, Nigeria</p>
+                                <p class="p4 hideme right"><a href="tel:+234-904-113-4407">+234-904-113-4407</a></p>
+                                <p class="p4 hideme right"><a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a></p>
+                                <p class="p4 hideme right"><a href="https://linkedin.com/in/judejoshua">https://linkedin.com/in/judejoshua</a></p>
+                            </div>
                         </div>
-                        <div class="right-text-divider">
-                            <div class="education title-text">
-                                <h3>Education</h3>
+                    </div>
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider" id="lefter-detailers">
+                            <div class="title-text hideme left">
                                 <div id="liner"></div>
+                                <h3>Summary</h3>
+                            </div>
+                        </div>
+                        <div class="d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
+                                <p class="p4 hideme right">Resourceful product designer demonstrating creative and logical skills with over five years of professional experience, amplifying 20+ user experiences through beautiful, readable, and simple user interfaces. Eager to contribute to team success through hard work, detailed attention to work and excellent collaboration skills. Clear understanding of User Experience(UX) and User Interface(UI) design. Motivated to learn, grow and excel in product design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider" id="lefter-detailers">
+                            <div class="title-text hideme left">
+                                <div id="liner"></div>
+                                <h3>Experience</h3>
+                            </div>
+                        </div>
+                        <div class="d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
                                 <div class="section">
-                                    <div class="education-section title-text">
-                                        <p class="p4">Bachelor of Engineering (BEng) in Computer Engineering<br/><span>Caritas University, Enugu, Nigeria</span><br/><span>September 2013 - August 2018</span></p>
+                                    <div class="experience-section title-text hideme right">
+                                        <p class="p4">UI/UX Design Mentor (Remote) / <span>DesignLab</span><span >NOVEMBER 2022 - PRESENT, (REMOTE)</span></p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Inspecting visual mockups and delivering critiques on design tasks submitted weekly to help students improve their design skills.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Providing support and motivation to overwhelmed students, ensuring that they complete their assigned tasks and meet up with course deadlines.</p>
+                                            </li>
+                                        </ol>
                                     </div>
-                                    <div class="education-section title-text">
-                                        <p class="p4">Advanced Diploma in Computer Engineering and maintenance<br/><span>IBML Computer Institute, Uyo, Nigeria</span><br/><span>2012 - August 2013</span></p>
+                                    <div class="experience-section title-text hideme right">
+                                        <p class="p4">Lead Product Designer (Hybrid Remote) / <span>FirstMedtrade Africa</span><span >DECEMBER 2020 - PRESENT, LAGOS, NIGERIA</span></p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Coordinated with other members of the design team to conduct one-on-one interviews and user surveys with 40 existing customers to understand the challenges faced with placing orders on the e-commerce site.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Designed and maintained a robust component library and design system to ensure 100% consistency in all aspects of the product UI.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Boosted signups by 20% by improving the UI and web interface for a customer-facing e-commerce site with 10,000+ visitors per month.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Presented cross-functional teams and senior leadership with new product design concepts.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Leveraged usability tests with 25 beta users to ensure that the new UI was accessible, simple, and usable — allowing easy flow and completion of tasks.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Actively sought opportunities to expand my experience and enhance my skills, accepting challenging projects and working hard to meet company goals and deadlines.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="experience-section title-text hideme right">
+                                        <p class="p4">Web Administrator (Hybrid Remote) / <span>FirstMedtrade Africa</span><span >DECEMBER 2017 - NOVEMBER 2020, UYO, NIGERIA</span></p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Facilitated the design, development, and maintenance of the beta version of the website, providing telemedicine services to 1,000+ users.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Sent out 15 different surveys to get user feedback regarding the platform and reported the challenges faced to the development team.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Developed and managed critical components of the e-commerce and ambulance arm of the website for 200+ buyers, 400 retail vendors, and 100 manufacturers from scratch using HTML, CSS, JavaScript, and PHP.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="experience-section title-text hideme right">
+                                        <p class="p4">Web Design Intern / <span>Ministry of Science and Technology</span><span>MAY 2017 - OCTOBER 2017, AKWA IBOM, NIGERIA</span></p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Handled accessibility and usability of the website's UX through reducing the load time by 12%, minimizing navigation options and removing unimportant parts of the user flow.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Achieved digitization of departmental information management by 40% via provision of sitemaps, information architectures, wireframes, and prototypes for 8 different projects.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Mentored 10 members of senior staff in web UI design and graphics design during a 3-month training program.</p>
+                                            </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex d-flex-column flex-align-center resume-detailers">
-                        <div id="mobile-div-about-grab"></div>
-                        <div class="title d-flex d-flex-row">
-                            <div class="title-text">
-                                <h1>Jude Joshua</h1>
-                                <p class="p4">Product Designer</p>
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider" id="lefter-detailers">
+                            <div class="title-text hideme left">
+                                <div id="liner"></div>
+                                <h3>Projects</h3>
                             </div>
                         </div>
-                        <div class="divisor"></div>
-                        <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
-                            <p class="p4"><a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a></p>
-                            <p class="p4"><a href="tel:+234-904-113-4407">+234-904-113-4407</a></p>
-                            <p class="p4"><a href="https://linkedin.com/in/judejoshua">https://linkedin.com/in/judejoshua</a></p>
-                        </div>
-                        <div class="divisor"></div>
-                        <div class="resume-body d-flex d-flex-column">
-                            <div class="left-text-divider">
-                                <div class="summary title-text">
-                                    <h3>Summary</h3>
-                                    <div id="liner"></div>
-                                    <p class="p4">Detailed and innovative Product Designer with three years of experience in UI/UX Design and seven years of experience in Web design and development. Leveraging my expertise in user research, design systems and UX writing to design usable interactions between the digital platforms and end-users. Highly self-motivated, design aesthetics expert with tremendous time management techniques to deliver on tight deadlines. Possessing excellent interpersonal skills. A strong team builder and a natural leader.</p>
-                                </div>
-                                <div class="experience title-text">
-                                    <h3>Work Experience</h3>
-                                    <div id="liner"></div>
-                                    <div class="section">
-                                        <div class="experience-section title-text">
-                                            <p class="p4">Design Lead <span id="spacer"></span><span>Decemeber 2020 - Present</span><br/><span >First Medtrade Africa</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Carried out user research and interviews to find out why end-users preferred placing orders via WhatsApp chats to buying from the online medical store.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Worked with the development team to design an intuitive and optimized version of the medical store for users to shop easily resulting in a 20% increase in user purchases online.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Carried out usability tests to ensure that the new design met the desired goal of the users - to shop easily.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Worked with the QA team to formulate the product strategy to ensure that the vision of the product was realized when used in the market.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="experience-section title-text">
-                                            <p class="p4">Web Developer/Administrator <span id="spacer"></span><span>December 2017 - November 2020</span><br/><span>First Medtrade Africa</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Designed, developed, and maintained the beta version of the website for use by over 500+ users.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Supervised the contract development team to ensure that subsequent designs were implemented with a bug-free, and seamless system-user interaction.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Communicated the challenges end-users faced while using the platform to the development team.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="experience-section title-text">
-                                            <p class="p4">Web Design Intern <span id="spacer"></span><span>May 2017 - October 2017</span><br/><span>Akwa Ibom Ministry of Science and Technology</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Worked with the development team to provide ideas and updates to the ministry’s website and ensured that it provided accessibility and usability to its users.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Designed new sketches and wireframes for new projects that were meant to move some departments of the ministry from a paper-based database management system to an online database management system.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Worked with the training team to prepare and organize a 3-months internship program for 1000 tech newbies.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
+                        <div class="d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
+                                <div class="section">
+                                    <div class="experience-section title-text hideme right">
+                                        <p class="p4">Product Designer / <span>The Victoria Nwaeke Cancer Foundation</span><span>SEPTEMBER 2021 – SEPTEMBER 2022, (REMOTE)</span></p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Collaborated with a cross-functional 5-man team to curate a responsive portfolio website for receiving donations and promoting planned cancer-related events.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Researched and analyzed 6 competitors to understand the market needs of the client and explore new ways to stay ahead of competition</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Analyzed over 50+ raw data gotten from user research and interviews to reiterate and make design changes for a better user experience.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Spearheaded weekly meetings with product engineer and product manager to communicate design needs and ensure the design was implemented to fit both user and client preferences.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="experience-section title-text hideme right">
+                                        <p class="p4">UI/UX Designer / <span>Thrive.NG</span><span>AUGUST 2021 – OCTOBER 2021, (REMOTE)</span></p>
+                                        <ol>
+                                            <li>
+                                                <p class="p4">Volunteered to design a responsive SaaS user interface in addition to providing prototypes for usability testing, component style guides and a design system.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Charted analysis of 3 big competitors to determine areas of less competitive strength and discover ways to use competition weaknesses to client’s advantage.</p>
+                                            </li>
+                                            <li>
+                                                <p class="p4">Executed one-on-one interviews with 10 local vendors to deeply analyze and understand challenges with growing online sales and see how Thrive could help solve these challenges.</p>
+                                            </li>
+                                        </ol>
                                     </div>
                                 </div>
-                                <div class="projects title-text">
-                                    <h3>Projects</h3>
-                                    <div id="liner"></div>
-                                    <div class="section">
-                                        <div class="projects-section title-text">
-                                            <p class="p4">UI/UX Developer <span id="spacer"></span><span>January 2022 - March 2022</span><br/><span>Felipe Gusta</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Converted the design of a Reiki-timer platform to a usable and functional code prototype.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Worked to ensure that the mobile version of the design was responsive, accessible and usable by +100k users of the platform.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Worked to ensure that the user experience was seamless and the user interface was not confusing or overwhelming for the users.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text">
-                                            <p class="p4">Visual/UI Designer <span id="spacer"></span><span>November 2021</span><br/><span>Olamide Damilare for SoliumRise</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Worked to provide sketches & wireframes, prototypes and style guides for the development of their DEX web app.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Created a design system to use in designing the look and feel of the responsive web app with daylight and night themes.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text">
-                                            <p class="p4">Product Designer <span id="spacer"></span><span>September 2021 - November 2021</span><br/><span>The Victoria Nwaeke Cancer Foundation</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Worked to provide sketches and high-fidelity mock-ups of the landing page design.</p>
-                                                </li>
-                                                <li>
-                                                    <p class="p4">Created style guides and prototypes from the high-fidelity mock-ups for handoff to the development team.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text">
-                                            <p class="p4">UI/UX Designer <span id="spacer"></span><span>August 2021 - September 2021</span><br/><span>Ugochukwu Kizito for Thrive.NG</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Worked to design and develop a responsive SaaS (services as a software) landing web platform for the client, in addition to providing style guides, design system and prototypes for usability testing.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text">
-                                            <p class="p4">Web Designer/Developer <span id="spacer"></span><span>December 2020 - January 2021</span><br/><span>Club and Country</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Designed and developed a responsive landing page to provide a way for 100+ users to ask questions and get feedback about the client’s services.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text" id="divisor">
-                                            <p class="p4">Web Designer/Developer <span id="spacer"></span><span>December 2019 - January 2020</span><br/><span>CypressEnergy</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Designed and developed a responsive SaaS (services as a software) landing webpage showcasing the company's services and a means for users to reach out and request these services.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text">
-                                            <p class="p4">Web Designer/Developer <span id="spacer"></span><span>February 2019 - April 2019</span><br/><span>Nweke Cynthia</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Worked to design and develop a simple clinic management system for a university clinic with dashboard areas for 3 clinic doctors to manage their schedule, 10+ clinic admin staff, and over 1.5M+ students to book clinic appointments.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div class="projects-section title-text">
-                                            <p class="p4">Web Designer/Developer <span id="spacer"></span><span>July 2018 - August 2018</span><br/><span>Ugochukwu Kizito</span></p>
-                                            <ol>
-                                                <li>
-                                                    <p class="p4">Designed and developed an MVP of a vehicle license and offence booking system providing road officials with a way to validate driving licenses and car owners with a way to update their driving licenses from the comfort of digital devices.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider" id="lefter-detailers">
+                            <div class="title-text hideme left">
+                                <div id="liner"></div>
+                                <h3>Traits</h3>
+                            </div>
+                        </div>
+                        <div class="tools d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
+                                <div class="title-text section">
+                                    <li>
+                                        <p class="p4 hideme right"><b>Problem Solver</b><br/><span><i>Empathy, resourcefulness, openness to change, storytelling, time allocation</i></span></p>
+                                    </li>
+                                    <li>
+                                        <p class="p4 hideme right"><b>Analytical and Deep thinker</b><br/><span><i>Brainstorming, creative thinking, research, innovation.</i></span></p>
+                                    </li>
+                                    <li>
+                                        <p class="p4 hideme right"><b>Collaborator</b><br/><span><i>Conflict management, openness to criticism, team management, communication.</i></span></p>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider" id="lefter-detailers">
+                            <div class="title-text hideme left">
+                                <div id="liner"></div>
+                                <h3>Tools</h3>
+                            </div>
+                        </div>
+                        <div class="tools d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
+                                <div class="title-text section">
+                                        <li>
+                                            <p class="p4 hideme right"><b>Figma</b><br/><span><i>Design, prototyping, wireframes, case studies, design systems, user research, information architecture, user flow, user persona, empathy maps, style guide generation, competitor analysis</i></span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4 hideme right"><b>Protopie</b><br/><span><i>Advanced prototyping, wireframing, user testing, usability testing</i></span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4 hideme right"><b>Google, Microsoft forms</b><br/><span><i>User surveys, user research</i></span></p>
+                                        </li>
+                                        <li>
+                                            <p class="p4 hideme right"><b>Trello, Slack</b><br/><span><i>Task management, team collaboration</i></span></p>
+                                        </li>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex d-flex-row flex-justify-between col-100">
+                        <div class="left-text-divider" id="lefter-detailers">
+                            <div class="title-text hideme left">
+                                <div id="liner"></div>
+                                <h3>Education</h3>
+                            </div>
+                        </div>
+                        <div class="education d-flex d-flex-column flex-align-center resume-detailers">
+                            <div class="divisor hideme right"></div>
+                            <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
+                                <div class="section">
+                                    <div class="experience-section education-section title-text">
+                                        <p class="p4 hideme right">B.Engr Computer Engineering / <span>Caritas University</span><span >SEPTEMBER 2013 - AUGUST 2018</span></p>
+                                        <ol class="hideme right">
+                                            <li>
+                                                <p class="p4">Designed and developed a web based clinic management system from scratch with HTML, CSS, JavaScript and PHP to enable students to book appointments with the school’s clinic doctors.</p>
+                                            </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -242,6 +246,10 @@
             <i class="las la-check"></i>
             <p class="p4">Your download will begin shortly.</p>
         </div>
+        
+        <a class="save dwnld-btn" href="/public/assets/files/Jude-Joshua-Resume.pdf" download="Jude-Joshua-Resume.pdf">
+            <p id="text" class="p6"><span>Save</span></p>
+        </a>
 
         <?php
             include './public/components/footer.php';

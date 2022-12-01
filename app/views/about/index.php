@@ -18,7 +18,7 @@
                         <p class="p4 hideme right">
                             I am currently working as the lead product designer with the team at First Medtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians.<br/><br/>
                             Outside of this, I focus on creating intuitive and user-friendly experiences for small and medium-sized businesses. My goal is to create minimal, accessible and useful designs that help businesses relate to their target audience and provide them with the right solutions.<br/><br/>
-                            A favourite thing about myself would be that I love to have a good laugh. In my spare time, you’ll find me writing, gaming or spending time with my loved ones. I have a knack for always trying to make things better for others, so you might also find me tinkering with solutions for people’s lifestyle problems either through talking, listening or coding.
+                            A favourite thing about myself would be that I love to have a good laugh. I like to write, play games, spend alone time reading or be around my loved ones in my spare time. Whether it's through talking, listening, or coaching, I always try to make experiences better for others.
                         </p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                             <h2 class="hideme left">My Journey</h2>
                             <div id="liner"></div>
                             <p class="p4 hideme left">
-                                I began my tech journey in 2013 after I concluded a six months training in Microsoft Office Tools and Web design terminologies. Here, I learned about HTML, CSS and JavaScript. From there, I picked up little web design tests and tried replicating some designs I found on the web to hone my skills. In 2017, I interned at the Ministry of Science and Technology in Akwa Ibom state, Nigeria as a Web Designer. Having the ability to quickly learn and understand most of their existing systems, I was added to a team that was responsible for planning and carrying out a training program for 1000+ tech newbies.<br/><br/>My expertise allows me to work with business owners, startups and individuals to help them build their solutions with a stress-free experience for their users.
+                                My tech journey began in 2013 after completing a six-month training course on Microsoft Office Tools and web design terminology. During my time there, I learned about HTML, CSS, and JavaScript. After that, I became interested in web design and began taking more tests and replicating some designs from the web. <br/>In 2017, I interned as a Web Designer at the Ministry of Science and Technology in Akwa Ibom state, Nigeria. My ability to quickly learn their existing systems and stay current with new technologies led me to be placed in charge of a team responsible for executing a three-month training program for 10 senior staff and 50 newbies.<br/><br/>My expertise allows me to work with business owners, startups and individuals to help them build their solutions with a stress-free experience for their users.
                             </p>
                         </div>
                         <div id="div-about-grab" class="hideme right"></div>
@@ -52,7 +52,7 @@
                                 <span class="p1">Thrive.NIG</span>
                                 <span class="p1">First Medtrade Africa</span>
                                 <span class="p1">SoliumRise</span>
-                                <span class="p1">Felipe Gusta</span>
+                                <span class="p1">IRELP</span>
                                 <span class="p1">TVNR Cancer Foundation</span>
                             </div>
                             <div class="deliverables-list d-flex d-flex-row">
@@ -65,10 +65,10 @@
                         </div>
                     </div>
                     <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
-                        <a class="btn four hideme left" href="/cv">
+                        <a class="btn lng hideme left" href="/portfolio">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
-                                <p id="text"><span>View</span> my CV</p>
+                                <p id="text"><span>See</span> my past projects</p>
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </a>
@@ -126,7 +126,7 @@
                             <div class="client hideme left">
                                 <div class="client-review">
                                     <p class="p1">“</p>
-                                    <p class="p4">Your words coupled with the designs and interactions were perfect for my idea. Indeed, you were able to prioritize user experiences and gave the desired results.</p>
+                                    <p class="p4">Your words coupled with the designs and interactions were perfect for my idea. Indeed, you are able to prioritize user experiences and give the desired results.</p>
                                 </div>
                                 <div class="client-name">
                                     <span class="client-name-head"></span>

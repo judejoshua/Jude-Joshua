@@ -778,7 +778,7 @@
     #resume-begins {
         padding: 128px 48px 42px !important;
         overflow: hidden;
-        gap: 4% !important;
+        gap: 44px !important;
     }
     .resume-detailers {
         width: 56%;
@@ -1149,12 +1149,17 @@
     }
     #resume-begins {
         padding: 128px 32px 72px !important;
-        flex-direction: column-reverse;
+        /* flex-direction: column; */
+        gap: 40px !important;
     }
+    #resume-begins .d-flex.d-flex-row.col-100 {
+    flex-direction: column;
+    gap: 16px;
+}
     .resume-detailers,
     #lefter-detailers {
         width: 100%;
-        gap: 32px;
+        gap: 16px;
     }
     .left-text-divider,
     .right-text-divider {

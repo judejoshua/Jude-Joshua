@@ -46,6 +46,15 @@
         $general_project_data = array_slice($_POST, 1, 9);
         $project_process = array_slice($_POST, 10);
 
+        unset($project_process['process_filled']);
+        unset($project_process['fieldset_title']);
+        unset($general_project_data['project_duration']);
+        unset($general_project_data['project_year']);
+        unset($general_project_data['project_problem_statement']);
+        unset($general_project_data['project_problem_statement_title']);
+        unset($general_project_data['project_solution_title']);
+        unset($general_project_data['project_solution']);
+        
         foreach ($general_project_data as $key => $value) {
             if ($key == 'project_title' || $key == 'project_brief' || $key == 'project_duration' || $key == 'project_tools' || $key = 'project_year') {
                 if ($value == '') {
@@ -57,14 +66,6 @@
             $general_project_data[$key] = nl2br($value);
         }
 
-        unset($project_process['process_filled']);
-        unset($project_process['fieldset_title']);
-        unset($general_project_data['project_duration']);
-        unset($general_project_data['project_year']);
-        unset($general_project_data['project_problem_statement']);
-        unset($general_project_data['project_problem_statement_title']);
-        unset($general_project_data['project_solution_title']);
-        unset($general_project_data['project_solution']);
 
         //add the project problem and the solution
         $general_project_data['project_problem'] = array(

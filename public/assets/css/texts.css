@@ -179,3 +179,8 @@ p a::after {
     font-family: "Evolventa";
     font-weight: 400;
 }
+
+.experience-section p span:last-child{
+    font-size: 14px;
+    display: block;
+}

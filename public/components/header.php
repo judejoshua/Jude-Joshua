@@ -63,13 +63,7 @@
                 $("body").css("overflow-y", "scroll");
                 $("nav").addClass("ready");
                 $(".header").addClass("contents");
-                // $("nav").animate({
-                //     "opacity": "1",
-                //     "top" : "0"
-                // }, 1000);
-                //  $(".wrapper, footer, .cursor").animate({
-                //     "opacity": "1",
-                // }, 1000);
+                
             });
         </script>
 
@@ -78,8 +72,8 @@
         ?>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
-        <script>
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
+        <script defer>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

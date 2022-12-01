@@ -22,7 +22,7 @@ class App{
                 $this->controller = 'errors';
                 $this->method = 'not_found';
                 $option = $this->controller . '.contr.php';
-                unset($url[0]);
+                // unset($url[0]);
             }
         }else{
             $option = $this->controller . '.contr.php';

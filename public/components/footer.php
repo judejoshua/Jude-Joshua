@@ -12,7 +12,7 @@
                 <!-- <li><a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank">Behance</a></li> -->
                 <li><a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank">Twitter</a></li>
                 <li><a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank">Dribbble</a></li>
-                <li><a rel="nofollow" href="https://www.youtube.com/channel/UCckcpzjMMEak8ef4AIjQYDg/" target="_blank">Youtube</a></li>
+                <li><a rel="nofollow" href="https://www.youtube.com/@thejudejoshua" target="_blank">Youtube</a></li>
             </ul>
         </li>
     </ul>
@@ -23,7 +23,7 @@
             if(explode('/', $url)[3] == 'cv')
             {
                 echo '
-                   <a class="btn four dwnld-btn" href="/public/assets/files/Jude--Joshua--resume.pdf" download="Resume||Jude-Joshua.pdf">
+                   <a class="btn four dwnld-btn" href="/public/assets/files/Jude-Joshua-resume.pdf" download="Resume||Jude-Joshua.pdf">
                         <div class="btn_bg"></div>
                         <div class="btn_cont">
                             <p id="text"><span>Save</span> my cv</p>
@@ -45,7 +45,7 @@
                 ';
             }else{
                 echo '
-                    <p class="p4">If you are satisfied with what you\'ve seen and would love to discuss your project with me, <a href="/contact">send me a message</a> or <a href="/about">click here</a> to know about more my design journey.</p>
+                    <p class="p4">If you are satisfied with what you\'ve seen and would love to discuss your project with me, <a href="/contact">send me a message</a> or <a href="/about">click here</a> to know more about my design journey.</p>
                 ';
             }
         ?>
@@ -59,7 +59,7 @@
             <!-- <a rel="nofollow" href="https://www.behance.net/jude_joshua" target="_blank" class="Behance">Behance</a> -->
             <a rel="nofollow" href="https://twitter.com/_judejoshua" target="_blank" class="Twitter">Twitter</a>
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
-            <a rel="nofollow" href="https://www.youtube.com/channel/UCckcpzjMMEak8ef4AIjQYDg/" target="_blank" class="Youtube">Youtube</a>
+            <a rel="nofollow" href="https://www.youtube.com/@thejudejoshua" target="_blank" class="Youtube">Youtube</a>
         </div>
         <a class="to-top hideme right" href="#top">
             <p class="p5">SCROLL UP</p>

@@ -56,7 +56,7 @@ $(document).ready(function() {
             });
         });
     //=================================================================================================
-    //                           N A V I G A T I O N
+    //                           S L I D E  I N  A N D  O U T
     //=================================================================================================
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -87,6 +87,9 @@ $(document).ready(function() {
             }
         });
     }).scroll();
+    //=================================================================================================
+    //                           N A V I G A T I O N
+    //=================================================================================================
     $('a[href^="#"], a[href^="/#"]').click(function() {
         let target = $(this).attr('href');
         if (target.length) {
@@ -104,7 +107,7 @@ $(document).ready(function() {
         setTimeout(() => {
             $(".links.preloader").fadeOut("slow");
             $('.links.preloader').removeClass('recha').addClass('hidden');
-        }, 5000);
+        }, 10000);
 
     });
     $('.mobile-nav-opener').click(function() {

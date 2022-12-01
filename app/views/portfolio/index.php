@@ -11,7 +11,7 @@
         <div class="wrapper" id="top">
             <header class="landing" id="home">
                 <div class="text-divider hideme left">
-                    <h1>Design solutions, for </br><span id="highlight">Businesses</span> and <span id="highlight">Brands</span>.</h1>
+                    <h1><span id="highlight">Beautifully</span> crafted solutions, <br>for <span id="highlight">Businesses</span> and <span id="highlight">Brands</span>.</h1>
                     <!-- <div id="liner"></div> -->
                     <!-- <p class="p4">
                         The goal of every digital project is to provide the best solution in a code and user-friendly manner. Here are ideas that I worked on, turning the goals into code-ready and user-friendly digital products with a stress-free user flow.
@@ -21,8 +21,8 @@
                     <span class="h5">Filter by:</span>
                     <div>
                         <span class="p5 secondary" id="tag-single" data-show="UI/UX design">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual designs <span id="project-counter"><?= $data['ui'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="Web UI design, Web development">Web Development Projects <span id="project-counter"><?= $data['web'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual (UI) Designs <span id="project-counter"><?= $data['ui'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="Web UI design, Web development">Web Design Projects <span id="project-counter"><?= $data['web'] ?></span></span>
                     </diV>
                 </div>
             </header>
@@ -47,23 +47,33 @@
                                             foreach ($column as $project)
                                             {
                                                 $project_data = json_decode($project['project_data'], true);
+                                                
+                                                if($project['project_type'] == 'UI/UX design'){
+                                                    $show = 'case study';
+                                                }else if($project['project_type'] == 'UI(Visual) design'){
+                                                    $show = 'design process';
+                                                }else{
+                                                    $show = 'project';
+                                                }
                                                
                                                 echo '
                                                     <a id="projector" class="projector hideme" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
-                                                            <img class="projector-image" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
+                                                            <img class="projector-image lazy-image" loading="lazy" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">
                                                                 <div class="caption-text">
                                                                     <div class="d-flex d-flex-row flex-justify-between flex-align-start">
-                                                                        <div>
+                                                                        <div class="before-year">
                                                                             <h5 class="p4">'.$project_data['project_title'].'</h5>
                                                                             <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                         </div>
-                                                                        <span class="p5">'.$project['project_year'].'</span>
+                                                                        <span class="p5 year">'.explode(' ', $project['project_year'])[1].'</span>
                                                                     </div>
-                                                                    <span class="p5 view">View case study</span>
+                                                                    <div class="d-flex d-flex-row flex-justify-between flex-align-start">
+                                                                        <span class="p5 view">View '.$show.'</span>
+                                                                        <i class="las la-arrow-right"></i>
+                                                                    </div>
                                                                 </div>
-                                                                <i class="las la-arrow-right"></i>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -118,22 +128,19 @@
             }
             
             $(".projects-holder .row").empty();
-            
-            //shuffle showArray
-            function shuffle(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    let j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-            }
-            shuffle(showArray);
-
 
             jQuery.each(showArray, function(index, project) {
                 
                 project_data_array = JSON.parse(project.project_data);
                 
-                $(".projects-holder .row").append('<a id="projector" class="projector hideme" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img class="projector-image" src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><div class="d-flex d-flex-row flex-justify-between flex-align-start"><div><h5 class="p4">'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span></div><span class="p5">'+ project.project_year +'</span></div><span class="p5 view">View case study</span></div><i class="las la-arrow-right"></i></div></div></a>')
+                if(project.project_type == 'UI/UX design'){
+                    show = 'case study';
+                }else if(project.project_type == 'UI(Visual) design'){
+                    show = 'design process';
+                }else{
+                    show = 'project';
+                }
+                $(".projects-holder .row").append('<a id="projector" class="projector hideme showme" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img class="projector-image lazy-image" loading="lazy" src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><div class="d-flex d-flex-row flex-justify-between flex-align-start"><div class="before-year"><h5 class="p4">'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span></div><span class="p5 year">'+ project.project_year.split(" ")[1] +'</span></div><div class="d-flex d-flex-row flex-justify-between flex-align-start"><span class="p5 view">View '+ show +'</span><i class="las la-arrow-right"></i></div></div></div></div></a>')
             });
 
 
