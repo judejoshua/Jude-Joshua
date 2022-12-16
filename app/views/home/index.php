@@ -17,7 +17,7 @@
                             <h1 class="">I help <span id="highlight">brands</span> and <span id="highlight">businesses</span> <br/>connect with their <span id="highlight">target</span> users using <span id="highlight">product</span> design.</h1>
                             <!-- <h1 class="hideme right">I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1> -->
                         </div>
-                        <a class="btn" href="#case-study">
+                        <a class="btn" href="#case-study-section">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>See</span> how</p>
