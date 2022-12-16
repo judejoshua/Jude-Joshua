@@ -29,8 +29,8 @@
                         <h2 class="hideme right">Outside of my 9-5.</h2>
                         <div id="liner" class="hideme right"></div>
                         <p class="p4 hideme right">
-                            My favourite thing to do is to have a good laugh. I like to write, listen to music, play board games, and spend some alone time reading. I also enjoy being around my family and my loved ones. P.S.<br/>
-                            You could also find me playing with the neighbor's dog 😁.<br/><br/>
+                            My favourite thing to do is to have a good laugh. I like to write, listen to music, play board games, and spend some alone time reading. I also enjoy being around my family and my loved ones.<br/>
+                            P.S. You could also find me playing with the neighbor's dog 😁.<br/><br/>
                             So, whether it is through talking, listening or coaching, I always try to make experiences better for others.
                         </p>
                     </div>
