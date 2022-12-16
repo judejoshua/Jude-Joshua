@@ -66,5 +66,5 @@
             <i class="las la-angle-up"></i>
         </a>
     </div>
-    <span class="copyright p6 hideme left"><i class="las la-copyright"></i> Jude Joshua, <?php echo date(Y) ?>. All rights reserved.</span>
+    <span class="copyright p6 hideme left"><i class="las la-copyright"></i> Jude Joshua, <?php echo date("Y"); ?>. All rights reserved.</span>
 </footer>
