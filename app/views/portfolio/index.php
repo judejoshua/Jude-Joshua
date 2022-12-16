@@ -7,27 +7,23 @@
 ?>
     </head>
 
-    <body>
+    <body id="case-study">
         <div class="wrapper" id="top">
             <header class="landing" id="home">
-                <div class="text-divider hideme left">
-                    <h1><span id="highlight">Beautifully</span> crafted solutions, <br>for <span id="highlight">Businesses</span> and <span id="highlight">Brands</span>.</h1>
-                    <!-- <div id="liner"></div> -->
-                    <!-- <p class="p4">
-                        The goal of every digital project is to provide the best solution in a code and user-friendly manner. Here are ideas that I worked on, turning the goals into code-ready and user-friendly digital products with a stress-free user flow.
-                    </p> -->
-                </div>
-                <div class="tags-row hideme right">
-                    <span class="h5">Filter by:</span>
-                    <div>
-                        <span class="p5 secondary" id="tag-single" data-show="UI/UX design">Design Case Studies <span id="project-counter"><?= $data['ui_ux'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual (UI) Designs <span id="project-counter"><?= $data['ui'] ?></span></span>
-                        <span class="p5 secondary" id="tag-single" data-show="Web UI design, Web development">Web Design Projects <span id="project-counter"><?= $data['web'] ?></span></span>
-                    </diV>
+                <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
+                    <div class="header flex-justify-start">
+                        <div class="header-text">
+                            <h1><span id="highlight">Beautifully</span> crafted solutions, <br>for <span id="highlight">businesses</span> and <span id="highlight">brands</span>.</h1>
+                            <div id="liner"></div>
+                            <p class="p4">
+                                Ultimately, good design is about solving the needs of users, visually and also in their experience, functionally.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </header>
             <article id="body">
-                <section id="case-study">
+                <section id="case-study-section">
                     <div class="case-studies-body">
                         <div class="projects-holder">
                             <div class="row">
@@ -57,7 +53,7 @@
                                                 }
                                                
                                                 echo '
-                                                    <a id="projector" class="projector hideme" href="/portfolio/case_study/'.$project['unique_id'].'">
+                                                    <a id="projector" class="projector hideme fade" href="/portfolio/case_study/'.$project['unique_id'].'">
                                                         <div class="project">
                                                             <img class="projector-image lazy-image" loading="lazy" src="'.$project['project_img_directory'].$project['project_cover_img'].'" alt="'.$project_data['project_title'].'">
                                                             <div class="caption">

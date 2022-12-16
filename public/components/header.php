@@ -59,11 +59,10 @@
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
-                $(".preloader").fadeOut(1000);
-                $("body").css("overflow-y", "scroll");
+                $(".preloader").fadeOut(500);
+                $("body").css("overflow-y", "scroll");            
                 $("nav").addClass("ready");
                 $(".header").addClass("contents");
-                
             });
         </script>
 

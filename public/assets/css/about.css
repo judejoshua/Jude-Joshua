@@ -136,7 +136,7 @@
 }
 
 #xp .text-divider {
-    width: 51%;
+    width: 60%;
 }
 
 .xp-vector {
@@ -175,14 +175,14 @@
 
 #div-about-grab {
     width: 33%;
-    background: url('../img/about-me.webp');
+    background: url('../img/outside_9-5-2.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #xp #div-about-grab {
-    width: 40%;
+    /* width: 40%; */
     background: url(../img/xp.webp);
     background-size: cover;
     /* background-attachment: fixed; */

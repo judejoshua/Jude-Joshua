@@ -1,4 +1,7 @@
 @media screen and (max-width: 1100px) {
+    #highlight{
+        line-height: 1.35;
+    }
     .preloader {
         padding: 32px 64px;
     }
@@ -238,6 +241,9 @@
     html {
         font-size: 13px !important;
     }
+    #highlight {
+        line-height: 1.3;
+    }
     .nav {
         display: none;
     }
@@ -255,6 +261,7 @@
     nav.fixed {
         top: 0;
     }
+    
     .nav-links li:hover::after,
     .nav-links li.active::after {
         width: 10%;
@@ -321,6 +328,14 @@
     .header {
         width: 100%;
     }
+    
+    body:not(#home-landing) .landing .header{
+        padding-bottom: 104px;
+    }
+
+body:not(#home-landing) .landing .header .header-text {
+    width: 100%;
+}
     .mobile-nav-opener {
         display: block;
         padding-right: 0;
@@ -356,7 +371,7 @@
         background-attachment: unset;
         background-size: cover;
         background-position-x: center;
-        margin-bottom: 60px;
+        margin-top: 60px;
         height: 304px;
     }
     h1,
@@ -396,6 +411,10 @@
         gap: 36px;
         padding-bottom: 32px;
     }
+
+.design-style .col-100-shift .d-flex-row {
+    gap: 36px;
+}
     .deliverables .row {
         gap: 56px;
     }
@@ -902,7 +921,7 @@
         padding-top: 64px !important;
     }
     #xp .d-flex.col-100 {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .experience_card {
         width: 100%;
@@ -1018,6 +1037,9 @@
 }
 
 @media screen and (max-width:560px) {
+    #highlight {
+        line-height: 1.4;
+    }
     #design-section {
         padding: 72px 0 48px !important;
         gap: 80px;
@@ -1233,9 +1255,13 @@
         width: 100%;
     }
     #about #home .d-flex {
-        flex-direction: column;
-        gap: 56px;
+        flex-direction: column-reverse;
+        gap: 48px;
     }
+
+body:not(#home-landing) .landing .header {
+    padding-bottom: 68px;
+}
     .about-cards:nth-child(2) {
         margin-left: 0;
     }
@@ -1305,10 +1331,14 @@
         width: 100%;
     }
     .design-style .col-100-shift {
-        flex-direction: column;
+        /* flex-direction: column; */
         padding-left: 32px;
         padding-right: 32px;
     }
+
+.design-style .col-100-shift .d-flex-row {
+    flex-direction: column;
+}
     .deliverables {
         padding-left: 0;
         padding-right: 0;
@@ -1333,6 +1363,10 @@
     .btn.mdn {
         width: 160px;
     }
+
+.design-style .btn.mdn {
+    width: 180px;
+}
     .results-section-title .btn.four {
         width: 164px;
     }
@@ -1372,7 +1406,6 @@
         line-height: 1;
     }
     #about h1 {
-        line-height: 0.5;
     }
     .landing .text-divider {
         gap: 16px;

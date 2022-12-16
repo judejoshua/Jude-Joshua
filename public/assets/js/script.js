@@ -71,9 +71,9 @@ $(document).ready(function() {
             // if (scroll > bottom_of_object / 2) {
             //     $(this).removeClass('contents');
             // }
-            if (scroll < bottom_of_object / 2) {
-                $(this).addClass('contents');
-            }
+            // if (scroll < bottom_of_object / 2) {
+            //     $(this).addClass('contents');
+            // }
         });
 
         $('.hideme').each(function(i) {
@@ -118,7 +118,7 @@ $(document).ready(function() {
         $('body').addClass('no-scroll');
     });
     $('.mobile-nav-opener.close').click(function() {
-        $('.mobile-nav-opener.close').removeClass('out');
+        $(this).removeClass('out');
         $('.wrapper, nav').removeClass('rolled');
         $('.mobile-nav .nav-links').removeClass('get-in');
         $('body').removeClass('no-scroll');
@@ -126,6 +126,13 @@ $(document).ready(function() {
             $('.mobile-nav').removeClass('in');
         }, 300);
     });
+    $('.mobile-nav .nav-links li a').each(function(i) {
+        $(this).click(function(){
+            $('.mobile-nav-opener.close').removeClass('out');
+            $('.mobile-nav .nav-links').removeClass('get-in');
+
+        })
+    })
 
     //=================================================================================================
     //                           C O N T E X T  M E N U

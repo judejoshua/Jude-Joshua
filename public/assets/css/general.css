@@ -427,6 +427,15 @@ iframe {
     transition: 1s ease;
 }
 
+.hideme.fade{
+    opacity: 0;
+    transition: 3s ease-in;
+}
+
+.hideme.fade.showme{
+    opacity: 1;
+}
+
 .hideme.left.showme,
 .flexer:nth-child(1) .projector.showme,
 #case-study-body .projects-holder .row .project:nth-child(odd).showme {

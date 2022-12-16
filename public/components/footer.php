@@ -45,7 +45,7 @@
                 ';
             }else{
                 echo '
-                    <p class="p4">If you are satisfied with what you\'ve seen and would love to discuss your project with me, <a href="/contact">send me a message</a> or <a href="/about">click here</a> to know more about my design journey.</p>
+                    <p class="p4">If you are satisfied with what you\'ve seen and would love to discuss your project with me, <a href="/contact">send me a message</a> or <a href="/about">click here</a> to learn more about my design journey.</p>
                 ';
             }
         ?>

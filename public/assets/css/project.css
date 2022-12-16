@@ -17,7 +17,7 @@ img.case-study-img {
     top: 100%;
 }
 
-#case-study {
+#case-study-section {
     display: flex;
     gap: 40px;
     flex-direction: column;
@@ -27,9 +27,10 @@ img.case-study-img {
     padding-bottom: 128px;
     height: auto;
     display: table;
+    overflow: hidden;
 }
 
-body#home-landing #case-study {
+body#home-landing #case-study-section {
     padding-top: 152px;
     padding-bottom: 152px;
     display: flex;
@@ -101,8 +102,8 @@ img#show_reeler {
     margin-top: 40px;
 }
 
-body:not(#home-landing) #case-study {
-    padding-top: 48px;
+body:not(#home-landing) #case-study-section {
+    padding-top: 72px;
     padding-bottom: 120px;
 }
 

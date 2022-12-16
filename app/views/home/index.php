@@ -13,10 +13,11 @@
                 <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
                     <div class="header">
                         <div class="header-text">
-                            <p class="p4 hideme left">Hello. Minimalist.</p>
-                            <h1 class="hideme right">I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1>
+                            <p class="p4">Hello. Minimalist.</p>
+                            <h1 class="">I help <span id="highlight">brands</span> and <span id="highlight">businesses</span> <br/>connect with their <span id="highlight">target</span> users using <span id="highlight">product</span> design.</h1>
+                            <!-- <h1 class="hideme right">I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1> -->
                         </div>
-                        <a class="btn hideme left" href="#case-study">
+                        <a class="btn" href="#case-study">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>See</span> how</p>
@@ -27,7 +28,7 @@
                 </div>
             </header>
             <article id="body">
-                <section id="case-study">
+                <section id="case-study-section">
                     <div class="text-divider hideme left">
                         <h2>Featured work</h2>
                         <div id="liner"></div>
@@ -104,16 +105,25 @@
                 </section>
                 <section id="design-section">
                     <div class="design-style">
-                        <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
-                            <div class="text-divider hideme left">
-                                <div class="designer-caption d-flex d-flex-column">
-                                    <p class="p4">Human. First.</p>
-                                    <h2 class="h1">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
+                        <div class="col-100-shift d-flex d-flex-column flex-justify-start">
+                            <div class="d-flex d-flex-row flex-justify-between flex-align-center">
+                                <div class="text-divider">
+                                    <div class="designer-caption d-flex d-flex-column hideme left">
+                                        <p class="p4">Human. First.</p>
+                                        <h2 class="h1">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
+                                    </div>
+                                </div>
+                                <div class="design-style-image hideme right">
+                                    <img src="/public/assets/img/style-gif.webp" loading="lazy" alt="picture showing a sketchbook and a pen laying on the table">
                                 </div>
                             </div>
-                            <div class="design-style-image hideme right">
-                                <img src="/public/assets/img/style-gif.webp" loading="lazy" alt="picture showing a sketchbook and a pen laying on the table">
-                            </div>
+                            <a class="btn mdn hideme left case-study-link" href="/contact">
+                                <div class="btn_bg"></div>
+                                <div class="btn_cont">
+                                    <p id="text"><span>Disc</span>uss a project</p>
+                                    <i class="las la-arrow-right"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="deliverables">
                             <div class="row d-flex d-flex-column">
@@ -131,18 +141,18 @@
                                     <span class="p1">Analyse</span>
                                     <span class="p1">Needs</span>
                                     <span class="p1">Attention</span>
+                                    <span class="p1">UX Design</span>
                                     <span class="p1">Prototype</span>
                                     <span class="p1">Wireframes</span>
                                     <span class="p1">Sketch</span>
-                                    <span class="p1">Business</span>
                                     <span class="p1">Objectives</span>
                                 </div>
                                 <div class="deliverables-list d-flex d-flex-row">
-                                    <span class="p1">Satisfy</span>
                                     <span class="p1">Concepts</span>
                                     <span class="p1">Experience</span>
                                     <span class="p1">User</span>
                                     <span class="p1">Testing</span>
+                                    <span class="p1">UI Design</span>
                                     <span class="p1">Feedback</span>
                                     <span class="p1">Goals</span>
                                     <span class="p1">Details</span>

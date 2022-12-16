@@ -10,15 +10,28 @@
     <body id="about">
         <div class="wrapper" id="top">
             <header class="landing" id="home">
+                <div class="header_cont d-flex d-flex-row flex-justify-between flex-align-center">
+                    <div class="header flex-justify-start">
+                        <div class="header-text">
+                            <h1 class="">My <span id="highlight">passion</span> for <span id="highlight">helping</span> people is what <span id="highlight">drives</span> everything I do.</h1>
+                            <!-- <h1 class="">My passion is helping people.</h1> -->
+                            <!-- <h1 class="">My passion for helping people is what drives everything I do.</h1> -->
+                            <p class="p4">
+                                I currently work part-time as the lead product designer with the team at FirstMedtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians. I also share my knowledge and design expertise with students as a mentor on DesignLab, providing support and guidance to them on their design journey.<br/><br/>
+                                My focus is on creating end-to-end user-friendly experiences for businesses that are minimal, accessible and useful in a way that helps them relate to their users and provide the right solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="d-flex d-flex-row flex-justify-between col-100">
                     <div id="div-about-grab" class="hideme left"></div>
                     <div class="text-divider">
-                        <h1 class="hideme right">About</h1>
-                        <div id="liner"></div>
+                        <h2 class="hideme right">Outside of my 9-5.</h2>
+                        <div id="liner" class="hideme right"></div>
                         <p class="p4 hideme right">
-                            I am currently working as the lead product designer with the team at First Medtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians.<br/><br/>
-                            Outside of this, I focus on creating intuitive and user-friendly experiences for small and medium-sized businesses. My goal is to create minimal, accessible and useful designs that help businesses relate to their target audience and provide them with the right solutions.<br/><br/>
-                            A favourite thing about myself would be that I love to have a good laugh. I like to write, play games, spend alone time reading or be around my loved ones in my spare time. Whether it's through talking, listening, or coaching, I always try to make experiences better for others.
+                            My favourite thing to do is to have a good laugh. I like to write, listen to music, play board games, and spend some alone time reading. I also enjoy being around my family and my loved ones. P.S.<br/>
+                            You could also find me playing with the neighbor's dog 😁.<br/><br/>
+                            So, whether it is through talking, listening or coaching, I always try to make experiences better for others.
                         </p>
                     </div>
                 </div>
@@ -30,7 +43,9 @@
                             <h2 class="hideme left">My Journey</h2>
                             <div id="liner"></div>
                             <p class="p4 hideme left">
-                                My tech journey began in 2013 after completing a six-month training course on Microsoft Office Tools and web design terminology. During my time there, I learned about HTML, CSS, and JavaScript. After that, I became interested in web design and began taking more tests and replicating some designs from the web. <br/>In 2017, I interned as a Web Designer at the Ministry of Science and Technology in Akwa Ibom state, Nigeria. My ability to quickly learn their existing systems and stay current with new technologies led me to be placed in charge of a team responsible for executing a three-month training program for 10 senior staff and 50 newbies.<br/><br/>My expertise allows me to work with business owners, startups and individuals to help them build their solutions with a stress-free experience for their users.
+                                In 2013, I completed a six-month training course on Microsoft Office Tools and web design terminologies. During this time, I learned about HTML, CSS, and JavaScript. After that, I became interested in web design and began taking more tests and replicating some designs online.<br/><br/>
+                                In 2017, I interned as a Web Designer at the Ministry of Science and Technology in Akwa Ibom state, Nigeria. My ability to quickly learn their existing systems and stay current with new technologies led me to be placed in charge of a team responsible for executing a three-month training program for 10 senior staff and 50 newbies.<br/><br/>
+                                My expertise allows me to work with business owners, startups and individuals to help them build their solutions with a stress-free experience for their users.
                             </p>
                         </div>
                         <div id="div-about-grab" class="hideme right"></div>
@@ -39,7 +54,7 @@
                 <section id="clients" class="experience-body">
                     <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
                         <div class="text-divider">
-                            <h2 class="hideme left">My Clients</h2>
+                            <h2 class="hideme left">I worked with...</h2>
                             <div id="liner"></div>
                             <p class="p4 hideme left">
                                 I have been privileged to work with many wonderful people from diverse industries. Here are some of them.
@@ -65,10 +80,10 @@
                         </div>
                     </div>
                     <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
-                        <a class="btn lng hideme left" href="/portfolio">
+                        <a class="btn mdn hideme left" href="/portfolio">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
-                                <p id="text"><span>See</span> my past projects</p>
+                                <p id="text"><span>See</span> the projects</p>
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </a>
@@ -76,7 +91,7 @@
                 </section>
                 <section class="testimonials">
                     <div class="title-text hideme left">
-                        <h2>What they said.</h2>
+                        <h2>What they've said.</h2>
                         <div id="liner"></div>
                     </div>
                     <div class="testimonials-wrapper">

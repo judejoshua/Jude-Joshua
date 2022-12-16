@@ -9,15 +9,15 @@
 
     <body id="contact">
         <div class="wrapper" id="top">
-            <header class="landing" id="home">
+            <header class="header landing" id="home">
                 <div class="text-divider hideme left">
                     <h1>Let's Talk!</h1>
                     <div id="liner"></div>
                 </div>
             </header>
             <article id="body">
-                <div class="contact-info">
-                    <p class="p4 hideme left">
+                <div class="header contact-info">
+                    <p class="p4">
                         Let's talk about your project or any other questions that you have. You can quickly fill the form and I will respond as soon as possible. Otherwise send me an <a href="mailto:hello@judejoshua.me">email</a> or <a href="tel:+2349041134407">call</a> me.
                     </p>
                 </div>
