@@ -27,6 +27,6 @@
             <a rel="nofollow" href="https://dribbble.com/JudeJoshua" target="_blank" class="Dribbble">Dribbble</a>
             <a rel="nofollow" href="https://www.youtube.com/@thejudejoshua" target="_blank" class="Youtube">Youtube</a>
         </div>
-        <span class="copyright p6 hideme right"><i class="las la-copyright"></i> Jude Joshua, 2022. All rights reserved.</span>
+        <span class="copyright p6 hideme right"><i class="las la-copyright"></i> Jude Joshua, <?php echo date(Y) ?>. All rights reserved.</span>
     </div>
 </footer>
