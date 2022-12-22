@@ -17,7 +17,7 @@
                             <!-- <h1 class="">My passion is helping people.</h1> -->
                             <!-- <h1 class="">My passion for helping people is what drives everything I do.</h1> -->
                             <p class="p4">
-                                I currently work part-time as the lead product designer with the team at FirstMedtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians. I also share my knowledge and design expertise with students as a mentor on DesignLab, providing support and guidance to them on their design journey.<br/><br/>
+                                I currently work part-time as the lead product designer with the team at FirstMedtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians. I also share my knowledge and design expertise with students as a mentor on DesignLab, providing support and guidance to them on their design journey.<br/>
                                 My focus is on creating end-to-end user-friendly experiences for businesses that are minimal, accessible and useful in a way that helps them relate to their users and provide the right solutions.
                             </p>
                         </div>
@@ -30,8 +30,8 @@
                         <div id="liner" class="hideme right"></div>
                         <p class="p4 hideme right">
                             My favourite thing to do is to have a good laugh. I like to write, listen to music, play board games, and spend some alone time reading. I also enjoy being around my family and my loved ones.<br/>
-                            P.S. You could also find me playing with the neighbor's dog 😁.<br/><br/>
-                            So, whether it is through talking, listening or coaching, I always try to make experiences better for others.
+                            I especially love listening to people talk about their problems, and giving them guidance where I think is necessary.<br/><br/>
+                            P.S. You could also find me playing with the neighbor's dog 😁.
                         </p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                 <section id="clients" class="experience-body">
                     <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
                         <div class="text-divider">
-                            <h2 class="hideme left">I worked with...</h2>
+                            <h2 class="hideme left">I've worked with...</h2>
                             <div id="liner"></div>
                             <p class="p4 hideme left">
                                 I have been privileged to work with many wonderful people from diverse industries. Here are some of them.

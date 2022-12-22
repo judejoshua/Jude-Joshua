@@ -1,5 +1,5 @@
 <?php
-    $title = 'Jude Joshua | Top-notch mobile and web experience designer';
+    $title = 'Jude Joshua &#8212; Top Product Designer for Businesses and Brands';
     $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 
@@ -14,10 +14,9 @@
                     <div class="header">
                         <div class="header-text">
                             <p class="p4">Hello. Minimalist.</p>
-                            <h1 class="">I help <span id="highlight">brands</span> and <span id="highlight">businesses</span> <br/>connect with their <span id="highlight">target</span> users using <span id="highlight">product</span> design.</h1>
-                            <!-- <h1 class="hideme right">I design <span id="highlight">intuitive</span> and <span id="highlight">user-friendly</span> <br/>experiences for <span id="highlight">small</span> and <br/><span id="highlight">medium-sized</span> businesses.</h1> -->
+                            <h1 class="">I help <span id="highlight">businesses</span> and <span id="highlight">brands</span> connect with their <span id="highlight">target</span> users using <span id="highlight">product</span> design.</h1>
                         </div>
-                        <a class="btn" href="#case-study-section">
+                        <a class="btn" href="#balance">
                             <div class="btn_bg"></div>
                             <div class="btn_cont">
                                 <p id="text"><span>See</span> how</p>
@@ -28,6 +27,32 @@
                 </div>
             </header>
             <article id="body">
+                <section id="balance">
+                    <div class="balance-holder d-flex d-flex-row flex-justify-between flex-align-start">
+                        <div class="design-style-image hideme left">
+                            <img src="/public/assets/img/bua-2.webp" alt="picture of sticky notes on board showing analysis of problem">
+                        </div>
+                        <div class="d-flex d-flex-column cap">
+                            <div class="designer-caption d-flex d-flex-column">
+                                <h2 class="hideme right">A Business + User Approach.</h2>
+                                <p class="p4 hideme right">
+                                    I start with a detailed analysis of the business goals and objectives. This helps me to develop a design strategy and ensure that I understand the market requirements of the project.<br/><br/>
+                                    After that, I conduct research through surveys and interviews in order to understand the target audience. As a result, I am able to understand the users' needs and pains; mapping each pain point with an objective of the business so that a balanced bridge can be built between the the needs of the business and those of the users.
+                                    <!-- As a result, I am able to map every pain point of the users to an objective of the business, creating a bridge that balances the needs of users and those of the business. -->
+                                    <!-- <br/><br/> -->
+                                    <!-- In the end, I balance each business objective with the requirements for the user's experience. This makes the user happy. And money is made by the business as well. -->
+                                </p>
+                            </div>
+                            <a class="btn lng hideme right" href="#case-study-section">
+                                <div class="btn_bg"></div>
+                                <div class="btn_cont">
+                                    <p id="text"><span>See</span> Featured Samples</p>
+                                    <i class="las la-arrow-down"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
                 <section id="case-study-section">
                     <div class="text-divider hideme left">
                         <h2>Featured work</h2>
@@ -105,25 +130,25 @@
                 </section>
                 <section id="design-section">
                     <div class="design-style">
-                        <div class="col-100-shift d-flex d-flex-column flex-justify-start">
-                            <div class="d-flex d-flex-row flex-justify-between flex-align-center">
+                        <div class="col-100-shift d-flex d-flex-row flex-justify-between">
+                            <div class="d-flex d-flex-column cap">
                                 <div class="text-divider">
-                                    <div class="designer-caption d-flex d-flex-column hideme left">
-                                        <p class="p4">Human. First.</p>
-                                        <h2 class="h1">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
+                                    <div class="designer-caption d-flex d-flex-column">
+                                        <p class="p4 hideme left">The Human Goal.</p>
+                                        <h2 class="h1 hideme left">I turn <span id="highlight">great</span> ideas into excellent <span id="highlight">user-centered</span> solutions.</h2>
                                     </div>
                                 </div>
-                                <div class="design-style-image hideme right">
-                                    <img src="/public/assets/img/style-gif.webp" loading="lazy" alt="picture showing a sketchbook and a pen laying on the table">
-                                </div>
+                                <a class="btn mdn hideme left case-study-link" href="/contact">
+                                    <div class="btn_bg"></div>
+                                    <div class="btn_cont">
+                                        <p id="text"><span>Disc</span>uss a project</p>
+                                        <i class="las la-arrow-right"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <a class="btn mdn hideme left case-study-link" href="/contact">
-                                <div class="btn_bg"></div>
-                                <div class="btn_cont">
-                                    <p id="text"><span>Disc</span>uss a project</p>
-                                    <i class="las la-arrow-right"></i>
-                                </div>
-                            </a>
+                            <div class="design-style-image hideme right">
+                                <img src="/public/assets/img/the-human-goal-2.webp" alt="picture showing a sketchbook and a pen laying on the table">
+                            </div>
                         </div>
                         <div class="deliverables">
                             <div class="row d-flex d-flex-column">
@@ -140,10 +165,10 @@
                                 <div class="deliverables-list d-flex d-flex-row">
                                     <span class="p1">Analyse</span>
                                     <span class="p1">Needs</span>
-                                    <span class="p1">Attention</span>
                                     <span class="p1">UX Design</span>
                                     <span class="p1">Prototype</span>
                                     <span class="p1">Wireframes</span>
+                                    <span class="p1">Business</span>
                                     <span class="p1">Sketch</span>
                                     <span class="p1">Objectives</span>
                                 </div>
@@ -163,7 +188,6 @@
                 </section>
                 <section id="why">
                     <div class="col-100 why-boxed">
-                        <!-- <div class="mobile-img-why-me"></div> -->
                         <div class="text-divider hideme left">
                             <h2>A good fit?</h2>
                             <div id="liner"></div>

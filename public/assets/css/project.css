@@ -34,8 +34,6 @@ body#home-landing #case-study-section {
     padding-top: 152px;
     padding-bottom: 152px;
     display: flex;
-    background-color: var(--accent);
-    /* background: linear-gradient(1deg, var(--neutral) 1px, var(--accent) 1px); */
     background-size: 5px 5px;
     overflow: hidden;
 }
@@ -131,7 +129,7 @@ body:not(#home-landing) #case-study .case-studies-body {
     width: 100%;
     height: auto;
     background: var(--accent);
-    transition: 0.5s;
+    transition: 3s;
 }
 
 .caption {

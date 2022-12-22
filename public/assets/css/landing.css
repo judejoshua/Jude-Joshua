@@ -52,6 +52,7 @@
     width: 90%;
     gap: 12px;
     width: 80%;
+/*    width: 68%;*/
 }
 
 body:not(#home-landing) .landing {

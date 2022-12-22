@@ -95,6 +95,10 @@ a:hover~.cursor {
     align-items: space-between;
 }
 
+.flex-align-stretch {
+    align-items: stretch;
+}
+
 .flex-justify-end {
     justify-content: flex-end;
 }
@@ -461,7 +465,7 @@ iframe {
 }
 
 .lazies, .lazy-image{
-    animation: lazy-load 1.5s infinite;
+    animation: lazy-load 2s infinite;
 }
 
 @keyframes lazy-load{

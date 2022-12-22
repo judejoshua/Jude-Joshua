@@ -34,11 +34,12 @@
     top: 19%;
     width: 45%;
     height: 90%;
-    background: url(../img/why-me-2.webp);
+    background: url(../img/why-me.webp);
     background-position: top;
     background-size: cover;
     background-color: var(--secondary);
     border: none;
+    filter: brightness(0.9);
 }
 
 .mobile-img-why-me {

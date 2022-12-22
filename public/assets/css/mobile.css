@@ -234,6 +234,9 @@
 }
 
 @media screen and (max-width: 820px) {
+    nav{
+        position: fixed;
+    }
     .cursor {
         opacity: 0 !important;
     }
@@ -333,9 +336,9 @@
         padding-bottom: 104px;
     }
 
-body:not(#home-landing) .landing .header .header-text {
-    width: 100%;
-}
+    body:not(#home-landing) .landing .header .header-text {
+        width: 100%;
+    }
     .mobile-nav-opener {
         display: block;
         padding-right: 0;
@@ -363,16 +366,29 @@ body:not(#home-landing) .landing .header .header-text {
         padding: 140px 48px 0;
     }
     #div-about-grab {
-        height: auto;
+        width: 100%;
+        background-attachment: unset;
+        background-size: cover;
+        background-position: bottom;
+        margin-bottom: 60px;
+        height: 320px;
+    }
+    body#about .landing .col-100 {
+        flex-direction: column !important;
+        gap: 0;
+    }
+    body#about .landing .text-divider {
+        width: 100%;
     }
     #xp #div-about-grab {
         /* display: none; */
         width: 100%;
         background-attachment: unset;
         background-size: cover;
-        background-position-x: center;
+        background-position: center;
         margin-top: 60px;
         height: 304px;
+        margin-bottom: 0;
     }
     h1,
     .h1 {
@@ -396,7 +412,7 @@ body:not(#home-landing) .landing .header .header-text {
         gap: 64px;
     }
     .deliverables {
-        padding: 96px 48px;
+        padding: 48px 48px;
     }
     #clients .deliverables {
         padding: 48px;
@@ -412,9 +428,9 @@ body:not(#home-landing) .landing .header .header-text {
         padding-bottom: 32px;
     }
 
-.design-style .col-100-shift .d-flex-row {
-    gap: 36px;
-}
+    .design-style .col-100-shift .d-flex-row {
+        gap: 36px;
+    }
     .deliverables .row {
         gap: 56px;
     }
@@ -428,6 +444,23 @@ body:not(#home-landing) .landing .header .header-text {
     section {
         padding: 48px 48px !important;
         gap: 24px !important;
+    }
+    .balance-holder {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 48px;
+    }
+    
+    .design-style-image {
+        width: 100%;
+    }
+    .balance-holder .cap {
+        width: 100%;
+    }
+    
+    #case-study-section {
+        padding-top: 96px !important;
     }
     .scroll-down {
         height: 56px;
@@ -492,7 +525,7 @@ body:not(#home-landing) .landing .header .header-text {
         width: 62%;
     }
     .designer-caption {
-        gap: 0;
+        gap: 16px;
     }
     .text-divider p {
         width: 100%;
@@ -538,10 +571,11 @@ body:not(#home-landing) .landing .header .header-text {
     }
     #why {
         width: 100%;
-        padding-bottom: 0px !important;
+        padding-bottom: 40px !important;
         padding-right: 40px;
-        padding-top: 80px;
+        padding-top: 80px !important;
         padding-left: 40px;
+        background: var(--accent);
     }
     .why-boxed {
         padding: 0 0 136px;
@@ -553,7 +587,7 @@ body:not(#home-landing) .landing .header .header-text {
     }
     .why-boxed::before {
         width: 100%;
-        /*         display: none; */
+        display: none;
         height: 1px;
         top: 100%;
         background-color: var(--placeholders);
@@ -1156,7 +1190,7 @@ body:not(#home-landing) .landing .header .header-text {
         padding-right: 32px;
     }
     .results-section {
-        padding: 56px 32px;
+        padding: 64px 32px 56px;
     }
     footer {
         padding: 32px 32px 32px !important;
@@ -1175,9 +1209,9 @@ body:not(#home-landing) .landing .header .header-text {
         gap: 40px !important;
     }
     #resume-begins .d-flex.d-flex-row.col-100 {
-    flex-direction: column;
-    gap: 16px;
-}
+        flex-direction: column;
+        gap: 16px;
+    }
     .resume-detailers,
     #lefter-detailers {
         width: 100%;
@@ -1256,12 +1290,11 @@ body:not(#home-landing) .landing .header .header-text {
     }
     #about #home .d-flex {
         flex-direction: column-reverse;
-        gap: 48px;
+        gap: 0;
     }
-
-body:not(#home-landing) .landing .header {
-    padding-bottom: 68px;
-}
+    body:not(#home-landing) .landing .header {
+        padding-bottom: 68px;
+    }
     .about-cards:nth-child(2) {
         margin-left: 0;
     }
@@ -1331,14 +1364,22 @@ body:not(#home-landing) .landing .header {
         width: 100%;
     }
     .design-style .col-100-shift {
-        /* flex-direction: column; */
+        flex-direction: column-reverse;
         padding-left: 32px;
         padding-right: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        gap: 48px;
     }
 
-.design-style .col-100-shift .d-flex-row {
-    flex-direction: column;
-}
+    .design-style .col-100-shift .cap {
+        width: 100%;
+        gap: 26px;
+    }
+
+    .design-style .col-100-shift .d-flex-row {
+        flex-direction: column;
+    }
     .deliverables {
         padding-left: 0;
         padding-right: 0;
@@ -1364,9 +1405,9 @@ body:not(#home-landing) .landing .header {
         width: 160px;
     }
 
-.design-style .btn.mdn {
-    width: 180px;
-}
+    .design-style .btn.mdn {
+        width: 180px;
+    }
     .results-section-title .btn.four {
         width: 164px;
     }
@@ -1403,7 +1444,7 @@ body:not(#home-landing) .landing .header {
     }
     h2,
     .h2 {
-        line-height: 1;
+        line-height: 1.3;
     }
     #about h1 {
     }

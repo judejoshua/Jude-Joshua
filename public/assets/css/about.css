@@ -175,7 +175,7 @@
 
 #div-about-grab {
     width: 33%;
-    background: url('../img/outside_9-5-2.webp');
+    background: url('../img/outside_9-5-1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -183,7 +183,7 @@
 
 #xp #div-about-grab {
     /* width: 40%; */
-    background: url(../img/xp.webp);
+    background: url(../img/xp-1.webp);
     background-size: cover;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;

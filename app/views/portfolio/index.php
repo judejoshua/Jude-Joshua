@@ -16,7 +16,7 @@
                             <h1><span id="highlight">Beautifully</span> crafted solutions, <br>for <span id="highlight">businesses</span> and <span id="highlight">brands</span>.</h1>
                             <div id="liner"></div>
                             <p class="p4">
-                                Ultimately, good design is about solving the needs of users, visually and also in their experience, functionally.
+                                Ultimately, good design is about balancing the business goals with the needs of users, both visually and in a functional experience.
                             </p>
                         </div>
                     </div>

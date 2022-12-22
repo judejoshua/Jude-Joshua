@@ -4,7 +4,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding: 48px 120px 48px 128px;
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     width: 100%;
     height: auto;
