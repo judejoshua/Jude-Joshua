@@ -28,7 +28,7 @@
             </header>
             <article id="body">
                 <section id="balance">
-                    <div class="balance-holder d-flex d-flex-row flex-justify-between flex-align-start">
+                    <div class="balance-holder d-flex d-flex-row flex-justify-between flex-align-stretch">
                         <div class="design-style-image hideme left">
                             <img src="/public/assets/img/bua-2.webp" alt="picture of sticky notes on board showing analysis of problem">
                         </div>

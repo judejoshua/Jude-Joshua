@@ -23,6 +23,7 @@
     width: 100%;
     object-fit: cover;
     object-position: left;
+    height: 100%;
 }
 
 .design-style .col-100-shift {
