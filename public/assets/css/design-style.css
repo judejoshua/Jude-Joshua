@@ -26,6 +26,19 @@
 /*    height: 100%;*/
 }
 
+.designer-caption {
+    gap: 8px;
+}
+
+.designer-caption .p4 {
+     width: 64%; 
+}
+
+.balance-holder .cap .designer-caption {
+     text-align: right; 
+     align-items: end; 
+}
+
 .design-style .col-100-shift {
     gap: 64px;
     padding-bottom: 152px;
@@ -75,16 +88,21 @@
 }
 
 #balance {
-    padding-bottom: 160px;
+    padding-bottom: 128px;
     background-color: var(--accent);
     overflow: hidden;
 }
 
 .balance-holder {
-    gap: 64px;
+    gap: 104px;
+    padding: 128px 0 80px 0;
 }
 
 .balance-holder .cap {
-    width: 56%;
-    gap: 32px;
+    width: 100%;
+    gap: 64px;
+}
+
+.balance-holder .cap:nth-child(odd) {
+    align-self: end;
 }

@@ -36,7 +36,28 @@ $(document).ready(function() {
         })
         .mouseleave(function() {
             cursor.css({
-                "padding": "8px",
+                "padding": "6px",
+                "mix-blend-mode": "difference",
+                "color": "var(--secondary)",
+                "background-color": "var(--neutral)"
+            });
+            cursor.html('')
+        });
+
+    $("#balance")
+        .mouseenter(function() {
+            cursor.css({
+                "padding": "16px 19px 16px",
+                "mix-blend-mode": "unset",
+                "background-color": "var(--secondary)",
+                "color": "var(--neutral)"
+
+            });
+            cursor.html('<i class="las la-arrow-down"></i>');
+        })
+        .mouseleave(function() {
+            cursor.css({
+                "padding": "6px",
                 "mix-blend-mode": "difference",
                 "color": "var(--secondary)",
                 "background-color": "var(--neutral)"

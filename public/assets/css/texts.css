@@ -153,6 +153,10 @@ p a::after {
     line-height: 1.2;
 }
 
+h2:not(.h1) #highlight {
+    line-height: 1.4;
+}
+
 #highlight::after {
     content: "";
     width: 100%;

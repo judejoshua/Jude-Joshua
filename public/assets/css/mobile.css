@@ -2,6 +2,10 @@
     #highlight{
         line-height: 1.35;
     }
+
+h2:not(.h1) #highlight {
+    line-height: 1.5;
+}
     .preloader {
         padding: 32px 64px;
     }
@@ -94,7 +98,7 @@
         gap: 80px;
     }
     .deliverables {
-        padding-top: 104px;
+        padding-top: 80px;
         padding-bottom: 104px;
     }
     #landing-img {
@@ -130,8 +134,22 @@
         padding-right: 64px !important;
     }
     #design-section {
-        padding: 104px 0 !important;
+        padding: 0 0 64px !important;
     }
+    .balance-holder{
+        padding: 80px 0;
+        gap: 80px;
+    }
+
+#balance {
+    padding-bottom: 80px !important;
+    padding-top: 80px !important;
+}
+
+body#home-landing #case-study-section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
     footer {
         padding: 72px 64px 24px;
         gap: 32px;
@@ -336,6 +354,10 @@
         padding-bottom: 104px;
     }
 
+body#case-study .landing .header {
+    padding-bottom: 0 !important;
+}
+
     body:not(#home-landing) .landing .header .header-text {
         width: 100%;
     }
@@ -412,7 +434,7 @@
         gap: 64px;
     }
     .deliverables {
-        padding: 48px 48px;
+        padding: 32px 48px;
     }
     #clients .deliverables {
         padding: 48px;
@@ -425,8 +447,14 @@
         padding-left: 48px;
         padding-right: 48px;
         gap: 36px;
-        padding-bottom: 32px;
+        padding-bottom: 64px;
+        padding-top: 80px;
     }
+
+.design-style .col-100-shift .cap {
+    width: 80%;
+    gap: 32px;
+}
 
     .design-style .col-100-shift .d-flex-row {
         gap: 36px;
@@ -447,20 +475,21 @@
     }
     .balance-holder {
         flex-direction: column;
-        padding-top: 40px;
+        padding-top: 88px;
         padding-bottom: 40px;
         gap: 48px;
     }
-    
-    .design-style-image {
-        width: 100%;
-    }
     .balance-holder .cap {
         width: 100%;
+        gap: 12px;
     }
-    
+
+    .balance-holder .cap > h3 {
+        width: 36px;
+    }
+        
     #case-study-section {
-        padding-top: 96px !important;
+        padding-top: 24px !important;
     }
     .scroll-down {
         height: 56px;
@@ -522,10 +551,10 @@
         width: 100%;
     }
     .design-style .text-divider {
-        width: 62%;
+        width: 100%;
     }
     .designer-caption {
-        gap: 16px;
+        gap: 6px;
     }
     .text-divider p {
         width: 100%;
@@ -573,12 +602,12 @@
         width: 100%;
         padding-bottom: 40px !important;
         padding-right: 40px;
-        padding-top: 80px !important;
+        padding-top: 88px !important;
         padding-left: 40px;
         background: var(--accent);
     }
     .why-boxed {
-        padding: 0 0 136px;
+        padding: 0 0 48px;
     }
     .img-why-me {
         width: 30%;
@@ -1006,11 +1035,11 @@
         display: block;
     }
     #design-section {
-        padding: 120px 0 80px !important;
+        padding: 48px 0 64px !important;
         gap: 80px;
     }
     .design-style {
-        gap: 104px;
+        gap: 16px;
     }
     .experience-body .row:nth-child(even) .experience_card::before {
         display: none;
@@ -1141,7 +1170,7 @@
     }
     .flexer {
         width: 100%;
-        gap: 80px;
+        gap: 40px;
     }
     .preloader .h1 {
         font-size: 16px;
@@ -1264,7 +1293,7 @@
     }
     .row {
         flex-direction: column;
-        gap: 80px;
+        gap: 40px;
     }
     #case-study-body .projects-holder .row {
         gap: 24px;
@@ -1404,7 +1433,19 @@
     .btn.mdn {
         width: 160px;
     }
+    .balance-holder {
+        padding-top: 48px;
+    }
 
+    .designer-caption .p4 {
+        width: 100%;
+    }
+
+
+    .balance-holder .cap .designer-caption {
+        text-align: left;
+        align-items: start;
+    }
     .design-style .btn.mdn {
         width: 180px;
     }
@@ -1496,6 +1537,7 @@
     .sectioners .text-divider.sub-title {
         width: 100%;
     }
+    
     @keyframes scroll-text {
         from {
             transform: translateX(0%);

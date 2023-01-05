@@ -28,30 +28,49 @@
             </header>
             <article id="body">
                 <section id="balance">
-                    <div class="balance-holder d-flex d-flex-row flex-justify-between flex-align-stretch">
-                        <div class="design-style-image hideme left">
-                            <img src="/public/assets/img/bua-2.webp" alt="picture of sticky notes on board showing analysis of problem">
-                        </div>
-                        <div class="d-flex d-flex-column cap">
+                    <div class="text-divider hideme left">
+                        <h2>From <span id="highlight">Idea</span> to <span id="highlight">Solution</span>.</h2>
+                        <!-- <div id="liner" class="hideme left"></div> -->
+                    </div>
+                    <div class="balance-holder d-flex d-flex-column flex-justify-between flex-align-stretch">
+                        <div class="d-flex d-flex-row cap">
+                            <h3 class="hideme left">01</h3>
                             <div class="designer-caption d-flex d-flex-column">
-                                <h2 class="hideme right">A Business + User Approach.</h2>
+                                <h3 class="hideme right">Understand the Goal</h3>
+                                <div id="liner-100"></div>
                                 <p class="p4 hideme right">
-                                    I start with a detailed analysis of the business goals and objectives. This helps me to develop a design strategy and ensure that I understand the market requirements of the project.<br/><br/>
-                                    After that, I conduct research through surveys and interviews in order to understand the target audience. As a result, I am able to understand the users' needs and pains; mapping each pain point with an objective of the business so that a balanced bridge can be built between the the needs of the business and those of the users.
-                                    <!-- As a result, I am able to map every pain point of the users to an objective of the business, creating a bridge that balances the needs of users and those of the business. -->
-                                    <!-- <br/><br/> -->
-                                    <!-- In the end, I balance each business objective with the requirements for the user's experience. This makes the user happy. And money is made by the business as well. -->
+                                    My job is to make ensure that money is made for the business. To achieve this, I start with a detailed analysis of the business - its' goals, objectives and the market requirements.
                                 </p>
                             </div>
-                            <a class="btn lng hideme right" href="#case-study-section">
-                                <div class="btn_bg"></div>
-                                <div class="btn_cont">
-                                    <p id="text"><span>See</span> Featured Samples</p>
-                                    <i class="las la-arrow-down"></i>
-                                </div>
-                            </a>
+                        </div>
+                        <div class="d-flex d-flex-row cap">
+                            <h3 class="hideme left ">02</h3>
+                            <div class="designer-caption d-flex d-flex-column">
+                                <h3 class="hideme right">Feel the Users</h3>
+                                <div id="liner-100" class=""></div>
+                                <p class="p4 hideme right">
+                                    I conduct research on the target audience through surveys and interviews in order to understand them better. This helps me to understand the users' needs and pains - taking note of how to map each pain point with a supporting business objective.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex d-flex-row cap">
+                            <h3 class="hideme left">03</h3>
+                            <div class="designer-caption d-flex d-flex-column">
+                                <h3 class="hideme right">Develop Solutions</h3>
+                                <div id="liner-100" class=""></div>
+                                <p class="p4 hideme right">
+                                    I now develop possible solutions that can balance both the needs of the business with those of the users without overlapping. In the end, the solution with the best balance wins.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <a class="btn lng hideme left" href="#case-study-section">
+                        <div class="btn_bg"></div>
+                        <div class="btn_cont">
+                            <p id="text"><span>See</span> Featured Samples</p>
+                            <i class="las la-arrow-down"></i>
+                        </div>
+                    </a>
                 </section>
                 <section id="case-study-section">
                     <div class="text-divider hideme left">

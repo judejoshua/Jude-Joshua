@@ -10,7 +10,7 @@ footer {
     pointer-events: none;
     position: fixed;
     top: -8%;
-    padding: 8px;
+    padding: 6px;
     color: var(--secondary);
     background-color: var(--neutral);
     border-radius: 50%;
@@ -184,10 +184,6 @@ a:hover~.cursor {
     width: 100%;
 }
 
-.designer-caption {
-    gap: 12px;
-}
-
 body#home-landing .landing .btn {
     width: 168px;
     margin-top: 18px;
@@ -272,6 +268,12 @@ section {
     width: 24px;
     background: var(--secondary);
     height: 2px;
+}
+
+#liner-100{
+    width: 100%;
+    background: var(--secondary);
+    height: 1px;
 }
 
 .hidden {
