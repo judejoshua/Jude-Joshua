@@ -24,6 +24,7 @@ Thumbs.db
 
 
 public/assets/files/uploads/
+num_gen/
 .cgi-bin/
 .idea/
 .vscode/

@@ -6,8 +6,8 @@
 
 <item>
      <link>https://www.judejoshua.me/</link>
-     <title>Jude Joshua | Top Product Designer for Businesses and Brands</title>
-     <description>Jude Joshua | Top Product Designer for Businesses and Brands</description>
+     <title>Jude Joshua &amp;#8212; Top Product Designer for Businesses and Brands</title>
+     <description>Jude Joshua &amp;#8212; Top Product Designer for Businesses and Brands</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
@@ -22,8 +22,8 @@
 </item>
 <item>
      <link>https://www.judejoshua.me/portfolio</link>
-     <title>Design solutions for Businesses and Brands | Jude Joshua</title>
-     <description>Design solutions | Jude Joshua</description>
+     <title>Design solutions - Jude Joshua | Top Product Designer for Businesses and Brands</title>
+     <description>Design solutions - Jude Joshua | Top Product Designer for Businesses and Brands</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
@@ -38,8 +38,16 @@
 </item>
 <item>
      <link>https://www.judejoshua.me/contact</link>
-     <title>Send a message - Jude Joshua | Top Product Designer for Businesses and Brands</title>
-     <description>Send a message - Jude Joshua | Top Product Designer for Businesses and Brands</description>
+     <title>Send a message | Jude Joshua</title>
+     <description>Send a message | Jude Joshua</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.judejoshua.me/portfolio/case_study/635fe89b81f49</link>
+     <title>UberEats Redesign - Jude Joshua | Top Product Designer for Businesses and Brands</title>
+     <description>UberEats Redesign - Jude Joshua | Top Product Designer for Businesses and Brands</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
@@ -53,14 +61,6 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://www.judejoshua.me/portfolio/case_study/632a1786a333a</link>
-     <title>Lunar Luxury Life - Travel Management Website - Jude Joshua | Top Product Designer for Businesses and Brands</title>
-     <description>Lunar Luxury Life - Travel Management Website - Jude Joshua | Top Product Designer for Businesses and Brands</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
      <link>https://www.judejoshua.me/portfolio/case_study/6318be8406010</link>
      <title>Thrive: Saas Website design - Jude Joshua | Top Product Designer for Businesses and Brands</title>
      <description>Thrive: Saas Website design - Jude Joshua | Top Product Designer for Businesses and Brands</description>
@@ -69,7 +69,23 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://www.judejoshua.me/public/assets/files/Jude--Joshua--resume.pdf</link>
+     <link>https://www.judejoshua.me/portfolio/case_study/63864a9224eac</link>
+     <title>Online Doctor and Hospital Web directory - FirstMedtrade Africa - Jude Joshua | Top Product Designer for Businesses and Brands</title>
+     <description>Online Doctor and Hospital Web directory - FirstMedtrade Africa - Jude Joshua | Top Product Designer for Businesses and Brands</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.judejoshua.me/portfolio/case_study/632a1786a333a</link>
+     <title>Lunar Luxury Life - Travel Management Website - Jude Joshua | Top Product Designer for Businesses and Brands</title>
+     <description>Lunar Luxury Life - Travel Management Website - Jude Joshua | Top Product Designer for Businesses and Brands</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.judejoshua.me/public/assets/files/Jude-Joshua-Resume.pdf</link>
      <title></title>
      
      <ror:updatePeriod></ror:updatePeriod>
