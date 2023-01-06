@@ -38,7 +38,7 @@
                                 <h3 class="hideme right">Understand the Goal</h3>
                                 <div id="liner-100"></div>
                                 <p class="p4 hideme right">
-                                    My job is to make sure that money is made for the business. To achieve this, I start with a detailed analysis of the business - its' goals, objectives and the market requirements.
+                                    My job is to ensure the business makes money with their digital product. As a first step, I analyze in details the business' goals, objectives, and market requirements.
                                 </p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                 <h3 class="hideme right">Feel the Users</h3>
                                 <div id="liner-100" class=""></div>
                                 <p class="p4 hideme right">
-                                    I conduct research on the target audience through surveys and interviews in order to understand them better. This helps me to understand the users' needs and pains - taking note of how to map each pain point with a supporting business objective.
+                                    My next goal is to understand the target audience better and I do this through surveys and interviews. By understanding the users' needs and pain points, I can carefully map each pain point with a supporting business objective.
                                 </p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                                 <h3 class="hideme right">Develop Solutions</h3>
                                 <div id="liner-100" class=""></div>
                                 <p class="p4 hideme right">
-                                    I now develop possible solutions that can balance both the needs of the business with those of the users without overlapping. In the end, the solution with the best balance wins.
+                                    My final step is to develop possible solutions that balance both the business and user needs without overlapping. At the end of the day, the most balanced solution wins.
                                 </p>
                             </div>
                         </div>
