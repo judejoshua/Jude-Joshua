@@ -18,9 +18,9 @@
         <meta name="dcterms.dateCopyrighted" content="2022">
         <meta content="" name="description">
         <meta content="UbyJude Josh, Josh, UbyJude, UbyJudeh, Jude, Joshua, Jude Joshua" name="keywords">
-        <meta id="browserColor" name="theme-color" content="#000000">
+        <meta id="browserColor" name="theme-color" content="#1a1a1a">
         <!--Windows Phone **-->
-        <meta id="browserColor" name="msapplication-navbutton-color" content="#000000">
+        <meta id="browserColor" name="msapplication-navbutton-color" content="#1a1a1a">
         <!--iOS Safari-->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">

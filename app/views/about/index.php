@@ -1,6 +1,6 @@
 <?php
-    $title = 'About - Jude Joshua | Top-notch mobile and web experience designer';
-    $description = 'I help brands and businesses connect with their target users through product design. See my portfolio to know more.';
+    $title = 'About - Jude Joshua | Top Product Designer for Businesses and Brands';
+    $description = 'Get user-centred designs for your website or app that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 
     include './public/components/header.php';
@@ -14,8 +14,6 @@
                     <div class="header flex-justify-start">
                         <div class="header-text">
                             <h1 class="">My <span id="highlight">passion</span> for <span id="highlight">helping</span> people is what <span id="highlight">drives</span> everything I do.</h1>
-                            <!-- <h1 class="">My passion is helping people.</h1> -->
-                            <!-- <h1 class="">My passion for helping people is what drives everything I do.</h1> -->
                             <p class="p4">
                                 I currently work part-time as the lead product designer with the team at FirstMedtrade Africa to build an improved medical lifestyle for easy, accessible and affordable healthcare for Nigerians. I also share my knowledge and design expertise with students as a mentor on DesignLab, providing support and guidance to them on their design journey.<br/>
                                 My focus is on creating end-to-end user-friendly experiences for businesses that are minimal, accessible and useful in a way that helps them relate to their users and provide the right solutions.

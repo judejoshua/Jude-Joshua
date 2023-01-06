@@ -1,6 +1,6 @@
 <?php
-    $title = 'Design solutions - Jude Joshua | Top-notch mobile and web experience designer';
-    $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
+    $title = 'Design solutions - Jude Joshua | Top Product Designer for Businesses and Brands';
+    $description = 'Get user-centred designs for your website or app that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 
     include './public/components/header.php';

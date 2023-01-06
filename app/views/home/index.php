@@ -1,6 +1,6 @@
 <?php
     $title = 'Jude Joshua &#8212; Top Product Designer for Businesses and Brands';
-    $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
+    $description = 'Get user-centred designs for your website or app that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
 
     include './public/components/header.php';
@@ -29,8 +29,7 @@
             <article id="body">
                 <section id="balance">
                     <div class="text-divider hideme left">
-                        <h2>From <span id="highlight">Idea</span> to <span id="highlight">Solution</span>.</h2>
-                        <!-- <div id="liner" class="hideme left"></div> -->
+                        <h2>A <span id="highlight">journey</span> from Idea to Solution.</h2>
                     </div>
                     <div class="balance-holder d-flex d-flex-column flex-justify-between flex-align-stretch">
                         <div class="d-flex d-flex-row cap">
@@ -39,7 +38,7 @@
                                 <h3 class="hideme right">Understand the Goal</h3>
                                 <div id="liner-100"></div>
                                 <p class="p4 hideme right">
-                                    My job is to make ensure that money is made for the business. To achieve this, I start with a detailed analysis of the business - its' goals, objectives and the market requirements.
+                                    My job is to make sure that money is made for the business. To achieve this, I start with a detailed analysis of the business - its' goals, objectives and the market requirements.
                                 </p>
                             </div>
                         </div>

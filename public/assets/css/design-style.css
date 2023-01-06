@@ -28,6 +28,7 @@
 
 .designer-caption {
     gap: 8px;
+    width: 100%;
 }
 
 .designer-caption .p4 {
@@ -78,15 +79,6 @@
     left: 4%;
 }
 
-@keyframes scroll-text {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-30%);
-    }
-}
-
 #balance {
     padding-bottom: 128px;
     background-color: var(--accent);
@@ -105,4 +97,13 @@
 
 .balance-holder .cap:nth-child(odd) {
     align-self: end;
+}
+
+@keyframes scroll-text {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-30%);
+    }
 }

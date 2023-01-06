@@ -1,5 +1,5 @@
 <?php
-    $title = json_decode($data['projectData'][0]['project_data'], true)['project_title'] .' - Jude Joshua || Product designer and Web developer';
+    $title = json_decode($data['projectData'][0]['project_data'], true)['project_title'] .' - Jude Joshua | Top Product Designer for Businesses and Brands';
     $description = json_decode($data['projectData'][0]['project_data'], true)['project_brief'];
     $img = $data['projectData'][0]['project_img_directory'].$data['projectData'][0]['project_cover_img'];
 

@@ -1,5 +1,6 @@
     <?php
-        $title = 'Not found! - Jude Joshua | Top-notch mobile and web experience designer';
+        $title = 'Not found! - Jude Joshua | Top Product Designer for Businesses and Brands';
+        $description = 'Error 404';
         include './public/components/error-header.php';
     ?>
     </head>

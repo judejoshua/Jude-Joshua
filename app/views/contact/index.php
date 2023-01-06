@@ -1,6 +1,6 @@
 <?php
     $title = 'Send a message | Jude Joshua';
-    $description = 'Get human-centred product designs that communicate your brand\'s business goals to your target audience.';
+    $description = 'Get user-centred designs for your website or app that communicate your brand\'s business goals to your target audience.';
     $img = '/public/assets/img/landing-image.webp';
     
     include './public/components/header.php';

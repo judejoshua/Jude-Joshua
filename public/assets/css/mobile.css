@@ -2,10 +2,9 @@
     #highlight{
         line-height: 1.35;
     }
-
-h2:not(.h1) #highlight {
-    line-height: 1.5;
-}
+    h2:not(.h1) #highlight {
+        line-height: 1.5;
+    }
     .preloader {
         padding: 32px 64px;
     }
@@ -491,6 +490,10 @@ body#case-study .landing .header {
     #case-study-section {
         padding-top: 24px !important;
     }
+
+body#home-landing #case-study-section {
+    padding-top: 88px !important;
+}
     .scroll-down {
         height: 56px;
         bottom: 20px;
