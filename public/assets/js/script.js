@@ -25,43 +25,21 @@ $(document).ready(function() {
 
     $(".projector")
         .mouseenter(function() {
-            cursor.css({
-                "padding": "16px 12px 15px",
-                "mix-blend-mode": "unset",
-                "background-color": "var(--secondary)",
-                "color": "var(--neutral)"
-
-            });
+            cursor.addClass("c-project");
             cursor.html('<p class="p5">View</p>');
         })
         .mouseleave(function() {
-            cursor.css({
-                "padding": "6px",
-                "mix-blend-mode": "difference",
-                "color": "var(--secondary)",
-                "background-color": "var(--neutral)"
-            });
+            cursor.removeClass("c-project");
             cursor.html('')
         });
 
     $("#balance")
         .mouseenter(function() {
-            cursor.css({
-                "padding": "16px 19px 16px",
-                "mix-blend-mode": "unset",
-                "background-color": "var(--secondary)",
-                "color": "var(--neutral)"
-
-            });
+            cursor.addClass("c-balance");
             cursor.html('<i class="las la-arrow-down"></i>');
         })
         .mouseleave(function() {
-            cursor.css({
-                "padding": "6px",
-                "mix-blend-mode": "difference",
-                "color": "var(--secondary)",
-                "background-color": "var(--neutral)"
-            });
+            cursor.removeClass("c-balance");
             cursor.html('')
         });
 

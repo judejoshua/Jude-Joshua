@@ -39,11 +39,21 @@ body#resume #mobile-div-about-grab {
 
 .resume-detailers {
     gap: 24px;
-    width: 66%;
+    width: 70%;
+    text-align: right;
 }
 
 #lefter-detailers {
-    width: 34%;
+    width: 25%;
+}
+
+#lefter-detailers p {
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+}
+
+#lefter-detailers h4 {
+    opacity: 0.8;
 }
 
 .title {
@@ -58,7 +68,8 @@ body#resume #mobile-div-about-grab {
 }
 
 .title-contact {
-    text-align: left;
+    /* text-align: right; */
+    gap: 12px;
 }
 
 .title-contact p a::after {
@@ -71,9 +82,9 @@ body#resume #mobile-div-about-grab {
 }
 
 .divisor {
-    height: 1px;
     width: 100%;
-    background-color: var(--placeholders);
+    background: var(--secondary);
+    height: 1px;
 }
 
 .left-text-divider,
@@ -102,6 +113,11 @@ body#resume #mobile-div-about-grab {
 
 .section .title-text {
     gap: 0;
+    /* text-align: right; */
+}
+
+.section .title-text * {
+    width: 100%;
 }
 
 .section .title-text .p4 {
@@ -119,6 +135,7 @@ ol li {
 
 ol {
     padding-left: 16px;
+    padding-top: 4px;
 }
 
 .section .title-text ol .p4 {
@@ -126,7 +143,7 @@ ol {
 }
 .experience-section {
     width: 100% !important;
-    gap: 16px !important;
+    gap: 5px !important;
 }
 .dater {
     display: inline-block;
@@ -145,6 +162,7 @@ ol {
 
 .tools .title-text.section {
     gap: 32px;
+    width: 100%;
 }
 
 .caption-text #tags {

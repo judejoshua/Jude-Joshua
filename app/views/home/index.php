@@ -36,9 +36,9 @@
                             <h3 class="hideme left">01</h3>
                             <div class="designer-caption d-flex d-flex-column">
                                 <h3 class="hideme right">Understand the Goal</h3>
-                                <div id="liner-100"></div>
+                                <div class="divisor"></div>
                                 <p class="p4 hideme right">
-                                    My job is to ensure the business makes money with their digital product. As a first step, I analyze in details the business' goals, objectives, and market requirements.
+                                    My job is to ensure the business makes money with their digital product. As a first step, I analyze in details the business' goals and objectives, industry standards and market requirements.
                                 </p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                             <h3 class="hideme left ">02</h3>
                             <div class="designer-caption d-flex d-flex-column">
                                 <h3 class="hideme right">Feel the Users</h3>
-                                <div id="liner-100" class=""></div>
+                                <div class="divisor"></div>
                                 <p class="p4 hideme right">
                                     My next goal is to understand the target audience better and I do this through surveys and interviews. By understanding the users' needs and pain points, I can carefully map each pain point with a supporting business objective.
                                 </p>
@@ -56,7 +56,7 @@
                             <h3 class="hideme left">03</h3>
                             <div class="designer-caption d-flex d-flex-column">
                                 <h3 class="hideme right">Develop Solutions</h3>
-                                <div id="liner-100" class=""></div>
+                                <div class="divisor"></div>
                                 <p class="p4 hideme right">
                                     My final step is to develop possible solutions that balance both the business and user needs without overlapping. At the end of the day, the most balanced solution wins.
                                 </p>

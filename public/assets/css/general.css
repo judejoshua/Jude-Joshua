@@ -14,9 +14,28 @@ footer {
     color: var(--secondary);
     background-color: var(--neutral);
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: 
+        transform 0.3s ease-out,
+        background-color 0.3s ease,
+        color 0.5s ease,
+        mix-blend-mode 0.3s ease,
+        padding 0.3s ease-in;
     z-index: 100000;
     mix-blend-mode: difference;
+}
+
+.cursor.c-project{
+    padding: 16px 12px 15px;
+    mix-blend-mode: unset;
+    background-color: var(--secondary);
+    color: var(--neutral);
+}
+
+.cursor.c-balance{
+    padding: 16px 19px 16px;
+    mix-blend-mode: unset;
+    background-color: var(--secondary);
+    color: var(--neutral);
 }
 
 a:hover~.cursor {
@@ -268,12 +287,6 @@ section {
     width: 24px;
     background: var(--secondary);
     height: 2px;
-}
-
-#liner-100{
-    width: 100%;
-    background: var(--secondary);
-    height: 1px;
 }
 
 .hidden {
