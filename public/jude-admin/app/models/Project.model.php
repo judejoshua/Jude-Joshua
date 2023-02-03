@@ -50,13 +50,14 @@ class Project extends Db
         }
     }
 
-    public function updateProjectData($project_unique_id, $project_type, $project_cover_img, $project_data, $project_duration)
+    public function updateProjectData($project_unique_id, $project_type, $project_cover_img, $project_data, $project_duration, $project_year)
     {
         try {
             $query = "UPDATE `projects` SET `project_type` = :project_type, 
                                             `project_cover_img` = :project_cover_img,
-                                            `project_data`= :project_data, 
-                                            `project_duration` = :project_duration
+                                            `project_data`= :project_data,
+                                            `project_duration` = :project_duration,
+                                            `project_year` = :project_year
                                         WHERE `unique_id` = :project_unique_id";
             $stmt = $this->connect()->prepare($query);
             $stmt->execute([
@@ -64,6 +65,7 @@ class Project extends Db
             	':project_cover_img' => $project_cover_img,
             	':project_data' => $project_data,
             	':project_duration' => $project_duration,
+                ':project_year' => $project_year,
             	':project_unique_id' => $project_unique_id
             ]);
             return true;

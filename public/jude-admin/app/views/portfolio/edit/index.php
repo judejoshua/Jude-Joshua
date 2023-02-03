@@ -1,40 +1,32 @@
 <?php
-    $title = 'Edit project '.$data['projectData'][0]['unique_id'].' || ';
+    
+    $project_data =  array_filter(json_decode($data['projectData'][0]['project_data'], true));
+    $title = 'Edit project - '.$project_data['project_title'].' || ';
     include './public/components/header.php';
     $get_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . explode('admin.', $_SERVER["HTTP_HOST"])[1];
 ?>
     </head>
 
     <body id="case-study-body">
-    <?php
+        <?php
             foreach ($data['projectData'] as $key => $projectData)
             {
-                $project_data =  array_filter(json_decode($projectData['project_data'], true));
 
                 echo '
                     <div class="wrapper" id="top">
                         <header class="landing" id="home">
                             <div class="case-study-title">
                                 <div class="case-study-title-top">
-                                    <a href="/portfolio/case_study/'.$projectData['unique_id'].'" class="return-button">
+                                    <a href="'; echo isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '/portfolio'; echo'" class="return-button">
                                         <i class="las la-arrow-left "></i>
-                                        <h5 class="p5">Return to Portfolio Page</h5>
+                                        <h6>Return to Portfolio Page</h6>
                                     </a>
                                     <div class="title-text">
-                                        <h1>Edit project</h1>
+                                        <h1>Edit Project</h1>
                                         <p class="p4">
                                             '.$project_data['project_title'].'
                                         </p>
                                     </div>
-                                </div>
-                                <div class="scroll-down-indicator">
-                                    <div class="scroll-down">
-                                        <div class="mouse">
-                                            <div id="arrow-tail-short"></div>
-                                        </div>
-                                        <div id="arrow-tail-long"></div>
-                                    </div>
-                                    <p class="p5">Scroll down</p>
                                 </div>
                             </div>
                         </header>
@@ -48,9 +40,9 @@
                                             <div class="input-group">
                                                 <div class="input-field">
                                                     <select id="project_type" name="project_type" class="form-input p4">
-                                                        <option value="UI/UX"'; echo $projectData['project_type'] == 'UI/UX' ? 'selected' : ''; echo '>UI/UX</option>
-                                                        <option value="Web design, Web development"'; echo $projectData['project_type'] == 'Web design, Web development' ? 'selected' : '';echo '>Website development</option>
-                                                        <option value="UI/UX, Web development" '; echo $projectData['project_type'] == 'UI/UX, Web development' ? 'selected' : ''; echo'>Both</option>
+                                                        <option value="UI/UX design"'; echo $projectData['project_type'] == 'UI/UX design' ? 'selected' : ''; echo '>UI/UX</option>
+                                                        <option value="UI(Visual) design" '; echo $projectData['project_type'] == 'UI(Visual) design' ? 'selected' : ''; echo'>UI(Visual) design</option>
+                                                        <option value="Web UI design, Web development"'; echo $projectData['project_type'] == 'Web UI design, Web development' ? 'selected' : '';echo '>Website development</option>
                                                     </select>
                                                     <div class="labels">
                                                         <p class="p5 placeholder">Choose your project type (Required)</p>
@@ -92,85 +84,13 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="project_description" id="to-title" class="h4">Project Mini Description*</label>
+                                                <label for="project_brief" id="to-title" class="h4">Project Brief*</label>
                                                 <div class="input-group">
                                                     <div class="input-field">
-                                                        <textarea type="text" id="project_description" name="project_description" class="form-input p4 form-area" maxlength="200">'; echo isset($project_data['project_description']) ? $project_data['project_description'] : ''; echo'</textarea>
+                                                        <textarea type="text" id="project_brief" name="project_brief" class="form-input p4 form-area" maxlength="200">'; echo isset($project_data['project_brief']) ? $project_data['project_brief'] : ''; echo'</textarea>
                                                         <div class="labels">
                                                             <p class="p5 placeholder">Say a little talk about your project (Required)</p>
-                                                            <p class="p5 error" data-error="project_description"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_tags" id="to-title" class="h4">Project Tags*</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <input type="text" id="project_tags" value="'; echo isset($project_data['project_tags']) ? $project_data['project_tags'] : ''; echo'" name="project_tags" class="form-input p4"/>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Enter your project tags seperated by a comma (Required)</p>
-                                                            <p class="p5 error" data-error="project_tags"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_about" id="to-title" class="h4">About the project*</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <textarea type="text" id="project_about" name="project_about" class="form-input p4 form-area" maxlength="2000">'; echo isset($project_data['project_about']) ? $project_data['project_about'] : ''; echo'</textarea>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Let\'s talk about the client and what they intend to achieve with the project in details (Required)</p>
-                                                            <p class="p5 error" data-error="project_about"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_problem_statement" id="to-title" class="h4">Problem Statement</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <textarea type="text" id="project_problem_statement" name="project_problem_statement" class="form-input p4 form-area" maxlength="2000">'; echo isset($project_data['project_problem_statement']) ? $project_data['project_problem_statement'] : ''; echo'</textarea>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">What problem were you trying to solve (Required for UI/UX)</p>
-                                                            <p class="p5 error" data-error="project_problem_statement"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_solution" id="to-title" class="h4">Solution</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <textarea type="text" id="project_solution" name="project_solution" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['project_solution']) ? $project_data['project_solution'] : ''; echo'</textarea>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">What was the solution? (Optional)</p>
-                                                            <p class="p5 error" data-error="project_solution"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_recommendation" id="to-title" class="h4">Recommendation</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <textarea type="text" id="project_recommendation" name="project_recommendation" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['project_recommendation']) ? $project_data['project_recommendation'] : ''; echo'</textarea>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Any recommendations? (Required for UI/UX)</p>
-                                                            <p class="p5 error" data-error="project_recommendation"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_role" id="to-title" class="h4">Role*</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <input type="text" value="'; echo isset($project_data['project_role']) ? $project_data['project_role'] : ''; echo'" id="project_role" name="project_role" class="form-input p4"/>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Your role in the project (Required)</p>
-                                                            <p class="p5 error" data-error="project_role"></p>
+                                                            <p class="p5 error" data-error="project_brief"></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -179,7 +99,7 @@
                                                 <label for="project_duration" id="to-title" class="h4">Project Duration*</label>
                                                 <div class="input-group">
                                                     <div class="input-field">
-                                                        <input type="text" id="project_duration" value="'; echo isset($projectData['project_duration']) ? $projectData['project_duration'] : ''; echo'" name="project_duration" class="form-input p4"/>
+                                                        <input type="text" id="project_duration" name="project_duration" value="'; echo isset($projectData['project_duration']) ? $projectData['project_duration'] : ''; echo'" class="form-input p4"/>
                                                         <div class="labels">
                                                             <p class="p5 placeholder">How long did you work on this project? (Required)</p>
                                                             <p class="p5 error" data-error="project_duration"></p>
@@ -187,351 +107,177 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </fieldset>
-                                        <div class="form-group '; echo $projectData['project_type'] == 'UI/UX' || $projectData['project_type'] == 'UI/UX, Web development' ? '' : 'hidden'; echo'" id="ui-ux">
-                                            <fieldset id="ux">
-                                                <legend>UX Design</legend>
-                                                <div class="form-group">
-                                                    <label for="project_ux-design" id="to-title" class="h4"></label>
-                                                    <div class="input-group">
-                                                        <div class="input-field">
-                                                            <textarea type="text" id="project_ux-design" name="project_ux-design" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['UX Design']['summary']) ? $project_data['UX Design']['summary'] : ''; echo'</textarea>
-                                                            <div class="labels">
-                                                                <p class="p5 placeholder">What little summary can you give about the ux design process?</p>
-                                                                <p class="p5 error" data-error="project_ux-design"></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="research" class="ux-buddy">
-                                                    <legend>User Research</legend>
-                                                    <div class="form-group">
-                                                        <label for="project_research-summary" id="to-title" class="h4"></label>
-                                                        <div class="input-group">
-                                                            <div class="input-field">
-                                                                <textarea type="text" id="project_research-summary" name="project_research-summary" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['UX Design']['User Research']['summary']) ? $project_data['UX Design']['User Research']['summary'] : ''; echo'</textarea>
-                                                                <div class="labels">
-                                                                    <p class="p5 placeholder">What little summary can you give about the user research process?</p>
-                                                                    <p class="p5 error" data-error="project_research-summary"></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label id="to-title" class="h4">Upload images*</label>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Upload an image to show your research process</p>
-                                                            <p class="p5 error" data-error="research_img"></p>
-                                                        </div>
-                                                        <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(isset($project_data['UX Design']['User Research']['research_img'])){
-                                                                $x=0;
-                                                                foreach ($project_data['UX Design']['User Research']['research_img'] as $key => $img)
-                                                                {
-                                                                    $x++;
-                                                                    echo'
-                                                                        <div class="d-flex flex-wrap" id="img-container" data-type="research">
-                                                                            <div class="input-field" id="research_img">
-                                                                                <input type="hidden" name="research_img_old" id="research_img_old'.$x.'" value="' .$img. '">
-                                                                                <input type="file" id="research_img'.$x.'" name="research_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'research-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'research_img_old'.$x.'\').value=\'\'"/>
-                                                                                <label for="research_img'.$x.'" class="choose-img-label">
-                                                                                    <div class="project">
-                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="research-imagePreview-'.$x.'" alt="research image" />
-                                                                                    </div>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    ';
-                                                                }
-                                                            }else{
-                                                                echo'
-                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="research">
-                                                                        <div class="input-field" id="research_img">
-                                                                            <input type="file" id="research_img-1" name="research_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'research-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
-                                                                            <label for="research_img-1" class="choose-img-label">
-                                                                                <div class="project">
-                                                                                    <img id="research-imagePreview-1" alt="research image" />
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                ';
-                                                            }
-                                                            echo'
-                                                            <span id="tag-single" class="add-more-images">Add another image</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="personae" class="ux-buddy">
-                                                    <legend>User Personae</legend>
-                                                    <div class="form-group">
-                                                        <label for="project_personae-summary" id="to-title" class="h4"></label>
-                                                        <div class="input-group">
-                                                            <div class="input-field">
-                                                                <textarea type="text" id="project_personae-summary" name="project_personae-summary" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['UX Design']['User Personae']['summary']) ? $project_data['UX Design']['User Personae']['summary'] : ''; echo'</textarea>
-                                                                <div class="labels">
-                                                                    <p class="p5 placeholder">What little summary can you give about the user personae?</p>
-                                                                    <p class="p5 error" data-error="project_personae-summary"></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group personae">
-                                                        <label id="to-title" class="h4">Upload images*</label>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Upload an image to show your user personae</p>
-                                                            <p class="p5 error" data-error="personae_img"></p>
-                                                        </div>
-                                                        <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(isset($project_data['UX Design']['User Personae']['personae_img'])){
-                                                                $x=0;
-                                                                foreach ($project_data['UX Design']['User Personae']['personae_img'] as $key => $img)
-                                                                {
-                                                                    $x++;
-                                                                    echo'
-                                                                        <div class="d-flex flex-wrap" id="img-container" data-type="personae">
-                                                                            <div class="input-field" id="personae_img">
-                                                                                <input type="hidden" name="personae_img_old" id="personae_img_old'.$x.'" value="' .$img. '">
-                                                                                <input type="file" id="personae_img'.$x.'" name="personae_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'personae-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'personae_img_old'.$x.'\').value=\'\'"/>
-                                                                                <label for="personae_img'.$x.'" class="choose-img-label">
-                                                                                    <div class="project">
-                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="personae-imagePreview-'.$x.'" alt="personae image" />
-                                                                                    </div>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    ';
-                                                                }
-                                                            }else{
-                                                                echo'
-                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="personae">
-                                                                        <div class="input-field" id="personae_img">
-                                                                            <input type="file" id="personae_img-1" name="personae_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'personae-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
-                                                                            <label for="personae_img-1" class="choose-img-label">
-                                                                                <div class="project">
-                                                                                    <img id="personae-imagePreview-1" alt="personae image" />
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                ';
-                                                            }
-                                                            echo'
-                                                            <span id="tag-single" class="add-more-images">Add another image</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <fieldset id="ui">
-                                                <legend>UI Design</legend>
-                                                <div class="form-group">
-                                                    <label for="project_ui-design" id="to-title" class="h4"></label>
-                                                    <div class="input-group">
-                                                        <div class="input-field">
-                                                            <textarea type="text" id="project_ui-design" name="project_ui-design" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['UI Design']['summary']) ? $project_data['UI Design']['summary'] : ''; echo'</textarea>
-                                                            <div class="labels">
-                                                                <p class="p5 placeholder">What little summary can you give about the ui design process?</p>
-                                                                <p class="p5 error" data-error="project_ui-design"></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="wireframes" class="ui-buddy">
-                                                    <legend>Wireframes and Sketches</legend>
-                                                    <div class="form-group">
-                                                        <label for="project_wireframes-summary" id="to-title" class="h4"></label>
-                                                        <div class="input-group">
-                                                            <div class="input-field">
-                                                                <textarea type="text" id="project_wireframes-summary" name="project_wireframes-summary" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['UI Design']['Wireframes and Sketches']['summary']) ? $project_data['UI Design']['Wireframes and Sketches']['summary'] : ''; echo'</textarea>
-                                                                <div class="labels">
-                                                                    <p class="p5 placeholder">What little summary can you give about the user wireframes process?</p>
-                                                                    <p class="p5 error" data-error="project_wireframes-summary"></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label id="to-title" class="h4">Upload images*</label>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Upload images to show your wireframes</p>
-                                                            <p class="p5 error" data-error="wireframes_img"></p>
-                                                        </div>
-                                                        <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(isset($project_data['UI Design']['Wireframes and Sketches']['wireframes_img'])){
-                                                                $x=0;
-                                                                foreach ($project_data['UI Design']['Wireframes and Sketches']['wireframes_img'] as $key => $img)
-                                                                {
-                                                                    $x++;
-                                                                    echo'
-                                                                        <div class="d-flex flex-wrap" id="img-container" data-type="wireframes">
-                                                                            <div class="input-field" id="wireframes_img">
-                                                                                <input type="hidden" name="wireframes_img_old" id="wireframes_img_old'.$x.'" value="' .$img. '">
-                                                                                <input type="file" id="wireframes_img'.$x.'" name="wireframes_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'wireframes-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'wireframes_img_old'.$x.'\').value=\'\'"/>
-                                                                                <label for="wireframes_img'.$x.'" class="choose-img-label">
-                                                                                    <div class="project">
-                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="wireframes-imagePreview-'.$x.'" alt="wireframes image" />
-                                                                                    </div>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    ';
-                                                                }
-                                                            }else{
-                                                                echo '
-                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="wireframes">
-                                                                        <div class="input-field" id="wireframes_img">
-                                                                            <input type="file" id="wireframes_img-1" name="wireframes_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'wireframes-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
-                                                                            <label for="wireframes_img-1" class="choose-img-label">
-                                                                                <div class="project">
-                                                                                    <img id="wireframes-imagePreview-1" alt="wireframes image" />
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                ';
-                                                            }
-                                                            echo'
-                                                            <span id="tag-single" class="add-more-images">Add another image</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div id="hi-fi" class="ui-buddy">
-                                                    <legend>High Fidelity Mockup</legend>
-                                                    <div class="form-group">
-                                                        <label for="project_hiFI-summary" id="to-title" class="h4"></label>
-                                                        <div class="input-group">
-                                                            <div class="input-field">
-                                                                <textarea type="text" id="project_hiFI-summary" name="project_hiFI-summary" class="form-input p4 form-area" maxlength="1000">'; echo isset($project_data['UI Design']['High Fidelity Mockup']['summary']) ? $project_data['UI Design']['High Fidelity Mockup']['summary'] : ''; echo'</textarea>
-                                                                <div class="labels">
-                                                                    <p class="p5 placeholder">What little summary can you give about the high fidelity mockups?</p>
-                                                                    <p class="p5 error" data-error="project_hiFI-summary"></p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group hiFI">
-                                                        <label id="to-title" class="h4">Upload images*</label>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Upload an image to show your user high fidelity mockups</p>
-                                                            <p class="p5 error" data-error="hiFI_img"></p>
-                                                        </div>
-                                                        <div class="img-upload input-group d-flex flex-wrap">';
-                                                            if(isset($project_data['UI Design']['High Fidelity Mockup']['hiFI_img']))
-                                                            {
-                                                                $x=0;
-                                                                foreach ($project_data['UI Design']['High Fidelity Mockup']['hiFI_img'] as $key => $img)
-                                                                {
-                                                                    $x++;
-                                                                    echo'
-                                                                        <div class="d-flex flex-wrap" id="img-container" data-type="hiFI">
-                                                                            <div class="input-field" id="hiFI_img">
-                                                                                <input type="hidden" name="hiFI_img_old" id="hiFI_img_old'.$x.'" value="' .$img. '">
-                                                                                <input type="file" id="hiFI_img'.$x.'" name="hiFI_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'hiFI-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'hiFI_img_old'.$x.'\').value=\'\'"/>
-                                                                                <label for="hiFI_img'.$x.'" class="choose-img-label">
-                                                                                    <div class="project">
-                                                                                        <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="hiFI-imagePreview-'.$x.'" alt="hiFI image" />
-                                                                                    </div>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    ';
-                                                                }
-                                                            }else{
-                                                                echo '
-                                                                    <div class="d-flex flex-wrap" id="img-container" data-type="hiFI">
-                                                                        <div class="input-field" id="hiFI_img">
-                                                                            <input type="file" id="hiFI_img-1" name="hiFI_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'hiFI-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
-                                                                            <label for="hiFI_img-1" class="choose-img-label">
-                                                                                <div class="project">
-                                                                                    <img id="hiFI-imagePreview-1" alt="hiFI image" />
-                                                                                </div>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                ';
-                                                            }
-                                                            echo'
-                                                            <span id="tag-single" class="add-more-images">Add another image</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                            <fieldset id="prototype">
-                                            <legend>Project Prototype</legend>
                                             <div class="form-group">
-                                                <label for="project_prototype" id="to-title" class="h4">Project Prototype*</label>
+                                                <label for="project_year" id="to-title" class="h4">Project Year*</label>
                                                 <div class="input-group">
                                                     <div class="input-field">
-                                                        <input type="url" id="project_prototype" value="'; echo isset($project_data['Prototype']['prototype']) ? $project_data['Prototype']['prototype'] : ''; echo'" name="project_prototype" class="form-input p4"/>
+                                                        <input type="month" id="project_year" name="project_year" value="'; echo isset($projectData['project_year']) ? date('Y-m', strtotime($projectData['project_year'])) : ''; echo'" class="form-input p4"/>
                                                         <div class="labels">
-                                                            <p class="p5 placeholder">Enter the prototype of the project (Required)</p>
-                                                            <p class="p5 error" data-error="project_prototype"></p>
+                                                            <p class="p5 placeholder">In what year did you complete this project? (Required)</p>
+                                                            <p class="p5 error" data-error="project_year"></p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <label for="project_tools" id="to-title" class="h4">Tools Used*</label>
+                                                <div class="input-group">
+                                                    <div class="input-field">
+                                                        <input type="text" id="project_tools" name="project_tools" value="'; echo isset($project_data['project_tools']) ? $project_data['project_tools'] : ''; echo'" class="form-input p4"/>
+                                                        <div class="labels">
+                                                            <p class="p5 placeholder">Enter your project tools seperated by a comma (Required)</p>
+                                                            <p class="p5 error" data-error="project_tools"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="project_problem" id="to-title" class="h4">Problem</label>
+                                                <div class="input-group">
+                                                    <div class="input-field">
+                                                        <input type="text" id="project_problem_title" name="project_problem_title" value="'; echo $project_data['project_problem']['problem']; echo'" class="form-input p4"/>
+                                                        <div class="labels">
+                                                            <p class="p5 placeholder">Enter a title (Required if you adding a problem)</p>
+                                                            <p class="p5 error" data-error="project_problem_title"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <textarea type="text" id="project_problem" name="project_problem" class="form-input p4 form-area" maxlength="500">'; echo $project_data['project_problem']['problem_details']; echo'</textarea>
+                                                        <div class="labels">
+                                                            <p class="p5 placeholder">What problem were you trying to solve? (Optional)</p>
+                                                            <p class="p5 error" data-error="project_problem"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="project_solution" id="to-title" class="h4">Solution</label>
+                                                <div class="input-group">
+                                                    <div class="input-field">
+                                                        <input type="text" id="project_solution_title" name="project_solution_title" value="'; echo $project_data['project_solution']['solution']; echo'" class="form-input p4"/>
+                                                        <div class="labels">
+                                                            <p class="p5 placeholder">Enter a title (Required if you adding a solution)</p>
+                                                            <p class="p5 error" data-error="project_solution_title"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <textarea type="text" id="project_solution" name="project_solution" class="form-input p4 form-area" maxlength="500">'; echo $project_data['project_solution']['solution_details']; echo'</textarea>
+                                                        <div class="labels">
+                                                            <p class="p5 placeholder">What was the solution? (Optional)</p>
+                                                            <p class="p5 error" data-error="project_solution"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="showReel-imagePreview" id="to-title" class="h4">Project Show-reel</label>
+                                                <div class="img-upload input-group">
+                                                    <div class="input-field">
+                                                        <div class="labels">
+                                                            <p class="p5 placeholder">Add a show-reel for your project (Optional)</p>
+                                                            <p class="p5 error" data-error="project_show_reel"></p>
+                                                        </div>
+                                                        <input type="hidden" name="project_show_reel_old" id="project_show_reel_old" value="' .$project_data['project_show_reel']. '">
+                                                        <input type="file" id="project_show_reel" name="project_show_reel" class="form-input p4" accept="image/gif, image/webp" onchange="document.getElementById(\'showReel-imagePreview\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'project_show_reel_img_old\').value=\'\'"/>
+                                                        <label for="project_show_reel" class="choose-img-label col-100">
+                                                            <div class="project col-100">
+                                                                <img id="showReel-imagePreview" src="'.$get_url.$projectData['project_img_directory'].$project_data['project_show_reel'].'" alt="showReel image" />
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </fieldset>
+                                        <div class="process">
+                                            <div class="title-text">
+                                                <h2>The process</h2>
+                                                <p>Click on the "+" below to add a process</p>
+                                                <br/><br/>
+                                            </div>
+                                            <div class="process-list d-flex">';
+                                                foreach ($project_data['project_process'] as $key => $value)
+                                                {
+                                                    echo '
+                                                    <fieldset class="col-100">
+                                                        <span id="tag-single" class="close-div">X</span>
+                                                        <legend>'.ucwords(str_replace('_', ' ', $key)).'</legend>
+                                                        <div class="field-button-group d-flex d-flex-row flex-align-start col-100">
+                                                            <div class="title-text">
+                                                                <div class="form-group">
+                                                                    <label for="'.$key.'-summary" id="to-title" class="h4"></label>
+                                                                    <div class="input-group">
+                                                                        <div class="input-field">
+                                                                            <textarea type="text" id="'.$key.'-summary" name="'.$key.'-summary" class="form-input p4 form-area" maxlength="1000">'.$value['summary'].'</textarea>
+                                                                            <div class="labels">
+                                                                                <p class="p5 placeholder">What little summary can you give about the '.str_replace('_', ' ', $key).' process?</p>
+                                                                                <p class="p5 error" data-error="'.$key.'-summary"></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="labels">
+                                                                    <p class="p5 error" data-error="'.$key.'_img"></p>
+                                                                </div>';
+                                                                if(isset($value[$key.'_img']))
+                                                                {
+                                                                    echo'
+                                                                        <div class="col-100 img-upload input-group d-flex flex-wrap">
+                                                                            <div class="d-flex flex-wrap col-100" id="img-container" data-type="'.$key.'">';
+                                                                        foreach ($value[$key.'_img'] as $image_key => $image)
+                                                                        {
+                                                                            echo'
+                                                                                <div class="input-field col-100" id="'.$key.'_img">
+                                                                                    <span id="tag-single" class="close-image">X</span>
+                                                                                    <input type="hidden" name="'.$key.'_img_old" id="'.$key.'_img_old'.($image_key+1).'" value="' .$image. '">
+                                                                                    <input type="file" id="'.$key.'_img-'.($image_key+1).'" name="'.$key.'_img[]" class="form-input p4 col-100" accept="image/webp" onchange="document.getElementById(\''.$key.'\'-imagePreview-'.($image_key+1).'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\''.$key.'_img_old\').value=\'\'">
+                                                                                    <label for="'.$key.'_img-'.($image_key+1).'" class="choose-img-label col-100">
+                                                                                        <div class="project col-100">
+                                                                                            <img id="'.$key.'-imagePreview-'.($image_key+1).'" src="'.$get_url.$projectData['project_img_directory'].$image.'" alt="'.$key.' image">
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            ';
+                                                                        }
+                                                                        echo'
+                                                                            </div>                                                                    
+                                                                            <span id="tag-single" class="add-more-images">Add another image</span>
+                                                                        </div>
+                                                                    ';
+                                                                }
+                                                            echo'
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                    ';
+                                                }
+                                            echo'
+                                            </div>
+                                            <div class="field-button-group d-flex d-flex-row flex-align-start">
+                                                <div class="input-field field-set-field">
+                                                    <input type="hidden" id="process_filled" name="process_filled" class="form-input p4" value="1"/>
+                                                    <input type="text" id="fieldset_title" name="fieldset_title" class="form-input p4" placeholder="Enter name of the process step" list="process_steps"/>
+                                                    <datalist id="process_steps">
+                                                        <option value="desk research">desk research</option>
+                                                        <option value="competitive analysis">competitive analysis</option>
+                                                        <option value="user interviews">user interviews</option>
+                                                        <option value="user persona">user persona</option>
+                                                        <option value="info architecture">info architecture</option>
+                                                        <option value="user flows">user flows</option>
+                                                        <option value="sketches">sketches</option>
+                                                        <option value="wireframes">wireframes</option>
+                                                        <option value="final design">final design</option>
+                                                        <option value="prototype">prototype</option>
+                                                        <option value="usability tests">usability tests</option>
+                                                        <option value="insights">insights</option>
+                                                        <option value="conclusion">conclusion</option>
+                                                        <option value="url">url</option>
+                                                    </datalist>
+                                                </div>
+                                                <a class="p5 secondary add-process" id="tag-single">+ Add process step</a>
+                                            </div>
                                         </div>
-                                        <fieldset id="web" class="'; echo $projectData['project_type'] == 'Web design, Web development' || $projectData['project_type'] == 'UI/UX, Web development' ? '' : 'hidden'; echo'">
-                                            <legend>Project Website</legend>
-                                            <div class="form-group">
-                                                <label id="to-title" class="h4">Upload snapshots*</label>
-                                                <div class="labels">
-                                                    <p class="p5 placeholder">Upload some snapshots of the web project</p>
-                                                    <p class="p5 error" data-error="snap_img"></p>
-                                                </div>
-                                                <div class="img-upload input-group d-flex flex-wrap">';
-                                                    if(isset($project_data['Website']['snap_img']))
-                                                    {
-                                                        $x=0;
-                                                        foreach ($project_data['Website']['snap_img'] as $key => $img)
-                                                        {
-                                                            $x++;
-                                                            echo'
-                                                                <div class="d-flex flex-wrap" id="img-container" data-type="snap">
-                                                                    <div class="input-field" id="snap_img">
-                                                                        <input type="hidden" name="snap_img_old" id="snap_img_old'.$x.'" value="' .$img. '">
-                                                                        <input type="file" id="snap_img'.$x.'" name="snap_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'snap-imagePreview-'.$x.'\').src = window.URL.createObjectURL(this.files[0]);document.getElementById(\'snap_img_old'.$x.'\').value=\'\'"/>
-                                                                        <label for="snap_img'.$x.'" class="choose-img-label">
-                                                                            <div class="project">
-                                                                                <img src="'.$get_url.$projectData['project_img_directory'].$img.'" id="snap-imagePreview-'.$x.'" alt="snap image" />
-                                                                            </div>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            ';
-                                                        }
-                                                    }else{
-                                                        echo'
-                                                            <div class="d-flex flex-wrap" id="img-container" data-type="snap">
-                                                                <div class="input-field" id="snap_img">
-                                                                    <input type="file" id="snap_img-1" name="snap_img[]" class="form-input p4" accept="image/webp" onchange="document.getElementById(\'snap-imagePreview-1\').src = window.URL.createObjectURL(this.files[0])"/>
-                                                                    <label for="snap_img-1" class="choose-img-label">
-                                                                        <div class="project">
-                                                                            <img id="snap-imagePreview-1" alt="snap image" />
-                                                                        </div>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        ';
-                                                    }
-                                                    echo'
-                                                    <span id="tag-single" class="add-more-images">Add another image</span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="project_website" id="to-title" class="h4">Project Website*</label>
-                                                <div class="input-group">
-                                                    <div class="input-field">
-                                                        <input type="text"  value="'; echo isset($project_data['Website']['project url']) ? $project_data['Website']['project url'] : ''; echo'" id="project_website" name="project_website" class="form-input p4"/>
-                                                        <div class="labels">
-                                                            <p class="p5 placeholder">Enter the website of the project (Required)</p>
-                                                            <p class="p5 error" data-error="project_website"></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
                                     </div>
                                     <button class="btn" type="submit" id="edit-project">
                                         <div class="btn_bg"></div>
@@ -544,18 +290,17 @@
                             </div>
                         </article>
                     </div>
-                ';                
+                    <div class="success-message pop-up">
+                        <i class="las la-check"></i>
+                        <p class="p5"></p>
+                    </div>
+                ';
             }
         ?>
-        <div class="success-message pop-up">
-            <i class="las la-check"></i>
-            <p class="p5"></p>
-        </div>
-
         <?php
             include './public/components/footer.php';
         ?>
     </body>
 
-    </html>
+</html>
     

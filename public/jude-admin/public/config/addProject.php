@@ -66,7 +66,6 @@
             $general_project_data[$key] = nl2br($value);
         }
 
-
         //add the project problem and the solution
         $general_project_data['project_problem'] = array(
             'problem' => $_POST['project_problem_title'],
@@ -76,7 +75,7 @@
             'solution' => $_POST['project_solution_title'],
             'solution_details' => $_POST['project_solution']
         );
-
+        
         //add the project show reel
         $project_show_reel = $_FILES['project_show_reel']["name"];
         if(!empty($project_show_reel))

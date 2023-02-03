@@ -4,7 +4,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding: 48px 120px 48px 128px;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     width: 100%;
     height: auto;
@@ -12,7 +12,7 @@ nav {
     top: 0px;
     background: transparent;
     transition: 0.4s ease-in-out !important;
-    top: -100%;
+/*    top: -100%;*/
 }
 
 nav.ready {
@@ -27,7 +27,7 @@ nav.fixed {
     box-shadow: 0px 4px 30px rgba(94, 94, 94, 0.1);
     padding-top: 32px;
     padding-bottom: 32px;
-    top: -100%;
+/*    top: -100%;*/
 }
 
 .logo {

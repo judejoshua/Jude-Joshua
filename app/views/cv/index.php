@@ -58,16 +58,16 @@
                                         <p class="p4"><span>NOVEMBER 2022 - PRESENT &#8212; (REMOTE)</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Inspecting visual mockups and delivering critiques on design tasks submitted weekly to help students improve their design skills.</p>
+                                                <p class="p4">Mentored and guided students in their UI/UX design tasks, offering reviews, design critiques and advice to help them improve their skills.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Providing support and mentorship to students, ensuring that they complete their assigned tasks and are on track with course deadlines.</p>
+                                                <p class="p4">Ensured students met course deadlines and successfully completed their assignments.</p>
                                             </li>
                                         </ol>
                                     </div>
                                     <div class="experience-section title-text hideme right">
                                         <h4 class="h4">LEAD PRODUCT DESIGNER | FIRSTMEDTRADE AFRICA</h4>
-                                        <p class="p4"><span>DECEMBER 2020 - PRESENT &#8212; LAGOS, NIGERIA (Hybrid Remote)</span></p>
+                                        <p class="p4"><span>DECEMBER 2020 - PRESENT &#8212; LAGOS, NIGERIA (HYBRID REMOTE)</span></p>
                                         <ol>
                                             <li>
                                                 <p class="p4">Coordinated with other members of the design team to conduct one-on-one interviews with 40 existing customers to understand the challenges faced with placing orders on the e-commerce site.</p>
@@ -76,13 +76,10 @@
                                                 <p class="p4">Designed and maintained a robust component library and design system to ensure 100% consistency in all aspects of the product UI.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Boosted signups by 20% by improving the UI and web interface for a customer-facing e-commerce site with 10,000+ visitors per month.</p>
-                                            </li>
-                                            <li>
                                                 <p class="p4">Presented cross-functional teams and senior leadership with new product design concepts.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Leveraged usability tests with 25 beta users to ensure that the new UI was functional, simple, and usable — allowing easy flow and completion of tasks</p>
+                                                <p class="p4">Leveraged usability tests with 25 beta users to ensure that the new UI was functional, simple, and usable — allowing easy flow and completion of tasks.</p>
                                             </li>
                                             <li>
                                                 <p class="p4">Actively sought opportunities to expand my experience and enhance my skills, accepting challenging projects and working hard to meet company goals and deadlines.</p>
@@ -91,7 +88,7 @@
                                     </div>
                                     <div class="experience-section title-text hideme right">
                                         <h4 class="h4">WEB DESIGNER | FIRSTMEDTRADE AFRICA</h4>
-                                        <p class="p4"><span >DECEMBER 2017 - NOVEMBER 2020 &#8212;  UYO, NIGERIA</span></p>
+                                        <p class="p4"><span >DECEMBER 2017 - NOVEMBER 2020 &#8212;  UYO, NIGERIA (HYBRID REMOTE)</span></p>
                                         <ol>
                                             <li>
                                                 <p class="p4">Facilitated the design, development and maintenance of the beta version of the website, providing telemedicine services to 1,000+ users.</p>
@@ -109,10 +106,10 @@
                                         <p class="p4"><span>MAY 2017 - OCTOBER 2017 &#8212; UYO, NIGERIA</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Handled accessibility and usability of the website by reducing the load time by 12%, minimizing navigation options, and removing unimportant parts of the user flow.</p>
+                                                <p class="p4">Optimized website accessibility and usability by reducing page loading time by 12% and simplifying navigation.</p>
                                             </li>
                                             <li>
-                                                <p class="p4">Mentored 10 members of senior staff in web UI design and graphic design during a 3-month training prograM.</p>
+                                                <p class="p4">Mentored and trained 10 senior staff members in web and graphic design over a 3-month period.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -135,7 +132,7 @@
                                         <p class="p4"><span>SEPTEMBER 2021 – SEPTEMBER 2022 &#8212; (REMOTE)</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4"> Collaborated with a cross-functional team to curate a responsive portfolio website for receiving donations and promoting planned cancer-related events.</p>
+                                                <p class="p4">Collaborated with a cross-functional team to curate a responsive portfolio website for receiving donations and promoting planned cancer-related events</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -144,7 +141,7 @@
                                         <p class="p4"><span>NOVEMBER 2021 &#8212; (REMOTE)</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Curated the design of a responsive web app for a decentralized exchange (DEX) platform in addition to providing wireframes, prototypes, style guides and a design system to increase the development team productivity.</p>
+                                                <p class="p4">Curated the design of a responsive web app for a decentralized exchange (DEX) platform in addition to providing wireframes, prototypes, style guides and a design system to increase enginnering team productivity.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -153,7 +150,7 @@
                                         <p class="p4"><span>AUGUST 2021 – OCTOBER 2021 &#8212; (REMOTE)</span></p>
                                         <ol>
                                             <li>
-                                                <p class="p4">Volunteered to design a responsive mobile-first SaaS website and provide prototypes for usability testing, component style guides, and a design system.</p>
+                                                <p class="p4">Volunteered to design a responsive mobile-first SaaS user interface and provide prototypes for usability testing, component style guides, and a design system.</p>
                                             </li>
                                         </ol>
                                     </div>
@@ -173,7 +170,7 @@
                                 <div class="title-text section">
                                     <li>
                                         <h4 class="h4 hideme right">PROBLEM SOLVER</h4>
-                                        <p class="p4 hideme right"><span><i>Empathy, resourcefulness, openness to change, storytelling, time allocation</i></span></p>
+                                        <p class="p4 hideme right"><span><i>Empathy, resourcefulness, openness to change, storytelling, time allocation.</i></span></p>
                                     </li>
                                     <li>
                                         <h4 class="h4 hideme right">ANALYTICAL AND DEEP THINKER</h4>
@@ -233,7 +230,7 @@
                                     </li>
                                     <li>
                                         <h4 class="h4 hideme right">FRENCH</h4>
-                                        <p class="p4 hideme right"><span><i>Beginner</i></span></p>
+                                        <p class="p4 hideme right"><span><i>Intermediate</i></span></p>
                                     </li>
                                 </div>
                             </div>
@@ -270,7 +267,7 @@
             <p class="p4">Your download will begin shortly.</p>
         </div>
         
-        <a class="save dwnld-btn" href="/public/assets/files/Jude-Joshua-Resume.pdf" download="Jude-Joshua-Resume.pdf">
+        <a class="save dwnld-btn" href="/public/assets/files/Jude-Joshua-Resume-English.pdf" download="Jude-Joshua-Resume-English.pdf">
             <p id="text" class="p6"><span>Save</span></p>
         </a>
 

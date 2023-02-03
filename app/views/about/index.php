@@ -28,7 +28,7 @@
                         <div id="liner" class="hideme right"></div>
                         <p class="p4 hideme right">
                             My favourite thing to do is to have a good laugh. I like to write, listen to music, play board games, and spend some alone time reading. I also enjoy being around my family and my loved ones.<br/>
-                            I especially love listening to people talk about their problems, and giving them guidance where I think is necessary.<br/><br/>
+                            I especially love listening to people talk about their problems and giving them guidance where I think is necessary.<br/><br/>
                             P.S. You could also find me playing with the neighbor's dog 😁.
                         </p>
                     </div>

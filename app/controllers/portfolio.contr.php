@@ -8,26 +8,22 @@ class Portfolio extends Controller
 
         $projectList = $projectClass->getProjectList();
         
-        $ui_ux = 0;
+        $case_studies = 0;
         $ui = 0;
-        $web = 0;
         foreach ($projectList as $key => $project)
         {
-            if($project['project_type'] == 'UI/UX design'){
-                $ui_ux++;
+            if($project['project_type'] !== 'UI(Visual) design'){
+                $case_studies++;
             }else if($project['project_type'] == 'UI(Visual) design'){
                 $ui++;
-            }else{
-                $web++;
             }
         }
         
         $this->view('portfolio/index', [
             
             'projectList' => $projectList,
-            'web' => $web,
             'ui' => $ui,
-            'ui_ux' => $ui_ux
+            'case_studies' => $case_studies
 
         ]);
     }

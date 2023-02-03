@@ -29,7 +29,7 @@
             <article id="body">
                 <section id="balance">
                     <div class="text-divider hideme left">
-                        <h2>A <span id="highlight">journey</span> from Idea to Solution.</h2>
+                        <h2>A <span id="highlight">journey</span> from idea to solution.</h2>
                     </div>
                     <div class="balance-holder d-flex d-flex-column flex-justify-between flex-align-stretch">
                         <div class="d-flex d-flex-row cap">
@@ -118,7 +118,7 @@
                                                                             <h5 class="p4">'.$project_data['project_title'].'</h5>
                                                                             <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                         </div>
-                                                                        <span class="p5 year">'.explode(' ', $project['project_year'])[1].'</span>
+                                                                        <span class="p5 year">'.date('Y', strtotime($project['project_year'])).'</span>
                                                                     </div>
                                                                     <div class="d-flex d-flex-row flex-justify-between flex-align-start">
                                                                         <span class="p5 view">View '.$show.'</span>

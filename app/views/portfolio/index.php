@@ -21,6 +21,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="tags-row">
+                    <!-- <span class="h5">Filter by:</span> -->
+                    <div>
+                        <span class="p5 secondary" id="tag-single" data-show="">Case Studies <span id="project-counter"><?= $data['case_studies'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual designs <span id="project-counter"><?= $data['ui'] ?></span></span>
+                    </diV>
+                </div>
             </header>
             <article id="body">
                 <section id="case-study-section">
@@ -63,7 +70,7 @@
                                                                             <h5 class="p4">'.$project_data['project_title'].'</h5>
                                                                             <span id="tags" class="p5">'.$project['project_type'].'</span>
                                                                         </div>
-                                                                        <span class="p5 year">'.explode(' ', $project['project_year'])[1].'</span>
+                                                                        <span class="p5 year">'.date('Y', strtotime($project['project_year'])).'</span>
                                                                     </div>
                                                                     <div class="d-flex d-flex-row flex-justify-between flex-align-start">
                                                                         <span class="p5 view">View '.$show.'</span>
