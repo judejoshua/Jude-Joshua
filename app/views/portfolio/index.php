@@ -24,7 +24,7 @@
                 <div class="tags-row">
                     <!-- <span class="h5">Filter by:</span> -->
                     <div>
-                        <span class="p5 secondary" id="tag-single" data-show="">Case Studies <span id="project-counter"><?= $data['case_studies'] ?></span></span>
+                        <span class="p5 secondary" id="tag-single" data-show="Case Studies">Case Studies <span id="project-counter"><?= $data['case_studies'] ?></span></span>
                         <span class="p5 secondary" id="tag-single" data-show="UI(Visual) design">Visual designs <span id="project-counter"><?= $data['ui'] ?></span></span>
                     </diV>
                 </div>
@@ -123,9 +123,15 @@
                 
             }else{
                 $(this).addClass("active");
-                var results = projectsArray.filter(function(elem) {
-                    return elem.project_type.indexOf(project_type) !== -1;
-                });
+                if(project_type !== 'UI(Visual) design'){
+                    var results = projectsArray.filter(function(elem) {
+                        return elem.project_type.indexOf('UI(Visual) design') == -1;
+                    });
+                }else{
+                    var results = projectsArray.filter(function(elem) {
+                        return elem.project_type.indexOf(project_type) !== -1;
+                    });
+                }
                 
                 showArray = results;
             }

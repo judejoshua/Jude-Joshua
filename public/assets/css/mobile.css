@@ -1027,7 +1027,7 @@ body#home-landing #case-study-section {
     }
     .tags-row {
         gap: 8px;
-        margin-top: 48px;
+        margin-top: 32px;
     }
     body#home-landing #case-study {
         padding: 120px 48px 104px !important;
