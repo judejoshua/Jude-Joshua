@@ -4,7 +4,8 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{HTTPS} off [OR]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^judejoshua.me [NC]
+RewriteRule ^(.*)$ https://www.judejoshua.me/$1 [L,R=301]
 
 RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.pdf|\.jpg|\.gif|\.woff2|\.woff|\.ttf|\.svg|\.eot|robots\.txt)$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
