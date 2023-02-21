@@ -97,7 +97,7 @@
                                                                     echo' 
                                                                     <div class="text-divider sub-title">
                                                                         <div class="left d-flex d-flex-row flex-justify-start flex-align-start">';
-                                                                            if($sub_title == 'url')
+                                                                            if($sub_title == 'url' || $sub_title == 'prototype')
                                                                             {
                                                                                 echo '';
                                                                             }else{
@@ -107,7 +107,10 @@
                                                                             }
                                                                             
                                                                             if($sub_title == 'url'){
-                                                                                echo '<a href="'.$contents['summary'].'" target="_blank">View this project</a>';
+                                                                                echo '<a href="'.$contents['summary'].'" target="_blank">View this project <i class="las la-external-link-alt"></i></a>';
+                                                                            }else if($sub_title == 'prototype')
+                                                                            {
+                                                                                echo '<a href="'.$contents['summary'].'" target="_blank">View prototype <i class="las la-external-link-alt"></i></a>';
                                                                             }else{
                                                                                 if (!is_array($contents))
                                                                                 {

@@ -70,17 +70,6 @@
             include 'nav.php';
         ?>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script defer src="https://www.googletagmanager.com/gtag/js?id=G-321KZ83579"></script>
-        <script defer>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-321KZ83579');
-        </script>
-
-
         <div class="preloader d-flex flex-justify-between d-flex-column flex-align-center">
             <div class="empty-div"></div>
             <div class="pulse-effect">

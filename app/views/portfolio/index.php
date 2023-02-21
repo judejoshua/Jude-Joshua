@@ -51,9 +51,11 @@
                                             {
                                                 $project_data = json_decode($project['project_data'], true);
                                                 
-                                                if($project['project_type'] == 'UI/UX design'){
+                                                if($project['project_type'] == 'UI/UX design')
+                                                {
                                                     $show = 'case study';
-                                                }else if($project['project_type'] == 'UI(Visual) design'){
+                                                }else if($project['project_type'] == 'UI(Visual) design')
+                                                {
                                                     $show = 'design process';
                                                 }else{
                                                     $show = 'project';
@@ -149,7 +151,7 @@
                 }else{
                     show = 'project';
                 }
-                $(".projects-holder .row").append('<a id="projector" class="projector hideme showme" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img class="projector-image lazy-image" loading="lazy" src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><div class="d-flex d-flex-row flex-justify-between flex-align-start"><div class="before-year"><h5 class="p4">'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span></div><span class="p5 year">'+ project.project_year.split(" ")[1] +'</span></div><div class="d-flex d-flex-row flex-justify-between flex-align-start"><span class="p5 view">View '+ show +'</span><i class="las la-arrow-right"></i></div></div></div></div></a>')
+                $(".projects-holder .row").append('<a id="projector" class="projector hideme showme" href="/portfolio/case_study/'+ project.unique_id +'"><div class="project"><img class="projector-image lazy-image" loading="lazy" src="'+ project.project_img_directory + project.project_cover_img +'" alt="'+ project_data_array.project_title +'"><div class="caption"><div class="caption-text"><div class="d-flex d-flex-row flex-justify-between flex-align-start"><div class="before-year"><h5 class="p4">'+ project_data_array.project_title +'</h5><span id="tags" class="p5">'+ project.project_type +'</span></div><span class="p5 year">'+ project.project_year.split("-")[0] +'</span></div><div class="d-flex d-flex-row flex-justify-between flex-align-start"><span class="p5 view">View '+ show +'</span><i class="las la-arrow-right"></i></div></div></div></div></a>')
             });
 
 

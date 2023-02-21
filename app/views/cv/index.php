@@ -21,8 +21,7 @@
                         <div class="divisor-90"></div>
                         <div class="d-flex d-flex-column flex-align-center resume-detailers">
                             <div class="title-contact title-text col-100 d-flex flex-justify-between d-flex-column">
-                                <p class="p4 hideme right">Lagos, Nigeria</p>
-                                <p class="p4 hideme right"><a href="tel:+234-904-113-4407">+234 904-113-4407</a></p>
+                                <p class="p4 hideme right">Sans Francisco, United States</p>
                                 <p class="p4 hideme right"><a href="mailto:hello@judejoshua.me">hello@judejoshua.me</a></p>
                                 <p class="p4 hideme right"><a href="https://linkedin.com/in/judejoshua">https://linkedin.com/in/judejoshua</a></p>
                             </div>
