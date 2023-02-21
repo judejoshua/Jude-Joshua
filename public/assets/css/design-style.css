@@ -15,15 +15,22 @@
     width: 100%;
 }
 
-.design-style-image {
-    width: 40%;
+.design-style-image .text-divider {
+    width: 100%;
+    color: var(--neutral);
 }
 
-.design-style-image img {
+.design-style-image #liner {
     width: 100%;
-    object-fit: cover;
-    object-position: left;
-/*    height: 100%;*/
+    background-color: var(--ink);
+    height: 1px;
+}
+
+.design-style-image {
+    width: 36%;
+    background-color: var(--secondary);
+    padding: 40px 36px;
+    gap: 28px;
 }
 
 .designer-caption {
@@ -41,14 +48,14 @@
 }
 
 .design-style .col-100-shift {
-    gap: 64px;
+    gap: 80px;
     padding-bottom: 152px;
     background-color: var(--accent);
     padding-top: 152px;
 }
 
 .design-style .col-100-shift .cap {
-    width: 54%;
+    width: 56%;
     gap: 48px;
 }
 

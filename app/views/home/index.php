@@ -148,7 +148,7 @@
                 </section>
                 <section id="design-section">
                     <div class="design-style">
-                        <div class="col-100-shift d-flex d-flex-row flex-justify-between">
+                        <div class="col-100-shift d-flex d-flex-row flex-justify-between flex-align-center">
                             <div class="d-flex d-flex-column cap">
                                 <div class="text-divider">
                                     <div class="designer-caption d-flex d-flex-column">
@@ -164,8 +164,22 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="design-style-image hideme right">
-                                <img src="/public/assets/img/the-human-goal-2.webp" alt="picture showing a sketchbook and a pen laying on the table">
+                            <div class="design-style-image hideme right d-flex d-flex-column flex-justify-between">
+                                <div class="text-divider">
+                                    <p class="p5">10 years of visual design experience (6 years professional) in web and graphic content.</p>
+                                </div>
+                                <div id="liner"></div>
+                                <div class="text-divider">
+                                    <p class="p5">4 years of experience with Figma.</p>
+                                </div>
+                                <div id="liner"></div>
+                                <div class="text-divider">
+                                    <p class="p5">6 years of experience in Web Design.</p>
+                                </div>
+                                <div id="liner"></div>
+                                <div class="text-divider">
+                                    <p class="p5">4 years of experience in Product (UI/UX) design.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="deliverables">
