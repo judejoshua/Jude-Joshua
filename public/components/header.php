@@ -59,10 +59,14 @@
         <script>
             $(window).on("load", function() {
                 // Animate loader off screen
-                $(".preloader").fadeOut(500);
+                // $(".preloader").fadeOut(500);
                 $("body").css("overflow-y", "scroll");            
                 $("nav").addClass("ready");
                 $(".header").addClass("contents");
+                
+                if(window.location.href === "https://www.judejoshua.me/portfolio"){
+                    $(".landing").addClass("swipe-btns");
+                }
             });
         </script>
 
@@ -70,24 +74,24 @@
             include 'nav.php';
         ?>
 
-        <div class="preloader d-flex flex-justify-between d-flex-column flex-align-center">
-            <div class="empty-div"></div>
-            <div class="pulse-effect">
-                <p class="remmit">Jude Joshua</p>
-            </div>
-            <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">
-                <div class="status-loader">
-                    <div></div>
-                </div>
-                <p id="status" class="p6">
-                    <span class="loader-dots">
-                        <span class="loader__dot">.</span>
-                        <span class="loader__dot">.</span>
-                        <span class="loader__dot">.</span>
-                    </span>
-                </p>
-            </div>
-        </div>
+        <!--<div class="preloader d-flex flex-justify-between d-flex-column flex-align-center">-->
+        <!--    <div class="empty-div"></div>-->
+        <!--    <div class="pulse-effect">-->
+        <!--        <p class="remmit">Jude Joshua</p>-->
+        <!--    </div>-->
+        <!--    <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">-->
+        <!--        <div class="status-loader">-->
+        <!--            <div></div>-->
+        <!--        </div>-->
+        <!--        <p id="status" class="p6">-->
+        <!--            <span class="loader-dots">-->
+        <!--                <span class="loader__dot">.</span>-->
+        <!--                <span class="loader__dot">.</span>-->
+        <!--                <span class="loader__dot">.</span>-->
+        <!--            </span>-->
+        <!--        </p>-->
+        <!--    </div>-->
+        <!--</div>-->
 
         <div class="contact preloader d-flex flex-justify-between d-flex-column hidden flex-align-center">
             <div class="empty-div"></div>
@@ -108,23 +112,23 @@
             </div>
         </div>
 
-        <div class="links preloader d-flex flex-justify-between d-flex-column hidden flex-align-center">
-            <div class="empty-div"></div>
-            <div class="pulse-effect">
-                <p class="remmit">Jude Joshua</p>
-            </div>
-            <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">
-                <div class="status-loader">
-                    <div></div>
-                </div>
-                <p id="status" class="p6">
-                    <span class="loader-dots">
-                        <span class="loader__dot">.</span>
-                        <span class="loader__dot">.</span>
-                        <span class="loader__dot">.</span>
-                    </span>
-                </p>
-            </div>
-        </div>
+        <!--<div class="links preloader d-flex flex-justify-between d-flex-column hidden flex-align-center">-->
+        <!--    <div class="empty-div"></div>-->
+        <!--    <div class="pulse-effect">-->
+        <!--        <p class="remmit">Jude Joshua</p>-->
+        <!--    </div>-->
+        <!--    <div class="status d-flex-column d-flex flex-justify-between col-100 flex-align-center">-->
+        <!--        <div class="status-loader">-->
+        <!--            <div></div>-->
+        <!--        </div>-->
+        <!--        <p id="status" class="p6">-->
+        <!--            <span class="loader-dots">-->
+        <!--                <span class="loader__dot">.</span>-->
+        <!--                <span class="loader__dot">.</span>-->
+        <!--                <span class="loader__dot">.</span>-->
+        <!--            </span>-->
+        <!--        </p>-->
+        <!--    </div>-->
+        <!--</div>-->
 
         <div id="cursor" class="cursor"></div>

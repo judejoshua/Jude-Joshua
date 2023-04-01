@@ -53,7 +53,8 @@ body#resume #mobile-div-about-grab {
 }
 
 #lefter-detailers h4 {
-    opacity: 0.8;
+    opacity: 0.7;
+    COLOR: var(--ink);
 }
 
 .title {
@@ -85,6 +86,11 @@ body#resume #mobile-div-about-grab {
     width: 100%;
     background: var(--secondary);
     height: 1px;
+}
+
+#resume-begins .divisor {
+    background: var(--placeholders);
+    opacity: 0.5;
 }
 
 .left-text-divider,
@@ -130,11 +136,11 @@ body#resume #mobile-div-about-grab {
 }
 
 ol li {
-    list-style: disc;
+    /* list-style: disc; */
 }
 
 ol {
-    padding-left: 16px;
+    /* padding-left: 16px; */
     padding-top: 4px;
 }
 

@@ -6,18 +6,23 @@
 }
 
 .header p {
-    left: -100%;
+    left: -150%;
     transition: 1s;
 }
 
 .header h1 {
-    left: -100%;
+    left: -150%;
     transition: 1.6s;
 }
 
 .header a {
-    left: -100%;
-    transition: 2s;
+    left: -150%;
+    transition: 1.4s;
+}
+
+.landing .tags-row {
+    left: -170%;
+    transition: 1.4s;
 }
 
 .header.contents p {
@@ -29,6 +34,10 @@
 }
 
 .header.contents a {
+    left: 0;
+}
+
+.landing.swipe-btns .tags-row {
     left: 0;
 }
 

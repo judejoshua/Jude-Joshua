@@ -98,17 +98,17 @@ $(document).ready(function() {
         }
         return false;
     });
-    $('a[href]:not([href^="#"], [href^="/#"])').click(function() {
+    // $('a[href]:not([href^="#"], [href^="/#"])').click(function() {
 
-        $('.links.preloader').removeClass('hidden').addClass('recha');
-        $(".links.preloader").fadeIn("slow");
+    //     $('.links.preloader').removeClass('hidden').addClass('recha');
+    //     $(".links.preloader").fadeIn("slow");
 
-        setTimeout(() => {
-            $(".links.preloader").fadeOut("slow");
-            $('.links.preloader').removeClass('recha').addClass('hidden');
-        }, 10000);
+    //     setTimeout(() => {
+    //         $(".links.preloader").fadeOut("slow");
+    //         $('.links.preloader').removeClass('recha').addClass('hidden');
+    //     }, 10000);
 
-    });
+    // });
     $('.mobile-nav-opener').click(function() {
         $('.mobile-nav').addClass('in');
         $('.mobile-nav-opener.close').addClass('out');

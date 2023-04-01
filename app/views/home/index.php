@@ -166,11 +166,7 @@
                             </div>
                             <div class="design-style-image hideme right d-flex d-flex-column flex-justify-between">
                                 <div class="text-divider">
-                                    <p class="p5">10 years of visual design experience (6 years professional) in web and graphic content.</p>
-                                </div>
-                                <div id="liner"></div>
-                                <div class="text-divider">
-                                    <p class="p5">4 years of experience with Figma.</p>
+                                    <p class="p5">10 years (6 years professional) of visual design experience.</p>
                                 </div>
                                 <div id="liner"></div>
                                 <div class="text-divider">
@@ -178,7 +174,7 @@
                                 </div>
                                 <div id="liner"></div>
                                 <div class="text-divider">
-                                    <p class="p5">4 years of experience in Product (UI/UX) design.</p>
+                                    <p class="p5">4 years of experience in Product (UI/UX) design with Figma.</p>
                                 </div>
                             </div>
                         </div>

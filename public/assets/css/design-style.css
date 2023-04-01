@@ -43,8 +43,8 @@
 }
 
 .balance-holder .cap .designer-caption {
-     text-align: right; 
-     align-items: end; 
+     text-align: right;
+     align-items: flex-end;
 }
 
 .design-style .col-100-shift {
